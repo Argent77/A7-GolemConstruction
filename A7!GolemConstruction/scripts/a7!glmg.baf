@@ -1,0 +1,75 @@
+// *** Type-specific actions (Maggot Golem) ***
+
+IF
+  Global("initTimer", "LOCALS", 0)
+THEN
+  RESPONSE #25
+    SetGlobal("initTimer", "LOCALS", 1)
+    SetGlobalTimer("durationTimer", "LOCALS", SEVEN_DAYS)
+  RESPONSE #25
+    SetGlobal("initTimer", "LOCALS", 1)
+    SetGlobalTimer("durationTimer", "LOCALS", EIGHT_DAYS)
+  RESPONSE #25
+    SetGlobal("initTimer", "LOCALS", 1)
+    SetGlobalTimer("durationTimer", "LOCALS", NINE_DAYS)
+  RESPONSE #25
+    SetGlobal("initTimer", "LOCALS", 1)
+    SetGlobalTimer("durationTimer", "LOCALS", TEN_DAYS)
+END
+
+IF
+  Global("dismiss", "LOCALS", 2)
+  GlobalTimerExpired("durationTimer", "LOCALS")
+THEN
+  RESPONSE #100
+  SetGlobal("dismiss", "LOCALS", 3)
+  SetInterrupt(TRUE)
+  DestroyItem("a7!fam")
+  Kill(Myself)
+  SetInterrupt(TRUE)
+END
+
+IF
+  GlobalLT("dismiss", "LOCALS", 2)
+  GlobalTimerExpired("durationTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobal("dismiss", "LOCALS", 3)
+    SetInterrupt(TRUE)
+    DisplayString(Myself, @7003) // The golem's substance has been wholly consumed by the maggots and loses its coherence...
+    DestroyItem("a7!fam")
+    Kill(Myself)
+    SetInterrupt(TRUE)
+  RESPONSE #13
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetGlobal("initTimer", "LOCALS", 2)
+    SetInterrupt(TRUE)
+    SetGlobalTimer("durationTimer", "LOCALS", ONE_ROUND)
+    DisplayString(Myself, @7004) // The golem's substance has been wholly consumed by the maggots. The increasing frenzy of the insects...
+    Enemy()
+    SetInterrupt(FALSE)
+  RESPONSE #13
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetGlobal("initTimer", "LOCALS", 2)
+    SetInterrupt(TRUE)
+    SetGlobalTimer("durationTimer", "LOCALS", TWO_ROUNDS)
+    DisplayString(Myself, @7004) // The golem's substance has been wholly consumed by the maggots. The increasing frenzy of the insects...
+    Enemy()
+    SetInterrupt(FALSE)
+  RESPONSE #12
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetGlobal("initTimer", "LOCALS", 2)
+    SetInterrupt(TRUE)
+    SetGlobalTimer("durationTimer", "LOCALS", THREE_ROUNDS)
+    DisplayString(Myself, @7004) // The golem's substance has been wholly consumed by the maggots. The increasing frenzy of the insects...
+    Enemy()
+    SetInterrupt(FALSE)
+  RESPONSE #12
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetGlobal("initTimer", "LOCALS", 2)
+    SetInterrupt(TRUE)
+    SetGlobalTimer("durationTimer", "LOCALS", FOUR_ROUNDS)
+    DisplayString(Myself, @7004) // The golem's substance has been wholly consumed by the maggots. The increasing frenzy of the insects...
+    Enemy()
+    SetInterrupt(FALSE)
+END

@@ -1,0 +1,24 @@
+// *** Default golem script for auto-spawned golem types ***
+
+IF
+  Global("init", "LOCALS", 0)
+THEN
+  RESPONSE #96
+    SetGlobal("init", "LOCALS", 2)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, FAMILIAR)
+    AddFamiliar()
+END
+
+// Dismiss Golem has been triggered
+IF
+  Global("dismiss", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetInterrupt(FALSE)
+    DisplayString(Myself, @20002) // Dismissed
+    DestroyItem("a7!fam")
+    Kill(Myself)
+    SetInterrupt(TRUE)
+END

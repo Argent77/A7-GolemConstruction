@@ -1,0 +1,14 @@
+// *** BG2:EE - Use Planar Sphere as Golem Building Workshop ***
+
+IF
+  !ActuallyInCombat()
+  Global("A7!SphereWorkshop", "GLOBAL", 0)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Dead("lavok")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!SphereWorkshop", "GLOBAL", 1)
+    DisplayString(Player1, @40001)  // The laboratory in this area looks well equipped. You can probably use it to construct golems.
+    AddJournalEntry(@49003, QUEST)  // Golem Construction Workshop
+    Continue()
+END

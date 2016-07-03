@@ -1,0 +1,17 @@
+// *** Golem construction cutscene (greater and perfect variants) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([30.0],0)
+    Wait(2)
+    AdvanceTime(14400)  // 48 hours
+    JumpToObject(LastSummonerOf(Myself))  // Hack: needed or the helper creature is located at [0.0] of the map
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

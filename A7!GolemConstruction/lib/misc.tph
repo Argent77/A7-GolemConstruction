@@ -1,0 +1,73 @@
+// *** Misc. stuff not fitting elsewhere ***
+
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // Renting second floor of Sorcerous Sundries for building golems
+  COMPILE ~%MOD_FOLDER%/dialogs/bdhalbaz.d~
+
+  // Use Coldhearth dungeon as golem building workshop
+  EXTEND_TOP ~bd1200.bcs~ ~%MOD_FOLDER%/scripts/bd1200_top.baf~
+  COMPILE ~%MOD_FOLDER%/scripts/bd1200a.baf~
+          ~%MOD_FOLDER%/scripts/bd1200b.baf~
+  COPY_EXISTING ~bd1200.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 1500
+      fj_box_top        = 1030
+      fj_box_right      = 1510
+      fj_box_bottom     = 1040
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 1505 | (1040 << 16)
+      fj_vertex_1       = 1500 | (1030 << 16)
+      fj_vertex_2       = 1510 | (1030 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck1"
+      fj_reg_script     = "bd1200a"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 2010
+      fj_box_top        = 1300
+      fj_box_right      = 2020
+      fj_box_bottom     = 1310
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 2015 | (1310 << 16)
+      fj_vertex_1       = 2010 | (1300 << 16)
+      fj_vertex_2       = 2020 | (1300 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck2"
+      fj_reg_script     = "bd1200b"
+    END
+END
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // importing items into starting dungeon (one tome and one ingredient)
+  COPY_EXISTING ~ar0602.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE
+        ~\(ActionOverride("Shelf1",TakeItemListPartyNum(.+))\)~
+        ~\1 ActionOverride("Shelf17",TakeItemListPartyNum("A7!IMPT1",1)) ActionOverride("Crate2",TakeItemListPartyNum("A7!IMPT2",1))~
+    END
+    BUT_ONLY
+
+  COPY ~%MOD_FOLDER%/items/a7!impt1.2da~ ~override~
+       ~%MOD_FOLDER%/items/a7!impt2.2da~ ~override~
+
+  // Use Planar Sphere as golem building workshop
+  EXTEND_TOP ~ar0410.bcs~ ~%MOD_FOLDER%/scripts/ar0411_top.baf~
+  EXTEND_TOP ~ar0411.bcs~ ~%MOD_FOLDER%/scripts/ar0411_top.baf~
+
+  // Use Watcher's Keep - Second Level as golem workshop
+  EXTEND_TOP ~ar3016.bcs~ ~%MOD_FOLDER%/scripts/ar3016_top.baf~
+
+  // Use Pocket Plane as golem workshop
+  COMPILE ~%MOD_FOLDER%/dialogs/25spell.d~
+  EXTEND_TOP ~ar4500.bcs~ ~%MOD_FOLDER%/scripts/ar4500_top.baf~
+END

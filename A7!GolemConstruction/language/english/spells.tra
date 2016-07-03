@@ -1,0 +1,152 @@
+// -*- coding: utf-8 -*- 
+// Spell-related strings (index 20000..29999)
+
+@20000 = ~Dismiss Golem~
+@20001 = ~Dismiss Golem
+
+Range: 0
+Duration: Instant
+Area of Effect: Caster
+Saving Throw: None
+
+This ability instructs the golem to deactivate itself. The magic which kept the golem in one piece dissipates and the spirit inhabiting the golem will return to its home plane. Without any magic left the now lifeless body will disintegrate quickly and turn to dust.~
+@20002 = ~Dismissed~
+
+@20010 = ~Stinking Cloud~
+@20011 = ~Stinking Cloud
+
+Range: 0
+Duration: 3/2 rounds
+Area of Effect: 15-ft. radius
+Saving Throw: Negates
+
+The huge mass of rotting body parts allows the golem to create a billowing mass of nauseous vapors centered on itself. Any opponent caught within the cloud must roll a successful Saving Throw at +2 or be sent reeling and fall down for 1d2 rounds. Those who make successful Saving Throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A Dispel Magic will remove the nausea on a particular character, but if they remain in the cloud, then they are still subject to its effects.~
+
+@20020 = ~Golem Haste~
+@20021 = ~Golem Haste
+
+Range: 0
+Duration: 3 rounds
+Area of Effect: Caster
+Saving Throw: None
+
+This ability allows the caster to function at double their normal movement rate, gain a -2 initiative bonus, and receive an extra attack per round. This ability is not cumulative with itself or with other similar magic. Note that this spell negates the effects of a Slow spell.~
+
+@20030 = ~Golem Slow~
+@20031 = ~Golem Slow
+
+Range: 0
+Duration: 8 rounds
+Area of Effect: 30-ft. radius
+Saving Throw: Negates
+
+The Slow ability causes creatures to move and attack at half of their normal rates. It negates Haste, but does not otherwise affect magically hasted or slowed creatures. Slowed creatures have an Armor Class and attack penalty of -4. Creatures save at -4 vs. Spell.~
+
+@20040 = ~Gas Cloud~
+@20041 = ~Gas Cloud
+
+Range: 0
+Duration: 3/2 rounds
+Area of Effect: 15-ft. radius
+Saving Throw: Special
+
+This ability generates a billowing cloud of ghastly, yellowish green vapors centered on itself. Any creature caught within the cloud must roll a successful Saving Throw vs. Poison at -2 each round or is poisoned. The poison effect lasts three rounds and does one point of damage per second.~
+
+@20050 = ~Trample~
+@20051 = ~Trample
+
+Range: 0
+Duration: Instant
+Area of Effect: 1 creature
+Saving Throw: Special
+
+Because of the golem's huge size and weight it can literally run over opponents that are smaller than itself. The trample ability deals 8d10+30 points of crushing damage and stuns the target for one round. A successful Saving Throw vs. Death at -4 can reduce damage to half and prevent the stun effect. Huge creatures, like dragons or giants, are not affected.~
+@20052 = ~Trampled~
+@20053 = ~Too big to trample~
+
+@20060 = ~Chain Lightning~
+@20061 = ~Chain Lightning
+
+Range: 50 ft.
+Duration: Instant
+Area of Effect: Special
+Saving Throw: 1/2 
+
+This ability allows the golem to shoot arcs of electrical energy burst from its fingertips. These brilliant arcs of lightning leap at all enemies near the golem, burning them with electrical damage. The lightning causes 6d6 points of damage. If the target of the lightning saves vs. Spell, only half damage is inflicted.~
+
+
+@20070 = ~Teleport~
+@20071 = ~Teleport
+
+Range: 50 ft.
+Duration: Instant
+Area of Effect: Caster
+Saving Throw: None
+
+Sometimes giant-sized golems may come across pathways that are too narrow to pass by walking. This ability makes it possible to skip blocked paths by teleporting a short distance to a selected party member. It can only be used successfully while no enemies are in sight and the target is in visual range of the golem.~
+
+
+@20080 = ~Mental Blast~
+@20081 = ~Mental Blast
+
+Range: 0
+Duration: Instant
+Area of Effect: 30 ft. radius
+Saving Throw: Special
+
+The powerful brain mass of the golem allows it to release a destructive force of mental energy onto all enemies in a 30 feet radius centered on itself. Creatures hit by the blast must save vs. Spell or suffer 2d8 points of stunning damge and become stunned for 2d4 rounds. Those who made a successful save only suffer half damage and avoid the stun effect altogether.
+
+Unthinking creatures, such as undead, golems or myconids, are immune to the effect.~
+
+
+@20090 = ~Scalding Steam~
+@20091 = ~Scalding Steam
+
+Range: 0
+Duration: Instant
+Area of Effect: 30 ft. radius
+Saving Throw: Negates
+
+Ice golems can emit waves of frozen vapor to hurt nearby enemies. The wave is centered around the golem and affects every creature in a 30 feet radius. Creatures hit by the steam must save vs. Breath or suffer 3d10 cold damage.~
+
+
+@20100 = ~Wild Magic Flare~
+@20101 = ~Wild Magic Flare
+
+Range: 40
+Duration: Instant
+Area of Effect: One creature
+Saving Throw: None
+
+Once per day magic golems can release a flare of magical energy on a single creature. This energy does 3d10 magic damage to the target and triggers a random wild magic effect. The effect can range from devastating to purely beneficial to the target, and possibly everyone else in the vicinity. Magic resistance may prevent both damage and the wild magic effect.~
+
+
+@20200 = ~Construct Golem~
+@20201 = ~Construct Golem
+
+This ability allows the caster to construct a golem of any type he studied extensively before. The construction process requires certain materials which depend on the desired type and variant of the golem. More powerful or exotic types may also leech on the constitution of the caster.
+
+The construction of the golem's physical shell requires utmost concentration over a long period of time in which the caster should not be interrupted in any way. A spirit of elemental origin is used to animate the body. Since the spirit is unwilling to serve, the caster must engage into a mental battle to gain control for one round. There is a four percent chance that the spirit breaks free and turns on the caster for a duration of 1d4 rounds before it can be brought back under control.
+
+The casting process is mentally and physically very draining. For the next five rounds the caster will be unable to cast spells and suffer a -2 penalty to Armor Class, Saving Throws, to-hit rolls and damage rolls.
+
+Unlike summoned creatures golems can exist for a virtually unlimited span of time in the service of their master. They are immune to mind control and magic, and will always follow their master's commands to the letter.~
+
+@20210 = ~Repair Golem~
+@20211 = ~Repair Golem
+
+This ability allows the caster to repair damaged golems. The whole process primarily includes mending or replacing damaged body parts which is done a speed of 1d10+2 hit points per second over two rounds. As a result you and the golem will be unable to respond for the next 12 seconds.~
+
+
+// Misc. strings
+@21000 = ~Engaged in mental combat~
+@21001 = ~You are unable to construct golems in hostile environments.~
+@21002 = ~Constructing the golem leaves you fatigued and inattentive. For the next five rounds you are unable to cast spells and are less effective in physical combat.~
+@21003 = ~Has lost 4,000 Experience~
+@21004 = ~Has lost 8,000 Experience~
+@21005 = ~Has lost 16,000 Experience~
+@21006 = ~Has lost 32,000 Experience~
+@21007 = ~Has lost 64,000 Experience~
+@21010 = ~Repairing golem...~
+@21011 = ~Target is not a constructed golem.~
+

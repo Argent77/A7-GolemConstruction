@@ -1,0 +1,135 @@
+// *** Helper creature: Golem Crafting ***
+
+// Don't construct golems in hostile territory
+IF
+  OR(2)
+    ActuallyInCombat()
+    Detect([ENEMY])
+THEN
+  RESPONSE #100
+    DisplayString(LastSummonerOf(Myself), @21001) // You are unable to construct golems in hostile environments.
+    DestroySelf()
+END
+
+// IF
+  // Global("init", "LOCALS", 0)
+  // Detect(LastSummonerOf(Myself))
+// THEN
+  // RESPONSE #100
+    // SetGlobal("init", "LOCALS", 1)
+    // StartDialogueNoSet(LastSummonerOf(Myself))
+// END
+
+// Checking location: SoD - Sorcerous Sundries, Second Floor
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!SundriesPermission", "GLOBAL", 1)
+  AreaCheck("BD0122")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initSundries", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: SoD - Dwarven Dig Site, Underground Level
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!ColdhearthWorkshop", "GLOBAL", 1)
+  AreaCheck("BD1200")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initColdhearth", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: SoA - Planar Sphere
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!SphereWorkshop", "GLOBAL", 1)
+  OR(2)
+    AreaCheck("AR0410")
+    AreaCheck("AR0411")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initSphere", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Watcher's Keep, Second Level
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!WKWorkshop", "GLOBAL", 1)
+  AreaCheck("AR3016")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initWK", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Pocket Plane
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!PlaneWorkshop", "GLOBAL", 1)
+  AreaCheck("AR4500")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initPlane", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Wild Magic Area
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!TomeGolemMagic", "GLOBAL", 1)
+  OR(5)
+    AreaCheck("AR3005")
+    AreaCheck("AR3009")
+    AreaCheck("OH6000")
+    AreaCheck("OH6100")
+    AreaCheck("OH6200")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initMagic", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Unsupported area for constructing golems
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initCancelled", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+
+// Failsafe: Wait for a couple of round and disappear
+IF
+  Global("init2", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("init2", "LOCALS", 1)
+    SetGlobalTimer("initTimer", "LOCALS", FIVE_ROUNDS)
+END
+
+IF
+  Global("init2", "LOCALS", 1)
+  GlobalTimerExpired("initTimer", "LOCALS")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

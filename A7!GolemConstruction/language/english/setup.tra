@@ -1,0 +1,9 @@
+// -*- coding: us-ascii -*- 
+// Setup (index 0..999)
+
+@0 = ~Golem Construction Ability for Spellcasters~
+
+@100 = ~This mod requires BG:SoD or BG2:EE to be installed.~
+@101 = ~This mod requires the main component to be installed.~
+@102 = ~No free creature animation slot found.~
+@103 = ~This mod requires the game to be patched to v2.0 or higher.~

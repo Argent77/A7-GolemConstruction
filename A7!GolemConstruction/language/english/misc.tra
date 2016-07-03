@@ -1,0 +1,14 @@
+// -*- coding: utf-8 -*- 
+// Misc. strings (index 100000..109999)
+
+@100000 = ~Manual~
+@100001 = ~Ancient Manual~
+
+@100002 = ~Judging by the arcane symbols printed on its cover, it is clear that this book is imbued with magical properties of one sort or another. Until you attempt to either read or identify it, however, its precise nature will remain unknown to you.
+
+STATISTICS:
+
+Weight: 10~
+
+@100003 = ~Gained special ability: Construct Golem~
+@100004 = ~Gained special ability: Repair Golem~

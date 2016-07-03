@@ -1,0 +1,34 @@
+// *** Generic stuff that has to be defined (first) ***
+
+// SPECIFICS values for all constructed golem types
+OUTER_SET specific_golem  = 200
+
+APPEND ~specific.ids~ ~%specific_golem% A7!GOLEM~ UNLESS ~^%specific_golem%[ %TAB%]~
+
+// Golem abilities are ported over to BG2EE
+ACTION_IF (GAME_IS ~bg2ee~) BEGIN
+  COPY_EXISTING - ~varimprt.2da~ ~override~
+    COUNT_2DA_COLS numCols
+    COUNT_2DA_ROWS numCols numRows
+
+  ACTION_DEFINE_ARRAY vars BEGIN
+    ~A7!GOLEMABILITY~ 
+    ~A7!TOMEGOLEMFLESH~
+    ~A7!TOMEGOLEMCLAY~
+    ~A7!TOMEGOLEMSTONE~
+    ~A7!TOMEGOLEMIRON~
+    ~A7!TOMEGOLEMMITHRAL~
+    ~A7!TOMEGOLEMADAMANTITE~
+    ~A7!TOMEGOLEMMAGGOT~
+    ~A7!TOMEGOLEMBONE~
+    ~A7!TOMEGOLEMBRAIN~
+    ~A7!TOMEGOLEMICE~
+    ~A7!TOMEGOLEMMAGIC~
+    ~A7!TOMEGOLEMLIGHTNING~
+  END
+  OUTER_SET varIndex = numRows
+  ACTION_PHP_EACH vars AS _ => var BEGIN
+    APPEND ~varimprt.2da~ ~%varIndex% %var%~ UNLESS ~%var%~
+    OUTER_SET varIndex += 1
+  END
+END

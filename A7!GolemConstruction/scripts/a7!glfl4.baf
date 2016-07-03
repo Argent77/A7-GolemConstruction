@@ -1,0 +1,11 @@
+// *** Type-specific actions (Perfect Flesh Golem) ***
+
+IF
+  Die()
+  Global("dismiss", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("ICMAGICH",Myself)
+    CreateCreatureObject("a7!gsfl2",Myself,1,0,0)
+    CreateCreatureObject("a7!gsfl2",Myself,1,0,0)
+END

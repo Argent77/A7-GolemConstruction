@@ -1,0 +1,444 @@
+// *** Installs item-related resources ***
+
+// Empty dummy item for simulating lack of item in random treasure
+COPY ~%MOD_FOLDER%/items/a7!empty.itm~ ~override~
+
+// Body parts
+COPY ~%MOD_FOLDER%/items/a7!body.itm~ ~override~
+  SAY NAME1 @30000  // Body Parts
+  SAY NAME2 @30000  // Body Parts
+  SAY UNIDENTIFIED_DESC @30001
+
+COPY ~%MOD_FOLDER%/items/a7!cbody.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!ibody.bam~ ~override~
+
+
+// Clay block
+COPY ~%MOD_FOLDER%/items/a7!clay.itm~ ~override~
+  SAY NAME1 @30010  // Clay Block
+  SAY NAME2 @30010  // Clay Block
+  SAY UNIDENTIFIED_DESC @30011
+
+COPY ~%MOD_FOLDER%/items/a7!iclay.bam~ ~override~
+
+COPY ~%MOD_FOLDER%/items/a7!cclay.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+
+// Stone block
+COPY ~%MOD_FOLDER%/items/a7!ston.itm~ ~override~
+  SAY NAME1 @30020  // Stone Block
+  SAY NAME2 @30020  // Stone Block
+  SAY UNIDENTIFIED_DESC @30021
+
+COPY ~%MOD_FOLDER%/items/a7!iston.bam~ ~override~
+
+COPY ~%MOD_FOLDER%/items/a7!cston.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+
+// Iron bar
+COPY ~%MOD_FOLDER%/items/a7!iron.itm~ ~override~
+  SAY NAME1 @30030  // Iron Bar
+  SAY NAME2 @30030  // Iron Bar
+  SAY UNIDENTIFIED_DESC @30031
+
+COPY ~%MOD_FOLDER%/items/a7!iiron.bam~ ~override~
+
+COPY ~%MOD_FOLDER%/items/a7!ciron.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+
+// Mithral chunk
+COPY ~%MOD_FOLDER%/items/a7!mith.itm~ ~override~
+  SAY NAME1 @30100  // Chunk of Mithral
+  SAY NAME2 @30100  // Chunk of Mithral
+  SAY UNIDENTIFIED_DESC @30101
+
+COPY ~%MOD_FOLDER%/items/a7!cmith.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!imith.bam~ ~override~
+
+
+// Adamantine bar
+COPY ~%MOD_FOLDER%/items/a7!adam.itm~ ~override~
+  SAY NAME1 @30040  // Adamantine Bar
+  SAY NAME2 @30040  // Adamantine Bar
+  SAY UNIDENTIFIED_DESC @30041
+
+COPY ~%MOD_FOLDER%/items/a7!cadam.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!iadam.bam~ ~override~
+
+
+// Pile of bones
+COPY ~%MOD_FOLDER%/items/a7!bone.itm~ ~override~
+  SAY NAME1 @30050  // Pile of Bones
+  SAY NAME2 @30050  // Pile of Bones
+  SAY UNIDENTIFIED_DESC @30051
+
+COPY ~%MOD_FOLDER%/items/a7!ibone.bam~ ~override~
+
+COPY ~%MOD_FOLDER%/items/a7!cbone.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+
+// Brain tissue
+COPY ~%MOD_FOLDER%/items/a7!brin.itm~ ~override~
+  SAY NAME1 @30060  // Brain Tissue
+  SAY NAME2 @30060  // Brain Tissue
+  SAY UNIDENTIFIED_DESC @30061
+
+COPY ~%MOD_FOLDER%/items/a7!ibrin.bam~ ~override~
+
+COPY ~%MOD_FOLDER%/items/a7!cbrin.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  COPY_EXISTING ~bd7230.are~ ~override~
+    READ_SHORT 0x5a numTriggers
+    READ_LONG 0x5c ofsTriggers
+    FOR (idx = 0; idx < numTriggers; ++idx) BEGIN
+      SET curOfs = ofsTriggers + (idx * 0xc4)
+      READ_ASCII (curOfs + 0x00) name ( 32 ) NULL
+      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~Glass_thingy~) BEGIN
+        WRITE_LONG (curOfs + 0x34) 8    // use activation cursor
+        READ_LONG (curOfs + 0x64) infoText  // strref of original text
+        PATCH_IF (infoText < 0) BEGIN SET infoText = 70601 END  // using predefined default if needed
+        WRITE_LONG (curOfs + 0x64) "-1"
+        READ_ASCII (curOfs + 0x7c) script
+        PATCH_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+          INNER_ACTION BEGIN
+            EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/bd7230a_top.baf~
+            EXTEND_BOTTOM ~%script%.bcs~ ~%MOD_FOLDER%/scripts/bd7230a_bottom.baf~ EVAL
+          END
+        END ELSE BEGIN
+          INNER_ACTION BEGIN
+            COMPILE ~%MOD_FOLDER%/scripts/bd7230a_top.baf~
+            MOVE ~override/bd7230a_top.bcs~ ~override/a7!brin1.bcs~
+            EXTEND_BOTTOM ~a7!brin1.bcs~ ~%MOD_FOLDER%/scripts/bd7230a_bottom.baf~ EVAL
+          END
+          WRITE_ASCII (curOfs + 0x7c) "a7!brin1" #8
+        END
+
+        // stop searching
+        SET idx = numTriggers
+      END
+    END
+END
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~ar3021.are~ ~override~
+    // determining target container index
+    SET cont_idx = 0
+    READ_LONG 0x70 ofsCont
+    READ_SHORT 0x74 numCont
+    FOR (idx = 0; idx < numCont; ++idx) BEGIN
+      SET curOfs = ofsCont + (idx * 0xc0)
+      READ_ASCII (curOfs + 0x00) name ( 32 ) NULL
+      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~Container 3~) BEGIN
+        SET cont_idx = idx
+        SET idx = numCont
+      END
+    END
+    // adding items to container
+    LPF fj_are_structure
+    INT_VAR
+      fj_con_itm_idx    = cont_idx
+      fj_charge0        = 2
+    STR_VAR
+      fj_structure_type = "itm"
+      fj_name           = "a7!brin"
+    END
+
+  COPY_EXISTING ~udmaster.cre~ ~override~
+    ADD_CRE_ITEM ~a7!brin~ #3 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  // TODO: random chance of looting brain tissue from brain golem
+  // COPY_EXISTING ~udgolem.cre~ ~override~
+    // ADD_CRE_ITEM ~%rndtre_brain25%~ #1 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+
+// Shard of magical ice
+COPY ~%MOD_FOLDER%/items/a7!ice.itm~ ~override~
+  SAY NAME1 @30070  // Shard of Magical Ice
+  SAY NAME2 @30070  // Shard of Magical Ice
+  SAY UNIDENTIFIED_DESC @30071
+
+COPY ~%MOD_FOLDER%/items/a7!iice.bam~ ~override~
+
+COPY ~%MOD_FOLDER%/items/a7!cice.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+
+// Wild magic stone fragment
+COPY ~%MOD_FOLDER%/items/a7!wmag.itm~ ~override~
+  SAY NAME1 @30080  // Wild Magic Stone Fragment
+  SAY NAME2 @30080  // Wild Magic Stone Fragment
+  SAY UNIDENTIFIED_DESC @30081
+
+COPY ~%MOD_FOLDER%/items/a7!cdmag.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!idmag.bam~ ~override~
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  EXTEND_TOP ~oh6100.bcs~ ~%MOD_FOLDER%/scripts/oh6100_top.baf~
+  EXTEND_TOP ~ar3005.bcs~ ~%MOD_FOLDER%/scripts/ar3005_top.baf~
+  EXTEND_TOP ~ar3009.bcs~ ~%MOD_FOLDER%/scripts/ar3009_top.baf~
+
+  COPY_EXISTING ~ar3005.are~ ~override~
+      LPF fj_are_structure
+      INT_VAR
+        fj_type           = 0       // proximiy trigger
+        fj_loc_x          = 1005
+        fj_loc_y          = 436
+        fj_type           = 8       // non-visible
+        fj_lock_diff      = 0
+        fj_flags          = (1 << 5)    // disabled
+        fj_trap_remove_diff = 0
+        fj_box_left       = 999
+        fj_box_top        = 371
+        fj_box_right      = 1011
+        fj_box_bottom     = 382
+        fj_vertex_0       = 999 | (379 << 16)
+        fj_vertex_1       = 1005 | (382 << 16)
+        fj_vertex_2       = 1011 | (379 << 16)
+        fj_vertex_3       = 1011 | (371 << 16)
+        fj_vertex_4       = 1005 | (374 << 16)
+        fj_vertex_5       = 999 | (371 << 16)
+      STR_VAR
+        fj_structure_type = "container"
+        fj_name           = "A7!Crate01"
+      END
+      LPF fj_are_structure
+      INT_VAR
+        fj_type           = 0       // proximiy trigger
+        fj_loc_x          = 401
+        fj_loc_y          = 577
+        fj_type           = 8       // non-visible
+        fj_lock_diff      = 0
+        fj_flags          = (1 << 5)    // disabled
+        fj_trap_remove_diff = 0
+        fj_box_left       = 386
+        fj_box_top        = 519
+        fj_box_right      = 399
+        fj_box_bottom     = 531
+        fj_vertex_0       = 387 | (531 << 16)
+        fj_vertex_1       = 399 | (520 << 16)
+        fj_vertex_2       = 392 | (519 << 16)
+        fj_vertex_3       = 386 | (528 << 16)
+      STR_VAR
+        fj_structure_type = "container"
+        fj_name           = "A7!Crate02"
+      END
+      LPF fj_are_structure
+      INT_VAR
+        fj_type           = 0       // proximiy trigger
+        fj_loc_x          = 1081
+        fj_loc_y          = 746
+        fj_type           = 8       // non-visible
+        fj_lock_diff      = 0
+        fj_flags          = (1 << 5)    // disabled
+        fj_trap_remove_diff = 0
+        fj_box_left       = 1088
+        fj_box_top        = 713
+        fj_box_right      = 1101
+        fj_box_bottom     = 736
+        fj_vertex_0       = 1101 | (736 << 16)
+        fj_vertex_1       = 1101 | (721 << 16)
+        fj_vertex_2       = 1088 | (713 << 16)
+        fj_vertex_3       = 1088 | (727 << 16)
+      STR_VAR
+        fj_structure_type = "container"
+        fj_name           = "A7!Crate03"
+      END
+
+  COPY_EXISTING ~ar3009.are~ ~override~
+      LPF fj_are_structure
+      INT_VAR
+        fj_type           = 0       // proximiy trigger
+        fj_loc_x          = 661
+        fj_loc_y          = 591
+        fj_type           = 8       // non-visible
+        fj_lock_diff      = 0
+        fj_flags          = (1 << 5)    // disabled
+        fj_trap_remove_diff = 0
+        fj_box_left       = 644
+        fj_box_top        = 554
+        fj_box_right      = 658
+        fj_box_bottom     = 576
+        fj_vertex_0       = 645 | (576 << 16)
+        fj_vertex_1       = 658 | (569 << 16)
+        fj_vertex_2       = 656 | (554 << 16)
+        fj_vertex_3       = 644 | (561 << 16)
+      STR_VAR
+        fj_structure_type = "container"
+        fj_name           = "A7!Crate01"
+      END
+      LPF fj_are_structure
+      INT_VAR
+        fj_type           = 0       // proximiy trigger
+        fj_loc_x          = 550
+        fj_loc_y          = 354
+        fj_type           = 8       // non-visible
+        fj_lock_diff      = 0
+        fj_flags          = (1 << 5)    // disabled
+        fj_trap_remove_diff = 0
+        fj_box_left       = 546
+        fj_box_top        = 268
+        fj_box_right      = 555
+        fj_box_bottom     = 278
+        fj_vertex_0       = 547 | (278 << 16)
+        fj_vertex_1       = 551 | (278 << 16)
+        fj_vertex_2       = 553 | (277 << 16)
+        fj_vertex_3       = 555 | (274 << 16)
+        fj_vertex_4       = 555 | (271 << 16)
+        fj_vertex_5       = 552 | (268 << 16)
+        fj_vertex_6       = 550 | (268 << 16)
+        fj_vertex_7       = 546 | (271 << 16)
+        fj_vertex_8       = 546 | (276 << 16)
+      STR_VAR
+        fj_structure_type = "container"
+        fj_name           = "A7!Crate02"
+      END
+END
+
+
+// Maggot-infested body
+COPY ~%MOD_FOLDER%/items/a7!mbdy.itm~ ~override~
+  SAY NAME1 @30090  // Maggot-infested Body
+  SAY NAME2 @30090  // Maggot-infested Body
+  SAY UNIDENTIFIED_DESC @30091
+
+COPY ~%MOD_FOLDER%/items/a7!cmbdy.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!imbdy.bam~ ~override~
+
+
+// Lightning Golem weapon
+COPY ~%MOD_FOLDER%/items/a7!gllt1.itm~ ~override~
+     ~%MOD_FOLDER%/spells/a7!gllt1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!gllt2.spl~ ~override~
+
+
+// Maggot Golem weapon
+COPY ~%MOD_FOLDER%/items/a7!glmg1.itm~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glmg1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glmg1.spl~ ~override~
+
+
+// Magic Golem weapon
+COPY ~%MOD_FOLDER%/items/a7!glma1.itm~ ~override~
+
+
+// Bag of Coral Powder
+// COPY ~%MOD_FOLDER%/items/a7!iglcl.itm~ ~override~
+  // SAY NAME1 @30xxx  // Bag of Coral Powder
+  // SAY NAME1 @30xxx  // Bag of Coral Powder
+  // SAY UNIDENTIFIED_DESC @30xxx
+
+COPY ~%MOD_FOLDER%/items/a7!iglcl.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+
+// Spectral obsidian orb
+// COPY ~%MOD_FOLDER%/items/a7!iglmi.itm~ ~override~
+  // SAY NAME1 @30xxx  // Spectral Obsidian Orb
+  // SAY NAME1 @30xxx  // Spectral Obsidian Orb
+  // SAY UNIDENTIFIED_DESC @30xxx
+
+COPY ~%MOD_FOLDER%/items/a7!iglmi.bam~ ~override~
+  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+  LAF INSTALL_PVRZ
+  INT_VAR
+    original_base_index = original_base_index
+    new_base_index = new_base_index
+  STR_VAR
+    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  END
+END
+
+
+// Pieces of machinery for golem building
+OUTER_FOR (idx = 1; idx <= 4; ++idx) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqm%idx%.itm~ ~override~
+    SAY NAME1 @30110  // Piece of machinery
+    SAY NAME2 @30110  // Piece of machinery
+    SAY UNIDENTIFIED_DESC @30111
+
+  COPY ~%MOD_FOLDER%/items/a7!ieqm%idx%.bam~ ~override~
+
+  COPY ~%MOD_FOLDER%/items/a7!ceqm%idx%.bam~ ~override~
+    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+  ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+    LAF INSTALL_PVRZ
+    INT_VAR
+      original_base_index = original_base_index
+      new_base_index = new_base_index
+    STR_VAR
+      source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+    END
+  END
+END
+

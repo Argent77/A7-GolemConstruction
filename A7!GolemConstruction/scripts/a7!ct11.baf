@@ -1,0 +1,29 @@
+// *** Golem construction cutscene (Location: Coldhearth Dungeon) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([1626.1048]))
+    ActionOverride(Player2, JumpToPoint([1648.1124]))
+    ActionOverride(Player3, JumpToPoint([1702.1064]))
+    ActionOverride(Player4, JumpToPoint([1716.1174]))
+    ActionOverride(Player5, JumpToPoint([1768.1118]))
+    ActionOverride(Player6, JumpToPoint([1806.1180]))
+    ActionOverride(Player1, Face(NW))
+    ActionOverride(Player2, Face(NW))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, Face(NW))
+    ActionOverride(Player5, Face(NW))
+    ActionOverride(Player6, Face(NW))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

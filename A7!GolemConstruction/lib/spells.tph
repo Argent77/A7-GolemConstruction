@@ -1,0 +1,332 @@
+// *** Installs spell-related resources ***
+
+// Dismiss Golem
+COPY ~%MOD_FOLDER%/spells/a7!in01.spl~ ~override~
+  SAY NAME1 @20000  // Dismiss Golem
+  SAY UNIDENTIFIED_DESC @20001  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in01a.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!in01b.bam~ ~override~
+
+
+// Stinking Cloud
+COPY ~%MOD_FOLDER%/spells/a7!in02.spl~ ~override~
+  SAY NAME1 @20010  // Stinking Cloud
+  SAY UNIDENTIFIED_DESC @20011  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in02b.bam~ ~override~
+
+
+// Golem Haste
+COPY ~%MOD_FOLDER%/spells/a7!in03.spl~ ~override~
+  SAY NAME1 @20020  // Golem Haste
+  SAY UNIDENTIFIED_DESC @20021  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in03b.bam~ ~override~
+
+
+// Golem Slow
+COPY ~%MOD_FOLDER%/spells/a7!in04.spl~ ~override~
+  SAY NAME1 @20030  // Golem Slow
+  SAY UNIDENTIFIED_DESC @20031  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in04b.bam~ ~override~
+
+
+// Gas Cloud
+COPY ~%MOD_FOLDER%/spells/a7!in05.spl~ ~override~
+  SAY NAME1 @20040  // Gas Cloud
+  SAY UNIDENTIFIED_DESC @20041  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in05b.bam~ ~override~
+
+
+// Trample
+COPY ~%MOD_FOLDER%/spells/a7!in06.spl~ ~override~
+  SAY NAME1 @20050  // Trample
+  SAY UNIDENTIFIED_DESC @20051  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in06a.spl~ ~override~
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@20052)  // Trampled
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!in06b.spl~ ~override~
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@20053)  // Too big to trample
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!in06b.bam~ ~override~
+
+
+// Chain Lightning
+COPY ~%MOD_FOLDER%/spells/a7!in07.spl~ ~override~
+  SAY NAME1 @20060  // Chain Lightning
+  SAY UNIDENTIFIED_DESC @20061  // ...
+
+
+// Teleport
+COPY ~%MOD_FOLDER%/spells/a7!in08.spl~ ~override~
+  SAY NAME1 @20070  // Teleport
+  SAY UNIDENTIFIED_DESC @20071  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!dmndr.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!dmndr.vvc~ ~override~
+     ~%MOD_FOLDER%/spells/a7!dmndr.wav~ ~override~
+     ~%MOD_FOLDER%/spells/a7!in08b.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!in08a.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!in08a.spl~ ~override~
+
+
+// Mind Blast
+ADD_PROJECTILE ~%MOD_FOLDER%/spells/a7!in09.pro~
+COPY ~%MOD_FOLDER%/spells/a7!in09.spl~ ~override~
+  SAY NAME1 @20080  // Mind Blast
+  SAY UNIDENTIFIED_DESC @20081  // ...
+  WRITE_SHORT 0x98 ~%a7!in09%~  // projectile id
+
+COPY ~%MOD_FOLDER%/spells/a7!in09b.bam~ ~override~
+
+
+// Scolding Steam
+COPY ~%MOD_FOLDER%/spells/a7!in10.spl~ ~override~
+  SAY NAME1 @20090  // Scolding Steam
+  SAY UNIDENTIFIED_DESC @20091  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in10b.bam~ ~override~
+
+
+// Wild Magic Flare
+COPY ~%MOD_FOLDER%/spells/a7!in11.spl~ ~override~
+  SAY NAME1 @20100  // Wild Magic Flare
+  SAY UNIDENTIFIED_DESC @20101  // ...
+
+ADD_PROJECTILE ~%MOD_FOLDER%/spells/a7!in11.pro~
+COPY ~%MOD_FOLDER%/spells/a7!in11a.spl~ ~override~
+  WRITE_SHORT 0x98 ~%a7!in11%~  // projectile id
+
+COPY ~%MOD_FOLDER%/spells/a7!in11c.spl~ ~override~
+LAF CREATE_WILD_SURGE_SPELL STR_VAR resName = "a7!in11b" resDefault = "a7!in11c" END
+
+
+// Magic Golem destruction blast
+COPY ~%MOD_FOLDER%/spells/a7!in12.spl~ ~override~
+
+
+// "Create Golem" spells and related resources
+COPY ~%MOD_FOLDER%/spells/a7!prtl.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!prtl.wav~ ~override~
+     ~%MOD_FOLDER%/spells/a7!prtl.vvc~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smfl1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smfl2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smfl3.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smfl4.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl3.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl4.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst3.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst4.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir3.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir4.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi3.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi4.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad3.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad4.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmg.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smbo.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smbr.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smic.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smma.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smlt.eff~ ~override~
+
+
+COPY ~%MOD_FOLDER%/spells/a7!smfl1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smfl2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smfl3.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smfl4.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl3.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smcl4.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst3.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smst4.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir3.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smir4.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi3.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmi4.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad3.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smad4.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smmg.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smbo.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smbr.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smic.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smma.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smlt.spl~ ~override~
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@21000)  // Engaged in mental combat
+  END
+
+
+// Make golem immune during mental battle with creator
+COPY ~%MOD_FOLDER%/spells/a7!sum1.spl~ ~override~
+
+
+// Make caster fatigued and inattentive
+COPY ~%MOD_FOLDER%/spells/a7!sum2.spl~ ~override~
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@21002)  // Crafting the golem leaves you fatigued and inattentive...
+  END
+
+
+// Disease from constructing Maggot Golems
+COPY ~%MOD_FOLDER%/spells/a7!sum3.spl~ ~override~
+  SET strref = (GAME_IS ~bg2ee eet~) ? 54337 : 31238
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = strref // Diseased
+  END
+
+
+// Drain a level from the target
+COPY ~%MOD_FOLDER%/spells/a7!sum4.spl~ ~override~
+  SET strref = (GAME_IS ~bg2ee eet~) ? 41495 : 25802
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = strref // One Level Drained
+  END
+
+
+// Golem going berserk during combat
+COPY ~%MOD_FOLDER%/spells/a7!brsk.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!brska.spl~ ~override~
+
+
+// XP draining spells
+ACTION_DEFINE_ASSOCIATIVE_ARRAY ref_spl BEGIN
+  "a7!xpmi1" => "21003"
+  "a7!xpmi2" => "21004"
+  "a7!xpmi3" => "21005"
+  "a7!xpmi4" => "21006"
+  "a7!xpad1" => "21004"
+  "a7!xpad2" => "21005"
+  "a7!xpad3" => "21006"
+  "a7!xpad4" => "21007"
+END
+ACTION_PHP_EACH ref_spl AS spl => ref BEGIN
+  COPY ~%MOD_FOLDER%/spells/%spl%.spl~ ~override~
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF((AT ref))  // Caster has lost [ref] Experience
+      timing = 9      // Instant/Permanent
+      resist_dispel = 2
+    END
+END
+
+
+// "Construct Golem" ability
+COMPILE ~%MOD_FOLDER%/dialogs/a7!smdlg.d~
+COMPILE ~%MOD_FOLDER%/scripts/a7!smdlg.baf~
+
+COPY ~%MOD_FOLDER%/creatures/a7!smdlg.cre~ ~override~
+  SAY NAME1 @20200  // Craft Golem
+  SAY NAME2 @20200  // Craft Golem
+
+COPY ~%MOD_FOLDER%/spells/a7!smgl.spl~ ~override~
+  SAY NAME1 @20200  // Craft Golem
+  SAY UNIDENTIFIED_DESC @20201  // Craft Golem description
+
+COPY ~%MOD_FOLDER%/spells/a7!smdlg.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smglb.bam~ ~override~
+
+
+// "Repair Golem" ability
+COPY ~%MOD_FOLDER%/spells/a7!glr.spl~ ~override~
+  SAY NAME1 @20210  // Repair Golem
+  SAY UNIDENTIFIED_DESC @20211  // Repair Golem description
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 177      // Use EFF file
+    target = 2        // Preset target
+    parameter1 = specific_golem
+    parameter2 = 6    // SPECIFIC.IDS
+    timing = 1        // Instant/Permanent until death
+    resist_dispel = 0
+  STR_VAR
+    resource = EVAL "a7!glr1a"
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 177      // Use EFF file
+    target = 2        // Preset target
+    parameter1 = specific_golem
+    parameter2 = 6    // SPECIFIC.IDS
+    timing = 1        // Instant/Permanent until death
+    resist_dispel = 0
+  STR_VAR
+    resource = EVAL "a7!glr1b"
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 326      // Apply effects list
+    target = 2        // Preset target
+    parameter1 = specific_golem
+    parameter2 = 116  // SPECIFIC != param1
+    timing = 1        // Instant/Permanent until death
+    resist_dispel = 0
+  STR_VAR
+    resource = EVAL "a7!glr2"
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!glr1b.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@21010)  // Repairing golem...
+    END
+
+COPY ~%MOD_FOLDER%/spells/a7!glr2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@21011)  // Target is not a constructed golem.
+    END
+
+COPY ~%MOD_FOLDER%/spells/a7!glr1a.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glr1b.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glr1a.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glrb.bam~ ~override~
+
+
+// Wish expansion
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COMPILE ~%MOD_FOLDER%/dialogs/wishes.d~
+END

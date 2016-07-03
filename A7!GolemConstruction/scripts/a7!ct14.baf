@@ -1,0 +1,29 @@
+// *** Golem construction cutscene (Location: Watcher's Keep - Level 2: Wizard Library) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([1162.1006]))
+    ActionOverride(Player2, JumpToPoint([1228.950]))
+    ActionOverride(Player3, JumpToPoint([1270.1032]))
+    ActionOverride(Player4, JumpToPoint([1200.1088]))
+    ActionOverride(Player5, JumpToPoint([1344.986]))
+    ActionOverride(Player6, JumpToPoint([1306.1126]))
+    ActionOverride(Player1, Face(NW))
+    ActionOverride(Player2, Face(NW))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, Face(NW))
+    ActionOverride(Player5, Face(NW))
+    ActionOverride(Player6, Face(NW))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

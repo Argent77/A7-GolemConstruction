@@ -1,0 +1,23 @@
+// *** Type-specific actions (Magic Golem) ***
+
+IF
+  OR(2)
+    AreaCheck("AR3004")
+    AreaCheck("AR3008")
+THEN
+  RESPONSE #50
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetInterrupt(FALSE)
+    DisplayString(Myself, @11003) // Neutralized by dead magic
+    DestroyItem("a7!fam")
+    Kill(Myself)
+    SetInterrupt(TRUE)
+  RESPONSE #50
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetInterrupt(FALSE)
+    DisplayString(Myself, @11003) // Neutralized by dead magic
+    DestroyItem("a7!fam")
+    ApplySpellRES("a7!in12", Myself)
+    Kill(Myself)
+    SetInterrupt(TRUE)
+END

@@ -1,0 +1,89 @@
+// -*- coding: utf-8 -*- 
+// Iron Golem related strings (index 4000..4999)
+
+@4000 = ~Manual of Golem Building (Vol. 4)~
+@4001 = ~Lesser Iron Golem~
+@4002 = ~Iron Golem~
+@4003 = ~Greater Iron Golem~
+@4004 = ~Perfect Iron Golem~
+@4005 = ~You have learned how to construct iron golems.~
+
+// *** Book content ***
+@4100 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an iron golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golems:
+
+Lesser Iron Golem:
+Min. level: 15 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- One bar of iron
+
+Iron Golem:
+Min. level: 17 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Two bars of iron
+- One scroll of Cloudkill
+
+Greater Iron Golem:
+Min. level: 22 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four bars of iron
+- One scroll of Cloudkill
+
+Perfect Iron Golem:
+Min. level: 22 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four bars of iron
+- One scroll of Cloudkill
+- Chips of cold iron
+
+Requires:
+ 17 Intelligence
+
+Weight: 10~
+
+@4101 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an iron golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+Allows the user to build the following golems:
+
+Lesser Iron Golem:
+Min. level: 15 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- One bar of iron
+
+Iron Golem:
+Min. level: 17 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Two bars of iron
+- One scroll of Cloudkill
+
+Greater Iron Golem:
+Min. level: 22 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four bars of iron
+- One scroll of Cloudkill
+
+Perfect Iron Golem:
+Min. level: 22 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four bars of iron
+- One scroll of Cloudkill
+- Chips of cold iron
+
+Requires:
+ 17 Intelligence
+
+Weight: 1~
+

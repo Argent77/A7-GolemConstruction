@@ -1,0 +1,399 @@
+// *** Functions for internal use ***
+
+/**
+ * Converts any positive decimal number into a hexadecimal number
+ */
+DEFINE_ACTION_FUNCTION TO_HEX_NUMBER
+INT_VAR
+  value     = 0   // any positive decimal number
+  minDigits = 1   // min. number of digits in return value
+RET
+  hexNumber       // returned as string without prefix
+BEGIN
+  ACTION_IF (minDigits < 1) BEGIN OUTER_SET minDigits = 1 END
+  ACTION_IF (minDigits > 8) BEGIN OUTER_SET minDigits = 8 END
+  OUTER_TEXT_SPRINT hexNumber ~~
+  ACTION_DEFINE_ARRAY digit BEGIN ~0~ ~1~ ~2~ ~3~ ~4~ ~5~ ~6~ ~7~ ~8~ ~9~ ~a~ ~b~ ~c~ ~d~ ~e~ ~f~ END
+
+  OUTER_SET remainder = value BAND 0x7fffffff   // no negative numbers allowed
+  OUTER_WHILE (remainder != 0) BEGIN
+    OUTER_SET curDigit = remainder BAND 0xf
+    OUTER_SET remainder = remainder BLSR 4
+    OUTER_TEXT_SPRINT hexDigit $EVAL digit(~%curDigit%~)
+    OUTER_TEXT_SPRINT hexNumber ~%hexDigit%%hexNumber%~
+  END
+
+  OUTER_WHILE (STRING_LENGTH ~%hexNumber%~ < minDigits) BEGIN
+    OUTER_TEXT_SPRINT hexNumber ~0%hexNumber%~
+  END
+END
+
+DEFINE_PATCH_FUNCTION TO_HEX_NUMBER
+INT_VAR
+  value     = 0
+  minDigits = 1
+RET
+  hexNumber
+BEGIN
+  INNER_ACTION BEGIN
+    LAF TO_HEX_NUMBER INT_VAR value = value minDigits = minDigits RET hexNumber END
+  END
+END
+
+
+/**
+ * Converts a hexadecimal number (without prefix) into a positive decimal number
+ */
+DEFINE_ACTION_FUNCTION TO_DEC_NUMBER
+STR_VAR
+  hexValue  = ~~
+RET
+  decNumber   // -1 indicates error
+BEGIN
+  OUTER_SET decNumber = "-1"
+
+  ACTION_IF (~%hexValue%~ STRING_EQUAL ~~) BEGIN
+    OUTER_SET decNumber = 0
+  END ELSE BEGIN
+    OUTER_SET curValue = 0
+    OUTER_SET scale = 1
+    OUTER_SET strlen = STRING_LENGTH ~%hexValue%~
+    OUTER_FOR (idx = strlen - 1; idx >= 0; --idx) BEGIN
+      OUTER_PATCH ~%hexValue%~ BEGIN READ_BYTE idx hexDigit END
+      OUTER_SET hexDigit = hexDigit BAND 0xff
+      ACTION_IF (hexDigit >= 48 AND hexDigit <= 57) BEGIN // 0..9
+        OUTER_SET digit = hexDigit - 48
+      END ELSE ACTION_IF (hexDigit >= 65 AND hexDigit <= 70) BEGIN  // A..F
+        OUTER_SET digit = hexDigit - 55
+      END ELSE ACTION_IF (hexDigit >= 97 AND hexDigit <= 102) BEGIN // a..f
+        OUTER_SET digit = hexDigit - 87
+      END ELSE BEGIN
+        OUTER_SET digit = 0
+      END
+      OUTER_SET curValue += digit*scale
+      OUTER_SET scale = scale BLSL 4
+    END
+    OUTER_SET decNumber = curValue
+  END
+END
+
+DEFINE_PATCH_FUNCTION TO_DEC_NUMBER
+STR_VAR
+  hexValue  = ~~
+RET
+  decNumber
+BEGIN
+  INNER_ACTION BEGIN
+    LAF TO_DEC_NUMBER STR_VAR hexValue = EVAL ~%hexValue%~ RET decNumber END
+  END
+END
+
+
+/**
+ * Returns a non-zero value in "patched" if the game has been patched to v2.0 or higher.
+ */
+DEFINE_ACTION_FUNCTION IS_PATCHED_V2
+RET patched
+BEGIN
+  OUTER_SET patched = (FILE_EXISTS ~engine.lua~ AND FILE_EXISTS_IN_GAME ~wmpflag.ids~) ? 1 : 0
+END
+
+DEFINE_PATCH_FUNCTION IS_PATCHED_V2
+RET patched
+BEGIN
+  INNER_ACTION BEGIN LAF IS_PATCHED_V2 RET patched END END
+END
+
+
+/**
+ * Returns the first free creature animation slot in the range defined by slotMin and slotMax.
+ * INT_VAR slotMin Lowest available creature animation slot for the animation.
+ * INT_VAR slotMax Highest available creature animation slot for the animation.
+ * RET slot        A free animation slot. Returns -1 if none found.
+ */
+DEFINE_ACTION_FUNCTION FIND_FREE_ANIM_SLOT
+INT_VAR
+  slotMin = 0
+  slotMax = (slotMin BAND 0xf000) + 0x1000
+RET
+  slot
+BEGIN
+  OUTER_SET slot = "-1"
+  ACTION_IF (slotMin < 0) BEGIN OUTER_SET slotMin = 0 END
+  ACTION_IF (slotMax < 0) BEGIN OUTER_SET slotMax = 0 END
+  ACTION_IF (slotMax < slotMin) BEGIN
+    OUTER_SET tmp = slotMin
+    OUTER_SET slotMin = slotMax
+    OUTER_SET slotMax = tmp
+  END
+
+  // animslots.txt contains reserved creature animation slots
+  COPY - ~%MOD_FOLDER%/lib/animslots.txt~ ~%MOD_FOLDER%/lib/animslots.txt~
+    READ_ASCII 0 slotList (SOURCE_SIZE)
+    FOR (idx = slotMin; idx < slotMax; ++idx) BEGIN
+      LOOKUP_IDS_SYMBOL_OF_INT name ~animate~ idx
+      PATCH_IF (~%name%~ STRING_EQUAL ~%idx%~) BEGIN
+        LPF TO_HEX_NUMBER INT_VAR value = idx minDigits = 4 RET hexNumber END
+        PATCH_IF (NOT FILE_EXISTS_IN_GAME ~%hexNumber%.ini~ AND 
+                  ~%slotList%~ STRING_CONTAINS_REGEXP ~"%hexNumber%"~ != 0) BEGIN
+          SET slot = idx
+          SET idx = slotMax
+        END
+      END
+    END
+END
+
+DEFINE_PATCH_FUNCTION FIND_FREE_ANIM_SLOT
+INT_VAR
+  slotMin = 0
+  slotMax = (slotMin BAND 0xf000) + 0x1000
+RET
+  slot
+BEGIN
+  INNER_ACTION BEGIN
+    LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = slotMin slotMax = slotMax RET slot END
+  END
+END
+
+
+// Work-around for a buggy WeiDU function
+DEFINE_PATCH_FUNCTION ~ADD_SPELL_EFFECT~
+  INT_VAR opcode = 0
+          target = 0
+          timing = 0
+          parameter1 = 0
+          parameter2 = 0
+          power = 0
+          resist_dispel = 0
+          duration = 0
+          probability1 = 100
+          probability2 = 0
+          dicenumber = 0
+          dicesize = 0
+          savingthrow = 0
+          savebonus = 0
+          header = 0
+          insert_point = "-1"
+          special = 0
+          ___#special = special   // fixed spelling error
+  STR_VAR resource = ~~
+BEGIN
+  LAUNCH_PATCH_MACRO ~ADD_SPELL_EFFECT~
+END 
+
+
+/**
+ * Creates a spell which contains all externalized wild surge effects.
+ * STR_VAR resName    Name of the resulting spell (without extension).
+ * STR_VAR resDefault Name of the default spell when no externalized resource is available or spell is cast successfully.
+ */
+DEFINE_ACTION_FUNCTION CREATE_WILD_SURGE_SPELL
+STR_VAR
+  resName = ~~
+  resDefault = ~~
+BEGIN
+  ACTION_IF (NOT ~%resName%~ STRING_EQUAL ~~) BEGIN
+    // retrieving wild surge resources and strrefs
+    COPY_EXISTING - ~wildmag.2da~ ~override~
+      COUNT_2DA_COLS numCols
+      COUNT_2DA_ROWS numCols numRows
+      PATCH_IF (numRows > 100) BEGIN numRows = 100 END
+      FOR (idx = 0; idx < numRows; ++idx) BEGIN
+        READ_2DA_ENTRY idx 1 numCols res
+        PATCH_IF (NOT ~%res%~ STRING_EQUAL ~*~ AND FILE_EXISTS_IN_GAME ~%res%.spl~) BEGIN
+          TEXT_SPRINT $EVAL resRef(~%idx%~) ~%res%~
+          INNER_ACTION BEGIN
+            // Hack: remove spell name from wild magic SPL resources
+            COPY_EXISTING ~%res%.spl~ ~override~
+              READ_LONG NAME1 name
+              PATCH_IF (name >= 0) BEGIN
+                WRITE_LONG NAME1 "-1"
+              END
+              BUT_ONLY
+          END
+        END ELSE BEGIN
+          TEXT_SPRINT $EVAL resRef(~%idx%~) ~%resDefault%~
+        END
+
+        READ_2DA_ENTRY idx 2 numCols str
+        PATCH_IF (IS_AN_INT ~%str%~) BEGIN
+          SET $EVAL strref(~%idx%~) = str
+        END ELSE BEGIN
+          SET $EVAL strref(~%idx%~) = "-1"
+        END
+      END
+
+    // applying wild surge effects to target spell
+    CREATE SPL ~%resName%~
+      WRITE_SHORT 0x1c 4      // Spell type = innate
+      WRITE_LONG 0x34 1       // Spell level
+      WRITE_LONG 0x64 0x72    // abilities offset
+      WRITE_SHORT 0x68 1      // # abilities
+      WRITE_LONG 0x6a 0x9a    // effects offset
+      INSERT_BYTES 0x72 0x28  // space for ability
+      // creating ability structure
+      WRITE_SHORT 0x72 1      // type = melee
+      WRITE_SHORT 0x74 4      // location = innate
+      WRITE_BYTE 0x7e 1       // target = living creature
+      WRITE_SHORT 0x80 1      // range
+      WRITE_SHORT 0x82 1      // min. level
+      WRITE_SHORT 0x8e 1      // damage type
+      WRITE_SHORT 0x94 1      // # charges
+      WRITE_SHORT 0x98 1      // projectile = none
+
+      FOR (idx = 0; idx < numRows; ++idx) BEGIN
+        TEXT_SPRINT res $EVAL resRef(~%idx%~)
+        SET str = $EVAL strref(~%idx%~)
+        LPF ADD_SPELL_EFFECT
+        INT_VAR
+          opcode = 146      // Cast spell
+          target = 2        // Preset target
+          parameter2 = 1    // Cast instantly (ignore level)
+          timing = 1        // Instant/Permanent until death
+          probability1 = idx
+          probability2 = idx
+        STR_VAR
+          resource = EVAL "%res%"
+        END
+
+        LPF ADD_SPELL_EFFECT
+        INT_VAR
+          opcode = 139      // Display string
+          target = 2        // Preset target
+          parameter1 = str
+          timing = 1        // Instant/Permanent until death
+          probability1 = idx
+          probability2 = idx
+        END
+      END
+  END
+END
+
+
+/**
+ * Adds a new random treasure entry to RNDTRES.2DA. The entry is generated with a specified percentage for the given item.
+ * This function also creates a treasure placeholder item if needed.
+ * INT_VAR chance   The chance of the item to be generated (in percent).
+ * STR_VAR treasure The resource name of the placeholder treasure item without extension
+ * STR_VAR defItem  Default item for the columns not defined by chance.
+ * STR_VAR item     The resource name of the item to generate by the random treasure item.
+ * RET success      Returns non-zero on success and zero on fail.
+ */
+DEFINE_ACTION_FUNCTION DEFINE_RANDOM_TREASURE
+INT_VAR
+  chance    = 100
+STR_VAR
+  treasure  = ~~
+  defItem   = ~A7!EMPTY~
+  item      = ~~
+RET
+  success
+BEGIN
+  LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = chance STR_VAR treasure = EVAL ~%treasure%~ defItem = EVAL ~%defItem%~ item_0 = EVAL ~%item%~ RET success END
+END
+
+
+/**
+ * Adds a new random treasure entry to RNDTRES.2DA. The entry is generated with the specified percentages of the given items.
+ * This function also creates a treasure placeholder item if needed.
+ * INT_VAR chance_x The chance of the associated item to be generated (in percent). x must be a sequential number, starting at 0.
+ *                  Important: The sum of chances must not be greater than 100%.
+ * STR_VAR treasure The resource name of the placeholder treasure item without extension
+ * STR_VAR defItem  Default item for the columns not defined by chance_x.
+ * STR_VAR item_x   The resource names of the items to generate by the random treasure item. x must be a sequential number, starting at 0.
+ * RET success      Returns non-zero on success and zero on fail.
+ */
+DEFINE_ACTION_FUNCTION DEFINE_RANDOM_TREASURE_EX
+INT_VAR
+  // chance_0, chance_1, ...
+STR_VAR
+  treasure  = ~~
+  defItem   = ~A7!EMPTY~
+  // item_0, item_1, ...
+RET
+  success
+BEGIN
+  OUTER_SET success = 0
+  ACTION_IF (FILE_EXISTS_IN_GAME ~rndtres.2da~ AND
+             NOT ~%treasure%~ STRING_EQUAL ~~ AND
+             STRING_LENGTH ~%treasure%~ <= 8) BEGIN
+    // validating input
+    OUTER_SET numItems = 0
+    OUTER_SET failed = 0
+    OUTER_SET sumChance = 0
+    OUTER_FOR (idx = 0; idx < 100; ++idx) BEGIN
+      ACTION_IF (VARIABLE_IS_SET $EVAL chance(~%idx%~) AND VARIABLE_IS_SET $EVAL item(~%idx%~)) BEGIN
+        ACTION_IF (sumChance > 100) BEGIN OUTER_SET failed = 1 OUTER_SET idx = 100 END
+        OUTER_SET valChance = $EVAL chance(~%idx%~)
+        ACTION_IF (valChance < 0) BEGIN OUTER_SET $EVAL chance(~%idx%~) = 0 END
+        ACTION_IF (valChance > 100) BEGIN OUTER_SET $EVAL chance(~%idx%~) = 100 END
+        OUTER_SET sumChance += valChance
+
+        OUTER_TEXT_SPRINT name $EVAL item(~%idx%~)
+        ACTION_IF (~%name%~ STRING_EQUAL ~~ OR STRING_LENGTH ~%name%~ > 8) BEGIN OUTER_SET failed = 1 OUTER_SET idx = 100 END
+      END ELSE BEGIN
+        OUTER_SET numItems = idx
+        OUTER_SET idx = 100
+      END
+    END
+    ACTION_IF (numItems = 0) BEGIN OUTER_SET failed = 1 END
+
+    ACTION_IF (failed = 0) BEGIN
+      COPY_EXISTING ~rndtres.2da~ ~override~
+        COUNT_2DA_COLS numCols
+        COUNT_2DA_ROWS numCols numRows
+
+        // check if entry already exists
+        FOR (idx = 0; idx < numRows; ++idx) BEGIN
+          READ_2DA_ENTRY idx 0 numCols name
+          PATCH_IF (~%name%~ STRING_EQUAL_CASE ~%treasure%~) BEGIN
+            SET failed = 1
+            SET idx = numRows
+          END
+        END
+
+        PATCH_IF (failed = 0) BEGIN
+          // generating entry name
+          TEXT_SPRINT newEntry ~%treasure%~
+          FOR (idx = 9 - (STRING_LENGTH ~%treasure%~); idx > 0; --idx) BEGIN TEXT_SPRINT newEntry ~%newEntry% ~ END
+
+          SET numCols -= 1  // exclude treasure name column
+          SET sumItems = 0
+          FOR (idxItem = 0; idxItem < numItems; ++idxItem) BEGIN
+            // calculating item count
+            SET itmChance = $EVAL chance(~%idxItem%~)
+            TEXT_SPRINT itmName $EVAL item(~%idxItem%~)
+            SET itmCount = (itmChance * numCols) / 100
+            PATCH_IF (itmChance > 0 AND itmCount = 0) BEGIN SET itmCount += 1 END
+            PATCH_IF (itmChance < 100 AND itmCount = numCols) BEGIN SET itmCount -= 1 END
+            SET sumItems += itmCount
+            PATCH_IF (sumItems <= numCols) BEGIN
+              // adding item to entry
+              FOR (col = 0; col < itmCount; ++col) BEGIN
+                TEXT_SPRINT newEntry ~%newEntry%%itmName%~
+                FOR (idx = 9 - (STRING_LENGTH ~%itmName%~); idx > 0; --idx) BEGIN TEXT_SPRINT newEntry ~%newEntry% ~ END
+              END
+            END ELSE BEGIN
+              SET idxItem = numItems
+            END
+          END
+
+          // adding empty items
+          FOR (idx = 9 - (STRING_LENGTH ~%defItem%~); idx > 0; --idx) BEGIN TEXT_SPRINT defItem ~%defItem% ~ END
+          FOR (col = sumItems; col < numCols; ++col) BEGIN
+            TEXT_SPRINT newEntry ~%newEntry%%defItem%~
+          END
+
+          // adding entry to 2DA
+          INSERT_2DA_ROW numRows (numCols + 1) ~%newEntry%~
+        END
+
+      ACTION_IF (failed = 0) BEGIN
+        ACTION_IF (NOT FILE_EXISTS ~%treasure%.itm~ AND FILE_EXISTS_IN_GAME ~rndtre01.itm~) BEGIN
+          COPY_EXISTING ~rndtre01.itm~ ~override/%treasure%.itm~
+        END
+        OUTER_SET success = 1
+      END
+    END
+  END
+END

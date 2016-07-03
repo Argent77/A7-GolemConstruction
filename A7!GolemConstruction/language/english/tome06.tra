@@ -1,0 +1,95 @@
+// -*- coding: utf-8 -*- 
+// Adamantite Golem related strings (index 6000..6999)
+
+@6000 = ~Manual of Golem Building (Vol. 6)~
+@6001 = ~Lesser Adamantite Golem~
+@6002 = ~Adamantite Golem~
+@6003 = ~Greater Adamantite Golem~
+@6004 = ~Perfect Adamantite Golem~
+@6005 = ~You have learned how to construct adamantite golems.~
+
+// *** Book content ***
+@6100 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an adamantite golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golems:
+
+Lesser Adamantite Golem:
+Min. level: 21 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Two bars of adamantine
+- 8,000 XP drained from the caster
+
+Adamantite Golem:
+Min. level: 25 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four bars of adamantine
+- 16,000 XP drained from the caster
+
+Greater Adamantite Golem:
+Min. level: 32 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Eight bars of adamantine
+- 32,000 XP drained from the caster
+
+Perfect Adamantite Golem:
+Min. level: 32 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Eight bars of adamantine
+- One drop of blood from a Solar or Fallen Solar
+- 64,000 XP drained from the caster
+
+Adamantine does not exist naturally. It must be transformed from iron by making use of a very carefully worded Wish or Limited Wish (-Note from author: to be confirmed-). Only very powerful individuals are capable of performing a task like this, hence prices for adamantine are exorbitantly high.
+
+Requires:
+ 18 Intelligence
+
+Weight: 10~
+
+@6101 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an adamantite golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+Allows the user to build the following golems:
+
+Lesser Adamantite Golem:
+Min. level: 21 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Two bars of adamantine
+- 8,000 XP drained from the caster
+
+Adamantite Golem:
+Min. level: 25 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four bars of adamantine
+- 16,000 XP drained from the caster
+
+Greater Adamantite Golem:
+Min. level: 32 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Eight bars of adamantine
+- 32,000 XP drained from the caster
+
+Perfect Adamantite Golem:
+Min. level: 32 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Eight bars of adamantine
+- One drop of blood from a Solar or Fallen Solar
+- 64,000 XP drained from the caster
+
+Adamantine does not exist naturally. It must be transformed from iron by making use of a very carefully worded Wish or Limited Wish (-Note from author: to be confirmed-). Only very powerful individuals are capable of performing a task like this, hence prices for adamantine are exorbitantly high.
+
+Requires:
+ 18 Intelligence
+
+Weight: 1~
+

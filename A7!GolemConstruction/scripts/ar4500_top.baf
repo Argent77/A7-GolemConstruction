@@ -1,0 +1,21 @@
+// *** BG2:EE - Use Pocket Plane as Golem Building Workshop ***
+
+IF
+  Delay(4)
+  !ActuallyInCombat()
+  PartyHasItem("a7!eqm1")
+  PartyHasItem("a7!eqm2")
+  PartyHasItem("a7!eqm3")
+  PartyHasItem("a7!eqm4")
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!PlaneWorkshop", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!PlaneWorkshop", "GLOBAL", 1)
+    TakePartyItem("a7!eqm1")
+    TakePartyItem("a7!eqm2")
+    TakePartyItem("a7!eqm3")
+    TakePartyItem("a7!eqm4")
+    DisplayString(Player1, @40003)  // The equipment purchased from Lazarus Librarius allows you to construct golems in this place.
+    Continue()
+END

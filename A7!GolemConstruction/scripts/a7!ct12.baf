@@ -1,0 +1,29 @@
+// *** Golem construction cutscene (Location: Planar Sphere - Control Room) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([706.642]))
+    ActionOverride(Player2, JumpToPoint([734.752]))
+    ActionOverride(Player3, JumpToPoint([844.680]))
+    ActionOverride(Player4, JumpToPoint([852.788]))
+    ActionOverride(Player5, JumpToPoint([956.692]))
+    ActionOverride(Player6, JumpToPoint([1044.742]))
+    ActionOverride(Player1, Face(NW))
+    ActionOverride(Player2, Face(NW))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, Face(NW))
+    ActionOverride(Player5, Face(NW))
+    ActionOverride(Player6, Face(NW))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

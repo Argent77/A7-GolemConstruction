@@ -1,0 +1,24 @@
+// *** BG2:EE - Neera's Hidden Camp ***
+
+// Triggering Wild Magic Stone Fragment creation 
+IF
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!MagicStone", "MYAREA", 0)
+THEN
+  RESPONSE #25
+    SetGlobal("A7!MagicStone", "MYAREA", 1)
+    ActionOverride("Crate01", CreateItem("a7!wmag", 1, 0, 0))
+    Continue()
+  RESPONSE #25
+    SetGlobal("A7!MagicStone", "MYAREA", 1)
+    ActionOverride("Crate01", CreateItem("a7!wmag", 1, 0, 0))
+    Continue()
+  RESPONSE #25
+    SetGlobal("A7!MagicStone", "MYAREA", 1)
+    ActionOverride("Crate01", CreateItem("a7!wmag", 1, 0, 0))
+    Continue()
+  RESPONSE #25
+    SetGlobal("A7!MagicStone", "MYAREA", 1)
+    ActionOverride("Crate01", CreateItem("a7!wmag", 1, 0, 0))
+    Continue()
+END

@@ -1,0 +1,137 @@
+// -*- coding: utf-8 -*- 
+// Dialogs and misc. strings (index 40000..49999)
+
+// *** Misc. strings ***
+@40000 = ~The laboratory on this level looks well equipped. You can probably use it to construct golems.~
+@40001 = ~The laboratory in this area looks well equipped. You can probably use it to construct golems.~
+@40002 = ~The laboratory on this level looks well equipped. You can probably use it to construct golems.~
+@40003 = ~The equipment purchased from Lazarus Librarius allows you to construct golems in this place.~
+@40004 = ~A small number of unidentifiable pieces of solid matter can be seen floating in the gelatinous and faintly glowing substance. You take a sample for further examination.~
+
+
+// *** Golem Construction dialog ***
+@41000 = ~Select golem type:~
+@41001 = ~Flesh Golem~
+@41002 = ~Clay Golem~
+@41003 = ~Stone Golem~
+@41004 = ~Iron Golem~
+@41005 = ~Mithral Golem~
+@41006 = ~Adamantite Golem~
+@41007 = ~Exotic Golem~
+@41008 = ~After twelve hours of hard work the physical shell of the golem is ready for the final enchantment...~
+@41009 = ~After twenty-four hours of hard work the physical shell of the golem is ready for the final enchantment...~
+@41010 = ~After forty-eight hours of hard work the physical shell of the golem is ready for the final enchantment...~
+@41011 = ~Select golem variant:~
+@41012 = ~Lesser Flesh Golem~
+@41013 = ~Flesh Golem~
+@41014 = ~Greater Flesh Golem~
+@41015 = ~Perfect Flesh Golem~
+@41016 = ~Cancel construction~
+@41017 = ~Select golem variant:~
+@41018 = ~Lesser Clay Golem~
+@41019 = ~Clay Golem~
+@41020 = ~Greater Clay Golem~
+@41021 = ~Perfect Clay Golem~
+@41022 = ~Lesser Stone Golem~
+@41023 = ~Stone Golem~
+@41024 = ~Greater Stone Golem~
+@41025 = ~Perfect Stone Golem~
+@41026 = ~Lesser Iron Golem~
+@41027 = ~Iron Golem~
+@41028 = ~Greater Iron Golem~
+@41029 = ~Perfect Iron Golem~
+@41030 = ~Lesser Mithral Golem~
+@41031 = ~Mithral Golem~
+@41032 = ~Greater Mithral Golem~
+@41033 = ~Perfect Mithral Golem~
+@41034 = ~Lesser Adamantite Golem~
+@41035 = ~Adamantite Golem~
+@41036 = ~Greater Adamantite Golem~
+@41037 = ~Perfect Adamantite Golem~
+@41038 = ~Bone Golem~
+@41039 = ~Brain Golem~
+@41040 = ~Ice Golem~
+@41041 = ~Magic Golem~
+@41042 = ~Lightning Golem~
+@41043 = ~You start with the construction of the golem body...~
+@41044 = ~Maggot Golem~
+@41045 = ~Magic golems can only be constructed in wild magic areas.~
+
+
+// *** Wish Djinni dialog ***
+@41500 = ~I wish for my iron to be turned into adamantine.~
+@41501 = ~I wish for a single piece of iron in my possession to be turned into adamantine.~
+@41502 = ~It is done, master. All your iron has been turned into a single piece of adamantine.~
+@41503 = ~It is done, master. One iron bar in your possession has been turned into adamantine.~
+@41504 = ~Turn all your iron into a single piece of adamantine.~ 
+@41505 = ~Turn a single piece of iron into adamantine.~ 
+@41506 = ~I wish for my iron to be turned into mithral.~
+@41507 = ~I wish for a single piece of my iron to be turned into mithral.~
+@41508 = ~It is done, master. All your iron has been turned into a single piece of mithral.~
+@41509 = ~It is done, master. One iron bar in your possession has been turned into a single piece of mithral.~
+@41510 = ~Turn all your iron into a single piece of mithral.~
+@41511 = ~Turn a single piece of iron into mithral.~
+
+
+// *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
+@42000 = ~May I rent the top floor for a while to construct golems?~
+@42001 = ~Golems, you say? That is quite a task you have set before you.~
+@42002 = ~Hmm, I could rent it to you for a small fee. How about 500 gold, and I'll see to it personally that you are not to be disturbed?~
+@42003 = ~That's a pretty steep fee. How about 250 gold?~
+@42004 = ~It's a deal!~
+@42005 = ~I don't have enough gold.~
+@42006 = ~I have changed my mind. I don't want to rent it now.~
+@42007 = ~Alright. Let me know if you require further assistance.~
+@42008 = ~I could lower the price to 400 gold, but that is my final offer.~
+@42009 = ~You drive a hard bargain, but I won't complain. It's been a pleasure doing business with you.~
+@42010 = ~Alright. It's been a pleasure doing business with you.~
+
+
+// *** ToB - Lazarus Librarus ***
+@42500 = ~Do you have any equipment for sale that can be used for constructing golems?~
+@42501 = ~Hmm... Something like this is usually very hard to come by as there is not much demand for it.~
+@42502 = ~But you are in luck. In my youth I have dabbled in the art of golem building myself, even though it didn't result into anything practical. I am more of a scholar after all.~
+@42503 = ~The equipment is still in my possession, however. I could part with it for the right price. Are 10,000 gold agreeable?~
+@42504 = ~That's pretty expensive. Can't you lower the price a bit?~
+@42505 = ~Yes, they are. Here is your gold.~
+@42506 = ~I can't afford it right now.~
+@42507 = ~I'm not interested.~
+@42508 = ~No, I'm afraid not. It took me years and a lot of effort to acquire all the needed parts. I can't possibly sell it for less.~
+@42509 = ~Alright. Here are your 10,000 gold.~
+@42510 = ~I can probably make an exception since you helped me to acquire my spellbook. How about 6,000 gold? You won't find a better bargain.~
+@42511 = ~Alright. Here are your 6,000 gold.~
+@42512 = ~Perhaps another time.~
+@42513 = ~Thank you. You won't be disappointed. The tools are still in excellent condition.~
+
+
+// *** WK - Caombion Aesgareth ***
+@43000 = ~Excellent. I have access to a Spectral Brand, a scroll of wish and a tome of knowledge, all rather impressive items. And there is the gem as well. What would you wish to play for?~
+@43001 = ~Excellent. I have access to a Spectral Brand, a scroll of wish and a tome of knowledge, all rather impressive items. And there is the gem, of course. What would you wish to play for?~
+@43002 = ~I will play for the tome of knowledge.~
+@43003 = ~You desire the tome of knowledge, and here it is. If you wish to play again, I'd appreciate a chance to gain my freedom, friend.~
+
+
+
+// *** Journal entries ***
+@49000 = ~Golem Construction Workshop~
+
+@49001 = ~Golem Construction Workshop
+
+I was able to rent the second floor of Sorcerous Sundries in Baldur's Gate. I should be able to construct golems in that place.~
+
+@49002 = ~Golem Construction Workshop
+
+The laboratory in the underground complex below the Dwarven dig site looks well equipped for magical experiments. I should be able to construct golems in that place.~
+
+@49003 = ~Golem Construction Workshop
+
+The Planar Sphere has been made to construct golems. I should be able to construct golems in the opening area or the control room of that place.~
+
+@49004 = ~Golem Construction Workshop
+
+The Wizard Libary on the second level of Watcher's Keep looks very well equipped. I should be able to construct golems in that place.~
+
+@49005 = ~Golem Construction Workshop
+
+With the equipment purchased from Lazarus Library I should be able to construct golems in my Pocket Plane.~
+

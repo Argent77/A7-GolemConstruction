@@ -1,0 +1,58 @@
+// -*- coding: utf-8 -*- 
+// Maggot Golem related strings (index 7000..7999)
+
+@7000 = ~Secret Manual of Golem Building (Vol. 1)~
+@7001 = ~Maggot Golem~
+@7002 = ~You have learned how to construct maggot golems.~
+@7003 = ~The golem's substance has been wholly consumed by the maggots and loses its coherence...~
+@7004 = ~The golem's substance has been wholly consumed by the maggots. The increasing frenzy of the insects in search of more food causes you to lose control over the disintegrating golem...~
+
+// *** Book content ***
+@7100 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to construct a maggot golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golem:
+
+Maggot Golem:
+Min. level: 10 (-2 for Conjurerers and Transmuters, +2 for Bards)
+Ingredients:
+- Two maggot-infested bodies
+
+There is a 15% chance that the caster catches a disease from the maggot-infested golem body during creation.
+
+There is a 1% chance that a maggot golem may go berserk during combat for 1d6 rounds and attack the nearest creature in sight.
+
+Requires:
+ 14 Intelligence
+
+Weight: 10~
+
+@7101 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to construct a maggot golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+Allows the user to build the following golem:
+
+Maggot Golem:
+Min. level: 10 (-2 for Conjurerers and Transmuters, +2 for Bards)
+Ingredients:
+- Two maggot-infested bodies
+
+There is a 15% chance that the caster catches a disease from the maggot-infested golem body during creation.
+
+There is a 1% chance that a maggot golem may go berserk during combat for 1d6 rounds and attack the nearest creature in sight.
+
+Requires:
+ 14 Intelligence
+
+Weight: 1~
+

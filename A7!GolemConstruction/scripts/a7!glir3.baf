@@ -1,0 +1,12 @@
+// *** Type-specific actions (Greater Iron Golem) ***
+
+IF
+  Die()
+  Global("dismiss", "LOCALS", 0)
+  RandomNum(2, 1)
+THEN
+  RESPONSE #100
+    CreateVisualEffectObject("ICMAGICH",Myself)
+    CreateCreatureObject("a7!gsir1",Myself,1,0,0)
+    CreateCreatureObject("a7!gsir1",Myself,1,0,0)
+END

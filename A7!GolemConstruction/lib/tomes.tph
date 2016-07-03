@@ -1,0 +1,524 @@
+// *** Installs golem manuals and related resources ***
+
+// Shared resources
+COPY ~%MOD_FOLDER%/items/a7!tome1.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!tome2.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!abil.eff~ ~override~
+
+
+// Flesh Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom01.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @1000 // Manual of Golem Building (Vol. 1)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @1100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@1005)  // You have learned how to construct flesh golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx1.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @1000 // Manual of Golem Building (Vol. 1)
+  SAY UNIDENTIFIED_DESC @1101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom01.eff~ ~override~
+
+
+// Clay Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom02.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @2000 // Manual of Golem Building (Vol. 2)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @2100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@2005)  // You have learned how to construct clay golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx2.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @2000 // Manual of Golem Building (Vol. 2)
+  SAY UNIDENTIFIED_DESC @2101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom02.eff~ ~override~
+
+
+// Stone Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom03.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @3000 // Manual of Golem Building (Vol. 3)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @3100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@3005)  // You have learned how to construct stone golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx3.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @3000 // Manual of Golem Building (Vol. 3)
+  SAY UNIDENTIFIED_DESC @3101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom03.eff~ ~override~
+
+
+// Iron Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom04.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @4000 // Manual of Golem Building (Vol. 4)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @4100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@4005)  // You have learned how to construct iron golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx4.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @4000 // Manual of Golem Building (Vol. 4)
+  SAY UNIDENTIFIED_DESC @4101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom04.eff~ ~override~
+
+
+// Mithral Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom05.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @5000 // Manual of Golem Building (Vol. 5)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @5100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@5005)  // You have learned how to construct mithral golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx5.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @5000 // Manual of Golem Building (Vol. 5)
+  SAY UNIDENTIFIED_DESC @5101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom05.eff~ ~override~
+
+
+// Adamantite Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom06.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @6000 // Manual of Golem Building (Vol. 6)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @6100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@6005)  // You have learned how to construct adamantite golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx6.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @6000 // Manual of Golem Building (Vol. 6)
+  SAY UNIDENTIFIED_DESC @6101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom06.eff~ ~override~
+
+
+// Maggot Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom07.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @7000 // Secret Manual of Golem Building (Vol. 1)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @7100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@7002)  // You have learned how to construct maggot golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx7.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @7000 // Secret Manual of Golem Building (Vol. 1)
+  SAY UNIDENTIFIED_DESC @7101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom07.eff~ ~override~
+
+
+// Bone Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom08.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @8000 // Secret Manual of Golem Building (Vol. 2)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @8100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@8002)  // You have learned how to construct bone golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx8.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @8000 // Secret Manual of Golem Building (Vol. 2)
+  SAY UNIDENTIFIED_DESC @8101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom08.eff~ ~override~
+
+
+// Brain Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom09.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @9000 // Secret Manual of Golem Building (Vol. 3)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @9100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@9002)  // You have learned how to construct brain golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomx9.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @9000 // Secret Manual of Golem Building (Vol. 3)
+  SAY UNIDENTIFIED_DESC @9101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom09.eff~ ~override~
+
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // TODO: add a tome in some well hidden place or make it difficult to obtain
+END
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~ar2400.are~ ~override~
+    // determining target container index
+    SET cont_idx = 0
+    READ_LONG 0x70 ofsCont
+    READ_SHORT 0x74 numCont
+    FOR (idx = 0; idx < numCont; ++idx) BEGIN
+      SET curOfs = ofsCont + (idx * 0xc0)
+      READ_ASCII (curOfs + 0x00) name ( 32 ) NULL
+      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~amp~) BEGIN
+        SET cont_idx = idx
+        SET idx = numCont
+      END
+    END
+    // adding tome to container
+    LPF fj_are_structure
+    INT_VAR
+      fj_con_itm_idx    = cont_idx
+    STR_VAR
+      fj_structure_type = "itm"
+      fj_name           = "a7!tom09"
+    END
+
+  // Special mindflayer in WK/Level 4
+  COPY_EXISTING ~gormind.cre~ ~override~
+    ADD_CRE_ITEM ~a7!tom09~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+
+// Ice Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom0a.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @10000 // Secret Manual of Golem Building (Vol. 4)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @10100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@10002)  // You have learned how to construct ice golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomxa.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @10000 // Secret Manual of Golem Building (Vol. 4)
+  SAY UNIDENTIFIED_DESC @10101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom0a.eff~ ~override~
+
+
+// Magic Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom0b.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @11000 // Secret Manual of Golem Building (Vol. 5)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @11100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@11002)  // You have learned how to construct magic golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomxb.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @11000 // Secret Manual of Golem Building (Vol. 5)
+  SAY UNIDENTIFIED_DESC @11101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom0b.eff~ ~override~
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // You can win a tome from Aesgareth in WK
+  COMPILE ~%MOD_FOLDER%/dialogs/gorcamb.d~
+
+  // You can loot a tome from Aesgareth's body
+  COPY_EXISTING ~gorcamb.cre~ ~override~
+    ADD_CRE_ITEM ~a7!tom0b~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+
+// Lightning Golem Manual
+COPY ~%MOD_FOLDER%/items/a7!tom0c.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @12000 // Secret Manual of Golem Building (Vol. 6)
+  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+  SAY IDENTIFIED_DESC @12100 // This amazing tome contains theoretical musings on the construction and control of golems.
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 1     // Self
+    parameter1 = RESOLVE_STR_REF(@12002)  // You have learned how to construct lightning golems.
+    timing = 9      // Instant/Permanent
+    resist_dispel = 0
+  END
+
+COPY ~%MOD_FOLDER%/items/a7!tomxc.itm~ ~override~
+  SAY NAME1 @100000 // Manual
+  SAY NAME2 @12000 // Secret Manual of Golem Building (Vol. 6)
+  SAY UNIDENTIFIED_DESC @12101 // This amazing tome contains theoretical musings on the construction and control of golems.
+
+COPY ~%MOD_FOLDER%/items/a7!tom0c.eff~ ~override~
+

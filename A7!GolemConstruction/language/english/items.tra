@@ -1,0 +1,86 @@
+// -*- coding: utf-8 -*- 
+// Item-related strings (index 30000..39999)
+
+@30000 = ~Body Parts~
+@30001 = ~This is a collection of various humanoid body parts. They are magically preserved to prevent the natural decay process.
+
+STATISTICS:
+
+Weight: 10~
+
+@30010 = ~Clay Block~
+@30011 = ~This is a block of high quality clay. It is commonly used by artists, or wizards to create magical constructs of average power.
+
+STATISTICS:
+
+Weight: 15~
+
+@30020 = ~Stone Block~
+@30021 = ~This solid block of stone consists of high quality granite mixed with small quantities of various minerals which gives the block a slightly greenish color. It is hightly sought by artists or wizards for building magical constructs.
+
+STATISTICS:
+
+Weight: 25~
+
+@30030 = ~Iron Bar~
+@30031 = ~This bar of iron is of very high quality which makes it suitable for constructing enchanted weapons or magical constructs.
+
+STATISTICS:
+
+Weight: 20~
+
+@30040 = ~Adamantine Bar~
+@30041 = ~It is very rare to see adamantine in its raw form, even rarer to possess a solid bar of such high quality. Adamantine can be used to construct enchanted items of exceptional quality or powerful magical constructs.
+
+STATISTICS:
+
+Weight: 20~
+
+@30050 = ~Pile of Bones~
+@30051 = ~This is a loose collection of humanoid bones. Bones are a popular ingredient used by alchemists, necromancers or transmuters in their experiments.
+
+STATISTICS:
+
+Weight: 5~
+
+@30060 = ~Brain Tissue~
+@30061 = ~This squishy brain matter appears to be magically preserved to prevent the natural decay process. It is used by the illithids to create brain golems.
+
+STATISTICS:
+
+Weight: 3~
+
+@30070 = ~Shard of Magical Ice~
+@30071 = ~This highly translucent shard of ice is unusually heavy and highly resistant to physical damage as well as high temperatures. It can be used to create enchanted artifacts of great power or magical constructs.
+
+STATISTICS:
+
+Weight: 15~
+
+@30080 = ~Wild Magic Stone Fragment~
+@30081 = ~This plain-looking stone fragment has been exposed to wild magic for centuries or millennia. Over time it absorbed a substantial portion of wild magic which makes working with it nearly impossible, or unpredictable at best. Still, it is highly sought by mages because of its unique properties.
+
+STATISTICS:
+
+Weight: 5~
+
+@30090 = ~Maggot-infested Body~
+@30091 = ~This body is already in an advanced state of decay and crawling with countless bugs and maggots. The emanating stench is unbearable.
+
+STATISTICS:
+
+Weight: 10~
+
+@30100 = ~Chunk of Mithral~
+@30101 = ~Mithral is a rare and valuable metal that can be mined in mountain ranges in certain areas of Faerûn and in the Underdark. To produce pure mithral the ore has to undergo a complex smelting process in pure magic fire. Mithral is light and sturdy, and can be used to construct enchanted items of high quality.
+
+STATISTICS:
+
+Weight: 15~
+
+@30110 = ~Piece of machinery~
+@30111 = ~This piece of machinery is part of equipment for constructing golems.
+
+STATISTICS:
+
+Weight: 25~

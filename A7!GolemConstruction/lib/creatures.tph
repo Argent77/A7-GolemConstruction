@@ -1,0 +1,762 @@
+// *** Installs creature-related resources ***
+
+// Miniature Clay Golem animation
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_mini~ ~.+\.bam~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
+// IWD Iron Golem animation
+APPEND ~animate.ids~ ~0xE250 GOLEM_IRON_IWD~ UNLESS ~0xE250[ %TAB%]+GOLEM_IRON_IWD~
+CLEAR_IDS_MAP
+
+ACTION_IF (NOT FILE_EXISTS_IN_GAME ~e250.ini~) BEGIN
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd/e250.ini~ ~override~
+END
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd~ ~.+\.bam~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/shared~ ~.+\.wav~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
+// IWD Miniature Iron Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+ACTION_IF (slot > 0) BEGIN
+  OUTER_SET slot_golem_iron_iwd_mini = slot
+END ELSE BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_IRON_IWD_MINI~ UNLESS ~A7!GOLEM_IRON_IWD_MINI~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini/exxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini~ ~.+\.bam~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
+// Miniature Iron Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7000 slotMax = 0x7fff RET slot END
+ACTION_IF (slot > 0) BEGIN
+  OUTER_SET slot_golem_iron_mini = slot
+END ELSE BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_IRON_MINI~ UNLESS ~A7!GOLEM_IRON_MINI~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_mini/7xxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_mini~ ~.+\.bam~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
+// Lightning Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7000 slotMax = 0x7fff RET slot END
+ACTION_IF (slot > 0) BEGIN
+  OUTER_SET slot_golem_lightning = slot
+END ELSE BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_LIGHTNING~ UNLESS ~A7!GOLEM_LIGHTNING~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_lightning/7xxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_lightning~ ~.+\.bmp~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
+// Maggot Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7000 slotMax = 0x7fff RET slot END
+ACTION_IF (slot > 0) BEGIN
+  OUTER_SET slot_golem_maggot = slot
+END ELSE BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_MAGGOT~ UNLESS ~A7!GOLEM_MAGGOT~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_maggot/7xxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_maggot~ ~.+\.bmp~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
+
+// Flesh Golems
+COPY ~%MOD_FOLDER%/creatures/a7!glfl1.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsfl1.cre~ ~override~
+  SAY NAME1 @1001 // Lesser Flesh Golem
+  SAY NAME2 @1001 // Lesser Flesh Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glfl2.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsfl2.cre~ ~override~
+  SAY NAME1 @1002 // Flesh Golem
+  SAY NAME2 @1002 // Flesh Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glfl3.cre~ ~override~
+  SAY NAME1 @1003 // Greater Flesh Golem
+  SAY NAME2 @1003 // Greater Flesh Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (6)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glfl4.cre~ ~override~
+  SAY NAME1 @1004 // Perfect Flesh Golem
+  SAY NAME2 @1004 // Perfect Flesh Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (9)
+
+
+// Clay Golems
+COPY ~%MOD_FOLDER%/creatures/a7!glcl1.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gscl1.cre~ ~override~
+  SAY NAME1 @2001 // Lesser Clay Golem
+  SAY NAME2 @2001 // Lesser Clay Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glcl2.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gscl2.cre~ ~override~
+  SAY NAME1 @2002 // Clay Golem
+  SAY NAME2 @2002 // Clay Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (3)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glcl3.cre~ ~override~
+  SAY NAME1 @2003 // Greater Clay Golem
+  SAY NAME2 @2003 // Greater Clay Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (6)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glcl4.cre~ ~override~
+  SAY NAME1 @2004 // Perfect Clay Golem
+  SAY NAME2 @2004 // Perfect Clay Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (9)
+
+
+// Stone Golems
+COPY ~%MOD_FOLDER%/creatures/a7!glst1.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsst1.cre~ ~override~
+  SAY NAME1 @3001 // Lesser Stone Golem
+  SAY NAME2 @3001 // Lesser Stone Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glst2.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsst2.cre~ ~override~
+  SAY NAME1 @3002 // Stone Golem
+  SAY NAME2 @3002 // Stone Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (3)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glst3.cre~ ~override~
+  SAY NAME1 @3003 // Greater Stone Golem
+  SAY NAME2 @3003 // Greater Stone Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (6)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glst4.cre~ ~override~
+  SAY NAME1 @3004 // Perfect Stone Golem
+  SAY NAME2 @3004 // Perfect Stone Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (9)
+
+
+// Iron Golems
+COPY ~%MOD_FOLDER%/creatures/a7!glir1.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsir1.cre~ ~override~
+  SAY NAME1 @4001 // Lesser Iron Golem
+  SAY NAME2 @4001 // Lesser Iron Golem
+  WRITE_LONG 0x28 slot_golem_iron_iwd_mini
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glir2.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsir2.cre~ ~override~
+  SAY NAME1 @4002 // Iron Golem
+  SAY NAME2 @4002 // Iron Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (6)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glir3.cre~ ~override~
+  SAY NAME1 @4003 // Greater Iron Golem
+  SAY NAME2 @4003 // Greater Iron Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (9)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glir4.cre~ ~override~
+  SAY NAME1 @4004 // Perfect Iron Golem
+  SAY NAME2 @4004 // Perfect Iron Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (12)
+
+
+// Mithral Golems
+COPY ~%MOD_FOLDER%/creatures/a7!glmi1.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsmi1.cre~ ~override~
+  SAY NAME1 @5001 // Lesser Mithral Golem
+  SAY NAME2 @5001 // Lesser Mithral Golem
+  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glmi2.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsmi2.cre~ ~override~
+  SAY NAME1 @5002 // Mithral Golem
+  SAY NAME2 @5002 // Mithral Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glmi3.cre~ ~override~
+  SAY NAME1 @5003 // Greater Mithral Golem
+  SAY NAME2 @5003 // Greater Mithral Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glmi4.cre~ ~override~
+  SAY NAME1 @5004 // Perfect Mithral Golem
+  SAY NAME2 @5004 // Perfect Mithral Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (3)
+
+
+// Adamantite Golems
+COPY ~%MOD_FOLDER%/creatures/a7!glad1.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsad1.cre~ ~override~
+  SAY NAME1 @6001 // Lesser Adamantite Golem
+  SAY NAME2 @6001 // Lesser Adamantite Golem
+  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!glad2.cre~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!gsad2.cre~ ~override~
+  SAY NAME1 @6002 // Adamantite Golem
+  SAY NAME2 @6002 // Adamantite Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (3)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glad3.cre~ ~override~
+  SAY NAME1 @6003 // Greater Adamantite Golem
+  SAY NAME2 @6003 // Greater Adamantite Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (5)
+
+COPY ~%MOD_FOLDER%/creatures/a7!glad4.cre~ ~override~
+  SAY NAME1 @6004 // Perfect Adamantite Golem
+  SAY NAME2 @6004 // Perfect Adamantite Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (8)
+
+
+// Maggot Golem
+COPY ~%MOD_FOLDER%/creatures/a7!glmg.cre~ ~override~
+  SAY NAME1 @7001 // Maggot Golem
+  SAY NAME2 @7001 // Maggot Golem
+  WRITE_LONG 0x28 slot_golem_maggot
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/graphics/a7!glmg1.bam~ ~override~
+     ~%MOD_FOLDER%/graphics/a7!glmg1.vvc~ ~override~
+
+
+// Bone Golem
+COPY ~%MOD_FOLDER%/creatures/a7!glbo.cre~ ~override~
+  SAY NAME1 @8001 // Bone Golem
+  SAY NAME2 @8001 // Bone Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+
+
+// Brain Golem
+COPY ~%MOD_FOLDER%/creatures/a7!glbr.cre~ ~override~
+  SAY NAME1 @9001 // Brain Golem
+  SAY NAME2 @9001 // Brain Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in09~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in09~ #0 ~innate~ (3)
+
+
+// Ice Golem
+COPY ~%MOD_FOLDER%/creatures/a7!glic.cre~ ~override~
+  SAY NAME1 @10001 // Ice Golem
+  SAY NAME2 @10001 // Ice Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in10~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in10~ #0 ~innate~ (3)
+
+
+// Magic Golem
+COPY ~%MOD_FOLDER%/creatures/a7!glma.cre~ ~override~
+  SAY NAME1 @11001 // Magic Golem
+  SAY NAME2 @11001 // Brain Golem
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in11~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in11~ #0 ~innate~
+
+
+// Lightning Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gllt.cre~ ~override~
+  SAY NAME1 @12001 // Lightning Golem
+  SAY NAME2 @12001 // Lightning Golem
+  WRITE_LONG 0x28 slot_golem_lightning
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in07~ #0 ~innate~ (3)
+
+
+COPY ~%MOD_FOLDER%/items/a7!fam.itm~ ~override~
+
+COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
+        ~%MOD_FOLDER%/scripts/a7!gsdef.baf~
+        ~%MOD_FOLDER%/scripts/a7!glfl3.baf~
+        ~%MOD_FOLDER%/scripts/a7!glfl4.baf~
+        ~%MOD_FOLDER%/scripts/a7!glcl3.baf~
+        ~%MOD_FOLDER%/scripts/a7!glcl4.baf~
+        ~%MOD_FOLDER%/scripts/a7!glst3.baf~
+        ~%MOD_FOLDER%/scripts/a7!glst4.baf~
+        ~%MOD_FOLDER%/scripts/a7!glir3.baf~
+        ~%MOD_FOLDER%/scripts/a7!glir4.baf~
+        ~%MOD_FOLDER%/scripts/a7!glmi3.baf~
+        ~%MOD_FOLDER%/scripts/a7!glmi4.baf~
+        ~%MOD_FOLDER%/scripts/a7!glad3.baf~
+        ~%MOD_FOLDER%/scripts/a7!glad4.baf~
+        ~%MOD_FOLDER%/scripts/a7!glma.baf~
+        ~%MOD_FOLDER%/scripts/a7!glmg.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct01.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct02.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct03.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct10.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct11.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct12.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct13.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct14.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct15.baf~
+
+
+// Adding random treasure tables for clay golems
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDCL1" item = "A7!CLAY" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 30 STR_VAR treasure = "A7!RDCL2" item = "A7!CLAY" END
+ACTION_IF (GAME_IS ~bgee~) BEGIN
+  COPY_EXISTING ~a7!glcl1.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~a7!glcl2.cre~ ~override~
+                ~a7!glcl3.cre~ ~override~
+                ~a7!glcl4.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~igolfle1.cre~ ~override~
+                ~igolfle2.cre~ ~override~
+                ~igolfle3.cre~ ~override~
+                ~igolfle4.cre~ ~override~
+                ~a7!glcl1.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~clgol01.cre~ ~override~
+                ~golcla01.cre~ ~override~
+                ~kpgol02.cre~ ~override~
+                ~ppiron.cre~ ~override~
+                ~a7!glcl2.cre~ ~override~
+                ~a7!glcl3.cre~ ~override~
+                ~a7!glcl4.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for stone golems
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDST1" item = "A7!STON" END
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDST2" item = "A7!STON" END
+  COPY_EXISTING ~bdgolsto.cre~ ~override~
+                ~bdmengo.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~bdpetsg.cre~ ~override~
+                ~bdpetsg2.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdst2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  ACTION_IF (GAME_IS ~bgee~) BEGIN
+    COPY_EXISTING ~a7!glmi2.cre~ ~override~
+                  ~a7!glmi3.cre~ ~override~
+                  ~a7!glmi4.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+  END
+END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~dstone1.cre~ ~override~
+                ~golsto01.cre~ ~override~
+                ~jugjug01.cre~ ~override~
+                ~kpgol03.cre~ ~override~
+                ~kpgol05.cre~ ~override~
+                ~stgol01.cre~ ~override~
+                ~a7!glmi2.cre~ ~override~
+                ~a7!glmi3.cre~ ~override~
+                ~a7!glmi4.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for iron golems
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDIR1" item = "A7!IRON" END
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 40 STR_VAR treasure = "A7!RDIR2" item = "A7!IRON" END
+  COPY_EXISTING ~a7!glmi1.cre~ ~override~
+
+  COPY_EXISTING ~goliro01.cre~ ~override~
+                ~kpgol04.cre~ ~override~
+                ~a7!glir2.cre~ ~override~
+                ~a7!glir3.cre~ ~override~
+                ~a7!glir4.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for mithral golems
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDMI1" item = "A7!MITH" END
+  COPY_EXISTING ~a7!glmi1.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~a7!glmi2.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~a7!glmi3.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdmi1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~a7!glmi4.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdmi1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdmi1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for adamantite golems
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDAD1" item = "A7!ADAM" END
+  COPY_EXISTING ~a7!glad1.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~golada01.cre~ ~override~
+                ~a7!glad2.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~a7!glad3.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdad1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~a7!glad4.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdad1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdad1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for bone golems and skeleton warriors
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 35 STR_VAR treasure = "A7!RDBO1" item = "A7!BONE" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 5 STR_VAR treasure = "A7!RDBO2" item = "A7!BONE" END
+ACTION_IF (GAME_IS ~bgee~) BEGIN
+  COPY_EXISTING ~skelwa.cre~ ~override~
+                ~skelwa02.cre~ ~override~
+                ~skelwa03.cre~ ~override~
+                ~bdskgr08.cre~ ~override~
+                ~a7!glbo.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbo1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+ACTION_IF (GAME_IS ~eet~) BEGIN
+  COPY_EXISTING ~bdskgr08.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbo1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~icbone01.cre~ ~override~
+                ~ar18skel.cre~ ~override~
+                ~ceskel01.cre~ ~override~
+                ~firmon02.cre~ ~override~
+                ~golbon01.cre~ ~override~
+                ~grskel1.cre~ ~override~
+                ~grskel2.cre~ ~override~
+                ~grtomb01.cre~ ~override~
+                ~hgskl04.cre~ ~override~
+                ~nevm2.cre~ ~override~
+                ~riftcr02.cre~ ~override~
+                ~rskel02.cre~ ~override~
+                ~sahskel.cre~ ~override~
+                ~skelwa.cre~ ~override~
+                ~skelwa01.cre~ ~override~
+                ~skelwa02.cre~ ~override~
+                ~skelwa02.cre~ ~override~
+                ~skelwa03.cre~ ~override~
+                ~suundead.cre~ ~override~
+                ~tanskw1.cre~ ~override~
+                ~a7!glbo.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbo1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for brain golems
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDBR1" item = "A7!BRIN" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBR2" item = "A7!BRIN" END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~udgolem.cre~ ~override~
+                ~golbra01.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdic2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~a7!glbr.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdic1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for ice golems
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDIC1" item = "A7!ICE" END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~golice01.cre~ ~override~
+                ~gorgoli.cre~ ~override~
+                ~a7!glic.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdic1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for flesh and maggot golems
+LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 25 chance_1 = 15 STR_VAR treasure = "A7!RDBD1" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
+LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 50 chance_1 = 10 STR_VAR treasure = "A7!RDBD2" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBD3" item = "A7!BODY" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 50 STR_VAR treasure = "A7!RDBD4" item = "A7!BODY" END
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  COPY_EXISTING ~bddead01.cre~ ~override~
+                ~bdghast.cre~ ~override~
+                ~bdjunia2.cre~ ~override~
+                ~ghast.cre~ ~override~
+                ~ghastd.cre~ ~override~
+                ~ghoul.cre~ ~override~
+                ~zombie.cre~ ~override~
+                ~zombie_a.cre~ ~override~
+                ~zombie_b.cre~ ~override~
+                ~zombie_c.cre~ ~override~
+                ~zombie_d.cre~ ~override~
+                ~zombie_e.cre~ ~override~
+                ~zombiew.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbd1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~bdghastg.cre~ ~override~
+                ~ghoullor.cre~ ~override~
+                ~grael.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbd2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~bdmumm01.CRE~ ~override~
+    ADD_CRE_ITEM ~a7!rdbd4~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  ACTION_IF (GAME_IS ~bgee~) BEGIN
+    COPY_EXISTING ~a7!glfl2.cre~ ~override~
+                  ~a7!glfl3.cre~ ~override~
+                  ~a7!glfl4.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdbd3~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+  END
+END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~bhghoul1.cre~ ~override~
+                ~bhghoul2.cre~ ~override~
+                ~bhghoul3.cre~ ~override~
+                ~bhghoul4.cre~ ~override~
+                ~bhghoul5.cre~ ~override~
+                ~ghast01.cre~ ~override~
+                ~ghastf01.cre~ ~override~
+                ~ghoul01.cre~ ~override~
+                ~grreven.cre~ ~override~
+                ~gtcit1.cre~ ~override~
+                ~gtcit2.cre~ ~override~
+                ~gtcit3.cre~ ~override~
+                ~gtcit4.cre~ ~override~
+                ~gtcit5.cre~ ~override~
+                ~lacedo01.cre~ ~override~
+                ~rzomb01.cre~ ~override~
+                ~sahlace.cre~ ~override~
+                ~sahzomb.cre~ ~override~
+                ~xghast1.cre~ ~override~
+                ~xghast2.cre~ ~override~
+                ~zombie01.cre~ ~override~
+                ~zombju01.cre~ ~override~
+                ~zombse01.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbd1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~ghogr01.cre~ ~override~
+                ~gholor01.cre~ ~override~
+                ~lacedo02.cre~ ~override~
+                ~nevm3.cre~ ~override~
+                ~nevm5.cre~ ~override~
+                ~riftcr01.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbd2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+    COPY_EXISTING ~a7!glfl2.cre~ ~override~
+                  ~a7!glfl3.cre~ ~override~
+                  ~a7!glfl4.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbd3~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+
+  COPY_EXISTING ~gorlic01.cre~ ~override~
+                ~hlshang.cre~ ~override~
+                ~lich01.cre~ ~override~
+                ~lichel01.cre~ ~override~
+                ~mumgre01.cre~ ~override~
+                ~mummy.cre~ ~override~
+                ~mummy01.cre~ ~override~
+                ~ohhgmum.cre~ ~override~
+                ~ohhmummy.cre~ ~override~
+                ~riftcr03.cre~ ~override~
+                ~sendark.cre~ ~override~
+                ~senlich.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbd4~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END

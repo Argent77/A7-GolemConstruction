@@ -1,0 +1,14 @@
+// *** BG2:EE - Use WK Wizard Library on second level as Golem Building Workshop ***
+
+IF
+  !ActuallyInCombat()
+  Global("A7!WKWorkshop", "GLOBAL", 0)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Dead("GorChr")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!WKWorkshop", "GLOBAL", 1)
+    DisplayString(Player1, @40002)  // The laboratory on this level looks well equipped. You can probably use it to construct golems.
+    AddJournalEntry(@49004, QUEST)  // Golem Construction Workshop
+    Continue()
+END

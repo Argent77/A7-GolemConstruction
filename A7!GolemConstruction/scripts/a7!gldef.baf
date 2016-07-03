@@ -1,0 +1,100 @@
+// *** Default golem script for all types ***
+
+// Battle of mind to gain control over golem
+// There is a 4% chance of the golem to turn hostile for 1d4 rounds
+IF
+  Global("init", "LOCALS", 0)
+THEN
+  RESPONSE #96
+    FaceObject(LastSummonerOf(Myself))
+    ApplySpellRES("A7!SUM1", Myself)
+    Wait(7)
+    PlaySound("EFF_M72C")
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, FAMILIAR)
+    AddFamiliar()
+    SetGlobal("init", "LOCALS", 2)
+  RESPONSE #1
+    FaceObject(LastSummonerOf(Myself))
+    ApplySpellRES("A7!SUM1", Myself)
+    Wait(7)
+    PlaySound("EFF_M72D")
+    Enemy()
+    SetGlobalTimer("GainControlTimer", "LOCALS", ONE_ROUND)
+    SetGlobal("init", "LOCALS", 1)
+  RESPONSE #1
+    FaceObject(LastSummonerOf(Myself))
+    ApplySpellRES("A7!SUM1", Myself)
+    Wait(7)
+    PlaySound("EFF_M72D")
+    Enemy()
+    SetGlobalTimer("GainControlTimer", "LOCALS", TWO_ROUNDS)
+    SetGlobal("init", "LOCALS", 1)
+  RESPONSE #1
+    FaceObject(LastSummonerOf(Myself))
+    ApplySpellRES("A7!SUM1", Myself)
+    Wait(7)
+    PlaySound("EFF_M72D")
+    Enemy()
+    SetGlobalTimer("GainControlTimer", "LOCALS", THREE_ROUNDS)
+    SetGlobal("init", "LOCALS", 1)
+  RESPONSE #1
+    FaceObject(LastSummonerOf(Myself))
+    ApplySpellRES("A7!SUM1", Myself)
+    Wait(7)
+    PlaySound("EFF_M72D")
+    Enemy()
+    SetGlobalTimer("GainControlTimer", "LOCALS", FOUR_ROUNDS)
+    SetGlobal("init", "LOCALS", 1)
+END
+
+// Gain control over golem
+IF
+  Global("init", "LOCALS", 1)
+  GlobalTimerExpired("GainControlTimer", "LOCALS")
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, FAMILIAR)
+    AddFamiliar()
+    SetGlobal("init", "LOCALS", 2)
+END
+
+// Dismiss Golem has been triggered
+IF
+  Global("dismiss", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetInterrupt(FALSE)
+    DisplayString(Myself, @20002) // Dismissed
+    DestroyItem("a7!fam")
+    Kill(Myself)
+    SetInterrupt(TRUE)
+END
+
+
+// Default actions when golem turned hostile
+IF
+  Allegiance(Myself, ENEMY)
+  See(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself, ENEMY)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself, ENEMY)
+  See([ANYONE])
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
