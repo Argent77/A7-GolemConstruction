@@ -2,11 +2,7 @@
 // Dialogs and misc. strings (index 40000..49999)
 
 // *** Misc. strings ***
-@40000 = ~The laboratory on this level looks well equipped. You can probably use it to construct golems.~
-@40001 = ~The laboratory in this area looks well equipped. You can probably use it to construct golems.~
-@40002 = ~The laboratory on this level looks well equipped. You can probably use it to construct golems.~
-@40003 = ~The equipment purchased from Lazarus Librarius allows you to construct golems in this place.~
-@40004 = ~A small number of unidentifiable pieces of solid matter can be seen floating in the gelatinous and faintly glowing substance. You take a sample for further examination.~
+// @40000 = ~~
 
 
 // *** Golem Construction dialog ***
@@ -110,6 +106,12 @@
 @43002 = ~I will play for the tome of knowledge.~
 @43003 = ~You desire the tome of knowledge, and here it is. If you wish to play again, I'd appreciate a chance to gain my freedom, friend.~
 
+
+// *** Pocket Plane - Cespenar ***
+@43500 = ~Huh? What gots we here? Dirty magazine? Oh... just tome of golem building.~
+@43501 = ~You needs all pages for bookbinding job, however. Come back later when you found second part.~
+@43502 = ~Yous got all pages, so I will make book whole again. But I needs 5,000 gold for bookbinding job. You wants?~
+@43503 = ~OK, Cespenar keeps looking.~
 
 
 // *** Journal entries ***

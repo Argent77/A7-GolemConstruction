@@ -172,22 +172,11 @@ END
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~ar3021.are~ ~override~
-    // determining target container index
-    SET cont_idx = 0
-    READ_LONG 0x70 ofsCont
-    READ_SHORT 0x74 numCont
-    FOR (idx = 0; idx < numCont; ++idx) BEGIN
-      SET curOfs = ofsCont + (idx * 0xc0)
-      READ_ASCII (curOfs + 0x00) name ( 32 ) NULL
-      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~Container 3~) BEGIN
-        SET cont_idx = idx
-        SET idx = numCont
-      END
-    END
     // adding items to container
+    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 0 STR_VAR name = ~Container 3~ RET index END
     LPF fj_are_structure
     INT_VAR
-      fj_con_itm_idx    = cont_idx
+      fj_con_itm_idx    = index
       fj_charge0        = 2
     STR_VAR
       fj_structure_type = "itm"

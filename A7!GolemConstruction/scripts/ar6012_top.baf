@@ -1,0 +1,24 @@
+// *** Abazigal's Lair - Bone Fiend Room ***
+
+// Put tome into shelf
+IF
+  !Global("A7!TomeGolemBone", "GLOBAL", 1)
+  !PartyHasItem("a7!tom08")
+  Global("A7!TomeAdded", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded", "MYAREA", 1)
+    ActionOverride("Container1", CreateItem("a7!tom08", 0, 0, 0))
+    Continue()
+END
+
+IF
+  OR(2)
+    Global("A7!TomeGolemBone", "GLOBAL", 1)
+    PartyHasItem("a7!tom08")
+  Global("A7!TomeAdded", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded", "MYAREA", 1)
+    Continue()
+END

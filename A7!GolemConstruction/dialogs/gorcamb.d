@@ -1,6 +1,5 @@
 // *** WK: Aesgareth on Level 3 ***
 
-// TODO: Remove these command if necessary
 REPLACE_SAY ~gorcamb~ 31 @43000 /* Excellent. I have access to a Spectral Brand, a scroll of wish and a tome of knowledge, all rather impressive items. And there is the gem as well. What would you wish to play for? */
 REPLACE_SAY ~gorcamb~ 65 @43001 /* Excellent. I have access to a Spectral Brand, a scroll of wish and a tome of knowledge, all rather impressive items. And there is the gem, of course. What would you wish to play for? */
 

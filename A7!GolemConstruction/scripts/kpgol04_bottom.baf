@@ -1,0 +1,9 @@
+// *** de'Arnise Keep - Iron Golem ***
+
+IF
+  PartyHasItem("a7!tom03")
+  Allegiance(Myself, NEUTRAL)
+THEN
+  RESPONSE #100
+    Enemy()
+END

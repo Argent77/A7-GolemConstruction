@@ -157,7 +157,7 @@ END
 
 
 // Work-around for a buggy WeiDU function
-DEFINE_PATCH_FUNCTION ~ADD_SPELL_EFFECT~
+DEFINE_PATCH_FUNCTION ADD_SPELL_EFFECT
   INT_VAR opcode = 0
           target = 0
           timing = 0
@@ -397,3 +397,104 @@ BEGIN
     END
   END
 END
+
+
+/**
+ * Attempts to determine the index of an ARE actor structure.
+ * INT_VAR defaultIndex Returned if no actor matches the specified name.
+ * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching actor to be returned. (Default: 0)
+ * STR_VAR name         Name of actor to find.
+ * RET index            The actor index if found, or defaultIndex if not found.
+ */
+DEFINE_PATCH_FUNCTION ARE_INDEX_OF_ACTOR
+INT_VAR
+  defaultIndex = "-1"
+  skip = 0
+STR_VAR
+  name = ~~
+RET
+  index
+BEGIN
+  SET index = defaultIndex
+  READ_LONG 0x54 ofsActors
+  READ_SHORT 0x58 numActors
+  FOR (idx = 0; idx < numActors; ++idx) BEGIN
+    SET curOfs = ofsActors + (idx * 0x110)
+    READ_ASCII curOfs curName ( 32 ) NULL
+    PATCH_IF (~%curName%~ STRING_EQUAL_CASE ~%name%~) BEGIN
+      PATCH_IF (skip <= 0) BEGIN
+        SET index = idx
+        SET idx = numActors
+      END ELSE BEGIN
+        SET skip -= 1
+      END
+    END
+  END
+END
+
+/**
+ * Attempts to determine the index of an ARE region structure.
+ * INT_VAR defaultIndex Returned if no region matches the specified name.
+ * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching region to be returned. (Default: 0)
+ * STR_VAR name         Name of region to find.
+ * RET index            The region index if found, or defaultIndex if not found.
+ */
+DEFINE_PATCH_FUNCTION ARE_INDEX_OF_REGION
+INT_VAR
+  defaultIndex = "-1"
+  skip = 0
+STR_VAR
+  name = ~~
+RET
+  index
+BEGIN
+  SET index = defaultIndex
+  READ_SHORT 0x5a numRegions
+  READ_LONG 0x5c ofsRegions
+  FOR (idx = 0; idx < numRegions; ++idx) BEGIN
+    SET curOfs = ofsRegions + (idx * 0xc4)
+    READ_ASCII curOfs curName ( 32 ) NULL
+    PATCH_IF (~%curName%~ STRING_EQUAL_CASE ~%name%~) BEGIN
+      PATCH_IF (skip <= 0) BEGIN
+        SET index = idx
+        SET idx = numRegions
+      END ELSE BEGIN
+        SET skip -= 1
+      END
+    END
+  END
+END
+
+/**
+ * Attempts to determine the index of an ARE container structure.
+ * INT_VAR defaultIndex Returned if no container matches the specified name.
+ * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching container to be returned. (Default: 0)
+ * STR_VAR name         Name of container to find.
+ * RET index            The container index if found, or defaultIndex if not found.
+ */
+DEFINE_PATCH_FUNCTION ARE_INDEX_OF_CONTAINER
+INT_VAR
+  defaultIndex = "-1"
+  skip = 0
+STR_VAR
+  name = ~~
+RET
+  index
+BEGIN
+  SET index = defaultIndex
+  READ_LONG 0x70 ofsContainers
+  READ_SHORT 0x74 numContainers
+  FOR (idx = 0; idx < numContainers; ++idx) BEGIN
+    SET curOfs = ofsContainers + (idx * 0xc0)
+    READ_ASCII curOfs curName ( 32 ) NULL
+    PATCH_IF (~%curName%~ STRING_EQUAL_CASE ~%name%~) BEGIN
+      PATCH_IF (skip <= 0) BEGIN
+        SET index = idx
+        SET idx = numContainers
+      END ELSE BEGIN
+        SET skip -= 1
+      END
+    END
+  END
+END
+

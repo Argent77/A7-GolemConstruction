@@ -1,4 +1,4 @@
-// *** Adding new replies to Limied Wish and Wish dialogs ***
+// *** Adding new replies to Limited Wish and Wish dialogs ***
 
 // Limited Wish
 EXTEND_BOTTOM ~wish~ 1

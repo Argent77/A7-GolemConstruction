@@ -16,6 +16,6 @@ THEN
     TakePartyItem("a7!eqm2")
     TakePartyItem("a7!eqm3")
     TakePartyItem("a7!eqm4")
-    DisplayString(Player1, @40003)  // The equipment purchased from Lazarus Librarius allows you to construct golems in this place.
+    DisplayString(Player1, @100009) // The equipment purchased from Lazarus Librarius allows you to construct golems in this place.
     Continue()
 END

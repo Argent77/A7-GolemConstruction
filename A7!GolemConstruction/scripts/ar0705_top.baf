@@ -1,0 +1,24 @@
+// *** SoA: Mekrat's Lair ***
+
+// Put tome into shelf
+IF
+  !Global("A7!TomeGolemMaggot", "GLOBAL", 1)
+  !PartyHasItem("a7!tom07")
+  Global("A7!TomeAdded", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded", "MYAREA", 1)
+    ActionOverride("Container6", CreateItem("a7!tom07", 0, 0, 0))
+    Continue()
+END
+
+IF
+  OR(2)
+    Global("A7!TomeGolemMaggot", "GLOBAL", 1)
+    PartyHasItem("a7!tom07")
+  Global("A7!TomeAdded", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded", "MYAREA", 1)
+    Continue()
+END

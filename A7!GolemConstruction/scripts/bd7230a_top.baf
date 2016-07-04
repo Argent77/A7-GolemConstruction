@@ -16,6 +16,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!BrainTissue", "MYAREA", 1)
-    DisplayStringHead(Myself, @40004) // A small number of unidentifiable pieces of solid matter can be seen floating...
+    DisplayStringHead(Myself, @100010)  // A small number of unidentifiable pieces of solid matter can be seen floating...
     GiveItemCreate("a7!brin", LastTrigger, 1, 0, 0)
 END
