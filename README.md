@@ -25,7 +25,7 @@ Golem types taught by the Manual of Golem Building:
 
 Each golem requires certain materials for constructing the physical shell, and possibly additional ingredients to implement certain key features of the golem. Creating perfect variant is a feat by itself and requires certain unique artifacts of power for the enchantment process.
 
-The construction of the golems takes time and has to be done in specific  locations of power. In Siege of Dragonspear you can try Sorcerous Sundries, the Coldhearth Lich Outpost, and ruined Dragonspear Castle. In Shadows of Amn the Planar Sphere may be suitable. The Wizard Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal your Pocket Plane may work.
+The construction of the golems takes time and has to be done in specific  locations of power. In Siege of Dragonspear you can try Sorcerous Sundries and the Repository of Undeath beneath the Dwarven Dig Site. In Shadows of Amn the Planar Sphere may be suitable. The Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal your Pocket Plane may work, after installing some equipment.
 
 *More components may come later.*
 
