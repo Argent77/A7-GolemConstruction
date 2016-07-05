@@ -773,10 +773,10 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   EXTEND_BOTTOM ~ar6100.bcs~ ~%MOD_FOLDER%/scripts/ar6100_bottom.baf~
 
   COPY ~%MOD_FOLDER%/stores/a7!nym1.sto~ ~override~
-    SAY NAME2 @100015 // Nym's General Store
+    SAY NAME2 @100011 // Nym's General Store
 
   COPY ~%MOD_FOLDER%/stores/a7!nym2.sto~ ~override~
-    SAY NAME2 @100016 // Nym's Exotic Goods
+    SAY NAME2 @100012 // Nym's Exotic Goods
 
   COPY ~%MOD_FOLDER%/sounds/a7!nym01.wav~ ~override~
        ~%MOD_FOLDER%/sounds/a7!nym02.wav~ ~override~

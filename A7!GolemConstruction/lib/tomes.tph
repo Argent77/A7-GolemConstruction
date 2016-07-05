@@ -340,13 +340,14 @@ END
 
 
 // Adamantite Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!itfrg.bam~ ~override~
+COPY ~%MOD_FOLDER%/items/a7!ifrg1.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!ifrg2.bam~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!tfrg1.itm~ ~override~
      ~%MOD_FOLDER%/items/a7!tfrg2.itm~ ~override~
-  SAY NAME1 @100011 // Pages from a Golem Building Manual
-  SAY NAME2 @100011 // Pages from a Golem Building Manual
-  SAY UNIDENTIFIED_DESC @100012 // This bundle of pages appears to be torn from a larger work. Although incomplete, it seems to detail the construction of exceptionally powerful golems.
-  SAY IDENTIFIED_DESC @100012 // This bundle of pages appears to be torn from a larger work. Although incomplete, it seems to detail the construction of exceptionally powerful golems.
+  SAY NAME1 @6006 // Pages from a Golem Building Manual
+  SAY NAME2 @6006 // Pages from a Golem Building Manual
+  SAY UNIDENTIFIED_DESC @6007 // This bundle of pages appears to be torn from a larger work. Although incomplete, it seems to detail the construction of exceptionally powerful golems.
+  SAY IDENTIFIED_DESC @6007 // This bundle of pages appears to be torn from a larger work. Although incomplete, it seems to detail the construction of exceptionally powerful golems.
 
 COPY ~%MOD_FOLDER%/items/a7!tom06.itm~ ~override~
   SAY NAME1 @100000 // Manual
