@@ -760,3 +760,27 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     ADD_CRE_ITEM ~a7!rdbd4~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
+
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Drow Merchant Nym
+  COPY ~%MOD_FOLDER%/creatures/a7!nym.cre~ ~override~
+    SAY NAME1 @100013 // Nym
+    SAY NAME2 @100014 // Dark Elf Merchant
+
+  COMPILE ~%MOD_FOLDER%/dialogs/a7!nym.d~
+  COMPILE ~%MOD_FOLDER%/scripts/a7!nym.baf~
+  EXTEND_BOTTOM ~ar6100.bcs~ ~%MOD_FOLDER%/scripts/ar6100_bottom.baf~
+
+  COPY ~%MOD_FOLDER%/stores/a7!nym1.sto~ ~override~
+    SAY NAME2 @100015 // Nym's General Store
+
+  COPY ~%MOD_FOLDER%/stores/a7!nym2.sto~ ~override~
+    SAY NAME2 @100016 // Nym's Exotic Goods
+
+  COPY ~%MOD_FOLDER%/sounds/a7!nym01.wav~ ~override~
+       ~%MOD_FOLDER%/sounds/a7!nym02.wav~ ~override~
+       ~%MOD_FOLDER%/sounds/a7!nym03.wav~ ~override~
+       ~%MOD_FOLDER%/sounds/a7!nym04.wav~ ~override~
+       ~%MOD_FOLDER%/sounds/a7!nym05.wav~ ~override~
+END

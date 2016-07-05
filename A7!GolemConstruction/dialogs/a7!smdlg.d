@@ -2,19 +2,7 @@
 
 BEGIN ~a7!smdlg~
 
-// IF ~Global("stage", "LOCALS", 0)~ Golem.Type
-  // SAY ~You prepare yourself for the task before you...~
-  // IF ~True()~ + Golem.Location.Cancelled  // TODO: always selected even when conditions below are true
-  // IF ~Global("A7!SundriesPermission", "GLOBAL", 1) AreaCheck("BD0122")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct10")~ EXIT
-  // IF ~Global("A7!ColdhearthWorkshop", "GLOBAL", 1) AreaCheck("BD1200")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct11")~ EXIT
-  // IF ~Global("A7!SphereWorkshop", "GLOBAL", 1) AreaCheck("AR0411")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct12")~ EXIT
-  // IF ~Global("A7!SphereWorkshop", "GLOBAL", 1) AreaCheck("AR0410")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct13")~ EXIT
-  // IF ~Global("A7!WKWorkshop", "GLOBAL", 1) AreaCheck("AR3016")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct14")~ EXIT
-  // IF ~Global("A7!PlaneWorkshop", "GLOBAL", 1) AreaCheck("AR4500")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct15")~ EXIT
-  // IF ~Global("A7!TomeGolemMagic", "GLOBAL", 1) OR(5) AreaCheck("AR3005") AreaCheck("AR3009") AreaCheck("OH6000") AreaCheck("OH6100") AreaCheck("OH6200")~ + Golem.Location.WildMagic
-// END
-
-IF ~Global("stage", "LOCALS", 0)~ Golem.Type
+IF ~Global("stage", "LOCALS", 0)~ Golem.Prepare
   SAY ~You prepare yourself for the task before you...~
   IF ~Global("initCancelled", "LOCALS", 1)~ + Golem.Location.Cancelled
   IF ~Global("initSundries", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct10")~ EXIT
@@ -24,6 +12,7 @@ IF ~Global("stage", "LOCALS", 0)~ Golem.Type
   IF ~Global("initWK", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct14")~ EXIT
   IF ~Global("initPlane", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct15")~ EXIT
   IF ~Global("initMagic", "LOCALS", 1)~ + Golem.Location.WildMagic
+  IF ~Global("A7!Debug", "GLOBAL", 1)~ DO ~SetGlobal("stage", "LOCALS", 1)~ + Golem.Type
 END
 
 IF ~Global("stage", "LOCALS", 1)~ Golem.Type

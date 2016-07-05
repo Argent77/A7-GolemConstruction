@@ -114,6 +114,26 @@
 @43503 = ~OK, Cespenar keeps looking.~
 
 
+// *** Drow Merchant Nym ***
+@44000 = ~Vendui - you have my warmest greetings, honored customer.  I am Nym, a merchant.~ [a7!nym01]
+@44001 = ~Vendui - you have my greetings, darthiir.  I am Nym, a merchant.~ [a7!nym02]
+@44002 = ~I shall remain here a bit longer, so feel free to return and browse my wares at any time.  Aluve.~ [a7!nym03]
+@44003 = ~You have my warmest greetings again, honored customer.~ [a7!nym04]
+@44004 = ~My greetings again, darthiir.~ [a7!nym05]
+@44005 = ~Can I interest you in some of my wares?~
+@44006 = ~What do you have to offer?~
+@44007 = ~Die, drow scum!~
+@44008 = ~I have a great variety of high quality goods for the successful adventurer in stock. For a bit of extra coin I can also show you some of my exotic wares.~
+@44009 = ~Sadly, your victory over the inhabitants of this settlement have bereft me of a good source for replenishing my stock. But I will try to find other sources to cater the needs of well-paying customers such as you.~
+@44010 = ~Yes, show me your wares.~
+@44011 = ~I'd like to browse your exotic wares.~
+@44012 = ~I'm not interested at the moment. Farewell, Nym.~
+@44013 = ~Your arrival is accompanied by good news. I was able to restock some of my wares. Unfortunately, the effort to find an agreeable source in these parts of the lands is extraordinarily high. I have no choice but to pass some of my expenses on to you, honored customer.~
+@44014 = ~I was able to restock some of my wares. Unfortunately, I have no choice but to raise my prices again, honored customer.~
+@44015 = ~I was able to restock some of my wares again. But do not fear, honored customer. I can offer you my wares without another advance in price.~
+@44016 = ~Please, be my guest. You will not be disappointed.~
+
+
 // *** Journal entries ***
 @49000 = ~Golem Construction Workshop~
 
@@ -137,3 +157,6 @@ The Wizard Libary on the second level of Watcher's Keep looks very well equipped
 
 With the equipment purchased from Lazarus Library I should be able to construct golems in my Pocket Plane.~
 
+@49006 = ~Golem Construction Workshop
+
+I have met a drow merchant who can provide me with a wide range of materials needed to construct golems. He also promised me to replenish his stock once in a while.~

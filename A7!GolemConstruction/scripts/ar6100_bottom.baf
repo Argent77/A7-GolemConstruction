@@ -1,0 +1,11 @@
+// *** ToB: Sendai's Enclave Entrance ***
+
+IF
+  Dead("sendai")
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!NymArrived", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!NymArrived", "MYAREA", 1)
+    CreateCreature("a7!nym", [1335.168], S)
+END

@@ -5,6 +5,18 @@ OUTER_SET specific_golem  = 200
 
 APPEND ~specific.ids~ ~%specific_golem% A7!GOLEM~ UNLESS ~^%specific_golem%[ %TAB%]~
 
+// probably not needed
+APPEND ~gtimes.ids~ ~6 ONE_ROUND~ UNLESS ~ONE_ROUND~
+APPEND ~gtimes.ids~ ~12 TWO_ROUNDS~ UNLESS ~TWO_ROUNDS~
+APPEND ~gtimes.ids~ ~18 THREE_ROUNDS~ UNLESS ~THREE_ROUNDS~
+APPEND ~gtimes.ids~ ~24 FOUR_ROUNDS~ UNLESS ~FOUR_ROUNDS~
+APPEND ~gtimes.ids~ ~30 FIVE_ROUNDS~ UNLESS ~FIVE_ROUNDS~
+APPEND ~gtimes.ids~ ~36000 FIVE_DAYS~ UNLESS ~FIVE_DAYS~
+APPEND ~gtimes.ids~ ~50400 SEVEN_DAYS~ UNLESS ~SEVEN_DAYS~
+APPEND ~gtimes.ids~ ~57600 EIGHT_DAYS~ UNLESS ~EIGHT_DAYS~
+APPEND ~gtimes.ids~ ~64800 NINE_DAYS~ UNLESS ~NINE_DAYS~
+APPEND ~gtimes.ids~ ~72000 TEN_DAYS~ UNLESS ~TEN_DAYS~
+
 // Golem abilities are ported over to BG2EE
 ACTION_IF (GAME_IS ~bg2ee~) BEGIN
   COPY_EXISTING - ~varimprt.2da~ ~override~
