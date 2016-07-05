@@ -359,18 +359,14 @@ END
 IF ~~ Golem.Type.Flesh.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 1) SetGlobal("GolemVariant", "LOCALS", 2)
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
+            TakePartyItemNum("a7!body", 2) DestroyItem("a7!body") DestroyItem("a7!body")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
 IF ~~ Golem.Type.Flesh.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 1) SetGlobal("GolemVariant", "LOCALS", 3)
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
+            TakePartyItemNum("a7!body", 4) DestroyItem("a7!body") DestroyItem("a7!body") DestroyItem("a7!body") DestroyItem("a7!body")
             TakePartyItemNum("scrl97", 1) DestroyItem("scrl97")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
@@ -378,10 +374,7 @@ END
 IF ~~ Golem.Type.Flesh.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 1) SetGlobal("GolemVariant", "LOCALS", 4)
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
-            TakePartyItemNum("a7!body", 1) DestroyItem("a7!body")
+            TakePartyItemNum("a7!body", 4) DestroyItem("a7!body") DestroyItem("a7!body") DestroyItem("a7!body") DestroyItem("a7!body")
             TakePartyItemNum("scrl97", 1) DestroyItem("scrl97")
             TakePartyItemNum("a7!fl01", 1) DestroyItem("a7!fl01")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
@@ -398,8 +391,7 @@ END
 IF ~~ Golem.Type.Clay.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 2) SetGlobal("GolemVariant", "LOCALS", 2)
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
+            TakePartyItemNum("a7!clay", 2) DestroyItem("a7!clay") DestroyItem("a7!clay")
             TakePartyItemNum("scrol1h", 1) DestroyItem("scrol1h")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
@@ -407,10 +399,7 @@ END
 IF ~~ Golem.Type.Clay.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 2) SetGlobal("GolemVariant", "LOCALS", 3)
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
+            TakePartyItemNum("a7!clay", 4) DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay")
             TakePartyItemNum("scrol1h", 1) DestroyItem("scrol1h")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
@@ -418,10 +407,7 @@ END
 IF ~~ Golem.Type.Clay.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 2) SetGlobal("GolemVariant", "LOCALS", 4)
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
-            TakePartyItemNum("a7!clay", 1) DestroyItem("a7!clay")
+            TakePartyItemNum("a7!clay", 4) DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay")
             TakePartyItemNum("scrol1h", 1) DestroyItem("scrol1h")
             TakePartyItemNum("a7!cl01", 1) DestroyItem("a7!cl01")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
@@ -438,8 +424,7 @@ END
 IF ~~ Golem.Type.Stone.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 3) SetGlobal("GolemVariant", "LOCALS", 2)
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
+            TakePartyItemNum("a7!ston", 2) DestroyItem("a7!ston") DestroyItem("a7!ston")
             TakePartyItemNum("scrl1o", 1) DestroyItem("scrl1o")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
@@ -447,10 +432,7 @@ END
 IF ~~ Golem.Type.Stone.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 3) SetGlobal("GolemVariant", "LOCALS", 3)
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
+            TakePartyItemNum("a7!ston", 4) DestroyItem("a7!ston") DestroyItem("a7!ston") DestroyItem("a7!ston") DestroyItem("a7!ston")
             TakePartyItemNum("scrl1o", 1) DestroyItem("scrl1o")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
@@ -458,10 +440,7 @@ END
 IF ~~ Golem.Type.Stone.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 3) SetGlobal("GolemVariant", "LOCALS", 4)
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
-            TakePartyItemNum("a7!ston", 1) DestroyItem("a7!ston")
+            TakePartyItemNum("a7!ston", 4) DestroyItem("a7!ston") DestroyItem("a7!ston") DestroyItem("a7!ston") DestroyItem("a7!ston")
             TakePartyItemNum("scrl1o", 1) DestroyItem("scrl1o")
             TakePartyItemNum("a7!st01", 1) DestroyItem("a7!st01")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
@@ -478,8 +457,7 @@ END
 IF ~~ Golem.Type.Iron.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 4) SetGlobal("GolemVariant", "LOCALS", 2)
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
+            TakePartyItemNum("a7!iron", 2) DestroyItem("a7!iron") DestroyItem("a7!iron")
             TakePartyItemNum("scrl2e", 1) DestroyItem("scrl2e")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
@@ -487,10 +465,7 @@ END
 IF ~~ Golem.Type.Iron.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 4) SetGlobal("GolemVariant", "LOCALS", 3)
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
+            TakePartyItemNum("a7!iron", 4) DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron")
             TakePartyItemNum("scrl2e", 1) DestroyItem("scrl2e")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
@@ -498,10 +473,7 @@ END
 IF ~~ Golem.Type.Iron.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 4) SetGlobal("GolemVariant", "LOCALS", 4)
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
+            TakePartyItemNum("a7!iron", 4) DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron")
             TakePartyItemNum("scrl2e", 1) DestroyItem("scrl2e")
             TakePartyItemNum("a7!ir01", 1) DestroyItem("a7!ir01")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
@@ -518,28 +490,21 @@ END
 IF ~~ Golem.Type.Mithral.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 2)
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
+            TakePartyItemNum("a7!mith", 2) DestroyItem("a7!mith") DestroyItem("a7!mith")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
 IF ~~ Golem.Type.Mithral.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 3)
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
+            TakePartyItemNum("a7!mith", 4) DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
 IF ~~ Golem.Type.Mithral.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 4)
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
+            TakePartyItemNum("a7!mith", 4) DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith")
             TakePartyItemNum("a7!mi01", 1) DestroyItem("a7!mi01")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
@@ -548,32 +513,22 @@ END
 IF ~~ Golem.Type.Adamantite.Lesser
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 1)
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
+            TakePartyItemNum("a7!adam", 2) DestroyItem("a7!adam") DestroyItem("a7!adam")
             StartCutSceneMode() StartCutScene("a7!ct01")~ EXIT
 END
 
 IF ~~ Golem.Type.Adamantite.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 2)
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
+            TakePartyItemNum("a7!adam", 4) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
 IF ~~ Golem.Type.Adamantite.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 3)
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
+            TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
+            DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
@@ -581,26 +536,14 @@ IF ~~ Golem.Type.Adamantite.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~PartyHasItem("a7!ad01")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 4)
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
+            TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
+            DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             TakePartyItemNum("a7!ad01", 1) DestroyItem("a7!ad01")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
   IF ~PartyHasItem("a7!ad02")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 4)
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
-            TakePartyItemNum("a7!adam", 1) DestroyItem("a7!adam")
+            TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
+            DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             TakePartyItemNum("a7!ad02", 1) DestroyItem("a7!ad02")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
@@ -609,18 +552,14 @@ END
 IF ~~ Golem.Type.Maggot
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 7) SetGlobal("GolemVariant", "LOCALS", 9)
-            TakePartyItemNum("a7!mbdy", 1) DestroyItem("a7!mbdy")
-            TakePartyItemNum("a7!mbdy", 1) DestroyItem("a7!mbdy")
+            TakePartyItemNum("a7!mbdy", 2) DestroyItem("a7!mbdy") DestroyItem("a7!mbdy")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
 IF ~~ Golem.Type.Bone
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 8) SetGlobal("GolemVariant", "LOCALS", 9)
-            TakePartyItemNum("a7!bone", 1) DestroyItem("a7!bone")
-            TakePartyItemNum("a7!bone", 1) DestroyItem("a7!bone")
-            TakePartyItemNum("a7!bone", 1) DestroyItem("a7!bone")
-            TakePartyItemNum("a7!bone", 1) DestroyItem("a7!bone")
+            TakePartyItemNum("a7!bone", 4) DestroyItem("a7!bone") DestroyItem("a7!bone") DestroyItem("a7!bone") DestroyItem("a7!bone")
             TakePartyItemNum("scrl2d", 1) DestroyItem("scrl2d")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
