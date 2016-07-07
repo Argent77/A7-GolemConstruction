@@ -22,7 +22,9 @@ IF ~Global("stage", "LOCALS", 1)~ Golem.Type
   + ~Global("A7!TomeGolemStone", "GLOBAL", 1)~ + @41003 /* Stone Golem */ + Golem.Type.Stone
   + ~Global("A7!TomeGolemIron", "GLOBAL", 1)~ + @41004 /* Iron Golem */ + Golem.Type.Iron
   + ~Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemMithral", "GLOBAL", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral
+  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemMithral", "GLOBAL", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral.Denied
   + ~Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemAdamantite", "GLOBAL", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite
+  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemAdamantite", "GLOBAL", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite.Denied
   + ~OR(6)
        Global("A7!TomeGolemMaggot", "GLOBAL", 1)
        Global("A7!TomeGolemBone", "GLOBAL", 1)
@@ -254,6 +256,11 @@ IF ~~ Golem.Type.Mithral
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
+IF ~~ Golem.Type.Mithral.Denied
+  SAY @41046 /* You can't construct Mithral Golems without having studied the basics of Iron Golem construction. */
+  IF ~~ DO ~DestroySelf()~ EXIT
+END
+
 IF ~~ Golem.Type.Adamantite
   SAY @41017 /* Select golem variant: */
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 18)
@@ -285,6 +292,11 @@ IF ~~ Golem.Type.Adamantite
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!ad01") PartyHasItem("a7!ad02")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
+END
+
+IF ~~ Golem.Type.Adamantite.Denied
+  SAY @41047 /* You can't construct Adamantite Golems without having studied the basics of Iron Golem construction. */
+  IF ~~ DO ~DestroySelf()~ EXIT
 END
 
 IF ~~ Golem.Type.Exotic

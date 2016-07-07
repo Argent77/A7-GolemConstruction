@@ -1,0 +1,12 @@
+// *** Trigger script: Cold machine in Planar Sphere, Level 2 (bottom part) ***
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 20)
+  OR(2)
+    Global("A7!GolemAbility", "GLOBAL", 0)
+    GlobalGT("A7!IceShard", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself, %infoText%)  // Pure cold seems to emanate from this hissing device.
+END

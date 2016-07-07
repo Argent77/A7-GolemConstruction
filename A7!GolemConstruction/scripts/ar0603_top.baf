@@ -1,0 +1,11 @@
+// *** SoA: Starting Dungeon, Level 2 ***
+
+IF
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!KhalidBody", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!KhalidBody", "MYAREA", 1)
+    ContainerEnable("A7!Body1", TRUE)
+    Continue()
+END

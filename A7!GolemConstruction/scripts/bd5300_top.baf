@@ -1,0 +1,11 @@
+// *** SOD: Underground temple with portal to Fugue plane ***
+
+IF
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!Stone", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Stone", "MYAREA", 1)
+    ContainerEnable("A7!Container1", TRUE)
+    Continue()
+END

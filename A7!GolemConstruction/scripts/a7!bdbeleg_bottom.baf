@@ -1,0 +1,20 @@
+// *** SoD: Belegarm ***
+
+// Belegarm has new items in store at Coalition Camp or Dragonsiege Castle
+IF
+  OR(2)
+    AreaCheck("BD3000")
+    AreaCheck("BD4300")
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!UpdateStore", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!UpdateStore", "LOCALS", 1)
+    SetInterrupt(FALSE)
+    AddStoreItem("bdbeleg3", "a7!clay", 2, 1)
+    AddStoreItem("bdbeleg3", "a7!ston", 1, 1)
+    AddStoreItem("bdbeleg4", "a7!tom01", 1, 1)
+    AddStoreItem("bdbeleg4", "a7!glfl", 1, 1)
+    AddStoreItem("bdbeleg4", "a7!glcl", 1, 1)
+    SetInterrupt(TRUE)
+END

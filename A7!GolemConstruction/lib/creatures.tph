@@ -604,20 +604,6 @@ END
 // Adding random treasure tables for bone golems and skeleton warriors
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 35 STR_VAR treasure = "A7!RDBO1" item = "A7!BONE" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 5 STR_VAR treasure = "A7!RDBO2" item = "A7!BONE" END
-ACTION_IF (GAME_IS ~bgee~) BEGIN
-  COPY_EXISTING ~skelwa.cre~ ~override~
-                ~skelwa02.cre~ ~override~
-                ~skelwa03.cre~ ~override~
-                ~bdskgr08.cre~ ~override~
-                ~a7!glbo.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdbo1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-END
-ACTION_IF (GAME_IS ~eet~) BEGIN
-  COPY_EXISTING ~bdskgr08.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdbo1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~icbone01.cre~ ~override~
                 ~ar18skel.cre~ ~override~
@@ -762,8 +748,44 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
+// Belegarm
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  EXTEND_BOTTOM ~bdbelega.bcs~ ~%MOD_FOLDER%/scripts/a7!bdbeleg_bottom.baf~
+END
+
+
+// Brother Deepvein
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  COMPILE ~%MOD_FOLDER%/dialogs/bddeep.d~
+END
+
+
+// Ore Merchant Jerlia
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Drow Merchant Nym
+  COMPILE ~%MOD_FOLDER%/dialogs/scjerlia.d~
+  COMPILE ~%MOD_FOLDER%/scripts/a7!jerl.baf~
+
+  COPY_EXISTING ~scjerlia.cre~ ~override~
+    READ_LONG NAME1 name_strref
+    SET found = 0
+    FOR (ofs = 0x268; ofs >= 0x248; ofs -= 8) BEGIN
+      PATCH_IF (found = 0) BEGIN
+        READ_ASCII ofs script (8) NULL
+        PATCH_IF (~%script%~ STRING_EQUAL ~~ OR NOT FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+          WRITE_ASCII ofs ~a7!jerl~ #8
+          SET found = 1
+        END
+      END
+    END
+  BUT_ONLY
+
+  COPY ~%MOD_FOLDER%/stores/a7!jerl.sto~ ~override~
+    WRITE_LONG NAME2 name_strref  // Jerlia the Ore Merchant
+END
+
+
+// Drow Merchant Nym
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY ~%MOD_FOLDER%/creatures/a7!nym.cre~ ~override~
     SAY NAME1 @100013 // Nym
     SAY NAME2 @100014 // Dark Elf Merchant

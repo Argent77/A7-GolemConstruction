@@ -1,0 +1,14 @@
+// *** BG2:EE - Abazigal's chamber ***
+
+IF
+  Global("A7!TomeGolemIce", "GLOBAL", 1)
+  Global("A7!IceShard", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!IceShard", "MYAREA", 1)
+    ContainerEnable("A7!Container1", TRUE)
+    ContainerEnable("A7!Container2", TRUE)
+    ContainerEnable("A7!Container3", TRUE)
+    ContainerEnable("A7!Container4", TRUE)
+    Continue()
+END

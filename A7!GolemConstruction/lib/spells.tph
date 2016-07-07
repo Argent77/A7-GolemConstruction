@@ -213,13 +213,21 @@ COPY ~%MOD_FOLDER%/spells/a7!sum3.spl~ ~override~
   END
 
 
-// Drain a level from the target
+// Drain levels from the target
 COPY ~%MOD_FOLDER%/spells/a7!sum4.spl~ ~override~
   SET strref = (GAME_IS ~bg2ee eet~) ? 41495 : 25802
   LPF ALTER_SPELL_EFFECT
   INT_VAR
     match_opcode = 139  // Display String
     parameter1 = strref // One Level Drained
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!sum5.spl~ ~override~
+  SET strref = (GAME_IS ~bg2ee eet~) ? 40968 : 25803
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = strref // Two Levels Drained
   END
 
 

@@ -1,6 +1,5 @@
 // *** BG2:EE - WK: Wild Magic Area 1 ***
 
-// Triggering Wild Magic Stone Fragment creation 
 IF
   Global("A7!TomeGolemMagic", "GLOBAL", 1)
   Global("A7!MagicStone", "MYAREA", 0)
@@ -8,10 +7,7 @@ THEN
   RESPONSE #100
     SetGlobal("A7!MagicStone", "MYAREA", 1)
     ContainerEnable("A7!Crate01", TRUE)
-    ActionOverride("A7!Crate01", CreateItem("a7!wmag", 1, 0, 0))
     ContainerEnable("A7!Crate02", TRUE)
-    ActionOverride("A7!Crate02", CreateItem("a7!wmag", 1, 0, 0))
     ContainerEnable("A7!Crate03", TRUE)
-    ActionOverride("A7!Crate03", CreateItem("a7!wmag", 1, 0, 0))
     Continue()
 END

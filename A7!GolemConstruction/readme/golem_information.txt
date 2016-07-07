@@ -844,7 +844,8 @@ Golems described in these tomes are unique, and therefore not available as lesse
 Each golem has the following abilities by default:
 1. Dismiss:  Activating this ability will cause the golem to disintegrate. The process is irreversible.
 2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with 
-             big circle sizes so they won't be stuck in narrow pathways. It can only be used while no enemies are around.
+             big circle sizes so they won't get stuck in narrow pathways. It can only be used while no enemies are 
+             around.
 
 
 

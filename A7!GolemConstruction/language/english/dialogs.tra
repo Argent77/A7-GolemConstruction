@@ -2,7 +2,8 @@
 // Dialogs and misc. strings (index 40000..49999)
 
 // *** Misc. strings ***
-// @40000 = ~~
+@40000 = ~Greetings again. A bit o' mithral for ye'.~
+@40001 = ~We found it in Coldhearth's secret stash. It's priceless in the right hands. No need t' thank me, <CHARNAME>. Ye earned it, sure enough.~
 
 
 // *** Golem Construction dialog ***
@@ -52,6 +53,8 @@
 @41043 = ~You start with the construction of the golem body...~
 @41044 = ~Maggot Golem~
 @41045 = ~Magic golems can only be constructed in wild magic areas.~
+@41046 = ~You can't construct Mithral Golems without having studied the basics of Iron Golem construction.~
+@41047 = ~You can't construct Adamantite Golems without having studied the basics of Iron Golem construction.~
 
 
 // *** Wish Djinni dialog ***
@@ -132,6 +135,19 @@
 @44014 = ~I was able to restock some of my wares. Unfortunately, I have no choice but to raise my prices again, honored customer.~
 @44015 = ~I was able to restock some of my wares again. But fear not, honored customer. I can offer you my wares without another advance in price.~
 @44016 = ~Please, be my guest. You will not be disappointed.~
+
+
+// *** Jerlia the Ore Merchant ***
+@44500 = ~I'm looking for certain materials to construct golems from.~
+@44501 = ~Ah, the golem maker returns. Do you need another chunk of ore?~
+@44502 = ~Yes, I'd like to browse your store again.~
+@44503 = ~Not at the moment. Maybe later.~
+@44504 = ~You kiddin' me, right? Well, I usually sell in bulk, but I might do an exception in your case. What you lookin' for?~
+@44505 = ~I'm interested in clay or stone.~
+@44506 = ~Do you have something special on sale? Maybe iron, or even mithral?~
+@44507 = ~I can offer you a great variety of ore and masonry. For the right price you can also purchase some of the more exotic materials. Feel free to browse, and don't be shy to pick what you need.~
+@44508 = ~Always a pleasure.~
+@44509 = ~Your timing is perfect. I stocked up my store right now with new and exotic items from a rather particular source.~
 
 
 // *** Journal entries ***

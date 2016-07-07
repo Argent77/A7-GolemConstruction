@@ -1,4 +1,4 @@
-// *** BG2:EE - Use WK Wizard Library on second level as Golem Building Workshop ***
+// *** BG2:EE - WK Wizard Library on second level ***
 
 IF
   !ActuallyInCombat()

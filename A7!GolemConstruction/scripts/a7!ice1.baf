@@ -1,0 +1,33 @@
+// *** Trigger script: Cold machine in Planar Sphere, Level 2 (top part) ***
+
+IF
+  Clicked([ANYONE])
+  !Range(LastTrigger, 20)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself, @100015)  // You are too far away to examine that.
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 20)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!IceShard", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!IceShard", "MYAREA", 1)
+    DisplayStringHead(Myself, @100016)  // A pure cold aura surrounds this strange device. On closer inspection you can see a faintly glowing crystaline object in one of its tubes.
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 20)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("A7!IceShard", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!IceShard", "MYAREA", 2)
+    DisplayStringHead(Myself, @100017)  // You take some frost damage by your attempt to retrieve the crystal from the strange device. It appears to be some kind of magical shard of ice.
+    ApplySpell(LastTrigger, MEPHIT_ICE_SHARD)
+    GiveItemCreate("a7!ice", LastTrigger, 1, 0, 0)
+END

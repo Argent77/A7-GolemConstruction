@@ -1,0 +1,20 @@
+// *** SoA: Jerlia the Ore Merchant ***
+
+IF
+  GlobalGT("Chapter", "GLOBAL", 5)
+  Global("A7!UpdateStore", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!UpdateStore", "LOCALS", 1)
+    SetInterrupt(FALSE)
+    AddStoreItem("a7!jerl", "a7!clay", 6, 1)
+    AddStoreItem("a7!jerl", "a7!ston", 5, 1)
+    AddStoreItem("a7!jerl", "a7!iron", 4, 1)
+    AddStoreItem("a7!jerl", "a7!mith", 1, 1)
+    AddStoreItem("a7!jerl", "a7!ice", 1, 1)
+    AddStoreItem("a7!jerl", "a7!glfl", 2, 1)
+    AddStoreItem("a7!jerl", "a7!glcl", 2, 1)
+    AddStoreItem("a7!jerl", "a7!glst", 1, 1)
+    AddStoreItem("a7!jerl", "a7!glir", 1, 1)
+    SetInterrupt(TRUE)
+END

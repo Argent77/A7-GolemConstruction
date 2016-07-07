@@ -5,7 +5,7 @@ IF
   !Range(LastTrigger, 20)
 THEN
   RESPONSE #100
-    DisplayStringHead(Myself, 64374)  // You are too far away to examine that.
+    DisplayStringHead(Myself, @100015)  // You are too far away to examine that.
 END
 
 IF

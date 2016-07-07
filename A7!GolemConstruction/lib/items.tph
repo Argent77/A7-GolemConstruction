@@ -12,6 +12,51 @@ COPY ~%MOD_FOLDER%/items/a7!body.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!cbody.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!ibody.bam~ ~override~
 
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  EXTEND_TOP ~ar0603.bcs~ ~%MOD_FOLDER%/scripts/ar0603_top.baf~
+
+  // Khalid's body as container
+  COPY_EXISTING ~ar0603.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1351
+      fj_loc_y          = 2456
+      fj_type           = 10      // body
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1378
+      fj_box_top        = 2407
+      fj_box_right      = 1414
+      fj_box_bottom     = 2448
+      fj_vertex_0       = 1400 | (2448 << 16)
+      fj_vertex_1       = 1403 | (2445 << 16)
+      fj_vertex_2       = 1394 | (2432 << 16)
+      fj_vertex_3       = 1401 | (2433 << 16)
+      fj_vertex_4       = 1405 | (2448 << 16)
+      fj_vertex_5       = 1408 | (2447 << 16)
+      fj_vertex_6       = 1406 | (2428 << 16)
+      fj_vertex_7       = 1399 | (2420 << 16)
+      fj_vertex_8       = 1401 | (2419 << 16)
+      fj_vertex_9       = 1406 | (2424 << 16)
+      fj_vertex_10      = 1413 | (2425 << 16)
+      fj_vertex_11      = 1414 | (2422 << 16)
+      fj_vertex_12      = 1406 | (2420 << 16)
+      fj_vertex_13      = 1403 | (2407 << 16)
+      fj_vertex_14      = 1397 | (2407 << 16)
+      fj_vertex_15      = 1396 | (2411 << 16)
+      fj_vertex_16      = 1393 | (2412 << 16)
+      fj_vertex_17      = 1378 | (2407 << 16)
+      fj_vertex_18      = 1378 | (2411 << 16)
+      fj_vertex_19      = 1392 | (2417 << 16)
+      fj_vertex_20      = 1388 | (2432 << 16)
+      fj_vertex_21      = 1399 | (2445 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Body1"
+    END
+END
+
 
 // Clay block
 COPY ~%MOD_FOLDER%/items/a7!clay.itm~ ~override~
@@ -33,6 +78,42 @@ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
   END
 END
 
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Chest in Cowled Wizard home
+  COPY_EXISTING ~ar0315.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 583
+      fj_loc_y          = 220
+      fj_type           = 3       // drawer
+      fj_lock_diff      = 90
+      fj_flags          = 1       // locked
+      fj_trap_detect    = 90
+      fj_trap_remove_diff = 90
+      fj_trap_active    = 1
+      fj_trap_loc_x     = 606
+      fj_trap_loc_y     = 179
+      fj_box_left       = 582
+      fj_box_top        = 167
+      fj_box_right      = 626
+      fj_box_bottom     = 217
+      fj_vertex_0       = 610 | (217 << 16)
+      fj_vertex_1       = 622 | (208 << 16)
+      fj_vertex_2       = 622 | (204 << 16)
+      fj_vertex_3       = 623 | (202 << 16)
+      fj_vertex_4       = 622 | (199 << 16)
+      fj_vertex_5       = 626 | (195 << 16)
+      fj_vertex_6       = 626 | (187 << 16)
+      fj_vertex_7       = 596 | (167 << 16)
+      fj_vertex_8       = 582 | (179 << 16)
+      fj_vertex_9       = 582 | (196 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+      fj_trap_script    = "CTLB"    // lightning bolt trap
+    END
+END
+
 
 // Stone block
 COPY ~%MOD_FOLDER%/items/a7!ston.itm~ ~override~
@@ -52,6 +133,36 @@ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
   STR_VAR
     source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
   END
+END
+
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  EXTEND_TOP ~bd5300.bcs~ ~%MOD_FOLDER%/scripts/bd5300_top.baf~
+
+  // container in underground temple with Fugue Plane portal
+  COPY_EXISTING ~bd5300.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1162
+      fj_loc_y          = 881
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1132
+      fj_box_top        = 840
+      fj_box_right      = 1161
+      fj_box_bottom     = 869
+      fj_vertex_0       = 1144 | (869 << 16)
+      fj_vertex_1       = 1161 | (862 << 16)
+      fj_vertex_2       = 1161 | (856 << 16)
+      fj_vertex_3       = 1147 | (840 << 16)
+      fj_vertex_4       = 1138 | (843 << 16)
+      fj_vertex_5       = 1132 | (851 << 16)
+      fj_vertex_6       = 1132 | (857 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
 END
 
 
@@ -85,6 +196,36 @@ COPY ~%MOD_FOLDER%/items/a7!mith.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!cmith.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!imith.bam~ ~override~
 
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  EXTEND_TOP ~ar1400.bcs~ ~%MOD_FOLDER%/scripts/ar1400_top.baf~
+
+  // Adding a piece to a cache near the Amaunator statue
+  COPY_EXISTING ~ar1400.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 4679
+      fj_loc_y          = 1481
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 4631
+      fj_box_top        = 1432
+      fj_box_right      = 4667
+      fj_box_bottom     = 1461
+      fj_vertex_0       = 4641 | (1461 << 16)
+      fj_vertex_1       = 4660 | (1461 << 16)
+      fj_vertex_2       = 4667 | (1447 << 16)
+      fj_vertex_3       = 4660 | (1434 << 16)
+      fj_vertex_4       = 4642 | (1432 << 16)
+      fj_vertex_5       = 4631 | (1443 << 16)
+      fj_vertex_6       = 4634 | (1455 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+END
+
 
 // Adamantine bar
 COPY ~%MOD_FOLDER%/items/a7!adam.itm~ ~override~
@@ -94,6 +235,50 @@ COPY ~%MOD_FOLDER%/items/a7!adam.itm~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!cadam.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!iadam.bam~ ~override~
+
+
+// Maggot-infested body
+COPY ~%MOD_FOLDER%/items/a7!mbdy.itm~ ~override~
+  SAY NAME1 @30090  // Maggot-infested Body
+  SAY NAME2 @30090  // Maggot-infested Body
+  SAY UNIDENTIFIED_DESC @30091
+
+COPY ~%MOD_FOLDER%/items/a7!cmbdy.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!imbdy.bam~ ~override~
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Cave in Imnesville
+  COPY_EXISTING ~ar1106.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1122
+      fj_loc_y          = 508
+      fj_trap_loc_x     = 1122
+      fj_trap_loc_y     = 508
+      fj_type           = 4       // pile
+      fj_lock_diff      = 0
+      fj_trap_remove_diff = 0
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Pile1"
+    END
+
+  // de'Arnise basement
+  COPY_EXISTING ~ar1301.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1348
+      fj_loc_y          = 1624
+      fj_trap_loc_x     = 1348
+      fj_trap_loc_y     = 1624
+      fj_type           = 4       // pile
+      fj_lock_diff      = 0
+      fj_trap_remove_diff = 0
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Pile1"
+    END
+END
 
 
 // Pile of bones
@@ -138,6 +323,7 @@ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
 END
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // get one piece from strange "Glass Thingy" in abandoned temple of Cyric
   COPY_EXISTING ~bd7230.are~ ~override~
     READ_SHORT 0x5a numTriggers
     READ_LONG 0x5c ofsTriggers
@@ -152,14 +338,13 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
         READ_ASCII (curOfs + 0x7c) script
         PATCH_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
           INNER_ACTION BEGIN
-            EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/bd7230a_top.baf~
-            EXTEND_BOTTOM ~%script%.bcs~ ~%MOD_FOLDER%/scripts/bd7230a_bottom.baf~ EVAL
+            EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!brin1.baf~
+            EXTEND_BOTTOM ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!brin1_bottom.baf~ EVAL
           END
         END ELSE BEGIN
           INNER_ACTION BEGIN
-            COMPILE ~%MOD_FOLDER%/scripts/bd7230a_top.baf~
-            MOVE ~override/bd7230a_top.bcs~ ~override/a7!brin1.bcs~
-            EXTEND_BOTTOM ~a7!brin1.bcs~ ~%MOD_FOLDER%/scripts/bd7230a_bottom.baf~ EVAL
+            COMPILE ~%MOD_FOLDER%/scripts/a7!brin1.baf~
+            EXTEND_BOTTOM ~a7!brin1.bcs~ ~%MOD_FOLDER%/scripts/a7!brin1_bottom.baf~ EVAL
           END
           WRITE_ASCII (curOfs + 0x7c) "a7!brin1" #8
         END
@@ -168,27 +353,6 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
         SET idx = numTriggers
       END
     END
-END
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY_EXISTING ~ar3021.are~ ~override~
-    // adding items to container
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 0 STR_VAR name = ~Container 3~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-      fj_charge0        = 2
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!brin"
-    END
-
-  COPY_EXISTING ~udmaster.cre~ ~override~
-    ADD_CRE_ITEM ~a7!brin~ #3 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-
-  // TODO: random chance of looting brain tissue from brain golem
-  // COPY_EXISTING ~udgolem.cre~ ~override~
-    // ADD_CRE_ITEM ~%rndtre_brain25%~ #1 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
 
@@ -212,6 +376,149 @@ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
   END
 END
 
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  EXTEND_TOP ~ar6005.bcs~ ~%MOD_FOLDER%/scripts/ar6005_top.baf~
+
+  // WK: Wizard's Library, ice room
+  COPY_EXISTING ~ar3016.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 2140
+      fj_loc_y          = 2840
+      fj_trap_loc_x     = 2140
+      fj_trap_loc_y     = 2840
+      fj_type           = 4       // pile
+      fj_lock_diff      = 0
+      fj_trap_remove_diff = 0
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Pile1"
+    END
+
+  // Abazigal's Chamber
+  COPY_EXISTING ~ar6005.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1355
+      fj_loc_y          = 511
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1360
+      fj_box_top        = 451
+      fj_box_right      = 1432
+      fj_box_bottom     = 518
+      fj_vertex_0       = 1402 | (518 << 16)
+      fj_vertex_1       = 1426 | (502 << 16)
+      fj_vertex_2       = 1432 | (482 << 16)
+      fj_vertex_3       = 1395 | (451 << 16)
+      fj_vertex_4       = 1361 | (454 << 16)
+      fj_vertex_5       = 1360 | (480 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 953
+      fj_loc_y          = 584
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 922
+      fj_box_top        = 503
+      fj_box_right      = 988
+      fj_box_bottom     = 560
+      fj_vertex_0       = 949 | (560 << 16)
+      fj_vertex_1       = 976 | (558 << 16)
+      fj_vertex_2       = 988 | (529 << 16)
+      fj_vertex_3       = 972 | (513 << 16)
+      fj_vertex_4       = 943 | (503 << 16)
+      fj_vertex_5       = 922 | (520 << 16)
+      fj_vertex_6       = 924 | (549 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container2"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 487
+      fj_loc_y          = 839
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 423
+      fj_box_top        = 780
+      fj_box_right      = 478
+      fj_box_bottom     = 836
+      fj_vertex_0       = 445 | (836 << 16)
+      fj_vertex_1       = 478 | (815 << 16)
+      fj_vertex_2       = 474 | (797 << 16)
+      fj_vertex_3       = 462 | (780 << 16)
+      fj_vertex_4       = 434 | (787 << 16)
+      fj_vertex_5       = 423 | (810 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container3"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1779
+      fj_loc_y          = 1196
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1743
+      fj_box_top        = 1218
+      fj_box_right      = 1795
+      fj_box_bottom     = 1306
+      fj_vertex_0       = 1767 | (1306 << 16)
+      fj_vertex_1       = 1789 | (1297 << 16)
+      fj_vertex_2       = 1795 | (1250 << 16)
+      fj_vertex_3       = 1778 | (1218 << 16)
+      fj_vertex_4       = 1752 | (1241 << 16)
+      fj_vertex_5       = 1743 | (1292 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container4"
+    END
+
+  // get one piece from cold machine in Planar Sphere
+  COPY_EXISTING ~ar0412.are~ ~override~
+    READ_SHORT 0x5a numTriggers
+    READ_LONG 0x5c ofsTriggers
+    FOR (idx = 0; idx < numTriggers; ++idx) BEGIN
+      SET curOfs = ofsTriggers + (idx * 0xc4)
+      READ_ASCII (curOfs + 0x00) name ( 32 ) NULL
+      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~Info Trigger 1~) BEGIN
+        WRITE_LONG (curOfs + 0x34) 8    // use activation cursor
+        READ_LONG (curOfs + 0x64) infoText  // strref of original text
+        PATCH_IF (infoText < 0) BEGIN SET infoText = 44979 END  // using predefined default if needed
+        WRITE_LONG (curOfs + 0x64) "-1"
+        READ_ASCII (curOfs + 0x7c) script
+        PATCH_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+          INNER_ACTION BEGIN
+            EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1.baf~
+            EXTEND_BOTTOM ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1_bottom.baf~ EVAL
+          END
+        END ELSE BEGIN
+          INNER_ACTION BEGIN
+            COMPILE ~%MOD_FOLDER%/scripts/a7!ice1.baf~
+            EXTEND_BOTTOM ~a7!ice1.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1_bottom.baf~ EVAL
+          END
+          WRITE_ASCII (curOfs + 0x7c) "a7!ice1" #8
+        END
+
+        // stop searching
+        SET idx = numTriggers
+      END
+    END
+END
+
 
 // Wild magic stone fragment
 COPY ~%MOD_FOLDER%/items/a7!wmag.itm~ ~override~
@@ -227,132 +534,118 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   EXTEND_TOP ~ar3005.bcs~ ~%MOD_FOLDER%/scripts/ar3005_top.baf~
   EXTEND_TOP ~ar3009.bcs~ ~%MOD_FOLDER%/scripts/ar3009_top.baf~
 
+  // WK: Wild magic areas
   COPY_EXISTING ~ar3005.are~ ~override~
-      LPF fj_are_structure
-      INT_VAR
-        fj_type           = 0       // proximiy trigger
-        fj_loc_x          = 1005
-        fj_loc_y          = 436
-        fj_type           = 8       // non-visible
-        fj_lock_diff      = 0
-        fj_flags          = (1 << 5)    // disabled
-        fj_trap_remove_diff = 0
-        fj_box_left       = 999
-        fj_box_top        = 371
-        fj_box_right      = 1011
-        fj_box_bottom     = 382
-        fj_vertex_0       = 999 | (379 << 16)
-        fj_vertex_1       = 1005 | (382 << 16)
-        fj_vertex_2       = 1011 | (379 << 16)
-        fj_vertex_3       = 1011 | (371 << 16)
-        fj_vertex_4       = 1005 | (374 << 16)
-        fj_vertex_5       = 999 | (371 << 16)
-      STR_VAR
-        fj_structure_type = "container"
-        fj_name           = "A7!Crate01"
-      END
-      LPF fj_are_structure
-      INT_VAR
-        fj_type           = 0       // proximiy trigger
-        fj_loc_x          = 401
-        fj_loc_y          = 577
-        fj_type           = 8       // non-visible
-        fj_lock_diff      = 0
-        fj_flags          = (1 << 5)    // disabled
-        fj_trap_remove_diff = 0
-        fj_box_left       = 386
-        fj_box_top        = 519
-        fj_box_right      = 399
-        fj_box_bottom     = 531
-        fj_vertex_0       = 387 | (531 << 16)
-        fj_vertex_1       = 399 | (520 << 16)
-        fj_vertex_2       = 392 | (519 << 16)
-        fj_vertex_3       = 386 | (528 << 16)
-      STR_VAR
-        fj_structure_type = "container"
-        fj_name           = "A7!Crate02"
-      END
-      LPF fj_are_structure
-      INT_VAR
-        fj_type           = 0       // proximiy trigger
-        fj_loc_x          = 1081
-        fj_loc_y          = 746
-        fj_type           = 8       // non-visible
-        fj_lock_diff      = 0
-        fj_flags          = (1 << 5)    // disabled
-        fj_trap_remove_diff = 0
-        fj_box_left       = 1088
-        fj_box_top        = 713
-        fj_box_right      = 1101
-        fj_box_bottom     = 736
-        fj_vertex_0       = 1101 | (736 << 16)
-        fj_vertex_1       = 1101 | (721 << 16)
-        fj_vertex_2       = 1088 | (713 << 16)
-        fj_vertex_3       = 1088 | (727 << 16)
-      STR_VAR
-        fj_structure_type = "container"
-        fj_name           = "A7!Crate03"
-      END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1005
+      fj_loc_y          = 436
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 999
+      fj_box_top        = 371
+      fj_box_right      = 1011
+      fj_box_bottom     = 382
+      fj_vertex_0       = 999 | (379 << 16)
+      fj_vertex_1       = 1005 | (382 << 16)
+      fj_vertex_2       = 1011 | (379 << 16)
+      fj_vertex_3       = 1011 | (371 << 16)
+      fj_vertex_4       = 1005 | (374 << 16)
+      fj_vertex_5       = 999 | (371 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate01"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 401
+      fj_loc_y          = 577
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 386
+      fj_box_top        = 519
+      fj_box_right      = 399
+      fj_box_bottom     = 531
+      fj_vertex_0       = 387 | (531 << 16)
+      fj_vertex_1       = 399 | (520 << 16)
+      fj_vertex_2       = 392 | (519 << 16)
+      fj_vertex_3       = 386 | (528 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate02"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1081
+      fj_loc_y          = 746
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1088
+      fj_box_top        = 713
+      fj_box_right      = 1101
+      fj_box_bottom     = 736
+      fj_vertex_0       = 1101 | (736 << 16)
+      fj_vertex_1       = 1101 | (721 << 16)
+      fj_vertex_2       = 1088 | (713 << 16)
+      fj_vertex_3       = 1088 | (727 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate03"
+    END
 
   COPY_EXISTING ~ar3009.are~ ~override~
-      LPF fj_are_structure
-      INT_VAR
-        fj_type           = 0       // proximiy trigger
-        fj_loc_x          = 661
-        fj_loc_y          = 591
-        fj_type           = 8       // non-visible
-        fj_lock_diff      = 0
-        fj_flags          = (1 << 5)    // disabled
-        fj_trap_remove_diff = 0
-        fj_box_left       = 644
-        fj_box_top        = 554
-        fj_box_right      = 658
-        fj_box_bottom     = 576
-        fj_vertex_0       = 645 | (576 << 16)
-        fj_vertex_1       = 658 | (569 << 16)
-        fj_vertex_2       = 656 | (554 << 16)
-        fj_vertex_3       = 644 | (561 << 16)
-      STR_VAR
-        fj_structure_type = "container"
-        fj_name           = "A7!Crate01"
-      END
-      LPF fj_are_structure
-      INT_VAR
-        fj_type           = 0       // proximiy trigger
-        fj_loc_x          = 550
-        fj_loc_y          = 354
-        fj_type           = 8       // non-visible
-        fj_lock_diff      = 0
-        fj_flags          = (1 << 5)    // disabled
-        fj_trap_remove_diff = 0
-        fj_box_left       = 546
-        fj_box_top        = 268
-        fj_box_right      = 555
-        fj_box_bottom     = 278
-        fj_vertex_0       = 547 | (278 << 16)
-        fj_vertex_1       = 551 | (278 << 16)
-        fj_vertex_2       = 553 | (277 << 16)
-        fj_vertex_3       = 555 | (274 << 16)
-        fj_vertex_4       = 555 | (271 << 16)
-        fj_vertex_5       = 552 | (268 << 16)
-        fj_vertex_6       = 550 | (268 << 16)
-        fj_vertex_7       = 546 | (271 << 16)
-        fj_vertex_8       = 546 | (276 << 16)
-      STR_VAR
-        fj_structure_type = "container"
-        fj_name           = "A7!Crate02"
-      END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 661
+      fj_loc_y          = 591
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 644
+      fj_box_top        = 554
+      fj_box_right      = 658
+      fj_box_bottom     = 576
+      fj_vertex_0       = 645 | (576 << 16)
+      fj_vertex_1       = 658 | (569 << 16)
+      fj_vertex_2       = 656 | (554 << 16)
+      fj_vertex_3       = 644 | (561 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate01"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 550
+      fj_loc_y          = 354
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 546
+      fj_box_top        = 268
+      fj_box_right      = 555
+      fj_box_bottom     = 278
+      fj_vertex_0       = 547 | (278 << 16)
+      fj_vertex_1       = 551 | (278 << 16)
+      fj_vertex_2       = 553 | (277 << 16)
+      fj_vertex_3       = 555 | (274 << 16)
+      fj_vertex_4       = 555 | (271 << 16)
+      fj_vertex_5       = 552 | (268 << 16)
+      fj_vertex_6       = 550 | (268 << 16)
+      fj_vertex_7       = 546 | (271 << 16)
+      fj_vertex_8       = 546 | (276 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate02"
+    END
 END
-
-
-// Maggot-infested body
-COPY ~%MOD_FOLDER%/items/a7!mbdy.itm~ ~override~
-  SAY NAME1 @30090  // Maggot-infested Body
-  SAY NAME2 @30090  // Maggot-infested Body
-  SAY UNIDENTIFIED_DESC @30091
-
-COPY ~%MOD_FOLDER%/items/a7!cmbdy.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!imbdy.bam~ ~override~
 
 
 // Lightning Golem weapon
@@ -431,3 +724,72 @@ OUTER_FOR (idx = 1; idx <= 4; ++idx) BEGIN
   END
 END
 
+
+// Scattering items across the world: items and their locations are listed in 2da tables
+ACTION_DEFINE_ASSOCIATIVE_ARRAY items_game BEGIN
+  ~items_bg1.2da~ => ~bgee eet~
+  ~items_bg2.2da~ => ~bg2ee eet~
+END
+ACTION_PHP_EACH items_game AS table => game BEGIN
+  ACTION_IF (GAME_IS ~%game%~) BEGIN
+    COPY - ~%MOD_FOLDER%/tables/%table%~ ~.../%MOD_FOLDER%/inlined/tables/%table%~
+      COUNT_2DA_ROWS 7 numRows
+      FOR (idx = 0; idx < numRows; ++idx) BEGIN
+        READ_2DA_ENTRY idx 0 7 type
+        READ_2DA_ENTRY idx 1 7 res
+        READ_2DA_ENTRY idx 2 7 name
+        READ_2DA_ENTRY idx 3 7 item
+        READ_2DA_ENTRY idx 4 7 count
+        READ_2DA_ENTRY idx 5 7 count2
+        READ_2DA_ENTRY idx 6 7 count3
+        INNER_ACTION BEGIN
+          ACTION_IF (~%type%~ STRING_EQUAL_CASE ~ACTOR~) BEGIN
+            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.cre~) BEGIN
+              COPY_EXISTING ~%res%.cre~ ~override~
+                PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~) BEGIN TEXT_SPRINT name ~NONE~ END
+                ADD_CRE_ITEM ~%item%~ (count) (count2) (count3) ~%name%~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+              BUT_ONLY
+            END
+          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~STORE~) BEGIN
+            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.sto~) BEGIN
+              COPY_EXISTING ~%res%.sto~ ~override~
+                // TODO: This is a work-around for missing variable evaluation of ADD_STORE_ITEM's flags parameter. Update when fixed in WeiDU.
+                PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~ OR ~%name%~ STRING_EQUAL_CASE ~IDENTIFIED~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~UNSTEALABLE~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~UNSTEALABLE~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~STOLEN~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~STOLEN~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&STOLEN~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&STOLEN~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&UNSTEALABLE~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&UNSTEALABLE~ (count)
+                END ELSE BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~NONE~ (count)
+                END
+              BUT_ONLY
+            END
+          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~CONTAINER~) BEGIN
+            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.ARE~) BEGIN
+              COPY_EXISTING ~%res%.ARE~ ~override~
+                INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY EXACT_MATCH ~*~ ~ ~ END
+                LPF ARE_INDEX_OF_CONTAINER STR_VAR name = EVAL ~%name%~ RET index END
+                PATCH_IF (index >= 0) BEGIN
+                  LPF fj_are_structure
+                  INT_VAR
+                    fj_con_itm_idx    = index
+                    fj_charge0        = count
+                    fj_charge1        = count2
+                    fj_charge2        = count3
+                  STR_VAR
+                    fj_structure_type = "itm"
+                    fj_name           = EVAL "%item%"
+                  END
+                END
+              BUT_ONLY
+            END
+          END
+        END
+      END
+  END
+END

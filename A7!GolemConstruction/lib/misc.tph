@@ -53,13 +53,14 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     DECOMPILE_AND_PATCH BEGIN
       REPLACE_TEXTUALLY CASE_INSENSITIVE
         ~\(ActionOverride("Shelf1",TakeItemListPartyNum(.+))\)~
-        ~\1 ActionOverride("Shelf17",TakeItemListPartyNum("A7!IMPT1",1)) ActionOverride("Crate2",TakeItemListPartyNum("A7!IMPT2",1)) ActionOverride("Shelf6",TakeItemListPartyNum("A7!IMPT3",1))~
+        ~\1 ActionOverride("Shelf17",TakeItemListPartyNum("A7!IMPT1",1)) ActionOverride("Crate2",TakeItemListPartyNum("A7!IMPT2",1)) ActionOverride("Shelf6",TakeItemListPartyNum("A7!IMPT3",4)) ActionOverride("Drawer1",TakeItemListPartyNum("A7!IMPT4",1))~
     END
     BUT_ONLY
 
   COPY ~%MOD_FOLDER%/items/a7!impt1.2da~ ~override~
        ~%MOD_FOLDER%/items/a7!impt2.2da~ ~override~
        ~%MOD_FOLDER%/items/a7!impt3.2da~ ~override~
+       ~%MOD_FOLDER%/items/a7!impt4.2da~ ~override~
 
   // Use Planar Sphere as golem building workshop
   EXTEND_TOP ~ar0410.bcs~ ~%MOD_FOLDER%/scripts/ar0411_top.baf~
