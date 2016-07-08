@@ -664,11 +664,23 @@ COPY ~%MOD_FOLDER%/items/a7!glmg1.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!glma1.itm~ ~override~
 
 
+// Deep Bloodstone Gem
+COPY ~%MOD_FOLDER%/items/a7!glfl.itm~ ~override~
+  SAY NAME1 @30120  // Deep Bloodstone Gem
+  SAY NAME2 @30120  // Deep Bloodstone Gem
+  SAY UNIDENTIFIED_DESC @30121  // ...
+
+COPY ~%MOD_FOLDER%/items/a7!cglfl.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!iglfl.bam~ ~override~
+
+
 // Bag of Coral Powder
-// COPY ~%MOD_FOLDER%/items/a7!iglcl.itm~ ~override~
-  // SAY NAME1 @30xxx  // Bag of Coral Powder
-  // SAY NAME1 @30xxx  // Bag of Coral Powder
-  // SAY UNIDENTIFIED_DESC @30xxx
+COPY ~%MOD_FOLDER%/items/a7!glcl.itm~ ~override~
+  SAY NAME1 @30130  // Enchanted Coral Powder
+  SAY NAME2 @30130  // Enchanted Coral Powder
+  SAY UNIDENTIFIED_DESC @30131  // ...
+
+COPY ~%MOD_FOLDER%/items/a7!cglcl.bam~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!iglcl.bam~ ~override~
   LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
@@ -682,12 +694,64 @@ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
   END
 END
 
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // Cave below Dragonsiege Castle
+  COPY_EXISTING ~bd5100.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1272
+      fj_loc_y          = 3150
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1265
+      fj_box_top        = 3096
+      fj_box_right      = 1314
+      fj_box_bottom     = 3138
+      fj_vertex_0       = 1294 | (3138 << 16)
+      fj_vertex_1       = 1301 | (3135 << 16)
+      fj_vertex_2       = 1314 | (3113 << 16)
+      fj_vertex_3       = 1312 | (3104 << 16)
+      fj_vertex_4       = 1291 | (3096 << 16)
+      fj_vertex_5       = 1278 | (3097 << 16)
+      fj_vertex_6       = 1270 | (3103 << 16)
+      fj_vertex_7       = 1265 | (3111 << 16)
+      fj_vertex_8       = 1271 | (3127 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container01"
+    END
+END
+
+// Mimic's Blood
+COPY ~%MOD_FOLDER%/items/a7!glst.itm~ ~override~
+  SAY NAME1 @30140  // Mimic's Blood
+  SAY NAME2 @30140  // Mimic's Blood
+  SAY UNIDENTIFIED_DESC @30141  // ...
+
+COPY ~%MOD_FOLDER%/items/a7!cglst.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!iglst.bam~ ~override~
+
+
+// Chips of Cold Iron
+COPY ~%MOD_FOLDER%/items/a7!glir.itm~ ~override~
+  SAY NAME1 @30150  // Chips of Cold Iron
+  SAY NAME2 @30150  // Chips of Cold Iron
+  SAY UNIDENTIFIED_DESC @30151  // ...
+
+COPY ~%MOD_FOLDER%/items/a7!cglir.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!iglir.bam~ ~override~
+
 
 // Spectral obsidian orb
-// COPY ~%MOD_FOLDER%/items/a7!iglmi.itm~ ~override~
-  // SAY NAME1 @30xxx  // Spectral Obsidian Orb
-  // SAY NAME1 @30xxx  // Spectral Obsidian Orb
-  // SAY UNIDENTIFIED_DESC @30xxx
+COPY ~%MOD_FOLDER%/items/a7!glmi.itm~ ~override~
+  SAY NAME1 @30160  // Glowing Black Orb
+  SAY NAME2 @30161  // Spectral Obsidian Orb
+  SAY UNIDENTIFIED_DESC @30162  // ...
+  SAY IDENTIFIED_DESC @30163  // ...
+
+COPY ~%MOD_FOLDER%/items/a7!cglmi.bam~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!iglmi.bam~ ~override~
   LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
@@ -700,6 +764,23 @@ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
     source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
   END
 END
+
+
+// Blood of a (Fallen) Solar
+COPY ~%MOD_FOLDER%/items/a7!glad1.itm~ ~override~
+  SAY NAME1 @30170  // Blood of a Solar
+  SAY NAME2 @30171  // Blood of a Solar
+  SAY UNIDENTIFIED_DESC @30173  // ...
+  SAY IDENTIFIED_DESC @30174  // ...
+
+COPY ~%MOD_FOLDER%/items/a7!glad2.itm~ ~override~
+  SAY NAME1 @30170  // Blood of a Fallen Solar
+  SAY NAME2 @30172  // Blood of a Fallen Solar
+  SAY UNIDENTIFIED_DESC @30173  // ...
+  SAY IDENTIFIED_DESC @30175  // ...
+
+COPY ~%MOD_FOLDER%/items/a7!cglad.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!iglad.bam~ ~override~
 
 
 // Pieces of machinery for golem building
@@ -721,75 +802,5 @@ OUTER_FOR (idx = 1; idx <= 4; ++idx) BEGIN
     STR_VAR
       source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
     END
-  END
-END
-
-
-// Scattering items across the world: items and their locations are listed in 2da tables
-ACTION_DEFINE_ASSOCIATIVE_ARRAY items_game BEGIN
-  ~items_bg1.2da~ => ~bgee eet~
-  ~items_bg2.2da~ => ~bg2ee eet~
-END
-ACTION_PHP_EACH items_game AS table => game BEGIN
-  ACTION_IF (GAME_IS ~%game%~) BEGIN
-    COPY - ~%MOD_FOLDER%/tables/%table%~ ~.../%MOD_FOLDER%/inlined/tables/%table%~
-      COUNT_2DA_ROWS 7 numRows
-      FOR (idx = 0; idx < numRows; ++idx) BEGIN
-        READ_2DA_ENTRY idx 0 7 type
-        READ_2DA_ENTRY idx 1 7 res
-        READ_2DA_ENTRY idx 2 7 name
-        READ_2DA_ENTRY idx 3 7 item
-        READ_2DA_ENTRY idx 4 7 count
-        READ_2DA_ENTRY idx 5 7 count2
-        READ_2DA_ENTRY idx 6 7 count3
-        INNER_ACTION BEGIN
-          ACTION_IF (~%type%~ STRING_EQUAL_CASE ~ACTOR~) BEGIN
-            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.cre~) BEGIN
-              COPY_EXISTING ~%res%.cre~ ~override~
-                PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~) BEGIN TEXT_SPRINT name ~NONE~ END
-                ADD_CRE_ITEM ~%item%~ (count) (count2) (count3) ~%name%~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-              BUT_ONLY
-            END
-          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~STORE~) BEGIN
-            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.sto~) BEGIN
-              COPY_EXISTING ~%res%.sto~ ~override~
-                // TODO: This is a work-around for missing variable evaluation of ADD_STORE_ITEM's flags parameter. Update when fixed in WeiDU.
-                PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~ OR ~%name%~ STRING_EQUAL_CASE ~IDENTIFIED~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~UNSTEALABLE~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~UNSTEALABLE~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~STOLEN~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~STOLEN~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&STOLEN~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&STOLEN~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&UNSTEALABLE~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&UNSTEALABLE~ (count)
-                END ELSE BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~NONE~ (count)
-                END
-              BUT_ONLY
-            END
-          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~CONTAINER~) BEGIN
-            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.ARE~) BEGIN
-              COPY_EXISTING ~%res%.ARE~ ~override~
-                INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY EXACT_MATCH ~*~ ~ ~ END
-                LPF ARE_INDEX_OF_CONTAINER STR_VAR name = EVAL ~%name%~ RET index END
-                PATCH_IF (index >= 0) BEGIN
-                  LPF fj_are_structure
-                  INT_VAR
-                    fj_con_itm_idx    = index
-                    fj_charge0        = count
-                    fj_charge1        = count2
-                    fj_charge2        = count3
-                  STR_VAR
-                    fj_structure_type = "itm"
-                    fj_name           = EVAL "%item%"
-                  END
-                END
-              BUT_ONLY
-            END
-          END
-        END
-      END
   END
 END

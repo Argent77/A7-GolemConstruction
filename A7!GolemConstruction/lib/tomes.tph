@@ -44,37 +44,6 @@ COPY ~%MOD_FOLDER%/items/a7!tomx1.itm~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!tom01.eff~ ~override~
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  // Add to starting dungeon
-  COPY_EXISTING ~bd0130.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 10 STR_VAR name = ~table_korlasz~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom01"
-    END
-
-  // Add to Coldhearth dungeon
-  COPY_EXISTING ~bd1200.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 10 STR_VAR name = ~Failed Experiment~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom01"
-    END
-END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to various merchant stores
-  COPY_EXISTING ~trmer02.sto~ ~override~
-                ~uddrow25.sto~ ~override~
-                ~25spell.sto~ ~override~
-    ADD_STORE_ITEM ~a7!tom01~ LAST #0 #0 #0 ~IDENTIFIED~ #1
-END
-
 
 // Clay Golem Manual
 COPY ~%MOD_FOLDER%/items/a7!tom02.itm~ ~override~
@@ -113,47 +82,6 @@ COPY ~%MOD_FOLDER%/items/a7!tomx2.itm~ ~override~
   SAY UNIDENTIFIED_DESC @2101 // This amazing tome contains theoretical musings on the construction and control of golems.
 
 COPY ~%MOD_FOLDER%/items/a7!tom02.eff~ ~override~
-
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  // Add to chest in hidden cellar
-  COPY_EXISTING ~bd7310.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 1 STR_VAR name = ~Chest01~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom02"
-    END
-END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to Planar Sphere
-  COPY_EXISTING ~ar0411.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 0 STR_VAR name = ~Golem Room Table~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom02"
-    END
-
-  // Add to WK, Level 2
-  COPY_EXISTING ~ar3016.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 16 STR_VAR name = ~Shelf12~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom02"
-    END
-
-  // Add to various stores
-  COPY_EXISTING ~ribald3.sto~ ~override~
-                ~25spell.sto~ ~override~
-    ADD_STORE_ITEM ~a7!tom02~ LAST #0 #0 #0 ~IDENTIFIED~ #1
-END
 
 
 // Stone Golem Manual
@@ -194,36 +122,10 @@ COPY ~%MOD_FOLDER%/items/a7!tomx3.itm~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!tom03.eff~ ~override~
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  COPY_EXISTING ~bd4300.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 0 STR_VAR name = ~Heph_chest1~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom03"
-    END
-END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to de'Arnise Keep
-  COPY_EXISTING ~ar1303.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 1 STR_VAR name = ~Container 2~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom03"
-    END
-  // guarded by golems
+  // Add to de'Arnise Keep (see item table), guarded by golems
   EXTEND_BOTTOM ~kpgol02.bcs~ ~%MOD_FOLDER%/scripts/kpgol02_bottom.baf~
   EXTEND_BOTTOM ~kpgol04.bcs~ ~%MOD_FOLDER%/scripts/kpgol04_bottom.baf~
-
-  // Add to various stores
-  COPY_EXISTING ~ribald3.sto~ ~override~
-                ~25spell.sto~ ~override~
-    ADD_STORE_ITEM ~a7!tom03~ LAST #0 #0 #0 ~IDENTIFIED~ #1
 END
 
 
@@ -266,20 +168,9 @@ COPY ~%MOD_FOLDER%/items/a7!tomx4.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!tom04.eff~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to hidden stash in Firkraag's dungeon
+  // Add to hidden stash in Firkraag's dungeon (TODO: can't be added to item table because of duplicate container name)
   COPY_EXISTING ~ar1202.are~ ~override~
     LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 10 skip = 1 STR_VAR name = ~Container 11~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom04"
-    END
-
-  // Add to Fire Giant Temple, second level
-  COPY_EXISTING ~ar5204.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 0 STR_VAR name = ~Bed~ RET index END
     LPF fj_are_structure
     INT_VAR
       fj_con_itm_idx    = index
@@ -327,16 +218,6 @@ COPY ~%MOD_FOLDER%/items/a7!tomx5.itm~ ~override~
   SAY UNIDENTIFIED_DESC @5101 // This amazing tome contains theoretical musings on the construction and control of golems.
 
 COPY ~%MOD_FOLDER%/items/a7!tom05.eff~ ~override~
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Loot from black dragon in Suldanesselar
-  COPY_EXISTING ~dragblac.cre~ ~override~
-    ADD_CRE_ITEM ~a7!tom05~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16 QITEM1 QITEM2 QITEM3~
-
-  // Loot from Sendai
-  COPY_EXISTING ~sendai.cre~ ~override~
-    ADD_CRE_ITEM ~a7!tom05~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-END
 
 
 // Adamantite Golem Manual
@@ -387,21 +268,6 @@ COPY ~%MOD_FOLDER%/items/a7!tomx6.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!tom06.eff~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add first tome fragment to WK - Demilich crypt
-  COPY_EXISTING ~ar3027.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 0 STR_VAR name = ~Container 1~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tfrg1"
-    END
-
-  // Add second tome fragment to Vongoethe in Amkethran
-  COPY_EXISTING ~amlich01.cre~ ~override~
-    ADD_CRE_ITEM ~a7!tfrg2~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-
   // Add option of restoring the golem manual to Cespenar
   EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/scripts/botsmith_bottom.baf~
   COMPILE ~%MOD_FOLDER%/dialogs/botsmith.d~
@@ -446,11 +312,6 @@ COPY ~%MOD_FOLDER%/items/a7!tomx7.itm~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!tom07.eff~ ~override~
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  // Add to the shadow druid Ferrusk
-  COPY_EXISTING ~bdferrus.cre~ ~override~
-    ADD_CRE_ITEM ~a7!tom07~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   // Add to Mekrath's Lair on condition
   EXTEND_TOP ~ar0705.bcs~ ~%MOD_FOLDER%/scripts/ar0705_top.baf~
@@ -496,19 +357,8 @@ COPY ~%MOD_FOLDER%/items/a7!tomx8.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!tom08.eff~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to Ruined Temple of Amaunator
-  COPY_EXISTING ~ar1401.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 3 STR_VAR name = ~Container 4~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom08"
-    END
-
-    // Add to shelf in Abazigal's Lair - Bone Fiend Room (on condition)
-    EXTEND_TOP ~ar6012.bcs~ ~%MOD_FOLDER%/scripts/ar6012_top.baf~
+  // Add to shelf in Abazigal's Lair - Bone Fiend Room (on condition)
+  EXTEND_TOP ~ar6012.bcs~ ~%MOD_FOLDER%/scripts/ar6012_top.baf~
 END
 
 
@@ -551,17 +401,6 @@ COPY ~%MOD_FOLDER%/items/a7!tomx9.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!tom09.eff~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY_EXISTING ~ar2400.are~ ~override~
-    // adding tome to container "Amp"
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 0 STR_VAR name = ~amp~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom09"
-    END
-
   // Special mindflayer in WK/Level 4
   EXTEND_TOP ~ar3021.bcs~ ~%MOD_FOLDER%/scripts/ar3021_top.baf~
 END
@@ -604,19 +443,6 @@ COPY ~%MOD_FOLDER%/items/a7!tomxa.itm~ ~override~
   SAY UNIDENTIFIED_DESC @10101 // This amazing tome contains theoretical musings on the construction and control of golems.
 
 COPY ~%MOD_FOLDER%/items/a7!tom0a.eff~ ~override~
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to WK - Wizard's Library
-  COPY_EXISTING ~ar3016.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 7 STR_VAR name = ~Shelf5~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom0a"
-    END
-END
 
 
 // Magic Golem Manual
@@ -661,10 +487,6 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   // You can win a tome from Aesgareth in WK
   COMPILE ~%MOD_FOLDER%/dialogs/gorcamb.d~
 
-  // You can loot a tome from Aesgareth's body
-  COPY_EXISTING ~gorcamb.cre~ ~override~
-    ADD_CRE_ITEM ~a7!tom0b~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-
   // You can loot a tome from Iycanth the Mad
   EXTEND_TOP ~ar6003.bcs~ ~%MOD_FOLDER%/scripts/ar6003_top.baf~
 END
@@ -707,9 +529,3 @@ COPY ~%MOD_FOLDER%/items/a7!tomxc.itm~ ~override~
   SAY UNIDENTIFIED_DESC @12101 // This amazing tome contains theoretical musings on the construction and control of golems.
 
 COPY ~%MOD_FOLDER%/items/a7!tom0c.eff~ ~override~
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // You can loot a tome from Saladrex in WK
-  COPY_EXISTING ~gorsal.cre~ ~override~
-    ADD_CRE_ITEM ~a7!tom0c~ #0 #0 #0 ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-END

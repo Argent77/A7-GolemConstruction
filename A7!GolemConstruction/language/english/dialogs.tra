@@ -150,6 +150,20 @@
 @44509 = ~Your timing is perfect. I stocked up my store right now with new and exotic items from a rather particular source.~
 
 
+// *** Golem dialogs ***
+@45000 = ~The golem ignores you completely.~
+@45001 = ~The golem awaits your command.~
+@45002 = ~Follow me!~
+@45003 = ~Follow and protect me!~
+@45004 = ~Stand guard!~
+@45005 = ~Stand guard and defend the area!~
+@45006 = ~Destroy yourself!~
+@45007 = ~Nevermind.~
+@45008 = ~This action can not be undone. Are you certain?~
+@45009 = ~Yes!~
+@45010 = ~No!~
+
+
 // *** Journal entries ***
 @49000 = ~Golem Construction Workshop~
 

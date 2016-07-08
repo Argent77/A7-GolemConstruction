@@ -1,7 +1,7 @@
 // *** SoA: Jerlia the Ore Merchant ***
 
 IF
-  GlobalGT("Chapter", "GLOBAL", 5)
+  GlobalGT("Chapter", "GLOBAL", %bg2_chapter_5%)
   Global("A7!UpdateStore", "LOCALS", 0)
 THEN
   RESPONSE #100

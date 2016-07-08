@@ -1,0 +1,195 @@
+// *** Actions based on given commands ***
+
+// -- Follow, no actions (Command=0) --
+
+// -- Follow, attack (Command=1) --
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(NearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(SecondNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(ThirdNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(FourthNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(FifthNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(SixthNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(SeventhNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(EighthNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(NinthNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(TenthNearestAllyOf(Myself))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END
+
+
+// -- Guard, no actions (Command=2) --
+
+// -- Guard, attack (Command=3) --
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  !See([EVILCUTOFF])
+  !NearSavedLocation(Myself, "Location", 4)
+THEN
+  RESPONSE #100
+    MoveToSavedLocation("Location", "LOCALS")
+    Face(S)
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  !NearSavedLocation(Myself, "Location", 40)
+THEN
+  RESPONSE #100
+    MoveToSavedLocation("Location", "LOCALS")
+    Face(S)
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  See([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  AttackedBy([EVILCUTOFF], DEFAULT)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  AttackedBy([NOTGOOD], DEFAULT)
+THEN
+  RESPONSE #100
+    Attack(LastAttackerOf(Myself))
+END
+
