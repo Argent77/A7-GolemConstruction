@@ -134,25 +134,25 @@ IF ~~ Golem.Type.Clay
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 10)
-     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrol1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
+     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 12)
-     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrol1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
+     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 14)
-     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrol1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
+     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -404,7 +404,7 @@ IF ~~ Golem.Type.Clay.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 2) SetGlobal("GolemVariant", "LOCALS", 2)
             TakePartyItemNum("a7!clay", 2) DestroyItem("a7!clay") DestroyItem("a7!clay")
-            TakePartyItemNum("scrol1h", 1) DestroyItem("scrol1h")
+            TakePartyItemNum("scrl1h", 1) DestroyItem("scrl1h")
             StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
@@ -412,7 +412,7 @@ IF ~~ Golem.Type.Clay.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 2) SetGlobal("GolemVariant", "LOCALS", 3)
             TakePartyItemNum("a7!clay", 4) DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay")
-            TakePartyItemNum("scrol1h", 1) DestroyItem("scrol1h")
+            TakePartyItemNum("scrl1h", 1) DestroyItem("scrl1h")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
@@ -420,7 +420,7 @@ IF ~~ Golem.Type.Clay.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 2) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!clay", 4) DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay")
-            TakePartyItemNum("scrol1h", 1) DestroyItem("scrol1h")
+            TakePartyItemNum("scrl1h", 1) DestroyItem("scrl1h")
             TakePartyItemNum("a7!glcl", 1) DestroyItem("a7!glcl")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
