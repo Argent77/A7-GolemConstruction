@@ -1,5 +1,15 @@
 // *** Installs spell-related resources ***
 
+// Permanent visual effect for perfect golems
+COPY ~%MOD_FOLDER%/spells/a7!glfx1.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glfx2.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glfx3.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glfx1.vvc~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glfx2.vvc~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glfx3.vvc~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glfx1.wav~ ~override~
+
+
 // Dismiss Golem
 COPY ~%MOD_FOLDER%/spells/a7!in01.spl~ ~override~
   SAY NAME1 @20000  // Dismiss Golem

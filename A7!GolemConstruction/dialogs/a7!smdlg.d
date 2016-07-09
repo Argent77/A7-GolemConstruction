@@ -115,11 +115,11 @@ IF ~~ Golem.Type.Flesh
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97")~ + @41014 /* Greater Flesh Golem */ + Golem.Type.Flesh.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 11)
-     NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!fl01")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
+     NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!glfl")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 13)
-     NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!fl01")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
+     NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!glfl")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 15)
-     NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!fl01")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
+     NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!glfl")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -148,11 +148,11 @@ IF ~~ Golem.Type.Clay
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!cl01")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!cl01")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
-     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!cl01")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrol1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -181,11 +181,11 @@ IF ~~ Golem.Type.Stone
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o")~ + @41024 /* Greater Stone Golem */ + Golem.Type.Stone.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
-     NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!st01")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
+     NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!glst")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
-     NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!st01")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
+     NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!glst")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
-     NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!st01")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
+     NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!glst")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -214,11 +214,11 @@ IF ~~ Golem.Type.Iron
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e")~ + @41028 /* Greater Iron Golem */ + Golem.Type.Iron.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 19)
-     NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!ir01")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
+     NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!glir")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 21)
-     NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!ir01")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
+     NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!glir")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 23)
-     NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!ir01")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
+     NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!glir")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -247,11 +247,11 @@ IF ~~ Golem.Type.Mithral
      NumItemsPartyGT("a7!mith", 3)~ + @41032 /* Greater Mithral Golem */ + Golem.Type.Mithral.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 24)
-     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!mi01")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
+     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 26)
-     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!mi01")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
+     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 28)
-     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!mi01")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
+     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -285,11 +285,11 @@ IF ~~ Golem.Type.Adamantite
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 29)
-     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!ad01") PartyHasItem("a7!ad02")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
+     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 31)
-     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!ad01") PartyHasItem("a7!ad02")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
+     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 33)
-     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!ad01") PartyHasItem("a7!ad02")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
+     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
 
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -388,7 +388,7 @@ IF ~~ Golem.Type.Flesh.Perfect
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 1) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!body", 4) DestroyItem("a7!body") DestroyItem("a7!body") DestroyItem("a7!body") DestroyItem("a7!body")
             TakePartyItemNum("scrl97", 1) DestroyItem("scrl97")
-            TakePartyItemNum("a7!fl01", 1) DestroyItem("a7!fl01")
+            TakePartyItemNum("a7!glfl", 1) DestroyItem("a7!glfl")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
@@ -421,7 +421,7 @@ IF ~~ Golem.Type.Clay.Perfect
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 2) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!clay", 4) DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay") DestroyItem("a7!clay")
             TakePartyItemNum("scrol1h", 1) DestroyItem("scrol1h")
-            TakePartyItemNum("a7!cl01", 1) DestroyItem("a7!cl01")
+            TakePartyItemNum("a7!glcl", 1) DestroyItem("a7!glcl")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
@@ -454,7 +454,7 @@ IF ~~ Golem.Type.Stone.Perfect
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 3) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!ston", 4) DestroyItem("a7!ston") DestroyItem("a7!ston") DestroyItem("a7!ston") DestroyItem("a7!ston")
             TakePartyItemNum("scrl1o", 1) DestroyItem("scrl1o")
-            TakePartyItemNum("a7!st01", 1) DestroyItem("a7!st01")
+            TakePartyItemNum("a7!glst", 1) DestroyItem("a7!glst")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
@@ -487,7 +487,7 @@ IF ~~ Golem.Type.Iron.Perfect
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 4) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!iron", 4) DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron")
             TakePartyItemNum("scrl2e", 1) DestroyItem("scrl2e")
-            TakePartyItemNum("a7!ir01", 1) DestroyItem("a7!ir01")
+            TakePartyItemNum("a7!glir", 1) DestroyItem("a7!glir")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
@@ -517,7 +517,7 @@ IF ~~ Golem.Type.Mithral.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!mith", 4) DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith")
-            TakePartyItemNum("a7!mi01", 1) DestroyItem("a7!mi01")
+            TakePartyItemNum("a7!glmi", 1) DestroyItem("a7!glmi")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
@@ -550,13 +550,13 @@ IF ~~ Golem.Type.Adamantite.Perfect
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
-            TakePartyItemNum("a7!ad01", 1) DestroyItem("a7!ad01")
+            TakePartyItemNum("a7!glad1", 1) DestroyItem("a7!glad1")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
   IF ~PartyHasItem("a7!ad02")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
-            TakePartyItemNum("a7!ad02", 1) DestroyItem("a7!ad02")
+            TakePartyItemNum("a7!glad2", 1) DestroyItem("a7!glad2")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
