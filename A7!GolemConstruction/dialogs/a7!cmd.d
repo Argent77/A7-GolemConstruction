@@ -2,12 +2,12 @@
 
 BEGIN ~a7!cmd~
 
-IF ~!Allegiance(LastTalkedToBy, PC)~ Golem.1
+IF ~OR(2) !Allegiance(LastTalkedToBy, PC) NextTriggerObject(LastTalkedToBy) !HaveSpellRES("a7!smgl")~ Golem.1
   SAY @45000 /* The golem ignores you completely. */
   IF ~~ EXIT
 END
 
-IF ~Allegiance(LastTalkedToBy, PC)~ Golem.2
+IF ~Allegiance(LastTalkedToBy, PC) NextTriggerObject(LastTalkedToBy) HaveSpellRES("a7!smgl")~ Golem.2
   SAY @45001 /* The golem awaits your command. */
   + ~!Global("Command", "LOCALS", 0) Allegiance(Myself, FAMILIAR)~ + @45002 /* Follow me! */
       DO ~SetGlobal("Command", "LOCALS", 0)~ EXIT
