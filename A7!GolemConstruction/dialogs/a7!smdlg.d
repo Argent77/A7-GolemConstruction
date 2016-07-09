@@ -546,13 +546,13 @@ END
 
 IF ~~ Golem.Type.Adamantite.Perfect
   SAY @41043 /* You start with the construction of the golem body... */
-  IF ~PartyHasItem("a7!ad01")~ 
+  IF ~PartyHasItem("a7!glad1")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             TakePartyItemNum("a7!glad1", 1) DestroyItem("a7!glad1")
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
-  IF ~PartyHasItem("a7!ad02")~ 
+  IF ~PartyHasItem("a7!glad2")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
