@@ -106,7 +106,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glfl1.cre~ ~override~
   SAY NAME2 @1001 // Lesser Flesh Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd2~ #8
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -117,7 +117,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsfl1.cre~ ~override~
   SAY NAME2 @1001 // Lesser Flesh Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd2~ #8
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -184,7 +184,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glcl1.cre~ ~override~
   SAY NAME2 @2001 // Lesser Clay Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd2~ #8
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -195,7 +195,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gscl1.cre~ ~override~
   SAY NAME2 @2001 // Lesser Clay Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd2~ #8
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -266,7 +266,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glst1.cre~ ~override~
   SAY NAME2 @3001 // Lesser Stone Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd2~ #8
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -277,7 +277,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsst1.cre~ ~override~
   SAY NAME2 @3001 // Lesser Stone Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd2~ #8
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -597,7 +597,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glmg.cre~ ~override~
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
   WRITE_ASCII SCRIPT_CLASS ~a7!glmg~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd2~ #8
   WRITE_LONG 0x28 slot_golem_maggot
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~
@@ -692,6 +692,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gllt.cre~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!fam.itm~ ~override~
 
 COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd.d~
+        ~%MOD_FOLDER%/dialogs/a7!cmd2.d~
 
 COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
         ~%MOD_FOLDER%/scripts/a7!gsdef.baf~

@@ -800,7 +800,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - HP: 64
   - AC: -1
   - THAC0: 5
-  - APR: 1
+  - APR: 2
   - Saves: 7/9/8/8/10
 - Resistances:
   - Magic: 100
@@ -827,7 +827,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - HP: 80
   - AC: 0
   - THAC0: 6
-  - APR: 1
+  - APR: 2
   - Saves: 4/6/5/5/7
 - Resistance:
   - Magic: 100
