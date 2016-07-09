@@ -1,5 +1,6 @@
             Resource    Name/Flags                Item      Count Count2  Count3
 CONTAINER   BD5100      A7!Container01            MISC07    250   0       0
+ACTOR       BDSETHYL    *                         SCRL97    1     0       0
 CONTAINER   BD0130      Table_war_room03          SCRL97    1     0       0
 CONTAINER   BD0130      Table_library             SCRL1H    1     0       0
 STORE       BDWAIZAH    *                         A7!BODY   5     0       0

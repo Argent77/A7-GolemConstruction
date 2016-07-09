@@ -8,6 +8,8 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!SphereWorkshop", "GLOBAL", 1)
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
     DisplayString(Player1, @100007) // The laboratory in this area looks well equipped. You can probably use it to construct golems.
     AddJournalEntry(@49003, QUEST)  // Golem Construction Workshop
     Continue()

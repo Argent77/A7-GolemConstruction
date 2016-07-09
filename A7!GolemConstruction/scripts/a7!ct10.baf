@@ -23,6 +23,7 @@ THEN
     ActionOverride(Player6, Face(NW))
     JumpToObject(LastSummonerOf(Myself))
     Face(SE)
+    MoveViewPoint([385.523],INSTANT)
     FadeFromColor([30.0],0)
     Wait(2)
     StartDialogueNoSet(LastSummonerOf(Myself))
