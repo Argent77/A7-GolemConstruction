@@ -847,6 +847,19 @@ Each golem has the following abilities by default:
              big circle sizes so they won't get stuck in narrow pathways. It can only be used while no enemies are 
              around.
 
+You can also give your golems simple commands. Lesser variants of flesh, clay and stone golems, as well as maggot golems 
+may follow the following orders:
+- Follow me! (The golem becomes controllable, but does not act on its own. This is the default action after activation.)
+- Stand guard! (The golem turns neutral and does not budge from its current position.)
+- Destroy yourself! (Causes the golem to disintegrate. This command is the same as the "Dismiss" ability, but can also 
+                     be issued when the golem is on guard duty.)
+
+More advanced golems may also follow the following orders:
+- Follow and protect me! (The golem becomes controllable and will attack any hostile creature in sight, or enemies that 
+                          are attacking party members.)
+- Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns 
+                                    to its guarded position.)
+
 
 
 Known locations where you can successfully construct golems
