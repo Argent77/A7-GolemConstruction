@@ -20,11 +20,11 @@ IF ~Allegiance(LastTalkedToBy, PC)~ Golem.2
   + ~!Global("Command", "LOCALS", 2) Allegiance(Myself, NEUTRAL)~ + @45004 /* Stand guard! */
       DO ~SetGlobal("Command", "LOCALS", 2) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
   + ~!Global("Command", "LOCALS", 2) !Allegiance(Myself, NEUTRAL)~ + @45004 /* Stand guard! */
-      DO ~SetGlobal("Command", "LOCALS", 2) RemoveFamiliar() ChangeEnemyAlly(Myself, NEUTRAL) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
+      DO ~SetGlobal("Command", "LOCALS", 2) RemoveFamiliar() ChangeEnemyAlly(Myself, GOODBUTBLUE) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
   + ~!Global("Command", "LOCALS", 2) !Name("a7!glmg", Myself) Allegiance(Myself, NEUTRAL)~ + @45005 /* Stand guard and defend the area! */
       DO ~SetGlobal("Command", "LOCALS", 3) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
   + ~!Global("Command", "LOCALS", 2) !Name("a7!glmg", Myself) !Allegiance(Myself, NEUTRAL)~ + @45005 /* Stand guard and defend the area! */
-      DO ~SetGlobal("Command", "LOCALS", 3) RemoveFamiliar() ChangeEnemyAlly(Myself, NEUTRAL) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
+      DO ~SetGlobal("Command", "LOCALS", 3) RemoveFamiliar() ChangeEnemyAlly(Myself, GOODBUTBLUE) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
   ++ @45006 /* Destroy yourself! */ + Golem.3
   ++ @45007 /* Nevermind. */ EXIT
 END

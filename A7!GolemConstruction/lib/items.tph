@@ -782,6 +782,15 @@ COPY ~%MOD_FOLDER%/items/a7!glad2.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!cglad.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!iglad.bam~ ~override~
 
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Demogorgon drops a vial
+  COPY_EXISTING ~demogor2.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~\(SetGlobal("SPRITE_IS_DEADDEMOGOR2","GLOBAL",1)\)~ ~\1 DropItem("a7!glad2", [-1.-1])~
+    END
+  BUT_ONLY
+END
+
 
 // Pieces of machinery for golem building
 OUTER_FOR (idx = 1; idx <= 4; ++idx) BEGIN
