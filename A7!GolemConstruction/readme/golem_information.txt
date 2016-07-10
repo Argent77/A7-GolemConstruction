@@ -860,6 +860,7 @@ More advanced golems may also follow the following orders:
 - Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns 
                                     to its guarded position.)
 
+You should always take good care of your golems as they may exhibit severe penalties when badly hurt.
 
 
 Known locations where you can successfully construct golems

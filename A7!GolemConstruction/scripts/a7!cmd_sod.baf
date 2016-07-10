@@ -1,0 +1,18 @@
+// *** Game-specific actions ***
+
+// SoD: Remove golem from party after Charname "murdered" Skie
+IF
+  GlobalGT("bd_plot", "GLOBAL", 590)
+  Global("disabled", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("disabled", "LOCALS", 1)
+    RemoveFamiliar()
+    ChangeEnemyAlly(Myself, NEUTRAL)
+    ChangeAIScript("", DEFAULT)
+    ChangeAIScript("", GENERAL)
+    ChangeAIScript("", RACE)
+    ChangeAIScript("", CLASS)
+    ChangeAIScript("", OVERRIDE)
+    SetDialogue("")
+END

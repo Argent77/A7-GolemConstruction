@@ -1,0 +1,52 @@
+// *** Game-specific actions ***
+
+// SoA - Spellhold
+IF
+  AreaCheck("AR1515")
+  GlobalLT("AsylumPlot", "GLOBAL", 55)
+  Global("spellhold", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("spellhold", "LOCALS", 1)
+    SetGlobal("Command", "LOCALS", 2)
+    DisplayStringHead(Myself, @100018)  // Golem has been disabled.
+    PlaySound("EFF_M07")
+    RemoveFamiliar()
+    ChangeEnemyAlly(Myself, NEUTRAL)
+END
+
+IF
+  AreaCheck("AR1515")
+  GlobalGT("AsylumPlot", "GLOBAL", 54)
+  !Global("spellhold", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    SetGlobal("spellhold", "LOCALS", 2)
+END
+
+
+// SoA - Tree of Life: Move golem to ToB starting area
+// TODO: doesn't appear to work
+// IF
+  // AreaCheck("AR2806")
+  // GlobalGT("KillPartySlowly", "AR2806", 0)
+  // Global("treeoflife", "LOCALS", 0)
+// THEN
+  // RESPONSE #100
+    // SetGlobal("treeoflife", "LOCALS", 1)
+    // RemoveFamiliar()
+    // ChangeEnemyAlly(Myself, NEUTRAL)
+    // MoveGlobal("AR4000", Myself, [0.0])
+// END
+
+// IF
+  // AreaCheck("AR4000")
+  // Global("treeoflife", "LOCALS", 1)
+// THEN
+  // RESPONSE #100
+    // SetGlobal("treeoflife", "LOCALS", 2)
+    // SetGlobal("Command", "LOCALS", 0)
+    // ChangeEnemyAlly(Myself, FAMILIAR)
+    // AddFamiliar()
+    // JumpToObject(Player1)
+// END

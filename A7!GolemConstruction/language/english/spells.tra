@@ -135,7 +135,9 @@ Unlike summoned creatures golems can exist for a virtually unlimited span of tim
 @20210 = ~Repair Golem~
 @20211 = ~Repair Golem
 
-This ability allows the caster to repair damaged golems. The whole process primarily includes mending or replacing damaged body parts which is done a speed of 1d10+2 hit points per second over two rounds. As a result you and the golem will be unable to respond for the next 12 seconds.~
+This ability allows the caster to repair damaged golems. The whole process primarily includes mending or replacing damaged body parts which is done a speed of 1d10+2 hit points per second over two rounds. As a result you and the golem will be unable to respond for the next 12 seconds.
+
+The repair process will also remove penalties that may have been applied to badly damages golems.~
 
 
 // Misc. strings
@@ -149,4 +151,8 @@ This ability allows the caster to repair damaged golems. The whole process prima
 @21007 = ~Has lost 64,000 Experience~
 @21010 = ~Repairing golem...~
 @21011 = ~Target is not a constructed golem.~
-
+@21012 = ~Golem is damaged: Slowed~
+@21013 = ~Golem is damaged: Attack and defense penalties~
+@21014 = ~Golem is damaged: Spirit becomes restless~
+@21015 = ~Golem is damaged: Body malfunction~
+@21016 = ~Golem is damaged: Sensory malfunction~

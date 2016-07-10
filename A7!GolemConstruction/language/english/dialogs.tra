@@ -162,6 +162,7 @@
 @45008 = ~This action can not be undone. Are you certain?~
 @45009 = ~Yes!~
 @45010 = ~No!~
+@45011 = ~The golem has been rendered inactive by the protective magics of this place.~
 
 
 // *** Journal entries ***

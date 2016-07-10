@@ -325,23 +325,50 @@ COPY ~%MOD_FOLDER%/spells/a7!glr.spl~ ~override~
   END
 
 COPY ~%MOD_FOLDER%/spells/a7!glr1b.spl~ ~override~
-    LPF ALTER_SPELL_EFFECT
-    INT_VAR
-      match_opcode = 139  // Display String
-      parameter1 = RESOLVE_STR_REF(@21010)  // Repairing golem...
-    END
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@21010)  // Repairing golem...
+  END
 
 COPY ~%MOD_FOLDER%/spells/a7!glr2.spl~ ~override~
-    LPF ALTER_SPELL_EFFECT
-    INT_VAR
-      match_opcode = 139  // Display String
-      parameter1 = RESOLVE_STR_REF(@21011)  // Target is not a constructed golem.
-    END
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@21011)  // Target is not a constructed golem.
+  END
 
 COPY ~%MOD_FOLDER%/spells/a7!glr1a.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!glr1b.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!glr1a.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!glrb.bam~ ~override~
+
+
+// Golem damage simulation
+COPY ~%MOD_FOLDER%/spells/a7!dmg1.spl~ ~override~
+  SET msg_0 = RESOLVE_STR_REF(@21012) // Golem is damaged: Slowed
+  SET msg_1 = RESOLVE_STR_REF(@21013) // Golem is damaged: Attack and defense penalties
+  SET msg_2 = RESOLVE_STR_REF(@21014) // Golem is damaged: Spirit becomes restless
+  SET msg_3 = RESOLVE_STR_REF(@21016) // Golem is damaged: Sensory malfunction
+  SET msg_4 = RESOLVE_STR_REF(@21015) // Golem is damaged: Body malfunction
+  SET msg_5 = RESOLVE_STR_REF(@21015) // Golem is damaged: Body malfunction
+  SET msg_6 = RESOLVE_STR_REF(@21015) // Golem is damaged: Body malfunction
+  SET msgIdx = 0
+  READ_LONG 0x6a ofsEffects
+  READ_SHORT 0x90 numEffects
+  FOR (idx = 0; idx < numEffects; ++idx) BEGIN
+    SET curOfs = ofsEffects + (idx * 0x30)
+    READ_SHORT curOfs op
+    PATCH_IF (op = 139) BEGIN   // Display String
+      SET strref = EVAL "msg_%msgIdx%"
+      WRITE_LONG (curOfs + 4) strref
+      SET msgIdx += 1
+    END
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!dmg2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!dmg3.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!dmg4.spl~ ~override~
 
 
 // Wish expansion

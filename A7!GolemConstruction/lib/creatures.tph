@@ -694,6 +694,11 @@ COPY ~%MOD_FOLDER%/items/a7!fam.itm~ ~override~
 COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd.d~
         ~%MOD_FOLDER%/dialogs/a7!cmd2.d~
 
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd_soa.d~
+          ~%MOD_FOLDER%/dialogs/a7!cmd2_soa.d~
+END
+
 COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
         ~%MOD_FOLDER%/scripts/a7!gsdef.baf~
         ~%MOD_FOLDER%/scripts/a7!cmd.baf~
@@ -720,6 +725,14 @@ COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
         ~%MOD_FOLDER%/scripts/a7!ct13.baf~
         ~%MOD_FOLDER%/scripts/a7!ct14.baf~
         ~%MOD_FOLDER%/scripts/a7!ct15.baf~
+
+// handling game-specific events
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  EXTEND_TOP ~a7!cmd.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_sod.baf~
+END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  EXTEND_TOP ~a7!cmd.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_soa.baf~
+END
 
 
 // Adding random treasure tables for clay golems
