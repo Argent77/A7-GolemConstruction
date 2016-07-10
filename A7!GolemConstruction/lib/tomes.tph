@@ -4,6 +4,7 @@
 COPY ~%MOD_FOLDER%/items/a7!tome1.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!tome2.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!abil.eff~ ~override~
+     ~%MOD_FOLDER%/items/a7!abil2.eff~ ~override~
 
 
 // Flesh Golem Manual
@@ -529,3 +530,9 @@ COPY ~%MOD_FOLDER%/items/a7!tomxc.itm~ ~override~
   SAY UNIDENTIFIED_DESC @12101 // This amazing tome contains theoretical musings on the construction and control of golems.
 
 COPY ~%MOD_FOLDER%/items/a7!tom0c.eff~ ~override~
+
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Re-apply golem abilities for imported characters
+  EXTEND_BOTTOM ~ar0602.bcs~ ~%MOD_FOLDER%/scripts/ar0602_bottom.baf~
+END
