@@ -14,11 +14,13 @@ CONTAINER   AR5000      Crate4          A7!BODY   1     0       0
 CONTAINER   AR5006      Container*5     A7!BODY   1     0       0
 STORE       UDSVIR05    *               A7!CLAY   4     0       0
 STORE       HGKAR01     *               A7!CLAY   5     0       0
+STORE       OHNGDUKE    *               A7!CLAY   2     0       0
 CONTAINER   AR0315      A7!Container1   A7!CLAY   2     0       0
 CONTAINER   AR0411      Tool*CT*3       A7!CLAY   2     0       0
 ACTOR       SLANDOR     *               A7!STON   1     0       0
 STORE       UDSVIR05    *               A7!STON   4     0       0
 STORE       HGKAR01     *               A7!STON   4     0       0
+STORE       OHNGDUKE    *               A7!STON   2     0       0
 CONTAINER   AR0411      Tool*CT*4       A7!STON   1     0       0
 STORE       UDSVIR05    *               A7!IRON   4     0       0
 STORE       HGKAR01     *               A7!IRON   4     0       0
@@ -38,6 +40,7 @@ CONTAINER   AR1202      Container*1     A7!MBDY   1     0       0
 CONTAINER   AR1301      A7!Pile1        A7!MBDY   1     0       0
 CONTAINER   AR1904      Container*1     A7!MBDY   2     0       0
 CONTAINER   AR5006      Bed1            A7!MBDY   1     0       0
+STORE       OHNGDUKE    *               A7!BONE   2     0       0
 CONTAINER   AR0201      Skeleton*1      A7!BONE   1     0       0
 CONTAINER   AR0411      Body*1          A7!BONE   1     0       0
 CONTAINER   AR0602      Barrel*3        A7!BONE   2     0       0
@@ -95,11 +98,13 @@ CONTAINER   AR3009      A7!Crate01      A7!WMAG   1     0       0
 CONTAINER   AR3009      A7!Crate02      A7!WMAG   1     0       0
 STORE       SCROLLS     *               A7!GLFL   2     0       0
 STORE       25SPELL     *               A7!GLFL   3     0       0
+STORE       OHNGDUKE    *               A7!GLFL   2     0       0
 CONTAINER   AR1800      Container*1     A7!GLFL   0     0       0
 CONTAINER   AR3016      Table2          A7!GLFL   0     0       0
 CONTAINER   AR1800      Container*1     A7!GLFL   0     0       0
 STORE       SCROLLS     *               A7!GLCL   1     0       0
 STORE       25SPELL     *               A7!GLCL   2     0       0
+STORE       OHNGDUKE    *               A7!GLCL   1     0       0
 CONTAINER   AR0419      Container*1     A7!GLCL   0     0       0
 CONTAINER   AR3016      Table5          A7!GLCL   0     0       0
 STORE       25SPELL     *               A7!GLST   2     0       0
@@ -113,7 +118,9 @@ ACTOR       FIRKRA02    UNSTEALABLE     A7!GLIR   1     0       0
 STORE       25SPELL     *               A7!GLIR   1     0       0
 ACTOR       SHADRA01    *               A7!GLMI   0     0       0
 CONTAINER   AR3027      Container*1     A7!GLMI   0     0       0
+CONTAINER   OH4220      Container*1     A7!GLMI   0     0       0
 ACTOR       DEMOGOR2    *               A7!GLAD2  0     0       0
+STORE       OHNGDUKE    *               A7!TOM01  1     0       0
 STORE       TRMER02     *               A7!TOM01  1     0       0
 STORE       UDDROW25    *               A7!TOM01  1     0       0
 STORE       25SPELL     *               A7!TOM01  1     0       0

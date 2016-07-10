@@ -42,3 +42,4 @@ CONTAINER   BD7310      Chest01                   A7!TOM02  0     0       0
 STORE       BDNAZRAM    *                         A7!TOM03  1     0       0
 CONTAINER   BD4300      Heph_chest1               A7!TOM03  0     0       0
 ACTOR       BDFERRUS    *                         A7!TOM07  0     0       0
+CONTAINER   BD0130      table_korlasz             A7!NOTE1  0     0       0
