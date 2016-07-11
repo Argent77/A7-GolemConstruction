@@ -202,15 +202,6 @@ BEGIN
         READ_2DA_ENTRY idx 1 numCols res
         PATCH_IF (NOT ~%res%~ STRING_EQUAL ~*~ AND FILE_EXISTS_IN_GAME ~%res%.spl~) BEGIN
           TEXT_SPRINT $EVAL resRef(~%idx%~) ~%res%~
-          INNER_ACTION BEGIN
-            // Hack: remove spell name from wild magic SPL resources
-            COPY_EXISTING ~%res%.spl~ ~override~
-              READ_LONG NAME1 name
-              PATCH_IF (name >= 0) BEGIN
-                WRITE_LONG NAME1 "-1"
-              END
-              BUT_ONLY
-          END
         END ELSE BEGIN
           TEXT_SPRINT $EVAL resRef(~%idx%~) ~%resDefault%~
         END
