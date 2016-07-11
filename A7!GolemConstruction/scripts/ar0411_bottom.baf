@@ -13,7 +13,6 @@ THEN
     SetRestEncounterProbabilityNight(0)
     DisplayString(Player1, @100007) // The laboratory in this area looks well equipped. You can probably use it to construct golems.
     AddJournalEntry(@49003, QUEST)  // Golem Construction Workshop
-    Continue()
 END
 
 IF
@@ -30,5 +29,4 @@ THEN
     SetRestEncounterProbabilityNight(0)
     DisplayString(Player1, @100007) // The laboratory in this area looks well equipped. You can probably use it to construct golems.
     AddJournalEntry(@49003, QUEST)  // Golem Construction Workshop
-    Continue()
 END

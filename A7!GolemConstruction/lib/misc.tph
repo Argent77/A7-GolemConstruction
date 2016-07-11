@@ -63,7 +63,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
        ~%MOD_FOLDER%/items/a7!impt4.2da~ ~override~
 
   // Use Planar Sphere as golem building workshop
-  EXTEND_TOP ~ar0411.bcs~ ~%MOD_FOLDER%/scripts/ar0411_top.baf~
+  EXTEND_BOTTOM ~ar0411.bcs~ ~%MOD_FOLDER%/scripts/ar0411_bottom.baf~
 
   // Use Jermien's home in Imnesville as golem building workshop
   COMPILE ~%MOD_FOLDER%/dialogs/jermien.d~

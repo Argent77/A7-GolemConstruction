@@ -53,8 +53,9 @@
 @41043 = ~You start with the construction of the golem body...~
 @41044 = ~Maggot Golem~
 @41045 = ~Magic golems can only be constructed in wild magic areas.~
-@41046 = ~You can't construct Mithral Golems without having studied the basics of Iron Golem construction.~
-@41047 = ~You can't construct Adamantite Golems without having studied the basics of Iron Golem construction.~
+@41046 = ~You can't construct Mithral Golems without having studied the principles of Iron Golem construction.~
+@41047 = ~You can't construct Adamantite Golems without having studied the principles of Iron Golem construction.~
+@41048 = ~Select different golem type~
 
 
 // *** Wish Djinni dialog ***
@@ -190,7 +191,7 @@ The laboratory in the underground complex below the Dwarven dig site looks well 
 
 @49003 = ~Golem Construction Workshop
 
-The Planar Sphere has been made to build golems. I should be able to construct golems in the main area of that place.~
+The Planar Sphere has been made for building golems. I should be able to construct golems in the main area of that place.~
 
 @49004 = ~Golem Construction Workshop
 

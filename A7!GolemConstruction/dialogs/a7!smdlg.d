@@ -121,6 +121,7 @@ IF ~~ Golem.Type.Flesh
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 15)
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!glfl")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
 
+  ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
@@ -154,6 +155,7 @@ IF ~~ Golem.Type.Clay
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
 
+  ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
@@ -187,6 +189,7 @@ IF ~~ Golem.Type.Stone
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!glst")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
 
+  ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
@@ -220,6 +223,7 @@ IF ~~ Golem.Type.Iron
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 23)
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!glir")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
 
+  ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
@@ -253,12 +257,14 @@ IF ~~ Golem.Type.Mithral
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 28)
      NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
 
+  ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
 IF ~~ Golem.Type.Mithral.Denied
-  SAY @41046 /* You can't construct Mithral Golems without having studied the basics of Iron Golem construction. */
-  IF ~~ DO ~DestroySelf()~ EXIT
+  SAY @41046 /* You can't construct Mithral Golems without having studied the principles of Iron Golem construction. */
+  ++ @41048 /* Select different golem type */ + Golem.Type
+  ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
 IF ~~ Golem.Type.Adamantite
@@ -291,12 +297,14 @@ IF ~~ Golem.Type.Adamantite
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 33)
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
 
+  ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
 IF ~~ Golem.Type.Adamantite.Denied
-  SAY @41047 /* You can't construct Adamantite Golems without having studied the basics of Iron Golem construction. */
-  IF ~~ DO ~DestroySelf()~ EXIT
+  SAY @41047 /* You can't construct Adamantite Golems without having studied the principles of Iron Golem construction. */
+  ++ @41048 /* Select different golem type */ + Golem.Type
+  ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
 IF ~~ Golem.Type.Exotic
@@ -339,6 +347,7 @@ IF ~~ Golem.Type.Exotic
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 24)
      Global("A7!TomeGolemLightning", "GLOBAL", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
 
+  ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
