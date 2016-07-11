@@ -165,6 +165,18 @@
 @45011 = ~The golem has been rendered inactive by the protective magics of this place.~
 
 
+// *** Jermien of Imnesvill ***
+@45500 = ~Before you go, can you please teach me how to build juggernaut golems? I'd like to try it out by myself.~
+@45501 = ~Farewell, Jermien.~
+@45502 = ~Have you not seen that my foolishness almost cost me my life and that of my daughter? The best course of action would be to destroy all my notes about it.~
+@45503 = ~Don't you worry. I'm powerful enough to deal with every possible outcome.~
+@45504 = ~I have studied the arcane arts under the tutelage of experienced mages in Candlekeep. You can trust me that I will take great care.~
+@45505 = ~I'm not convinced that you can succeed where I have failed with that kind of attitude. I will not be responsible for another disaster. My notes must be destroyed.~
+@45506 = ~I must admit that your words have some merit. Very well, I will entrust you with my personal tome of golem building. Study it well and don't repeat my mistakes.~
+@45507 = ~You can also make use of my equipment if you want to. I certainly won't need it for some time.~
+@45508 = ~I will take my leave now. Farewell.~
+
+
 // *** Journal entries ***
 @49000 = ~Golem Construction Workshop~
 
@@ -178,7 +190,7 @@ The laboratory in the underground complex below the Dwarven dig site looks well 
 
 @49003 = ~Golem Construction Workshop
 
-The Planar Sphere has been made to construct golems. I should be able to construct golems in the opening area or the control room of that place.~
+The Planar Sphere has been made to construct golems. I should be able to construct golems in the opening area of that place.~
 
 @49004 = ~Golem Construction Workshop
 
@@ -191,3 +203,8 @@ With the equipment purchased from Lazarus Library I should be able to construct 
 @49006 = ~Golem Construction Workshop
 
 I have met a drow merchant who can provide me with a wide range of materials needed to construct golems. He also promised me to replenish his stock once in a while.~
+
+@49007 = ~Golem Construction Workshop
+
+Jermien's home in Imnesville appears to be well equipped. I should be able to construct golems in that place.~
+

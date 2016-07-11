@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Jermien's Home) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([339.266]))
+    ActionOverride(Player2, JumpToPoint([399.274]))
+    ActionOverride(Player3, JumpToPoint([356.325]))
+    ActionOverride(Player4, JumpToPoint([454.256]))
+    ActionOverride(Player5, JumpToPoint([432.328]))
+    ActionOverride(Player6, JumpToPoint([412.390]))
+    ActionOverride(Player1, Face(NW))
+    ActionOverride(Player2, Face(NW))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, Face(NW))
+    ActionOverride(Player5, Face(NW))
+    ActionOverride(Player6, Face(NW))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([339.266],INSTANT)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

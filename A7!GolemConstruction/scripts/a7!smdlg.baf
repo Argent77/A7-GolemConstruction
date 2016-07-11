@@ -50,6 +50,19 @@ THEN
     StartDialogueNoSet(LastSummonerOf(Myself))
 END
 
+// Checking location: SoA - Planar Sphere
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!JermienWorkshop", "GLOBAL", 1)
+  AreaCheck("AR1103")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initJermien", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
 // Checking location: Watcher's Keep, Second Level
 IF
   Global("init", "LOCALS", 0)

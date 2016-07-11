@@ -1,0 +1,11 @@
+// *** BG2: Use Jermien's home in Imnesville as Golem Building Workshop ***
+
+IF
+  Global("A7!JermienGolem", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!JermienGolem", "MYAREA", 2)
+    AddAreaType(CANRESTOTHER)
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
+END

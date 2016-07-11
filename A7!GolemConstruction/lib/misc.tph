@@ -65,6 +65,20 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   // Use Planar Sphere as golem building workshop
   EXTEND_TOP ~ar0411.bcs~ ~%MOD_FOLDER%/scripts/ar0411_top.baf~
 
+  // Use Jermien's home in Imnesville as golem building workshop
+  COMPILE ~%MOD_FOLDER%/dialogs/jermien.d~
+  COPY_EXISTING ~ar1103.are~ ~override~
+    READ_ASCII AREA_SCRIPT areaScript (8) NULL
+    PATCH_IF (FILE_EXISTS_IN_GAME ~%areaScript%.bcs~) BEGIN
+      // appending script
+      INNER_ACTION BEGIN EXTEND_BOTTOM ~%areaScript%.bcs~ ~%MOD_FOLDER%/scripts/ar1103.baf~ END
+    END ELSE BEGIN
+      // assigning new script
+      INNER_ACTION BEGIN COMPILE ~%MOD_FOLDER%/scripts/ar1103.baf~ END
+      WRITE_ASCII AREA_SCRIPT ~AR1103~ #8
+    END
+  BUT_ONLY
+
   // Use Watcher's Keep - Second Level as golem workshop
   EXTEND_TOP ~ar3016.bcs~ ~%MOD_FOLDER%/scripts/ar3016_top.baf~
 
