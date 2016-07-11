@@ -11,15 +11,6 @@ THEN
     DestroySelf()
 END
 
-// IF
-  // Global("init", "LOCALS", 0)
-  // Detect(LastSummonerOf(Myself))
-// THEN
-  // RESPONSE #100
-    // SetGlobal("init", "LOCALS", 1)
-    // StartDialogueNoSet(LastSummonerOf(Myself))
-// END
-
 // Checking location: SoD - Sorcerous Sundries, Second Floor
 IF
   Global("init", "LOCALS", 0)
@@ -51,9 +42,7 @@ IF
   Global("init", "LOCALS", 0)
   Detect(LastSummonerOf(Myself))
   Global("A7!SphereWorkshop", "GLOBAL", 1)
-  OR(2)
-    AreaCheck("AR0410")
-    AreaCheck("AR0411")
+  AreaCheck("AR0411")
 THEN
   RESPONSE #100
     SetGlobal("init", "LOCALS", 1)

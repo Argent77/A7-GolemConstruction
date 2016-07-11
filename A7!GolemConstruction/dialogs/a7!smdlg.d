@@ -7,8 +7,7 @@ IF ~Global("stage", "LOCALS", 0)~ Golem.Prepare
   IF ~Global("initCancelled", "LOCALS", 1)~ + Golem.Location.Cancelled
   IF ~Global("initSundries", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct10")~ EXIT
   IF ~Global("initColdhearth", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct11")~ EXIT
-  IF ~Global("initSphere", "LOCALS", 1) AreaCheck("AR0411")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct12")~ EXIT
-  IF ~Global("initSphere", "LOCALS", 1) AreaCheck("AR0410")~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct13")~ EXIT
+  IF ~Global("initSphere", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct13")~ EXIT
   IF ~Global("initWK", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct14")~ EXIT
   IF ~Global("initPlane", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct15")~ EXIT
   IF ~Global("initMagic", "LOCALS", 1)~ + Golem.Location.WildMagic

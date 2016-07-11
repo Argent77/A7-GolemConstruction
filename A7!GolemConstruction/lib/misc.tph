@@ -63,7 +63,6 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
        ~%MOD_FOLDER%/items/a7!impt4.2da~ ~override~
 
   // Use Planar Sphere as golem building workshop
-  EXTEND_TOP ~ar0410.bcs~ ~%MOD_FOLDER%/scripts/ar0411_top.baf~
   EXTEND_TOP ~ar0411.bcs~ ~%MOD_FOLDER%/scripts/ar0411_top.baf~
 
   // Use Watcher's Keep - Second Level as golem workshop
