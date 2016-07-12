@@ -6,7 +6,7 @@
 @4002 = ~Iron Golem~
 @4003 = ~Greater Iron Golem~
 @4004 = ~Perfect Iron Golem~
-@4005 = ~You have learned how to construct iron golems.~
+@4005 = ~Has learned how to construct iron golems.~
 
 // *** Book content ***
 @4100 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an iron golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.

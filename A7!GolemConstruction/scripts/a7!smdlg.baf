@@ -93,7 +93,8 @@ END
 IF
   Global("init", "LOCALS", 0)
   Detect(LastSummonerOf(Myself))
-  Global("A7!TomeGolemMagic", "GLOBAL", 1)
+  NextTriggerObject(LastSummonerOf(Myself))
+  Global("A7!TomeGolemMagic", "LOCALS", 1)
   OR(5)
     AreaCheck("AR3005")
     AreaCheck("AR3009")

@@ -17,21 +17,21 @@ END
 
 IF ~Global("stage", "LOCALS", 1)~ Golem.Type
   SAY @41000  /* Select golem type: */
-  + ~Global("A7!TomeGolemFlesh", "GLOBAL", 1)~ + @41001 /* Flesh Golem */ + Golem.Type.Flesh
-  + ~Global("A7!TomeGolemClay", "GLOBAL", 1)~ + @41002 /* Clay Golem */ + Golem.Type.Clay
-  + ~Global("A7!TomeGolemStone", "GLOBAL", 1)~ + @41003 /* Stone Golem */ + Golem.Type.Stone
-  + ~Global("A7!TomeGolemIron", "GLOBAL", 1)~ + @41004 /* Iron Golem */ + Golem.Type.Iron
-  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemMithral", "GLOBAL", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral
-  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemMithral", "GLOBAL", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral.Denied
-  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemAdamantite", "GLOBAL", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite
-  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) Global("A7!TomeGolemAdamantite", "GLOBAL", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite.Denied
+  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemFlesh", "LOCALS", 1)~ + @41001 /* Flesh Golem */ + Golem.Type.Flesh
+  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemClay", "LOCALS", 1)~ + @41002 /* Clay Golem */ + Golem.Type.Clay
+  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemStone", "LOCALS", 1)~ + @41003 /* Stone Golem */ + Golem.Type.Stone
+  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIron", "LOCALS", 1)~ + @41004 /* Iron Golem */ + Golem.Type.Iron
+  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMithral", "LOCALS", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral
+  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMithral", "LOCALS", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral.Denied
+  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite
+  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite.Denied
   + ~OR(6)
-       Global("A7!TomeGolemMaggot", "GLOBAL", 1)
-       Global("A7!TomeGolemBone", "GLOBAL", 1)
-       Global("A7!TomeGolemBrain", "GLOBAL", 1)
-       Global("A7!TomeGolemIce", "GLOBAL", 1)
-       Global("A7!TomeGolemMagic", "GLOBAL", 1)
-       Global("A7!TomeGolemLightning", "GLOBAL", 1)~ + @41007 /* Exotic Golem */ + Golem.Type.Exotic
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMaggot", "LOCALS", 1)
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBone", "LOCALS", 1)
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBrain", "LOCALS", 1)
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIce", "LOCALS", 1)
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + @41007 /* Exotic Golem */ + Golem.Type.Exotic
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
@@ -310,42 +310,42 @@ END
 IF ~~ Golem.Type.Exotic
   SAY @41017 /* Select golem variant: */
   + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, MAGESCHOOL_CONJURER) ClassLevelGT(LastTalkedToBy, WIZARD, 7)
-     Global("A7!TomeGolemMaggot", "GLOBAL", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMaggot", "LOCALS", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, MAGESCHOOL_CONJURER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 9)
-     Global("A7!TomeGolemMaggot", "GLOBAL", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMaggot", "LOCALS", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 11)
-     Global("A7!TomeGolemMaggot", "GLOBAL", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMaggot", "LOCALS", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
 
   + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER) ClassLevelGT(LastTalkedToBy, WIZARD, 13)
-     Global("A7!TomeGolemBone", "GLOBAL", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBone", "LOCALS", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 15)
-     Global("A7!TomeGolemBone", "GLOBAL", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBone", "LOCALS", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 17)
-     Global("A7!TomeGolemBone", "GLOBAL", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBone", "LOCALS", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
-     Global("A7!TomeGolemBrain", "GLOBAL", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBrain", "LOCALS", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
-     Global("A7!TomeGolemBrain", "GLOBAL", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBrain", "LOCALS", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
-     Global("A7!TomeGolemBrain", "GLOBAL", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBrain", "LOCALS", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
-     Global("A7!TomeGolemIce", "GLOBAL", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIce", "LOCALS", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 19)
-     Global("A7!TomeGolemIce", "GLOBAL", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIce", "LOCALS", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 21)
-     Global("A7!TomeGolemIce", "GLOBAL", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIce", "LOCALS", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
 
-  + ~!AreaCheck("AR3005") !AreaCheck("AR3009") !AreaCheck("OH6000") !AreaCheck("OH6100") !AreaCheck("OH6200") Global("A7!TomeGolemMagic", "GLOBAL", 1)
+  + ~!AreaCheck("AR3005") !AreaCheck("AR3009") !AreaCheck("OH6000") !AreaCheck("OH6100") !AreaCheck("OH6200") NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)
      PartyHasItem("a7!wmag") PartyHasItem("scrl07") OR(3) PartyHasItem("scrl7o") PartyHasItem("scrl8j") PartyHasItem("scrl9c")~ + @41041 /* Magic Golem */ + Golem.Type.Magic.Denied
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 20)
-     Global("A7!TomeGolemLightning", "GLOBAL", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 22)
-     Global("A7!TomeGolemLightning", "GLOBAL", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 24)
-     Global("A7!TomeGolemLightning", "GLOBAL", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
 
   ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
@@ -604,7 +604,8 @@ END
 
 IF ~~ Golem.Type.Magic.Denied
   SAY @41045 /* Magic golems can only be constructed in wild magic areas. */
-  IF ~~ DO ~DestroySelf()~ EXIT
+  ++ @41048 /* Select different golem type */ + Golem.Type
+  ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
 IF ~~ Golem.Type.Magic
