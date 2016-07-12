@@ -93,30 +93,30 @@ END
 
 IF ~~ Golem.Type.Flesh
   SAY @41011 /* Select golem variant: */
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 5)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 5)
      PartyHasItem("a7!body")~ + @41012 /* Lesser Flesh Golem */ + Golem.Type.Flesh.Lesser
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 7)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 7)
      PartyHasItem("a7!body")~ + @41012 /* Lesser Flesh Golem */ + Golem.Type.Flesh.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 9)
      PartyHasItem("a7!body")~ + @41012 /* Lesser Flesh Golem */ + Golem.Type.Flesh.Lesser
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 7)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 7)
      NumItemsPartyGT("a7!body", 1)~ + @41013 /* Flesh Golem */ + Golem.Type.Flesh.Regular
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 9)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 9)
      NumItemsPartyGT("a7!body", 1)~ + @41013 /* Flesh Golem */ + Golem.Type.Flesh.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 11)
      NumItemsPartyGT("a7!body", 1)~ + @41013 /* Flesh Golem */ + Golem.Type.Flesh.Regular
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 11)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 11)
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97")~ + @41014 /* Greater Flesh Golem */ + Golem.Type.Flesh.Greater
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 13)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 13)
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97")~ + @41014 /* Greater Flesh Golem */ + Golem.Type.Flesh.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 15)
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97")~ + @41014 /* Greater Flesh Golem */ + Golem.Type.Flesh.Greater
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 11)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 11)
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!glfl")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 13)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 13)
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!glfl")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 15)
      NumItemsPartyGT("a7!body", 3) PartyHasItem("scrl97") PartyHasItem("a7!glfl")~ + @41015 /* Perfect Flesh Golem */ + Golem.Type.Flesh.Perfect
@@ -127,30 +127,30 @@ END
 
 IF ~~ Golem.Type.Clay
   SAY @41017 /* Select golem variant: */
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 8)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 8)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 10)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 10)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 12)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 10)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 10)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 12)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 12)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 14)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
@@ -161,30 +161,30 @@ END
 
 IF ~~ Golem.Type.Stone
   SAY @41017 /* Select golem variant: */
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 8)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 8)
      PartyHasItem("a7!ston")~ + @41022 /* Lesser Stone Golem */ + Golem.Type.Stone.Lesser
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 10)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 10)
      PartyHasItem("a7!ston")~ + @41022 /* Lesser Stone Golem */ + Golem.Type.Stone.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 12)
      PartyHasItem("a7!ston")~ + @41022 /* Lesser Stone Golem */ + Golem.Type.Stone.Lesser
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 10)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 10)
      NumItemsPartyGT("a7!ston", 1) PartyHasItem("scrl1o")~ + @41023 /* Stone Golem */ + Golem.Type.Stone.Regular
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 12)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 12)
      NumItemsPartyGT("a7!ston", 1) PartyHasItem("scrl1o")~ + @41023 /* Stone Golem */ + Golem.Type.Stone.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 14)
      NumItemsPartyGT("a7!ston", 1) PartyHasItem("scrl1o")~ + @41023 /* Stone Golem */ + Golem.Type.Stone.Regular
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o")~ + @41024 /* Greater Stone Golem */ + Golem.Type.Stone.Greater
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o")~ + @41024 /* Greater Stone Golem */ + Golem.Type.Stone.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o")~ + @41024 /* Greater Stone Golem */ + Golem.Type.Stone.Greater
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!glst")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!glst")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NumItemsPartyGT("a7!ston", 3) PartyHasItem("scrl1o") PartyHasItem("a7!glst")~ + @41025 /* Perfect Stone Golem */ + Golem.Type.Stone.Perfect
@@ -195,30 +195,30 @@ END
 
 IF ~~ Golem.Type.Iron
   SAY @41017 /* Select golem variant: */
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 12)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 12)
      PartyHasItem("a7!iron")~ + @41026 /* Lesser Iron Golem */ + Golem.Type.Iron.Lesser
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 14)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      PartyHasItem("a7!iron")~ + @41026 /* Lesser Iron Golem */ + Golem.Type.Iron.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 16)
      PartyHasItem("a7!iron")~ + @41026 /* Lesser Iron Golem */ + Golem.Type.Iron.Lesser
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      NumItemsPartyGT("a7!iron", 1) PartyHasItem("scrl2e")~ + @41027 /* Iron Golem */ + Golem.Type.Iron.Regular
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
      NumItemsPartyGT("a7!iron", 1) PartyHasItem("scrl2e")~ + @41027 /* Iron Golem */ + Golem.Type.Iron.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NumItemsPartyGT("a7!iron", 1) PartyHasItem("scrl2e")~ + @41027 /* Iron Golem */ + Golem.Type.Iron.Regular
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 19)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 19)
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e")~ + @41028 /* Greater Iron Golem */ + Golem.Type.Iron.Greater
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 21)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 21)
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e")~ + @41028 /* Greater Iron Golem */ + Golem.Type.Iron.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 23)
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e")~ + @41028 /* Greater Iron Golem */ + Golem.Type.Iron.Greater
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 19)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 19)
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!glir")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 21)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 21)
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!glir")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 23)
      NumItemsPartyGT("a7!iron", 3) PartyHasItem("scrl2e") PartyHasItem("a7!glir")~ + @41029 /* Perfect Iron Golem */ + Golem.Type.Iron.Perfect
@@ -229,30 +229,30 @@ END
 
 IF ~~ Golem.Type.Mithral
   SAY @41017 /* Select golem variant: */
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 15)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 15)
      PartyHasItem("a7!mith")~ + @41030 /* Lesser Mithral Golem */ + Golem.Type.Mithral.Lesser
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 17)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
      PartyHasItem("a7!mith")~ + @41030 /* Lesser Mithral Golem */ + Golem.Type.Mithral.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 19)
      PartyHasItem("a7!mith")~ + @41030 /* Lesser Mithral Golem */ + Golem.Type.Mithral.Lesser
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 18)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 18)
      NumItemsPartyGT("a7!mith", 1)~ + @41031 /* Mithral Golem */ + Golem.Type.Mithral.Regular
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 20)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 20)
      NumItemsPartyGT("a7!mith", 1)~ + @41031 /* Mithral Golem */ + Golem.Type.Mithral.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 22)
      NumItemsPartyGT("a7!mith", 1)~ + @41031 /* Mithral Golem */ + Golem.Type.Mithral.Regular
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 24)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 24)
      NumItemsPartyGT("a7!mith", 3)~ + @41032 /* Greater Mithral Golem */ + Golem.Type.Mithral.Greater
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 26)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 26)
      NumItemsPartyGT("a7!mith", 3)~ + @41032 /* Greater Mithral Golem */ + Golem.Type.Mithral.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 28)
      NumItemsPartyGT("a7!mith", 3)~ + @41032 /* Greater Mithral Golem */ + Golem.Type.Mithral.Greater
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 24)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 24)
      NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 26)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 26)
      NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 28)
      NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
@@ -269,30 +269,30 @@ END
 
 IF ~~ Golem.Type.Adamantite
   SAY @41017 /* Select golem variant: */
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 18)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 18)
      NumItemsPartyGT("a7!adam", 1)~ + @41034 /* Lesser Adamantite Golem */ + Golem.Type.Adamantite.Lesser
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 20)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 20)
      NumItemsPartyGT("a7!adam", 1)~ + @41034 /* Lesser Adamantite Golem */ + Golem.Type.Adamantite.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 22)
      NumItemsPartyGT("a7!adam", 1)~ + @41034 /* Lesser Adamantite Golem */ + Golem.Type.Adamantite.Lesser
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 22)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 22)
      NumItemsPartyGT("a7!adam", 3)~ + @41035 /* Adamantite Golem */ + Golem.Type.Adamantite.Regular
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 24)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 24)
      NumItemsPartyGT("a7!adam", 3)~ + @41035 /* Adamantite Golem */ + Golem.Type.Adamantite.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 26)
      NumItemsPartyGT("a7!adam", 3)~ + @41035 /* Adamantite Golem */ + Golem.Type.Adamantite.Regular
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 29)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 29)
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 31)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 31)
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 33)
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 29)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 29)
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 31)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 31)
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 33)
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
@@ -309,30 +309,30 @@ END
 
 IF ~~ Golem.Type.Exotic
   SAY @41017 /* Select golem variant: */
-  + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, MAGESCHOOL_CONJURER) LevelGT(LastTalkedToBy, 7)
+  + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, MAGESCHOOL_CONJURER) ClassLevelGT(LastTalkedToBy, WIZARD, 7)
      Global("A7!TomeGolemMaggot", "GLOBAL", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, MAGESCHOOL_CONJURER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 9)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, MAGESCHOOL_CONJURER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 9)
      Global("A7!TomeGolemMaggot", "GLOBAL", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 11)
      Global("A7!TomeGolemMaggot", "GLOBAL", 1) NumItemsPartyGT("a7!mbdy", 1)~ + @41044 /* Maggot Golem */ + Golem.Type.Maggot
 
-  + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER) LevelGT(LastTalkedToBy, 13)
+  + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER) ClassLevelGT(LastTalkedToBy, WIZARD, 13)
      Global("A7!TomeGolemBone", "GLOBAL", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 15)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 15)
      Global("A7!TomeGolemBone", "GLOBAL", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 17)
      Global("A7!TomeGolemBone", "GLOBAL", 1) NumItemsPartyGT("a7!bone", 3) PartyHasItem("scrl2d")~ + @41038 /* Bone Golem */ + Golem.Type.Bone
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 14)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      Global("A7!TomeGolemBrain", "GLOBAL", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 16)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
      Global("A7!TomeGolemBrain", "GLOBAL", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      Global("A7!TomeGolemBrain", "GLOBAL", 1) PartyHasItem("a7!brin") PartyHasItem("scrl5n")~ + @41039 /* Brain Golem */ + Golem.Type.Brain
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 17)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
      Global("A7!TomeGolemIce", "GLOBAL", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 19)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 19)
      Global("A7!TomeGolemIce", "GLOBAL", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 21)
      Global("A7!TomeGolemIce", "GLOBAL", 1) PartyHasItem("a7!ice") PartyHasItem("scrl2f") OR(2) PartyHasItem("scrl04") PartyHasItem("scrl6i")~ + @41040 /* Ice Golem */ + Golem.Type.Ice
@@ -340,9 +340,9 @@ IF ~~ Golem.Type.Exotic
   + ~!AreaCheck("AR3005") !AreaCheck("AR3009") !AreaCheck("OH6000") !AreaCheck("OH6100") !AreaCheck("OH6200") Global("A7!TomeGolemMagic", "GLOBAL", 1)
      PartyHasItem("a7!wmag") PartyHasItem("scrl07") OR(3) PartyHasItem("scrl7o") PartyHasItem("scrl8j") PartyHasItem("scrl9c")~ + @41041 /* Magic Golem */ + Golem.Type.Magic.Denied
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) LevelGT(LastTalkedToBy, 20)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 20)
      Global("A7!TomeGolemLightning", "GLOBAL", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 22)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 22)
      Global("A7!TomeGolemLightning", "GLOBAL", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 24)
      Global("A7!TomeGolemLightning", "GLOBAL", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
@@ -354,9 +354,9 @@ END
 IF ~~ Golem.Location.WildMagic
   SAY @41017 /* Select golem variant: */
 
-  + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, WILDMAGE) LevelGT(LastTalkedToBy, 15)
+  + ~OR(2) Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Kit(LastTalkedToBy, WILDMAGE) ClassLevelGT(LastTalkedToBy, WIZARD, 15)
      PartyHasItem("a7!wmag") PartyHasItem("scrl07") OR(3) PartyHasItem("scrl7o") PartyHasItem("scrl8j") PartyHasItem("scrl9c")~ + @41041 /* Magic Golem */ + Golem.Type.Magic
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, WILDMAGE) Class(LastTalkedToBy, MAGE_ALL) LevelGT(LastTalkedToBy, 17)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) !Kit(LastTalkedToBy, WILDMAGE) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
      PartyHasItem("a7!wmag") PartyHasItem("scrl07") OR(3) PartyHasItem("scrl7o") PartyHasItem("scrl8j") PartyHasItem("scrl9c")~ + @41041 /* Magic Golem */ + Golem.Type.Magic
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 19)
      PartyHasItem("a7!wmag") PartyHasItem("scrl07") OR(3) PartyHasItem("scrl7o") PartyHasItem("scrl8j") PartyHasItem("scrl9c")~ + @41041 /* Magic Golem */ + Golem.Type.Magic
