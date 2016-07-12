@@ -873,7 +873,6 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~skelwa.cre~ ~override~
                 ~skelwa01.cre~ ~override~
                 ~skelwa02.cre~ ~override~
-                ~skelwa02.cre~ ~override~
                 ~skelwa03.cre~ ~override~
                 ~suundead.cre~ ~override~
                 ~tanskw1.cre~ ~override~

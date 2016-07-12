@@ -872,8 +872,9 @@ Siege of Dragonspear:
                                                 and dealing with the current resident.
 
 Shadows of Amn:
-- Planar Sphere: Both the opening area and control room may be suitable for golem building (after dealing with the 
-                 former owner, of course).
+- Planar Sphere: The opening area of the Sphere may be suitable for golem building (after dealing with the former owner, 
+                 of course).
+- Jermien's Home: You may be able to convince him to use his home in Imnesville for building your own golems.
 
 Watcher's Keep:
 - Second Level: The wizard library is well equipped, but you must disable all defense mechanisms first (which includes 
