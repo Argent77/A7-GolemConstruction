@@ -43,11 +43,16 @@ END
 
 
 // Miniature Iron Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7000 slotMax = 0x7fff RET slot END
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
 ACTION_IF (slot > 0) BEGIN
   OUTER_SET slot_golem_iron_mini = slot
 END ELSE BEGIN
-  FAIL @102 // No free creature animation slot found.
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+  ACTION_IF (slot > 0) BEGIN
+    OUTER_SET slot_golem_iron_mini = slot
+  END ELSE BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
 END
 
 LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
@@ -62,11 +67,16 @@ END
 
 
 // Lightning Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7000 slotMax = 0x7fff RET slot END
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
 ACTION_IF (slot > 0) BEGIN
   OUTER_SET slot_golem_lightning = slot
 END ELSE BEGIN
-  FAIL @102 // No free creature animation slot found.
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+  ACTION_IF (slot > 0) BEGIN
+    OUTER_SET slot_golem_lightning = slot
+  END ELSE BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
 END
 
 LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
@@ -81,11 +91,16 @@ END
 
 
 // Maggot Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7000 slotMax = 0x7fff RET slot END
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
 ACTION_IF (slot > 0) BEGIN
   OUTER_SET slot_golem_maggot = slot
 END ELSE BEGIN
-  FAIL @102 // No free creature animation slot found.
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+  ACTION_IF (slot > 0) BEGIN
+    OUTER_SET slot_golem_maggot = slot
+  END ELSE BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
 END
 
 LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END

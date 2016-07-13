@@ -107,14 +107,18 @@ END
 
 /**
  * Returns the first free creature animation slot in the range defined by slotMin and slotMax.
- * INT_VAR slotMin Lowest available creature animation slot for the animation.
- * INT_VAR slotMax Highest available creature animation slot for the animation.
- * RET slot        A free animation slot. Returns -1 if none found.
+ * INT_VAR slotMin  Lowest available creature animation slot for the animation.
+ * INT_VAR slotMax  Highest available creature animation slot for the animation.
+ * STR_VAR slotFile Points to a hardcoded list of reserved animation slots to speed up the 
+ *                  slot finding process.
+ * RET slot         A free animation slot. Returns -1 if none found.
  */
 DEFINE_ACTION_FUNCTION FIND_FREE_ANIM_SLOT
 INT_VAR
   slotMin = 0
   slotMax = (slotMin BAND 0xf000) + 0x1000
+STR_VAR
+  slotFile = EVAL ~%MOD_FOLDER%/lib/animslots.txt~
 RET
   slot
 BEGIN
@@ -128,7 +132,7 @@ BEGIN
   END
 
   // animslots.txt contains reserved creature animation slots
-  COPY - ~%MOD_FOLDER%/lib/animslots.txt~ ~%MOD_FOLDER%/lib/animslots.txt~
+  COPY - ~%slotFile%~ ~%slotFile%~
     READ_ASCII 0 slotList (SOURCE_SIZE)
     FOR (idx = slotMin; idx < slotMax; ++idx) BEGIN
       LOOKUP_IDS_SYMBOL_OF_INT name ~animate~ idx

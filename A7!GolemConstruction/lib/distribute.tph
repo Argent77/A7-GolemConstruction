@@ -22,7 +22,7 @@ ACTION_PHP_EACH items_game AS table => game BEGIN
             ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.cre~) BEGIN
               COPY_EXISTING ~%res%.cre~ ~override~
                 PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~) BEGIN TEXT_SPRINT name ~NONE~ END
-                ADD_CRE_ITEM ~%item%~ (count) (count2) (count3) ~%name%~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+                ADD_CRE_ITEM ~%item%~ (count) (count2) (count3) ~%name%~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16 QITEM1 QITEM2 QITEM3 QUIVER1 QUIVER2 QUIVER3 QUIVER4~
               BUT_ONLY
             END
           END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~STORE~) BEGIN
