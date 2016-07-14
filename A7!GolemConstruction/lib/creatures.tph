@@ -873,7 +873,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 // Adding random treasure tables for bone golems and skeleton warriors
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 35 STR_VAR treasure = "A7!RDBO1" item = "A7!BONE" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBO1" item = "A7!BONE" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 5 STR_VAR treasure = "A7!RDBO2" item = "A7!BONE" END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~icbone01.cre~ ~override~
@@ -922,10 +922,10 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 // Adding random treasure tables for flesh and maggot golems
-LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 25 chance_1 = 15 STR_VAR treasure = "A7!RDBD1" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
-LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 50 chance_1 = 10 STR_VAR treasure = "A7!RDBD2" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBD3" item = "A7!BODY" END
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 50 STR_VAR treasure = "A7!RDBD4" item = "A7!BODY" END
+LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 20 chance_1 = 10 STR_VAR treasure = "A7!RDBD1" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
+LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 30 chance_1 = 5 STR_VAR treasure = "A7!RDBD2" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDBD3" item = "A7!BODY" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 35 STR_VAR treasure = "A7!RDBD4" item = "A7!BODY" END
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   COPY_EXISTING ~bddead01.cre~ ~override~
                 ~bdghast.cre~ ~override~

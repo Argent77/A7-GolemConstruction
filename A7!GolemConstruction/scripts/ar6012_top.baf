@@ -1,24 +1,157 @@
 // *** Abazigal's Lair - Bone Fiend Room ***
+// Note: Multiple script blocks are needed since NextTriggerObject() returns false on non-existing party members
 
 // Put tome into shelf
 IF
-  !Global("A7!TomeGolemBone", "GLOBAL", 1)
-  !PartyHasItem("a7!tom08")
-  Global("A7!TomeAdded", "MYAREA", 0)
+  Global("A7!TomeAdded","MYAREA",0)
+  !PartyHasItem("a7!tom08") // Secret Manual of Golem Building (Vol. 2)
+  !PartyHasItem("a7!tomx8") // Secret Manual of Golem Building (Vol. 2)
+  NextTriggerObject(Player1)
+  !Global("A7!TomeGolemBone","LOCALS",1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!TomeAdded", "MYAREA", 1)
-    ActionOverride("Container1", CreateItem("a7!tom08", 0, 0, 0))
+    SetGlobal("A7!TomeAdded","MYAREA",2)
     Continue()
 END
 
 IF
-  OR(2)
-    Global("A7!TomeGolemBone", "GLOBAL", 1)
-    PartyHasItem("a7!tom08")
-  Global("A7!TomeAdded", "MYAREA", 0)
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(1)
+  NextTriggerObject(Player2)
+  !Global("A7!TomeGolemBone","LOCALS",1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!TomeAdded", "MYAREA", 1)
+    SetGlobal("A7!TomeAdded","MYAREA",2)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(2)
+  NextTriggerObject(Player3)
+  !Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",2)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(3)
+  NextTriggerObject(Player4)
+  !Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",2)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(4)
+  NextTriggerObject(Player5)
+  !Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",2)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(5)
+  NextTriggerObject(Player6)
+  !Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",2)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  OR(3)
+    PartyHasItem("a7!tom08") // Secret Manual of Golem Building (Vol. 2)
+    PartyHasItem("a7!tomx8") // Secret Manual of Golem Building (Vol. 2)
+    NextTriggerObject(Player1)
+    Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(1)
+  NextTriggerObject(Player2)
+  Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(2)
+  NextTriggerObject(Player3)
+  Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(3)
+  NextTriggerObject(Player4)
+  Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(4)
+  NextTriggerObject(Player5)
+  Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("A7!TomeAdded","MYAREA",0)
+  NumInPartyGT(5)
+  NextTriggerObject(Player6)
+  Global("A7!TomeGolemBone","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",1)
+    Continue()
+END
+
+// Evaluated in second pass
+IF
+  Global("A7!TomeAdded","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",3)
+    Continue()
+END
+
+// Evaluated in second pass
+IF
+  Global("A7!TomeAdded","MYAREA",2)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TomeAdded","MYAREA",3)
+    ActionOverride("Container1",CreateItem("a7!tom08",0,0,0)) // Secret Manual of Golem Building (Vol. 2)
     Continue()
 END
