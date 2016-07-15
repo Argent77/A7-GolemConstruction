@@ -1,4 +1,4 @@
-// *** SOD: Underground temple with portal to Fugue plane ***
+// *** SOD: Ruins of Kanaglym (Fugue Portal) ***
 
 IF
   Global("A7!GolemAbility", "GLOBAL", 1)

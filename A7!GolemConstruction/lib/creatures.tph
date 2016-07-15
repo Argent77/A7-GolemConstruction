@@ -744,6 +744,7 @@ COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
         ~%MOD_FOLDER%/scripts/a7!ct13.baf~
         ~%MOD_FOLDER%/scripts/a7!ct14.baf~
         ~%MOD_FOLDER%/scripts/a7!ct15.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct16.baf~
 
 // handling game-specific events
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN

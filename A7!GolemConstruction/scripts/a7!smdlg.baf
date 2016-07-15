@@ -37,6 +37,19 @@ THEN
     StartDialogueNoSet(LastSummonerOf(Myself))
 END
 
+// Checking location: SoD - Kanaglym, near Underground River
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!KanaglymWorkshop", "GLOBAL", 1)
+  AreaCheck("BD5300")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initKanaglym", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
 // Checking location: SoA - Planar Sphere
 IF
   Global("init", "LOCALS", 0)

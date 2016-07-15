@@ -868,8 +868,10 @@ Known locations where you can successfully construct golems
 
 Siege of Dragonspear:
 - Sorcerous Sundries: You may rent the second floor from the proprietor of the shop.
-- Repository of Undeath below Dwarven Dig Site: You have to make the area safe first by destroying the undead minions 
-                                                and dealing with the current resident.
+- Repository of Undeath: This dungeon can be found beneath the Dwarven Dig Site. You have to make the area safe first 
+                         by destroying the undead minions and dealing with the current resident.
+- Ruins of Kanaglym: The ruins are accessible from the Underground River area. You have to make the area safe first 
+                     by destroying all enemies and dealing with Kherriun.
 
 Shadows of Amn:
 - Planar Sphere: The opening area of the Sphere may be suitable for golem building (after dealing with the former owner, 

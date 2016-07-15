@@ -5,9 +5,9 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/bdhalbaz.d~
 
   // Use Coldhearth dungeon as golem building workshop
-  EXTEND_TOP ~bd1200.bcs~ ~%MOD_FOLDER%/scripts/bd1200_top.baf~
-  COMPILE ~%MOD_FOLDER%/scripts/bd1200a.baf~
-          ~%MOD_FOLDER%/scripts/bd1200b.baf~
+  EXTEND_TOP ~bd1200.bcs~ ~%MOD_FOLDER%/scripts/bd1200_workshop.baf~
+  COMPILE ~%MOD_FOLDER%/scripts/a7!bd12a.baf~
+          ~%MOD_FOLDER%/scripts/a7!bd12b.baf~
   COPY_EXISTING ~bd1200.are~ ~override~
     LPF fj_are_structure
     INT_VAR
@@ -25,7 +25,7 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     STR_VAR
       fj_structure_type = "region"
       fj_name           = "A7!EnemyCheck1"
-      fj_reg_script     = "bd1200a"
+      fj_reg_script     = "a7!bd12a"
     END
     LPF fj_are_structure
     INT_VAR
@@ -43,7 +43,68 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     STR_VAR
       fj_structure_type = "region"
       fj_name           = "A7!EnemyCheck2"
-      fj_reg_script     = "bd1200b"
+      fj_reg_script     = "a7!bd12b"
+    END
+
+  // Use Ruins of Kanaglym as golem building workshop
+  EXTEND_TOP ~bd5300.bcs~ ~%MOD_FOLDER%/scripts/bd5300_workshop.baf~
+  COMPILE ~%MOD_FOLDER%/scripts/a7!bd53a.baf~
+          ~%MOD_FOLDER%/scripts/a7!bd53b.baf~
+          ~%MOD_FOLDER%/scripts/a7!bd53c.baf~
+  COPY_EXISTING ~bd5300.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 1650
+      fj_box_top        = 580
+      fj_box_right      = 1660
+      fj_box_bottom     = 590
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 1655 | (590 << 16)
+      fj_vertex_1       = 1650 | (580 << 16)
+      fj_vertex_2       = 1660 | (580 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck1"
+      fj_reg_script     = "a7!bd53a"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 670
+      fj_box_top        = 1080
+      fj_box_right      = 680
+      fj_box_bottom     = 1090
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 675 | (1090 << 16)
+      fj_vertex_1       = 670 | (1080 << 16)
+      fj_vertex_2       = 680 | (1080 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck2"
+      fj_reg_script     = "a7!bd53b"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 1250
+      fj_box_top        = 1070
+      fj_box_right      = 1260
+      fj_box_bottom     = 1080
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 1255 | (1080 << 16)
+      fj_vertex_1       = 1250 | (1070 << 16)
+      fj_vertex_2       = 1260 | (1070 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck3"
+      fj_reg_script     = "a7!bd53c"
     END
 END
 

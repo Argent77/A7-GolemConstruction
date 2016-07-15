@@ -58,10 +58,11 @@ ingredients to implement certain key features of the golem. Creating perfect var
 itself and requires certain unique artifacts of power for the enchantment process.
 
 The construction of the golems takes time and has to be done in specific locations of power. In 
-Siege of Dragonspear you can try Sorcerous Sundries and the Repository of Undeath beneath the 
-Dwarven Dig Site. In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesville may be 
-suitable. The Wizard's Library on the second floor of Watcher's Keep can be used as well. In 
-Throne of Bhaal your Pocket Plane may work, after installing some equipment.
+Siege of Dragonspear you can try Sorcerous Sundries, the Repository of Undeath beneath the 
+Dwarven Dig Site and the ruins of Kanaglym which are accessible from the Underground River. 
+In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesville may be suitable. The 
+Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 
+your Pocket Plane may work, after installing some equipment.
 
 Golem may follow simple commands. To change a command simply talk to them (you may have to force 
 the talk by pressing the Talk button, or pressing F1).
