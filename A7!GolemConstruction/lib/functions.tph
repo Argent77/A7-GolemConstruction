@@ -115,18 +115,23 @@ OUTER_TEXT_SPRINT animationSlotsPath ".../inlined/creature/animation/slots.txt"
 
 /**
  * Returns the first free creature animation slot in the range defined by slotMin and slotMax.
- * INT_VAR slotMin  Lowest available creature animation slot for the animation.
- * INT_VAR slotMax  Highest available creature animation slot for the animation.
- * RET slot         A free animation slot. Returns -1 if none found.
+ * INT_VAR slotMin    Lowest available creature animation slot for the animation.
+ * INT_VAR slotMax    Highest available creature animation slot for the animation.
+ * INT_VAR slotSteps  How many slots to skip after each iteration, starting from slotMin.
+ *                    Setting this parameter is useful if compatible animation slots are always 
+ *                    a fixed distance apart (e.g. at a distance of 0x10 each)
+ * RET slot           A free animation slot. Returns -1 if none found.
  */
 DEFINE_ACTION_FUNCTION FIND_FREE_ANIM_SLOT
 INT_VAR
-  slotMin = 0
-  slotMax = (slotMin BAND 0xf000) + 0x1000
+  slotMin   = 0
+  slotMax   = (slotMin BAND 0xf000) + 0x1000
+  slotSteps = 1
 RET
   slot
 BEGIN
   OUTER_SET slot = "-1"
+  ACTION_IF (slotSteps < 1) BEGIN OUTER_SET slotSteps = 1 END
   ACTION_IF (slotMin < 0) BEGIN OUTER_SET slotMin = 0 END
   ACTION_IF (slotMax < 0) BEGIN OUTER_SET slotMax = 0 END
   ACTION_IF (slotMax < slotMin) BEGIN
@@ -138,7 +143,7 @@ BEGIN
   // animslots.txt contains reserved creature animation slots
   COPY - ~%animationSlotsPath%~ ~%animationSlotsPath%~
     READ_ASCII 0 slotList (SOURCE_SIZE)
-    FOR (idx = slotMin; idx < slotMax; ++idx) BEGIN
+    FOR (idx = slotMin; idx < slotMax; idx += slotSteps) BEGIN
       LOOKUP_IDS_SYMBOL_OF_INT name ~animate~ idx
       PATCH_IF (~%name%~ STRING_EQUAL ~%idx%~) BEGIN
         LPF TO_HEX_NUMBER INT_VAR value = idx minDigits = 4 RET hexNumber END
@@ -153,13 +158,14 @@ END
 
 DEFINE_PATCH_FUNCTION FIND_FREE_ANIM_SLOT
 INT_VAR
-  slotMin = 0
-  slotMax = (slotMin BAND 0xf000) + 0x1000
+  slotMin   = 0
+  slotMax   = (slotMin BAND 0xf000) + 0x1000
+  slotSteps = 1
 RET
   slot
 BEGIN
   INNER_ACTION BEGIN
-    LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = slotMin slotMax = slotMax RET slot END
+    LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = slotMin slotMax = slotMax slotSteps = slotSteps RET slot END
   END
 END
 
