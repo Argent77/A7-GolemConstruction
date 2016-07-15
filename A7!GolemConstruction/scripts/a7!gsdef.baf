@@ -18,7 +18,6 @@ THEN
     SetGlobal("dismiss", "LOCALS", 2)
     SetInterrupt(FALSE)
     DisplayString(Myself, @20002) // Dismissed
-    DestroyItem("a7!fam")
     Kill(Myself)
     SetInterrupt(TRUE)
 END

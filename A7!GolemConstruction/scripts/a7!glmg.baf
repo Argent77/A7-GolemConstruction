@@ -24,7 +24,6 @@ THEN
   RESPONSE #100
   SetGlobal("dismiss", "LOCALS", 3)
   SetInterrupt(TRUE)
-  DestroyItem("a7!fam")
   Kill(Myself)
   SetInterrupt(TRUE)
 END
@@ -37,7 +36,6 @@ THEN
     SetGlobal("dismiss", "LOCALS", 3)
     SetInterrupt(TRUE)
     DisplayString(Myself, @7003) // The golem's substance has been wholly consumed by the maggots and loses its coherence...
-    DestroyItem("a7!fam")
     Kill(Myself)
     SetInterrupt(TRUE)
   RESPONSE #13
