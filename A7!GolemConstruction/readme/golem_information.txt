@@ -44,16 +44,16 @@ Lesser Flesh Golem:
   - One full set of body parts
 - Stats:
   - STR: 17
-  - HP: 25
-  - AC: 12
-  - THAC0: 11
+  - HP: 30
+  - AC: 11
+  - THAC0: 10
   - APR: 1
   - Saves (death/wand/polymorph/breath/spell): 12/13/12/13/13
 - Resistances:
-  - Magic: 100
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
+  - Magic: 75
+  - Cold: 75
+  - Magic Cold: 75
+  - Electricity: 75
 - There is a 1% chance that a flesh golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
 
@@ -63,16 +63,16 @@ Flesh Golem:
   - Two full sets of body parts
 - Stats:
   - STR: 18/50
-  - HP: 35
+  - HP: 40
   - AC: 9
   - THAC0: 7
   - APR: 3/2
   - Saves: 10/11/10/11/11
 - Resistances:
-  - Magic: 100
+  - Magic: 90
   - Cold: 100
   - Magic Cold: 100
-  - Electricity: 125
+  - Electricity: 100
   - Piercing: 25
   - Missile: 25
 - Immune to non-magical weapons
@@ -86,10 +86,10 @@ Greater Flesh Golem:
   - One scroll of Stinking Cloud
 - Stats:
   - STR: 19
-  - HP: 50
+  - HP: 60
   - AC: 6
   - THAC0: 4
-  - APR: 3/2
+  - APR: 2
   - Saves: 8/9/8/9/9
 - Resistances:
   - Magic: 100
@@ -138,15 +138,15 @@ Lesser Clay Golem:
   - One block of clay
 - Stats:
   - STR: 18/50
-  - HP: 30
-  - AC: 10
-  - THAC0: 9
+  - HP: 35
+  - AC: 9
+  - THAC0: 8
   - APR: 1
   - Saves: 9/11/10/10/12
 - Resistances:
-  - Magic: 100
-  - Cold: 100
-  - Magic Cold: 100
+  - Magic: 75
+  - Cold: 75
+  - Magic Cold: 75
   - Electricity: 100
   - Slashing: 75
   - Piercing: 75
@@ -161,13 +161,13 @@ Clay Golem:
   - One scroll of Haste
 - Stats:
   - STR: 19
-  - HP: 45
-  - AC: 8
-  - THAC0: 7
+  - HP: 50
+  - AC: 7
+  - THAC0: 6
   - APR: 1
   - Saves: 7/9/8/8/10
 - Resistances:
-  - Magic: 100
+  - Magic: 90
   - Fire: 50
   - Magic Fire: 50
   - Cold: 100
@@ -188,9 +188,9 @@ Greater Clay Golem:
   - One scroll of Haste
 - Stats:
   - STR: 20
-  - HP: 65
-  - AC: 5
-  - THAC0: 4
+  - HP: 70
+  - AC: 4
+  - THAC0: 3
   - APR: 3/2
   - Saves: 5/7/6/6/8
 - Resistances:
@@ -202,7 +202,6 @@ Greater Clay Golem:
   - Electricity: 100
   - Acid: 75
   - Slashing: 100
-  - Crushing: 25
   - Piercing: 100
   - Missile:100
 - Immune to non-magical and +1 weapons
@@ -218,10 +217,10 @@ Perfect Clay Golem:
   - One bag of Enchanted Coral Powder
 - Stats:
   - STR: 20
-  - HP: 95
+  - HP: 90
   - AC: 0
   - THAC0: -1
-  - APR: 2
+  - APR: 3/2
   - Saves: 4/6/5/5/7
 - Resistances:
   - Magic: 100
@@ -232,7 +231,7 @@ Perfect Clay Golem:
   - Electricity: 100
   - Acid: 100
   - Slashing: 100
-  - Crushing: 50
+  - Crushing: 33
   - Piercing: 100
   - Missile:100
 - Regenerates 1HP/turn
@@ -256,7 +255,7 @@ Lesser Stone Golem:
   - APR: 1
   - Saves: 7/9/8/7/10
 - Resistances:
-  - Magic:100
+  - Magic:75
 - Immune to non-magical weapons
 - There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
@@ -271,11 +270,10 @@ Stone Golem:
   - HP: 60
   - AC: 5
   - THAC0: 7
-  - APR: 3/2
+  - APR: 1
   - Saves: 5/7/6/5/8
 - Resistances:
-  - Magic: 100
-  - Electricity:50
+  - Magic: 90
 - Immune to non-magical and +1 weapons
 - May cast Slow on opponents in 30 feet radius of golem
 - There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
@@ -289,13 +287,13 @@ Greater Stone Golem:
 - Stats:
   - STR: 21
   - HP: 85
-  - AC: 2
+  - AC: 1
   - THAC0: 3
   - APR: 3/2
   - Saves: 4/6/5/4/7
 - Resistances:
   - Magic: 100
-  - Electricity: 100
+  - Electricity: 50
   - Acid: 50
 - Immune to non-magical and +1 weapons
 - May cast Slow on opponents in 30 feet radius of golem
@@ -310,10 +308,10 @@ Perfect Stone Golem:
   - One vial of Mimic's Blood
 - Stats:
   - STR: 22
-  - HP: 125
+  - HP: 100
   - AC: -1
-  - THAC0: -1
-  - APR: 2
+  - THAC0: 0
+  - APR: 3/2
   - Saves: 3/5/4/3/6
 - Resistances:
   - Magic: 100
@@ -338,19 +336,19 @@ Lesser Iron Golem:
   - One bar of iron
 - Stats:
   - STR: 20
-  - HP: 55
-  - AC: 7
-  - THAC0: 8
+  - HP: 60
+  - AC: 5
+  - THAC0: 6
   - APR: 1
   - Saves: 5/7/6/6/8
 - Resistances:
-  - Magic: 100
+  - Magic: 75
   - Fire: 50
   - Magic Fire: 50
   - Cold: 100
   - Magic Cold: 100
   - Electricity: 100
-  - Acid: 100
+  - Acid: 50
 - Immune to non-magical and +1 weapons
 
 Iron Golem:
@@ -360,19 +358,19 @@ Iron Golem:
   - One scroll of Cloudkill
 - Stats:
   - STR: 22
-  - HP: 75
-  - AC: 4
-  - THAC0: 4
+  - HP: 80
+  - AC: 3
+  - THAC0: 3
   - APR: 1
   - Saves: 3/5/4/4/6
 - Resistances:
-  - Magic: 100
+  - Magic: 90
   - Fire: 100
   - Magic Fire: 100
   - Cold: 100
   - Magic Cold: 100
   - Electricity: 100
-  - Acid: 100
+  - Acid: 75
   - Slashing: 20
   - Piercing: 20
   - Missile: 20
@@ -386,10 +384,10 @@ Greater Iron Golem:
   - One scroll of Cloudkill
 - Stats:
   - STR: 23
-  - HP: 100
+  - HP: 110
   - AC: 0
   - THAC0: 0
-  - APR: 2
+  - APR: 3/2
   - Saves: 1/3/2/2/4
 - Resistances
   - Magic: 100
@@ -415,10 +413,10 @@ Perfect Iron Golem:
   - Chips of Cold Iron
 - Stats:
   - STR: 24
-  - HP: 150
+  - HP: 125
   - AC: -2
-  - THAC0: -3
-  - APR: 2
+  - THAC0: -2
+  - APR: 3/2
   - Saves: 0/2/1/1/3
 - Resistances:
   - Magic: 100
@@ -447,12 +445,12 @@ Lesser Mithral Golem:
 - Stats:
   - STR: 21
   - HP: 60
-  - AC: 8
-  - THAC0: 7
+  - AC: 4
+  - THAC0: 4
   - APR: 1
   - Saves: 6/8/7/7/9
 - Resistances:
-  - Magic: 100
+  - Magic: 90
   - Fire: 100
   - Magic Fire: 100
   - Cold: 100
@@ -460,7 +458,7 @@ Lesser Mithral Golem:
   - Electricity: 100
   - Acid: 100
   - Slashing: 20
-  - Crushing: 20
+  - Crushing: 0
   - Piercing: 20
   - Missile: 20
 - Immune to non-magical, +1 and +2 weapons
@@ -473,9 +471,9 @@ Mithral Golem:
 - Stats:
   - STR: 23
   - HP: 80
-  - AC: 5
-  - THAC0: 4
-  - APR: 1
+  - AC: 2
+  - THAC0: 2
+  - APR: 3/2
   - Saves: 4/6/5/5/7
 - Resistances:
   - Magic: 100
@@ -486,7 +484,7 @@ Mithral Golem:
   - Electricity: 100
   - Acid: 100
   - Slashing: 50
-  - Crushing: 50
+  - Crushing: 33
   - Piercing: 50
   - Missile: 50
 - Regenerates 1 HP per turn
@@ -499,10 +497,10 @@ Greater Mithral Golem:
   - 16,000 XP drained from the caster
 - Stats:
   - STR: 24
-  - HP: 100
-  - AC: 2
-  - THAC0: 1
-  - APR: 3/2
+  - HP: 110
+  - AC: -2
+  - THAC0: -2
+  - APR: 2
   - Saves: 3/5/4/4/6
 - Resistances:
   - Magic: 100
@@ -512,10 +510,10 @@ Greater Mithral Golem:
   - Magic Cold: 100
   - Electricity: 100
   - Acid: 100
-  - Slashing: 80
-  - Crushing: 80
-  - Piercing: 80
-  - Missile: 80
+  - Slashing: 75
+  - Crushing: 50
+  - Piercing: 75
+  - Missile: 75
 - Regenerates 1 HP per round
 - Immune to non-magical, +1 and +2 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
@@ -529,9 +527,9 @@ Perfect Mithral Golem:
   - 32,000 XP drained from the caster
 - Stats:
   - STR: 24
-  - HP: 150
-  - AC: -1
-  - THAC0: -3
+  - HP: 125
+  - AC: -5
+  - THAC0: -5
   - APR: 2
   - Saves: 1/3/2/2/4
 - Resistances:
@@ -542,10 +540,10 @@ Perfect Mithral Golem:
   - Magic Cold: 100
   - Electricity: 100
   - Acid: 100
-  - Slashing: 90
-  - Crushing: 90
-  - Piercing: 90
-  - Missile: 90
+  - Slashing: 85
+  - Crushing: 75
+  - Piercing: 85
+  - Missile: 85
 - Regenerates 1 HP per round
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
@@ -562,22 +560,22 @@ Lesser Adamantite Golem:
 - Stats:
   - STR: 22
   - HP: 60
-  - AC: 7
-  - THAC0: 6
+  - AC: 5
+  - THAC0: 4
   - APR: 1
   - Saves: 5/7/6/6/8
 - Resistances:
-  - Magic: 100
+  - Magic: 90
   - Fire: 100
   - Magic Fire: 100
   - Cold: 100
   - Magic Cold: 100
   - Electricity: 100
   - Acid: 100
-  - Slashing: 80
-  - Crushing: 50
-  - Piercing: 50
-  - Missile: 50
+  - Slashing: 75
+  - Crushing: 75
+  - Piercing: 75
+  - Missile: 75
 - Immune to non-magical, +1 and +2 weapons
 
 Adamantite Golem:
@@ -588,39 +586,10 @@ Adamantite Golem:
 - Stats:
   - STR: 24
   - HP: 80
-  - AC: 4
-  - THAC0: 4
+  - AC: 3
+  - THAC0: 3
   - APR: 1
   - Saves: 3/5/4/4/6
-- Resistances:
-  - Magic: 100
-  - Fire: 125
-  - Magic Fire: 125
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 100
-  - Slashing: 80
-  - Crushing: 80
-  - Piercing: 80
-  - Missile: 80
-- Regenerates 1 HP per turn
-- Immune to non-magical, +1 and +2 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
-  for one round (save vs. death at -4 penalty for half damage and avoid stun)
-
-Greater Adamantite Golem:
-- Min. level: 32 (-2 for Transmuters, +2 for Bards)
-- Ingredients:
-  - Eight bars of adamantine
-  - 32,000 XP drained from the caster
-- Stats:
-  - STR: 24
-  - HP: 115
-  - AC: 1
-  - THAC0: 0
-  - APR: 3/2
-  - Saves: 1/3/2/2/4
 - Resistances:
   - Magic: 100
   - Fire: 125
@@ -633,6 +602,35 @@ Greater Adamantite Golem:
   - Crushing: 90
   - Piercing: 90
   - Missile: 90
+- Regenerates 1 HP per turn
+- Immune to non-magical, +1 and +2 weapons
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+  for one round (save vs. death at -4 penalty for half damage and avoid stun)
+
+Greater Adamantite Golem:
+- Min. level: 32 (-2 for Transmuters, +2 for Bards)
+- Ingredients:
+  - Eight bars of adamantine
+  - 32,000 XP drained from the caster
+- Stats:
+  - STR: 24
+  - HP: 110
+  - AC: 0
+  - THAC0: 0
+  - APR: 3/2
+  - Saves: 1/3/2/2/4
+- Resistances:
+  - Magic: 100
+  - Fire: 125
+  - Magic Fire: 125
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 100
+  - Slashing: 95
+  - Crushing: 95
+  - Piercing: 95
+  - Missile: 95
 - Regenerates 1 HP per round
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
@@ -646,9 +644,9 @@ Perfect Adamantite Golem:
   - 064,000 XP drained from the caster
 - Stats:
   - STR: 25
-  - HP: 165
-  - AC: -2
-  - THAC0: -2
+  - HP: 150
+  - AC: -3
+  - THAC0: -3
   - APR: 2
   - Saves: -1/1/0/0/2
 - Resistances:
@@ -691,7 +689,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Immune to non-magical weapons
   - Saves: 10/11/10/11/11
 - Resistances:
-  - Magic: 100
+  - Magic: 75
   - Fire: -50
   - Magic Fire: -50
   - Slashing: 100
@@ -746,7 +744,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - HP: 75
   - AC: 4
   - THAC0: 9
-  - APR: 1
+  - APR: 3/2
   - Saves: 7/9/8/8/10
 - Resistances:
   - Magic: 100
@@ -800,7 +798,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - HP: 64
   - AC: -1
   - THAC0: 5
-  - APR: 2
+  - APR: 1
   - Saves: 7/9/8/8/10
 - Resistances:
   - Magic: 100
