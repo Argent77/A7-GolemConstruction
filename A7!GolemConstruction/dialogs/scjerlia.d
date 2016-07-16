@@ -4,13 +4,13 @@ ADD_STATE_TRIGGER ~scjerlia~ 0 ~Global("A7!GolemAbility", "GLOBAL", 0)~
 
 APPEND ~scjerlia~
 
-  IF WEIGHT #4 ~Global("A7!GolemAbility", "GLOBAL", 1) Global("A7!Intro", "LOCALS", 0)~ jerlia.intro.1
+  IF WEIGHT #4 ~Global("A7!GolemAbility", "GLOBAL", 1) Global("A7!Intro", "MYAREA", 0)~ jerlia.intro.1
     SAY #28740 /* You interested in a bulk purchase of ore? I've got fine prices for masonry as well, and crafters that can build you everything from arches to overhangs. */
-    ++ @44500 /* I'm looking for certain materials to construct golem from. */ DO ~SetGlobal("A7!Intro", "LOCALS", 1)~ + jerlia.1
+    ++ @44500 /* I'm looking for certain materials to construct golem from. */ DO ~SetGlobal("A7!Intro", "MYAREA", 1)~ + jerlia.1
     ++ #28743 /* Nothing, sorry I bothered you. */ + jerlia.bye.1
   END
 
-  IF WEIGHT #4 ~Global("A7!GolemAbility", "GLOBAL", 1) !Global("A7!Intro", "LOCALS", 0)~ jerlia.intro.2
+  IF WEIGHT #4 ~Global("A7!GolemAbility", "GLOBAL", 1) !Global("A7!Intro", "MYAREA", 0)~ jerlia.intro.2
     SAY @44501 /* Ah, the golem maker returns. Do you need another chunk of ore? */
     + ~!Global("A7!UpdateStore", "LOCALS", 1)~ + @44502 /* Yes, I'd like to browse your store again. */ + jerlia.store.2
     + ~Global("A7!UpdateStore", "LOCALS", 1)~ + @44502 /* Yes, I'd like to browse your store again. */ DO ~SetGlobal("A7!UpdateStore", "LOCALS", 2)~ + jerlia.store.3
