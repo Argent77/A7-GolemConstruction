@@ -648,20 +648,41 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
-// Lightning Golem weapon
-COPY ~%MOD_FOLDER%/items/a7!gllt1.itm~ ~override~
-     ~%MOD_FOLDER%/spells/a7!gllt1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!gllt2.spl~ ~override~
+// Flesh Golem items
+COPY ~%MOD_FOLDER%/items/a7!eqfl.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpfl.itm~ ~override~
 
+// Clay Golem items
+COPY ~%MOD_FOLDER%/items/a7!eqcl.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpcl.itm~ ~override~
+
+// Stone Golem item
+COPY ~%MOD_FOLDER%/items/a7!eqst.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpst.itm~ ~override~
+
+// Iron Golem items
+COPY ~%MOD_FOLDER%/items/a7!eqir.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpir.itm~ ~override~
 
 // Maggot Golem weapon
-COPY ~%MOD_FOLDER%/items/a7!glmg1.itm~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glmg1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glmg1.spl~ ~override~
+COPY ~%MOD_FOLDER%/items/a7!wpmg.itm~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wpmg1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wpmg1.spl~ ~override~
 
+// Brain Golem items
+COPY ~%MOD_FOLDER%/items/a7!wpbr.itm~ ~override~
+
+// Ice Golem items
+COPY ~%MOD_FOLDER%/items/a7!eqic.itm~ ~override~
 
 // Magic Golem weapon
-COPY ~%MOD_FOLDER%/items/a7!glma1.itm~ ~override~
+COPY ~%MOD_FOLDER%/items/a7!wpma.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!eqma.itm~ ~override~
+
+// Lightning Golem weapon
+COPY ~%MOD_FOLDER%/items/a7!wplt.itm~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wplt1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wplt2.spl~ ~override~
 
 
 // Deep Bloodstone Gem
