@@ -36,6 +36,7 @@ available by other means.
 Conventional golem types can be build in lesser, regular, greater and perfect variants. Each variant requires its own 
 materials. The perfect variant will also require a specific artifact of power which is only available in limited numbers.
 
+
 1. Flesh Golems
 
 Lesser Flesh Golem:
@@ -54,7 +55,7 @@ Lesser Flesh Golem:
   - Cold: 75
   - Magic Cold: 75
   - Electricity: 75
-- There is a 1% chance that a flesh golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
 
 Flesh Golem:
@@ -76,7 +77,7 @@ Flesh Golem:
   - Piercing: 25
   - Missile: 25
 - Immune to non-magical weapons
-- There is a 1% chance that a flesh golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
 
 Greater Flesh Golem:
@@ -100,8 +101,9 @@ Greater Flesh Golem:
   - Missile: 75
 - Immune to non-magical weapons
 - May cast Stinking Cloud on self
-- There is a 1% chance that a flesh golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
+- 50% chance to split into two lesser golems of same type on death.
 
 Perfect Flesh Golem:
 - Min. level: 14 (-2 for Transmuters, +2 for Bards)
@@ -126,8 +128,9 @@ Perfect Flesh Golem:
 - Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
 - May cast Stinking Cloud on self
-- There is a 1% chance that a flesh golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
+- Always split into two regular golems of same type on death.
 
 
 2. Clay Golems
@@ -151,7 +154,7 @@ Lesser Clay Golem:
   - Slashing: 75
   - Piercing: 75
   - Missile: 75
-- There is a 1% chance that a clay golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
 
 Clay Golem:
@@ -178,7 +181,7 @@ Clay Golem:
   - Missile:100
 - Immune to non-magical weapons
 - May cast Haste on self
-- There is a 1% chance that a clay golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
 
 Greater Clay Golem:
@@ -206,8 +209,9 @@ Greater Clay Golem:
   - Missile:100
 - Immune to non-magical and +1 weapons
 - May cast Haste on self
-- There is a 1% chance that a clay golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
+- 50% chance to split into two lesser golems of same type on death.
 
 Perfect Clay Golem:
 - Min. level: 17 (-2 for Transmuters, +2 for Bards)
@@ -237,8 +241,9 @@ Perfect Clay Golem:
 - Regenerates 1HP/turn
 - Immune to non-magical and +1 weapons
 - May cast Haste on self
-- There is a 1% chance that a clay golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
+- Always split into two regular golems of same type on death.
 
 
 3. Stone Golems
@@ -257,7 +262,7 @@ Lesser Stone Golem:
 - Resistances:
   - Magic:75
 - Immune to non-magical weapons
-- There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
 
 Stone Golem:
@@ -276,7 +281,7 @@ Stone Golem:
   - Magic: 90
 - Immune to non-magical and +1 weapons
 - May cast Slow on opponents in 30 feet radius of golem
-- There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
 
 Greater Stone Golem:
@@ -297,8 +302,9 @@ Greater Stone Golem:
   - Acid: 50
 - Immune to non-magical and +1 weapons
 - May cast Slow on opponents in 30 feet radius of golem
-- There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
+- 50% chance to split into two lesser golems of same type on death.
 
 Perfect Stone Golem:
 - Min. level: 17 (-2 for Transmuters, +2 for Bards)
@@ -324,8 +330,9 @@ Perfect Stone Golem:
 - Regenerates 1 HP per turn
 - Immune to non-magical, +1 and +2 weapons
 - May cast Slow on self which affects surrounding opponents
-- There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
+- Always split into two regular golems of same type on death.
 
 
 4. Iron Golems
@@ -404,6 +411,7 @@ Greater Iron Golem:
 - Regenerates 1 HP per turn
 - Immune to non-magical, +1 and +2 weapons
 - May cast Gas Cloud on self
+- 50% chance to split into two lesser golems of same type on death.
 
 Perfect Iron Golem:
 - Min. level: 22 (-2 for Transmuters, +2 for Bards)
@@ -433,6 +441,7 @@ Perfect Iron Golem:
 - Regenerates 1 HP per round
 - Immune to non-magical, +1 and +2 weapons
 - May cast Gas Cloud on self
+- Always split into two regular golems of same type on death.
 
 
 5. Mithral Golems
@@ -518,6 +527,7 @@ Greater Mithral Golem:
 - Immune to non-magical, +1 and +2 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
+- 50% chance to split into two lesser golems of same type on death.
 
 Perfect Mithral Golem:
 - Min. level: 27 (-2 for Transmuters, +2 for Bards)
@@ -548,6 +558,7 @@ Perfect Mithral Golem:
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
+- Always split into two regular golems of same type on death.
 
 
 6. Adamantite Golems
@@ -635,6 +646,7 @@ Greater Adamantite Golem:
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
+- 50% chance to split into two lesser golems of same type on death.
 
 Perfect Adamantite Golem:
 - Min. level: 32 (-2 for Transmuters, +2 for Bards)
@@ -665,6 +677,7 @@ Perfect Adamantite Golem:
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
+- Always split into two regular golems of same type on death.
 
 
 
@@ -705,7 +718,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   magic resistance.
 - There is a 1% chance that a maggot golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
-- Lasts only 1d4+6 days in-game time. When duration ends there is a 50% chance to run amok for 1d6 rounds before it 
+- Lasts only 1d4+6 days in-game time. When the duration ends there is a 50% chance to run amok for 1d6 rounds before it 
   disintegrates.
 
 2. Bone Golem
@@ -713,7 +726,8 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Ingredients:
   - Four piles of bones
   - One scroll of Animate Dead
-  - 50% chance that the construction process drains one level from the caster.
+  - 50% chance that the construction process drains one level from the caster, and 10% chance that the construction 
+    process drains two levels from the caster.
 - Stats:
   - STR: 21
   - HP: 65
@@ -758,8 +772,9 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Missile: 50
 - Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
-- May cast Mental Blast which stuns all opponents in 30 feet radius around self for 2d4 rounds and does 2d8 non-lethal 
-  damage (save vs. spell for half damage and avoid stun effect). Does not affect undead, golems and myconids.
+- May cast Mental Blast which stuns all opponents in 30 feet radius, centered on itself for 2d4 rounds and does 
+  2d8 non-lethal damage (save vs. spell for half damage and avoid stun effect). Does not affect undead, golems 
+  and myconids.
 
 4. Ice Golem
 - Min. level: 20 (-2 for Transmuters, +2 for Bards)
@@ -858,7 +873,8 @@ More advanced golems may also follow the following orders:
 - Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns 
                                     to its guarded position.)
 
-You should always take good care of your golems as they may exhibit severe penalties when badly hurt.
+You should always take good care of your golems as they may start to malfunction when badly hurt. These penalties can 
+be removed by the "Repair Golem" ability.
 
 
 Known locations where you can successfully construct golems
