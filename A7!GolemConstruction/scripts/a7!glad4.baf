@@ -5,7 +5,6 @@ IF
   Global("dismiss", "LOCALS", 0)
 THEN
   RESPONSE #100
-    CreateVisualEffectObject("ICMAGICH",Myself)
-    CreateCreatureObject("a7!gsad2",Myself,1,0,0)
-    CreateCreatureObject("a7!gsad2",Myself,1,0,0)
+    ReallyForceSpellDeadRES("a7!sxad2",Myself)
+    ReallyForceSpellDeadRES("a7!sxad2",Myself)
 END

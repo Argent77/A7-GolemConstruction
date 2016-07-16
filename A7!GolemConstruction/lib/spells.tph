@@ -161,6 +161,30 @@ COPY ~%MOD_FOLDER%/spells/a7!prtl.bam~ ~override~
      ~%MOD_FOLDER%/spells/a7!smic.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!smma.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!smlt.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxfl1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxfl2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxcl1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxcl2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxst1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxst2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxir1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxir2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxmi1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxmi2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxad1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxad2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxfl1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxfl2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxcl1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxcl2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxst1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxst2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxir1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxir2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxmi1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxmi2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxad1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sxad2.spl~ ~override~
 
 
 COPY ~%MOD_FOLDER%/spells/a7!smfl1.spl~ ~override~

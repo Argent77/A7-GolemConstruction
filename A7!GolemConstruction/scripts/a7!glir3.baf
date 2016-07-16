@@ -6,7 +6,6 @@ IF
   RandomNum(2, 1)
 THEN
   RESPONSE #100
-    CreateVisualEffectObject("ICMAGICH",Myself)
-    CreateCreatureObject("a7!gsir1",Myself,1,0,0)
-    CreateCreatureObject("a7!gsir1",Myself,1,0,0)
+    ReallyForceSpellDeadRES("a7!sxir1",Myself)
+    ReallyForceSpellDeadRES("a7!sxir1",Myself)
 END

@@ -8,6 +8,18 @@ THEN
     MakeGlobal()
     ChangeEnemyAlly(Myself, FAMILIAR)
     AddFamiliar()
+    Continue()
+END
+
+// Attempt to copy AI mode of parent golem
+IF
+  Global("init", "LOCALS", 0)
+  NextTriggerObject(LastSummonerOf(Myself))
+  Global("Command", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("Command", "LOCALS", 1)
+    Continue()
 END
 
 // Dismiss Golem has been triggered
