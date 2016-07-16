@@ -7,120 +7,120 @@ IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(NearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(NearestAllyOf(Myself), PC)
+  NextTriggerObject(NearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(NearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(SecondNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(SecondNearestAllyOf(Myself), PC)
+  NextTriggerObject(SecondNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(SecondNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(ThirdNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(ThirdNearestAllyOf(Myself), PC)
+  NextTriggerObject(ThirdNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(ThirdNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(FourthNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(FourthNearestAllyOf(Myself), PC)
+  NextTriggerObject(FourthNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(FourthNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(FifthNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(FifthNearestAllyOf(Myself), PC)
+  NextTriggerObject(FifthNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(FifthNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(SixthNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(SixthNearestAllyOf(Myself), PC)
+  NextTriggerObject(SixthNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(SixthNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(SeventhNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(SeventhNearestAllyOf(Myself), PC)
+  NextTriggerObject(SeventhNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(SeventhNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(EighthNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(EighthNearestAllyOf(Myself), PC)
+  NextTriggerObject(EighthNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(EighthNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(NinthNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(NinthNearestAllyOf(Myself), PC)
+  NextTriggerObject(NinthNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(NinthNearestAllyOf(Myself)), 30)
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
   See(TenthNearestAllyOf(Myself))
-  Allegiance(LastSeenBy(Myself), PC)
-  NextTriggerObject(LastSeenBy(Myself))
+  Allegiance(TenthNearestAllyOf(Myself), PC)
+  NextTriggerObject(TenthNearestAllyOf(Myself))
   AttackedBy([ENEMY], DEFAULT)
 THEN
   RESPONSE #100
-    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+    AttackReevaluate(LastAttackerOf(TenthNearestAllyOf(Myself)), 30)
 END
 
 IF
