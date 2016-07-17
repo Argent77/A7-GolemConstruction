@@ -130,7 +130,7 @@ Perfect Flesh Golem:
 - May cast Stinking Cloud on self
 - There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
-- Always split into two regular golems of same type on death.
+- Always splits into two regular golems of same type on death.
 
 
 2. Clay Golems
@@ -243,7 +243,7 @@ Perfect Clay Golem:
 - May cast Haste on self
 - There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
-- Always split into two regular golems of same type on death.
+- Always splits into two regular golems of same type on death.
 
 
 3. Stone Golems
@@ -332,7 +332,7 @@ Perfect Stone Golem:
 - May cast Slow on self which affects surrounding opponents
 - There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
-- Always split into two regular golems of same type on death.
+- Always splits into two regular golems of same type on death.
 
 
 4. Iron Golems
@@ -441,7 +441,7 @@ Perfect Iron Golem:
 - Regenerates 1 HP per round
 - Immune to non-magical, +1 and +2 weapons
 - May cast Gas Cloud on self
-- Always split into two regular golems of same type on death.
+- Always splits into two regular golems of same type on death.
 
 
 5. Mithral Golems
@@ -558,7 +558,7 @@ Perfect Mithral Golem:
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
-- Always split into two regular golems of same type on death.
+- Always splits into two regular golems of same type on death.
 
 
 6. Adamantite Golems
@@ -677,7 +677,7 @@ Perfect Adamantite Golem:
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
-- Always split into two regular golems of same type on death.
+- Always splits into two regular golems of same type on death.
 
 
 

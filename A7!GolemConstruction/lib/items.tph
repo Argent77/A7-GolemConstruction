@@ -309,18 +309,7 @@ COPY ~%MOD_FOLDER%/items/a7!brin.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30061
 
 COPY ~%MOD_FOLDER%/items/a7!ibrin.bam~ ~override~
-
-COPY ~%MOD_FOLDER%/items/a7!cbrin.bam~ ~override~
-  LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
-ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
-  LAF INSTALL_PVRZ
-  INT_VAR
-    original_base_index = original_base_index
-    new_base_index = new_base_index
-  STR_VAR
-    source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
-  END
-END
+     ~%MOD_FOLDER%/items/a7!cbrin.bam~ ~override~
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   // get one piece from strange "Glass Thingy" in abandoned temple of Cyric

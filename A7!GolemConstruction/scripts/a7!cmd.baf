@@ -126,19 +126,20 @@ END
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
-  See(NearestEnemyOf(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+  See(LastAttackerOf(Myself))
 THEN
   RESPONSE #100
-    AttackReevaluate(NearestEnemyOf(Myself), 30)
+    Attack(LastAttackerOf(Myself))
 END
 
 IF
   Global("Command", "LOCALS", 1)
   ActionListEmpty()
-  AttackedBy([ENEMY], DEFAULT)
+  See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
-    Attack(LastAttackerOf(Myself))
+    AttackReevaluate(NearestEnemyOf(Myself), 30)
 END
 
 
@@ -178,7 +179,8 @@ END
 IF
   Global("Command", "LOCALS", 3)
   ActionListEmpty()
-  AttackedBy([EVILCUTOFF], DEFAULT)
+  AttackedBy([NOTGOOD], DEFAULT)
+  See(LastAttackerOf(Myself))
 THEN
   RESPONSE #100
     Attack(LastAttackerOf(Myself))
@@ -187,9 +189,8 @@ END
 IF
   Global("Command", "LOCALS", 3)
   ActionListEmpty()
-  AttackedBy([NOTGOOD], DEFAULT)
+  AttackedBy([EVILCUTOFF], DEFAULT)
 THEN
   RESPONSE #100
     Attack(LastAttackerOf(Myself))
 END
-

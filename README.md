@@ -13,7 +13,9 @@ Golems can exist for a virtually unlimited time (with exceptions), or until dest
 
 ##### 1. Golem Construction Ability for Spellcasters (for BG:SoD, BG2:EE and EET)
 
-The main component of the mod. It installs a number of golem building manuals which can be found all over Faerûn. The "Manual of Golem Building" comes in six volumes containing knowledge about building different types of golems. Each tome contains a single charge of powerful magic which provides the user with the "Construct Golem" and "Repair Golem" abilities. The knowledge how to build specific types of golems is available to all party members though. After the tome's magic is spent it can still be used as reference about building specific types of golems. It is rumored that there is another secret set of tomes which contains knowledge about constructing more exotic types of golems.
+The main component of the mod. It installs a number of golem building manuals which can be found all over Faerûn. The "Manual of Golem Building" comes in six volumes containing knowledge about building different types of golems. Each tome contains a single charge of powerful magic which provides the user with the "Construct Golem" and "Repair Golem" abilities. The knowledge how to build specific types of golems is available to all party members though. After the tome's magic is spent it can still be used as reference about building specific types of golems.
+
+It is rumored that there is another secret set of tomes which contains knowledge about constructing more exotic types of golems.
 
 Golem types taught by the Manual of Golem Building:
 - Flesh Golems in lesser, regular, greater and perfect variants.
