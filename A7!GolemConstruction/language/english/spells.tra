@@ -140,6 +140,19 @@ This ability allows the caster to repair damaged golems. The whole process prima
 The repair process will also remove penalties that may have been applied to badly damaged golems.~
 
 
+@20220 = ~Hideous Laughter~
+@20221 = ~Hideous Laughter
+
+Range: 0
+Duration: Instant
+Area of Effect: 30 ft. radius
+Saving Throw: Special
+
+The hideous laugh of a bone golem may trigger two different effects in all opponents who hear it. The target must roll a successful Saving Throw vs. Spell at -2 or will run around in fear for 2d6 rounds. The target must also roll a successful Saving Throw vs. Death or will be paralyzed with fear instead.
+
+Unthinking creatures, such as undead, golems or myconids, are immune to the effect.~
+
+
 // Misc. strings
 @21000 = ~Engaged in mental combat~
 @21001 = ~You are unable to construct golems in hostile environments.~
@@ -156,3 +169,5 @@ The repair process will also remove penalties that may have been applied to badl
 @21014 = ~Golem is damaged: Spirit becomes restless~
 @21015 = ~Golem is damaged: Body malfunction~
 @21016 = ~Golem is damaged: Sensory malfunction~
+@21017 = ~Panic~
+@21018 = ~Paralyzed~

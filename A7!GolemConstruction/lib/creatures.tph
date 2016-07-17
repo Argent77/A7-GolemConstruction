@@ -636,6 +636,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!glbo.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~
   ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in13~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in13~ #0 ~innate~ (4)
 
 
 // Brain Golem

@@ -126,6 +126,49 @@ LAF CREATE_WILD_SURGE_SPELL STR_VAR resName = "a7!in11b" resDefault = "a7!in11c"
 // Magic Golem destruction blast
 COPY ~%MOD_FOLDER%/spells/a7!in12.spl~ ~override~
 
+// Hideous Laughter
+COPY ~%MOD_FOLDER%/spells/a7!in13.spl~ ~override~
+  SAY NAME1 @20220  // Hideous Laughter
+  SAY UNIDENTIFIED_DESC @20221  // ...
+
+COPY ~%MOD_FOLDER%/spells/a7!in13a.spl~ ~override~
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 2     // Preset target
+    parameter1 = RESOLVE_STR_REF(@21017)  // Panic
+    timing = 1      // Instant/Permanent until death
+    resist_dispel = 1
+    insert_point = 0
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!in13b.spl~ ~override~
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 2     // Preset target
+    parameter1 = RESOLVE_STR_REF(@21018)  // Paralyzed
+    timing = 1      // Instant/Permanent until death
+    resist_dispel = 1
+    insert_point = 0
+  END
+
+// Allows Resist/Remove Fear to protect against this ability
+COPY_EXISTING ~sppr108.spl~ ~override~
+              ~spwi210.spl~ ~override~
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 206   // Protection from Spell
+    target  = 2     // Preset target
+    timing = 0      // Instant/Limited
+    duration = 300
+    resist_dispel = 3
+  STR_VAR
+    resource = "A7!IN13B"
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!in13b.bam~ ~override~
+
 
 // "Create Golem" spells and related resources
 COPY ~%MOD_FOLDER%/spells/a7!prtl.bam~ ~override~

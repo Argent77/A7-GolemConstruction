@@ -654,19 +654,24 @@ COPY ~%MOD_FOLDER%/items/a7!eqir.itm~ ~override~
      ~%MOD_FOLDER%/items/a7!wpir.itm~ ~override~
 
 // Maggot Golem weapon
-COPY ~%MOD_FOLDER%/items/a7!wpmg.itm~ ~override~
+COPY ~%MOD_FOLDER%/items/a7!eqmg.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpmg.itm~ ~override~
      ~%MOD_FOLDER%/spells/a7!wpmg1.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!wpmg1.spl~ ~override~
 
+// Bone Golem items
+COPY ~%MOD_FOLDER%/items/a7!eqbo.itm~ ~override~
+
 // Brain Golem items
-COPY ~%MOD_FOLDER%/items/a7!wpbr.itm~ ~override~
+COPY ~%MOD_FOLDER%/items/a7!eqbr.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpbr.itm~ ~override~
 
 // Ice Golem items
 COPY ~%MOD_FOLDER%/items/a7!eqic.itm~ ~override~
 
 // Magic Golem weapon
-COPY ~%MOD_FOLDER%/items/a7!wpma.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!eqma.itm~ ~override~
+COPY ~%MOD_FOLDER%/items/a7!eqma.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpma.itm~ ~override~
 
 // Lightning Golem weapon
 COPY ~%MOD_FOLDER%/items/a7!wplt.itm~ ~override~

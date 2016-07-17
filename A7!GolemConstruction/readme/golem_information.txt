@@ -128,8 +128,6 @@ Perfect Flesh Golem:
 - Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
 - May cast Stinking Cloud on self
-- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
 - Always splits into two regular golems of same type on death.
 
 
@@ -241,8 +239,6 @@ Perfect Clay Golem:
 - Regenerates 1HP/turn
 - Immune to non-magical and +1 weapons
 - May cast Haste on self
-- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
 - Always splits into two regular golems of same type on death.
 
 
@@ -330,8 +326,6 @@ Perfect Stone Golem:
 - Regenerates 1 HP per turn
 - Immune to non-magical, +1 and +2 weapons
 - May cast Slow on self which affects surrounding opponents
-- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
 - Always splits into two regular golems of same type on death.
 
 
@@ -747,6 +741,8 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Piercing: 50
   - Missile: 50
 - Immune to non-magical weapons
+- May cast "Hideous Laughter" which affects enemies within 30 ft. range: Victims that fail their save vs. spell will 
+  run around in fear for 2d6 rounds. If they also fail their save vs. death, they will by paralyzed with fear instead.
 
 3. Brain Golem
 - Min. level: 17 (-2 for Transmuters, +2 for Bards)
