@@ -6,7 +6,9 @@
 @8002 = ~Has learned how to construct bone golems.~
 
 // *** Book content ***
-@8100 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a bone golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+@8100 = ~About Bone Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a bone golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
 
 From what you can gather this book is part of a collection that comes in six volumes. It also contains several references to a set of manuals about building more conventional types of golems.
 
@@ -32,7 +34,9 @@ Requires:
 
 Weight: 10~
 
-@8101 = ~This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a bone golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+@8101 = ~About Bone Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a bone golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
 
 From what you can gather this book is part of a collection that comes in six volumes. It also contains several references to a set of manuals about building more conventional types of golems.
 
