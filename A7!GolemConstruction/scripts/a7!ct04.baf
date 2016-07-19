@@ -1,4 +1,4 @@
-// *** Golem construction cutscene (12 h) ***
+// *** Golem construction cutscene (48 h) ***
 
 IF
   True()
@@ -9,8 +9,8 @@ THEN
     ClearAllActions()
     FadeToColor([30.0],0)
     Wait(2)
-    AdvanceTime(3600) // 12 hours
-    SetToken("A7_HOURS", @40002)  // twelve
+    AdvanceTime(14400)  // 48 hours
+    SetToken("A7_HOURS", @40005)  // forty-eight
     JumpToObject(LastSummonerOf(Myself))  // Hack: needed or helper creature is relocated to [0.0] of the map
     FadeFromColor([30.0],0)
     Wait(2)

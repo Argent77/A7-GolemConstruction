@@ -4,6 +4,10 @@
 // *** Misc. strings ***
 @40000 = ~Greetings again. A bit o' mithral for ye'.~
 @40001 = ~We found it in Coldhearth's secret stash. It's priceless in the right hands. No need t' thank me, <CHARNAME>. Ye earned it, sure enough.~
+@40002 = ~twelve~
+@40003 = ~twenty-four~
+@40004 = ~thirty-six~
+@40005 = ~forty-eight~
 
 
 // *** Golem Construction dialog ***
@@ -15,9 +19,7 @@
 @41005 = ~Mithral Golem~
 @41006 = ~Adamantite Golem~
 @41007 = ~Exotic Golem~
-@41008 = ~After twelve hours of hard work the physical shell of the golem is ready for the final enchantment...~
-@41009 = ~After twenty-four hours of hard work the physical shell of the golem is ready for the final enchantment...~
-@41010 = ~After forty-eight hours of hard work the physical shell of the golem is ready for the final enchantment...~
+@41008 = ~After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment...~
 @41011 = ~Select golem variant:~
 @41012 = ~Lesser Flesh Golem~
 @41013 = ~Flesh Golem~

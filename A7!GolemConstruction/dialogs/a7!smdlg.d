@@ -37,7 +37,7 @@ IF ~Global("stage", "LOCALS", 1)~ Golem.Type
 END
 
 IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 1)~ Golem.Type.Finished.Lesser
-  SAY @41008 /* After twelve hours of hard work the physical shell of the golem is ready for the final enchantment... */
+  SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl1", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl1", Myself)) DestroySelf()~ EXIT
@@ -48,7 +48,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 1)~ Golem.Type
 END
 
 IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 2)~ Golem.Type.Finished.Regular
-  SAY @41009 /* After twenty-four hours of hard work the physical shell of the golem is ready for the final enchantment... */
+  SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl2", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl2", Myself)) DestroySelf()~ EXIT
@@ -59,7 +59,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 2)~ Golem.Type
 END
 
 IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 3)~ Golem.Type.Finished.Greater
-  SAY @41010 /* After forty-eight hours of hard work the physical shell of the golem is ready for the final enchantment... */
+  SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl3", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl3", Myself)) DestroySelf()~ EXIT
@@ -70,7 +70,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 3)~ Golem.Type
 END
 
 IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 4)~ Golem.Type.Finished.Perfect
-  SAY @41010 /* After forty-eight hours of hard work the physical shell of the golem is ready for the final enchantment... */
+  SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl4", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl4", Myself)) DestroySelf()~ EXIT
@@ -81,7 +81,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 4)~ Golem.Type
 END
 
 IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 9)~ Golem.Type.Finished.Exotic
-  SAY @41009 /* After twenty-four hours of hard work the physical shell of the golem is ready for the final enchantment... */
+  SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 7)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smmg", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 8)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smbo", Myself)) DestroySelf()~ EXIT
@@ -473,7 +473,7 @@ IF ~~ Golem.Type.Iron.Lesser
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 4) SetGlobal("GolemVariant", "LOCALS", 1)
             TakePartyItemNum("a7!iron", 1) DestroyItem("a7!iron")
-            StartCutSceneMode() StartCutScene("a7!ct01")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
 IF ~~ Golem.Type.Iron.Regular
@@ -481,7 +481,7 @@ IF ~~ Golem.Type.Iron.Regular
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 4) SetGlobal("GolemVariant", "LOCALS", 2)
             TakePartyItemNum("a7!iron", 2) DestroyItem("a7!iron") DestroyItem("a7!iron")
             TakePartyItemNum("scrl2e", 1) DestroyItem("scrl2e")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
 IF ~~ Golem.Type.Iron.Greater
@@ -489,7 +489,7 @@ IF ~~ Golem.Type.Iron.Greater
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 4) SetGlobal("GolemVariant", "LOCALS", 3)
             TakePartyItemNum("a7!iron", 4) DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron")
             TakePartyItemNum("scrl2e", 1) DestroyItem("scrl2e")
-            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct04")~ EXIT
 END
 
 IF ~~ Golem.Type.Iron.Perfect
@@ -498,7 +498,7 @@ IF ~~ Golem.Type.Iron.Perfect
             TakePartyItemNum("a7!iron", 4) DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron") DestroyItem("a7!iron")
             TakePartyItemNum("scrl2e", 1) DestroyItem("scrl2e")
             TakePartyItemNum("a7!glir", 1) DestroyItem("a7!glir")
-            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct04")~ EXIT
 END
 
 
@@ -506,21 +506,21 @@ IF ~~ Golem.Type.Mithral.Lesser
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 1)
             TakePartyItemNum("a7!mith", 1) DestroyItem("a7!mith")
-            StartCutSceneMode() StartCutScene("a7!ct01")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
 IF ~~ Golem.Type.Mithral.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 2)
             TakePartyItemNum("a7!mith", 2) DestroyItem("a7!mith") DestroyItem("a7!mith")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
 IF ~~ Golem.Type.Mithral.Greater
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 3)
             TakePartyItemNum("a7!mith", 4) DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith")
-            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct04")~ EXIT
 END
 
 IF ~~ Golem.Type.Mithral.Perfect
@@ -528,7 +528,7 @@ IF ~~ Golem.Type.Mithral.Perfect
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 5) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!mith", 4) DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith") DestroyItem("a7!mith")
             TakePartyItemNum("a7!glmi", 1) DestroyItem("a7!glmi")
-            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct04")~ EXIT
 END
 
 
@@ -536,14 +536,14 @@ IF ~~ Golem.Type.Adamantite.Lesser
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 1)
             TakePartyItemNum("a7!adam", 2) DestroyItem("a7!adam") DestroyItem("a7!adam")
-            StartCutSceneMode() StartCutScene("a7!ct01")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
 END
 
 IF ~~ Golem.Type.Adamantite.Regular
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 2)
             TakePartyItemNum("a7!adam", 4) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
 IF ~~ Golem.Type.Adamantite.Greater
@@ -551,7 +551,7 @@ IF ~~ Golem.Type.Adamantite.Greater
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 3)
             TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
-            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct04")~ EXIT
 END
 
 IF ~~ Golem.Type.Adamantite.Perfect
@@ -561,13 +561,13 @@ IF ~~ Golem.Type.Adamantite.Perfect
             TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             TakePartyItemNum("a7!glad1", 1) DestroyItem("a7!glad1")
-            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct04")~ EXIT
   IF ~PartyHasItem("a7!glad2")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 6) SetGlobal("GolemVariant", "LOCALS", 4)
             TakePartyItemNum("a7!adam", 8) DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam") DestroyItem("a7!adam")
             TakePartyItemNum("a7!glad2", 1) DestroyItem("a7!glad2")
-            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct04")~ EXIT
 END
 
 
@@ -575,7 +575,7 @@ IF ~~ Golem.Type.Maggot
   SAY @41043 /* You start with the construction of the golem body... */
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 7) SetGlobal("GolemVariant", "LOCALS", 9)
             TakePartyItemNum("a7!mbdy", 2) DestroyItem("a7!mbdy") DestroyItem("a7!mbdy")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct01")~ EXIT
 END
 
 IF ~~ Golem.Type.Bone
@@ -600,7 +600,7 @@ IF ~~ Golem.Type.Ice
             TakePartyItemNum("a7!ice", 1) DestroyItem("a7!ice")
             TakePartyItemNum("scrl2f", 1) DestroyItem("scrl2f")
             TakePartyItemNum("scrl6i", 1) DestroyItem("scrl6i")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
 IF ~~ Golem.Type.Magic.Denied
@@ -616,19 +616,19 @@ IF ~~ Golem.Type.Magic
             TakePartyItemNum("a7!wmag", 1) DestroyItem("a7!wmag")
             TakePartyItemNum("scrl07", 1) DestroyItem("scrl07")
             TakePartyItemNum("scrl9c", 1) DestroyItem("scrl9c")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
   IF ~PartyHasItem("scrl8j")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 11) SetGlobal("GolemVariant", "LOCALS", 9)
             TakePartyItemNum("a7!wmag", 1) DestroyItem("a7!wmag")
             TakePartyItemNum("scrl07", 1) DestroyItem("scrl07")
             TakePartyItemNum("scrl8j", 1) DestroyItem("scrl8j")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
   IF ~PartyHasItem("scrl7o")~ 
         DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 11) SetGlobal("GolemVariant", "LOCALS", 9)
             TakePartyItemNum("a7!wmag", 1) DestroyItem("a7!wmag")
             TakePartyItemNum("scrl07", 1) DestroyItem("scrl07")
             TakePartyItemNum("scrl7o", 1) DestroyItem("scrl7o")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
 IF ~~ Golem.Type.Lightning
@@ -636,6 +636,6 @@ IF ~~ Golem.Type.Lightning
   IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 12) SetGlobal("GolemVariant", "LOCALS", 9)
             TakePartyGold(100000)
             TakePartyItemNum("scrl7s", 1) DestroyItem("scrl7s")
-            StartCutSceneMode() StartCutScene("a7!ct02")~ EXIT
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
