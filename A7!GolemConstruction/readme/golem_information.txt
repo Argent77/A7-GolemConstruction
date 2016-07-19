@@ -461,7 +461,6 @@ Lesser Mithral Golem:
   - Electricity: 100
   - Acid: 100
   - Slashing: 20
-  - Crushing: 0
   - Piercing: 20
   - Missile: 20
 - Immune to non-magical, +1 and +2 weapons

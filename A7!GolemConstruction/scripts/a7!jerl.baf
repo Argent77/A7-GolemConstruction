@@ -2,10 +2,10 @@
 
 IF
   GlobalGT("Chapter", "GLOBAL", %bg2_chapter_5%)
-  Global("A7!UpdateStore", "LOCALS", 0)
+  Global("A7!UpdateStore", "MYAREA", 0)
 THEN
   RESPONSE #100
-    SetGlobal("A7!UpdateStore", "LOCALS", 1)
+    SetGlobal("A7!UpdateStore", "MYAREA", 1)
     SetInterrupt(FALSE)
     AddStoreItem("a7!jerl", "a7!clay", 6, 1)
     AddStoreItem("a7!jerl", "a7!ston", 5, 1)
