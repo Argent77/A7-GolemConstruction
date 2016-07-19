@@ -23,6 +23,6 @@ END
 
 IF ~~ Golem.3
   SAY @45008 /* This action can not be undone. Are you certain? */
-  ++ @45009 /* Yes! */ DO ~SetGlobal("dismiss", "LOCALS", 1)~ EXIT
+  ++ @45009 /* Yes! */ DO ~ApplySpellRES("a7!in01", Myself)~ EXIT
   ++ @45010 /* No! */ EXIT
 END

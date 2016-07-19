@@ -765,8 +765,7 @@ ACTION_IF (GAME_IS ~bgee~) BEGIN
     ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~a7!glcl2.cre~ ~override~
-                ~a7!glcl3.cre~ ~override~
-                ~a7!glcl4.cre~ ~override~
+                ~a7!gscl2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
@@ -775,6 +774,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~igolfle3.cre~ ~override~
                 ~igolfle4.cre~ ~override~
                 ~a7!glcl1.cre~ ~override~
+                ~a7!gscl1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~clgol01.cre~ ~override~
@@ -782,8 +782,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~kpgol02.cre~ ~override~
                 ~ppiron.cre~ ~override~
                 ~a7!glcl2.cre~ ~override~
-                ~a7!glcl3.cre~ ~override~
-                ~a7!glcl4.cre~ ~override~
+                ~a7!gscl2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
@@ -800,9 +799,8 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     ADD_CRE_ITEM ~a7!rdst2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   ACTION_IF (GAME_IS ~bgee~) BEGIN
-    COPY_EXISTING ~a7!glmi2.cre~ ~override~
-                  ~a7!glmi3.cre~ ~override~
-                  ~a7!glmi4.cre~ ~override~
+    COPY_EXISTING ~a7!glst2.cre~ ~override~
+                  ~a7!gsst2.cre~ ~override~
       ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
   END
 END
@@ -813,9 +811,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~kpgol03.cre~ ~override~
                 ~kpgol05.cre~ ~override~
                 ~stgol01.cre~ ~override~
-                ~a7!glmi2.cre~ ~override~
-                ~a7!glmi3.cre~ ~override~
-                ~a7!glmi4.cre~ ~override~
+                ~a7!glst2.cre~ ~override~
+                ~a7!gsst2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
@@ -828,50 +825,35 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~goliro01.cre~ ~override~
                 ~kpgol04.cre~ ~override~
                 ~a7!glir2.cre~ ~override~
-                ~a7!glir3.cre~ ~override~
-                ~a7!glir4.cre~ ~override~
+                ~a7!gsir2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
 // Adding random treasure tables for mithral golems
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDMI1" item = "A7!MITH" END
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDMI1" item = "A7!MITH" END
   COPY_EXISTING ~a7!glmi1.cre~ ~override~
+                ~a7!gsmi1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~a7!glmi2.cre~ ~override~
+                ~a7!gsmi2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-
-  COPY_EXISTING ~a7!glmi3.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdmi1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-
-  COPY_EXISTING ~a7!glmi4.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdmi1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdmi1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
 // Adding random treasure tables for adamantite golems
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDAD1" item = "A7!ADAM" END
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDAD1" item = "A7!ADAM" END
   COPY_EXISTING ~a7!glad1.cre~ ~override~
+                ~a7!gsad1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~golada01.cre~ ~override~
                 ~a7!glad2.cre~ ~override~
+                ~a7!gsad2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-
-  COPY_EXISTING ~a7!glad3.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdad1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-
-  COPY_EXISTING ~a7!glad4.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdad1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdad1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
