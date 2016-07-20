@@ -33,7 +33,7 @@ STORE       UDSVIR05    *               A7!MITH   1     0       0
 STORE       HGKAR01     *               A7!MITH   1     0       0
 CONTAINER   AR1400      A7!Container1   A7!MITH   1     0       0
 CONTAINER   AR1401      Container*12    A7!MITH   1     0       0
-CONTAINER   AR3014      Container*0     A7!MITH   1     0       0
+CONTAINER   AR3014      Container*1     A7!MITH   1     0       0
 ACTOR       FIRKRA02    UNSTEALABLE     A7!ADAM   1     0       0
 CONTAINER   AR0603      A7!Body1        A7!MBDY   1     0       0
 CONTAINER   AR0807      Container*1     A7!MBDY   1     0       0
@@ -46,6 +46,8 @@ CONTAINER   AR5006      Bed1            A7!MBDY   1     0       0
 STORE       OHNGDUKE    *               A7!BONE   2     0       0
 CONTAINER   AR0602      Barrel*3        A7!BONE   1     0       0
 CONTAINER   AR0802      Crate*1         A7!BONE   2     0       0
+CONTAINER   AR3014      Container*3     A7!BONE   1     0       0
+CONTAINER   AR3014      Container*6     A7!BONE   1     0       0
 CONTAINER   AR3027      Container*1     A7!BONE   1     0       0
 CONTAINER   AR5006      Bed1            A7!BONE   1     0       0
 CONTAINER   AR5006      Bed2            A7!BONE   1     0       0
@@ -70,10 +72,7 @@ CONTAINER   AR1904      Container*1     A7!RDBO1  1     0       0
 CONTAINER   AR1904      Container*2     A7!RDBO1  1     0       0
 CONTAINER   AR2401      Container*1     A7!RDBO1  1     0       0
 CONTAINER   AR2401      Container*3     A7!RDBO1  1     0       0
-CONTAINER   AR3014      Container*3     A7!RDBO1  1     0       0
 CONTAINER   AR5202      Container*2     A7!RDBO1  1     0       0
-CONTAINER   AR3014      Container*4     A7!RDBO2  1     0       0
-CONTAINER   AR3014      Container*6     A7!RDBO2  1     0       0
 ACTOR       UDMASTER    *               A7!BRIN   3     0       0
 CONTAINER   AR3021      Container*3     A7!BRIN   2     0       0
 CONTAINER   AR6107      Container*1     A7!BRIN   1     0       0

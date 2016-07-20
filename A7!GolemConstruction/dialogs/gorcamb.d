@@ -17,6 +17,7 @@ APPEND ~gorcamb~
     IF ~~ DO ~IncrementGlobal("GamesPlayed", "GLOBAL", 1) 
               SetGlobal("DrawEffect", "GLOBAL", 0) 
               SetGlobal("A7!CambionTome", "GLOBAL", 1) 
+              SetGlobal("CambionWager", "GLOBAL", 0) 
               SetGlobal("PlayerWager", "GLOBAL", 0) 
               GiveItem("a7!tom0b", LastTalkedToBy)~ EXIT
   END

@@ -478,6 +478,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!glmi2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
   ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
 COPY ~%MOD_FOLDER%/creatures/a7!gsmi2.cre~ ~override~
   SAY NAME1 @5002 // Mithral Golem
   SAY NAME2 @5002 // Mithral Golem
@@ -489,6 +491,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsmi2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
   ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
 
 COPY ~%MOD_FOLDER%/creatures/a7!glmi3.cre~ ~override~
   SAY NAME1 @5003 // Greater Mithral Golem
@@ -503,7 +507,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glmi3.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
   ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
 
 COPY ~%MOD_FOLDER%/creatures/a7!glmi4.cre~ ~override~
   SAY NAME1 @5004 // Perfect Mithral Golem
@@ -518,7 +522,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glmi4.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
   ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (4)
 
 
 // Adamantite Golems
