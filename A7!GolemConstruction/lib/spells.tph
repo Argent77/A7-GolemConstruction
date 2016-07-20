@@ -102,12 +102,13 @@ COPY ~%MOD_FOLDER%/spells/a7!in09.spl~ ~override~
 COPY ~%MOD_FOLDER%/spells/a7!in09b.bam~ ~override~
 
 
-// Scolding Steam
+// Scalding Steam
 COPY ~%MOD_FOLDER%/spells/a7!in10.spl~ ~override~
-  SAY NAME1 @20090  // Scolding Steam
+  SAY NAME1 @20090  // Scalding Steam
   SAY UNIDENTIFIED_DESC @20091  // ...
 
 COPY ~%MOD_FOLDER%/spells/a7!in10b.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!in10a.spl~ ~override~
 
 
 // Wild Magic Flare

@@ -105,9 +105,9 @@ Unthinking creatures, such as undead, golems or myconids, are immune to the effe
 Range: 0
 Duration: Instant
 Area of Effect: 30 ft. radius
-Saving Throw: Negates
+Saving Throw: Special
 
-Ice golems can emit waves of frozen vapor to hurt nearby enemies. The wave is centered around the golem and affects every creature in a 30 feet radius. Creatures hit by the steam must save vs. Breath or suffer 3d10 cold damage.~
+Ice golems can emit waves of frozen vapor to hurt nearby creatures. The wave is centered around the golem and affects everyone within a 30 feet radius who is not immune to cold damage. Creatures hit by the steam suffer 3d10 cold damage and are stunned for one round. A successful Saving Throw vs. Breath halves the damage and prevents the stun effect.~
 
 
 @20100 = ~Wild Magic Flare~
