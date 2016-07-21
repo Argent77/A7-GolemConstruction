@@ -26,7 +26,7 @@ IF ~Global("stage", "LOCALS", 1)~ Golem.Type
   + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMithral", "LOCALS", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral.Denied
   + ~Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite
   + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite.Denied
-  + ~OR(6)
+  + ~OR(7)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMaggot", "LOCALS", 1)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBone", "LOCALS", 1)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBrain", "LOCALS", 1)
