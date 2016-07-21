@@ -1,7 +1,7 @@
 // *** ToB: Lazarus Librarus ***
 
 EXTEND_TOP ~25spell~ 1
-  + ~Global("A7!GolemAbility", "GLOBAL", 1) Global("A7!EquipmentSold", "LOCALS", 0)~ + @42500 /* Do you have any equipment for sale that can be used for constructing golems? */ + purchase.1
+  + ~Global("A7!GolemAbility", "GLOBAL", 1) Global("A7!PocketEquipmentSold", "GLOBAL", 0)~ + @42500 /* Do you have any equipment for sale that can be used for constructing golems? */ + purchase.1
 END
 
 APPEND ~25spell~
@@ -45,7 +45,7 @@ APPEND ~25spell~
 
   IF ~~ purchase.5
     SAY @42513 /* Thank you. You won't be disappointed. The tools are still in excellent condition. */
-    IF ~~ DO ~SetGlobal("A7!EquipmentSold", "LOCALS", 1)
+    IF ~~ DO ~SetGlobal("A7!PocketEquipmentSold", "GLOBAL", 1)
               TakePartyGold(10000)
               GiveItemCreate("a7!eqm1", LastTalkedToBy, 1, 0, 0)
               GiveItemCreate("a7!eqm2", LastTalkedToBy, 1, 0, 0)
@@ -56,7 +56,7 @@ APPEND ~25spell~
 
   IF ~~ purchase.6
     SAY @42513 /* Thank you. You won't be disappointed. The tools are still in excellent condition. */
-    IF ~~ DO ~SetGlobal("A7!EquipmentSold", "LOCALS", 1)
+    IF ~~ DO ~SetGlobal("A7!PocketEquipmentSold", "GLOBAL", 1)
               TakePartyGold(6000)
               GiveItemCreate("a7!eqm1", LastTalkedToBy, 1, 0, 0)
               GiveItemCreate("a7!eqm2", LastTalkedToBy, 1, 0, 0)
