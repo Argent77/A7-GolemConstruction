@@ -350,11 +350,11 @@ IF ~~ Golem.Type.Exotic
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 24)
      NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 15)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 14)
      NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1) NumItemsPartyGT("a7!ruby", 3) NumItemsPartyGT("misc16", 1) PartyHasItem("scrl8g")~ + @41049 /* Ruby Golem */ + Golem.Type.Ruby
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 16)
      NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1) NumItemsPartyGT("a7!ruby", 3) NumItemsPartyGT("misc16", 1) PartyHasItem("scrl8g")~ + @41049 /* Ruby Golem */ + Golem.Type.Ruby
-  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 19)
+  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 18)
      NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1) NumItemsPartyGT("a7!ruby", 3) NumItemsPartyGT("misc16", 1) PartyHasItem("scrl8g")~ + @41049 /* Ruby Golem */ + Golem.Type.Ruby
 
   ++ @41048 /* Select different golem type */ + Golem.Type

@@ -747,7 +747,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glru.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
   ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
-  ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (2)
+  ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (3)
 
 
 ACTION_IF (GAME_IS ~bgee~) BEGIN
