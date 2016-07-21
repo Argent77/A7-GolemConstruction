@@ -118,7 +118,7 @@ Duration: Instant
 Area of Effect: One creature
 Saving Throw: None
 
-Once per day magic golems can release a flare of magical energy on a single creature. This energy does 3d10 magic damage to the target and triggers a random wild magic effect. The effect can range from devastating to purely beneficial to the target, and possibly everyone else in the vicinity. Magic resistance may prevent both damage and the wild magic effect.~
+Magic golems can release a flare of magical energy on a single creature. This energy does 3d10 magic damage to the target and triggers a random wild magic effect. The effect can range from devastating to purely beneficial to the target, and possibly everyone else in the vicinity. Magic resistance may prevent both damage and the wild magic effect.~
 
 
 @20200 = ~Construct Golem~
@@ -139,7 +139,6 @@ This ability allows the caster to repair damaged golems. The whole process prima
 
 The repair process will also remove penalties that may have been applied to badly damaged golems.~
 
-
 @20220 = ~Hideous Laughter~
 @20221 = ~Hideous Laughter
 
@@ -148,9 +147,19 @@ Duration: Instant
 Area of Effect: 30 ft. radius
 Saving Throw: Special
 
-The hideous laugh of a bone golem may trigger two different effects in all opponents that hear it. The target must roll a successful Saving Throw vs. Spell at -2 or will run around in fear for 2d6 rounds. The target must also roll a successful Saving Throw vs. Death or will be paralyzed with fear instead.
+The hideous laugh of a bone golem may trigger two different effects in all opponents who hear it. The target must roll a successful Saving Throw vs. Spell at -2 or will run around in fear for 2d6 rounds. The target must also roll a successful Saving Throw vs. Death or will be paralyzed with fear instead.
 
 Unthinking creatures, such as undead, golems or myconids, are immune to the effect.~
+
+@20230 = ~Ruby Ray of Reversal~
+@20231 = ~Ruby Ray of Reversal
+
+Range: 40 ft.
+Duration: Instant
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this ability is used, it dispels one spell protection of any level affecting the target creature. The spells affected by Ruby Ray Of Reversal are Minor Spell Turning, Minor Globe of Invulnerability, Spell Immunity, Globe Of Invulnerability, Minor Spell Deflection, Spell Turning, Spell Shield, Spell Deflection, and Spell Trap. This will always remove the highest-level spell protection affecting the target; if more than one same-level protection is active on the target simultaneously, one of them will be randomly chosen and dispelled. The target's Magic Resistance, if any, does not affect this spell.~
 
 
 // Misc. strings
@@ -171,3 +180,4 @@ Unthinking creatures, such as undead, golems or myconids, are immune to the effe
 @21016 = ~Golem is damaged: Sensory malfunction~
 @21017 = ~Panic~
 @21018 = ~Paralyzed~
+@21019 = ~Spell Protections Removed~

@@ -32,7 +32,8 @@ IF ~Global("stage", "LOCALS", 1)~ Golem.Type
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBrain", "LOCALS", 1)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIce", "LOCALS", 1)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)
-       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + @41007 /* Exotic Golem */ + Golem.Type.Exotic
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)
+       NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + @41007 /* Exotic Golem */ + Golem.Type.Exotic
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
@@ -89,6 +90,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 9)~ Golem.Type
   IF ~Global("GolemType", "LOCALS", 10)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smic", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 11)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smma", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 12)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smlt", Myself)) DestroySelf()~ EXIT
+  IF ~Global("GolemType", "LOCALS", 13)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smru", Myself)) DestroySelf()~ EXIT
 END
 
 
@@ -347,6 +349,13 @@ IF ~~ Golem.Type.Exotic
      NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 24)
      NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1) PartyGoldGT(99999) PartyHasItem("scrl7s")~ + @41042 /* Lightning Golem */ + Golem.Type.Lightning
+
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 15)
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1) NumItemsPartyGT("a7!ruby", 3) NumItemsPartyGT("misc16", 1) PartyHasItem("scrl8g")~ + @41049 /* Ruby Golem */ + Golem.Type.Ruby
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1) NumItemsPartyGT("a7!ruby", 3) NumItemsPartyGT("misc16", 1) PartyHasItem("scrl8g")~ + @41049 /* Ruby Golem */ + Golem.Type.Ruby
+  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 19)
+     NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1) NumItemsPartyGT("a7!ruby", 3) NumItemsPartyGT("misc16", 1) PartyHasItem("scrl8g")~ + @41049 /* Ruby Golem */ + Golem.Type.Ruby
 
   ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
@@ -639,3 +648,11 @@ IF ~~ Golem.Type.Lightning
             StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
 END
 
+IF ~~ Golem.Type.Ruby
+  SAY @41043 /* You start with the construction of the golem body... */
+  IF ~~ DO ~SetGlobal("stage", "LOCALS", 2) SetGlobal("GolemType", "LOCALS", 13) SetGlobal("GolemVariant", "LOCALS", 9)
+            TakePartyItemNum("a7!ruby", 4) DestroyItem("a7!ruby")
+            TakePartyItemNum("misc16", 2) DestroyItem("misc16")
+            TakePartyItemNum("scrl8g", 1) DestroyItem("scrl8g")
+            StartCutSceneMode() StartCutScene("a7!ct03")~ EXIT
+END

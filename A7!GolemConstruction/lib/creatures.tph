@@ -114,6 +114,25 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_maggot~ ~.+\.bmp~ BEGIN
 END
 
 
+// Ruby Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+ACTION_IF (slot > 0) BEGIN
+  OUTER_SET slot_golem_ruby = slot
+END ELSE BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_RUBY~ UNLESS ~A7!GOLEM_RUBY~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_ruby/exxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_ruby~ ~.+\.bmp~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
 
 // Flesh Golems
 COPY ~%MOD_FOLDER%/creatures/a7!glfl1.cre~ ~override~
@@ -675,6 +694,10 @@ COPY ~%MOD_FOLDER%/creatures/a7!glic.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in10~ #0 ~innate~   // Scolding Steam
   ADD_MEMORIZED_SPELL ~a7!in10~ #0 ~innate~ (4)
 
+// Slightly reduce Ice Golem selection circle size
+COPY_EXISTING ~e0f0.ini~ ~override~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE ~ellipse[ %TAB%]*=[ %TAB%]*[0-9]+~ ~ellipse=28~
+
 
 // Magic Golem
 COPY ~%MOD_FOLDER%/creatures/a7!glma.cre~ ~override~
@@ -708,6 +731,23 @@ COPY ~%MOD_FOLDER%/creatures/a7!gllt.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~   // Chain Lightning
   ADD_MEMORIZED_SPELL ~a7!in07~ #0 ~innate~ (5)
+
+
+// Ruby Golem
+COPY ~%MOD_FOLDER%/creatures/a7!glru.cre~ ~override~
+  SAY NAME1 @13001 // Ruby Golem
+  SAY NAME2 @13001 // Ruby Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+  WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_LONG 0x28 slot_golem_ruby
+  WRITE_BYTE 0x274 specific_golem
+  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
+  ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (2)
 
 
 ACTION_IF (GAME_IS ~bgee~) BEGIN
@@ -1005,6 +1045,17 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~senlich.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdbd4~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+END
+
+// Adding random treasure tables for ruby golems
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDRU1" item = "A7!RUBY" END
+LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 10 chance_1 = 10 STR_VAR treasure = "A7!RDRU2" item_0 = "A7!RUBY" item_1 = "MISC16" END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  COPY_EXISTING ~a7!glru.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
 

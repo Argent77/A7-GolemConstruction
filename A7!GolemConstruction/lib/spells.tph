@@ -127,6 +127,7 @@ LAF CREATE_WILD_SURGE_SPELL STR_VAR resName = "a7!in11b" resDefault = "a7!in11c"
 // Magic Golem destruction blast
 COPY ~%MOD_FOLDER%/spells/a7!in12.spl~ ~override~
 
+
 // Hideous Laughter
 COPY ~%MOD_FOLDER%/spells/a7!in13.spl~ ~override~
   SAY NAME1 @20220  // Hideous Laughter
@@ -171,6 +172,20 @@ COPY_EXISTING ~sppr108.spl~ ~override~
 COPY ~%MOD_FOLDER%/spells/a7!in13b.bam~ ~override~
 
 
+// Ruby Ray of Reversal
+COPY ~%MOD_FOLDER%/spells/a7!in14.spl~ ~override~
+  SAY NAME1 @20230  // Ruby Ray of Reversal
+  SAY UNIDENTIFIED_DESC @20231  // ...
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode  = 139   // Display String
+    target  = 2     // Preset target
+    parameter1 = RESOLVE_STR_REF(@21019)  // Spell Protections Removed
+    timing = 1      // Instant/Permanent until death
+    resist_dispel = 2
+  END
+
+
 // "Create Golem" spells and related resources
 COPY ~%MOD_FOLDER%/spells/a7!prtl.bam~ ~override~
      ~%MOD_FOLDER%/spells/a7!prtl.wav~ ~override~
@@ -205,6 +220,7 @@ COPY ~%MOD_FOLDER%/spells/a7!prtl.bam~ ~override~
      ~%MOD_FOLDER%/spells/a7!smic.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!smma.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!smlt.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smru.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!sxfl1.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!sxfl2.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!sxcl1.eff~ ~override~
@@ -261,6 +277,7 @@ COPY ~%MOD_FOLDER%/spells/a7!smfl1.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!smic.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!smma.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!smlt.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!smru.spl~ ~override~
   LPF ALTER_SPELL_EFFECT
   INT_VAR
     match_opcode = 139  // Display String

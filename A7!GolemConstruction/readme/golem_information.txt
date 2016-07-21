@@ -677,8 +677,8 @@ Perfect Adamantite Golem:
 Exotic Golems
 =============
 
-Exotic golem types are described in the "Secret Manual of Golem Building" which also comes in six volumes, but is 
-harder to come by.
+Exotic golem types are described in the "Secret Manual of Golem Building" which is supposed to come in six volumes 
+as well, but is harder to come by.
 
 Golems described in these tomes are unique, and therefore not available as lesser, greater or perfect variants.
 

@@ -1,7 +1,11 @@
             Resource    Name/Flags      Item      Count Count2  Count3
+STORE       AMSMUG01    *               MISC16    4     0       0
+STORE       AMSMUG02    *               MISC16    6     0       0
+CONTAINER   OH6500      A7!Shelf1       MISC16    2     0       0
 CONTAINER   AR0315      A7!Container1   SCRL1H    1     0       0
 CONTAINER   AR0603      Container*5     SCRL2D    1     0       0
 CONTAINER   AR0603      Container*3     SCRL97    1     0       0
+CONTAINER   OH6500      A7!Shelf1       SCRL8G    1     0       0
 ACTOR       ARNMAN07    UNSTEALABLE     A7!BODY   1     0       0
 ACTOR       LIN         UNSTEALABLE     A7!BODY   1     0       0
 STORE       HGKAR01     *               A7!BODY   5     0       0
@@ -88,6 +92,16 @@ CONTAINER   AR3005      A7!Crate02      A7!WMAG   1     0       0
 CONTAINER   AR3005      A7!Crate03      A7!WMAG   1     0       0
 CONTAINER   AR3009      A7!Crate01      A7!WMAG   1     0       0
 CONTAINER   AR3009      A7!Crate02      A7!WMAG   1     0       0
+STORE       AMSMUG01    *               A7!RUBY   2     0       0
+STORE       AMSMUG02    *               A7!RUBY   4     0       0
+STORE       GORCH       *               A7!RUBY   1     0       0
+STORE       WALLACE     *               A7!RUBY   2     0       0
+STORE       WALLACE2    *               A7!RUBY   2     0       0
+ACTOR       BALTH       *               A7!RUBY   1     0       0
+ACTOR       GIAFIR01    *               A7!RUBY   1     0       0
+ACTOR       HGBER01     *               A7!RUBY   1     0       0
+ACTOR       PWARDEN     *               A7!RUBY   1     0       0
+CONTAINER   OH6500      A7!Shelf1       A7!RUBY   4     0       0
 STORE       SCROLLS     *               A7!GLFL   2     0       0
 STORE       25SPELL     *               A7!GLFL   3     0       0
 STORE       OHNGDUKE    *               A7!GLFL   2     0       0
@@ -135,3 +149,4 @@ CONTAINER   AR2400      amp             A7!TOM09  0     0       0
 CONTAINER   AR3016      Shelf5          A7!TOM0A  0     0       0
 ACTOR       GORCAMB     *               A7!TOM0B  0     0       0
 ACTOR       GORSAL      *               A7!TOM0C  0     0       0
+CONTAINER   OH6500      A7!Shelf1       A7!TOM0D  0     0       0

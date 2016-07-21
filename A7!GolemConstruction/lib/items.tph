@@ -637,6 +637,71 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
+// Ruby Gem
+COPY ~%MOD_FOLDER%/items/a7!ruby.itm~ ~override~
+  SAY NAME2 @30180  // Ruby
+  SAY UNIDENTIFIED_DESC @30181  // A ruby is a pink to blood-red colored gemstone...
+
+COPY ~%MOD_FOLDER%/items/a7!iruby.bam~ ~override~
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Shelf in Vicross' Headquarter (Neera's ToB Quest)
+  COPY_EXISTING ~oh6500.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1670
+      fj_loc_y          = 1204
+      fj_type           = 6       // Shelf
+      fj_lock_diff      = 0
+      fj_trap_detect    = 90
+      fj_trap_remove_diff = 90
+      fj_trap_active    = 1
+      fj_trap_loc_x     = 1670
+      fj_trap_loc_y     = 1204
+      fj_box_left       = 1589
+      fj_box_top        = 1065
+      fj_box_right      = 1729
+      fj_box_bottom     = 1240
+      fj_vertex_0       = 1589 | (1148 << 16)
+      fj_vertex_1       = 1589 | (1240 << 16)
+      fj_vertex_2       = 1729 | (1154 << 16)
+      fj_vertex_3       = 1729 | (1065 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Shelf1"
+      fj_trap_script    = "CTFB"    // fire ball trap
+    END
+END
+
+
+// Adding ruby gem to random treasure
+COPY_EXISTING ~rndtres.2da~ ~override~
+  COUNT_2DA_COLS numCols
+  COUNT_2DA_ROWS numCols numRows
+  FOR (curRow = 0; curRow < numRows; ++curRow) BEGIN
+    SET curCol = 0
+    SET found = 0
+    SET freeIndex = 0
+    // searching for emerald entries
+    FOR (curCol = 0; curCol < numCols; ++curCol) BEGIN
+      READ_2DA_ENTRY curRow curCol numCols value
+      PATCH_IF (~%value%~ STRING_EQUAL_CASE ~misc43~) BEGIN
+        SET found += 1
+      END
+      PATCH_IF (~%value%~ STRING_EQUAL_CASE ~*~) BEGIN
+        SET freeIndex = curCol
+        SET curCol = numCols
+      END
+    END
+    // adding ruby entries in equal measure
+    WHILE (found > 0) BEGIN
+      SET_2DA_ENTRY curRow freeIndex numCols ~A7!RUBY~
+      SET freeIndex += 1
+      SET found -= 1
+    END
+  END
+
+
 // Flesh Golem items
 COPY ~%MOD_FOLDER%/items/a7!eqfl.itm~ ~override~
      ~%MOD_FOLDER%/items/a7!wpfl.itm~ ~override~
@@ -677,6 +742,10 @@ COPY ~%MOD_FOLDER%/items/a7!eqma.itm~ ~override~
 COPY ~%MOD_FOLDER%/items/a7!wplt.itm~ ~override~
      ~%MOD_FOLDER%/spells/a7!wplt1.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!wplt2.spl~ ~override~
+
+// Ruby Golem items
+COPY ~%MOD_FOLDER%/items/a7!eqru.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpru.itm~ ~override~
 
 
 // Deep Bloodstone Gem

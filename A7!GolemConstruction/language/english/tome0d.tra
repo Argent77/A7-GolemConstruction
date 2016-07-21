@@ -1,0 +1,56 @@
+// -*- coding: utf-8 -*- 
+// Ruby Golem related strings (index 13000..13999)
+
+@13000 = ~Secret Manual of Golem Building (Vol. 7)~
+@13001 = ~Ruby Golem~
+@13002 = ~Has learned how to construct ruby golems.~
+
+// *** Book content ***
+@13100 = ~About Ruby Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a ruby golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golem:
+
+Ruby Golem:
+Min. level: 18 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four Ruby Gems
+- Two Fire Agate Gems
+- One scroll of Ruby Ray of Reversal
+
+Requires:
+ 17 Intelligence
+
+Weight: 10~
+
+@13101 = ~About Ruby Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a ruby golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in six volumes. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+Allows the user to build the following golem:
+
+Ruby Golem:
+Min. level: 18 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four Ruby Gems
+- Two Fire Agate Gems
+- One scroll of Ruby Ray of Reversal
+
+Requires:
+ 17 Intelligence
+
+Weight: 1~
+

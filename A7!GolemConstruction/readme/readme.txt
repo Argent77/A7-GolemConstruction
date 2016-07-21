@@ -41,9 +41,10 @@ all over Faerûn. The "Manual of Golem Building" comes in six volumes containing
 building different types of golems. Each tome contains a single charge of powerful magic which 
 provides the user with the "Construct Golem" and "Repair Golem" abilities. The knowledge how to 
 build specific types of golems is available to all party members though. After the tome's magic 
-is spent it can still be used as reference about building specific types of golems. It is rumored 
-that there is another secret set of tomes which contains knowledge about constructing more exotic 
-types of golems.
+is spent it can still be used as reference about building specific types of golems.
+
+It is rumored that there is another secret set of tomes which contains knowledge about constructing 
+more exotic types of golems.
 
 Golem types taught by the Manual of Golem Building:
 - Flesh Golems in lesser, regular, greater and perfect variants.
