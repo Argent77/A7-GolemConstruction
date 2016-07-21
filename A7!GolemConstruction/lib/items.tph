@@ -640,7 +640,7 @@ END
 // Ruby Gem
 COPY ~%MOD_FOLDER%/items/a7!ruby.itm~ ~override~
   SAY NAME2 @30180  // Ruby
-  SAY UNIDENTIFIED_DESC @30181  // A ruby is a pink to blood-red colored gemstone...
+  SAY IDENTIFIED_DESC @30181  // A ruby is a pink to blood-red colored gemstone...
 
 COPY ~%MOD_FOLDER%/items/a7!iruby.bam~ ~override~
 
