@@ -71,3 +71,15 @@ THEN
     Enemy()
     SetInterrupt(FALSE)
 END
+
+// Work-around for issue: Fix creature specifications
+IF
+  !Specifics(Myself, A7!GOLEM)
+THEN
+  RESPONSE #100
+    ChangeGeneral(Myself, GIANTHUMANOID)
+    ChangeRace(Myself, GOLEM)
+    ChangeClass(Myself, GOLEM_FLESH)
+    ChangeSpecifics(Myself, A7!GOLEM)
+    ChangeGender(Myself, NIETHER)
+END
