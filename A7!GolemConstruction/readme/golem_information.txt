@@ -847,7 +847,12 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Moves at increased speed
 - Permanent lightning shield: Attackers suffer 1d8 electrical damage on each successful hit
 - May cast Chain Lightning on nearby enemies
-
+- May cast "Lightning Travel" which allows the golem to travel to any point within visual range by transforming into 
+  a powerful bolt of lightning and travelling to the target at light speed. The high speed transportation generates 
+  a shockwave that will blow away and cause 1d6 lightning damage to all creatures within 8 feet radius of the target 
+  location. The resulting thunderclap may also cause deafness to any creature in range for 1d4 rounds if they fail 
+  their Saving Throw vs. Breath. The golem also does not have to wait for its aura to be cleansed before using the 
+  same or another ability again. This ability replaces "Teleport".
 
 Each golem has the following abilities by default:
 1. Dismiss:  Activating this ability will cause the golem to disintegrate. The process is irreversible.

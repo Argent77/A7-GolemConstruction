@@ -121,8 +121,8 @@ Saving Throw: None
 Magic golems can release a flare of magical energy on a single creature. This energy does 3d10 magic damage to the target and triggers a random wild magic effect. The effect can range from devastating to purely beneficial to the target, and possibly everyone else in the vicinity. Magic resistance may prevent both damage and the wild magic effect.~
 
 
-@20200 = ~Construct Golem~
-@20201 = ~Construct Golem
+@20110 = ~Construct Golem~
+@20111 = ~Construct Golem
 
 This ability allows the caster to construct a golem of any type he studied extensively before. The construction process requires certain materials which depend on the desired type and variant of the golem. More powerful or exotic types may also leech on the constitution of the caster.
 
@@ -132,15 +132,15 @@ The casting process is mentally and physically very draining. For the next five 
 
 Unlike summoned creatures golems can exist for a virtually unlimited span of time in the service of their master. They are immune to mind control and magic, and will always follow their master's commands to the letter.~
 
-@20210 = ~Repair Golem~
-@20211 = ~Repair Golem
+@20120 = ~Repair Golem~
+@20121 = ~Repair Golem
 
 This ability allows the caster to repair damaged golems. The whole process primarily includes mending or replacing damaged body parts which is done a speed of 1d10+2 hit points per second over two rounds. As a result you and the golem will be unable to respond for the next 12 seconds.
 
 The repair process will also remove penalties that may have been applied to badly damaged golems.~
 
-@20220 = ~Hideous Laughter~
-@20221 = ~Hideous Laughter
+@20130 = ~Hideous Laughter~
+@20131 = ~Hideous Laughter
 
 Range: 0
 Duration: Instant
@@ -151,8 +151,8 @@ The hideous laugh of a bone golem may trigger two different effects in all oppon
 
 Unthinking creatures, such as undead, golems or myconids, are immune to the effect.~
 
-@20230 = ~Ruby Ray of Reversal~
-@20231 = ~Ruby Ray of Reversal
+@20140 = ~Ruby Ray of Reversal~
+@20141 = ~Ruby Ray of Reversal
 
 Range: 40 ft.
 Duration: Instant
@@ -160,6 +160,19 @@ Area of Effect: 1 creature
 Saving Throw: None
 
 When this ability is used, it dispels one spell protection of any level affecting the target creature. The spells affected by Ruby Ray Of Reversal are Minor Spell Turning, Minor Globe of Invulnerability, Spell Immunity, Globe Of Invulnerability, Minor Spell Deflection, Spell Turning, Spell Shield, Spell Deflection, and Spell Trap. This will always remove the highest-level spell protection affecting the target; if more than one same-level protection is active on the target simultaneously, one of them will be randomly chosen and dispelled. The target's Magic Resistance, if any, does not affect this spell.~
+
+@20150 = ~Lightning Travel~
+@20151 = ~Lightning Travel
+
+Range: 40 ft.
+Duration: Instant
+Area of Effect: The caster
+Saving Throw: Special
+
+This ability allows the lightning golem to transport itself to any chosen place within 40 feet range. Line of sight is not required. The golem transforms itself into a powerful bolt of lightning to travel to the target location almost instantly.
+The high speed transportation generates a shockwave that will blow away and cause 1d6 electrical damage to all creatures within 8 feet radius of the target location. Large creatures such as dragons or giants will not be blown away by the shockwave. The resulting thunderclap may also cause deafness to any creature in range for 1d4 rounds if they fail their Saving Throw vs. Breath.
+
+Since this ability is part of the golem's nature it does not have to wait for its aura to be cleansed before using the same or another ability again.~
 
 
 // Misc. strings

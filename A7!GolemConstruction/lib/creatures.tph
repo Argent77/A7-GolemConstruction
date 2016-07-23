@@ -727,8 +727,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gllt.cre~ ~override~
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in15~ #0 ~innate~   // Lightning Travel
+  ADD_MEMORIZED_SPELL ~a7!in15~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~   // Chain Lightning
   ADD_MEMORIZED_SPELL ~a7!in07~ #0 ~innate~ (5)
 
