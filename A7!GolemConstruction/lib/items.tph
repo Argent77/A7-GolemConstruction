@@ -739,9 +739,11 @@ COPY ~%MOD_FOLDER%/items/a7!eqma.itm~ ~override~
      ~%MOD_FOLDER%/items/a7!wpma.itm~ ~override~
 
 // Lightning Golem weapon
+COPY ~%MOD_FOLDER%/spells/a7!wplt2.spl~ ~override~
+  SAY NAME1 @21020  // Lightning Shield
+
 COPY ~%MOD_FOLDER%/items/a7!wplt.itm~ ~override~
      ~%MOD_FOLDER%/spells/a7!wplt1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wplt2.spl~ ~override~
 
 // Ruby Golem items
 COPY ~%MOD_FOLDER%/items/a7!eqru.itm~ ~override~
