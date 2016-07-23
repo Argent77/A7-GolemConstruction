@@ -279,25 +279,25 @@ IF ~~ Golem.Type.Adamantite
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 22)
      NumItemsPartyGT("a7!adam", 1)~ + @41034 /* Lesser Adamantite Golem */ + Golem.Type.Adamantite.Lesser
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 22)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 21)
      NumItemsPartyGT("a7!adam", 3)~ + @41035 /* Adamantite Golem */ + Golem.Type.Adamantite.Regular
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 24)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 23)
      NumItemsPartyGT("a7!adam", 3)~ + @41035 /* Adamantite Golem */ + Golem.Type.Adamantite.Regular
-  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 26)
+  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 25)
      NumItemsPartyGT("a7!adam", 3)~ + @41035 /* Adamantite Golem */ + Golem.Type.Adamantite.Regular
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 29)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 27)
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 31)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 29)
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
-  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 33)
+  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 31)
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
 
-  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 29)
+  + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 27)
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItemIdentified("a7!glad1") PartyHasItemIdentified("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
-  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 31)
+  + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 39)
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItemIdentified("a7!glad1") PartyHasItemIdentified("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
-  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 33)
+  + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 31)
      NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItemIdentified("a7!glad1") PartyHasItemIdentified("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
 
   ++ @41048 /* Select different golem type */ + Golem.Type
