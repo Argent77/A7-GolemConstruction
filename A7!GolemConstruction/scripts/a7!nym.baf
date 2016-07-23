@@ -31,8 +31,8 @@ THEN
   RESPONSE #100
     SetGlobal("A7!NymPriceAdvance", "GLOBAL", 1)
     SetInterrupt(FALSE)
-    ChangeStoreMarkup("a7!nym1", 200, 30)
-    ChangeStoreMarkup("a7!nym2", 250, 30)
+    ChangeStoreMarkup("a7!nym1", 30, 200)
+    ChangeStoreMarkup("a7!nym2", 30, 250)
     AddStoreItem("a7!nym1", "scrl07", 2, 1)
     AddStoreItem("a7!nym1", "scrl1o", 2, 1)
     AddStoreItem("a7!nym1", "scrl97", 4, 1)
@@ -71,8 +71,8 @@ THEN
   RESPONSE #100
     SetGlobal("A7!NymPriceAdvance", "GLOBAL", 3)
     SetInterrupt(FALSE)
-    ChangeStoreMarkup("a7!nym1", 225, 30)
-    ChangeStoreMarkup("a7!nym2", 325, 30)
+    ChangeStoreMarkup("a7!nym1", 30, 225)
+    ChangeStoreMarkup("a7!nym2", 30, 325)
     AddStoreItem("a7!nym1", "a7!body", 3, 1)
     AddStoreItem("a7!nym1", "a7!clay", 3, 1)
     AddStoreItem("a7!nym1", "a7!ston", 3, 1)
@@ -98,8 +98,8 @@ THEN
   RESPONSE #100
     SetGlobal("A7!NymPriceAdvance", "GLOBAL", 5)
     SetInterrupt(FALSE)
-    ChangeStoreMarkup("a7!nym1", 250, 30)
-    ChangeStoreMarkup("a7!nym2", 450, 30)
+    ChangeStoreMarkup("a7!nym1", 30, 250)
+    ChangeStoreMarkup("a7!nym2", 30, 450)
     AddStoreItem("a7!nym1", "a7!body", 5, 1)
     AddStoreItem("a7!nym1", "a7!clay", 5, 1)
     AddStoreItem("a7!nym1", "a7!ston", 5, 1)
