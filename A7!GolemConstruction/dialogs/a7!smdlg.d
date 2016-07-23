@@ -254,11 +254,11 @@ IF ~~ Golem.Type.Mithral
      NumItemsPartyGT("a7!mith", 3)~ + @41032 /* Greater Mithral Golem */ + Golem.Type.Mithral.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 24)
-     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
+     NumItemsPartyGT("a7!mith", 3) PartyHasItemIdentified("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 26)
-     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
+     NumItemsPartyGT("a7!mith", 3) PartyHasItemIdentified("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 28)
-     NumItemsPartyGT("a7!mith", 3) PartyHasItem("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
+     NumItemsPartyGT("a7!mith", 3) PartyHasItemIdentified("a7!glmi")~ + @41033 /* Perfect Mithral Golem */ + Golem.Type.Mithral.Perfect
 
   ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
@@ -294,11 +294,11 @@ IF ~~ Golem.Type.Adamantite
      NumItemsPartyGT("a7!adam", 7)~ + @41036 /* Greater Adamantite Golem */ + Golem.Type.Adamantite.Greater
 
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) ClassLevelGT(LastTalkedToBy, WIZARD, 29)
-     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
+     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItemIdentified("a7!glad1") PartyHasItemIdentified("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 31)
-     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
+     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItemIdentified("a7!glad1") PartyHasItemIdentified("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 33)
-     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItem("a7!glad1") PartyHasItem("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
+     NumItemsPartyGT("a7!adam", 7) OR(2) PartyHasItemIdentified("a7!glad1") PartyHasItemIdentified("a7!glad2")~ + @41037 /* Perfect Adamantite Golem */ + Golem.Type.Adamantite.Perfect
 
   ++ @41048 /* Select different golem type */ + Golem.Type
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
