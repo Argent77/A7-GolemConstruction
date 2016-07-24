@@ -2,8 +2,10 @@
 
 // SPECIFICS values for all constructed golem types
 OUTER_SET specific_golem  = 200
-
 APPEND ~specific.ids~ ~%specific_golem% A7!GOLEM~ UNLESS ~^%specific_golem%[ %TAB%]~
+
+// max. number of available golems
+OUTER_SET max_golem_count = 3
 
 // probably not needed
 APPEND ~gtimes.ids~ ~6 ONE_ROUND~ UNLESS ~ONE_ROUND~
@@ -43,7 +45,7 @@ ACTION_IF (GAME_IS ~bg2ee~) BEGIN
   END
   OUTER_SET varIndex = numRows
   ACTION_PHP_EACH vars AS _ => var BEGIN
-    APPEND ~varimprt.2da~ ~%varIndex% %var%~ UNLESS ~%var%~
+    APPEND ~varimprt.2da~ ~%varIndex% %var%~
     OUTER_SET varIndex += 1
   END
 END

@@ -787,6 +787,7 @@ END
 
 COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd.d~
         ~%MOD_FOLDER%/dialogs/a7!cmd2.d~
+        EVAL
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd_soa.d~

@@ -7,8 +7,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("disabled", "LOCALS", 1)
+    IncrementGlobal("A7!GolemCount", "GLOBAL", -1)
     RemoveFamiliar()
-    ChangeEnemyAlly(Myself, NEUTRAL)
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
     ChangeAIScript("", DEFAULT)
     ChangeAIScript("", GENERAL)
     ChangeAIScript("", RACE)

@@ -365,7 +365,7 @@ END
 
 
 // "Construct Golem" ability
-COMPILE ~%MOD_FOLDER%/dialogs/a7!smdlg.d~
+COMPILE ~%MOD_FOLDER%/dialogs/a7!smdlg.d~ EVAL
 COMPILE ~%MOD_FOLDER%/scripts/a7!smdlg.baf~
 
 COPY ~%MOD_FOLDER%/creatures/a7!smdlg.cre~ ~override~

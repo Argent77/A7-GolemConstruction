@@ -9,10 +9,11 @@ THEN
   RESPONSE #100
     SetGlobal("spellhold", "LOCALS", 1)
     SetGlobal("Command", "LOCALS", 2)
+    IncrementGlobal("A7!GolemCount", "GLOBAL", -1)
     DisplayStringHead(Myself, @100018)  // Golem has been disabled.
     PlaySound("EFF_M07")
     RemoveFamiliar()
-    ChangeEnemyAlly(Myself, NEUTRAL)
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
 END
 
 IF

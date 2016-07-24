@@ -6,6 +6,7 @@ IF
   Global("init", "LOCALS", 0)
 THEN
   RESPONSE #96
+    IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
     FaceObject(LastSummonerOf(Myself))
     ApplySpellRES("A7!SUM1", Myself)
     Wait(7)
@@ -57,6 +58,7 @@ THEN
     MakeGlobal()
     ChangeEnemyAlly(Myself, FAMILIAR)
     AddFamiliar()
+    IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
     SetGlobal("init", "LOCALS", 2)
 END
 
@@ -70,30 +72,4 @@ THEN
     DisplayString(Myself, @20002) // Dismissed
     Kill(Myself)
     SetInterrupt(TRUE)
-END
-
-
-// Default actions when golem turned hostile
-IF
-  Allegiance(Myself, ENEMY)
-  See(LastSummonerOf(Myself))
-THEN
-  RESPONSE #100
-    AttackOneRound(LastSeenBy(Myself))
-END
-
-IF
-  Allegiance(Myself, ENEMY)
-  See(NearestEnemyOf(Myself))
-THEN
-  RESPONSE #100
-    AttackOneRound(LastSeenBy(Myself))
-END
-
-IF
-  Allegiance(Myself, ENEMY)
-  See([ANYONE])
-THEN
-  RESPONSE #100
-    AttackOneRound(LastSeenBy(Myself))
 END

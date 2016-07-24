@@ -4,16 +4,22 @@ BEGIN ~a7!smdlg~
 
 IF ~Global("stage", "LOCALS", 0)~ Golem.Prepare
   SAY ~You prepare yourself for the task before you...~
-  IF ~Global("initCancelled", "LOCALS", 1)~ + Golem.Location.Cancelled
-  IF ~Global("initSundries", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct10")~ EXIT
-  IF ~Global("initColdhearth", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct11")~ EXIT
-  IF ~Global("initKanaglym", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct16")~ EXIT
-  IF ~Global("initSphere", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct13")~ EXIT
-  IF ~Global("initJermien", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct12")~ EXIT
-  IF ~Global("initWK", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct14")~ EXIT
-  IF ~Global("initPlane", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct15")~ EXIT
-  IF ~Global("initMagic", "LOCALS", 1)~ + Golem.Location.WildMagic
-  IF ~Global("A7!Debug", "GLOBAL", 1)~ DO ~SetGlobal("stage", "LOCALS", 1)~ + Golem.Type
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initCancelled", "LOCALS", 1)~ + Golem.Location.Cancelled
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initSundries", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct10")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initColdhearth", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct11")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initKanaglym", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct16")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initSphere", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct13")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initJermien", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct12")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initWK", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct14")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initPlane", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct15")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initMagic", "LOCALS", 1)~ + Golem.Location.WildMagic
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("A7!Debug", "GLOBAL", 1)~ DO ~SetGlobal("stage", "LOCALS", 1)~ + Golem.Type
+  IF ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)~ + Golem.Limit.Reached
+END
+
+IF ~~ Golem.Limit.Reached
+  SAY ~You cannot have any more golems following you.~
+  IF ~~ DO ~DestroySelf()~ EXIT
 END
 
 IF ~Global("stage", "LOCALS", 1)~ Golem.Type

@@ -1,5 +1,31 @@
 // *** Actions based on given commands ***
 
+// Default actions when golem turned hostile
+IF
+  Allegiance(Myself, ENEMY)
+  See(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself, ENEMY)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself, ENEMY)
+  See([ANYONE])
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+
 // -- Follow, no actions (Command=0) --
 
 // -- Follow, attack (Command=1) --

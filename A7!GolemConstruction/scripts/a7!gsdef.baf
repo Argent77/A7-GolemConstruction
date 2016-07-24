@@ -2,12 +2,30 @@
 
 IF
   Global("init", "LOCALS", 0)
+  NextTriggerObject(LastSummonerOf(Myself))
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #96
+    SetGlobal("init", "LOCALS", 2)
+    IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, FAMILIAR)
+    AddFamiliar()
+    Continue()
+END
+
+IF
+  Global("init", "LOCALS", 0)
+  NextTriggerObject(LastSummonerOf(Myself))
+  GlobalGT("Command", "LOCALS", 1)
 THEN
   RESPONSE #96
     SetGlobal("init", "LOCALS", 2)
     MakeGlobal()
-    ChangeEnemyAlly(Myself, FAMILIAR)
-    AddFamiliar()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SetGlobal("Command", "LOCALS", 2)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    Face(S)
     Continue()
 END
 

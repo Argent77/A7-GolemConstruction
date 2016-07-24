@@ -1,5 +1,14 @@
 // *** Type-specific actions (Ruby Golem) ***
 
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("A7!GolemCount", "GLOBAL", -1)
+END
+
 // Work-around for issue: Fix creature specifications
 IF
   !Specifics(Myself, A7!GOLEM)
