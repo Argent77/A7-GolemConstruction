@@ -33,6 +33,6 @@ IF ~~ Golem.3
 END
 
 IF ~~ Golem.Limit.Reached
-  SAY ~You cannot have any more golems following you.~
+  SAY @45012 /* You cannot have any more golems following you. */
   IF ~~ + Golem.2
 END

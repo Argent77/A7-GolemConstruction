@@ -17,11 +17,6 @@ IF ~Global("stage", "LOCALS", 0)~ Golem.Prepare
   IF ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)~ + Golem.Limit.Reached
 END
 
-IF ~~ Golem.Limit.Reached
-  SAY ~You cannot have any more golems following you.~
-  IF ~~ DO ~DestroySelf()~ EXIT
-END
-
 IF ~Global("stage", "LOCALS", 1)~ Golem.Type
   SAY @41000  /* Select golem type: */
   + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemFlesh", "LOCALS", 1)~ + @41001 /* Flesh Golem */ + Golem.Type.Flesh
@@ -97,6 +92,11 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 9)~ Golem.Type
   IF ~Global("GolemType", "LOCALS", 11)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smma", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 12)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smlt", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 13)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smru", Myself)) DestroySelf()~ EXIT
+END
+
+IF ~~ Golem.Limit.Reached
+  SAY @41050 /* You cannot have any more golems following you. */
+  IF ~~ DO ~DestroySelf()~ EXIT
 END
 
 

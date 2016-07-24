@@ -59,6 +59,7 @@
 @41047 = ~You can't construct Adamantite Golems without having studied the principles of Iron Golem construction.~
 @41048 = ~Select different golem type~
 @41049 = ~Ruby Golem~
+@41050 = ~You cannot have any more golems following you.~
 
 
 // *** Wish Djinni dialog ***
@@ -167,6 +168,7 @@
 @45009 = ~Yes!~
 @45010 = ~No!~
 @45011 = ~The golem has been rendered inactive by the protective magics of this place.~
+@45012 = ~You cannot have any more golems following you.~
 
 
 // *** Jermien of Imnesvill ***
