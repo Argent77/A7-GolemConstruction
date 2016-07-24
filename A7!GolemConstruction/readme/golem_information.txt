@@ -19,7 +19,8 @@ The "Construct Golem" ability can be used as many times as needed without the ne
 strongly recommended).
 
 Golem manuals will also teach you the "Repair Golem" ability. It can be used once per day in any location, but does 
-not work while enemies are around. The repair process takes about two rounds.
+not work while enemies are around. The repair process takes about two rounds. Heavily damaged golems may require more 
+than one attempt to restore them to full health.
 
 
 Conventional Golems
@@ -854,6 +855,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   their Saving Throw vs. Breath. The golem also does not have to wait for its aura to be cleansed before using the 
   same or another ability again. This ability replaces "Teleport".
 
+
 Each golem has the following abilities by default:
 1. Dismiss:  Activating this ability will cause the golem to disintegrate. The process is irreversible.
 2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with 
@@ -881,21 +883,27 @@ Known locations where you can successfully construct golems
 ===========================================================
 
 Siege of Dragonspear:
-- Sorcerous Sundries: You may rent the second floor from the proprietor of the shop.
-- Repository of Undeath: This dungeon can be found beneath the Dwarven Dig Site. You have to make the area safe first 
-                         by destroying the undead minions and dealing with the current resident.
-- Ruins of Kanaglym: The ruins are accessible from the Underground River area. You have to make the area safe first 
-                     by destroying all enemies and dealing with Kherriun.
+- Sorcerous Sundries:
+  You may rent the second floor from the proprietor of the shop.
+- Repository of Undeath:
+  This dungeon can be found beneath the Dwarven Dig Site. You have to make the area safe first by destroying the 
+  undead minions and dealing with the current resident.
+- Ruins of Kanaglym:
+  The ruins are accessible from the Underground River area. You have to make the area safe first by destroying all 
+  enemies and dealing with Kherriun.
 
 Shadows of Amn:
-- Planar Sphere: The opening area of the Sphere may be suitable for golem building (after dealing with the former owner, 
-                 of course).
-- Jermien's Home: You may be able to convince him to use his home in Imnesville for building your own golems.
+- Planar Sphere:
+  The opening area of the Sphere may be suitable for golem building (after dealing with the former owner, of course).
+- Jermien's Home:
+  You may be able to convince him to use his home in Imnesville for building your own golems.
 
 Watcher's Keep:
-- Second Level: The wizard library is well equipped, but you must disable all defense mechanisms first (which includes 
-                the Chromatic Demon).
+- Second Level:
+  The Wizard's Library is well equipped, but you must disable all defense mechanisms first (which includes the creature 
+  that guards the teleporter to the next level).
 
 Throne of Bhaal:
-- The Pocket Plane: This place looks safe enough for all kinds of magical experiments. Lazarus Librarus may provide 
-                    the required equipment.
+- The Pocket Plane:
+  This place looks safe enough for all kinds of magical experiments. Lazarus Librarus may provide the required 
+  equipmentfor a fair price.
