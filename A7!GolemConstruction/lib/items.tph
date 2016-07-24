@@ -879,16 +879,24 @@ END
 
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  // Notes about golem building locations
+  // Notes about golem building locations in SoD
   COPY ~%MOD_FOLDER%/items/a7!note1.itm~ ~override~
     SAY NAME1 @100019  // Scribbled Notes
     SAY NAME2 @100019  // Scribbled Notes
     SAY UNIDENTIFIED_DESC @100020 // ...
     SAY IDENTIFIED_DESC @100020 // ...
-
-  COPY ~%MOD_FOLDER%/items/a7!cnote.bam~ ~override~
-       ~%MOD_FOLDER%/items/a7!inote.bam~ ~override~
 END
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Notes about golem building locations in BG2
+  COPY ~%MOD_FOLDER%/items/a7!note2.itm~ ~override~
+    SAY NAME1 @100019  // Scribbled Notes
+    SAY NAME2 @100019  // Scribbled Notes
+    SAY UNIDENTIFIED_DESC @100022 // ...
+    SAY IDENTIFIED_DESC @100022 // ...
+END
+
+COPY ~%MOD_FOLDER%/items/a7!cnote.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!inote.bam~ ~override~
 
 
 // Pieces of machinery for golem building

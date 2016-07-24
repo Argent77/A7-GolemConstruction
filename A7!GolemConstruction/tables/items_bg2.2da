@@ -150,3 +150,4 @@ CONTAINER   AR3016      Shelf5          A7!TOM0A  0     0       0
 ACTOR       GORCAMB     *               A7!TOM0B  0     0       0
 ACTOR       GORSAL      *               A7!TOM0C  0     0       0
 CONTAINER   OH6500      A7!Shelf1       A7!TOM0D  0     0       0
+CONTAINER   AR0602      Shelf*17        A7!NOTE2  0     0       0
