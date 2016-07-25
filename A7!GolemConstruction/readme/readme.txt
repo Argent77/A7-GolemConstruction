@@ -1,14 +1,14 @@
 Golem Construction for Spellcasters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:  0.2 (beta)
+Version:  1.0
 Author:   Argent77
 
 
 Overview
 ~~~~~~~~
 
-A mod for "Siege of Dragonspear" and BG2:EE that allows spellcasters to build their own golems.
+A mod for Siege of Dragonspear and BG2:EE that allows spellcasters to build their own golems.
 
 You can encounter a great number of golems of various types throughout the game. They are strong, 
 resistant, and utterly loyal to their master. Unfortunately they are mostly hostile towards you.
@@ -68,8 +68,10 @@ In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesville may be suit
 Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 
 your Pocket Plane may work, after installing some equipment.
 
-Golem may follow simple commands. To change a command simply talk to them (you may have to force 
+Golems may follow simple commands. To change a command simply talk to them (you may have to force 
 the talk by pressing the Talk button, or pressing F1).
+
+More components may come later.
 
 
 Details
@@ -90,3 +92,5 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
+1.0
+- Initial release

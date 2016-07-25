@@ -1,6 +1,6 @@
 BACKUP ~A7!GolemConstruction/backup~
 AUTHOR ~Argent77~
-VERSION ~v0.2~
+VERSION ~1.0~
 
 ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
