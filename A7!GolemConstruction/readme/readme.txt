@@ -8,6 +8,8 @@ Author:   Argent77
 Overview
 ~~~~~~~~
 
+A mod for "Siege of Dragonspear" and BG2:EE that allows spellcasters to build their own golems.
+
 You can encounter a great number of golems of various types throughout the game. They are strong, 
 resistant, and utterly loyal to their master. Unfortunately they are mostly hostile towards you.
 
@@ -29,6 +31,8 @@ into your game directory and run either "setup-A7!GolemConstruction.exe" (on Win
 "setup-A7!GolemConstruction" (on Mac OS X). 
 Follow the instructions and you are ready to start. It is strongly recommend to install the mod 
 before starting the "Siege of Dragonspear" campaign (BG:EE), or starting a new game (BG2:EE).
+
+Important: The game must be patched to v2.0 or higher to install this mod.
 
 
 Components
@@ -57,8 +61,8 @@ Each golem requires materials for constructing the physical shell, and possibly 
 ingredients to implement specific key features of the golem. Creating perfect variant is a feat 
 by itself and requires certain unique artifacts of power for the enchantment process.
 
-The construction of golems takes time and has to be done in specific places of power. In Siege of 
-Dragonspear you can try Sorcerous Sundries, the Repository of Undeath beneath the 
+The construction of golems takes time and has to be done in places with the right equipment. 
+In Siege of Dragonspear you can try Sorcerous Sundries, the Repository of Undeath beneath the 
 Dwarven Dig Site and the ruins of Kanaglym which are accessible from the Underground River. 
 In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesville may be suitable. The 
 Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 

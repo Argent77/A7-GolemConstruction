@@ -27,7 +27,7 @@ It is rumored that there is another secret set of tomes which contains knowledge
 
 Each golem requires materials for constructing the physical shell, and possibly additional ingredients to implement specific key features of the golem. Creating perfect variant is a feat by itself and requires certain unique artifacts of power for the enchantment process.
 
-The construction of golems takes time and has to be done in specific places of power. In Siege of Dragonspear you can try Sorcerous Sundries, the Repository of Undeath beneath the Dwarven Dig Site and the ruins of Kanaglym which are accessible from the Underground River area. In Shadows of Amn both the Planar Sphere and Jermien's Home in Imnesville may be suitable. The Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal your Pocket Plane may work, after installing some equipment.
+The construction of golems takes time and has to be done in places with the right equipment. In Siege of Dragonspear you can try Sorcerous Sundries, the Repository of Undeath beneath the Dwarven Dig Site and the ruins of Kanaglym which are accessible from the Underground River area. In Shadows of Amn both the Planar Sphere and Jermien's Home in Imnesville may be suitable. The Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal your Pocket Plane may work, after installing some equipment.
 
 *More components may come later.*
 
