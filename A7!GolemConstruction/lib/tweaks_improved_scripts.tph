@@ -1,0 +1,44 @@
+// *** Tweaks: Improved combat scripts for enemy mages ***
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // mage scripts
+  OUTER_TEXT_SPRINT condition ~~
+  ACTION_FOR_EACH script IN ~mage7~ ~mage8~ ~mage8a~ ~mage8b~ ~mage8c~ ~mage8d~ ~mage8e~ 
+                            ~mage10a~ ~mage10b~ ~mage10c~ ~mage10d~ ~mage11~ 
+                            ~mage12a~ ~mage12b~ ~mage12c~ ~mage12d~ ~mage12e~ 
+                            ~mage14a~ ~mage14b~ ~mage14c~ ~mage14d~ ~mage14m~ ~mage14t~ 
+                            ~mage16a~ ~mage16b~ ~mage16c~ ~mage16m~ 
+                            ~mage18a~ ~mage18b~ ~mage18c~ ~mage18d~ ~mage18e~ ~mage18y~ ~mage18z~ 
+                            ~mage20a~ ~mage20b~ ~mage20c~ ~cmacl20a~ ~cmage20a~ ~cmage20b~ 
+                            ~magthf14~ ~figmag10~ ~figmag16~ ~gpmage1~ ~ohrmage1~ 
+                            ~cowenf01~ ~cowenf02~ ~cowenf03~ ~cowenf04~ 
+                            ~firlch01~ ~gorcamb2~ ~gorlic01~ ~gorstam~ ~kuomag01~ ~neva~ 
+                            ~ohhayes1~ ~ohhshair~ ~ppjon2~ ~pwarden~ ~senbattl~ ~sujon~ 
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!mage_combat_golem.baf~ EVAL
+    END
+  END
+
+  // special script handling
+  OUTER_TEXT_SPRINT condition ~Allegiance(Myself, ENEMY)~
+  ACTION_FOR_EACH script IN ~ohnszass~ ~ohrshani~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!mage_combat_golem.baf~ EVAL
+    END
+  END
+
+
+  // priest scripts
+  ACTION_FOR_EACH script IN ~pries6a~ ~pries6b~ ~pries6c~ ~pries8a~ ~pries8b~ ~pries8c~ 
+                            ~pries10a~ ~pries10b~ ~pries10c~ ~pries12a~ ~pries12c~ 
+                            ~pries14a~ ~pries14t~ ~pries18a~ ~pries18b~ ~pries18c~ ~pries18d~ 
+                            ~priest3~ ~priest4~ ~priest5~ ~priest6~ ~priet12a~ ~priet12b~ ~priest12~ 
+                            ~ccler20a~ ~ccler20b~ ~ccler20c~ 
+                            ~druid10a~ ~druid10b~ ~druid12a~ ~druid12b~ ~druid14g~ ~paina~ 
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!priest_combat_golem.baf~ EVAL
+    END
+  END
+END

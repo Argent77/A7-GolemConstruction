@@ -1,0 +1,496 @@
+// *** Added to mage combat scripts ***
+
+// Initializations (delay processing of golem-specific actions by one pass)
+IF
+  %condition%
+  Global("A7!Init", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Init", "LOCALS", 1)
+    Continue()
+END
+
+
+// Initial HLAs
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, WIZARD, 17)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #15
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(Myself, WIZARD_IMPROVED_ALACRITY)
+  RESPONSE #25
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), WIZARD_DRAGONS_BREATH)
+  RESPONSE #60
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Alignment(Myself, MASK_GOOD)
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, WIZARD, 17)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #20
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), WIZARD_SUMMON_PLANATAR_GOOD)
+  RESPONSE #80
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Alignment(Myself, MASK_EVIL)
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, WIZARD, 17)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #20
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), WIZARD_SUMMON_PLANATAR_EVIL)
+  RESPONSE #80
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Alignment(Myself, MASK_GENEUTRAL)
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, WIZARD, 17)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #12
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), WIZARD_SUMMON_PLANATAR_GOOD)
+  RESPONSE #13
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), WIZARD_SUMMON_PLANATAR_EVIL)
+  RESPONSE #75
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+
+// Protection spells
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  TookDamage()
+  HaveSpell(WIZARD_SHADOW_DOOR)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_SHADOW_DOOR)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, BUFF_PRO_WEAPONS)
+  Range(LastSeenBy(Myself), 15)
+  HaveSpell(WIZARD_ABSOLUTE_IMMUNITY)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_ABSOLUTE_IMMUNITY)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, BUFF_PRO_WEAPONS)
+  Range(LastSeenBy(Myself), 15)
+  HaveSpell(WIZARD_IMPROVED_MANTLE)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_IMPROVED_MANTLE)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, BUFF_PRO_WEAPONS)
+  Range(LastSeenBy(Myself), 15)
+  HaveSpell(WIZARD_MANTLE)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_MANTLE)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, BUFF_PRO_WEAPONS)
+  Range(LastSeenBy(Myself), 15)
+  HaveSpell(WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  TookDamage()
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, BUFF_PRO_WEAPONS)
+  NotStateCheck(Myself, STATE_MIRRORIMAGE)
+  Range(LastSeenBy(Myself), 15)
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  TookDamage()
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, BUFF_PRO_WEAPONS)
+  NotStateCheck(Myself, STATE_MIRRORIMAGE)
+  Range(LastSeenBy(Myself), 15)
+  HaveSpell(WIZARD_REFLECTED_IMAGE)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_REFLECTED_IMAGE)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, RED_FIRESHIELD)
+  !CheckSpellState(Myself, BLUE_FIRESHIELD)
+  HaveSpell(WIZARD_FIRE_SHIELD_RED)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_FIRE_SHIELD_RED)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(Myself, RED_FIRESHIELD)
+  !CheckSpellState(Myself, BLUE_FIRESHIELD)
+  HaveSpell(WIZARD_FIRE_SHIELD_BLUE)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_FIRE_SHIELD_BLUE)
+END
+
+
+// Summoning spells
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_SUMMON_EFREET)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_SUMMON_EFREET)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_MORDENKAINENS_SWORD)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_MORDENKAINENS_SWORD)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_WYVERN_CALL)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_WYVERN_CALL)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_ANIMATE_DEAD)
+  ClassLevelGT(Myself, WIZARD, 6)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_ANIMATE_DEAD)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_SPIDER_SPAWN)
+  ClassLevelGT(Myself, WIZARD, 8)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_SPIDER_SPAWN)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_INVISIBLE_STALKER)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_INVISIBLE_STALKER)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_MONSTER_SUMMONING_3)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_MONSTER_SUMMONING_3)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 2)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_MONSTER_SUMMONING_2)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_MONSTER_SUMMONING_2)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 2)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_GATE)
+  Global("A7!CombatDemon", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_GATE)
+    SetGlobal("A7!CombatDemon", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_SUMMON_FIEND)
+  Global("A7!CombatDemon", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_SUMMON_FIEND)
+    SetGlobal("A7!CombatDemon", "LOCALS", 1)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_CACOFIEND)
+  Global("A7!CombatDemon", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_CACOFIEND)
+    SetGlobal("A7!CombatDemon", "LOCALS", 1)
+END
+
+
+// Spells that ignore magic resistance
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  OR(2)
+    CheckSpellState(Myself, BUFF_PRO_WEAPONS)
+    StateCheck(Myself, STATE_MIRRORIMAGE)
+  Range(LastSeenBy(Myself), 15)
+  HaveSpell(WIZARD_IMPRISONMENT)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_IMPRISONMENT)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Class(LastSeenBy(Myself), GOLEM_FLESH)
+  HaveSpell(WIZARD_CONTAGION)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), WIZARD_CONTAGION)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_TIME_STOP)
+THEN
+  RESPONSE #100
+    Spell(Myself, WIZARD_TIME_STOP)
+END
+
+
+// Reducing magic resistance
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_PIERCE_SHIELD)
+  GlobalLT("A7!CombatResistance", "LOCALS", 3)
+THEN
+  RESPONSE #50
+    IncrementGlobal("A7!CombatResistance", "LOCALS", 1)
+    Spell(LastSeenBy(Myself), WIZARD_PIERCE_SHIELD)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_PIERCE_MAGIC)
+  GlobalLT("A7!CombatResistance", "LOCALS", 3)
+THEN
+  RESPONSE #50
+    IncrementGlobal("A7!CombatResistance", "LOCALS", 1)
+    Spell(LastSeenBy(Myself), WIZARD_PIERCE_MAGIC)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(WIZARD_LOWER_RESISTANCE)
+  GlobalLT("A7!CombatResistance", "LOCALS", 3)
+THEN
+  RESPONSE #50
+    IncrementGlobal("A7!CombatResistance", "LOCALS", 1)
+    Spell(LastSeenBy(Myself), WIZARD_LOWER_RESISTANCE)
+  RESPONSE #50
+    Continue()
+END
+
+// Non-elemental damage spells
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  CheckStatLT(LastSeenBy(Myself), 51, RESISTMAGIC)
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  GlobalGT("A7!CombatResistance", "LOCALS", 1)
+THEN
+  RESPONSE #50
+    Spell(LastSeenBy(Myself), WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  CheckStatLT(LastSeenBy(Myself), 51, RESISTMAGIC)
+  HaveSpell(WIZARD_FINGER_OF_DEATH)
+  GlobalGT("A7!CombatResistance", "LOCALS", 1)
+THEN
+  RESPONSE #50
+    Spell(LastSeenBy(Myself), WIZARD_FINGER_OF_DEATH)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  CheckStatLT(LastSeenBy(Myself), 51, RESISTMAGIC)
+  HaveSpell(WIZARD_LARLOCH_MINOR_DRAIN)
+  GlobalGT("A7!CombatResistance", "LOCALS", 1)
+THEN
+  RESPONSE #50
+    Spell(LastSeenBy(Myself), WIZARD_LARLOCH_MINOR_DRAIN)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  CheckStatLT(LastSeenBy(Myself), 75, RESISTMAGIC)
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  GlobalGT("A7!CombatResistance", "LOCALS", 0)
+THEN
+  RESPONSE #50
+    Spell(LastSeenBy(Myself), WIZARD_MAGIC_MISSILE)
+  RESPONSE #50
+    Continue()
+END
+
+// Final HLA
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, WIZARD, 17)
+  Global("A7!CombatHLA2", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(Myself, WIZARD_ENERGY_BLADES)
+END
+
+IF
+  Global("A7!Init", "LOCALS", 1)
+  See(NearestEnemyOf(Myself))
+  HasItem("eneblade", Myself)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself), 15)
+END

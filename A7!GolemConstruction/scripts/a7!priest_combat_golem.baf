@@ -1,0 +1,308 @@
+// *** Added to priest combat scripts ***
+
+// Initial HLAs
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, PRIEST, 21)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #16
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), CLERIC_ELEMENTAL_SWARM)
+  RESPONSE #17
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(Myself, CLERIC_GLOBE_OF_BLADES)
+  RESPONSE #17
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), CLERIC_IMPLOSION)
+  RESPONSE #50
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Alignment(Myself, MASK_GOOD)
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, PRIEST, 21)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #25
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), CLERIC_SUMMON_DEVA)
+  RESPONSE #75
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Alignment(Myself, MASK_EVIL)
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, PRIEST, 21)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #25
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), CLERIC_SUMMON_FALLEN_DEVA)
+  RESPONSE #75
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Alignment(Myself, MASK_GENEUTRAL)
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, PRIEST, 21)
+  Global("A7!CombatHLA1", "LOCALS", 0)
+THEN
+  RESPONSE #12
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), CLERIC_SUMMON_DEVA)
+  RESPONSE #13
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(LastSeenBy(Myself), CLERIC_SUMMON_FALLEN_DEVA)
+  RESPONSE #75
+    SetGlobal("A7!CombatHLA1", "LOCALS", 1)
+    Continue()
+END
+
+
+// Protection spells
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  CheckStat(Myself, 0, STONESKINS)
+  HaveSpell(CLERIC_IRONSKIN)
+THEN
+  RESPONSE #100
+    Spell(Myself, CLERIC_IRONSKIN)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  Range(LastSeenBy(Myself), 5)
+  HaveSpell(CLERIC_BLADE_BARRIER)
+THEN
+  RESPONSE #100
+    Spell(Myself, CLERIC_BLADE_BARRIER)
+END
+
+
+// Summoning spells
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_ANIMATE_DEAD)
+  ClassLevelGT(Myself, PRIEST, 6)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_ANIMATE_DEAD)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_CONJURE_EARTH_ELEMENTAL)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_CONJURE_EARTH_ELEMENTAL)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_CONJURE_FIRE_ELEMENTAL)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_CONJURE_FIRE_ELEMENTAL)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_CONJURE_ANIMALS)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_CONJURE_ANIMALS)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_ANIMAL_SUMMONING_3)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_ANIMAL_SUMMONING_3)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_AERIAL_SERVANT)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_AERIAL_SERVANT)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_ANIMAL_SUMMONING_2)
+  GlobalLT("A7!CombatSummons", "LOCALS", 3)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_ANIMAL_SUMMONING_2)
+    IncrementGlobal("A7!CombatSummons", "LOCALS", 1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_GATE)
+  Global("A7!CombatDemon", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_GATE)
+    SetGlobal("A7!CombatDemon", "LOCALS", 1)
+END
+
+
+// Offensive spells
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_EARTHQUAKE)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_EARTHQUAKE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_MAGIC_RESISTANCE)
+  Global("A7!CombatResistance", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!CombatResistance", "LOCALS", 1)
+    Spell(LastSeenBy(Myself), CLERIC_MAGIC_RESISTANCE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_FLAME_STRIKE)
+  Global("A7!CombatResistance", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_FLAME_STRIKE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_FINGER_OF_DEATH)
+  Global("A7!CombatResistance", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself), CLERIC_FINGER_OF_DEATH)
+END
+
+
+// Magical Weapons
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  HaveSpell(CLERIC_SOL_SEARING_ORB)
+THEN
+  RESPONSE #100
+    Spell(Myself, CLERIC_SOL_SEARING_ORB)
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Class(LastSeenBy(Myself), GOLEM_FLESH)
+  HaveSpell(CLERIC_MAGIC_STONE)
+THEN
+  RESPONSE #100
+    Spell(Myself, CLERIC_MAGIC_STONE)
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  Range(LastSeenBy(Myself), 10)
+  HaveSpell(CLERIC_SLAY_LIVING)
+THEN
+  RESPONSE #100
+    Spell(Myself, CLERIC_SLAY_LIVING)
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  Range(LastSeenBy(Myself), 10)
+  HaveSpell(CLERIC_SPIRITUAL_HAMMER)
+THEN
+  RESPONSE #100
+    Spell(Myself, CLERIC_SPIRITUAL_HAMMER)
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Class(LastSeenBy(Myself), GOLEM_FLESH)
+  Range(LastSeenBy(Myself), 10)
+  HaveSpell(CLERIC_SHILLELAGH)
+THEN
+  RESPONSE #100
+    Spell(Myself, CLERIC_SHILLELAGH)
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+
+// Final HLA
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  ClassLevelGT(Myself, PRIEST, 21)
+  Global("A7!CombatHLA2", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!CombatHLA2", "LOCALS", 1)
+    ForceSpell(Myself, CLERIC_ENERGY_BLADES)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HasItem("eneblade", Myself)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself), 15)
+END

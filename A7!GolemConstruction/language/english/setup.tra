@@ -2,6 +2,11 @@
 // Setup (index 0..999)
 
 @0 = ~Golem Construction Ability for Spellcasters~
+@1 = ~Tweaks~
+@10 = ~Replace original Golem Manual~
+@15 = ~Improve enemy spellcaster AI~
+@20 = ~Golems for enemy spellcasters~
+@25 = ~Greater variety of enemy golem types~
 
 @100 = ~This mod requires BG:SoD or BG2:EE to be installed.~
 @101 = ~This mod requires the main component to be installed.~

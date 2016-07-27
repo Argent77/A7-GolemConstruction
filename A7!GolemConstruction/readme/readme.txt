@@ -71,7 +71,22 @@ your Pocket Plane may work, after installing some equipment.
 Golems may follow simple commands. To change a command simply talk to them (you may have to force 
 the talk by pressing the Talk button, or pressing F1).
 
-More components may come later.
+
+2. Tweaks (require the main component to be installed)
+
+2.1. Replace original Golem Manual
+TODO
+
+2.2. Improve enemy spellcaster AI
+This component improves the vanilla AI of mages and priest, so that they will attempt to use more 
+effective measures against golems. High level spellcasters have also access to a single HLA which 
+is randomly chosen.
+
+2.3. Golems for enemy spellcasters
+TODO
+
+2.4. Greater variety of enemy golem types
+TODO
 
 
 Details
