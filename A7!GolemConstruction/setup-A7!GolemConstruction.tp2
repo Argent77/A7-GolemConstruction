@@ -45,19 +45,23 @@ BEGIN @0  // Golem Construction ability for spellcasters
   INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
 
 
-// BEGIN @10 // Replace original Golem Manual
-  // REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
-  // GROUP @1  // Tweaks
-  // DESIGNATED 10
+BEGIN @10 // Replace original Golem Manual
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This mod requires BG2:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 10
 
-  // INCLUDE ~%MOD_FOLDER%/lib/tweaks_replace_manual.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_replace_manual.tph~
+
 
 BEGIN @15 // Improve enemy spellcaster AI
   REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This mod requires BG2:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 15
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_improved_scripts.tph~
+
 
 // BEGIN @20 // Golems for enemy spellcasters
   // REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
@@ -65,6 +69,7 @@ BEGIN @15 // Improve enemy spellcaster AI
   // DESIGNATED 20
 
   // INCLUDE ~%MOD_FOLDER%/lib/tweaks_mage_golems.tph~
+
 
 // BEGIN @25 // Greater variety of enemy golem types
   // REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.

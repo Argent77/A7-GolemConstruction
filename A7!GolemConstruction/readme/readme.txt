@@ -75,11 +75,12 @@ the talk by pressing the Talk button, or pressing F1).
 2. Tweaks (require the main component to be installed)
 
 2.1. Replace original Golem Manual
-TODO
+This component removes the original Golem Manual and all additional pages completely. Instead you 
+will find items related to the Golem Construction Manuals provided by this mod.
 
 2.2. Improve enemy spellcaster AI
 This component improves the vanilla AI of mages and priest, so that they will attempt to use more 
-effective measures against golems. High level spellcasters have also access to a single HLA which 
+effective measures against golems. High level spellcasters also have access to a single HLA which 
 is randomly chosen.
 
 2.3. Golems for enemy spellcasters

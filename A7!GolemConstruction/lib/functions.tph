@@ -503,3 +503,109 @@ BEGIN
   END
 END
 
+/**
+ * Attempts to determine the index of an ARE container item structure.
+ * INT_VAR defaultIndex Returned if no container matches the specified name.
+ * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching container to be returned. (Default: 0)
+ * STR_VAR resource     Item resource to find.
+ * RET index            The item index if found, or defaultIndex if not found.
+ */
+DEFINE_PATCH_FUNCTION ARE_INDEX_OF_CONTAINER_ITEM
+INT_VAR
+  defaultIndex = "-1"
+  skip = 0
+STR_VAR
+  resource = ~~
+RET
+  index
+BEGIN
+  SET index = defaultIndex
+  PATCH_IF (NOT ~%resource%~ STRING_EQUAL ~~) BEGIN
+    READ_SHORT 0x76 numItems
+    READ_LONG 0x78 ofsItems
+    FOR (idx = 0; idx < numItems; ++idx) BEGIN
+      SET curOfs = ofsItems + (idx * 0x14)
+      READ_ASCII curOfs curRes ( 8 ) NULL
+      PATCH_IF (~%curRes%~ STRING_EQUAL_CASE ~%resource%~) BEGIN
+        PATCH_IF (skip <= 0) BEGIN
+          SET index = idx
+          SET idx = numItems
+        END ELSE BEGIN
+          SET skip -= 1
+        END
+      END
+    END
+  END
+END
+
+
+/**
+ * Distributes items as defined in a 2DA table structure.
+ * STR_VAR table  Full path to the item table.
+ */
+DEFINE_ACTION_FUNCTION DISTRIBUTE_ITEMS
+STR_VAR
+  table = ~~
+BEGIN
+  ACTION_IF (FILE_EXISTS ~%table%~) BEGIN
+    COPY - ~%table%~ ~%table%~
+      COUNT_2DA_ROWS 7 numRows
+      FOR (idx = 0; idx < numRows; ++idx) BEGIN
+        READ_2DA_ENTRY idx 0 7 type
+        READ_2DA_ENTRY idx 1 7 res
+        READ_2DA_ENTRY idx 2 7 name
+        READ_2DA_ENTRY idx 3 7 item
+        READ_2DA_ENTRY idx 4 7 count
+        READ_2DA_ENTRY idx 5 7 count2
+        READ_2DA_ENTRY idx 6 7 count3
+        INNER_ACTION BEGIN
+          ACTION_IF (~%type%~ STRING_EQUAL_CASE ~ACTOR~) BEGIN
+            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.cre~) BEGIN
+              COPY_EXISTING ~%res%.cre~ ~override~
+                PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~) BEGIN TEXT_SPRINT name ~NONE~ END
+                ADD_CRE_ITEM ~%item%~ (count) (count2) (count3) ~%name%~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16 QITEM1 QITEM2 QITEM3 QUIVER1 QUIVER2 QUIVER3 QUIVER4~
+              BUT_ONLY
+            END
+          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~STORE~) BEGIN
+            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.sto~) BEGIN
+              COPY_EXISTING ~%res%.sto~ ~override~
+                // TODO: This is a work-around for missing variable evaluation of ADD_STORE_ITEM's flags parameter. Update when fixed in WeiDU.
+                PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~ OR ~%name%~ STRING_EQUAL_CASE ~IDENTIFIED~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~UNSTEALABLE~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~UNSTEALABLE~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~STOLEN~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~STOLEN~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&STOLEN~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&STOLEN~ (count)
+                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&UNSTEALABLE~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&UNSTEALABLE~ (count)
+                END ELSE BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~NONE~ (count)
+                END
+              BUT_ONLY
+            END
+          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~CONTAINER~) BEGIN
+            ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.ARE~) BEGIN
+              COPY_EXISTING ~%res%.ARE~ ~override~
+                INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY EXACT_MATCH ~*~ ~ ~ END
+                LPF ARE_INDEX_OF_CONTAINER STR_VAR name = EVAL ~%name%~ RET index END
+                PATCH_IF (index >= 0) BEGIN
+                  LPF fj_are_structure
+                  INT_VAR
+                    fj_con_itm_idx    = index
+                    fj_charge0        = count
+                    fj_charge1        = count2
+                    fj_charge2        = count3
+                  STR_VAR
+                    fj_structure_type = "itm"
+                    fj_name           = EVAL "%item%"
+                  END
+                END
+              BUT_ONLY
+            END
+          END
+        END
+      END
+  END
+END
