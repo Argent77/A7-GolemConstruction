@@ -1,0 +1,47 @@
+// *** Type-specific actions (Enemy Greater Flesh Golem) ***
+
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+  RandomNum(2, 1)
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("a7!syfl1",Myself)
+    ReallyForceSpellDeadRES("a7!syfl1",Myself)
+END
+
+IF
+  HaveSpellRES("a7!in02")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 6)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 15)
+    SpellRES("a7!in02", Myself)  // Stinking Cloud
+END
+
+IF
+  HaveSpellRES("a7!in02")
+  See(SecondNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 6)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 15)
+    SpellRES("a7!in02", Myself)  // Stinking Cloud
+END
+
+IF
+  HaveSpellRES("a7!in02")
+  See(ThirdNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 6)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 15)
+    SpellRES("a7!in02", Myself)  // Stinking Cloud
+END

@@ -1,0 +1,202 @@
+// *** Type-specific actions (Enemy Lightning Golem) ***
+
+// Try to get out of harm's way if badly damaged
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 8)
+  HPPercentLT(Myself, 25)
+  !GlobalTimerNotExpired("spellTimer", "LOCALS")
+THEN
+  RESPONSE #20
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [200.200])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #20
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [-200.200])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #20
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [-200.-200])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #20
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [200.-200])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #20
+    RunAwayFrom(LastSeenBy(Myself), 30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 8)
+  HPPercentLT(Myself, 25)
+  GlobalTimerNotExpired("spellTimer", "LOCALS")
+THEN
+  RESPONSE #100
+    RunAwayFrom(LastSeenBy(Myself), 30)
+END
+
+
+// Quickly teleport to enemy and back
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), GIANTHUMANOID)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !Range(NearestEnemyOf(Myself), 4)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+  !GlobalTimerNotExpired("spellTimer", "LOCALS")
+THEN
+  RESPONSE #75
+    SetInterrupt(FALSE)
+    SetGlobalTimer("ability1", "LOCALS", 8)
+    CreateCreatureObjectOffset("a7!mark", Myself, [32.32])
+    ForceSpellRES("a7!in15", LastSeenBy(Myself))  // Lightning Travel
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #25
+    SetGlobalTimer("ability1", "LOCALS", 6)
+    Continue()
+END
+
+IF
+  See(SecondNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), GIANTHUMANOID)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !Range(NearestEnemyOf(Myself), 4)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+  !GlobalTimerNotExpired("spellTimer", "LOCALS")
+THEN
+  RESPONSE #75
+    SetInterrupt(FALSE)
+    SetGlobalTimer("ability1", "LOCALS", 8)
+    CreateCreatureObjectOffset("a7!mark", Myself, [32.32])
+    ForceSpellRES("a7!in15", LastSeenBy(Myself))  // Lightning Travel
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #25
+    SetGlobalTimer("ability1", "LOCALS", 6)
+    Continue()
+END
+
+
+IF
+  HaveSpellRES("a7!in07")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability2", "LOCALS")
+THEN
+  RESPONSE #75
+    SetGlobalTimer("ability2", "LOCALS", 12)
+    SetGlobalTimer("spellTimer", "LOCALS", 6)
+    SpellRES("a7!in07", LastSeenBy(Myself))  // Chain Lightning
+  RESPONSE #25
+    SetGlobalTimer("ability2", "LOCALS", 6)
+    Continue()
+END
+
+IF
+  HaveSpellRES("a7!in07")
+  See(SecondNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability2", "LOCALS")
+THEN
+  RESPONSE #75
+    SetGlobalTimer("ability2", "LOCALS", 12)
+    SetGlobalTimer("spellTimer", "LOCALS", 6)
+    SpellRES("a7!in07", LastSeenBy(Myself))  // Chain Lightning
+  RESPONSE #25
+    SetGlobalTimer("ability2", "LOCALS", 6)
+    Continue()
+END
+
+IF
+  HaveSpellRES("a7!in07")
+  See(ThirdNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability2", "LOCALS")
+THEN
+  RESPONSE #75
+    SetGlobalTimer("ability2", "LOCALS", 12)
+    SetGlobalTimer("spellTimer", "LOCALS", 6)
+    SpellRES("a7!in07", LastSeenBy(Myself))  // Chain Lightning
+  RESPONSE #25
+    SetGlobalTimer("ability2", "LOCALS", 6)
+    Continue()
+END
+
+
+// Try to keep distance from enemy
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 8)
+  GlobalTimerNotExpired("ability1", "LOCALS")
+  OR(2)
+    GlobalTimerNotExpired("ability2", "LOCALS")
+    !HaveSpellRES("a7!in07")
+  !GlobalTimerNotExpired("spellTimer", "LOCALS")
+THEN
+  RESPONSE #25
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [100.100])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #25
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [-100.100])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #25
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [-100.-100])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+  RESPONSE #25
+    SetInterrupt(FALSE)
+    CreateCreatureObjectOffset("a7!mark", Myself, [100.-100])
+    ForceSpellRES("a7!in15", "a7!mark")  // Lightning Travel
+    ActionOverride("a7!mark", DestroySelf())
+    SetInterrupt(TRUE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 8)
+  GlobalTimerNotExpired("ability1", "LOCALS")
+  GlobalTimerNotExpired("ability2", "LOCALS")
+  GlobalTimerNotExpired("spellTimer", "LOCALS")
+THEN
+  RESPONSE #100
+    RunAwayFrom(LastSeenBy(Myself), 30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 15)
+THEN
+  RESPONSE #50
+    RunAwayFrom(LastSeenBy(Myself), 30)
+  RESPONSE #50
+    Continue()
+END

@@ -1,0 +1,37 @@
+// *** Type-specific actions (Enemy Stone Golem) ***
+
+IF
+  HaveSpellRES("a7!in04")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 30)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 48)
+    SpellRES("a7!in04", Myself)  // Golem Slow
+END
+
+IF
+  HaveSpellRES("a7!in04")
+  See(SecondNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 30)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 48)
+    SpellRES("a7!in04", Myself)  // Golem Slow
+END
+
+IF
+  HaveSpellRES("a7!in04")
+  See(ThirdNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 30)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 48)
+    SpellRES("a7!in04", Myself)  // Golem Slow
+END

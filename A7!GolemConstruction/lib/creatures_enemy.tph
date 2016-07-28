@@ -1,0 +1,407 @@
+// *** Installing enemy golems ***
+
+// OUTER_SET slot_golem_iron_iwd_mini = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_IRON_IWD_MINI~)
+// OUTER_SET slot_golem_iron_mini = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_IRON_MINI~)
+// OUTER_SET slot_golem_maggot = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_MAGGOT~)
+// OUTER_SET slot_golem_lightning = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_LIGHTNING~)
+// OUTER_SET slot_golem_ruby = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_RUBY~)
+
+// Flesh Golems
+COPY ~%MOD_FOLDER%/creatures/a7!gxfl1.cre~ ~override~
+  SAY NAME1 @1001 // Lesser Flesh Golem
+  SAY NAME2 @1001 // Lesser Flesh Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxfl1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+COPY ~%MOD_FOLDER%/creatures/a7!gyfl1.cre~ ~override~
+  SAY NAME1 @1001 // Lesser Flesh Golem
+  SAY NAME2 @1001 // Lesser Flesh Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxdef~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxfl1~ #8
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxfl2.cre~ ~override~
+  SAY NAME1 @1002 // Flesh Golem
+  SAY NAME2 @1002 // Flesh Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxfl2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+COPY ~%MOD_FOLDER%/creatures/a7!gyfl2.cre~ ~override~
+  SAY NAME1 @1002 // Flesh Golem
+  SAY NAME2 @1002 // Flesh Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxfl2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxfl3.cre~ ~override~
+  SAY NAME1 @1003 // Greater Flesh Golem
+  SAY NAME2 @1003 // Greater Flesh Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxfl3~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
+  ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (3)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxfl4.cre~ ~override~
+  SAY NAME1 @1004 // Perfect Flesh Golem
+  SAY NAME2 @1004 // Perfect Flesh Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxfl4~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
+  ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (5)
+
+
+// Clay Golems
+COPY ~%MOD_FOLDER%/creatures/a7!gxcl1.cre~ ~override~
+  SAY NAME1 @2001 // Lesser Clay Golem
+  SAY NAME2 @2001 // Lesser Clay Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxcl1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+COPY ~%MOD_FOLDER%/creatures/a7!gycl1.cre~ ~override~
+  SAY NAME1 @2001 // Lesser Clay Golem
+  SAY NAME2 @2001 // Lesser Clay Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxcl1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxcl2.cre~ ~override~
+  SAY NAME1 @2002 // Clay Golem
+  SAY NAME2 @2002 // Clay Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxcl2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (2)
+COPY ~%MOD_FOLDER%/creatures/a7!gycl2.cre~ ~override~
+  SAY NAME1 @2002 // Clay Golem
+  SAY NAME2 @2002 // Clay Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxcl2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (2)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxcl3.cre~ ~override~
+  SAY NAME1 @2003 // Greater Clay Golem
+  SAY NAME2 @2003 // Greater Clay Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxcl3~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (5)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxcl4.cre~ ~override~
+  SAY NAME1 @2004 // Perfect Clay Golem
+  SAY NAME2 @2004 // Perfect Clay Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxcl4~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (8)
+
+
+// Stone Golems
+COPY ~%MOD_FOLDER%/creatures/a7!gxst1.cre~ ~override~
+  SAY NAME1 @3001 // Lesser Stone Golem
+  SAY NAME2 @3001 // Lesser Stone Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxst1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+COPY ~%MOD_FOLDER%/creatures/a7!gyst1.cre~ ~override~
+  SAY NAME1 @3001 // Lesser Stone Golem
+  SAY NAME2 @3001 // Lesser Stone Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxst1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxst2.cre~ ~override~
+  SAY NAME1 @3002 // Stone Golem
+  SAY NAME2 @3002 // Stone Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxst2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (2)
+COPY ~%MOD_FOLDER%/creatures/a7!gyst2.cre~ ~override~
+  SAY NAME1 @3002 // Stone Golem
+  SAY NAME2 @3002 // Stone Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxst2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (2)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxst3.cre~ ~override~
+  SAY NAME1 @3003 // Greater Stone Golem
+  SAY NAME2 @3003 // Greater Stone Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxst3~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (5)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxst4.cre~ ~override~
+  SAY NAME1 @3004 // Perfect Stone Golem
+  SAY NAME2 @3004 // Perfect Stone Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxst4~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (8)
+
+
+// Iron Golems
+COPY ~%MOD_FOLDER%/creatures/a7!gxir1.cre~ ~override~
+  SAY NAME1 @4001 // Lesser Iron Golem
+  SAY NAME2 @4001 // Lesser Iron Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxir1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_iron_iwd_mini
+COPY ~%MOD_FOLDER%/creatures/a7!gyir1.cre~ ~override~
+  SAY NAME1 @4001 // Lesser Iron Golem
+  SAY NAME2 @4001 // Lesser Iron Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxir1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_iron_iwd_mini
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxir2.cre~ ~override~
+  SAY NAME1 @4002 // Iron Golem
+  SAY NAME2 @4002 // Iron Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxir2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (3)
+COPY ~%MOD_FOLDER%/creatures/a7!gyir2.cre~ ~override~
+  SAY NAME1 @4002 // Iron Golem
+  SAY NAME2 @4002 // Iron Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxir2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (3)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxir3.cre~ ~override~
+  SAY NAME1 @4003 // Greater Iron Golem
+  SAY NAME2 @4003 // Greater Iron Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxir3~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (6)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxir4.cre~ ~override~
+  SAY NAME1 @4004 // Perfect Iron Golem
+  SAY NAME2 @4004 // Perfect Iron Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxir4~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (9)
+
+
+// Mithral Golems
+COPY ~%MOD_FOLDER%/creatures/a7!gxmi1.cre~ ~override~
+  SAY NAME1 @5001 // Lesser Mithral Golem
+  SAY NAME2 @5001 // Lesser Mithral Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxmi1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_iron_mini
+COPY ~%MOD_FOLDER%/creatures/a7!gymi1.cre~ ~override~
+  SAY NAME1 @5001 // Lesser Mithral Golem
+  SAY NAME2 @5001 // Lesser Mithral Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxmi1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_iron_mini
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxmi2.cre~ ~override~
+  SAY NAME1 @5002 // Mithral Golem
+  SAY NAME2 @5002 // Mithral Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxmi2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
+COPY ~%MOD_FOLDER%/creatures/a7!gymi2.cre~ ~override~
+  SAY NAME1 @5002 // Mithral Golem
+  SAY NAME2 @5002 // Mithral Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxmi2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxmi3.cre~ ~override~
+  SAY NAME1 @5003 // Greater Mithral Golem
+  SAY NAME2 @5003 // Greater Mithral Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxmi3~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxmi4.cre~ ~override~
+  SAY NAME1 @5004 // Perfect Mithral Golem
+  SAY NAME2 @5004 // Perfect Mithral Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxmi4~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (4)
+
+
+// Adamantite Golems
+COPY ~%MOD_FOLDER%/creatures/a7!gxad1.cre~ ~override~
+  SAY NAME1 @6001 // Lesser Adamantite Golem
+  SAY NAME2 @6001 // Lesser Adamantite Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxad1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_iron_mini
+COPY ~%MOD_FOLDER%/creatures/a7!gyad1.cre~ ~override~
+  SAY NAME1 @6001 // Lesser Adamantite Golem
+  SAY NAME2 @6001 // Lesser Adamantite Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxad1~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_iron_mini
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxad2.cre~ ~override~
+  SAY NAME1 @6002 // Adamantite Golem
+  SAY NAME2 @6002 // Adamantite Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxad2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
+COPY ~%MOD_FOLDER%/creatures/a7!gyad2.cre~ ~override~
+  SAY NAME1 @6002 // Adamantite Golem
+  SAY NAME2 @6002 // Adamantite Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxad2~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxad3.cre~ ~override~
+  SAY NAME1 @6003 // Greater Adamantite Golem
+  SAY NAME2 @6003 // Greater Adamantite Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxad3~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (5)
+
+COPY ~%MOD_FOLDER%/creatures/a7!gxad4.cre~ ~override~
+  SAY NAME1 @6004 // Perfect Adamantite Golem
+  SAY NAME2 @6004 // Perfect Adamantite Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxad4~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (8)
+
+
+// Maggot Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gxmg.cre~ ~override~
+  SAY NAME1 @7001 // Maggot Golem
+  SAY NAME2 @7001 // Maggot Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxmg~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_maggot
+
+
+// Bone Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gxbo.cre~ ~override~
+  SAY NAME1 @8001 // Bone Golem
+  SAY NAME2 @8001 // Bone Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxbo~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in13~ #0 ~innate~   // Hideous Laughter
+  ADD_MEMORIZED_SPELL ~a7!in13~ #0 ~innate~ (4)
+
+
+// Brain Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gxbr.cre~ ~override~
+  SAY NAME1 @9001 // Brain Golem
+  SAY NAME2 @9001 // Brain Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxbr~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in09~ #0 ~innate~   // Mind Blast
+  ADD_MEMORIZED_SPELL ~a7!in09~ #0 ~innate~ (4)
+
+
+// Ice Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gxic.cre~ ~override~
+  SAY NAME1 @10001 // Ice Golem
+  SAY NAME2 @10001 // Ice Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxic~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in10~ #0 ~innate~   // Scolding Steam
+  ADD_MEMORIZED_SPELL ~a7!in10~ #0 ~innate~ (4)
+
+
+// Magic Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gxma.cre~ ~override~
+  SAY NAME1 @11001 // Magic Golem
+  SAY NAME2 @11001 // Magic Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxma~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  ADD_KNOWN_SPELL ~a7!in11~ #0 ~innate~   // Wild Magic Flare
+  ADD_MEMORIZED_SPELL ~a7!in11~ #0 ~innate~ (3)
+
+
+// Lightning Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gxlt.cre~ ~override~
+  SAY NAME1 @12001 // Lightning Golem
+  SAY NAME2 @12001 // Lightning Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxlt~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_lightning
+  ADD_KNOWN_SPELL ~a7!in15~ #0 ~innate~   // Lightning Travel
+  ADD_MEMORIZED_SPELL ~a7!in15~ #0 ~innate~
+  ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~   // Chain Lightning
+  ADD_MEMORIZED_SPELL ~a7!in07~ #0 ~innate~ (5)
+
+
+// Ruby Golem
+COPY ~%MOD_FOLDER%/creatures/a7!gxru.cre~ ~override~
+  SAY NAME1 @13001 // Ruby Golem
+  SAY NAME2 @13001 // Ruby Golem
+  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxru~ #8
+  WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
+  WRITE_LONG 0x28 slot_golem_ruby
+  ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
+  ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (3)
+
+
+// Scripts
+COMPILE ~%MOD_FOLDER%/scripts/a7!gxdef.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxfl1.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxfl2.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxfl3.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxfl4.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxcl1.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxcl2.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxcl3.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxcl4.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxst1.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxst2.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxst3.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxst4.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxir1.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxir2.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxir3.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxir4.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxmi1.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxmi2.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxmi3.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxmi4.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxad1.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxad2.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxad3.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxad4.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxmg.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxbo.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxbr.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxic.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxma.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxlt.baf~
+        ~%MOD_FOLDER%/scripts/a7!gxru.baf~
+
+
+COPY ~%MOD_FOLDER%/spells/a7!syfl1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syfl2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sycl1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sycl2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syst1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syst2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syir1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syir2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!symi1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!symi2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syad1.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syad2.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syfl1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syfl2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sycl1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!sycl2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syst1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syst2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syir1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syir2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!symi1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!symi2.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syad1.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!syad2.eff~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!mark.cre~ ~override~

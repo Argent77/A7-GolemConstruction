@@ -729,7 +729,7 @@ COPY_EXISTING ~e0f0.ini~ ~override~
 // Magic Golem
 COPY ~%MOD_FOLDER%/creatures/a7!glma.cre~ ~override~
   SAY NAME1 @11001 // Magic Golem
-  SAY NAME2 @11001 // Brain Golem
+  SAY NAME2 @11001 // Magic Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
   WRITE_ASCII SCRIPT_CLASS ~a7!glma~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
@@ -849,15 +849,22 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
+// Installing enemy golems
+INCLUDE ~%MOD_FOLDER%/lib/creatures_enemy.tph~
+
+
 // Adding random treasure tables for clay golems
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDCL1" item = "A7!CLAY" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 30 STR_VAR treasure = "A7!RDCL2" item = "A7!CLAY" END
 ACTION_IF (GAME_IS ~bgee~) BEGIN
   COPY_EXISTING ~a7!glcl1.cre~ ~override~
+                ~a7!gxcl1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~a7!glcl2.cre~ ~override~
                 ~a7!gscl2.cre~ ~override~
+                ~a7!gxcl2.cre~ ~override~
+                ~a7!gycl2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
@@ -867,6 +874,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~igolfle4.cre~ ~override~
                 ~a7!glcl1.cre~ ~override~
                 ~a7!gscl1.cre~ ~override~
+                ~a7!gxcl1.cre~ ~override~
+                ~a7!gycl1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~clgol01.cre~ ~override~
@@ -875,6 +884,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~ppiron.cre~ ~override~
                 ~a7!glcl2.cre~ ~override~
                 ~a7!gscl2.cre~ ~override~
+                ~a7!gxcl2.cre~ ~override~
+                ~a7!gycl2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
@@ -893,6 +904,8 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   ACTION_IF (GAME_IS ~bgee~) BEGIN
     COPY_EXISTING ~a7!glst2.cre~ ~override~
                   ~a7!gsst2.cre~ ~override~
+                  ~a7!gxst2.cre~ ~override~
+                  ~a7!gyst2.cre~ ~override~
       ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
   END
 END
@@ -905,6 +918,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~stgol01.cre~ ~override~
                 ~a7!glst2.cre~ ~override~
                 ~a7!gsst2.cre~ ~override~
+                ~a7!gxst2.cre~ ~override~
+                ~a7!gyst2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
@@ -912,12 +927,16 @@ END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDIR1" item = "A7!IRON" END
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 40 STR_VAR treasure = "A7!RDIR2" item = "A7!IRON" END
-  COPY_EXISTING ~a7!glmi1.cre~ ~override~
+  COPY_EXISTING ~a7!glir1.cre~ ~override~
+                ~a7!gxir1.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~goliro01.cre~ ~override~
                 ~kpgol04.cre~ ~override~
                 ~a7!glir2.cre~ ~override~
                 ~a7!gsir2.cre~ ~override~
+                ~a7!gxir2.cre~ ~override~
+                ~a7!gyir2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
@@ -927,10 +946,14 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDMI1" item = "A7!MITH" END
   COPY_EXISTING ~a7!glmi1.cre~ ~override~
                 ~a7!gsmi1.cre~ ~override~
+                ~a7!gxmi1.cre~ ~override~
+                ~a7!gymi1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~a7!glmi2.cre~ ~override~
                 ~a7!gsmi2.cre~ ~override~
+                ~a7!gxmi2.cre~ ~override~
+                ~a7!gymi2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdmi1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
@@ -940,11 +963,15 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDAD1" item = "A7!ADAM" END
   COPY_EXISTING ~a7!glad1.cre~ ~override~
                 ~a7!gsad1.cre~ ~override~
+                ~a7!gxad1.cre~ ~override~
+                ~a7!gyad1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~golada01.cre~ ~override~
                 ~a7!glad2.cre~ ~override~
                 ~a7!gsad2.cre~ ~override~
+                ~a7!gxad2.cre~ ~override~
+                ~a7!gyad2.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdad1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
@@ -973,6 +1000,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~suundead.cre~ ~override~
                 ~tanskw1.cre~ ~override~
                 ~a7!glbo.cre~ ~override~
+                ~a7!gxbo.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdbo1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
@@ -986,6 +1014,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     ADD_CRE_ITEM ~a7!rdbr2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~a7!glbr.cre~ ~override~
+                ~a7!gxbr.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdbr1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
@@ -995,6 +1024,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~golice01.cre~ ~override~
                 ~gorgoli.cre~ ~override~
                 ~a7!glic.cre~ ~override~
+                ~a7!gxic.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdic1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 END
 
@@ -1034,6 +1064,9 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     COPY_EXISTING ~a7!glfl2.cre~ ~override~
                   ~a7!glfl3.cre~ ~override~
                   ~a7!glfl4.cre~ ~override~
+                  ~a7!gxfl2.cre~ ~override~
+                  ~a7!gxfl3.cre~ ~override~
+                  ~a7!gxfl4.cre~ ~override~
       ADD_CRE_ITEM ~a7!rdbd3~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
   END
 END
@@ -1076,6 +1109,9 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     COPY_EXISTING ~a7!glfl2.cre~ ~override~
                   ~a7!glfl3.cre~ ~override~
                   ~a7!glfl4.cre~ ~override~
+                  ~a7!gxfl2.cre~ ~override~
+                  ~a7!gxfl3.cre~ ~override~
+                  ~a7!gxfl4.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdbd3~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
 
   COPY_EXISTING ~gorlic01.cre~ ~override~
@@ -1099,6 +1135,7 @@ LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDRU1" ite
 LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 10 chance_1 = 10 STR_VAR treasure = "A7!RDRU2" item_0 = "A7!RUBY" item_1 = "MISC16" END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~a7!glru.cre~ ~override~
+                ~a7!gxru.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~

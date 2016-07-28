@@ -1,0 +1,20 @@
+// *** Type-specific actions (Perfect Clay Golem) ***
+
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("a7!sycl2",Myself)
+    ReallyForceSpellDeadRES("a7!sycl2",Myself)
+END
+
+IF
+  HaveSpellRES("a7!in03")
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in03", Myself)  // Golem Haste
+END

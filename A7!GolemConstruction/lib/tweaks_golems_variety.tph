@@ -1,0 +1,514 @@
+// *** Tweaks: Greater variety of enemy golem types ***
+
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // Stone Golem
+  COPY_EXISTING ~bd1000.are~ ~override~
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "BDMENGO1" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        WRITE_ASCII (offset + 0x50) ~~ #8         // override script
+        WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+      END
+    END
+  BUT_ONLY
+
+  // Stone Golems in Dragonspear Castle exterior
+  COPY_EXISTING ~bd4000.are~ ~override~
+    FOR (idx = 0; idx < 2; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "STONE GOLEM" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          WRITE_ASCII (offset + 0x58) ~A7!GXST2~ #8 // general script
+          WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+        END
+      END
+    END
+  BUT_ONLY
+
+  // Improved animation for Lesser Stone Golems
+  COPY_EXISTING ~bdpetsg.cre~ ~override~
+                ~bdpetsg2.cre~ ~override~
+                ~bdpetsgs.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+END
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Planar Prison
+  COPY_EXISTING ~ar0521.are~ ~override~
+    // Replacing golems
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "Stone Golem" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+      END
+    END
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "Clay Golem" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        WRITE_ASCII (offset + 0x80) ~A7!GXCL2~ #8 // CRE resource
+      END
+    END
+    // Adding lesser golem variants
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 302
+      fj_loc_y        = 640
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+      fj_orientation  = 8 // north
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Lesser_Clay_Golem"
+      fj_cre_resref     = "A7!GXCL1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 430
+      fj_loc_y        = 625
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+      fj_orientation  = 8 // north
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Lesser_Stone_Golem"
+      fj_cre_resref     = "A7!GXST1"
+    END
+  BUT_ONLY
+
+  // Cowled Wizard in Docks District
+  COPY_EXISTING ~ar0316.are~ ~override~
+    // Replacing golems
+    FOR (idx = 0; idx < 2; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "Stone Golem" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+        END
+      END
+    END
+    // Adding lesser golem variants
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 405
+      fj_loc_y        = 422
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+      fj_orientation  = 2 // sw
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Lesser_Stone_Golem"
+      fj_cre_resref     = "A7!GXST1"
+    END
+  BUT_ONLY
+
+  // Firkraag's dungeon
+  COPY_EXISTING ~ar1202.are~ ~override~
+    // Replacing golems
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "Adamantium Golem" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        WRITE_ASCII (offset + 0x80) ~A7!GXAD2~ #8 // CRE resource
+      END
+    END
+    FOR (idx = 0; idx < 2; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "Stone Golem" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+        END
+      END
+    END
+    // Adding lesser golem variants
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 812
+      fj_loc_y        = 748
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Lesser_Adamantite_Golem"
+      fj_cre_resref     = "A7!GXAD1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 505
+      fj_loc_y        = 656
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Lesser_Stone_Golem"
+      fj_cre_resref     = "A7!GXST1"
+    END
+  BUT_ONLY
+
+  // Planar Sphere, Spellhold Maze, Suldanessalar Home
+  COPY_EXISTING ~ar0411.are~ ~override~
+                ~ar0413.are~ ~override~
+                ~ar1512.are~ ~override~
+                ~ar2802.are~ ~override~
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "Clay Golem" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        WRITE_ASCII (offset + 0x80) ~A7!GXCL2~ #8 // CRE resource
+      END
+    END
+  BUT_ONLY
+
+  // Spellhold, WK Level 1
+  COPY_EXISTING ~ar1514.are~ ~override~
+                ~ar1515.are~ ~override~
+                ~ar3001.are~ ~override~
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "Stone Golem" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        PATCH_IF (RANDOM (0 1) = 0) BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+        END ELSE BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXST3~ #8 // CRE resource
+        END
+      END
+    END
+  BUT_ONLY
+
+  // Suldanessalar Temple
+  COPY_EXISTING ~ar2803.are~ ~override~
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "Iron Golem" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        SET chance = RANDOM (0 3)
+        PATCH_IF (chance = 0) BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXMI2~ #8 // CRE resource
+        END ELSE PATCH_IF (chance = 1) BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXIR3~ #8 // CRE resource
+        END ELSE BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXIR2~ #8 // CRE resource
+        END
+      END
+    END
+  BUT_ONLY
+
+  // Suldanessalar Home
+  COPY_EXISTING ~ar2802.are~ ~override~
+    FOR (idx = 0; idx < 2; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "Stone Golem" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+        END
+      END
+    END
+  BUT_ONLY
+
+  // WK Level 4
+  COPY_EXISTING ~ar3017.are~ ~override~
+    FOR (idx = 0; idx < 2; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "Magic Golem" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          WRITE_ASCII (offset + 0x80) ~A7!GXMA~ #8 // CRE resource
+        END
+      END
+    END
+  BUT_ONLY
+
+  // Dungeon (Hexxat Quest)
+  COPY_EXISTING ~oh7300.are~ ~override~
+    FOR (idx = 0; idx < 9; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "Sand Golem" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          SET chance = RANDOM (0 4)
+          PATCH_IF (chance = 0) BEGIN
+            WRITE_ASCII (offset + 0x80) ~A7!GXCL2~ #8 // CRE resource
+          END ELSE PATCH_IF (chance = 1) BEGIN
+            WRITE_ASCII (offset + 0x80) ~A7!GXCL3~ #8 // CRE resource
+          END ELSE PATCH_IF (chance = 2) BEGIN
+            WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+          END ELSE PATCH_IF (chance = 3) BEGIN
+            WRITE_ASCII (offset + 0x80) ~A7!GXST3~ #8 // CRE resource
+          END
+        END
+      END
+    END
+  BUT_ONLY
+
+  // Ust Natha, Egg Chamber of Temple
+  COPY_EXISTING ~ar2201.are~ ~override~
+    // Clay Golems
+    FOR (idx = 0; idx < 2; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "Clay Golem" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          PATCH_IF (RANDOM (0 1) = 0) BEGIN
+            WRITE_ASCII (offset + 0x60) ~A7!GXCL2~ #8 // class script
+            WRITE_ASCII (offset + 0x80) ~A7!GXCL2~ #8 // CRE resource
+          END ELSE BEGIN
+            WRITE_ASCII (offset + 0x60) ~A7!GXCL3~ #8 // class script
+            WRITE_ASCII (offset + 0x80) ~A7!GXCL3~ #8 // CRE resource
+          END
+        END
+      END
+    END
+    // Stone Golems
+    FOR (idx = 0; idx < 3; ++idx) BEGIN
+      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "Stone Golem" RET offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x28) flags
+        PATCH_IF (flags BAND 1 = 1) BEGIN
+          PATCH_IF (RANDOM (0 1) = 0) BEGIN
+            WRITE_ASCII (offset + 0x60) ~A7!GXST2~ #8 // class script
+            WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
+          END ELSE BEGIN
+            WRITE_ASCII (offset + 0x60) ~A7!GXST3~ #8 // class script
+            WRITE_ASCII (offset + 0x80) ~A7!GXST3~ #8 // CRE resource
+          END
+        END
+      END
+    END
+  BUT_ONLY
+
+  // Shadow Temple in Umar Hills, Sahuagin City
+  COPY_EXISTING ~ar1401.are~ ~override~
+                ~ar2300.are~ ~override~
+    LPF ARE_INDEX_OF_ACTOR STR_VAR name = "Bone Golem" RET offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x28) flags
+      PATCH_IF (flags BAND 1 = 1) BEGIN
+        WRITE_ASCII (offset + 0x80) ~A7!GXBO~ #8 // CRE resource
+      END
+    END
+  BUT_ONLY
+
+
+  // General golem spawning script
+  COPY_EXISTING ~spwngol.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      // Stone Golems
+      SET chance = RANDOM (0 5)
+      PATCH_IF (chance < 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golsto01",.+)~ ~CreateCreature("a7!gxst2",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golsto01",.+)~ ~CreateCreature("a7!gxst2",[-1.-1],S) CreateCreature("a7!gxst1",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 3) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golsto01",.+)~ ~CreateCreature("a7!gxst2",[-1.-1],S) CreateCreature("a7!gxcl1",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 4) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golsto01",.+)~ ~CreateCreature("a7!gxst3",[-1.-1],S)~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golsto01",.+)~ ~CreateCreature("a7!gxst1",[-1.-1],S) CreateCreature("a7!gxst1",[-1.-1],S)~
+      END
+
+      // Clay Golems
+      SET chance = RANDOM (0 5)
+      PATCH_IF (chance < 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golcla01",.+)~ ~CreateCreature("a7!gxcl2",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golcla01",.+)~ ~CreateCreature("a7!gxcl2",[-1.-1],S) CreateCreature("a7!gxcl1",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 3) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golcla01",.+)~ ~CreateCreature("a7!gxcl2",[-1.-1],S) CreateCreature("a7!gxst1",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 4) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golcla01",.+)~ ~CreateCreature("a7!gxcl3",[-1.-1],S)~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golcla01",.+)~ ~CreateCreature("a7!gxcl1",[-1.-1],S) CreateCreature("a7!gxcl1",[-1.-1],S)~
+      END
+
+      // Iron Golems
+      SET chance = RANDOM (0 5)
+      PATCH_IF (chance < 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("goliro01",.+)~ ~CreateCreature("a7!gxir2",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("goliro01",.+)~ ~CreateCreature("a7!gxir2",[-1.-1],S) CreateCreature("a7!gxir1",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 3) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("goliro01",.+)~ ~CreateCreature("a7!gxir2",[-1.-1],S) CreateCreature("a7!gxst2",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 4) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("goliro01",.+)~ ~CreateCreature("a7!gxir3",[-1.-1],S)~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("goliro01",.+)~ ~CreateCreature("a7!gxmi1",[-1.-1],S) CreateCreature("a7!gxir1",[-1.-1],S)~
+      END
+
+      // Adamantite Golems
+      SET chance = RANDOM (0 5)
+      PATCH_IF (chance < 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golada01",.+)~ ~CreateCreature("a7!gxad2",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 2) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golada01",.+)~ ~CreateCreature("a7!gxad2",[-1.-1],S) CreateCreature("a7!gxir1",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 3) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golada01",.+)~ ~CreateCreature("a7!gxad2",[-1.-1],S) CreateCreature("a7!gxmi1",[-1.-1],S)~
+      END ELSE PATCH_IF (chance = 4) BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golada01",.+)~ ~CreateCreature("a7!gxmi3",[-1.-1],S)~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~CreateCreature("golada01",.+)~ ~CreateCreature("a7!gxmi2",[-1.-1],S) CreateCreature("a7!gxad1",[-1.-1],S)~
+      END
+    END
+  BUT_ONLY
+
+  // Trap in Fire Giant Temple
+  COPY_EXISTING ~yssumm4.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      SET chance = RANDOM (0 4)
+      PATCH_IF (chance < 2) BEGIN
+        REPLACE_TEXTUALLY ~"GOLADA01"~ ~"A7!GXAD2"~
+      END ELSE PATCH_IF (chance = 2) BEGIN
+        REPLACE_TEXTUALLY ~"GOLADA01"~ ~"A7!GXAD3"~
+      END ELSE PATCH_IF (chance = 3) BEGIN
+        REPLACE_TEXTUALLY ~"GOLADA01"~ ~"A7!GXMI2"~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~"GOLADA01"~ ~"A7!GXMI3"~
+      END
+
+      REPLACE_TEXTUALLY ~"GOLMAG01"~ ~"A7!GXMA"~
+
+      SET chance = RANDOM (0 4)
+      PATCH_IF (chance < 2) BEGIN
+        REPLACE_TEXTUALLY ~"GOLCLA01"~ ~"A7!GXCL2"~
+      END ELSE PATCH_IF (chance = 2) BEGIN
+        REPLACE_TEXTUALLY ~"GOLCLA01"~ ~"A7!GXCL3"~
+      END ELSE PATCH_IF (chance = 3) BEGIN
+        REPLACE_TEXTUALLY ~"GOLCLA01"~ ~"A7!GXST2"~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~"GOLCLA01"~ ~"A7!GXST3"~
+      END
+    END
+  BUT_ONLY
+
+  // Suldanessalar Home
+  COPY_EXISTING ~ar2802.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~ActionOverride("golsto01",DestroySelf())~ ~ActionOverride("a7!gxst2",DestroySelf())~
+      REPLACE_TEXTUALLY ~ActionOverride("golcla01",DestroySelf())~ ~ActionOverride("a7!gxcl2",DestroySelf())~
+    END
+  BUT_ONLY
+
+  // Trap in Amkethran crypt
+  COPY_EXISTING ~trtables.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~"golice01"~ ~"a7!gxic"~
+    END
+  BUT_ONLY
+
+  COPY_EXISTING ~c6rakraj.bcs~ ~override~
+                ~c6goljug.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      PATCH_IF (RANDOM (0 1) = 0) BEGIN
+        REPLACE_TEXTUALLY ~"goljug01"~ ~"a7!gxst2"~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~"goljug01"~ ~"a7!gxst3"~
+      END
+    END
+  BUT_ONLY
+
+  COPY_EXISTING ~obsmodtp.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~"golsto01"~ ~"a7!gxst2"~
+    END
+  BUT_ONLY
+
+  COPY_EXISTING ~spwndead.bcs~ ~override~
+                ~tanhigh.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~"icbone01"~ ~"a7!gxbo"~
+    END
+  BUT_ONLY
+
+  COPY_EXISTING ~udmaster.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~"udgolem"~ ~"a7!gxbr"~
+    END
+  BUT_ONLY
+
+
+  // Golems spawned by Wish
+<<<<<<<< .../inlined/wish.d
+REPLACE_TRANS_ACTION ~wish~ BEGIN 7 END BEGIN 0 END ~golada01~ ~a7!gxad2~
+REPLACE_TRANS_ACTION ~wish~ BEGIN 7 END BEGIN 0 END ~golsan01~ ~a7!gxcl3~
+REPLACE_TRANS_ACTION ~wish~ BEGIN 7 END BEGIN 0 END ~goljug01~ ~a7!gxst3~
+>>>>>>>>
+  COMPILE ~.../inlined/wish.d~
+
+  // Updated elven dialog in Suldanessalar
+<<<<<<<< .../inlined/suelf2.d
+REPLACE_STATE_TRIGGER ~suelf2~ 4 ~Global("ElvenAvatar","GLOBAL",0) Dead("a7!gxcl2") NumDeadGT("a7!gxst2",1) Dead("suelf1")~
+>>>>>>>>
+  COMPILE ~.../inlined/suelf2.d~
+
+
+  // random spawns
+  COPY_EXISTING ~spawngrp.2da~ ~override~
+    COUNT_2DA_COLS numCols
+    COUNT_2DA_ROWS numCols numRows
+    FOR (col = 1; col < numCols; ++col) BEGIN
+      READ_2DA_ENTRY 0 (col - 1) (numCols - 1) colName
+      FOR (row = 1; row < numRows; ++row) BEGIN
+        READ_2DA_ENTRY row col numCols value
+        PATCH_IF (~%value%~ STRING_EQUAL_CASE ~golcla01~) BEGIN
+          SET chance = RANDOM (0 3)
+          PATCH_IF (chance = 0 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golcla01~ ~a7!gxcl3~
+          END ELSE PATCH_IF (chance = 1 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golcla01~ ~a7!gxcl4~
+          END ELSE BEGIN
+            REPLACE_TEXTUALLY ~golcla01~ ~a7!gxcl2~
+          END
+        END ELSE PATCH_IF (~%value%~ STRING_EQUAL_CASE ~golsto01~) BEGIN
+          SET chance = RANDOM (0 3)
+          PATCH_IF (chance = 0 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golsto01~ ~a7!gxst3~
+          END ELSE PATCH_IF (chance = 1 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golsto01~ ~a7!gxst4~
+          END ELSE BEGIN
+            REPLACE_TEXTUALLY ~golsto01~ ~a7!gxst2~
+          END
+        END ELSE PATCH_IF (~%value%~ STRING_EQUAL_CASE ~goliro01~) BEGIN
+          SET chance = RANDOM (0 3)
+          PATCH_IF (chance = 0 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~goliro01~ ~a7!gxir3~
+          END ELSE PATCH_IF (chance = 1 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~goliro01~ ~a7!gxmi1~
+          END ELSE BEGIN
+            REPLACE_TEXTUALLY ~goliro01~ ~a7!gxir2~
+          END
+        END ELSE PATCH_IF (~%value%~ STRING_EQUAL_CASE ~golsan01~) BEGIN
+          SET chance = RANDOM (0 5)
+          PATCH_IF (chance = 0 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golsan01~ ~a7!gxcl3~
+          END ELSE PATCH_IF (chance = 1 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golsan01~ ~a7!gxst3~
+          END ELSE PATCH_IF (chance = 2 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golsan01~ ~a7!gxcl4~
+          END ELSE PATCH_IF (chance = 3 AND NOT ~%colName%~ STRING_EQUAL_CASE ~rdgolem~) BEGIN
+            REPLACE_TEXTUALLY ~golsan01~ ~a7!gxst4~
+          END
+        END ELSE PATCH_IF (~%value%~ STRING_EQUAL_CASE ~golice01~) BEGIN
+          REPLACE_TEXTUALLY ~golice01~ ~a7!gxic ~
+        END ELSE PATCH_IF (~%value%~ STRING_EQUAL_CASE ~golmag01~) BEGIN
+          SET chance = RANDOM (0 3)
+          PATCH_IF (chance = 0) BEGIN
+            REPLACE_TEXTUALLY ~golmag01~ ~a7!gxlt ~
+          END ELSE BEGIN
+            REPLACE_TEXTUALLY ~golmag01~ ~a7!gxma ~
+          END
+        END
+      END
+    END
+  BUT_ONLY
+
+
+  // Improved animation for Lesser Stone Golems
+  COPY_EXISTING ~igolfle1.cre~ ~override~
+                ~igolfle2.cre~ ~override~
+                ~igolfle3.cre~ ~override~
+                ~igolfle4.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+END

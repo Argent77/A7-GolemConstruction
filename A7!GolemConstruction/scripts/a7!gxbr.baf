@@ -1,0 +1,37 @@
+// *** Type-specific actions (Enemy Brain Golem) ***
+
+IF
+  HaveSpellRES("a7!in09")
+  Range(NearestEnemyOf(Myself), 25)
+  !General(NearestEnemyOf(Myself), UNDEAD)
+  !Race(NearestEnemyOf(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 30)
+    SpellRES("a7!in09", Myself)  // Mind Blast
+END
+
+IF
+  HaveSpellRES("a7!in09")
+  Range(SecondNearestEnemyOf(Myself), 25)
+  !General(SecondNearestEnemyOf(Myself), UNDEAD)
+  !Race(SecondNearestEnemyOf(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 30)
+    SpellRES("a7!in09", Myself)  // Mind Blast
+END
+
+IF
+  HaveSpellRES("a7!in09")
+  Range(ThirdNearestEnemyOf(Myself), 25)
+  !General(ThirdNearestEnemyOf(Myself), UNDEAD)
+  !Race(ThirdNearestEnemyOf(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 30)
+    SpellRES("a7!in09", Myself)  // Mind Blast
+END

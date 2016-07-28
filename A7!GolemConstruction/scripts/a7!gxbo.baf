@@ -1,0 +1,40 @@
+// *** Type-specific actions (Enemy Bone Golem) ***
+
+IF
+  HaveSpellRES("a7!in13")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 30)
+    SpellRES("a7!in13", Myself)  // Hideous Laughter
+END
+
+IF
+  HaveSpellRES("a7!in13")
+  See(SecondNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 30)
+    SpellRES("a7!in13", Myself)  // Hideous Laughter
+END
+
+IF
+  HaveSpellRES("a7!in13")
+  See(ThirdNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 30)
+    SpellRES("a7!in13", Myself)  // Hideous Laughter
+END

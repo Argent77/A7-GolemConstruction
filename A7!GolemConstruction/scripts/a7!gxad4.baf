@@ -1,0 +1,25 @@
+// *** Type-specific actions (Enemy Perfect Adamantite Golem) ***
+
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("a7!syad2",Myself)
+    ReallyForceSpellDeadRES("a7!syad2",Myself)
+END
+
+IF
+  HaveSpellRES("a7!in06")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 5)
+  OR(3)
+    General(LastSeenBy(Myself), HUMANOID)
+    General(LastSeenBy(Myself), UNDEAD)
+    General(LastSeenBy(Myself), ANIMAL)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in06", LastSeenBy(Myself))  // Trample
+END

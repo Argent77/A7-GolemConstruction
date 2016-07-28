@@ -71,10 +71,10 @@ BEGIN @15 // Improve enemy spellcaster AI
   // INCLUDE ~%MOD_FOLDER%/lib/tweaks_mage_golems.tph~
 
 
-// BEGIN @25 // Greater variety of enemy golem types
-  // REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
-  // GROUP @1  // Tweaks
-  // DESIGNATED 25
+BEGIN @25 // Greater variety of enemy golem types
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 25
 
-  // INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_variety.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_variety.tph~
 

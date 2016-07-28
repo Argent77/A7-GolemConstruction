@@ -1,0 +1,41 @@
+// *** Type-specific actions (Enemy Ice Golem) ***
+
+IF
+  HaveSpellRES("a7!in10")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in10", Myself)  // Scolding Steam
+END
+
+IF
+  HaveSpellRES("a7!in10")
+  See(SecondNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in10", Myself)  // Scolding Steam
+END
+
+IF
+  HaveSpellRES("a7!in10")
+  See(ThirdNearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 25)
+  !General(LastSeenBy(Myself), UNDEAD)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in10", Myself)  // Scolding Steam
+END
+

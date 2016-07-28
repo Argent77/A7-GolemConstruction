@@ -1,0 +1,73 @@
+// *** Type-specific actions (Enemy Magic Golem) ***
+
+IF
+  StoryModeOn()
+  AttackedBy([GOODCUTOFF], DEFAULT)
+  !StateCheck(Myself, STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    AddXPWorthOnce(Myself, TRUE)
+    Kill(Myself)
+END
+
+IF
+  HaveSpellRES("a7!in11")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in11", LastSeenBy(Myself))  // Wild Flare
+END
+
+IF
+  HaveSpellRES("a7!in11")
+  See(SecondNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in11", LastSeenBy(Myself))  // Wild Flare
+END
+
+IF
+  HaveSpellRES("a7!in11")
+  See(ThirdNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  !Race(LastSeenBy(Myself), GOLEM)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in11", LastSeenBy(Myself))  // Wild Flare
+END
+
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Range(NearestEnemyOf(Myself), 7)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    AttackReevaluate(NearestEnemyOf(Myself), 15)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself), 7)
+THEN
+  RESPONSE #100
+    RunAwayFrom(NearestEnemyOf(Myself), 30)
+END
+
+// Prevent the default script from triggering
+IF
+  True()
+THEN
+  RESPONSE #100
+    NoAction()
+END

@@ -1,0 +1,109 @@
+// *** Type-specific actions (Enemy Ruby Golem) ***
+
+IF
+  HaveSpellRES("a7!in14")
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself), 0, CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself), 0, MINORGLOBE)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in14", LastSeenBy(Myself))  // Ruby Ray of Reversal
+END
+
+IF
+  HaveSpellRES("a7!in14")
+  See(SecondNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself), 0, CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself), 0, MINORGLOBE)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in14", LastSeenBy(Myself))  // Ruby Ray of Reversal
+END
+
+IF
+  HaveSpellRES("a7!in14")
+  See(ThirdNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself), 0, CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself), 0, MINORGLOBE)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in14", LastSeenBy(Myself))  // Ruby Ray of Reversal
+END
+
+IF
+  HaveSpellRES("a7!in14")
+  See(FourthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself), 0, CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself), 0, MINORGLOBE)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in14", LastSeenBy(Myself))  // Ruby Ray of Reversal
+END
+
+IF
+  HaveSpellRES("a7!in14")
+  See(FifthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself), 0, CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself), 0, MINORGLOBE)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in14", LastSeenBy(Myself))  // Ruby Ray of Reversal
+END
+
+IF
+  HaveSpellRES("a7!in14")
+  See(SixthNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself), STATE_NOT_TARGETABLE)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself), 0, CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself), 0, WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself), 0, MINORGLOBE)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in14", LastSeenBy(Myself))  // Ruby Ray of Reversal
+END

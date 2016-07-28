@@ -410,6 +410,7 @@ END
  * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching actor to be returned. (Default: 0)
  * STR_VAR name         Name of actor to find.
  * RET index            The actor index if found, or defaultIndex if not found.
+ * RET offset           The offset of the actor structure if found, or -1 if not found.
  */
 DEFINE_PATCH_FUNCTION ARE_INDEX_OF_ACTOR
 INT_VAR
@@ -419,8 +420,10 @@ STR_VAR
   name = ~~
 RET
   index
+  offset
 BEGIN
   SET index = defaultIndex
+  SET offset = "-1"
   READ_LONG 0x54 ofsActors
   READ_SHORT 0x58 numActors
   FOR (idx = 0; idx < numActors; ++idx) BEGIN
@@ -429,6 +432,7 @@ BEGIN
     PATCH_IF (~%curName%~ STRING_EQUAL_CASE ~%name%~) BEGIN
       PATCH_IF (skip <= 0) BEGIN
         SET index = idx
+        SET offset = curOfs
         SET idx = numActors
       END ELSE BEGIN
         SET skip -= 1
@@ -443,6 +447,7 @@ END
  * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching region to be returned. (Default: 0)
  * STR_VAR name         Name of region to find.
  * RET index            The region index if found, or defaultIndex if not found.
+ * RET offset           The offset of the region structure if found, or -1 if not found.
  */
 DEFINE_PATCH_FUNCTION ARE_INDEX_OF_REGION
 INT_VAR
@@ -452,8 +457,10 @@ STR_VAR
   name = ~~
 RET
   index
+  offset
 BEGIN
   SET index = defaultIndex
+  SET offset = "-1"
   READ_SHORT 0x5a numRegions
   READ_LONG 0x5c ofsRegions
   FOR (idx = 0; idx < numRegions; ++idx) BEGIN
@@ -462,6 +469,7 @@ BEGIN
     PATCH_IF (~%curName%~ STRING_EQUAL_CASE ~%name%~) BEGIN
       PATCH_IF (skip <= 0) BEGIN
         SET index = idx
+        SET offset = curOfs
         SET idx = numRegions
       END ELSE BEGIN
         SET skip -= 1
@@ -476,6 +484,7 @@ END
  * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching container to be returned. (Default: 0)
  * STR_VAR name         Name of container to find.
  * RET index            The container index if found, or defaultIndex if not found.
+ * RET offset           The offset of the container structure if found, or -1 if not found.
  */
 DEFINE_PATCH_FUNCTION ARE_INDEX_OF_CONTAINER
 INT_VAR
@@ -485,8 +494,10 @@ STR_VAR
   name = ~~
 RET
   index
+  offset
 BEGIN
   SET index = defaultIndex
+  SET offset = "-1"
   READ_LONG 0x70 ofsContainers
   READ_SHORT 0x74 numContainers
   FOR (idx = 0; idx < numContainers; ++idx) BEGIN
@@ -495,6 +506,7 @@ BEGIN
     PATCH_IF (~%curName%~ STRING_EQUAL_CASE ~%name%~) BEGIN
       PATCH_IF (skip <= 0) BEGIN
         SET index = idx
+        SET offset = curOfs
         SET idx = numContainers
       END ELSE BEGIN
         SET skip -= 1
@@ -509,6 +521,7 @@ END
  * INT_VAR skip         Set to the number of skipped matches, in case you don't want the first matching container to be returned. (Default: 0)
  * STR_VAR resource     Item resource to find.
  * RET index            The item index if found, or defaultIndex if not found.
+ * RET offset           The offset of the item structure if found, or -1 if not found.
  */
 DEFINE_PATCH_FUNCTION ARE_INDEX_OF_CONTAINER_ITEM
 INT_VAR
@@ -518,8 +531,10 @@ STR_VAR
   resource = ~~
 RET
   index
+  offset
 BEGIN
   SET index = defaultIndex
+  SET offset = "-1"
   PATCH_IF (NOT ~%resource%~ STRING_EQUAL ~~) BEGIN
     READ_SHORT 0x76 numItems
     READ_LONG 0x78 ofsItems
@@ -529,6 +544,7 @@ BEGIN
       PATCH_IF (~%curRes%~ STRING_EQUAL_CASE ~%resource%~) BEGIN
         PATCH_IF (skip <= 0) BEGIN
           SET index = idx
+          SET offset = curOfs
           SET idx = numItems
         END ELSE BEGIN
           SET skip -= 1

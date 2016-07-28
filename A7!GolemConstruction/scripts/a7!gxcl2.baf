@@ -1,0 +1,11 @@
+// *** Type-specific actions (Enemy Clay Golem) ***
+
+IF
+  HaveSpellRES("a7!in03")
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 18)
+    SpellRES("a7!in03", Myself)  // Golem Haste
+END

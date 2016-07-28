@@ -1,0 +1,16 @@
+// *** Type-specific actions (Enemy Adamantite Golem) ***
+
+IF
+  HaveSpellRES("a7!in06")
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself), 5)
+  OR(3)
+    General(LastSeenBy(Myself), HUMANOID)
+    General(LastSeenBy(Myself), UNDEAD)
+    General(LastSeenBy(Myself), ANIMAL)
+  !GlobalTimerNotExpired("ability1", "LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ability1", "LOCALS", 12)
+    SpellRES("a7!in06", LastSeenBy(Myself))  // Trample
+END
