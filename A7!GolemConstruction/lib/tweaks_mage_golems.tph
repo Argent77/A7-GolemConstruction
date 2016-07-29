@@ -1,3 +1,475 @@
 // *** Tweaks: Golems for enemy spellcasters ***
 
-// TODO
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // Ruins of Kanaglym
+<<<<<<<< .../inlined/a7!b5300.baf
+IF
+  !Allegiance("BDKHERR", ENEMY)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!b5300.baf~
+  COPY_EXISTING ~bd5300.are~ ~override~
+    SET chance = RANDOM (0 3)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXFL1~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXFL2~
+    END ELSE PATCH_IF (chance = 2) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL1~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST1~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 1350
+      fj_loc_y        = 1330
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+      fj_orientation  = 14 // se
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem"
+      fj_cre_resref     = EVAL "%golemRes%"
+      fj_bcs_override   = "A7!B5300"
+    END
+  BUT_ONLY
+
+
+  // Shadow Druid Ferrusk
+<<<<<<<< .../inlined/bdferrus.baf
+IF
+  Allegiance(Myself, ENEMY)
+  Global("A7!GolemInit", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!GolemInit", "LOCALS", 1)
+    CreateCreatureObjectEffect("A7!GXMG", "SPANISUM", Myself)
+    ActionOverride("A7!GXMG", Wait(1))
+    Continue()
+END
+>>>>>>>>
+  EXTEND_TOP ~bdferrus.bcs~ ~.../inlined/bdferrus.baf~
+
+END
+
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Slaver Compound
+  COPY_EXISTING ~ar0405.are~ ~override~
+    SET chance = RANDOM (0 2)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXFL1~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL1~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST1~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 888
+      fj_loc_y        = 912
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem"
+      fj_cre_resref     = EVAL "%golemRes%"
+    END
+  BUT_ONLY
+
+  // Hideout in Bridge District
+  COPY_EXISTING ~ar0530.are~ ~override~
+    SET chance = RANDOM (0 2)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXFL2~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL2~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST2~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 646
+      fj_loc_y        = 446
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem"
+      fj_cre_resref     = EVAL "%golemRes%"
+    END
+  BUT_ONLY
+
+  // Mindflayer Hideout in Sewers
+  COPY_EXISTING ~ar0711.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 486
+      fj_loc_y        = 274
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Brain_Golem"
+      fj_cre_resref     = "A7!GXBR"
+    END
+  BUT_ONLY
+
+  // Guarded Compound in Temple District
+  COPY_EXISTING ~ar0907.are~ ~override~
+    SET chance = RANDOM (0 5)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXFL2~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL2~
+    END ELSE PATCH_IF (chance = 2) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST2~
+    END ELSE PATCH_IF (chance = 3) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXIR1~
+    END ELSE PATCH_IF (chance = 4) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXMI1~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXAD1~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 1035
+      fj_loc_y        = 690
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 2 // sw
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem"
+      fj_cre_resref     = EVAL "%golemRes%"
+    END
+  BUT_ONLY
+
+  // Cowled Wizard on Pirate Isle
+<<<<<<<< .../inlined/a7!1605.baf
+IF
+  !Allegiance("ppcowled", ENEMY)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!1605.baf~
+  COPY_EXISTING ~ar1605.are~ ~override~
+    SET chance = RANDOM (0 2)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXFL2~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL2~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST2~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 300
+      fj_loc_y        = 274
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 14 // se
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem"
+      fj_cre_resref     = EVAL "%golemRes%"
+      fj_bcs_override   = "A7!1605"
+    END
+  BUT_ONLY
+
+  // Wilderness Area
+  COPY_EXISTING ~ar1800.are~ ~override~
+    SET chance = RANDOM (0 5)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXFL4~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL3~
+    END ELSE PATCH_IF (chance = 2) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST3~
+    END ELSE PATCH_IF (chance = 3) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXIR2~
+    END ELSE PATCH_IF (chance = 4) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXMI1~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXAD1~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 920
+      fj_loc_y        = 1080
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem"
+      fj_cre_resref     = EVAL "%golemRes%"
+    END
+  BUT_ONLY
+
+  // Druid Grove exterior
+<<<<<<<< .../inlined/a7!1900.baf
+IF
+  !Allegiance("tdr10a", ENEMY)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!1900.baf~
+  COPY_EXISTING ~ar1900.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 2940
+      fj_loc_y        = 1478
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!MaggotGolem"
+      fj_cre_resref     = "A7!GXMG"
+      fj_bcs_override   = "A7!1900"
+    END
+  BUT_ONLY
+
+  // Ust Natha - Jae'llat
+  COPY_EXISTING ~ar2209.are~ ~override~
+    SET chance = RANDOM (0 5)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL3~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL4~
+    END ELSE PATCH_IF (chance = 2) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST3~
+    END ELSE PATCH_IF (chance = 3) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST4~
+    END ELSE PATCH_IF (chance = 4) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXMI1~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXAD1~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 1340
+      fj_loc_y        = 694
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 0 // south
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem"
+      fj_cre_resref     = EVAL "%golemRes%"
+    END
+  BUT_ONLY
+
+  // Mindflayer Lair in WK Level 4
+  COPY_EXISTING ~ar3021.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 1534
+      fj_loc_y        = 1840
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 8 // north
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Brain_Golem"
+      fj_cre_resref     = "A7!GXBR"
+    END
+  BUT_ONLY
+
+  // Saradush - Gromnir
+<<<<<<<< .../inlined/a7!5002.baf
+IF
+  !Allegiance("gromnir", ENEMY)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!5002.baf~
+  COPY_EXISTING ~ar5002.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 402
+      fj_loc_y        = 520
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 14 // se
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem1"
+      fj_cre_resref     = "A7!GXCL4"
+      fj_bcs_override   = "A7!5002"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 256
+      fj_loc_y        = 766
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 14 // se
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem2"
+      fj_cre_resref     = "A7!GXST4"
+      fj_bcs_override   = "A7!5002"
+    END
+  BUT_ONLY
+
+  // Saradush Sewers
+  COPY_EXISTING ~ar5013.are~ ~override~
+    SET chance = RANDOM (0 5)
+    PATCH_IF (chance = 0) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL2~
+    END ELSE PATCH_IF (chance = 1) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXCL3~
+    END ELSE PATCH_IF (chance = 2) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST2~
+    END ELSE PATCH_IF (chance = 3) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXST3~
+    END ELSE PATCH_IF (chance = 4) BEGIN
+      TEXT_SPRINT golemRes ~A7!GXMI1~
+    END ELSE BEGIN
+      TEXT_SPRINT golemRes ~A7!GXAD1~
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 630
+      fj_loc_y        = 1304
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 8 // north
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem1"
+      fj_cre_resref     = EVAL "%golemRes%"
+    END
+  BUT_ONLY
+
+  // Abazigal's Lair
+  COPY_EXISTING ~ar6005.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 1090
+      fj_loc_y        = 1015
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_ICE~))
+      fj_orientation  = 14 // se
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem1"
+      fj_cre_resref     = "A7!GXIC"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 1420
+      fj_loc_y        = 915
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_ICE~))
+      fj_orientation  = 12 // east
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem2"
+      fj_cre_resref     = "A7!GXIC"
+    END
+  BUT_ONLY
+
+  // Vicross' HQ (Neera's Quest)
+<<<<<<<< .../inlined/a7!O6500.baf
+IF
+  !Allegiance("OHNVICRO", ENEMY)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!O6500.baf~
+  COPY_EXISTING ~oh6500.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 992
+      fj_loc_y        = 1045
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_ICE~))
+      fj_orientation  = 12 // east
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem1"
+      fj_cre_resref     = "A7!GXRU"
+      fj_bcs_override   = "A7!O6500"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 1468
+      fj_loc_y        = 1082
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_ICE~))
+      fj_orientation  = 4 // west
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!Golem2"
+      fj_cre_resref     = "A7!GXRU"
+      fj_bcs_override   = "A7!O6500"
+    END
+  BUT_ONLY
+
+
+  // Athkatla random encounters
+  ACTION_FOR_EACH script IN ~ar0041.bcs~ ~ar0043.bcs~ ~ar0044.bcs~ ~ar0045.bcs~ ~ar0046.bcs~ BEGIN
+    COPY_EXISTING ~%script%~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        PATCH_IF (RANDOM (0 1) = 0) BEGIN
+          REPLACE_TEXTUALLY ~\(CreateCreature("REMAGE01",.+)\)~ ~\1 CreateCreatureObject("A7!GXCL1","REMAGE01",10,0,0)~
+        END ELSE BEGIN
+          REPLACE_TEXTUALLY ~\(CreateCreature("REMAGE01",.+)\)~ ~\1 CreateCreatureObject("A7!GXST1","REMAGE01",10,0,0)~
+        END
+
+        PATCH_IF (RANDOM (0 2) = 0) BEGIN
+          REPLACE_TEXTUALLY ~\(CreateCreature("RETHUG02",.+)\)~ ~\1 CreateCreatureObject("A7!GXFL2","RETHUG02",10,0,0)~
+        END ELSE BEGIN
+          REPLACE_TEXTUALLY ~\(CreateCreature("RETHUG02",.+)\)~ ~\1 CreateCreatureObject("A7!GXFL1","RETHUG02",10,0,0)~
+        END
+
+        PATCH_IF (RANDOM (0 1) = 0) BEGIN
+          REPLACE_TEXTUALLY ~\(CreateCreature("REBAND04",.+)\)~ ~\1 CreateCreatureObject("A7!GXST1","REBAND04",10,0,0)~
+        END ELSE BEGIN
+          REPLACE_TEXTUALLY ~\(CreateCreature("REBAND04",.+)\)~ ~\1 CreateCreatureObject("A7!GXCL1","REBAND04",10,0,0)~
+        END
+      END
+    BUT_ONLY
+  END
+
+  // Random encounter with disguised rakshasa
+  ACTION_FOR_EACH script IN ~rerak01.bcs~ ~rerak02.bcs~ ~rerak03.bcs~ ~rerak04.bcs~ ~rerak05.bcs~ ~rerak06.bcs~ BEGIN
+    COPY_EXISTING ~%script%~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        SET chance = RANDOM (0 8)
+        PATCH_IF (chance = 0) BEGIN
+          REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXFL1","SPFLESHS",Myself) ActionOverride("A7!GXFL1",Wait(1))~
+        END ELSE PATCH_IF (chance = 1) BEGIN
+          REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXFL2","SPFLESHS",Myself) ActionOverride("A7!GXFL2",Wait(1))~
+        END ELSE PATCH_IF (chance = 2) BEGIN
+          REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXCL1","SPFLESHS",Myself) ActionOverride("A7!GXCL1",Wait(1))~
+        END ELSE PATCH_IF (chance = 3) BEGIN
+          REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXCL2","SPFLESHS",Myself) ActionOverride("A7!GXCL2",Wait(1))~
+        END ELSE PATCH_IF (chance = 4) BEGIN
+          REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXST1","SPFLESHS",Myself) ActionOverride("A7!GXST1",Wait(1))~
+        END ELSE PATCH_IF (chance = 5) BEGIN
+          REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXST2","SPFLESHS",Myself) ActionOverride("A7!GXST2",Wait(1))~
+        END ELSE PATCH_IF (chance = 6) BEGIN
+          REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXIR1","SPFLESHS",Myself) ActionOverride("A7!GXIR1",Wait(1))~
+        END
+      END
+    BUT_ONLY
+  END
+
+  // Irenicus at Tree of Life
+<<<<<<<< .../inlined/sujon.baf
+IF
+  Global("A7!GolemInit", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!GolemInit", "LOCALS", 1)
+    CreateCreatureEffect("A7!GXCL4", "SPFLESHS", [1752.1984], SW)
+    ActionOverride("A7!GXCL4", Wait(1))
+    CreateCreatureEffect("A7!GXST4", "SPFLESHS", [1870.2040], S)
+    ActionOverride("A7!GXST4", Wait(1))
+    Continue()
+END
+>>>>>>>>
+  EXTEND_TOP ~sujon.bcs~ ~.../inlined/sujon.baf~
+
+END
