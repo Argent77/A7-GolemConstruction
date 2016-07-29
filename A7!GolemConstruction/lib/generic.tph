@@ -4,8 +4,8 @@
 OUTER_SET specific_golem  = 200
 APPEND ~specific.ids~ ~%specific_golem% A7!GOLEM~ UNLESS ~^%specific_golem%[ %TAB%]~
 
-// max. number of available golems
-OUTER_SET max_golem_count = 3
+// (max. number - 1) of available golems following you
+OUTER_SET max_golem_count = 2
 
 // probably not needed
 APPEND ~gtimes.ids~ ~6 ONE_ROUND~ UNLESS ~ONE_ROUND~

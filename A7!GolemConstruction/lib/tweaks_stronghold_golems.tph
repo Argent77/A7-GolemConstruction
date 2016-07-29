@@ -1,0 +1,174 @@
+// *** Tweaks: Fighter Stronghold golems may continue to serve you ***
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Fixing stronghold golems
+  COPY_EXISTING ~kpgol02.cre~ ~override~
+    WRITE_ASCII DEATHVAR ~kpgol02~ #32
+  BUT_ONLY
+
+  COPY_EXISTING ~kpgol04.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON_IWD~))
+  BUT_ONLY
+
+  // Flesh Golem existence check
+<<<<<<<< .../inlined/a7!glkp1.baf
+IF
+  Dead("kpgol01")
+  Dead("kpgol06")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  OR(2)
+    !Dead("kpgol01")
+    !Dead("kpgol06")
+THEN
+  RESPONSE #50
+    DestroySelf()
+  RESPONSE #50
+    SetGlobal("init", "LOCALS", 2)
+    SetGlobal("MasterOverride", "LOCALS", 1)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SetGlobal("Command", "LOCALS", 2)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    ChangeAIScript("A7!GLDEF", OVERRIDE)
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!glkp1.baf~
+
+  // Clay Golem existence check
+<<<<<<<< .../inlined/a7!glkp2.baf
+IF
+  Dead("kpgol02")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !Dead("kpgol02")
+THEN
+  RESPONSE #67
+    DestroySelf()
+  RESPONSE #33
+    SetGlobal("init", "LOCALS", 2)
+    SetGlobal("MasterOverride", "LOCALS", 1)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SetGlobal("Command", "LOCALS", 2)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    ChangeAIScript("A7!GLDEF", OVERRIDE)
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!glkp2.baf~
+
+  // Stone Golem existence check
+<<<<<<<< .../inlined/a7!glkp3.baf
+IF
+  Dead("kpgol03")
+  Dead("kpgol05")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  OR(2)
+    !Dead("kpgol03")
+    !Dead("kpgol05")
+THEN
+  RESPONSE #67
+    DestroySelf()
+  RESPONSE #33
+    SetGlobal("init", "LOCALS", 2)
+    SetGlobal("MasterOverride", "LOCALS", 1)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SetGlobal("Command", "LOCALS", 2)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    ChangeAIScript("A7!GLDEF", OVERRIDE)
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!glkp3.baf~
+
+  // Stone Golem existence check
+<<<<<<<< .../inlined/a7!glkp4.baf
+IF
+  Dead("kpgol04")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !Dead("kpgol04")
+THEN
+  RESPONSE #85
+    DestroySelf()
+  RESPONSE #15
+    SetGlobal("init", "LOCALS", 2)
+    SetGlobal("MasterOverride", "LOCALS", 1)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SetGlobal("Command", "LOCALS", 2)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    ChangeAIScript("A7!GLDEF", OVERRIDE)
+END
+>>>>>>>>
+  COMPILE ~.../inlined/a7!glkp4.baf~
+
+  // Adding golems to map
+  COPY_EXISTING ~ar1307.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 634
+      fj_loc_y        = 428
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 2 // sw
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!GolemFlesh"
+      fj_cre_resref     = "A7!GLFL2"
+      fj_bcs_override   = "A7!GLKP1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 701
+      fj_loc_y        = 487
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 2 // sw
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!GolemClay"
+      fj_cre_resref     = "A7!GLCL2"
+      fj_bcs_override   = "A7!GLKP2"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 789
+      fj_loc_y        = 543
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_orientation  = 2 // sw
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!GolemStone"
+      fj_cre_resref     = "A7!GLST2"
+      fj_bcs_override   = "A7!GLKP3"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x        = 875
+      fj_loc_y        = 602
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON_IWD~))
+      fj_orientation  = 2 // sw
+    STR_VAR
+      fj_structure_type = "actor"
+      fj_name           = "A7!GolemIron"
+      fj_cre_resref     = "A7!GLIR2"
+      fj_bcs_override   = "A7!GLKP4"
+    END
+
+END
