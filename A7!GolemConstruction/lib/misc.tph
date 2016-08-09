@@ -110,13 +110,20 @@ END
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   // importing items into starting dungeon (one tome and one ingredient)
-  COPY_EXISTING ~ar0602.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE
-        ~\(ActionOverride("Shelf1",TakeItemListPartyNum(.+))\)~
-        ~\1 ActionOverride("Shelf17",TakeItemListPartyNum("A7!IMPT1",1)) ActionOverride("Crate2",TakeItemListPartyNum("A7!IMPT2",1)) ActionOverride("Shelf6",TakeItemListPartyNum("A7!IMPT3",4)) ActionOverride("Drawer1",TakeItemListPartyNum("A7!IMPT4",1))~
-    END
-    BUT_ONLY
+<<<<<<<< .../inlined/ar0602.baf
+IF
+  Global("A7!InitImportItems", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!InitImportItems", "MYAREA", 1)
+    ActionOverride("Shelf17", TakeItemListPartyNum("A7!IMPT1", 1))
+    ActionOverride("Crate2", TakeItemListPartyNum("A7!IMPT2", 1))
+    ActionOverride("Shelf6", TakeItemListPartyNum("A7!IMPT3", 4))
+    ActionOverride("Drawer1", TakeItemListPartyNum("A7!IMPT4", 1))
+    Continue()
+END
+>>>>>>>>
+  EXTEND_TOP ~ar0602.bcs~ ~.../inlined/ar0602.baf~
 
   COPY ~%MOD_FOLDER%/items/a7!impt1.2da~ ~override~
        ~%MOD_FOLDER%/items/a7!impt2.2da~ ~override~
