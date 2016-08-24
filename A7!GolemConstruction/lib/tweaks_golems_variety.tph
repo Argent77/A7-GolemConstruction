@@ -13,20 +13,6 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     END
   BUT_ONLY
 
-  // Stone Golems in Dragonspear Castle exterior
-  COPY_EXISTING ~bd4000.are~ ~override~
-    FOR (idx = 0; idx < 2; ++idx) BEGIN
-      LPF ARE_INDEX_OF_ACTOR INT_VAR skip = idx STR_VAR name = "STONE GOLEM" RET offset END
-      PATCH_IF (offset > 0) BEGIN
-        READ_LONG (offset + 0x28) flags
-        PATCH_IF (flags BAND 1 = 1) BEGIN
-          WRITE_ASCII (offset + 0x58) ~A7!GXST2~ #8 // general script
-          WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
-        END
-      END
-    END
-  BUT_ONLY
-
   // Improved animation for Lesser Stone Golems
   COPY_EXISTING ~bdpetsg.cre~ ~override~
                 ~bdpetsg2.cre~ ~override~
