@@ -1,7 +1,7 @@
 Golem Construction for Spellcasters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:  2.0
+Version:  2.1
 Author:   Argent77
 
 
@@ -120,6 +120,12 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+2.1
+- Removed Dragonspear Castle golems from "Greater variety of enemy golem types" tweak because of 
+  scripting issues
+- Made item import in SoA more compatible
+- Minor textual fixes
 
 2.0
 - Added several tweak components
