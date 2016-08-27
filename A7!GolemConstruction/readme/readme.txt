@@ -111,6 +111,14 @@ minimum caster level and required materials for each golem type, as well as deta
 and abilities of each golem.
 
 
+Credits
+~~~~~~~
+
+Writing, coding and testing: Argent77
+
+Polish translation: Cahir
+
+
 Copyright Notice
 ~~~~~~~~~~~~~~~~
 
@@ -120,6 +128,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+2.2
+  - Minor textual fixes
 
 2.1
 - Removed Dragonspear Castle golems from "Greater variety of enemy golem types" tweak because of 
