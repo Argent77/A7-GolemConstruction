@@ -7,7 +7,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!AddAbilityP1", "MYAREA", 1)
+    ActionOverride(Player1, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player1, AddSpecialAbility("a7!smgl"))
+    ActionOverride(Player1, RemoveSpellRES("a7!glr"))
     ActionOverride(Player1, AddSpecialAbility("a7!glr"))
     Continue()
 END
@@ -19,7 +21,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!AddAbilityP2", "MYAREA", 1)
+    ActionOverride(Player2, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player2, AddSpecialAbility("a7!smgl"))
+    ActionOverride(Player2, RemoveSpellRES("a7!glr"))
     ActionOverride(Player2, AddSpecialAbility("a7!glr"))
     Continue()
 END
@@ -31,7 +35,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!AddAbilityP3", "MYAREA", 1)
+    ActionOverride(Player3, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player3, AddSpecialAbility("a7!smgl"))
+    ActionOverride(Player3, RemoveSpellRES("a7!glr"))
     ActionOverride(Player3, AddSpecialAbility("a7!glr"))
     Continue()
 END
@@ -43,7 +49,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!AddAbilityP4", "MYAREA", 1)
+    ActionOverride(Player4, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player4, AddSpecialAbility("a7!smgl"))
+    ActionOverride(Player4, RemoveSpellRES("a7!glr"))
     ActionOverride(Player4, AddSpecialAbility("a7!glr"))
     Continue()
 END
@@ -55,7 +63,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!AddAbilityP5", "MYAREA", 1)
+    ActionOverride(Player5, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player5, AddSpecialAbility("a7!smgl"))
+    ActionOverride(Player5, RemoveSpellRES("a7!glr"))
     ActionOverride(Player5, AddSpecialAbility("a7!glr"))
     Continue()
 END
@@ -67,7 +77,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!AddAbilityP6", "MYAREA", 1)
+    ActionOverride(Player6, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player6, AddSpecialAbility("a7!smgl"))
+    ActionOverride(Player6, RemoveSpellRES("a7!glr"))
     ActionOverride(Player6, AddSpecialAbility("a7!glr"))
     Continue()
 END
