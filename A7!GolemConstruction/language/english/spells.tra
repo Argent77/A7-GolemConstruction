@@ -135,7 +135,7 @@ Unlike summoned creatures golems can exist for a virtually unlimited span of tim
 @20120 = ~Repair Golem~
 @20121 = ~Repair Golem
 
-This ability allows the caster to repair damaged golems. The whole process primarily includes mending or replacing damaged body parts which is done a speed of 1d10+2 hit points per second over two rounds. As a result you and the golem will be unable to respond for the next 12 seconds.
+This ability allows the caster to repair damaged golems. The whole process primarily includes mending or replacing damaged body parts and lasts two rounds. In this time both golem and caster will be unable to respond. Badly damaged golems may have to be repaired multiple times to fix the whole damage.
 
 The repair process will also remove penalties that may have been applied to badly damaged golems.~
 
