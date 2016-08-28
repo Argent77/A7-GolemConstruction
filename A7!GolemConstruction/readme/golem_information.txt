@@ -237,7 +237,7 @@ Perfect Clay Golem:
   - Crushing: 33
   - Piercing: 100
   - Missile:100
-- Regenerates 1HP/turn
+- Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
 - May cast Haste on self
 - Always splits into two regular golems of same type on death.
@@ -433,7 +433,7 @@ Perfect Iron Golem:
   - Crushing: 25
   - Piercing: 100
   - Missile:100
-- Regenerates 1 HP per round
+- Regenerates 1 HP per three rounds
 - Immune to non-magical, +1 and +2 weapons
 - May cast Gas Cloud on self
 - Always splits into two regular golems of same type on death.
@@ -517,7 +517,7 @@ Greater Mithral Golem:
   - Crushing: 50
   - Piercing: 75
   - Missile: 75
-- Regenerates 1 HP per round
+- Regenerates 1 HP per three rounds
 - Immune to non-magical, +1 and +2 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
@@ -636,7 +636,7 @@ Greater Adamantite Golem:
   - Crushing: 95
   - Piercing: 95
   - Missile: 95
-- Regenerates 1 HP per round
+- Regenerates 1 HP per three rounds
 - Immune to non-magical, +1, +2 and +3 weapons
 - May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
