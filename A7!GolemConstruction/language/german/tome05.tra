@@ -1,0 +1,100 @@
+// -*- coding: utf-8 -*- 
+// Mithral Golem related strings (index 5000..5999)
+
+@5000 = ~Leitfaden der Golemkonstruktion (Band 5)~
+@5001 = ~Niederer Mithrilgolem~
+@5002 = ~Mithrilgolem~
+@5003 = ~Höherer Mithrilgolem~
+@5004 = ~Perfekter Mithrilgolem~
+@5005 = ~Hat gelernt, Mithrilgolems zu erschaffen.~
+
+// *** Book content ***
+@5100 = ~Fünfte Lektion: Mithrilgolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Mithrilgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Die Konstruktion von Mithrilgolems scheint sehr stark an die Grundprinzipien zur Erschaffung von Eisengolems angelehnt zu sein. Der Leitfaden beschreibt sehr genau die Techniken und Fertigkeiten, die zum Bau eines Mithrilgolems notwendig sind und verweist häufig auf diverse Stellen des vierten Bandes dieser Sammlung.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Niederer Mithrilgolem:
+Min. Stufe: 18 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Ein Mithrilbrocken
+- 4.000 vom Erschaffer geopferte Erfahrungspunkte
+
+Mithrilgolem:
+Min. Stufe: 21 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Zwei Mithrilbrocken
+- 8.000 vom Erschaffer geopferte Erfahrungspunkte
+
+Greater Mithrilgolem:
+Min. Stufe: 27 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Vier Mithrilbrocken
+- 16.000 vom Erschaffer geopferte Erfahrungspunkte
+
+Perfect Mithrilgolem:
+Min. Stufe: 27 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Vier Mithrilbrocken
+- 32.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eine Kugel spektrales Obsidian
+
+Anm. des Autors: Mithril ist schwer zu beschaffen und sehr wertvoll. Es ist aber möglich, mit Hilfe eines sorgsam formulierten Wunsches oder begrenzten Wunsches Eisen in Mithril zu verwandeln.
+
+Mindestintelligenz: 18
+
+Gewicht: 10~
+
+@5101 = ~Fünfte Lektion: Mithrilgolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Mithrilgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Die Konstruktion von Mithrilgolems scheint sehr stark an die Grundprinzipien zur Erschaffung von Eisengolems angelehnt zu sein. Der Leitfaden beschreibt sehr genau die Techniken und Fertigkeiten, die zum Bau eines Mithrilgolems notwendig sind und verweist häufig auf diverse Stellen des vierten Bandes dieser Sammlung.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Niederer Mithrilgolem:
+Min. Stufe: 18 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Ein Mithrilbrocken
+- 4.000 vom Erschaffer geopferte Erfahrungspunkte
+
+Mithrilgolem:
+Min. Stufe: 21 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Zwei Mithrilbrocken
+- 8.000 vom Erschaffer geopferte Erfahrungspunkte
+
+Greater Mithrilgolem:
+Min. Stufe: 27 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Vier Mithrilbrocken
+- 16.000 vom Erschaffer geopferte Erfahrungspunkte
+
+Perfect Mithrilgolem:
+Min. Stufe: 27 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Vier Mithrilbrocken
+- 32.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eine Kugel spektrales Obsidian
+
+Anm. des Autors: Mithril ist schwer zu beschaffen und sehr wertvoll. Es ist aber möglich, mit Hilfe eines sorgsam formulierten Wunsches oder begrenzten Wunsches Eisen in Mithril zu verwandeln.
+
+Mindestintelligenz: 18
+
+Gewicht: 1~
+

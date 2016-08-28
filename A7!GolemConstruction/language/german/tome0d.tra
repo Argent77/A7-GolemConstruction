@@ -1,0 +1,53 @@
+// -*- coding: utf-8 -*- 
+// Ruby Golem related strings (index 13000..13999)
+
+@13000 = ~Geheimer Leitfaden der Golemkonstruktion (Band 7)~
+@13001 = ~Rubingolem~
+@13002 = ~Hat gelernt, Rubingolems zu erschaffen.~
+
+// *** Book content ***
+@13100 = ~Über Rubingolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Rubingolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Dieser siebte Band wurde später von einem Oberhaupt der Roten Magier von Tay - dem Zulkir der Schule der Hervorrufung, Aznar Thrul - hinzugefügt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Rubingolem:
+Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Vier Rubine
+- Zwei Feuerachate 
+- Eine Schriftrolle "Rubinroter Strahl der Aufhebung"
+
+Mindestintelligenz: 17
+
+Gewicht: 10~
+
+@13101 = ~Über Rubingolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Rubingolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Dieser siebte Band wurde später von einem Oberhaupt der Roten Magier von Tay - dem Zulkir der Schule der Hervorrufung, Aznar Thrul - hinzugefügt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Rubingolem:
+Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Vier Rubine
+- Zwei Feuerachate 
+- Eine Schriftrolle "Rubinroter Strahl der Aufhebung"
+
+Mindestintelligenz: 17
+
+Gewicht: 1~
+

@@ -1,0 +1,199 @@
+// -*- coding: utf-8 -*- 
+// Spell-related strings (index 20000..29999)
+
+@20000 = ~Golem aufgeben~
+@20001 = ~Golem aufgeben
+
+Reichweite: Anwender
+Dauer: Sofort
+Bereich: Anwender
+Rettungswurf: Nein
+
+Diese Fähigkeit weist den Golem an, sich selbst zu deaktivieren. Die Magie des Golemkörpers löst sich auf und der Geist, der den Golem kontrolliert kehrt in seine Heimatebene zurück. Ohne die erhaltende Kraft der Magie fällt der leblose Körper des Golems schnell in sich zusammen.~
+@20002 = ~Aufgegeben~
+
+@20010 = ~Stinkende Wolke~
+@20011 = ~Stinkende Wolke
+
+Reichweite: Anwender
+Dauer: 3/2 Runden
+Bereich: 4,5 m Radius
+Rettungswurf: Ja (gg. Gift)
+
+Die gewaltige Masse an verrottenden Körperteilen erlaubt es dem Golem eine Wolke aus giftigen Dämpfen um sich herum zu erzeugen. Alle Wesen innerhalb der Wolke müssen einen Rettungswurf +2 gegen Gift bestehen. Wer scheitert, wird von Übelkeit und Brechreiz überkommen und ist 1W2 Runden handlungsunfähig. Wesen, deren Rettungswurf gelungen ist, können die Wolke problemlos verlassen. Bleiben sie jedoch im Wirkungsbereich der Wolke, müssen sie in jeder Runde einen weiteren Rettungswurf bestehen. Ein „Magie bannen“ kann zwar die Übelkeit von einem Wesen entfernen, aber wenn man die Wolke nicht verlässt, können die Symptome erneut auftreten.~
+
+@20020 = ~Golem Hast~
+@20021 = ~Golem Hast
+
+Reichweite: Anwender
+Dauer: 3 Runden
+Bereich: Anwender
+Rettungswurf: Nein
+
+Diese Fähigkeit erlaubt es dem Golem, sich doppelt so schnell zu bewegen. Er erhält außerdem einen Bonus von -2 auf seine Initiative und einen zusätzlichen Angriff pro Runde. Diese Fähigkeit ist nicht kumulativ mit weiteren Hastzaubern oder ähnlicher Magie. Diese Fähigkeit hebt die Auswirkungen von „Verlangsamen“ auf.~
+
+@20030 = ~Golem Verlangsamen~
+@20031 = ~Golem Verlangsamen
+
+Reichweite: Anwender
+Dauer: 8 Runden
+Bereich: 9 m Radius
+Rettungswurf: Ja (gg. Zauber)
+
+Wesen, die von „Verlangsamen“ betroffen sind, bewegen sich mit halber Geschwindigkeit, greifen nur halb so oft pro Runde an wie normal und erleiden einen Malus von +4 auf ihre Rüstungsklasse und einen Malus von -4 auf Trefferwürfe. Die Fähigkeit hebt „Hast“ auf, hat aber sonst keine Auswirkung auf Wesen, die bereits auf magischem Weg beschleunigt oder verlangsamt wurden. Um dem Effekt zu widerstehen ist ein erfolgreicher Rettungswurf -4 gegen Zauber erforderlich.~
+
+@20040 = ~Gaswolke~
+@20041 = ~Gaswolke
+
+Reichweite: Anwender
+Dauer: 3/2 Runden
+Bereich: 4,5 m Radius
+Rettungswurf: Speziell (gg. Gift)
+
+Diese Fähigkeit erzeugt eine grünlich gelbe Giftgaswolke um den Golem herum. Wesen müssen jede Runde einen Rettungswurf -4 gegen Gift bestehen oder werden vergiftet. Das Gift richtet drei Runden lang einen Punkt pro Sekunde Schaden an.~
+
+@20050 = ~Zertrampeln~
+@20051 = ~Zertrampeln
+
+Reichweite: Berührung
+Dauer: Sofort
+Bereich: 1 Wesen
+Rettungswurf: Speziell (gg. Tod)
+
+Größe und Gewicht des Golems erlauben es ihm, einen Gegner, der kleiner ist als er selbst, einfach zu zertrampeln. „Zertrampeln“ richtet 8W10+30 Wuchtschaden and und betäubt das Opfer für eine Runde. Ein erfolgreicher Rettungswurf -4 gegen Tod halbiert den Schaden und verhindert den Betäubungseffekt. Große Gegner, wie Drachen oder Riesen, sind nicht betroffen.~
+@20052 = ~Zertrampelt~
+@20053 = ~Zu groß zum Zertrampeln~
+
+@20060 = ~Kettenblitz~
+@20061 = ~Kettenblitz
+
+
+Reichweite: 12 m
+Dauer: Sofort
+Bereich: Speziell
+Rettungswurf: 1/2 (gg. Zauber)
+
+Nachdem „Kettenblitz“ gewirkt wurde, springen elektrische Entladungen aus den Fingerspitzen des Golems. Diese springen auf alle Feinde in Reichweite über und fügen ihnen elektrischen Schaden zu. Die Blitze verursachen 6W6 Schadenspunkte. Den Opfern steht ein Rettungswurf gegen Zauber für halben Schaden zu.~
+
+
+@20070 = ~Teleportation~
+@20071 = ~Teleportation
+
+Reichweite: 15 m
+Dauer: Sofort
+Bereich: Anwender
+Rettungswurf: Nein
+
+Es kann passieren, dass der Golem in engen Gassen steckenbleibt. Diese Fähigkeit erlaubt es ihm, kurze Passagen zu überwinden, in dem er sich zu einem ausgewählten Gruppenmitglied teleportiert. Diese Fähigkeit funktioniert nur, wenn sich kein Gegner in Sichtweite des Golems aufhält.~
+
+
+@20080 = ~Mentale Druckwelle~
+@20081 = ~Mentale Druckwelle
+
+Reichweite: Anwender
+Dauer: Sofort
+Bereich: 9 m Radius
+Rettungswurf: Speziell (gg. Zauber)
+
+Das große Hirn eines Gehirngolems kann benutzt werden, um eine zerstörerische Kraft an mentaler Energie gegenüber allen Feinden in 9 m Radium um ihn herum freizusetzen. Die Druckwelle richtet 2W8 Schadenspunkte and und betäuben den Feind für 2W4 Runden. Ein erfolgreicher Rettungswurf gegen Zauber halbiert den Schaden und wendet den Betäubungseffekt ab.
+
+Nicht-denkende Wesen, wie Untote, Golems oder Mykonid, sind immun gegenüber dieser Fähigkeit.~
+
+
+@20090 = ~Kochender Dampf~
+@20091 = ~Kochender Dampf
+
+Reichweite: Anwender
+Dauer: Sofort
+Bereich: 9 m Radius
+Rettungswurf: Speziell (gg. Odemwaffen)
+
+Eisgolems können Wellen von gefrorenem Wasserdampf ausstoßen, um Wesen in der Umgebung Schaden zuzufügen. Die Welle geht vom Golem aus in jede Richtung. Sie richtet 3W10 Kälteschaden bei jeder Kreatur in Reichweite an und lähmt sie für eine Runde. Ein erfolgreicher Rettungswurf gegen Odemwaffen halbiert den Schaden und verhindert die Lähmung.~
+
+
+@20100 = ~Unbändige Fackel~
+@20101 = ~Unbändige Fackel
+
+Reichweite: 12 m
+Dauer: Sofort
+Bereich: 1 Wesen
+Rettungswurf: Nein
+
+Magiegolems können ein Wesen in eine Fackel unbändiger Magie verwandeln. Diese Energie richtet beim Opfer 3W10 magischen Schaden an und löst einen zufälligen magischen Effekt aus. Der Effekt kann entweder verheerend oder nützlich für das Opfer sein, und möglicherweise auch für andere in der näheren Umgebung. Magiewiderstand kann sowohl Schaden als auch magischen Effekt verhindern.~
+
+
+@20110 = ~Golem erschaffen~
+@20111 = ~Golem erschaffen
+
+Diese Fähigkeit erlaubt es dem Anwender, einen Golem vom Typ zu erschaffen, den er vorher studiert hat. Für die Konstruktion werden Zutaten benötigt, die je nach Golemtyp und -variante unterschiedlich sind. Mächtigere oder exotische Typem können auch an der Substanz des Anwenders zehren.
+
+Die Konstruktion des physischen Golemkörpers verlangt vom Anwender eine enorme Konzentration über einen langen Zeitraum ab, bei der der Anwender nicht gestört werden darf. Für die Belebung des Körpers wird ein ein elementarer Geist beschworen und mit dem Golem verbunden. Da der Geist dazu gezwungen wird, muss der Anwender für eine Runde all seine geistigen Kräfte fokussieren und der Psyche des Geistes seinen Willen aufzwingen. In vier Prozent alle Fälle kann der Geist für 1W4 Runden ausbrechen und seinem Peiniger Schaden zufügen, bevor er vollständig unter Kontrolle gebracht werden kann.
+
+Der Schöpfungsprozess ist sowohl mental als auch physisch sehr belastend, daher kann der Anwender für die nächsten fünf Runden keine Zauber aussprechen und erleidet einen -2 Malus auf Rüstungsklasse, Rettungswürfe, ETW0 und Schaden.
+
+Golems können eine beliebig lange Zeit existieren und ihrem Meister dienen. Sie sind immun gegenüber Gedankenkontrolle und Magie und folgen den Anweisungen ihres Meisters bedingungslos.~
+
+@20120 = ~Golem reparieren~
+@20121 = ~Golem reparieren
+
+Mit dieser Fähigkeit kann der Anwender einen beschädigten Golems reparieren. Der gesamte Prozess beinhaltet vor Allem das Ausbessern des beschädigten Golemkörpers und dauert zwei Runden an. In dieser Zeit sind sowohl Golem als auch Magier nicht ansprechbar. Schwer beschädigte Golems müssen gegebenenfalls mehrmals repariert werden, um den gesamten Schaden auszubessern.
+
+Die Reparatur behebt auch negative Effekte, die durch schweren Schaden verursacht werden können.~
+
+@20130 = ~Abscheuliches Gelächter~
+@20131 = ~Abscheuliches Gelächter
+
+Reichweite: Anwender
+Dauer: Sofort
+Bereich: 12 m Radius
+Rettungswurf: Speziell (gg. Zauber und Tod)
+
+Das abscheuliche Gelächter eines Knochengolems kann zwei mögliche Effekte in allen Feinden der Umgebung auslösen. Das Opfer muss einen erfolgreichen Rettungswurf -2 gegen Zauber würfeln oder verfällt für 2W6 Runden in Panik. Das Opfer muss außerdem einen erfolgreichen Rettungswurf gegen Tod würfeln oder verfällt stattdessen für den gleichen Zeitraum in eine Furchtstarre.
+
+Nicht-denkende Wesen, wie Untote, Golems oder Mykonide, sind immun gegenüber dieser Fähigkeit.~
+
+@20140 = ~Rubinroter Strahl der Aufhebung~
+@20141 = ~Rubinroter Strahl der Aufhebung
+
+Reichweite: 12 m
+Dauer: Sofort
+Bereich: 1 Wesen
+Rettungswurf: Nein
+
+Der rubinrote Strahl der Aufhebung zerstört einen Zauberschutz beliebigen Grades. Die Zauber, die durch den Strahl gebannt werden, sind: „Geringere Zauber zurückwerfen“, „Kleinere Kugel der Unverwundbarkeit“, „Immunität gegen Zauber“, „Kugel der Unverwundbarkeit“, „Geringere Zauberabwehr“, „Zauber zurückwerfen“, „Zauberschild“, „Zauberabwehr“ und „Zauberfalle“. Es wird automatisch der Zauberschutz des höchsten Grades zerstört. Liegen zwei verschiedene Zauber des gleichen Grades auf dem Ziel, wird der betroffene Zauber zufällig ausgewählt. Magiewiderstand schützt nicht gegen diesen Zauber.~
+
+@20150 = ~Blitzreise~
+@20151 = ~Blitzreise
+
+Reichweite: 12 m
+Dauer: Sofort
+Zeitaufwand: 1
+Bereich: Anwender
+Rettungswurf: Speziell (gg. Odemwaffen)
+
+Diese Fähigkeit erlaubt es dem Blitzgolem, sich sofort zu einem beliebigen Punkt in Reichweite zu teleportieren. Sichtlinie ist nicht erforderlich. Der Golem verwandelt sich dafür in einen mächtigen Blit und erreicht sein Ziel praktisch sofort.
+Die hohe Geschwindigkeit und ausstrahlende Energie erzeugen eine Schockwelle, die alle Feinde in 2,5 m Radius vom Golem wegstößt und 1W6 elektrischen Schaden zufügt. Große Wesen, wie Drachen oder Riesen, werden von der Schockwelle nicht weggestoßen. Dier resultierende Donnerschlag kann außerdem Taubheit auslösen, sofern dem Opfer kein erfolgreicher Rettungswurf gegen Odemwaffen gelingt.
+
+Da diese Fähigkeit Teil der Golemnatur ist, muss der Blitzgolem nicht warten, bevor er die Blitzreise oder eine andere Fähigkeit erneut wirkt.~
+
+
+// Misc. strings
+@21000 = ~Mentaler Kampf~
+@21001 = ~Ihr könnt keine Golems in feindlicher Umgebung konstruieren.~
+@21002 = ~Die Erschaffung des Golems haben Euch erschöpft. In den nächsten fünf Runden seid Ihr nicht in der Lage, Zauber zu wirken oder effektiv zu kämpfen.~
+@21003 = ~Hat 4000 Erfahrungspunkte verloren.~
+@21004 = ~Hat 8000 Erfahrungspunkte verloren.~
+@21005 = ~Hat 16000 Erfahrungspunkte verloren.~
+@21006 = ~Hat 32000 Erfahrungspunkte verloren.~
+@21007 = ~Hat 64000 Erfahrungspunkte verloren.~
+@21010 = ~Golem wird repariert...~
+@21011 = ~Kann nur Golems reparieren.~
+@21012 = ~Golem ist beschädigt: Verlangsamt~
+@21013 = ~Golem ist beschädigt: Angriffs- und Abwehrschwächung~
+@21014 = ~Golem ist beschädigt: Der beschworene Geist wird unruhig~
+@21015 = ~Golem ist beschädigt: Fehlfunktion des Körpers~
+@21016 = ~Golem ist beschädigt: Fehlfunktion der Sinne~
+@21017 = ~ist verängstigt~
+@21018 = ~ist gelähmt~
+@21019 = ~Zauberschutz entfernt~
+@21020 = ~Blitzschild~

@@ -1,0 +1,51 @@
+// -*- coding: utf-8 -*- 
+// Brain Golem related strings (index 9000..9999)
+
+@9000 = ~Geheimer Leitfaden der Golemkonstruktion (Band 3)~
+@9001 = ~Gehirngolem~
+@9002 = ~Hat gelernt, Gehirngolems zu erschaffen.~
+
+// *** Book content ***
+@9100 = ~Über Gehirngolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Gehirngolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Gehirngolem:
+Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Ein Klumpen Hirngewebe
+- Eine Schriftrolle "Beherrschung"
+
+Mindestintelligenz: 18
+
+Gewicht: 10~
+
+@9101 = ~Über Gehirngolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Gehirngolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Gehirngolem:
+Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Ein Klumpen Hirngewebe
+- Eine Schriftrolle "Beherrschung"
+
+Mindestintelligenz: 18
+
+Gewicht: 1~
+

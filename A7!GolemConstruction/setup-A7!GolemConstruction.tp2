@@ -7,7 +7,7 @@ ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 END
 
-README ~A7!GolemConstruction/readme/readme.txt~
+README ~A7!GolemConstruction/readme/readme-%LANGUAGE%.txt~ ~A7!GolemConstruction/readme/readme.txt~
 
 LANGUAGE ~English~
          ~english~
@@ -29,6 +29,26 @@ LANGUAGE ~English~
          ~A7!GolemConstruction/language/english/items.tra~
          ~A7!GolemConstruction/language/english/dialogs.tra~
          ~A7!GolemConstruction/language/english/misc.tra~
+LANGUAGE ~Deutsch~
+         ~german~
+         ~A7!GolemConstruction/language/german/setup.tra~
+         ~A7!GolemConstruction/language/german/tome01.tra~
+         ~A7!GolemConstruction/language/german/tome02.tra~
+         ~A7!GolemConstruction/language/german/tome03.tra~
+         ~A7!GolemConstruction/language/german/tome04.tra~
+         ~A7!GolemConstruction/language/german/tome05.tra~
+         ~A7!GolemConstruction/language/german/tome06.tra~
+         ~A7!GolemConstruction/language/german/tome07.tra~
+         ~A7!GolemConstruction/language/german/tome08.tra~
+         ~A7!GolemConstruction/language/german/tome09.tra~
+         ~A7!GolemConstruction/language/german/tome0a.tra~
+         ~A7!GolemConstruction/language/german/tome0b.tra~
+         ~A7!GolemConstruction/language/german/tome0c.tra~
+         ~A7!GolemConstruction/language/german/tome0d.tra~
+         ~A7!GolemConstruction/language/german/spells.tra~
+         ~A7!GolemConstruction/language/german/items.tra~
+         ~A7!GolemConstruction/language/german/dialogs.tra~
+         ~A7!GolemConstruction/language/german/misc.tra~
 
 
 BEGIN @0  // Golem Construction ability for spellcasters

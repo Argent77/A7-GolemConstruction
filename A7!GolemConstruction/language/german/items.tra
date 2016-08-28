@@ -1,0 +1,160 @@
+// -*- coding: utf-8 -*- 
+// Item-related strings (index 30000..39999)
+
+@30000 = ~Körperteile~
+@30001 = ~Dies ist eine Sammlung verschiedenster menschlicher Körperteile. Sie wurden magisch behandelt, um der natürlichen Verwesungsprozess aufzuhalten..
+
+EIGENSCHAFTEN:
+
+Gewicht: 10~
+
+@30010 = ~Tonblock~
+@30011 = ~Dieser Block besteht aus Ton von hoher Qualität. Ton wird häufig von Künstlern benutzt. Auch Magier schätzen seine Eigenschaften, um magische Konstrukte zu erschaffen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 15~
+
+@30020 = ~Steinblock~
+@30021 = ~Dieser massive Steinblock besteht aus qualitativ hochwertigem Granit, der mit geringen Mengen verschiedenster Mineralien durchzogen ist. Granit wird gerne von Bildhauern verwendet. Auch Magier schätzen seine Eigenschaften, um magische Konstrukte zu erschaffen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 25~
+
+@30030 = ~Eisenbarren~
+@30031 = ~Dieser Eisenbarren besteht aus sehr reinen Eisen. Er ist daher sehr gut geeignet, um verzauberte Waffen oder magische Konstrukte herzustellen..
+
+EIGENSCHAFTEN:
+
+Gewicht: 20~
+
+@30040 = ~Adamantitbarren~
+@30041 = ~Es kommt nur selten vor, Adamantit in seiner Ursprungsform zu sehen, Vor Allem, wenn es sich dabei um einen Barren von solch hoher Reinheit handelt. Adamantit kann genutzt werden, um verzauberte Gegenstände oder mächtige magische Konstrukte herzustellen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 20~
+
+@30050 = ~Knochenhaufen~
+@30051 = ~Dieser locker Knochenhaufen besteht vor Allem aus humanoiden Knochen. Alchemisten, Nekromanten und Wandler nutzen Knochen gerne in ihren Experimenten.
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+
+@30060 = ~Hirngewebe~
+@30061 = ~Diese schwammartige Substanz besteht aus Hirngewebe, das magische behandelt wurde, um den Verwesungsprozess aufzuhalten. Illithiden verwenden diese Substanz, um ihre Gehirngolems herzustellen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 3~
+
+@30070 = ~Magische Eisscherbe~
+@30071 = ~Diese äußerst lichtdurchlässige Eisscherbe ist ungewöhnlich schwer und sehr unanfällig gegenüber physischer Gewalteinwirkung und hohen Temperaturen. Sie kann benutzt werden, um verzauberte Gegenstände oder magische Konstrukte herzustellen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 15~
+
+@30080 = ~Steinfragment mit unbändiger Magie~
+@30081 = ~Dieser gewöhnlich aussehende Gesteinsbrocken wurde über einen langen Zeitraum unbändiger Magie ausgesetzt. Mit der Zeit nahm er eine beachtliche Menge davon auf, wodurch es fast unmöglich oder zumindest sehr gefährlich geworden ist, ihn zu bearbeiten. Trotzdem versuchen einige wagemutige Magier, seine einzigartigen Eigenschaften anzuzapfen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+
+@30090 = ~Madenverfressener Körper~
+@30091 = ~Dieser Körper befindet sich bereits in einem fortgeschrittenen Zustand der Verwesung und ist mit unzähligen Würmern und Maden durchzogen. Der ausströmende Gestank ist unerträglich.
+
+EIGENSCHAFTEN:
+
+Gewicht: 10~
+
+@30100 = ~Mithrilbrocken~
+@30101 = ~Mithril ist ein seltenes und sehr wertvolles Metall. Es kann in bestimmten Gebirgszügen von Faerûn als auch im Unterreich gewonnen werden. Um reines Mithril zu erzeugen, muss das gewonnene Erz einen komplexen Schmelzprozess in magischem Feuer durchlaufen. Mithril ist leicht und sehr robust. Es kann verwendet werden, um verzauberte Gegenstände hoher Qualität zu erschaffen..
+
+EIGENSCHAFTEN:
+
+Gewicht: 15~
+
+@30110 = ~Maschinenteil~
+@30111 = ~Dieses Maschinenteil ist Teil einer Anlage, um Golems zu konstruieren.
+
+EIGENSCHAFTEN:
+
+Gewicht: 25~
+
+
+@30120 = ~Tiefroter Blutstein~
+@30121 = ~Blutstein ist die Bezeichnung für dunkelgrünen Quarz, der mit roten kristallinen Unreinheiten durchsetzt ist. Neunzig Prozent der Blutsteine in den Reichen stammen aus dem Galenagebirge in Damara, und die meisten von ihnen aus einer einzigen Mine am Blutsteinpass.
+
+Dieser spezielle Edelstein wurde verzaubert, um große Mengen an magischer Energie aufzunehmen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+
+@30130 = ~Verzauberter Korallenstaub~
+@30131 = ~Dieser Staub wurde aus seltenen Korallen hergestellt, die man nur in bestimmten Gegenden des Leuchtenden Meeres südlich von Calimshan finden kann. Dieser Staub ist von besonderer Reinheit und scheint außerdem verzaubert worden zu sein.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+
+@30140 = ~Nachahmerblut~
+@30141 = ~Nachahmerblut wird oft verwendet, um Golems zu erschaffen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+
+@30150 = ~Kalte Eisenstücke~
+@30151 = ~Kaltes Eisen wird bei sehr niedriger Temperatur geschmiedet, um seine einzigartigen Eigenschaften zu bewahren. Diese Stücke scheinen von besonder hoher Qualität zu sein und eignen sich daher für die Erschaffung magischer Konstrukte.
+
+EIGENSCHAFTEN:
+
+Gewicht: 2~
+
+@30160 = ~Glühende schwarze Kugel~
+@30161 = ~Spektrale Obsidiankugel~
+@30162 = ~Diese dunkle kristalline Kugel ist ungewöhnlich schwer und strahlt ein unheimliches weißes Licht aus..
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+@30163 = ~Obsidian, auch bekannt als Vulkanglas, wird häufig für die Konstruktion von Ionensteinen verwendet. Diese spezielle Obsidiankugel scheint eine große Menge Magie zu beinhalten und hat wahrscheinlich seinen Ursprung in einer der ätherischen Ebenen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 5~
+
+@30170 = ~Mysteriöse Ampulle~
+@30171 = ~Blut eines Solariers~
+@30172 = ~Blut eines gefallen Solariers~
+@30173 = ~Diese Ampulle beinhaltet eine rötliche Flüssigkeit und kribbelt leicht in den Händen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@30174 = ~Solarier sind wohl die mächtigsten Vertreter der Engel und sind oft als direkte Stellvertreter der Götter unterwegs.
+
+Diese Ampulle scheint einen Tropfen Blut eines Solariers zu beinhalten. Es wird gemunkelt, dass die magischen Kräfte eines einzigen Blutstropfen in den Händen eines fähigen Magiers die Realität verändern kann.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+@30175 = ~Gefallene Solarier sind die dunklen Gegenstücke der Solarier, und damit ebenfalls eine der mächtigsten Kreaturen des Universums. Gefallene Solarier dienen oft Göttern böser Gesinnung oder mächtigen Dämonenherrschern.
+
+Diese Ampulle scheint einen Tropfen Blut eines gefallenen Solariers zu beinhalten. Es wird gemunkelt, dass die magischen Kräfte eines einzigen Blutstropfen in den Händen eines fähigen Magiers die Realität verändern kann.
+
+EIGENSCHAFTEN:
+
+Gewicht: 1~
+
+@30180 = ~Rubin~
+@30181 = ~Ein Rubin ist ein rosa- bis blutrot gefärbter Edelstein. Sein feuriges Aussehen wird als Schmuck sehr geschätzt. Alchemisten und Zauberer schätzen diese Steine vor Allem wegen ihres magischen Potenzials.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~

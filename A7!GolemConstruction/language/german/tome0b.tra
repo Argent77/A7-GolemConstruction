@@ -1,0 +1,62 @@
+// -*- coding: utf-8 -*- 
+// Magic Golem related strings (index 11000..11999)
+
+@11000 = ~Geheimer Leitfaden der Golemkonstruktion (Band 5)~
+@11001 = ~Magiegolem~
+@11002 = ~Hat gelernt, Magiegolems zu erschaffen.~
+@11003 = ~Wurde neutralisiert im magielosen Bereich~
+
+// *** Book content ***
+@11100 = ~Über Magiegolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Magiegolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Magiegolem:
+Min. Stufe: 18 (-2 für Hasardeure und Wandler, +2 für Barden)
+Zutaten:
+- Ein Steinfragment mit unbändiger Magie
+- Eine Schriftrolle "Schutz vor magischen Waffen", "Schutzmantel" oder "Verbesserter Schutzmantel"
+- Eine Schriftrolle "Schutzformel gegen Magie"
+
+Magiegolems können auf Grund ihrer speziellen Natur nur in Zonen mit unbändiger Magie erschaffen werden.
+
+Anmerkung des Autors: Verschiedene magische Theorien sagen vorher, dass Magiegolems allergisch auf magielose Bereiche reagieren könnten.
+
+Mindestintelligenz: 18
+
+Gewicht: 10~
+
+@11101 = ~Über Magiegolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Magiegolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Magiegolem:
+Min. Stufe: 18 (-2 für Hasardeure und Wandler, +2 für Barden)
+Zutaten:
+- Ein Steinfragment mit unbändiger Magie
+- Eine Schriftrolle "Schutz vor magischen Waffen", "Schutzmantel" oder "Verbesserter Schutzmantel"
+- Eine Schriftrolle "Schutzformel gegen Magie"
+
+Magiegolems können auf Grund ihrer speziellen Natur nur in Zonen mit unbändiger Magie erschaffen werden.
+
+Anmerkung des Autors: Verschiedene magische Theorien sagen vorher, dass Magiegolems allergisch auf magielose Bereiche reagieren könnten.
+
+Mindestintelligenz: 18
+
+Gewicht: 1~
+

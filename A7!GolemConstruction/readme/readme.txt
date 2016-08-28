@@ -130,6 +130,7 @@ History
 ~~~~~~~
 
 2.2
+  - Added German translation
   - Minor textual fixes
 
 2.1

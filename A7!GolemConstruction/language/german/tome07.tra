@@ -1,0 +1,59 @@
+// -*- coding: utf-8 -*- 
+// Maggot Golem related strings (index 7000..7999)
+
+@7000 = ~Geheimer Leitfaden der Golemkonstruktion (Band 1)~
+@7001 = ~Madengolem~
+@7002 = ~Hat gelernt, Madengolems zu erschaffen.~
+@7003 = ~Die Golemsubstanz wurde von den Maden vollständig verschlungen, und der Golem verliert seinen Zusammenhalt...~
+@7004 = ~Die Golemsubstanz wurde von den Maden vollständig verschlungen. Auf der Suche nach weiterer Nahrung verliert Ihr die Kontrolle über den zerfallenden Golem...~
+
+// *** Book content ***
+@7100 = ~Über Madengolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Madengolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Madengolem:
+Min. Stufe: 10 (-2 für Beschwörer und Wandler, +2 für Barden)
+Zutaten:
+- Zwei madenverfressene Körper
+
+Mit fünfzehnprozentiger Wahrscheinlichkeit kann sich der Erschaffer während der Konstruktion des Golemkörpers mit einer Krankheit anstecken.
+
+Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden greift er dann die nächste Kreatur in Sichtweite an.
+
+Mindestintelligenz: 15
+
+Gewicht: 10~
+
+@7101 = ~Über Madengolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Madengolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Madengolem:
+Min. Stufe: 10 (-2 für Beschwörer und Wandler, +2 für Barden)
+Zutaten:
+- Zwei madenverfressene Körper
+
+Mit fünfzehnprozentiger Wahrscheinlichkeit kann sich der Erschaffer während der Konstruktion des Golemkörpers mit einer Krankheit anstecken.
+
+Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden greift er dann die nächste Kreatur in Sichtweite an.
+
+Mindestintelligenz: 15
+
+Gewicht: 1~
+

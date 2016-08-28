@@ -1,0 +1,219 @@
+// -*- coding: utf-8 -*- 
+// Dialogs and misc. strings (index 40000..49999)
+
+// *** Misc. strings ***
+@40000 = ~Seid nochmals gegrüßt. Hier ist ein wenig Mithril für Euch.~
+@40001 = ~Das haben wir in Coldhearths Geheimversteck gefunden. In den richtigen Händen kann man damit ein Vermögen machen. Ihr müsst mir nicht danken, <CHARNAME>. Ihr habt es Euch redlich verdient.~
+@40002 = ~zwölf~
+@40003 = ~vierundzwanzig~
+@40004 = ~sechsunddreißig~
+@40005 = ~achtundvierzig~
+
+
+// *** Golem Construction dialog ***
+@41000 = ~Golemtyp auswählen:~
+@41001 = ~Fleischgolem~
+@41002 = ~Tongolem~
+@41003 = ~Steingolem~
+@41004 = ~Eisengolem~
+@41005 = ~Mithrilgolem~
+@41006 = ~Adamantitgolem~
+@41007 = ~Exotischer Golem~
+@41008 = ~Nach <A7_HOURS> Stunden harter Arbeit ist der Golem bereit für die abschließende magische Beschwörung...~
+@41011 = ~Golemvariante auswählen:~
+@41012 = ~Niederer Fleischgolem~
+@41013 = ~Fleischgolem~
+@41014 = ~Höherer Fleischgolem~
+@41015 = ~Perfekter Fleischgolem~
+@41016 = ~Konstruktion abbrechen~
+@41017 = ~Golemvariante auswählen:~
+@41018 = ~Niederer Tongolem~
+@41019 = ~Tongolem~
+@41020 = ~Höherer Tongolem~
+@41021 = ~Perfekter Tongolem~
+@41022 = ~Niederer Steingolem~
+@41023 = ~Steingolem~
+@41024 = ~Höherer Steingolem~
+@41025 = ~Perfekter Steingolem~
+@41026 = ~Niederer Eisengolem~
+@41027 = ~Eisengolem~
+@41028 = ~Höherer Eisengolem~
+@41029 = ~Perfekter Eisengolem~
+@41030 = ~Niederer Mithrilgolem~
+@41031 = ~Mithrilgolem~
+@41032 = ~Höherer Mithrilgolem~
+@41033 = ~Perfekter Mithrilgolem~
+@41034 = ~Niederer Adamantitgolem~
+@41035 = ~Adamantitgolem~
+@41036 = ~Höherer Adamantitgolem~
+@41037 = ~Perfekter Adamantitgolem~
+@41038 = ~Knochengolem~
+@41039 = ~Gehirngolem~
+@41040 = ~Eisgolem~
+@41041 = ~Magiegolem~
+@41042 = ~Blitzggolem~
+@41043 = ~Ihr beginnt mit dem Bau des Golemkörpers...~
+@41044 = ~Madengolem~
+@41045 = ~Magiegolems können nur in Bereichen unbändiger Magie erschaffen werden.~
+@41046 = ~Ihr könnt keine Mithrilgolems erschaffen, ohne Euch vorher mit den Grundlagen der Konstruktion von Eisengolems beschäftigt zu haben.~
+@41047 = ~Ihr könnt keine Adamantitgolems erschaffen, ohne Euch vorher mit den Grundlagen der Konstruktion von Eisengolems beschäftigt zu haben.~
+@41048 = ~Einen anderen Golemtyp auswählen~
+@41049 = ~Rubingolem~
+@41050 = ~Euch können keine weiteren Golems auf einmal folgen.~
+
+
+// *** Wish Djinni dialog ***
+@41500 = ~Ich wüsche mir, dass mein Eisen in Adamantit verwandelt wird.~
+@41501 = ~Ich wüsche mir, dass ein Eisenbarren aus meinem Besitz in Adamantit verwandelt wird.~
+@41502 = ~Dann sollt Ihr das haben. Euer gesamtes Eisen wurde in einen Adamantitbarren verwandelt.~
+@41503 = ~Dann sollt Ihr das haben. Ein Eisenbarren aus Eurem Besitz wurde in einen Adamantitbarren verwandelt.~
+@41504 = ~Euer gesamtes Eisen wird in einen Adamantitbarren verwandelt.~
+@41505 = ~Ein Eisenbarren aus Eurem Besitz wird in einen Adamantitbarren verwandelt.~
+@41506 = ~Ich wüsche mir, dass mein Eisen in Mithril verwandelt wird.~
+@41507 = ~Ich wüsche mir, dass ein Eisenbarren aus meinem Besitz in Mithril verwandelt wird.~
+@41508 = ~Dann sollt Ihr das haben. Euer gesamtes Eisen wurde in einen Mithrilbrocken verwandelt.~
+@41509 = ~Dann sollt Ihr das haben. Ein Eisenbarren aus Eurem Besitz wurde in einen Mithrilbrocken verwandelt.~
+@41510 = ~Euer gesamtes Eisen wird in einen Mithrilbrocken verwandelt.~
+@41511 = ~Ein Eisenbarren aus Eurem Besitz wird in einen Mithrilbrocken verwandelt.~
+
+
+// *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
+@42000 = ~Könnte ich das obere Geschoss nutzen, um Golems zu bauen?~
+@42001 = ~Sagtet Ihr Golems? Da habt Ihr ja einiges vor.~
+@42002 = ~Hmm, ich könnte es wohl für einen kleinen Beitrag vermieten. Wie wäre es mit 500 Goldmünzen? Dann werde ich persönlich dafür sorgen, dass Ihr nicht gestört werdet.~
+@42003 = ~Das ist ja ziemlich heftig. Ich würde 250 Goldmünzen zahlen.~
+@42004 = ~Abgemacht!~
+@42005 = ~Ich verfüge nicht über so viel Gold.~
+@42006 = ~Ich habe es mir anders überlegt. Ich möchte damit lieber noch etwas warten.~
+@42007 = ~Nun gut. Lasst es mich wissen, wenn Ihr es Euch anders überlegt habt.~
+@42008 = ~Ich könnte den Preis auf 400 Goldmünzen senken. Aber das ist mein letztes Angebot.~
+@42009 = ~Ihr könnt hart verhandeln, aber ich kann damit leben. Es war mir ein Vergnügen, mit Euch Geschäfte zu machen.~
+@42010 = ~In Ordnung. Es war mir ein Vergnügen, mit Euch Geschäfte zu machen.~
+
+
+// *** ToB - Lazarus Librarus ***
+@42500 = ~Habt Ihr Gerätschaften im Angebot, die man für den Bau von Golems nutzen kann?~
+@42501 = ~Hmm... Eine Frage wie diese hört man nicht alle Tage. Leider ist so eine Ausrüstung nur sehr schwer zu bekommen, da keine große Nachfrage besteht.~
+@42502 = ~Aber Ihr habt Glück. In meiner Jugend habe ich mich selbst etwas auf diesem Gebiet versucht. Leider ging es nicht über theoretische Betrachtungen hinaus. Ich bin nun mal in erster Linie ein Gelehrter.~
+@42503 = ~Die Ausrüstung habe ich aber immer noch in meinem Besitz. Ich könnte sie Euch wohl abtretem für den richtigen Preis. Seid Ihr mit 10.000 Goldmünzen einverstanden?~
+@42504 = ~Das ist ziemlich teuer. Könnt Ihr den Preis nicht etwas senken?~
+@42505 = ~Ja, das bin ich. Hier ist Euer Gold.~
+@42506 = ~Das kann ich mir gerade nicht leisten.~
+@42507 = ~Nein, ich bin nicht interessiert.~
+@42508 = ~Leider nicht. Es hat viel Zeit und Mühen gekostet, all die Teile zusammenzubauen. Ich kann sie Euch unmöglich für weniger Gold verkaufen.~
+@42509 = ~In Ordnung. Hier sind Eure 10.000 Goldmünzen.~
+@42510 = ~Ich kann bei Euch wahrscheinlich eine Ausnahme machen, da Ihr mir mein Zauberbuch zurückgebracht habt. Wie wäre es mit 6.000 Goldmünzen? Ihr werdet nirgendwo ein besseres Angebot erhalten.~
+@42511 = ~In Ordnung. Hier sind Eure 6.000 Goldmünzen.~
+@42512 = ~Vielleicht ein ander Mal.~
+@42513 = ~Vielen Dank. Ihr werdet nicht enttäuscht sein. Die Geräte sind immer noch in einem exzellenten Zustand.~
+
+
+// *** WK - Cambion Aesgareth ***
+@43000 = ~Exzellent. Ich verfüge über ein Spektralfeuer, eine Wunschrolle und ein Buch des Wissens, alles beeindruckende Gegenstände. Und da ist natürlich noch der Edelstein. Um was wollt Ihr spielen?~
+@43001 = ~Exzellent. Ich verfüge über ein Spektralfeuer, eine Wunschrolle und ein Buch des Wissens, alles beeindruckende Gegenstände. Und da ist natürlich noch der Edelstein. Um was wollt Ihr spielen?~
+@43002 = ~Ich spiele um das Buch des Wissens.~
+@43003 = ~Ihr wolltet das Buch des Wissens und hier habt Ihr es. Wenn Ihr noch eine Runde spielen möchtet, ich hätte nichts gegen eine neuerliche Chance, meine Freiheit wiederzuerlangen, einzuwenden, Freund.~
+
+
+// *** Pocket Plane - Cespenar ***
+@43500 = ~Häh? Was habt's Ihr hier? Ist das ein Schmuddelheftchen? Oh... ist nur Buch für Golembau.~
+@43501 = ~Ihr braucht's alle Seiten, um Buch heile zu machen. Kommt später wieder, wenn zweite Hälfte gefunden ist.~
+@43502 = ~Ihr habt's alle Seiten? Dann mache ich Buch wieder heil. Aber ich brauche 5.000 GM für zusammenkleben, wenn Ihr das wollt.~
+@43503 = ~Alles klar. Dann sucht Cespenar eben weiter.~
+
+
+// *** Drow Merchant Nym ***
+@44000 = ~Vendui - seid herzlichst gegrüßt, ehrenwerter Kunde. Ich bin Nym, ein Händler.~
+@44001 = ~Vendui - seid gegrüßt, darthiir. Ich bin Nym, ein Händler.~
+@44002 = ~Ich verbleibe hier noch ein wenig länger. Daher zögert nicht, mich erneut zu besuchen und meine Waren zu begutachten.  Aluve.~
+@44003 = ~Seid nochmals herzlichst gegrüßt, ehrenwerter Kunde.~
+@44004 = ~Seid nochmals gegrüßt, darthiir.~
+@44005 = ~Habt Ihr Interesse, meine Waren zu begutachten?~
+@44006 = ~Was habt Ihr im Angebot?~
+@44007 = ~Stirb, Drow-Abschaum!~
+@44008 = ~Ich kann Euch eine große Palette an hochwertigen Produkten für den erfolgreichen Abenteurer anbieten. Für einen kleinen Beitrag könnt Ihr auch meine exotischen Waren begutachten.~
+@44009 = ~Leider hat mir Euer Sieg über die Bewohner dieser Kolonie eine gute Quelle geraubt, um mein Angebot aufzustocken. Ich werde versuchen, andere Möglichkeiten zu finden, um die Bedürfnisse meiner ehrenwerten Kunden wie Euch zu befriedigen.~
+@44010 = ~Ja, zeigt mir Eure Waren.~
+@44011 = ~Eure exotischen Waren haben mein Interesse geweckt.~
+@44012 = ~Ich habe derzeit kein Interesse. Lebt wohl, Nym.~
+@44013 = ~Eure Ankunft wird von guten Nachrichten begleitet. Ich konnte mein Angebot aufstocken. Leider war es nicht einfach, neue Quellen zu erschließen. Daher muss ich einen Teil meiner Kosten an Euch weitergeben, ehrenwerter Kunde.~
+@44014 = ~Ich konnte mein Angebot erneut aufstocken. Leider habe ich kein Wahl, als meine Preise erneut zu erhöhen, ehrenwerter Kunde.~
+@44015 = ~Ich konnte mein Angebot erneut aufstocken. Aber seid unbesorgt, ehrenwerter Kunde. Dieses Angebot kommt ohne weitere Preiserhöhung daher.~
+@44016 = ~Bedient Euch. Ihr werdet nicht enttäuscht sein.~
+
+
+// *** Jerlia the Ore Merchant ***
+@44500 = ~Ich bin auf der Suche nach Materialien zur Konstruktion von Golems.~
+@44501 = ~Ah, der Golembauer kehrt zurück. Braucht Ihr ein paar weitere Ladungen Erz?~
+@44502 = ~Ja, ich möchte noch einmal in Eurem Angebot stöbern.~
+@44503 = ~Nicht jetzt. Vielleicht später.~
+@44504 = ~Ihr scherzt, oder? Nun, eigentlich verkaufe ich Erz nur in Wagenladungen, aber ich kann für Euch wohl eine Ausnahme machen. Wonach sucht Ihr?~
+@44505 = ~Ich bin an Ton oder Steinen interessiert.~
+@44506 = ~Habt Ihr etwas spezielleres, wie Eisen oder Mithril, auf Lager?~
+@44507 = ~Ich habe eine Menge verschiedener Erze und Gestein im Angebot. Für den richtigen Preis kann ich Euch auch seltenere Materialien beschaffen. Tut Euch keinen Zwang an und stöbert in meinem Angebot.~
+@44508 = ~Ist mir immer ein Vergnügen.~
+@44509 = ~Euer Zeitpunkt der Rückkehr kann gar nicht besser sein. Ich konnte kürzlich mein Warenangebot um seltene Materialien von einer ganz besonderen Quelle erweitern.~
+
+
+// *** Golem dialogs ***
+@45000 = ~Der Golem ignoriert Euch völlig.~
+@45001 = ~Der Golem erwartet Euren Befehl.~
+@45002 = ~Folge mir!~
+@45003 = ~Folge mir und beschütze mich!~
+@45004 = ~Halte Wache!~
+@45005 = ~Halte Wache und verteidige das Gebiet!~
+@45006 = ~Zerstöre Dich selbst!~
+@45007 = ~Schon gut.~
+@45008 = ~Dieser Befehl kann nicht rückgängig gemacht werden. Seid Ihr sicher?~
+@45009 = ~Ja!~
+@45010 = ~Nein.~
+@45011 = ~Der Golem wurde durch die Schutzzauber dieses Ortes deaktiviert.~
+@45012 = ~Euch können keine weiteren Golems auf einmal folgen.~
+
+
+// *** Jermien of Imnesvale ***
+@45500 = ~Bevor Ihr geht, könnt Ihr mir beibringen, wie man Steingolems baut? Ich möchte mich selbst daran versuchen.~
+@45501 = ~Lebt wohl, Jermien.~
+@45502 = ~Habt Ihr nicht gesehen, wie mein Versuch bereits mein Leben und das meiner Tochter gefährdet hat? Meine Aufzeichnungen sollten allesamt vernichtet werden.~
+@45503 = ~Seid unbesorgt. Ich bin mächtig genug, um es mit allen möglichen Konsequenzen aufzunehmen.~
+@45504 = ~Ich habe die magischen Künste unter Anleitung von erfahrenen Magiern in Kerzenburg gelernt. Ihr könnt mir vertrauen, dass ich mir große Mühe geben werde, keine Fehler zu machen.~
+@45505 = ~Mit so einer arroganten Einstellung werdet Ihr garantiert versagen. Dafür werde ich nicht die Verantwortung übernehmen. Meine Aufzeichnungen müssen vernichtet werden.~
+@45506 = ~Ich muss eingestehen, dass Eure Worte etwas für sich haben. Nun gut, ich vertraue auf Euer Verantwortungsgefühl und überlasse Euch meine Aufzeichnungen. Studiert sie fleißig und wiederholt nicht meine Fehler.~
+@45507 = ~Ihr könnt auch meine Ausrüstung nutzen, wenn Ihr es wünscht. Ich werde sie wohl für einige Zeit nicht mehr gebrauchen.~
+@45508 = ~Ich werde mich dann zurückziehen. Lebt wohl.~
+
+
+// *** Journal entries ***
+@49000 = ~Werkstatt für den Golembau~
+
+@49001 = ~Werkstatt für den Golembau
+
+Ich konnte das Obergeschoss von „Allerlei Zauberei“ in Baldurs Gate mieten. Dort sollte ich in der Lage sein, Golems zu erschaffen.~
+
+@49002 = ~Werkstatt für den Golembau
+
+Das Labor im Komplex unterhalb der Ausgrabungsstelle der Zwerge scheint gut geeignet zu sein, um magische Experimente durchzuführen. Dort sollte ich in der Lage sein, Golems zu erschaffen.~
+
+@49003 = ~Werkstatt für den Golembau
+
+Die Sphäre der Ebenen wurde bereits vom Vorbesitzer gut ausgestattet, um Golems zu bauen. Dort sollte ich in der Lage sein, Golems zu erschaffen.~
+
+@49004 = ~Werkstatt für den Golembau
+
+Die Bibliothek der Elementarmagier in der zweiten Ebene der Wachenden Festung scheint gut ausgestattet zu sein. Dort sollte ich in der Lage sein, Golems zu erschaffen.~
+
+@49005 = ~Werkstatt für den Golembau
+
+Mit der Ausrüstung von Lazarus Librarus sollte ich in der Lage sein, Golems in meinem Einsprengsel zu erschaffen.~
+
+@49006 = ~Werkstatt für den Golembau
+
+Ich habe einen Drow-Händler getroffen, der mir eine breite Palette an Materialien für den Golembau verkaufen kann. Er versprach mir außerdem, sein Angebot gelegentlich aufzustocken.~
+
+@49007 = ~Werkstatt für den Golembau
+
+Jermiens Heim in Imnestal scheint gut ausgerüstet zu sein. Dort sollte ich in der Lage sein, Golems zu erschaffen.~
+
+@49008 = ~Werkstatt für den Golembau
+
+Die Ruinen von Kanaglym, die vom Unterirdischen Fluss aus zugänglich sind, scheinen gut für magische Experimente ausgestattet zu sein. Dort sollte ich in der Lage sein, Golems zu erschaffen.~
