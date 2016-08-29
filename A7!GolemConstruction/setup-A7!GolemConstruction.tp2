@@ -49,6 +49,26 @@ LANGUAGE ~Deutsch~
          ~A7!GolemConstruction/language/german/items.tra~
          ~A7!GolemConstruction/language/german/dialogs.tra~
          ~A7!GolemConstruction/language/german/misc.tra~
+LANGUAGE ~Polski (tlumaczenie: Cahir)~
+         ~polish~
+         ~A7!GolemConstruction/language/polish/setup.tra~
+         ~A7!GolemConstruction/language/polish/tome01.tra~
+         ~A7!GolemConstruction/language/polish/tome02.tra~
+         ~A7!GolemConstruction/language/polish/tome03.tra~
+         ~A7!GolemConstruction/language/polish/tome04.tra~
+         ~A7!GolemConstruction/language/polish/tome05.tra~
+         ~A7!GolemConstruction/language/polish/tome06.tra~
+         ~A7!GolemConstruction/language/polish/tome07.tra~
+         ~A7!GolemConstruction/language/polish/tome08.tra~
+         ~A7!GolemConstruction/language/polish/tome09.tra~
+         ~A7!GolemConstruction/language/polish/tome0a.tra~
+         ~A7!GolemConstruction/language/polish/tome0b.tra~
+         ~A7!GolemConstruction/language/polish/tome0c.tra~
+         ~A7!GolemConstruction/language/polish/tome0d.tra~
+         ~A7!GolemConstruction/language/polish/spells.tra~
+         ~A7!GolemConstruction/language/polish/items.tra~
+         ~A7!GolemConstruction/language/polish/dialogs.tra~
+         ~A7!GolemConstruction/language/polish/misc.tra~
 
 
 BEGIN @0  // Golem Construction ability for spellcasters

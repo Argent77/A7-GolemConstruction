@@ -1,0 +1,51 @@
+// -*- coding: utf-8 -*- 
+// Brain Golem related strings (index 9000..9999)
+
+@9000 = ~Sekretny podręcznik budowy golemów (tom 3)~
+@9001 = ~Mózgowy golem~
+@9002 = ~Nabyto wiedzę o budowie mózgowych golemów.~
+
+// *** Book content ***
+@9100 = ~O mózgowych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy mózgowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Mózgowy golem:
+Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jedna tkanka mózgowa
+- Jeden zwój z czarem Dominacja
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 10~
+
+@9101 = ~O mózgowych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy mózgowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Mózgowy golem:
+Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jedna tkanka mózgowa
+- Jeden zwój z czarem Dominacja
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 1~

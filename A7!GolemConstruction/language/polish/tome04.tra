@@ -1,0 +1,90 @@
+// -*- coding: utf-8 -*- 
+// Iron Golem related strings (index 4000..4999)
+
+@4000 = ~Podręcznik budowy golemów (tom 4)~
+@4001 = ~Pomniejszy żelazny golem~
+@4002 = ~Żelazny golem~
+@4003 = ~Większy żelazny golem~
+@4004 = ~Idealny żelazny golem~
+@4005 = ~Nabyto wiedzę o budowie żelaznych golemów.~
+
+// *** Book content ***
+@4100 = ~Lekcja czwarta: żelazne golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy żelaznego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy żelazny golem:
+Minimalny poziom: 15 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden pręt żelazny
+
+Żelazny golem:
+Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa pręty żelazne
+- Jeden zwój z czarem Zabójcza chmura
+
+Większy żelazny golem:
+Minimalny poziom: 22 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery pręty żelazne
+- Jeden zwój z czarem Zabójcza chmura
+
+Idealny żelazny golem:
+Minimalny poziom: 22 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery pręty żelazne
+- Jeden zwój z czarem Zabójcza chmura
+- Żetony z zimnego żelaza
+
+Wymagania:
+- Inteligencja: 17
+
+Waga: 10~
+
+@4101 = ~Lekcja czwarta: żelazne golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy żelaznego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy żelazny golem:
+Minimalny poziom: 15 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden pręt żelazny
+
+Żelazny golem:
+Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa pręty żelazne
+- Jeden zwój z czarem Zabójcza chmura
+
+Większy żelazny golem:
+Minimalny poziom: 22 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery pręty żelazne
+- Jeden zwój z czarem Zabójcza chmura
+
+Idealny żelazny golem:
+Minimalny poziom: 22 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery pręty żelazne
+- Jeden zwój z czarem Zabójcza chmura
+- Żetony z zimnego żelaza
+
+Wymagania:
+- Inteligencja: 17
+
+Waga: 1~

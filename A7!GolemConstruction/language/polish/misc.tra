@@ -1,0 +1,38 @@
+// -*- coding: utf-8 -*- 
+// Misc. strings (index 100000..109999)
+
+@100000 = ~Podręcznik~
+@100001 = ~Starożytny podręcznik~
+
+@100002 = ~Wnioskując po tajemnych symbolach wydrukowanych na jej okładce, jasne jest, że książkę tę nasycono magicznymi właściwościami. Dopóki jednak nie spróbujesz jej przeczytać lub zidentyfikować, dokładna natura zawartej w niej magii pozostaje nieznana.
+
+PARAMETRY:
+
+Waga: 10~
+
+@100003 = ~Uzyskano specjalną zdolność: Budowanie golemów~
+@100004 = ~Uzyskano specjalną zdolność: Naprawianie golemów~
+@100005 = ~Gdy tylko bierzesz do ręki księgę, dwa golemy ożywają i natychmiast przechodzą do ataku.~
+@100006 = ~Laboratorium na tym poziomie wygląda na dobrze wyposażone. Prawdopodobnie można je będzie wykorzystać do budowy golemów.~
+@100007 = ~Laboratorium na tym obszarze wygląda na dobrze wyposażone. Prawdopodobnie można je będzie wykorzystać do budowy golemów.~
+@100008 = ~Laboratorium na tym poziomie wygląda na dobrze wyposażone. Prawdopodobnie można je będzie wykorzystać do budowy golemów.~
+@100009 = ~Wyposażenie zakupione u księgarza Łazarza pozwala na budowanie w tym miejscu golemów.~
+@100010 = ~W tej galaretowatej i świecącej słabym światłem substancji pływa niewielka ilość niezidentyfikowanych fragmentów materii stałej. Zabierasz do badań jedną próbkę.~
+@100011 = ~Sklep wielobranżowy Nyma~
+@100012 = ~Egzotyczne Towary Nyma~
+@100013 = ~Nym~
+@100014 = ~Kupiec mrocznych elfów~
+@100015 = ~Jesteś zbyt daleko, by się temu przyjrzeć.~
+@100016 = ~To dziwne urządzenie otacza aura lodowatego zimna. Po dokładniejszym przyjrzeniu się dostrzegasz w jednej z wchodzących w skład aparatury rur świecący słabo krystaliczny przedmiot.~
+@100017 = ~Podczas próby wyjęcia kryształu z dziwnego urządzenia otrzymujesz kilka obrażeń od zimna.~
+@100018 = ~Golem został wyłączony.~
+@100019 = ~Mało czytelne notatki~
+@100020 = ~Pergamin ten jest niczym więcej jak zbiorem pośpiesznie nabazgranych notatek. Wiele fragmentów wyblakło wraz z upływem czasu i odczytanie ich jest już niemożliwe.
+
+„...budowy golemów. Niezbędne materiały łatwo dostać, ale... (tekst nieczytelny)... niemożliwe bez odpowiedniego wyposażenia. Skarbnica Nieśmierci może się nadawać, ale wciąż znajduje się pod kontrolą... (tekst nieczytelny)... poszukać innych lokalizacji”.~
+@100021 = ~Wygląda na to, że na tym obszarze znajduje się już wyposażenie, które można wykorzystać do budowy golemów. Będziesz go prawdopodobnie mógł użyć do skonstruowania własnego golema.~~Wygląda na to, że na tym obszarze znajduje się już wyposażenie, które można wykorzystać do budowy golemów. Będziesz go prawdopodobnie mogła użyć do skonstruowania własnego golema.~
+@100022 = ~Ten pergamin zawiera kilka mało czytelnych notatek dotyczących magicznych eksperymentów i procedur. Jeden z fragmentów przykuwa twój wzrok, dotyczy bowiem budowy i konserwacji golemów.
+
+Wyposażenie zakupione u Ribalda jest prymitywne, ale efektywne. Powinno przez jakiś czas wystarczyć do zachowania służących mi golemów w dobrym stanie. Jeśli jednak zawiedzie, zawsze mogę spróbować odzyskać część rzeczy z tej sfery w slumsach. Informacje uzyskane od moich źródeł wskazują, że w środku znajdują się różnego rodzaju zaawansowane urządzenia.
+
+Pozostała część pergaminu zawiera opis skomplikowanych procedur, które nie są dla ciebie szczególnie interesujące.~

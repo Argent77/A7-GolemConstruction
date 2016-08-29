@@ -1,0 +1,51 @@
+// -*- coding: utf-8 -*- 
+// Lightning Golem related strings (index 12000..12999)
+
+@12000 = ~Sekretny podręcznik budowy golemów (tom 6)~
+@12001 = ~Golem błyskawic~
+@12002 = ~Nabyto wiedzę o budowie golemów błyskawic.~
+
+// *** Book content ***
+@12100 = ~O golemach błyskawic
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy golema błyskawic oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Golem błyskawic:
+Minimalny poziom: 23 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Sto tysięcy sztuk złota
+- Jeden zwój z czarem Wyładowanie łańcuchowe
+
+Wymagania:
+- Inteligencja: 17
+
+Waga: 10~
+
+@12101 = ~O golemach błyskawic
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy golema błyskawic oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Golem błyskawic:
+Minimalny poziom: 23 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Sto tysięcy sztuk złota
+- Jeden zwój z czarem Wyładowanie łańcuchowe
+
+Wymagania:
+- Inteligencja: 17
+
+Waga: 1~

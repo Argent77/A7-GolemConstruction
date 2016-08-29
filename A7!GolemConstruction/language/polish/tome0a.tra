@@ -1,0 +1,53 @@
+// -*- coding: utf-8 -*- 
+// Ice Golem related strings (index 10000..10999)
+
+@10000 = ~Sekretny podręcznik budowy golemów (tom 4)~
+@10001 = ~Lodowy golem~
+@10002 = ~Nabyto wiedzę o budowie lodowych golemów.~
+
+// *** Book content ***
+@10100 = ~O lodowych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy lodowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Lodowy golem:
+Minimalny poziom: 20 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden odłamek magicznego lodu
+- Jeden zwój z czarem Stożek zimna
+- Jeden zwój z czarem Ochrona przed zimnem
+
+Wymagania:
+- Inteligencja: 17
+
+Waga: 10~
+
+@10101 = ~O lodowych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy lodowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Lodowy golem:
+Minimalny poziom: 20 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden odłamek magicznego lodu
+- Jeden zwój z czarem Stożek zimna
+- Jeden zwój z czarem Ochrona przed zimnem
+
+Wymagania:
+- Inteligencja: 17
+
+Waga: 1~

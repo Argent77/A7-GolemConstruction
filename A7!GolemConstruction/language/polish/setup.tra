@@ -1,0 +1,16 @@
+// -*- coding: us-ascii -*- 
+// Setup (index 0..999)
+
+@0 = ~Zdolnosc budowania golemow dla rzucajacych czary~
+@1 = ~Udogodnienia~
+@10 = ~Zastap oryginalny Podrecznik budowy golemow~
+@15 = ~Usprawnij SI wrogich istot rzucajacych czary~
+@20 = ~Golemy dla wrogich istot rzucajacych czary~
+@25 = ~Wieksza roznorodnosc wrogich golemow~
+@30 = ~Golemy z Twierdzy wojownika moga ci dalej sluzyc~
+
+@100 = ~Ta modyfikacja wymaga uprzedniego zainstalowania BG:SoD lub BG2:EE.~
+@101 = ~Ta modyfikacja wymaga uprzedniego zainstalowania glownego komponentu.~
+@102 = ~Nie znaleziono wolnej pozycji na animacje postaci.~
+@103 = ~Ta modyfikacja wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej.~
+@104 = ~Ta modyfikacja wymaga uprzedniego zainstalowania BG2:EE.~

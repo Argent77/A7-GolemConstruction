@@ -1,0 +1,235 @@
+// -*- coding: utf-8 -*- 
+// Dialogs and misc. strings (index 40000..49999)
+
+// *** Misc. strings ***
+@40000 = ~Witaj ponownie. Mam dla ciebie trochę mithrilu.~
+@40001 = ~Znaleźliśmy go w tajnej skrytce Zimnego Płomienia. W odpowiednich rękach jest bezcenny. Nie musisz dziękować, <CHARNAME>, zasłużyłeś na ten skarb.~~Znaleźliśmy go w tajnej skrytce Zimnego Płomienia. W odpowiednich rękach jest bezcenny. Nie musisz dziękować, <CHARNAME>, zasłużyłaś na ten skarb.~
+@40002 = ~dwanaście~
+@40003 = ~dwadzieścia cztery~
+@40004 = ~trzydzieści sześć~
+@40005 = ~czterdzieści osiem~
+
+
+// *** Golem Construction dialog ***
+@41000 = ~Wybierz rodzaj golema:~
+@41001 = ~Golem z ciała~
+@41002 = ~Gliniany golem~
+@41003 = ~Kamienny golem~
+@41004 = ~Żelazny golem~
+@41005 = ~Mithrilowy golem~
+@41006 = ~Adamantytowy golem~
+@41007 = ~Egzotyczny golem~
+@41008 = ~Po wielu godzinach ciężkiej pracy przy budowie fizycznej powłoki golem jest wreszcie gotowy na ostatnie zaklęcia... Dokładna ilość godzin spędzonych przy budowie ciała golema to: <A7_HOURS>.~
+@41011 = ~Wybierz wariant golema:~
+@41012 = ~Pomniejszy golem z ciała~
+@41013 = ~Golem z ciała~
+@41014 = ~Większy golem z ciała~
+@41015 = ~Idealny golem z ciała~
+@41016 = ~Przerwij budowę~
+@41017 = ~Wybierz wariant golema:~
+@41018 = ~Pomniejszy gliniany golem~
+@41019 = ~Gliniany golem~
+@41020 = ~Większy gliniany golem~
+@41021 = ~Idealny gliniany golem~
+@41022 = ~Pomniejszy kamienny golem~
+@41023 = ~Kamienny golem~
+@41024 = ~Większy kamienny golem~
+@41025 = ~Idealny kamienny golem~
+@41026 = ~Pomniejszy żelazny golem~
+@41027 = ~Żelazny golem~
+@41028 = ~Większy żelazny golem~
+@41029 = ~Idealny żelazny golem~
+@41030 = ~Pomniejszy mithrilowy golem~
+@41031 = ~Mithrilowy golem~
+@41032 = ~Większy mithrilowy golem~
+@41033 = ~Idealny mithrilowy golem~
+@41034 = ~Pomniejszy adamantytowy golem~
+@41035 = ~Adamantytowy golem~
+@41036 = ~Większy adamantytowy golem~
+@41037 = ~Idealny adamantytowy golem~
+@41038 = ~Kościany golem~
+@41039 = ~Mózgowy golem~
+@41040 = ~Lodowy golem~
+@41041 = ~Magiczny golem~
+@41042 = ~Golem błyskawic~
+@41043 = ~Rozpoczynasz budowę ciała golema...~
+@41044 = ~Golem larwalny~
+@41045 = ~Magiczne golemy można zbudować jedynie wewnątrz strefy dzikiej magii.~
+@41046 = ~Nie możesz budować mithrilowych golemów bez uprzedniego przestudiowania budowy żelaznych golemów.~
+@41047 = ~Nie możesz budować adamantytowych golemów bez uprzedniego przestudiowania budowy żelaznych golemów.~
+@41048 = ~Wybierz inny rodzaj golema~
+@41049 = ~Rubinowy golem~
+@41050 = ~Nie możesz kontrolować większej ilości golemów.~
+
+
+// *** Wish Djinni dialog ***
+@41500 = ~Chcę, żeby posiadane przeze mnie żelazo zmieniło się w adamantynę.~
+@41501 = ~Chcę, żeby jeden posiadany przeze mnie kawałek żelaza zmienił się w adamantynę.~
+@41502 = ~Wedle życzenia, mistrzu. Całe posiadane przez ciebie żelazo zostało zmienione w jeden kawałek adamantyny.~~Wedle życzenia, mistrzyni. Całe posiadane przez ciebie żelazo zostało zmienione w jeden kawałek adamantyny.~
+@41503 = ~Wedle życzenia mistrzu. Jeden żelazny pręt będący w twoim posiadaniu został zmieniony w jeden kawałek adamantyny.~~Wedle życzenia mistrzyni. Jeden żelazny pręt będący w twoim posiadaniu został zmieniony w jeden kawałek adamantyny.~
+@41504 = ~Zmień całe posiadane przez siebie żelazo w jeden kawałek adamantyny.~ 
+@41505 = ~Zmień jeden kawałek żelaza w adamantynę.~ 
+@41506 = ~Chcę, żeby posiadane przeze mnie żelazo zmieniło się w mithril.~
+@41507 = ~Chcę, żeby jeden posiadany przeze mnie kawałek żelaza zmienił się w mithril.~
+@41508 = ~Wedle życzenia, mistrzu. Całe posiadane przez ciebie żelazo zostało zmienione w jeden kawałek mithrilu.~~Wedle życzenia, mistrzyni. Całe posiadane przez ciebie żelazo zostało zmienione w jeden kawałek mithrilu.~
+@41509 = ~Wedle życzenia mistrzu. Jeden żelazny pręt będący w twoim posiadaniu został zmieniony w jeden kawałek mithrilu.~~Wedle życzenia mistrzyni. Jeden żelazny pręt będący w twoim posiadaniu został zmieniony w jeden kawałek mithrilu.~
+@41510 = ~Zmień całe posiadane przez siebie żelazo w jeden kawałek mithrilu.~
+@41511 = ~Zmień jeden kawałek żelaza w mithril.~
+
+
+// *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
+@42000 = ~Mogę wynająć na pewien czas górne piętro do budowy golemów?~
+@42001 = ~Golemów, powiadasz? Postawiłeś przed sobą naprawdę trudne wyzwanie.~~Golemów, powiadasz? Postawiłaś przed sobą naprawdę trudne wyzwanie.~
+@42002 = ~Hmm, mógłbym ci je wynająć za niewielką opłatą. Co powiesz na pięćset sztuk złota i oprócz tego osobiście zadbam, by ci nie przeszkadzano?~
+@42003 = ~To dosyć wygórowana cena. Co powiesz na dwieście pięćdziesiąt sztuk złota?~
+@42004 = ~No to jesteśmy dogadani!~
+@42005 = ~Nie mam tyle złota.~
+@42006 = ~Zmieniłem zdanie. Nie chcę go na razie od ciebie wynajmować.~~Zmieniłam zdanie. Nie chcę go na razie od ciebie wynajmować.~
+@42007 = ~W porządku. Daj znać, jak będziesz potrzebował dalszej pomocy.~~W porządku. Daj znać, jak będziesz potrzebowała dalszej pomocy.~
+@42008 = ~Mógłbym obniżyć cenę do czterystu sztuk złota, ale to moja ostateczna oferta.~
+@42009 = ~Ostro się targujesz, ale nie będę narzekać. Miło było robić z tobą interesy.~
+@42010 = ~W porządku. Interesy z tobą to czysta przyjemność.~
+
+
+// *** ToB - Lazarus Librarus ***
+@42500 = ~Czy nie masz czasem do sprzedania wyposażenia, którego można by użyć do budowy golemów?~
+@42501 = ~Hmm... Coś takiego jest zazwyczaj trudne do zdobycia, gdyż nie ma na takie rzeczy zbyt dużego popytu.~
+@42502 = ~Masz jednak szczęście. W młodości sam próbowałem zajmować się trochę budową golemów, ale nie wynikło z tego nic konstruktywnego. Nazwałbym siebie raczej mędrcem.~
+@42503 = ~Wciąż mam jednak u siebie sprzęt, którego wtedy używałem. Mógłbym ci go odsprzedać za odpowiednią sumę. Zgodzisz się na dziesięć tysięcy sztuk złota?~
+@42504 = ~To dosyć drogo. Nie możesz trochę zejść z ceny?~
+@42505 = ~Zgodzę. Oto twoje złoto.~
+@42506 = ~Na razie mnie na to nie stać.~
+@42507 = ~Nie jestem zainteresowany.~~Nie jestem zainteresowana.~
+@42508 = ~Obawiam się, że nie. Zebranie potrzebnych części zajęło mi wiele lat i kosztowało mnóstwo wysiłku. Nie mogę tego sprzedać za mniej.~
+@42509 = ~W porządku. Oto twoje dziesięć tysięcy sztuk złota.~
+@42510 = ~Mógłbym zrobić dla ciebie wyjątek, jako że pomogłeś mi zdobyć moją księgę czarów. Co powiesz na sześć tysięcy sztuk złota? Nie trafisz nigdzie na lepszą ofertę.~~Mógłbym zrobić dla ciebie wyjątek, jako że pomogłaś mi zdobyć moją księgę czarów. Co powiesz na sześć tysięcy sztuk złota? Nie trafisz nigdzie na lepszą ofertę.~
+@42511 = ~W porządku. Oto twoje sześć tysięcy sztuk złota.~
+@42512 = ~Może innym razem.~
+@42513 = ~Dziękuję. Nie będziesz zawiedziony, narzędzia wciąż są w doskonałym stanie.~~Dziękuję. Nie będziesz zawiedziona, narzędzia wciąż są w doskonałym stanie.~
+
+
+// *** WK - Cambion Aesgareth ***
+@43000 = ~Znakomicie. Mam dostęp do całkiem ciekawych przedmiotów: Widmowego rodzaju, zwoju Życzenia i księgi wiedzy tajemnej. No i jest jeszcze klejnot. O co chcesz zagrać?~
+@43001 = ~Znakomicie. Mam dostęp do całkiem ciekawych przedmiotów: Widmowego rodzaju, zwoju Życzenia i księgi wiedzy tajemnej. No i jest oczywiście klejnot. O co chcesz zagrać?~
+@43002 = ~Zagram o księgę wiedzy tajemnej.~
+@43003 = ~Pożądasz księgi wiedzy tajemnej, oto więc ona. Jeśli chcesz zagrać ponownie, będę wdzięczny za szansę odzyskania wolności, przyjacielu.~~Pożądasz księgi wiedzy tajemnej, oto więc ona. Jeśli chcesz zagrać ponownie, będę wdzięczny za szansę odzyskania wolności, przyjaciółko.~
+
+
+// *** Pocket Plane - Cespenar ***
+@43500 = ~Hę? A co my tu mamy? Świerszczyki? Och... to tylko księga budowy golemów.~
+@43501 = ~Do oprawienia księgi będziesz jednak potrzebował wszystkich stron. Wróć później, jak znajdziesz drugi tom.~~Do oprawienia księgi będziesz jednak potrzebowała wszystkich stron. Wróć później, jak znajdziesz drugi tom.~
+@43502 = ~Masz już wszystkie strony, zrobię więc z nich dla ciebie księgę. Potrzeba mi tylko pięciu tysięcy sztuk złota na oprawę. Reflektujesz?~
+@43503 = ~Dobra, Cespenar będzie szukał dalej.~
+
+
+// *** Drow Merchant Nym ***
+@44000 = ~Vendui, witam serdecznie, czcigodny kliencie. Jestem kupiec Nym.~~Vendui, witam serdecznie, czcigodna klientko. Jestem kupiec Nym.~ [a7!nym01]
+@44001 = ~Vendui, witam cię darthiir. Jestem kupiec Nym.~ [a7!nym02]
+@44002 = ~Powinienem zostać tu jeszcze przez jakiś czas, możesz więc wrócić tu w każdej chwili, by przejrzeć moje towary. Aluve.~ [a7!nym03]
+@44003 = ~Ponownie najserdeczniej witam, czcigodny kliencie.~~Ponownie najserdeczniej witam, czcigodna klientko.~ [a7!nym04]
+@44004 = ~Witaj ponownie, darthiir.~ [a7!nym05]
+@44005 = ~Czy mogę zaproponować ci moje towary?~
+@44006 = ~A co konkretnie możesz zaoferować?~
+@44007 = ~Giń, drowie ścierwo!~
+@44008 = ~Mam w ofercie rozmaite przedmioty wysokiej jakości, odpowiednie dla odnoszącego sukcesy poszukiwacza przygód. Jeśli dorzucisz trochę więcej monet, mogę ci też zaproponować trochę bardziej egzotycznych towarów.~
+@44009 = ~Niestety twoje zwycięstwo nad mieszkańcami tej osady pozbawiło mnie stałego źródła zaopatrzenia. Postaram się jednak znaleźć inne źródła, by zaspokoić potrzeby tak hojnego klienta, jak ty.~~Niestety twoje zwycięstwo nad mieszkańcami tej osady pozbawiło mnie stałego źródła zaopatrzenia. Postaram się jednak znaleźć inne źródła, by zaspokoić potrzeby tak hojnej klientki, jak ty.~
+@44010 = ~Tak, pokaż mi swoje towary.~
+@44011 = ~Chciałbym obejrzeć te egzotyczne towary.~~Chciałabym obejrzeć te egzotyczne towary.~
+@44012 = ~Na razie nie jestem zainteresowany. Żegnaj, Nymie.~~Na razie nie jestem zainteresowana. Żegnaj, Nymie.~
+@44013 = ~Twoje przybycie zbiegło się w czasie z dobrymi wiadomościami. Udało mi się uzupełnić część moich zapasów. Niestety znalezienie w okolicy solidnego źródła zaopatrzenia wymagało wyjątkowo dużo wysiłku. Przykro mi, ale nie mam wyboru i muszę przerzucić część z poniesionych kosztów na ciebie, czcigodny kliencie.~~Twoje przybycie zbiegło się w czasie z dobrymi wiadomościami. Udało mi się uzupełnić część moich zapasów. Niestety znalezienie w okolicy solidnego źródła zaopatrzenia wymagało wyjątkowo dużo wysiłku. Przykro mi nie mam wyboru i muszę przerzucić część z poniesionych kosztów na ciebie, czcigodna klientko.~
+@44014 = ~Udało mi się uzupełnić część moich zapasów. Niestety zmuszony jestem po raz kolejny podnieść swoje ceny, czcigodny kliencie.~~Udało mi się uzupełnić część moich zapasów. Niestety zmuszony jestem po raz kolejny podnieść swoje ceny, czcigodna klientko.~
+@44015 = ~Udało mi się ponownie uzupełnić moje zapasy. Nie martw się jednak czcigodny kliencie. Mogę zaproponować ci swoje towary bez dalszego podnoszenia cen.~~Udało mi się ponownie uzupełnić moje zapasy. Nie martw się jednak czcigodna klientko. Mogę zaproponować ci swoje towary bez dalszego podnoszenia cen.~
+@44016 = ~Ależ proszę bardzo. Nie będziesz zawiedziony.~~Ależ proszę bardzo. Nie będziesz zawiedziona.~
+
+
+// *** Jerlia the Ore Merchant ***
+@44500 = ~Poszukuję pewnych materiałów do budowy golemów.~
+@44501 = ~Ach, twórca golemów powrócił. Potrzebujesz kolejnego kawałka żelaza?~~Ach, twórczyni golemów powróciła. Potrzebujesz kolejnego kawałka żelaza?~
+@44502 = ~Tak, chciałbym przejrzeć raz jeszcze twoją ofertę.~~Tak, chciałabym przejrzeć raz jeszcze twoją ofertę.~
+@44503 = ~Nie teraz. Może później.~
+@44504 = ~Żartujesz, prawda? Cóż, zazwyczaj sprzedaję je w bryłach, ale dla ciebie mogę zrobić wyjątek. Czego dokładnie szukasz?~
+@44505 = ~Chcę kupić glinę lub kamień.~
+@44506 = ~Masz do sprzedania coś specjalnego? Żelazo albo może mithril?~
+@44507 = ~Mogę ci zaoferować różne rodzaje rud i kamieni. Za odpowiednią cenę mogę ci też sprzedać trochę bardziej egzotycznych materiałów. Możesz śmiało się rozejrzeć i nie obawiaj się wybrać tego, czego potrzebujesz.~
+@44508 = ~Wedle życzenia.~
+@44509 = ~Masz świetne wyczucie czasu. Niedawno uzupełniłam zapasy i mam teraz w ofercie nowe i egzotyczne przedmioty z raczej szczególnego źródła.~
+
+
+// *** Golem dialogs ***
+@45000 = ~Golem całkowicie cię ignoruje.~
+@45001 = ~Golem oczekuje na twoje polecenia.~
+@45002 = ~Za mną!~
+@45003 = ~Idź za mną i chroń mnie!~
+@45004 = ~Stój na straży!~
+@45005 = ~Stój na straży i broń tego obszaru!~
+@45006 = ~Zniszcz siebie!~
+@45007 = ~Nieważne.~
+@45008 = ~Tej czynności nie można cofnąć. Jesteś pewien?~~Tej czynności nie można cofnąć. Jesteś pewna?~
+@45009 = ~Tak!~
+@45010 = ~Nie!~
+@45011 = ~Golem został zdezaktywowany przez magię ochronną strzegącą tego miejsca.~
+@45012 = ~Nie możesz kontrolować większej ilości golemów.~
+
+
+// *** Jermien of Imnesvale ***
+@45500 = ~Zanim sobie pójdziesz, czy mógłbyś mi pokazać, jak zbudować golema molocha? Chciałbym kiedyś tego spróbować.~~Zanim sobie pójdziesz, czy mógłbyś mi pokazać, jak zbudować golema molocha? Chciałabym kiedyś tego spróbować.~
+@45501 = ~Żegnaj, Jermienie.~
+@45502 = ~Czy nie widzisz, że moja głupota omal nie kosztowała życia mnie i mojej córki? Najlepiej byłoby zniszczyć wszystkie moje notatki na ten temat.~
+@45503 = ~Nie martw się. Jestem wystarczająco potężny, by zmierzyć się z ewentualnymi konsekwencjami.~~Nie martw się. Jestem wystarczająco potężna, by zmierzyć się z ewentualnymi konsekwencjami.~
+@45504 = ~Studiowałem magię u doświadczonych magów w Candlekeep. Możesz mi wierzyć, że zachowam wszelką ostrożność.~~Studiowałam magię u doświadczonych magów w Candlekeep. Możesz mi wierzyć, że zachowam wszelką ostrożność.~
+@45505 = ~Z takim nastawieniem, nie jestem wcale przekonany, że poradzisz sobie tam, gdzie ja zawiodłem. Nie mam zamiaru ponosić odpowiedzialności za kolejną katastrofę. Moje notatki muszą zostać zniszczone.~
+@45506 = ~Muszę przyznać, że twoje słowa nie są pozbawione sensu. Dobrze więc, oddam ci swoją księgę budowy golemów. Dobrze ją przestudiuj i nie popełnij moich błędów.~
+@45507 = ~Możesz też, jeśli chcesz, skorzystać z mojego wyposażenia. Ja nie będę go z pewnością przez jakiś czas potrzebował.~
+@45508 = ~A teraz pozwól, że już sobie pójdę. Żegnaj.~
+
+
+// *** Journal entries ***
+@49000 = ~Warsztat do budowy golemów~
+
+@49001 = ~Warsztat do budowy golemów
+
+Udało mi się wynająć drugie piętro Czarodziejskich Rozmaitości we Wrotach Baldura. Powinienem być w stanie budować tam golemy.~~Warsztat do budowy golemów
+
+Udało mi się wynająć drugie piętro Czarodziejskich Rozmaitości we Wrotach Baldura. Powinnam być w stanie budować tam golemy.~
+
+@49002 = ~Warsztat do budowy golemów
+
+Laboratorium w podziemnym kompleksie pod Krasnoludzkimi wykopaliskami wygląda na dobrze wyposażone do przeprowadzania w nim magicznych eksperymentów. Powinienem być w stanie budować tam golemy.~~Warsztat do budowy golemów
+
+Laboratorium w podziemnym kompleksie pod Krasnoludzkimi wykopaliskami wygląda na dobrze wyposażone do przeprowadzania w nim magicznych eksperymentów. Powinnam być w stanie budować tam golemy.~
+
+@49003 = ~Warsztat do budowy golemów
+
+Kula sfer została wręcz stworzona do budowy golemów. Powinienem być w stanie budować golemy w głównym pomieszczeniu tego miejsca.~~Warsztat do budowy golemów
+
+Kula sfer została wręcz stworzona do budowy golemów. Powinnam być w stanie budować golemy w głównym pomieszczeniu tego miejsca.~
+
+@49004 = ~Warsztat do budowy golemów
+
+Biblioteka czarodzieja na drugim poziomie Twierdzy Strażnika wygląda na dobrze wyposażoną. Powinienem być w stanie budować tam golemy.~~Warsztat do budowy golemów
+
+Biblioteka czarodzieja na drugim poziomie Twierdzy Strażnika wygląda na dobrze wyposażoną. Powinnam być w stanie budować tam golemy.~
+
+@49005 = ~Warsztat do budowy golemów
+
+Mając do dyspozycji wyposażenie zakupione u księgarza Łazarza, powinienem być w stanie budować golemy w swojej sferze kieszeniowej.~~Warsztat do budowy golemów
+
+Mając do dyspozycji wyposażenie zakupione u księgarza Łazarza, powinnam być w stanie budować golemy w swojej sferze kieszeniowej.~
+
+@49006 = ~Warsztat do budowy golemów
+
+Spotkałem kupca z rasy drowów, u którego mogę zaopatrzyć się w przeróżne materiały potrzebne do budowy golemów. Obiecał uzupełniać zapasy od czasu do czasu.~~Warsztat do budowy golemów
+
+Spotkałam kupca z rasy drowów, u którego mogę zaopatrzyć się w przeróżne materiały potrzebne do budowy golemów. Obiecał uzupełniać zapasy od czasu do czasu.~
+
+@49007 = ~Warsztat do budowy golemów
+
+Dom Jermiena w Imnesvale wygląda na dobrze wyposażony. Powinienem być w stanie budować tam golemy.~~Warsztat do budowy golemów
+
+Dom Jermiena w Imnesvale wygląda na dobrze wyposażony. Powinnam być w stanie budować tam golemy.~
+
+@49008 = ~Warsztat do budowy golemów
+
+Ruiny Kanaglymu, do których można się dostać z okolic Podziemnej rzeki, wyglądają na dobrze wyposażone do przeprowadzania w nich magicznych eksperymentów. Powinienem być w stanie budować tam golemy.~~Warsztat do budowy golemów
+
+Ruiny Kanaglymu, do których można się dostać z okolic Podziemnej rzeki, wyglądają na dobrze wyposażone do przeprowadzania w nich magicznych eksperymentów. Powinnnam być w stanie budować tam golemy.~

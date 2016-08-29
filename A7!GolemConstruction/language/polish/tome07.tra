@@ -1,0 +1,59 @@
+// -*- coding: utf-8 -*- 
+// Maggot Golem related strings (index 7000..7999)
+
+@7000 = ~Sekretny podręcznik budowy golemów (tom 1)~
+@7001 = ~Golem larwalny~
+@7002 = ~Nabyto wiedzę o budowie golemów larwalnych.~
+@7003 = ~Ciało golema zostało w całości pochłonięte przez larwy, tracąc całkowicie swoją spójność...~
+@7004 = ~Ciało golema zostało w całości pochłonięte przez larwy. Narastający szał owadów, nieustannie poszukujących pożywienia, sprawia, że tracisz kontrolę na rozpadającym się golemem...~
+
+// *** Book content ***
+@7100 = ~O golemach larwalnych
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy golema larwalnego oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Golem larwalny:
+Minimalny poziom: 10 (-2 dla mistrzów przywołań i mistrzów przemian, +2 dla bardów)
+Ingredients:
+- Dwa rojące się od robactwa ciała
+
+Podczas budowy golema larwalnego istnieje 15% szans, że rzucający czar zarazi się chorobą od jego pokrytego larwami ciała.
+
+Istnieje 1% szans, że golem larwalny wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą się w zasięgu jego wzroku.
+
+Wymagania:
+- Inteligencja: 15
+
+Waga: 10~
+
+@7101 = ~O golemach larwalnych
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy golema larwalnego oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Golem larwalny:
+Minimalny poziom: 10 (-2 dla mistrzów przywołań i mistrzów przemian, +2 dla bardów)
+Ingredients:
+- Dwa rojące się od robactwa ciała
+
+Podczas budowy golema larwalnego istnieje 15% szans, że rzucający czar zarazi się chorobą od jego pokrytego larwami ciała.
+
+Istnieje 1% szans, że golem larwalny wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą się w zasięgu jego wzroku.
+
+Wymagania:
+- Inteligencja: 15
+
+Waga: 1~

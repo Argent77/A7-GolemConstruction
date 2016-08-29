@@ -1,0 +1,160 @@
+// -*- coding: utf-8 -*- 
+// Item-related strings (index 30000..39999)
+
+@30000 = ~Części ciała~
+@30001 = ~To jest kolekcja rozmaitych humanoidalnych części ciała. Zakonserwowano je w magiczny sposób, zatrzymując tym samym naturalny proces ich rozkładu.
+
+PARAMETRY:
+
+Waga: 10~
+
+@30010 = ~Blok gliniany~
+@30011 = ~Jest to blok wysokiej jakości gliny. Używają ich często w swej pracy artyści, czarodziejom zaś służą do budowy golemów o przeciętnej sile.
+
+PARAMETRY:
+
+Waga: 15~
+
+@30020 = ~Blok kamienny~
+@30021 = ~Jest to blok litej skały składającej się z wysokiej jakości granitu oraz domieszek innych minerałów, nadających mu lekko zielonej barwy. Bloki te są poszukiwane przez artystów lub czarodziejów, którym to służą do budowy magicznych konstruktów.
+
+PARAMETRY:
+
+Waga: 25~
+
+@30030 = ~Pręt żelazny~
+@30031 = ~Ten żelazny pręt charakteryzuje się bardzo wysoką jakością wykonania, co czyni go odpowiednim do budowy zaklętych broni lub magicznych konstruktów.
+
+PARAMETRY:
+
+Waga: 20~
+
+@30040 = ~Pręt adamantynowy~
+@30041 = ~Niezwykle trudno jest natrafić na adamantynę w jej czystej postaci, a jeszcze trudniej wejść w posiadanie wykonanego z niej pręta, który byłby równie wysokiej jakości. Adamantyna może być używana do budowy zaklętych przedmiotów o wyjątkowej jakości, jak również potężnych magicznych golemów.
+
+PARAMETRY:
+
+Waga: 20~
+
+@30050 = ~Sterta kości~
+@30051 = ~Jest to sterta kości należących niegdyś do istot humanoidalnych. Kości stanowią popularny składnik wykorzystywany w eksperymentach przez alchemików, nekromantów i mistrzów przemian.
+
+PARAMETRY:
+
+Waga: 5~
+
+@30060 = ~Tkanka mózgowa~
+@30061 = ~Ta gąbczasta tkanka mózgowa wygląda na magicznie zakonserwowaną, co ma zatrzymać naturalny proces jej rozkładu. Używana jest ona przez łupieżców umysłów do tworzenia mózgowych golemów.
+
+PARAMETRY:
+
+Waga: 3~
+
+@30070 = ~Odłamek magicznego lodu~
+@30071 = ~Ten niemal całkiem przezroczysty odłamek szkła jest nadzwyczaj ciężki i wysoce odporny na obrażenia fizyczne oraz wysokie temperatury. Może zostać użyty do tworzenia zaklętych artefaktów o wielkiej mocy lub magicznych konstruktów.
+
+PARAMETRY:
+
+Waga: 15~
+
+@30080 = ~Kawałek kamienia nasyconego dziką magią~
+@30081 = ~Ten wyglądający zupełnie zwyczajnie kawałek kamienia był przez lata lub stulecia wystawiony na działanie dzikiej magii. Wraz z upływem czasu wchłonął znaczną jej ilość, w związku z czym jego obróbka jest prawie niemożliwa lub w najlepszym wypadku nieprzewidywalna. Mimo to jest on poszukiwany przez magów ze względu na swe unikalne właściwości.
+
+PARAMETRY:
+
+Waga: 5~
+
+@30090 = ~Rojące się od robactwa ciało~
+@30091 = ~To ciało znajduje się w zaawansowanym stanie rozkładu, a w jego środku roi się od niezliczonej ilości robaków i larw. Bijący od niego smród jest nie do zniesienia.
+
+PARAMETRY:
+
+Waga: 10~
+
+@30100 = ~Kawałek mithrilu~
+@30101 = ~Mithril jest rzadkim i cennym metalem wydobywanym w pasmach górskich pewnych części Faerûnu oraz w Podmroku. Aby wytworzyć czysty mithril, należy najpierw poddać jego rudę skomplikowanemu procesowi wytopu w czystym magicznym ogniu. Mithril jest lekki i wytrzymały i można go używać do budowy zaklętych przedmiotów wysokiej jakości.
+
+PARAMETRY:
+
+Waga: 15~
+
+@30110 = ~Część maszyny~
+@30111 = ~Ten fragment maszyny stanowi część aparatury do budowy golemów.
+
+PARAMETRY:
+
+Waga: 25~
+
+
+@30120 = ~Ciemny krwawnik~
+@30121 = ~Krwawnik to ciemna zielonkawo-szara odmiana kwarcu, w którym występują zanieczyszczenia w postaci czerwonego kryształu. Dziewięćdziesiąt procent krwawników w Krainach pochodzi z gór Galena w Damarze, z czego większość z jednej kopalni na Przełęczy Krwawnika.
+
+Ten konkretny kamień został zaklęty i kryje w sobie dużą ilość magicznej energii.
+
+PARAMETRY:
+
+Waga: 1~
+
+@30130 = ~Zaczarowany sproszkowany koral~
+@30131 = ~Proszek ten otrzymano z rzadkiego koralu, który można znaleźć tylko w pewnych obszarach Lśniącego Morza na południe od Calimshanu. Charakteryzuje się on niebywałą czystością i jest niemal pewne, że zawiera w sobie jakieś zaklęcie.
+
+PARAMETRY:
+
+Waga: 1~
+
+@30140 = ~Krew mimika~
+@30141 = ~Krew mimika jest często stosowana w procesie budowy golemów.
+
+PARAMETRY:
+
+Waga: 1~
+
+@30150 = ~Żetony z zimnego żelaza~
+@30151 = ~Zimne żelazo kute jest w niższych temperaturach niż zwykłe żelazo czy stal po to, aby zachować jego specjalne właściwości. Te żetony wyglądają na wyjątkowo wysokiej jakości, dzięki czemu nadają się do wzmacniania magicznych konstruktów.
+
+PARAMETRY:
+
+Waga: 2~
+
+@30160 = ~Świecąca czarna kula~
+@30161 = ~Widmowa kula z obsydianu~
+@30162 = ~Ta ciemna krystaliczna kula jest nadspodziewanie ciężka i emituje upiorne białe światło.
+
+PARAMETRY:
+
+Waga: 5~
+@30163 = ~Obsydian, zwany również wulkanicznym szkłem, znany jest z tego, że używa się go do tworzenia kamieni ioun oraz podobnych magicznych konstruktów. Ta konkretna obsydianowa kula wydaje się skrywać potężną magię i pochodzi najprawdopodobniej z jednej z eterycznych sfer.
+
+PARAMETRY:
+
+Waga: 5~
+
+@30170 = ~Tajemnicza fiolka~
+@30171 = ~Krew solara~
+@30172 = ~Krew upadłego solara~
+@30173 = ~Ta fiolka z czerwoną cieczą drży delikatnie w twoich dłoniach.
+
+PARAMETRY:
+
+Waga: 1~
+@30174 = ~Solary to najpotężniejsze ze wszystkich aniołów. Służą często za prawą rękę bóstw.
+
+Ta fiolka wydaje się zawierać kroplę krwi jednego z ich rodzaju. Uważa się, że zawiera ona w sobie wystarczającą ilość magicznej energii, aby zdolni magowie mogli za jej pomocą zmieniać rzeczywistość.
+
+PARAMETRY:
+
+Waga: 1~
+@30175 = ~Upadłe solary to mroczni odpowiednicy solarów, będących najpotężniejszymi z aniołów. Służą one często złym bóstwom lub potężnym istotom z Otchłani.
+
+Ta fiolka wydaje się zawierać kroplę krwi jednego z ich rodzaju. Uważa się, że zawiera ona w sobie wystarczającą ilość magicznej energii, aby zdolni magowie mogli za jej pomocą zmieniać rzeczywistość.
+
+PARAMETRY:
+
+Waga: 1~
+
+@30180 = ~Rubin~
+@30181 = ~Rubin to kamień szlachetny o barwie od różowej do krwistoczerwonej. Ze względu na ognisty wygląd jest on wysoce ceniony przez szlachtę. Alchemicy i mistrzowie zaklinania cenią go z kolei za ukryty magiczny potencjał.
+
+PARAMETRY:
+
+Waga: 0~

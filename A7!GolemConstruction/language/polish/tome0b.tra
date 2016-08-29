@@ -1,0 +1,62 @@
+// -*- coding: utf-8 -*- 
+// Magic Golem related strings (index 11000..11999)
+
+@11000 = ~Sekretny podręcznik budowy golemów (tom 5)~
+@11001 = ~Magiczny golem~
+@11002 = ~Nabyto wiedzę o budowie magicznych golemów.~
+@11003 = ~Zneutralizowany przez magię śmierci~
+
+// *** Book content ***
+@11100 = ~O magicznych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy magicznego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Magiczny golem:
+Minimalny poziom: 18 (-2 dla dzikich magów i mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden kawałek kamienia nasyconego dziką magią
+- Jeden zwój z czarem Ochrona przed magicznymi broniami, Opończą lub Ulepszoną opończą
+- Jeden zwój Ochrony przed magią
+
+Ze względu na specjalną naturę magicznych golemów, może je zbudować jedynie w obrębie stref dzikiej magii.
+
+Uwaga autora: W wielu źródłach istnieją spekulacje, że magiczne golemy mogą reagować alergicznie na strefy martwej magii.
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 10~
+
+@11101 = ~O magicznych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy magicznego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Magiczny golem:
+Minimalny poziom: 18 (-2 dla dzikich magów i mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden kawałek kamienia nasyconego dziką magią
+- Jeden zwój z czarem Ochrona przed magicznymi broniami, Opończą lub Ulepszoną opończą
+- Jeden zwój Ochrony przed magią
+
+Ze względu na specjalną naturę magicznych golemów, może je zbudować jedynie w obrębie stref dzikiej magii.
+
+Uwaga autora: W wielu źródłach istnieją spekulacje, że magiczne golemy mogą reagować alergicznie na strefy martwej magii.
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 1~

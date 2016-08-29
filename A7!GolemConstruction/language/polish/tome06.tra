@@ -1,0 +1,102 @@
+// -*- coding: utf-8 -*- 
+// Adamantite Golem related strings (index 6000..6999)
+
+@6000 = ~Podręcznik budowy golemów (tom 6)~
+@6001 = ~Pomniejszy adamantytowy golem~
+@6002 = ~Adamantytowy golem~
+@6003 = ~Większy adamantytowy golem~
+@6004 = ~Idealny adamantytowy golem~
+@6005 = ~Nabyto wiedzę o budowie adamantytowych golemów.~
+@6006 = ~Strony z Podręcznika budowy golemów~
+@6007 = ~Strony te wyglądają, jakby zostały wyrwane z jakiegoś dłuższego dzieła. Opisują one szczegółowo sposób budowy wyjątkowo potężnych golemów.~
+
+// *** Book content ***
+@6100 = ~Lekcja szósta: adamantytowe golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy adamantytowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Budowa adamantytowych golemów opiera się w dużym stopniu na zasadach rządzących konstrukcją golemów żelaznych. Podręcznik ten opisuje szczegółowo różne techniki i umiejętności wymagane do zbudowania adamantytowego golema, przerywane co rusz odniesieniami do fragmentów zawartych w tomie czwartym tego zestawu.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy adamantytowy golem:
+Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa pręty adamantynowe
+- Rzucający czar traci 8000 PD
+
+Adamantytowy golem:
+Minimalny poziom: 24 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery pręty adamantynowe
+- Rzucający czar traci 16000 PD
+
+Większy adamantytowy golem:
+Minimalny poziom: 30 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Osiem prętów adamantynowych
+- Rzucający czar traci 32000 PD
+
+Idealny adamantytowy golem:
+Minimalny poziom: 30 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Osiem prętów adamantynowych
+- Jedna kropla krwi solara lub upadłego solara
+- Rzucający czar traci 64000 PD
+
+Adamantyna nie istnieje w środowisku naturalnym. Należy ją wytworzyć z żelaza przy użyciu ostrożnie wypowiedzianego Życzenia lub Ograniczonego życzenia (–Uwaga autora: teza do potwierdzenia–). Tylko bardzo potężne osoby są w stanie tego dokonać, stąd ceny adamantyny są niebotycznie wysokie.
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 10~
+
+@6101 = ~Lekcja szósta: adamantytowe golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy adamantytowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Budowa adamantytowych golemów opiera się w dużym stopniu na zasadach rządzących konstrukcją golemów żelaznych. Podręcznik ten opisuje szczegółowo różne techniki i umiejętności wymagane do zbudowania adamantytowego golema, przerywane co rusz odniesieniami do fragmentów zawartych w tomie czwartym tego zestawu.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy adamantytowy golem:
+Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa pręty adamantynowe
+- Rzucający czar traci 8000 PD
+
+Adamantytowy golem:
+Minimalny poziom: 24 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery pręty adamantynowe
+- Rzucający czar traci 16000 PD
+
+Większy adamantytowy golem:
+Minimalny poziom: 30 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Osiem prętów adamantynowych
+- Rzucający czar traci 32000 PD
+
+Idealny adamantytowy golem:
+Minimalny poziom: 30 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Osiem prętów adamantynowych
+- Jedna kropla krwi solara lub upadłego solara
+- Rzucający czar traci 64000 PD
+
+Adamantyna nie istnieje w środowisku naturalnym. Należy ją wytworzyć z żelaza przy użyciu ostrożnie wypowiedzianego Życzenia lub Ograniczonego życzenia (–Uwaga autora: teza do potwierdzenia–). Tylko bardzo potężne osoby są w stanie tego dokonać, stąd ceny adamantyny są niebotycznie wysokie.
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 1~

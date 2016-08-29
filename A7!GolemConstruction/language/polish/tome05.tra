@@ -1,0 +1,100 @@
+// -*- coding: utf-8 -*- 
+// Mithral Golem related strings (index 5000..5999)
+
+@5000 = ~Podręcznik budowy golemów (tom 5)~
+@5001 = ~Pomniejszy mithrilowy golem~
+@5002 = ~Mithrilowy golem~
+@5003 = ~Większy mithrilowy golem~
+@5004 = ~Idealny mithrilowy golem~
+@5005 = ~Nabyto wiedzę o budowie mithrilowych golemów.~
+
+// *** Book content ***
+@5100 = ~Lekcja piąta: mithrilowe golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy mithrilowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Budowa mithrilowych golemów opiera się w dużym stopniu na zasadach rządzących konstrukcją golemów żelaznych. Podręcznik ten opisuje szczegółowo różne techniki i umiejętności wymagane do zbudowania mithrilowego golema, przerywane co rusz odniesieniami do fragmentów zawartych w tomie czwartym tego zestawu.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy mithrilowy golem:
+Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden kawałek mithrilu
+- Rzucający czar traci 4000 PD
+
+Mithrilowy golem:
+Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa kawałki mithrilu
+- Rzucający czar traci 8000 PD
+
+Większy mithrilowy golem:
+Minimalny poziom: 27 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery kawałki mithrilu
+- Rzucający czar traci 16000 PD
+
+Idealny mithrilowy golem:
+Minimalny poziom: 27 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery kawałki mithrilu
+- Jedna widmowa kula z obsydianu
+- Rzucający czar traci 32000 PD
+
+Uwagi autora: Mithril jest trudny do zdobycia i przez to niezwykle drogi. Możliwa jest jednak przemiana żelaza w mithril przy pomocy uważnie wypowiedzianego Życzenia lub Ograniczonego życzenia.
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 10~
+
+@5101 = ~Lekcja piąta: mithrilowe golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy mithrilowego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Budowa mithrilowych golemów opiera się w dużym stopniu na zasadach rządzących konstrukcją golemów żelaznych. Podręcznik ten opisuje szczegółowo różne techniki i umiejętności wymagane do zbudowania mithrilowego golema, przerywane co rusz odniesieniami do fragmentów zawartych w tomie czwartym tego zestawu.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy mithrilowy golem:
+Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden kawałek mithrilu
+- Rzucający czar traci 4000 PD
+
+Mithrilowy golem:
+Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa kawałki mithrilu
+- Rzucający czar traci 8000 PD
+
+Większy mithrilowy golem:
+Minimalny poziom: 27 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery kawałki mithrilu
+- Rzucający czar traci 16000 PD
+
+Idealny mithrilowy golem:
+Minimalny poziom: 27 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery kawałki mithrilu
+- Jedna widmowa kula z obsydianu
+- Rzucający czar traci 32000 PD
+
+Uwagi autora: Mithril jest trudny do zdobycia i przez to niezwykle drogi. Możliwa jest jednak przemiana żelaza w mithril przy pomocy uważnie wypowiedzianego Życzenia lub Ograniczonego życzenia.
+
+Wymagania:
+- Inteligencja: 18
+
+Waga: 1~

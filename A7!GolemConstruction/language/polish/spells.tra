@@ -1,0 +1,198 @@
+// -*- coding: utf-8 -*- 
+// Spell-related strings (index 20000..29999)
+
+@20000 = ~Odesłanie golema~
+@20001 = ~Odesłanie golema
+
+Zasięg: 0
+Czas działania: natychmiastowy
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Zdolność ta nakazuje golemowi dezaktywację samego siebie. Magia napędzająca golema zanika, a duch zamieszkujący jego ciało powraca do rodzimej sfery. Bez podtrzymującej jego istnienie magii nieożywione ciało ulega szybkiemu zniszczeniu i obraca się w proch.~
+@20002 = ~Odesłany~
+
+@20010 = ~Śmierdząca chmura~
+@20011 = ~Śmierdząca chmura
+
+Zasięg: 0
+Czas działania: 3/2 rundy
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: neguje
+
+Ogromna sterta gnijących części ciał pozwala golemowi na stworzenie wokół siebie skłębionej masy przyprawiających o mdłości oparów. Każdy przeciwnik, który znajdzie się wewnątrz chmury, musi wykonać rzut obronny przeciw truciznom z modyfikatorem +2 lub zacznie się zataczać i przewróci się na 1k2 rundy. Istoty, które wykonały rzut obronny, mogą opuścić chmurę bez odczuwania żadnych przykrych skutków, aczkolwiek te, które pozostały w jej obrębie nadal muszą wykonywać rzuty obronne w każdej rundzie. Czar Rozproszenie magii usuwa mdłości u postaci, lecz jeśli pozostają one wewnątrz oparów, będą w dalszym ciągu odczuwały ich skutki.~
+
+@20020 = ~Przyspieszenie golema~
+@20021 = ~Przyspieszenie golema
+
+Zasięg: 0
+Czas działania: 3 rundy
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Zdolność ta pozwala czarującemu poruszać się z dwukrotnie wyższą prędkością niż zwykle, dzięki czemu otrzymuje on premię -2 do inicjatywy oraz dodatkowy atak na rundę. Zdolność ta nie kumuluje się ze sobą ani z podobnie funkcjonującą magią. Należy zauważyć, że czar ten neguje działanie zaklęcia Spowolnienie ruchów.~
+
+@20030 = ~Spowolnienie golema~
+@20031 = ~Spowolnienie golema
+
+Zasięg: 0
+Czas działania: 8 rund
+Obszar działania: w promieniu 10 metrów
+Rzut obronny: neguje
+
+Zdolność ta sprawia, że będące pod jej wpływem istoty poruszają się i atakują z połową normalnej prędkości. Neguje ona działanie czaru Przyspieszenie ruchów, ale nie wpływa w inny sposób na magicznie przyspieszone lub spowolnione istoty. Znajdujące się pod jej wpływem istoty otrzymują karę -4 do Klasy Pancerza i testów ataku (rzut obronny przeciw czarom z modyfikatorem -4 neguje).~
+
+@20040 = ~Gazowa chmura~
+@20041 = ~Gazowa chmura
+
+Zasięg: 0
+Czas działania: 3/2 rundy
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: specjalny
+
+Zdolność ta tworzy kłębiącą się chmurę upiornych żółtych oparów, których centrum stanowi rzucający czar. Każda istota, która znajdzie się w jej zasięgu, musi wykonać co rundę rzut obronny przeciw truciznom lub zostanie zatruta. Trucizna działa przez trzy rundy, zadając 1 obrażenie na sekundę.~
+
+@20050 = ~Tratowanie~
+@20051 = ~Tratowanie
+
+Zasięg: 0
+Czas działania: natychmiastowy
+Obszar działania: 1 istota
+Rzut obronny: specjalny
+
+Dzięki ogromnym rozmiarom i wadze golema może on dosłownie przejść po przeciwnikach mniejszych od siebie. Zdolność tratowania zadaje 8k10 +30 obrażeń obuchowych i ogłusza cel na jedną rundę. Rzut obronny przeciw śmierci z modyfikatorem -4 może zmniejszyć otrzymane obrażenia o połowę i zapobiec ogłuszeniu. Duże istoty, takie jak smoki lub giganty są odporne na działanie tej zdolności.~
+@20052 = ~Stratowany~
+@20053 = ~Zbyt duży, aby zostać stratowanym~
+
+@20060 = ~Wyładowanie łańcuchowe~
+@20061 = ~Wyładowanie łańcuchowe
+
+Zasięg: 16 metrów
+Czas działania: natychmiastowy
+Obszar działania: specjalny
+Rzut obronny: 1/2
+
+Zdolność ta pozwala golemowi na wystrzeliwanie energii elektrycznej z koniuszków palców. Te olśniewające błyskawice przeskakują na wszystkich wrogów znajdujących się w pobliżu golema, zadając im 6k6 obrażeń od elektryczności. Jeśli cel wykona rzut obronny przeciw czarom, otrzyma połowę obrażeń.~
+
+
+@20070 = ~Teleportacja~
+@20071 = ~Teleportacja
+
+Zasięg: 16 metrów
+Czas działania: natychmiastowy
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Czasami olbrzymie golemy mogą napotkać przejścia zbyt wąskie, aby mogły się przez nie przedostać. Zdolność ta pozwala im na przebycie zablokowanych ścieżek, poprzez teleportację na krótki dystans, w pobliże wybranego członka drużyny. Można jej użyć tylko, jeśli w pobliżu nie ma żadnych wrogów, a cel znajduje się w zasięgu wzroku golema.~
+
+
+@20080 = ~Uderzenie umysłowe~
+@20081 = ~Uderzenie umysłowe
+
+Zasięg: 0
+Czas działania: natychmiastowy
+Obszar działania: w promieniu 10 metrów
+Rzut obronny: specjalny
+
+Potężna tkanka mózgowa golema pozwala mu na uwolnienie niszczycielskiej fali energii umysłowej, której centrum stanowi on sam, i która zadaje rani wszystkich wrogów znajdujących się w promieniu 10 metrów od niego. Trafione falą uderzeniową istoty muszą wykonać rzut obronny przeciw czarom lub otrzymają 2k8 stłuczeń, a także zostaną ogłuszone na 2k4 rundy. Udany rzut obronny spowoduje zmniejszenie otrzymanych obrażeń o połowę oraz uniknięcie ogłuszenia.
+
+Bezmyślne istoty, takie jak nieumarli, golemy lub mykonidy są niewrażliwe na działanie tego efektu.~
+
+
+@20090 = ~Gorąca para~
+@20091 = ~Gorąca para
+
+Zasięg: 0
+Czas działania: natychmiastowy
+Obszar działania: w promieniu 10 metrów
+Rzut obronny: specjalny
+
+Lodowe golemy mogą emitować fale mroźnych oparów, które ranią pobliskie istoty. Fala wpływa na wszystkie istoty znajdujące się w promieniu 10 metrów od golema, które nie są niewrażliwe na obrażenia od zimna. Istoty trafione parą otrzymują 3k10 obrażeń od zimna i są ogłuszone przez jedną rundę. Rzut obronny przeciw zionięciom powoduje zmniejszenie otrzymanych obrażeń o połowę i zapobiega ogłuszeniu.~
+
+
+@20100 = ~Błysk dzikiej magii~
+@20101 = ~Błysk dzikiej magii
+
+Zasięg: 13 metrów
+Czas działania: natychmiastowy
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Magiczne golemy mogą wytworzyć błysk magicznej energii oddziałujący na pojedynczą istotę. Energia zadaje celowi 3k10 magicznych obrażeń i wywołuje losową falę dzikiej energii. Efekt może się okazać niszczący lub pozytywny zarówno dla celu, jak i stojących w pobliżu niego istot. Odporność na magię może zapobiec zarówno otrzymaniu obrażeń, jak i efektom dzikiej magii.~
+
+
+@20110 = ~Budowanie golema~
+@20111 = ~Budowanie golema
+
+Zdolność ta pozwala rzucającemu czar na zbudowanie dowolnego rodzaju golema, z tych, które przestudiował uprzednio w znalezionych księgach. Proces ten wymaga pewnych materiałów zależnych od wybranego typu i wariantu golema. Budowa potężniejszych lub bardziej egzotycznych golemów może również powodować utratę kondycji u rzucającego czar.
+
+Budowa fizycznej powłoki golema wymaga pełnej koncentracji przez dłuższy czas, w ciągu którego rzucającemu czar nie wolno w żaden sposób przeszkadzać. Do ożywienia ciała niezbędny jest duch istoty żywiołów. Z racji tego, że duch ten nie jest skłonny do służenia czarującemu, ten musi zmierzyć się z nim w trwającej jedną rundę bitwie umysłowej, aby uzyskać nad nim kontrolę. Istnieje 4% szans, że golem uwolni się i zwróci na 1k4 rund przeciw rzucającemu zaklęcie, zanim ostatecznie podda się jego woli.
+
+Proces naprawy jest bardzo wyczerpujący fizycznie i umysłowo. Przez następne pięć rund rzucający czar nie będzie mógł rzucać zaklęć i otrzyma karę -2 do Klasy Pancerza, rzutów obronnych oraz testów ataku i obrażeń.
+
+W przeciwieństwie do przyzywanych istot golemy mogą istnieć i służyć swemu panu praktycznie w nieskończoność. Są niewrażliwe na kontrolę umysłu oraz magię i będą zawsze co do joty wykonywać polecenia swojego pana.~
+
+@20120 = ~Naprawianie golema~
+@20121 = ~Naprawianie golema
+
+Zdolność ta pozwala na naprawę golema rzucającemu czar. Cały proces uwzględnia głównie reperowanie lub wymianę uszkodzonych części ciała, co odbywa się z szybkością 1k10 +2 punktów życia na sekundę przez dwie rundy. W rezultacie zarówno ty, jak i golem nie będziecie mogli wykonywać żadnych innych czynności przez kolejne dwanaście sekund.
+
+Naprawa spowoduje również usunięcie wszystkich kar, które golem otrzymał ze względu na duże uszkodzenia.~
+
+@20130 = ~Ohydny śmiech~
+@20131 = ~Ohydny śmiech
+
+Zasięg: 0
+Czas działania: natychmiastowy
+Obszar działania: w promieniu 10 metrów
+Rzut obronny: specjalny
+
+Ohydny śmiech kościanego golema może wywołać dwa różne efekty o słyszących go przeciwników. Cel musi wykonać rzut obronny przeciw czarom z modyfikatorem -2 lub będzie uciekał ze strachu przez 2k6 rund. Cel musi również wykonać rzut obronny przeciw śmierci lub zostanie zamiast tego sparaliżowany ze strachu.
+
+Bezmyślne istoty, takie jak nieumarli, golemy lub mykonidy są niewrażliwe na działanie tego efektu.~
+
+@20140 = ~Rubinowy promień odwrócenia~
+@20141 = ~Rubinowy promień odwrócenia
+
+Zasięg: 13 metrów
+Czas działania: natychmiastowy
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Czar ten rozprasza jedno zaklęcie ochronne dowolnego poziomu, działające w danej chwili na wyznaczona istotę. Rozproszy on zawsze zaklęcie najwyższego poziomu, a w przypadku, gdy istota chroniona jest przez więcej niż jedno zaklęcie tego samego poziomu, rozproszy losowo jedno z nich. Posiadana przez cel odporność na magię nie ma wpływu na działanie tego czaru.
+
+Rubinowy promień odwrócenia działa na następujące zaklęcia: Mniejsze odbicie czaru, Mniejsze odchylenie czaru, Klosz niewrażliwości mniejszej, Niepodatność na czary, Odbicie czaru, Odchylenie czaru, Klosz niewrażliwości, Tarcza przeciw czarom oraz Pułapka na czary.~
+
+@20150 = ~Błyskawiczna podróż~
+@20151 = ~Błyskawiczna podróż
+
+Zasięg: 13 metrów
+Czas działania: natychmiastowy
+Obszar działania: rzucający czar
+Rzut obronny: specjalny
+
+Zdolność ta pozwala golemowi błyskawic na przeniesienie się w wybrane miejsce, znajdujące się w zasięgu 16 metrów od niego. Nie musi ono znajdować się na linii jego wzroku. Golem zmienia się w potężną błyskawicę, która dociera do wybranego miejsca niemal natychmiast. Tak szybka podróż powoduje wytworzenie fali uderzeniowej, która odrzuca wszystkie istoty znajdujące się w zasięgu 2,5 metra od miejsca docelowego, zadając im 1k6 obrażeń od elektryczności. Duże istoty, takie jak smoki czy olbrzymy nie zostaną odrzucone przez falę uderzeniową. Będący efektem podróży grzmot może również spowodować trwającą 1k4 rund głuchotę u każdej istoty znajdującej się w zasięgu, jeśli ta nie wykona rzutu obronnego przeciw zionięciom.
+
+Ze względu na to, że zdolność ta jest wynikiem takiej, a nie innej natury golema, nie musi on czekać, aż jego aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności.~
+
+
+// Misc. strings
+@21000 = ~Pochłonięty walką umysłową~
+@21001 = ~Nie możesz budować golemów we wrogim środowisku.~
+@21002 = ~Wybudowanie golema sprawiło, że jesteś zmęczony i nieuważny. Przez następne pięć rund nie możesz rzucać czarów i jesteś mniej skuteczny w fizycznej walce.~~Wybudowanie golema sprawiło, że jesteś zmęczona i nieuważna. Przez następne pięć rund nie możesz rzucać czarów i jesteś mniej skuteczna w fizycznej walce.~
+@21003 = ~Stracono 4000 punktów doświadczenia~
+@21004 = ~Stracono 8000 punktów doświadczenia~
+@21005 = ~Stracono 16000 punktów doświadczenia~
+@21006 = ~Stracono 32000 punktów doświadczenia~
+@21007 = ~Stracono 64000 punktów doświadczenia~
+@21010 = ~Naprawianie golema...~
+@21011 = ~Cel nie jest zbudowanym golemem.~
+@21012 = ~Golem jest uszkodzony: spowolnienie~
+@21013 = ~Golem jest uszkodzony: kary do ataku i obrony~
+@21014 = ~Golem jest uszkodzony: duch staje się niespokojny~
+@21015 = ~Golem jest uszkodzony: ciało funkcjonuje nieprawidłowo~
+@21016 = ~Golem jest uszkodzony: zmysły funkcjonują nieprawidłowo~
+@21017 = ~Spanikowany~
+@21018 = ~Sparaliżowany~
+@21019 = ~Czary ochronne usunięte~
+@21020 = ~Tarcza błyskawic~

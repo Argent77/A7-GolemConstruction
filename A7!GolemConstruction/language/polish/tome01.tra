@@ -1,0 +1,93 @@
+// -*- coding: utf-8 -*- 
+// Flesh Golem related strings (index 1000..1999)
+
+@1000 = ~Podręcznik budowy golemów (tom 1)~
+@1001 = ~Pomniejszy golem z ciała~
+@1002 = ~Golem z ciała~
+@1003 = ~Większy golem z ciała~
+@1004 = ~Idealny golem z ciała~
+// @1005 = ~You have learned how to construct flesh golems.~
+@1005 = ~Nabyto wiedzę o budowie golemów z ciała.~
+
+// *** Book content ***
+@1100 = ~Lekcja pierwsza: golemy z ciała
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy golema z ciała oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy golem z ciała:
+Minimalny poziom: 8 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden komplet części ciała
+
+Golem z ciała:
+Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa komplety części ciała
+
+Większy golem z ciała:
+Minimalny poziom: 14 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery komplety części ciała
+- Jeden zwój z czarem Śmierdząca chmura
+
+Idealny golem z ciała:
+Minimalny poziom: 14 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery komplety części ciała
+- Jeden zwój z czarem Śmierdząca chmura
+- Jeden krwawnik
+
+Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą się w zasięgu jego wzroku.
+
+Wymagania:
+- Inteligencja: 15
+
+Waga: 10~
+
+@1101 = ~Lekcja pierwsza: golemy z ciała
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy golema z ciała oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy golem z ciała:
+Minimalny poziom: 8 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Jeden komplet części ciała
+
+Golem z ciała:
+Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa komplety części ciała
+
+Większy golem z ciała:
+Minimalny poziom: 14 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery komplety części ciała
+- Jeden zwój z czarem Śmierdząca chmura
+
+Idealny golem z ciała:
+Minimalny poziom: 14 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery komplety części ciała
+- Jeden zwój z czarem Śmierdząca chmura
+- Jeden krwawnik
+
+Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą się w zasięgu jego wzroku.
+
+Wymagania:
+- Inteligencja: 15
+
+Waga: 1~
