@@ -125,7 +125,7 @@ Perfect Flesh Golem:
   - Magic Cold: 100
   - Electricity: 125
   - Piercing: 100
-  - Missile:100
+  - Missile: 100
 - Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
 - May cast Stinking Cloud on self
@@ -177,7 +177,7 @@ Clay Golem:
   - Electricity: 100
   - Slashing: 100
   - Piercing: 100
-  - Missile:100
+  - Missile: 100
 - Immune to non-magical weapons
 - May cast Haste on self
 - There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
@@ -205,7 +205,7 @@ Greater Clay Golem:
   - Acid: 75
   - Slashing: 100
   - Piercing: 100
-  - Missile:100
+  - Missile: 100
 - Immune to non-magical and +1 weapons
 - May cast Haste on self
 - There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
@@ -236,7 +236,7 @@ Perfect Clay Golem:
   - Slashing: 100
   - Crushing: 33
   - Piercing: 100
-  - Missile:100
+  - Missile: 100
 - Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
 - May cast Haste on self
@@ -257,7 +257,7 @@ Lesser Stone Golem:
   - APR: 1
   - Saves: 7/9/8/7/10
 - Resistances:
-  - Magic:75
+  - Magic: 75
 - Immune to non-magical weapons
 - There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
   in sight.
@@ -284,7 +284,7 @@ Stone Golem:
 Greater Stone Golem:
 - Min. level: 17 (-2 for Transmuters, +2 for Bards)
 - Ingredients:
-  - Four block of stone
+  - Four blocks of stone
   - One scroll of Slow
 - Stats:
   - STR: 21
@@ -306,8 +306,8 @@ Greater Stone Golem:
 Perfect Stone Golem:
 - Min. level: 17 (-2 for Transmuters, +2 for Bards)
 - Ingredients:
-  - Four block of clay
-  - One scroll of Haste
+  - Four blocks of stone
+  - One scroll of Slow
   - One vial of Mimic's Blood
 - Stats:
   - STR: 22
@@ -432,7 +432,7 @@ Perfect Iron Golem:
   - Slashing: 75
   - Crushing: 25
   - Piercing: 100
-  - Missile:100
+  - Missile: 100
 - Regenerates 1 HP per three rounds
 - Immune to non-magical, +1 and +2 weapons
 - May cast Gas Cloud on self
@@ -769,7 +769,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
 - May cast Mental Blast which stuns all opponents in 30 feet radius, centered on itself for 2d4 rounds and does 
-  2d8 non-lethal damage (save vs. spell for half damage and avoid stun effect). Does not affect undead, golems 
+  2d8 nonlethal damage (save vs. spell for half damage and avoid stun effect). Does not affect undead, golems 
   and myconids.
 
 4. Ice Golem

@@ -20,7 +20,7 @@ Duration: 3/2 rounds
 Area of Effect: 15-ft. radius
 Saving Throw: Negates
 
-The huge mass of rotting body parts allows the golem to create a billowing mass of nauseous vapors centered on itself. Any opponent caught within the cloud must roll a successful Saving Throw at +2 or be sent reeling and fall down for 1d2 rounds. Those who make successful Saving Throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A Dispel Magic will remove the nausea on a particular character, but if they remain in the cloud, then they are still subject to its effects.~
+The huge mass of rotting body parts allows the golem to create a billowing mass of nauseous vapors centered on itself. Any opponent caught within the cloud must roll a successful Saving Throw vs. Poison at +2 or be sent reeling and fall down for 1d2 rounds. Those who make successful Saving Throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A Dispel Magic will remove the nausea on a particular character, but if they remain in the cloud, then they are still subject to its effects.~
 
 @20020 = ~Golem Haste~
 @20021 = ~Golem Haste
@@ -94,7 +94,7 @@ Duration: Instant
 Area of Effect: 30 ft. radius
 Saving Throw: Special
 
-The powerful brain mass of the golem allows it to release a destructive force of mental energy onto all enemies in a 30 feet radius centered on itself. Creatures hit by the blast must save vs. Spell or suffer 2d8 points of stunning damge and become stunned for 2d4 rounds. Those who made a successful save only suffer half damage and avoid the stun effect altogether.
+The powerful brain mass of the golem allows it to release a destructive force of mental energy onto all enemies in a 30 feet radius centered on itself. Creatures hit by the blast must save vs. Spell or suffer 2d8 points of nonlethal damage and become stunned for 2d4 rounds. Those who made a successful save only suffer half damage and avoid the stun effect altogether.
 
 Unthinking creatures, such as undead, golems or myconids, are immune to the effect.~
 
@@ -113,7 +113,7 @@ Ice golems can emit waves of frozen vapor to hurt nearby creatures. The wave is 
 @20100 = ~Wild Magic Flare~
 @20101 = ~Wild Magic Flare
 
-Range: 40
+Range: 40 ft.
 Duration: Instant
 Area of Effect: One creature
 Saving Throw: None
