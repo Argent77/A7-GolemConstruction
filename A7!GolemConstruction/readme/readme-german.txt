@@ -131,8 +131,9 @@ History
 ~~~~~~~
 
 2.2
-  - Added German translation
-  - Minor textual fixes
+- Added German translation
+- Added Polish translation (big thanks to Cahir)
+- Minor textual fixes
 
 2.1
 - Removed Dragonspear Castle golems from "Greater variety of enemy golem types" tweak because of 

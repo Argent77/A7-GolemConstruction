@@ -126,7 +126,7 @@ END
     INT_VAR
       fj_loc_x        = 634
       fj_loc_y        = 428
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~))
       fj_orientation  = 2 // sw
     STR_VAR
       fj_structure_type = "actor"
@@ -138,7 +138,7 @@ END
     INT_VAR
       fj_loc_x        = 701
       fj_loc_y        = 487
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~))
       fj_orientation  = 2 // sw
     STR_VAR
       fj_structure_type = "actor"
@@ -150,7 +150,7 @@ END
     INT_VAR
       fj_loc_x        = 789
       fj_loc_y        = 543
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~))
       fj_orientation  = 2 // sw
     STR_VAR
       fj_structure_type = "actor"
