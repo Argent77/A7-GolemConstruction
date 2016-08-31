@@ -4,9 +4,9 @@ Golem Construction for Spellcasters
 Version:  2.1
 Author:   Argent77
 
-Download:   https://github.com/Argent77/A7-NoEENPCs/releases/latest
-Discussion: http://www.shsforums.net/topic/58322-mod-disable-enhanced-edition-npcs/
-            https://forums.beamdog.com/discussion/43074/mod-disable-enhanced-edition-npcs-for-bg-ee-bg2-ee
+Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
+Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spellcasters/
+            https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters
 
 
 Ogólny zarys
