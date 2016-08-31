@@ -4,6 +4,10 @@
 Version:  2.1
 Autor:    Argent77
 
+Download:   https://github.com/Argent77/A7-NoEENPCs/releases/latest
+Discussion: http://www.shsforums.net/topic/58322-mod-disable-enhanced-edition-npcs/
+            https://forums.beamdog.com/discussion/43074/mod-disable-enhanced-edition-npcs-for-bg-ee-bg2-ee
+
 
 Übersicht
 ~~~~~~~~~
@@ -133,7 +137,9 @@ History
 2.2
 - Added German translation
 - Added Polish translation (big thanks to Cahir)
-- Minor textual fixes
+- Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA
+- Minor adjustments of golem stats
+- Several textual fixes and updates
 
 2.1
 - Removed Dragonspear Castle golems from "Greater variety of enemy golem types" tweak because of 
