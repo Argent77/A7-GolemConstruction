@@ -13,7 +13,7 @@ END
 IF
   HaveSpellRES("a7!in04")
   See(NearestEnemyOf(Myself))
-  Range(LastSeenBy(Myself), 30)
+  Range(LastSeenBy(Myself), 25)
   !Race(LastSeenBy(Myself), GOLEM)
   !GlobalTimerNotExpired("ability1", "LOCALS")
 THEN
@@ -25,7 +25,7 @@ END
 IF
   HaveSpellRES("a7!in04")
   See(SecondNearestEnemyOf(Myself))
-  Range(LastSeenBy(Myself), 30)
+  Range(LastSeenBy(Myself), 25)
   !Race(LastSeenBy(Myself), GOLEM)
   !GlobalTimerNotExpired("ability1", "LOCALS")
 THEN
@@ -37,7 +37,7 @@ END
 IF
   HaveSpellRES("a7!in04")
   See(ThirdNearestEnemyOf(Myself))
-  Range(LastSeenBy(Myself), 30)
+  Range(LastSeenBy(Myself), 25)
   !Race(LastSeenBy(Myself), GOLEM)
   !GlobalTimerNotExpired("ability1", "LOCALS")
 THEN
