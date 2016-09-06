@@ -732,7 +732,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glma.cre~ ~override~
   SAY NAME2 @11001 // Magic Golem
   WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
   WRITE_ASCII SCRIPT_CLASS ~a7!glma~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmdma~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
@@ -797,6 +797,7 @@ END
 COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
         ~%MOD_FOLDER%/scripts/a7!gsdef.baf~
         ~%MOD_FOLDER%/scripts/a7!cmd.baf~
+        ~%MOD_FOLDER%/scripts/a7!cmdma.baf~
         ~%MOD_FOLDER%/scripts/a7!glfl1.baf~
         ~%MOD_FOLDER%/scripts/a7!glfl2.baf~
         ~%MOD_FOLDER%/scripts/a7!glfl3.baf~
@@ -843,9 +844,11 @@ COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
 // handling game-specific events
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   EXTEND_TOP ~a7!cmd.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_sod.baf~
+  EXTEND_TOP ~a7!cmdma.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_sod.baf~
 END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   EXTEND_TOP ~a7!cmd.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_soa.baf~
+  EXTEND_TOP ~a7!cmdma.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_soa.baf~
 END
 
 
