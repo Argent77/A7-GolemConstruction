@@ -129,6 +129,16 @@ END
        ~%MOD_FOLDER%/items/a7!impt2.2da~ ~override~
        ~%MOD_FOLDER%/items/a7!impt3.2da~ ~override~
        ~%MOD_FOLDER%/items/a7!impt4.2da~ ~override~
+    PATCH_IF (GAME_IS ~eet~ AND FILE_EXISTS_IN_GAME ~k#import.2da~) BEGIN
+      // registering all import items in EET's importation table
+      COUNT_2DA_ROWS 2 numRows
+      FOR (row = 1; row < numRows; row += 1) BEGIN  // skip row 0 which is 2DA signature
+        READ_2DA_ENTRY row 1 2 item
+        INNER_ACTION BEGIN
+          APPEND ~k#import.2da~ ~%row% %item%~
+        END
+      END
+    END
 
   // Use Planar Sphere as golem building workshop
   EXTEND_BOTTOM ~ar0411.bcs~ ~%MOD_FOLDER%/scripts/ar0411_bottom.baf~
