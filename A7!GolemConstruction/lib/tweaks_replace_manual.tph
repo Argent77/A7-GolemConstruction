@@ -3,58 +3,22 @@
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   // Removing Golem Manual
   COPY_EXISTING ~ar3001.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER_ITEM STR_VAR resource = "tome01" RET index END
-    PATCH_IF (index >= 0) BEGIN
-      LPF fj_are_structure
-      INT_VAR
-        fj_delete         = 1
-        fj_delete_mode    = index
-      STR_VAR
-        fj_structure_type = "itm"
-      END
-    END
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome01" END
   BUT_ONLY
 
   // Removing Clay Golem Page
   COPY_EXISTING ~ar3017.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER_ITEM STR_VAR resource = "tome02a" RET index END
-    PATCH_IF (index >= 0) BEGIN
-      LPF fj_are_structure
-      INT_VAR
-        fj_delete         = 1
-        fj_delete_mode    = index
-      STR_VAR
-        fj_structure_type = "itm"
-      END
-    END
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome02a" END
   BUT_ONLY
 
   // Removing Stone Golem Page
   COPY_EXISTING ~ar5204.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER_ITEM STR_VAR resource = "tome03a" RET index END
-    PATCH_IF (index >= 0) BEGIN
-      LPF fj_are_structure
-      INT_VAR
-        fj_delete         = 1
-        fj_delete_mode    = index
-      STR_VAR
-        fj_structure_type = "itm"
-      END
-    END
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome03a" END
   BUT_ONLY
 
   // Removing Juggernaut Golem Page
   COPY_EXISTING ~ar6003.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER_ITEM STR_VAR resource = "tome04a" RET index END
-    PATCH_IF (index >= 0) BEGIN
-      LPF fj_are_structure
-      INT_VAR
-        fj_delete         = 1
-        fj_delete_mode    = index
-      STR_VAR
-        fj_structure_type = "itm"
-      END
-    END
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome04a" END
   BUT_ONLY
 
   // Adding new items
