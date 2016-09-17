@@ -91,7 +91,7 @@ Większy golem z ciała:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny golem z ciała:
-- Minimalny poziom: 14 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 15 (-2 dla mistrzów przemian, +2 dla bardów)
 - Składniki:
   - Cztery komplety części ciała
   - Jeden zwój z czarem Śmierdząca chmura
@@ -197,7 +197,7 @@ Większy gliniany golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny gliniany golem:
-- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów)
 - Składniki:
   - Cztery bloki gliniane
   - Jeden zwój z czarem Przyspieszenie ruchów
@@ -288,7 +288,7 @@ Większy kamienny golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny kamienny golem:
-- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów)
 - Składniki:
   - Cztery bloki kamienne
   - Jeden zwój z czarem Spowolnienie ruchów
@@ -393,7 +393,7 @@ Większy żelazny golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny żelazny golem:
-- Minimalny poziom: 22 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 23 (-2 dla mistrzów przemian, +2 dla bardów)
 - Składniki:
   - Cztery pręty żelazne
   - Jeden zwój z czarem Zabójcza chmura
@@ -478,7 +478,7 @@ Mithrilowy golem:
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2.
 
 Większy mithrilowy golem:
-- Minimalny poziom: 27 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 26 (-2 dla mistrzów przemian, +2 dla bardów)
 - Składniki:
   - Cztery kawałki mithrilu
   - Rzucający czar traci 16000 PD
@@ -597,7 +597,7 @@ Adamantytowy golem:
   ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu).
 
 Większy adamantytowy golem:
-- Minimalny poziom: 32 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 31 (-2 dla mistrzów przemian, +2 dla bardów)
 - Składniki:
   - Osiem prętów adamantynowych
   - Rzucający czar traci 32000 PD

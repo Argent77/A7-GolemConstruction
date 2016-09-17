@@ -55,8 +55,8 @@
 @41043 = ~You start with the construction of the golem body...~
 @41044 = ~Maggot Golem~
 @41045 = ~Magic golems can only be constructed in wild magic areas.~
-@41046 = ~You can't construct Mithral Golems without having studied the principles of Iron Golem construction.~
-@41047 = ~You can't construct Adamantite Golems without having studied the principles of Iron Golem construction.~
+@41046 = ~You cannot construct Mithral Golems without having studied the principles of Iron Golem construction.~
+@41047 = ~You cannot construct Adamantite Golems without having studied the principles of Iron Golem construction.~
 @41048 = ~Select different golem type~
 @41049 = ~Ruby Golem~
 @41050 = ~You cannot have any more golems following you.~

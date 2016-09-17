@@ -111,7 +111,7 @@ Höherer Fleischgolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Fleischgolem:
-- Min. Stufe: 14 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 15 (-2 für Wandler, +2 für Barden)
 - Zutaten:
   - Vier komplette Sätze an Körperteilen
   - Eine Schriftrolle "Stinkende Wolke"
@@ -217,7 +217,7 @@ Höherer Tongolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Tongolem:
-- Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 18 (-2 für Wandler, +2 für Barden)
 - Zutaten:
   - Vier Tonblöcke
   - Eine Schriftrolle "Hast"
@@ -308,7 +308,7 @@ Höherer Steingolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Steingolem:
-- Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 18 (-2 für Wandler, +2 für Barden)
 - Zutaten:
   - Vier Steinblöcke
   - Eine Schriftrolle "Verlangsamen"
@@ -413,7 +413,7 @@ Höherer Eisengolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Eisengolem:
-- Min. Stufe: 22 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 23 (-2 für Wandler, +2 für Barden)
 - Zutaten:
   - Vier Eisenbarren
   - Eine Schriftrolle "Todeswolke"
@@ -498,7 +498,7 @@ Mithrilgolem:
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
 
 Höherer Mithrilgolem:
-- Min. Stufe: 27 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 26 (-2 für Wandler, +2 für Barden)
 - Zutaten:
   - Vier Mithrilbrocken
   - 16.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -617,7 +617,7 @@ Adamantitgolem:
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 
 Höherer Adamantitgolem:
-- Min. Stufe: 32 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 31 (-2 für Wandler, +2 für Barden)
 - Zutaten:
   - Acht Adamantitbarren
   - 32.000 vom Erschaffer geopferte Erfahrungspunkte
