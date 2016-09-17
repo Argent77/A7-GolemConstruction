@@ -45,7 +45,7 @@ limitierter Stückzahl gibt.
 1. Fleischgolems
 
 Niederer Fleischgolem:
-- Min. Stufe: 8 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 8 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein kompletter Satz Körperteile
 - Eigenschaften:
@@ -64,7 +64,7 @@ Niederer Fleischgolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Fleischgolem:
-- Min. Stufe: 10 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 10 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei komplette Sätze an Körperteilen
 - Eigenschaften:
@@ -86,7 +86,7 @@ Fleischgolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Höherer Fleischgolem:
-- Min. Stufe: 14 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 14 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier komplette Sätze an Körperteilen
   - Eine Schriftrolle "Stinkende Wolke"
@@ -111,7 +111,7 @@ Höherer Fleischgolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Fleischgolem:
-- Min. Stufe: 15 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 15 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier komplette Sätze an Körperteilen
   - Eine Schriftrolle "Stinkende Wolke"
@@ -139,7 +139,7 @@ Perfekter Fleischgolem:
 2. Tongolems
 
 Niederer Tongolem:
-- Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 11 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein Tonblock
 - Eigenschaften:
@@ -161,7 +161,7 @@ Niederer Tongolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Tongolem:
-- Min. Stufe: 13 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 13 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei Tonblöcke
   - Eine Schriftrolle "Hast"
@@ -188,7 +188,7 @@ Tongolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Höherer Tongolem:
-- Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 17 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Tonblöcke
   - Eine Schriftrolle "Hast"
@@ -217,7 +217,7 @@ Höherer Tongolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Tongolem:
-- Min. Stufe: 18 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 18 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Tonblöcke
   - Eine Schriftrolle "Hast"
@@ -250,7 +250,7 @@ Perfekter Tongolem:
 3. Steingolems
 
 Niederer Steingolem:
-- Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 11 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein Steinblock
 - Eigenschaften:
@@ -267,7 +267,7 @@ Niederer Steingolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Steingolem:
-- Min. Stufe: 13 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 13 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei Steinblöcke
   - Eine Schriftrolle "Verlangsamen"
@@ -286,7 +286,7 @@ Steingolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Höherer Steingolem:
-- Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 17 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Steinblöcke
   - Eine Schriftrolle "Verlangsamen"
@@ -308,7 +308,7 @@ Höherer Steingolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Steingolem:
-- Min. Stufe: 18 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 18 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Steinblöcke
   - Eine Schriftrolle "Verlangsamen"
@@ -337,7 +337,7 @@ Perfekter Steingolem:
 4. Eisengolems
 
 Niederer Eisengolem:
-- Min. Stufe: 15 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 15 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein Eisenbarren
 - Eigenschaften:
@@ -358,7 +358,7 @@ Niederer Eisengolem:
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
 
 Eisengolem:
-- Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 17 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei Eisenbarren
   - Eine Schriftrolle "Todeswolke"
@@ -384,7 +384,7 @@ Eisengolem:
 - Kann "Gaswolke" auf sich selbst zaubern
 
 Höherer Eisengolem:
-- Min. Stufe: 22 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 22 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Eisenbarren
   - Eine Schriftrolle "Todeswolke"
@@ -413,7 +413,7 @@ Höherer Eisengolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Eisengolem:
-- Min. Stufe: 23 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 23 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Eisenbarren
   - Eine Schriftrolle "Todeswolke"
@@ -446,7 +446,7 @@ Perfekter Eisengolem:
 5. Mithrilgolems
 
 Niederer Mithrilgolem:
-- Min. Stufe: 18 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 18 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein Mithrilbrocken
   - 4.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -471,7 +471,7 @@ Niederer Mithrilgolem:
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
 
 Mithrilgolem:
-- Min. Stufe: 21 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 21 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei Mithrilbrocken
   - 8.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -498,7 +498,7 @@ Mithrilgolem:
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
 
 Höherer Mithrilgolem:
-- Min. Stufe: 26 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 26 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Mithrilbrocken
   - 16.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -528,7 +528,7 @@ Höherer Mithrilgolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Mithrilgolem:
-- Min. Stufe: 27 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 27 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Mithrilbrocken
   - 32.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -562,7 +562,7 @@ Perfekter Mithrilgolem:
 6. Adamantitgolems
 
 Niederer Adamantitgolem:
-- Min. Stufe: 21 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 21 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei Adamantitbarren
   - 8.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -588,7 +588,7 @@ Niederer Adamantitgolem:
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
 
 Adamantitgolem:
-- Min. Stufe: 25 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 25 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Adamantitbarren
   - 16.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -617,7 +617,7 @@ Adamantitgolem:
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 
 Höherer Adamantitgolem:
-- Min. Stufe: 31 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 31 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Acht Adamantitbarren
   - 32.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -647,7 +647,7 @@ Höherer Adamantitgolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Adamantitgolem:
-- Min. Stufe: 32 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 32 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Acht Adamantitbarren
   - 64.000 vom Erschaffer geopferte Erfahrungspunkte
@@ -689,7 +689,7 @@ Golems, die in diesen Bänden beschrieben werden, sind einzigartig. Sie können 
 Varianten erschaffen werden.
 
 1. Madengolem
-- Min. Stufe: 10 (-2 für Beschwörer und Wandler, +2 für Barden)
+- Min. Stufe: 10 (-2 für Beschwörer und Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei madenverfressene Körper
 - Eigenschaften:
@@ -723,7 +723,7 @@ Varianten erschaffen werden.
   in sich zusammenfällt.
 
 2. Knochengolem
-- Min. Stufe: 16 (-2 für Nekromanten und Wandler, +2 für Barden)
+- Min. Stufe: 16 (-2 für Nekromanten und Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Knochenhaufen
   - Eine Schriftrolle "Tote beleben"
@@ -753,7 +753,7 @@ Varianten erschaffen werden.
   erfolgreichen Rettungswurf gegen Tod würfeln oder verfallen stattdessen für den gleichen Zeitraum in eine Furchtstarre.
 
 3. Gehirngolem
-- Min. Stufe: 17 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 17 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein Klumpen Hirngewebe
   - Eine Schriftrolle "Beherrschung"
@@ -781,7 +781,7 @@ Varianten erschaffen werden.
   den Betäubungseffekt ab. Untote, Golems und Mykonide sind nicht betroffen.
 
 4. Eisgolem
-- Min. Stufe: 20 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 20 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Eine magische Eisscherbe
   - Eine Schriftrolle "Kältekegel"
@@ -809,7 +809,7 @@ Varianten erschaffen werden.
   die Lähmung.
 
 5. Magiegolem
-- Min. Stufe: 18 (-2 für Hasadeure und Wandler, +2 für Barden)
+- Min. Stufe: 18 (-2 für Hasadeure und Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein Steinfragment mit unbändiger Magie
   - Eine Schriftrolle "Schutz vor magischen Waffen", "Schutzmantel" oder "Verbesserter Schutzmantel"
@@ -840,7 +840,7 @@ Varianten erschaffen werden.
   halbierten Schaden).
 
 6. Blitzgolem
-- Min. Stufe: 23 (-2 für Wandler, +2 für Barden)
+- Min. Stufe: 23 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - 100.000 Goldmünzen
   - Eine Schriftrolle "Kettenblitz"

@@ -27,7 +27,7 @@ Konwencjonalne golemy można budować w kilku wariantach: pomniejszym, zwykłym,
 1. Golemy z ciała
 
 Pomniejszy golem z ciała:
-- Minimalny poziom: 8 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 8 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden komplet części ciała
 - Statystyki:
@@ -45,7 +45,7 @@ Pomniejszy golem z ciała:
 - Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą	się w zasięgu jego wzroku.
 
 Golem z ciała:
-- Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa komplety części ciała
 - Statystyki:
@@ -66,7 +66,7 @@ Golem z ciała:
 - Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą	się w zasięgu jego wzroku.
 
 Większy golem z ciała:
-- Minimalny poziom: 14 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 14 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery komplety części ciała
   - Jeden zwój z czarem Śmierdząca chmura
@@ -91,7 +91,7 @@ Większy golem z ciała:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny golem z ciała:
-- Minimalny poziom: 15 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 15 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery komplety części ciała
   - Jeden zwój z czarem Śmierdząca chmura
@@ -119,7 +119,7 @@ Idealny golem z ciała:
 2. Gliniane golemy
 
 Pomniejszy gliniany golem:
-- Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden blok gliniany
 - Statystyki:
@@ -141,7 +141,7 @@ Pomniejszy gliniany golem:
   się w zasięgu jego wzroku.
 
 Gliniany golem:
-- Minimalny poziom: 13 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 13 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa bloki gliniane
   - Jeden zwój z czarem Przyspieszenie ruchów
@@ -168,7 +168,7 @@ Gliniany golem:
   się w zasięgu jego wzroku.
 
 Większy gliniany golem:
-- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery bloki gliniane
   - Jeden zwój z czarem Przyspieszenie ruchów
@@ -197,7 +197,7 @@ Większy gliniany golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny gliniany golem:
-- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery bloki gliniane
   - Jeden zwój z czarem Przyspieszenie ruchów
@@ -230,7 +230,7 @@ Idealny gliniany golem:
 3. Kamienne golemy
 
 Pomniejszy kamienny golem:
-- Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden blok kamienny
 - Statystyki:
@@ -247,7 +247,7 @@ Pomniejszy kamienny golem:
   się w zasięgu jego wzroku.
 
 Kamienny golem:
-- Minimalny poziom: 13 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 13 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa bloki kamienne
   - Jeden zwój z czarem Spowolnienie ruchów
@@ -266,7 +266,7 @@ Kamienny golem:
   się w zasięgu jego wzroku.
 
 Większy kamienny golem:
-- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery bloki kamienne
   - Jeden zwój z czarem Spowolnienie ruchów
@@ -288,7 +288,7 @@ Większy kamienny golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny kamienny golem:
-- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery bloki kamienne
   - Jeden zwój z czarem Spowolnienie ruchów
@@ -317,7 +317,7 @@ Idealny kamienny golem:
 4. Żelazne golemy
 
 Pomniejszy żelazny golem:
-- Minimalny poziom: 15 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 15 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden pręt żelazny
 - Statystyki:
@@ -338,7 +338,7 @@ Pomniejszy żelazny golem:
 - Niewrażliwość na bronie niemagiczne i o umagicznieniu +1.
 
 Żelazny golem:
-- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa pręty żelazne
   - Jeden zwój z czarem Zabójcza chmura
@@ -364,7 +364,7 @@ Pomniejszy żelazny golem:
 - Może rzucić na siebie czar Gazowa chmura.
 
 Większy żelazny golem:
-- Minimalny poziom: 22 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 22 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery pręty żelazne
   - Jeden zwój z czarem Zabójcza chmura
@@ -393,7 +393,7 @@ Większy żelazny golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny żelazny golem:
-- Minimalny poziom: 23 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 23 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery pręty żelazne
   - Jeden zwój z czarem Zabójcza chmura
@@ -426,7 +426,7 @@ Idealny żelazny golem:
 5. Mithrilowe golemy
 
 Pomniejszy mithrilowy golem:
-- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 18 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden kawałek mithrilu
   - Rzucający czar traci 4000 PD
@@ -451,7 +451,7 @@ Pomniejszy mithrilowy golem:
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2.
 
 Mithrilowy golem:
-- Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa kawałki mithrilu
   - Rzucający czar traci 8000 PD
@@ -478,7 +478,7 @@ Mithrilowy golem:
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2.
 
 Większy mithrilowy golem:
-- Minimalny poziom: 26 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 26 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery kawałki mithrilu
   - Rzucający czar traci 16000 PD
@@ -508,7 +508,7 @@ Większy mithrilowy golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny mithrilowy golem:
-- Minimalny poziom: 27 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 27 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery kawałki mithrilu
   - Jedna widmowa kula z obsydianu
@@ -542,7 +542,7 @@ Idealny mithrilowy golem:
 6. Adamantytowe golemy
 
 Pomniejszy adamantytowy golem:
-- Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 21 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa pręty adamantynowe
   - Rzucający czar traci 8000 PD
@@ -568,7 +568,7 @@ Pomniejszy adamantytowy golem:
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2.
 
 Adamantytowy golem:
-- Minimalny poziom: 25 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 25 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery pręty adamantynowe
   - Rzucający czar traci 16000 PD
@@ -597,7 +597,7 @@ Adamantytowy golem:
   ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu).
 
 Większy adamantytowy golem:
-- Minimalny poziom: 31 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 31 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Osiem prętów adamantynowych
   - Rzucający czar traci 32000 PD
@@ -627,7 +627,7 @@ Większy adamantytowy golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny adamantytowy golem:
-- Minimalny poziom: 32 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 32 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Osiem prętów adamantynowych
   - Jedna kropla krwi solara lub upadłego solara
@@ -666,7 +666,7 @@ Rodzaje egzotycznych golemów opisane są w „Sekretnym podręczniku budowy gol
 Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją one w wariantach pomniejszym, większym i idealnym.
 
 1. Golem larwalny
-- Minimalny poziom: 10 (-2 dla mistrzów przywołań i mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 10 (-2 dla mistrzów przywołań i mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa rojące się od robactwa ciała
 - Statystyki:
@@ -696,7 +696,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   rund, zanim ulegnie zniszczeniu.
 
 2. Kościany golem
-- Minimalny poziom: 16 (-2 dla nekromantów i mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 16 (-2 dla nekromantów i mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery sterty kości
   - Jeden zwój z czarem Animacja martwego
@@ -725,7 +725,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   wykonają rzutu obronnego przeciw czarom. będą uciekały ze strachu przez 2k6 rund. Jeśli nie wykonają również rzutu obronnego przeciw śmierci, będą zamiast tego sparaliżowane ze strachu.
 
 3. Mózgowy golem
-- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 17 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jedna tkanka mózgowa
   - Jeden zwój z czarem Dominacja
@@ -752,7 +752,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   ogłuszone na 2k4 rundy oraz otrzymują 2k8 stłuczeń (rzut obronny przeciw czarom zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu). Czar ten nie działa na nieumarłych, golemy i mykonidów.
 
 4. Lodowy golem
-- Minimalny poziom: 20 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 20 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden odłamek magicznego lodu
   - Jeden zwój z czarem Stożek zimna
@@ -779,7 +779,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   działania (rzut obronny przeciw zionięciom neguje).
 
 5. Magiczny golem
-- Minimalny poziom: 18 (-2 dla dzikich magów i mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 18 (-2 dla dzikich magów i mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden kawałek kamienia nasyconego dziką magią
   - Jeden zwój z czarem Ochrona przed magicznymi broniami, Opończą lub Ulepszoną opończą
@@ -807,7 +807,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   magiczną, zadając 2k6 magicznych obrażeń wszystkim, którzy znajdują się w promieniu 10 metrów od niego (rzut obronny przeciw czarom zmniejsza otrzymane obrażenia o połowę).
 
 6. Golem błyskawic
-- Minimalny poziom: 23 (-2 dla mistrzów przemian, +2 dla bardów)
+- Minimalny poziom: 23 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Sto tysięcy sztuk złota
   - Jeden zwój z czarem Wyładowanie łańcuchowe

@@ -136,6 +136,7 @@ History
 2.2
 - Added German translation
 - Added Polish translation (big thanks to Cahir)
+- Thieves with UAI can also build golems (using Bard level requirements)
 - Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA
 - Minor adjustments of golem stats
 - Several textual fixes and updates
