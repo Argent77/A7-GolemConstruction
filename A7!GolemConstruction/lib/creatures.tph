@@ -1,7 +1,7 @@
 // *** Installs creature-related resources ***
 
 // Miniature Clay Golem animation
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_mini~ ~.+\.bam~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_mini~ ~^.+\.bam$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
@@ -14,11 +14,11 @@ ACTION_IF (NOT FILE_EXISTS_IN_GAME ~e250.ini~) BEGIN
   COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd/e250.ini~ ~override~
 END
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd~ ~.+\.bam~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd~ ~^.+\.bam$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/shared~ ~.+\.wav~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/shared~ ~^.+\.wav$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
@@ -37,7 +37,7 @@ CLEAR_IDS_MAP
 
 COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini/exxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini~ ~.+\.bam~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini~ ~^.+\.bam$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
@@ -61,7 +61,7 @@ CLEAR_IDS_MAP
 
 COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_mini/7xxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_mini~ ~.+\.bam~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_mini~ ~^.+\.bam$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
@@ -85,7 +85,7 @@ CLEAR_IDS_MAP
 
 COPY ~%MOD_FOLDER%/creatures/anim/golem_lightning/7xxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_lightning~ ~.+\.bmp~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_lightning~ ~^.+\.bmp$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
@@ -109,7 +109,7 @@ CLEAR_IDS_MAP
 
 COPY ~%MOD_FOLDER%/creatures/anim/golem_maggot/7xxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_maggot~ ~.+\.bmp~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_maggot~ ~^.+\.bmp$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
@@ -128,7 +128,7 @@ CLEAR_IDS_MAP
 
 COPY ~%MOD_FOLDER%/creatures/anim/golem_ruby/exxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_ruby~ ~.+\.bmp~ BEGIN
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_ruby~ ~^.+\.bmp$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
