@@ -1,11 +1,5 @@
 // *** Installing enemy golems ***
 
-// OUTER_SET slot_golem_iron_iwd_mini = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_IRON_IWD_MINI~)
-// OUTER_SET slot_golem_iron_mini = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_IRON_MINI~)
-// OUTER_SET slot_golem_maggot = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_MAGGOT~)
-// OUTER_SET slot_golem_lightning = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_LIGHTNING~)
-// OUTER_SET slot_golem_ruby = IDS_OF_SYMBOL (~animate.ids~ ~A7!GOLEM_RUBY~)
-
 // Flesh Golems
 COPY ~%MOD_FOLDER%/creatures/a7!gxfl1.cre~ ~override~
   SAY NAME1 @1001 // Lesser Flesh Golem

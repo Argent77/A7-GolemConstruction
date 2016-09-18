@@ -24,30 +24,3 @@ THEN
   RESPONSE #100
     SetGlobal("spellhold", "LOCALS", 2)
 END
-
-
-// SoA - Tree of Life: Move golem to ToB starting area
-// TODO: doesn't appear to work
-// IF
-  // AreaCheck("AR2806")
-  // GlobalGT("KillPartySlowly", "AR2806", 0)
-  // Global("treeoflife", "LOCALS", 0)
-// THEN
-  // RESPONSE #100
-    // SetGlobal("treeoflife", "LOCALS", 1)
-    // RemoveFamiliar()
-    // ChangeEnemyAlly(Myself, NEUTRAL)
-    // MoveGlobal("AR4000", Myself, [0.0])
-// END
-
-// IF
-  // AreaCheck("AR4000")
-  // Global("treeoflife", "LOCALS", 1)
-// THEN
-  // RESPONSE #100
-    // SetGlobal("treeoflife", "LOCALS", 2)
-    // SetGlobal("Command", "LOCALS", 0)
-    // ChangeEnemyAlly(Myself, FAMILIAR)
-    // AddFamiliar()
-    // JumpToObject(Player1)
-// END
