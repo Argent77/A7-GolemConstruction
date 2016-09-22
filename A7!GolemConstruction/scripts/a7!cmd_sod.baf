@@ -3,6 +3,7 @@
 // SoD: Remove golem from party after Charname "murdered" Skie
 IF
   AreaCheck("BD4100")
+  Global("Chapter", "GLOBAL", 12)
   GlobalGT("bd_plot", "GLOBAL", 590)
   Global("disabled", "LOCALS", 0)
 THEN
