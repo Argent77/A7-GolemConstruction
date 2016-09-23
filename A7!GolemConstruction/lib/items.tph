@@ -1,8 +1,5 @@
 // *** Installs item-related resources ***
 
-// Empty dummy item for simulating lack of item in random treasure
-COPY ~%MOD_FOLDER%/items/a7!empty.itm~ ~override~
-
 // Body parts
 COPY ~%MOD_FOLDER%/items/a7!body.itm~ ~override~
   SAY NAME1 @30000  // Body Parts
