@@ -36,3 +36,6 @@ Gewicht: 10~
 "Die Ausrüstung von Ribald ist einfach, aber effektiv. Sie sollte vorläufig ausreichen, um meine Golemdiener funktionsfähig zu halten. Sollte sie wider Erwarten nicht wie gewünscht funktionieren, kann ich immer noch die Geräte aus dieser Sphäre in den Slums bergen. Meine Informanten meinen, das es dort hochentwickelte Ausrüstung aller Art geben muss."
 
 Der Rest des Pergaments beinhaltet Informationen über komplizierte magische Prozeduren, die Euch nicht sonderlich interessieren.~
+@100023 = ~Vertraute und Anhänger können Gebiete nicht ohne Gruppenmitglieder betreten.~
+@100024 = ~Vertraute und Anhänger können alleine keine Läden betreten.~
+@100025 = ~Vertraute und Anhänger können keine Gegenstände aufheben.~
