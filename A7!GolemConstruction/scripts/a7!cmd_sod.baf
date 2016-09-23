@@ -6,10 +6,30 @@ IF
   Global("Chapter", "GLOBAL", 12)
   GlobalGT("bd_plot", "GLOBAL", 590)
   Global("disabled", "LOCALS", 0)
+  GlobalLT("Command", "LOCALS", 2)
 THEN
   RESPONSE #100
     SetGlobal("disabled", "LOCALS", 1)
     IncrementGlobal("A7!GolemCount", "GLOBAL", -1)
+    RemoveFamiliar()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    ChangeAIScript("", DEFAULT)
+    ChangeAIScript("", GENERAL)
+    ChangeAIScript("", RACE)
+    ChangeAIScript("", CLASS)
+    ChangeAIScript("", OVERRIDE)
+    SetDialogue("")
+END
+
+IF
+  AreaCheck("BD4100")
+  Global("Chapter", "GLOBAL", 12)
+  GlobalGT("bd_plot", "GLOBAL", 590)
+  Global("disabled", "LOCALS", 0)
+  GlobalGT("Command", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("disabled", "LOCALS", 1)
     RemoveFamiliar()
     ChangeEnemyAlly(Myself, GOODBUTBLUE)
     ChangeAIScript("", DEFAULT)

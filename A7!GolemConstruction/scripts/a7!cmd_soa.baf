@@ -5,6 +5,7 @@ IF
   AreaCheck("AR1515")
   GlobalLT("AsylumPlot", "GLOBAL", 55)
   Global("spellhold", "LOCALS", 0)
+  GlobalLT("Command", "LOCALS", 2)
 THEN
   RESPONSE #100
     SetGlobal("spellhold", "LOCALS", 1)
@@ -14,6 +15,18 @@ THEN
     PlaySound("EFF_M07")
     RemoveFamiliar()
     ChangeEnemyAlly(Myself, GOODBUTBLUE)
+END
+
+IF
+  AreaCheck("AR1515")
+  GlobalLT("AsylumPlot", "GLOBAL", 55)
+  Global("spellhold", "LOCALS", 0)
+  GlobalGT("Command", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("spellhold", "LOCALS", 1)
+    DisplayStringHead(Myself, @100018)  // Golem has been disabled.
+    PlaySound("EFF_M07")
 END
 
 IF
