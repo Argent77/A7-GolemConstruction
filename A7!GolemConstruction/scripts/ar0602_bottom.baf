@@ -1,12 +1,11 @@
 // *** SoA: Starting Dungeon, Level 1 ***
 
 IF
-  Global("A7!AddAbilityP1", "MYAREA", 0)
+  Global("A7!AbilitiesRestored", "MYAREA", 0)
   NextTriggerObject(Player1)
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!AddAbilityP1", "MYAREA", 1)
     ActionOverride(Player1, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player1, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player1, RemoveSpellRES("a7!glr"))
@@ -15,12 +14,11 @@ THEN
 END
 
 IF
-  Global("A7!AddAbilityP2", "MYAREA", 0)
+  Global("A7!AbilitiesRestored", "MYAREA", 0)
   NextTriggerObject(Player2)
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!AddAbilityP2", "MYAREA", 1)
     ActionOverride(Player2, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player2, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player2, RemoveSpellRES("a7!glr"))
@@ -29,12 +27,11 @@ THEN
 END
 
 IF
-  Global("A7!AddAbilityP3", "MYAREA", 0)
+  Global("A7!AbilitiesRestored", "MYAREA", 0)
   NextTriggerObject(Player3)
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!AddAbilityP3", "MYAREA", 1)
     ActionOverride(Player3, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player3, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player3, RemoveSpellRES("a7!glr"))
@@ -43,12 +40,11 @@ THEN
 END
 
 IF
-  Global("A7!AddAbilityP4", "MYAREA", 0)
+  Global("A7!AbilitiesRestored", "MYAREA", 0)
   NextTriggerObject(Player4)
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!AddAbilityP4", "MYAREA", 1)
     ActionOverride(Player4, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player4, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player4, RemoveSpellRES("a7!glr"))
@@ -57,12 +53,11 @@ THEN
 END
 
 IF
-  Global("A7!AddAbilityP5", "MYAREA", 0)
+  Global("A7!AbilitiesRestored", "MYAREA", 0)
   NextTriggerObject(Player5)
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!AddAbilityP5", "MYAREA", 1)
     ActionOverride(Player5, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player5, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player5, RemoveSpellRES("a7!glr"))
@@ -71,12 +66,11 @@ THEN
 END
 
 IF
-  Global("A7!AddAbilityP6", "MYAREA", 0)
+  Global("A7!AbilitiesRestored", "MYAREA", 0)
   NextTriggerObject(Player6)
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
-    SetGlobal("A7!AddAbilityP6", "MYAREA", 1)
     ActionOverride(Player6, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player6, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player6, RemoveSpellRES("a7!glr"))
@@ -84,3 +78,9 @@ THEN
     Continue()
 END
 
+IF
+  Global("A7!AbilitiesRestored", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!AbilitiesRestored", "MYAREA", 1)
+END
