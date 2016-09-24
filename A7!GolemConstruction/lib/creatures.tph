@@ -986,6 +986,7 @@ END
 // Adding random treasure tables for bone golems and skeleton warriors
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBO1" item = "A7!BONE" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 5 STR_VAR treasure = "A7!RDBO2" item = "A7!BONE" END
+LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBO3" item = "A7!BONE" defItem = "0" END   // for containers
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~icbone01.cre~ ~override~
                 ~ar18skel.cre~ ~override~

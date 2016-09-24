@@ -280,7 +280,7 @@ END
  * This function also creates a treasure placeholder item if needed.
  * INT_VAR chance   The chance of the item to be generated (in percent).
  * STR_VAR treasure The resource name of the placeholder treasure item without extension
- * STR_VAR defItem  Default item for the columns not defined by chance. (Default: A single gold piece)
+ * STR_VAR defItem  Default item for the columns not defined by chance.
  * STR_VAR item     The resource name of the item to generate by the random treasure item.
  * RET success      Returns non-zero on success and zero on fail.
  */
@@ -289,7 +289,7 @@ INT_VAR
   chance    = 100
 STR_VAR
   treasure  = ~~
-  defItem   = ~0~
+  defItem   = ~A7!EMPTY~
   item      = ~~
 RET
   success
@@ -304,7 +304,7 @@ END
  * INT_VAR chance_x The chance of the associated item to be generated (in percent). x must be a sequential number, starting at 0.
  *                  Important: The sum of chances must not be greater than 100%.
  * STR_VAR treasure The resource name of the placeholder treasure item without extension
- * STR_VAR defItem  Default item for the columns not defined by chance_x. (Default: A single gold piece)
+ * STR_VAR defItem  Default item for the columns not defined by chance_x.
  * STR_VAR item_x   The resource names of the items to generate by the random treasure item. x must be a sequential number, starting at 0.
  * RET success      Returns non-zero on success and zero on fail.
  */
@@ -313,7 +313,7 @@ INT_VAR
   // chance_0, chance_1, ...
 STR_VAR
   treasure  = ~~
-  defItem   = ~0~
+  defItem   = ~A7!EMPTY~
   // item_0, item_1, ...
 RET
   success
