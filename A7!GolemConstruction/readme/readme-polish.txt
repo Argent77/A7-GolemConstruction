@@ -1,8 +1,8 @@
 Golem Construction for Spellcasters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:  2.1
-Author:   Argent77
+Version:    2.2
+Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
 Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spellcasters/
