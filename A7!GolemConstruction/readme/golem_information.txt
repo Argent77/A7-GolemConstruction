@@ -19,8 +19,8 @@ The "Construct Golem" ability can be used as many times as needed without the ne
 strongly recommended).
 
 Golem manuals will also teach you the "Repair Golem" ability. It can be used once per day in any location, but does 
-not work while enemies are around. The repair process takes about two rounds. Heavily damaged golems may require more 
-than one attempt to restore them to full health.
+not work while enemies are around. The repair process takes about two rounds. Heavily damaged golems may require several 
+attempts to restore them to full health.
 
 
 Conventional Golems
@@ -906,4 +906,4 @@ Watcher's Keep:
 Throne of Bhaal:
 - The Pocket Plane:
   This place looks safe enough for all kinds of magical experiments. Lazarus Librarus may provide the required 
-  equipmentfor a fair price.
+  equipment for a fair price.

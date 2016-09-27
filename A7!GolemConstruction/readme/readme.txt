@@ -50,9 +50,6 @@ building different types of golems. Each tome contains a single charge of powerf
 provides the user with the "Construct Golem" and "Repair Golem" abilities. After the tome's magic 
 is spent it can still be used as reference about building specific types of golems.
 
-It is rumored that there is another secret set of tomes which contains knowledge about constructing 
-more exotic types of golems.
-
 Golem types taught by the Manual of Golem Building:
 - Flesh Golems in lesser, regular, greater and perfect variants.
 - Clay Golems in lesser, regular, greater and perfect variants.
@@ -60,6 +57,9 @@ Golem types taught by the Manual of Golem Building:
 - Iron Golems in lesser, regular, greater and perfect variants.
 - Mithral Golems in lesser, regular, greater and perfect variants.
 - Adamantite Golems in lesser, regular, greater and perfect variants.
+
+It is rumored that there is another secret set of tomes which contains knowledge about constructing 
+more exotic types of golems.
 
 Each golem requires materials for constructing the physical shell, and possibly additional 
 ingredients to implement specific key features of the golem. Creating perfect variant is a feat 
@@ -80,7 +80,7 @@ the talk by pressing the Talk button, or pressing F1).
 
 2.1. Replace original Golem Manual (for BG2:EE and EET only)
 This component removes the original Golem Manual and all additional pages completely since it 
-became largely obsolete with this mod. Instead you will find items related to the Golem 
+becomes largely obsolete with this mod. Instead you will find items related to the Golem 
 Construction Manuals provided by this mod.
 
 2.2. Improve enemy spellcaster AI (for BG2:EE and EET only)
@@ -137,8 +137,21 @@ History
 - Added German translation
 - Added Polish translation (big thanks to Cahir)
 - Thieves with UAI can also build golems (using Bard level requirements)
-- Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA
+- Rebalanced golem building requirements
 - Minor adjustments of golem stats
+- Improved overall EET compatibility
+- Improved basic golem AI
+- Adapted previously hardcoded strings regarding familiars not allowed to execute specific actions
+- Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA
+- Fixed a bug regarding random treasures found in containers which sometimes contained unremovable 
+  items
+- Fixed an issue which didn't properly keep track of the number of active golems
+- Fixed the golem removal script at the end of the SoD plot which had serious side effects in later 
+  campaigns in EET
+- Fixed accidental removal of a plot item in WK if "Replace original Golem Manual" tweak have been 
+  installed
+- Fixed enemy golem behavior if "Golems for enemy spellcasters" or "Greater variety of enemy golem 
+  types" tweaks have been installed
 - Several textual fixes and updates
 
 2.1

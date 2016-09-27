@@ -103,8 +103,21 @@ History
 - Added German translation
 - Added Polish translation (big thanks to Cahir)
 - Thieves with UAI can also build golems (using Bard level requirements)
-- Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA
+- Rebalanced golem building requirements
 - Minor adjustments of golem stats
+- Improved overall EET compatibility
+- Improved basic golem AI
+- Adapted previously hardcoded strings regarding familiars not allowed to execute specific actions
+- Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA
+- Fixed a bug regarding random treasures found in containers which sometimes contained unremovable 
+  items
+- Fixed an issue which didn't properly keep track of the number of active golems
+- Fixed the golem removal script at the end of the SoD plot which had serious side effects in later 
+  campaigns in EET
+- Fixed accidental removal of a plot item in WK if "Replace original Golem Manual" tweak have been 
+  installed
+- Fixed enemy golem behavior if "Golems for enemy spellcasters" or "Greater variety of enemy golem 
+  types" tweaks have been installed
 - Several textual fixes and updates
 
 2.1
