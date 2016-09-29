@@ -29,9 +29,7 @@ END
 
 // IWD Miniature Iron Golem animation
 LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
-ACTION_IF (slot > 0) BEGIN
-  OUTER_SET slot_golem_iron_iwd_mini = slot
-END ELSE BEGIN
+ACTION_IF (slot <= 0) BEGIN
   FAIL @102 // No free creature animation slot found.
 END
 
@@ -48,13 +46,9 @@ END
 
 // Miniature Iron Golem animation
 LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
-ACTION_IF (slot > 0) BEGIN
-  OUTER_SET slot_golem_iron_mini = slot
-END ELSE BEGIN
+ACTION_IF (slot <= 0) BEGIN
   LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
-  ACTION_IF (slot > 0) BEGIN
-    OUTER_SET slot_golem_iron_mini = slot
-  END ELSE BEGIN
+  ACTION_IF (slot <= 0) BEGIN
     FAIL @102 // No free creature animation slot found.
   END
 END
@@ -70,15 +64,30 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_mini~ ~^.+\.bam$~ BEGIN
 END
 
 
+// Brain Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+ACTION_IF (slot <= 0) BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_BRAIN~ UNLESS ~A7!GOLEM_BRAIN~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_brain/exxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_brain~ ~^.+\.bam$~ BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+END
+
+
 // Lightning Golem animation
 LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
-ACTION_IF (slot > 0) BEGIN
-  OUTER_SET slot_golem_lightning = slot
-END ELSE BEGIN
+ACTION_IF (slot <= 0) BEGIN
   LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
-  ACTION_IF (slot > 0) BEGIN
-    OUTER_SET slot_golem_lightning = slot
-  END ELSE BEGIN
+  ACTION_IF (slot <= 0) BEGIN
     FAIL @102 // No free creature animation slot found.
   END
 END
@@ -96,13 +105,9 @@ END
 
 // Maggot Golem animation
 LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
-ACTION_IF (slot > 0) BEGIN
-  OUTER_SET slot_golem_maggot = slot
-END ELSE BEGIN
+ACTION_IF (slot <= 0) BEGIN
   LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
-  ACTION_IF (slot > 0) BEGIN
-    OUTER_SET slot_golem_maggot = slot
-  END ELSE BEGIN
+  ACTION_IF (slot <= 0) BEGIN
     FAIL @102 // No free creature animation slot found.
   END
 END
@@ -120,9 +125,7 @@ END
 
 // Ruby Golem animation
 LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
-ACTION_IF (slot > 0) BEGIN
-  OUTER_SET slot_golem_ruby = slot
-END ELSE BEGIN
+ACTION_IF (slot <= 0) BEGIN
   FAIL @102 // No free creature animation slot found.
 END
 
@@ -400,7 +403,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glir1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glir1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_iron_iwd_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -413,7 +416,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsir1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glir1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_iron_iwd_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -488,7 +491,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glmi1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glmi1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -501,7 +504,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsmi1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glmi1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -576,7 +579,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glad1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glad1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -589,7 +592,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsad1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glad1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -664,7 +667,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glmg.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glmg~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd2~ #8
-  WRITE_LONG 0x28 slot_golem_maggot
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_MAGGOT~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -700,6 +703,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glbr.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glbr~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -755,7 +759,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gllt.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!gllt~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_lightning
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_LIGHTNING~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -773,7 +777,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glru.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glru~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 slot_golem_ruby
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_RUBY~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~

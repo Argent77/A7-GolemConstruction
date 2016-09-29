@@ -134,13 +134,13 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxir1.cre~ ~override~
   SAY NAME2 @4001 // Lesser Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_iron_iwd_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
 COPY ~%MOD_FOLDER%/creatures/a7!gyir1.cre~ ~override~
   SAY NAME1 @4001 // Lesser Iron Golem
   SAY NAME2 @4001 // Lesser Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_iron_iwd_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
 
 COPY ~%MOD_FOLDER%/creatures/a7!gxir2.cre~ ~override~
   SAY NAME1 @4002 // Iron Golem
@@ -180,13 +180,13 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxmi1.cre~ ~override~
   SAY NAME2 @5001 // Lesser Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
 COPY ~%MOD_FOLDER%/creatures/a7!gymi1.cre~ ~override~
   SAY NAME1 @5001 // Lesser Mithral Golem
   SAY NAME2 @5001 // Lesser Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
 
 COPY ~%MOD_FOLDER%/creatures/a7!gxmi2.cre~ ~override~
   SAY NAME1 @5002 // Mithral Golem
@@ -226,13 +226,13 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxad1.cre~ ~override~
   SAY NAME2 @6001 // Lesser Adamantite Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxad1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
 COPY ~%MOD_FOLDER%/creatures/a7!gyad1.cre~ ~override~
   SAY NAME1 @6001 // Lesser Adamantite Golem
   SAY NAME2 @6001 // Lesser Adamantite Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxad1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_iron_mini
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
 
 COPY ~%MOD_FOLDER%/creatures/a7!gxad2.cre~ ~override~
   SAY NAME1 @6002 // Adamantite Golem
@@ -272,7 +272,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxmg.cre~ ~override~
   SAY NAME2 @7001 // Maggot Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmg~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_maggot
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_MAGGOT~))
 
 
 // Bone Golem
@@ -321,7 +321,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxlt.cre~ ~override~
   SAY NAME2 @12001 // Lightning Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxlt~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_lightning
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_LIGHTNING~))
   ADD_KNOWN_SPELL ~a7!in15~ #0 ~innate~   // Lightning Travel
   ADD_MEMORIZED_SPELL ~a7!in15~ #0 ~innate~
   ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~   // Chain Lightning
@@ -334,7 +334,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxru.cre~ ~override~
   SAY NAME2 @13001 // Ruby Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxru~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 slot_golem_ruby
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_RUBY~))
   ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
   ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (3)
 

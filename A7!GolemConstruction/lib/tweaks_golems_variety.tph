@@ -497,4 +497,32 @@ REPLACE_STATE_TRIGGER ~suelf2~ 4 ~Global("ElvenAvatar","GLOBAL",0) Dead("a7!gxcl
                 ~igolfle3.cre~ ~override~
                 ~igolfle4.cre~ ~override~
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+
+
+  // Improved animation for Brain Golems
+  COPY_EXISTING ~golbra01.cre~ ~override~
+                ~udgolem.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
+    LPF ADD_CRE_EFFECT
+    INT_VAR
+      opcode      = 52  // Character Tint Bright
+      target      = 1   // Self
+      timing      = 9   // Instant/Permanent
+      parameter1  = (14 << 8) | (12 << 16) | (8 << 24)  // Color: R=14, G=12, B=8
+      parameter2  = 2   // Location: Major Color
+    END
+    LPF ADD_CRE_EFFECT
+    INT_VAR
+      opcode      = 101 // Immunity to Effect
+      target      = 1   // Self
+      timing      = 9   // Instant/Permanent
+      parameter2  = 9   // Set Color Glow Pulse
+    END
+    LPF ADD_CRE_EFFECT
+    INT_VAR
+      opcode      = 101 // Immunity to Effect
+      target      = 1   // Self
+      timing      = 9   // Instant/Permanent
+      parameter2  = 50  // Character Color Pulse
+    END
 END
