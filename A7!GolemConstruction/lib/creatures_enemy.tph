@@ -291,6 +291,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxbr.cre~ ~override~
   SAY NAME2 @9001 // Brain Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxbr~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
   ADD_KNOWN_SPELL ~a7!in09~ #0 ~innate~   // Mind Blast
   ADD_MEMORIZED_SPELL ~a7!in09~ #0 ~innate~ (4)
 
