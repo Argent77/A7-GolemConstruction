@@ -27,25 +27,25 @@ Charged ability:
 Allows the user to build the following golems:
 
 Lesser Mithral Golem:
-Min. level: 18 (-2 for Transmuters, +2 for Bards)
+Min. level: 18 (-2 for Transmuters, +4 for Bards)
 Ingredients:
 - One chunk of mithral
 - 4,000 XP drained from the caster
 
 Mithral Golem:
-Min. level: 22 (-2 for Transmuters, +2 for Bards)
+Min. level: 22 (-2 for Transmuters, +6 for Bards)
 Ingredients:
 - Two chunks of mithral
 - 8,000 XP drained from the caster
 
 Greater Mithral Golem:
-Min. level: 28 (-2 for Transmuters, +2 for Bards)
+Min. level: 27 (-2 for Transmuters, +8 for Bards)
 Ingredients:
 - Four chunks of mithral
 - 16,000 XP drained from the caster
 
 Perfect Mithral Golem:
-Min. level: 31 (-2 for Transmuters, +2 for Bards)
+Min. level: 30 (-2 for Transmuters, +10 for Bards)
 Ingredients:
 - Four chunks of mithral
 - One orb of Spectral Obsidian
@@ -70,25 +70,25 @@ From what you can gather this book is part of a collection that comes in six vol
 Allows the user to build the following golems:
 
 Lesser Mithral Golem:
-Min. level: 18 (-2 for Transmuters, +2 for Bards)
+Min. level: 18 (-2 for Transmuters, +4 for Bards)
 Ingredients:
 - One chunk of mithral
 - 4,000 XP drained from the caster
 
 Mithral Golem:
-Min. level: 22 (-2 for Transmuters, +2 for Bards)
+Min. level: 22 (-2 for Transmuters, +6 for Bards)
 Ingredients:
 - Two chunks of mithral
 - 8,000 XP drained from the caster
 
 Greater Mithral Golem:
-Min. level: 28 (-2 for Transmuters, +2 for Bards)
+Min. level: 27 (-2 for Transmuters, +8 for Bards)
 Ingredients:
 - Four chunks of mithral
 - 16,000 XP drained from the caster
 
 Perfect Mithral Golem:
-Min. level: 31 (-2 for Transmuters, +2 for Bards)
+Min. level: 30 (-2 for Transmuters, +10 for Bards)
 Ingredients:
 - Four chunks of mithral
 - One orb of Spectral Obsidian

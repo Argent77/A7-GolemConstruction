@@ -134,6 +134,12 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
+2.3
+- Improved creature animation for Brain Golems
+- Rebalanced level requirements for building golems and level adjustments for bards and thieves
+- Fixed duplicate reply options in golem construction dialog when used by mage/thief dual or 
+  multiclasses
+
 2.2
 - Added German translation
 - Added Polish translation (big thanks to Cahir)

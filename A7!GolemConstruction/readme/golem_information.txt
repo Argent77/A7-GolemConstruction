@@ -82,7 +82,7 @@ Flesh Golem:
   in sight.
 
 Greater Flesh Golem:
-- Min. level: 14 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 14 (-2 for Transmuters, +3 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four full sets of body parts
   - One scroll of Stinking Cloud
@@ -107,7 +107,7 @@ Greater Flesh Golem:
 - 50% chance to split into two lesser golems of same type on death.
 
 Perfect Flesh Golem:
-- Min. level: 16 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 16 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four full sets of body parts
   - One scroll of Stinking Cloud
@@ -157,7 +157,7 @@ Lesser Clay Golem:
   in sight.
 
 Clay Golem:
-- Min. level: 14 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 14 (-2 for Transmuters, +3 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Two blocks of clay
   - One scroll of Haste
@@ -184,7 +184,7 @@ Clay Golem:
   in sight.
 
 Greater Clay Golem:
-- Min. level: 19 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 18 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four block of clay
   - One scroll of Haste
@@ -213,7 +213,7 @@ Greater Clay Golem:
 - 50% chance to split into two lesser golems of same type on death.
 
 Perfect Clay Golem:
-- Min. level: 21 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 20 (-2 for Transmuters, +6 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four block of clay
   - One scroll of Haste
@@ -263,7 +263,7 @@ Lesser Stone Golem:
   in sight.
 
 Stone Golem:
-- Min. level: 14 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 14 (-2 for Transmuters, +3 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Two blocks of stone
   - One scroll of Slow
@@ -282,7 +282,7 @@ Stone Golem:
   in sight.
 
 Greater Stone Golem:
-- Min. level: 19 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 18 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four blocks of stone
   - One scroll of Slow
@@ -304,7 +304,7 @@ Greater Stone Golem:
 - 50% chance to split into two lesser golems of same type on death.
 
 Perfect Stone Golem:
-- Min. level: 21 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 20 (-2 for Transmuters, +6 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four blocks of stone
   - One scroll of Slow
@@ -333,7 +333,7 @@ Perfect Stone Golem:
 4. Iron Golems
 
 Lesser Iron Golem:
-- Min. level: 15 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 15 (-2 for Transmuters, +3 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - One bar of iron
 - Stats:
@@ -354,7 +354,7 @@ Lesser Iron Golem:
 - Immune to non-magical and +1 weapons
 
 Iron Golem:
-- Min. level: 18 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 18 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Two bars of iron
   - One scroll of Cloudkill
@@ -380,7 +380,7 @@ Iron Golem:
 - May cast Gas Cloud on self
 
 Greater Iron Golem:
-- Min. level: 24 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 23 (-2 for Transmuters, +6 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four bars of iron
   - One scroll of Cloudkill
@@ -409,7 +409,7 @@ Greater Iron Golem:
 - 50% chance to split into two lesser golems of same type on death.
 
 Perfect Iron Golem:
-- Min. level: 27 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 26 (-2 for Transmuters, +8 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four bars of iron
   - One scroll of Cloudkill
@@ -442,7 +442,7 @@ Perfect Iron Golem:
 5. Mithral Golems
 
 Lesser Mithral Golem:
-- Min. level: 18 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 18 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - One chunk of mithral
   - 4,000 XP drained from the caster
@@ -467,7 +467,7 @@ Lesser Mithral Golem:
 - Immune to non-magical, +1 and +2 weapons
 
 Mithral Golem:
-- Min. level: 22 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 22 (-2 for Transmuters, +6 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Two chunks of mithral
   - 8,000 XP drained from the caster
@@ -494,7 +494,7 @@ Mithral Golem:
 - Immune to non-magical, +1 and +2 weapons
 
 Greater Mithral Golem:
-- Min. level: 28 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 27 (-2 for Transmuters, +8 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four chunks of mithral
   - 16,000 XP drained from the caster
@@ -524,7 +524,7 @@ Greater Mithral Golem:
 - 50% chance to split into two lesser golems of same type on death.
 
 Perfect Mithral Golem:
-- Min. level: 31 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 30 (-2 for Transmuters, +10 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four chunks of mithral
   - One orb of Spectral Obsidian
@@ -558,7 +558,7 @@ Perfect Mithral Golem:
 6. Adamantite Golems
 
 Lesser Adamantite Golem:
-- Min. level: 21 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 21 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Two bars of adamantine
   - 8,000 XP drained from the caster
@@ -584,7 +584,7 @@ Lesser Adamantite Golem:
 - Immune to non-magical, +1 and +2 weapons
 
 Adamantite Golem:
-- Min. level: 25 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 25 (-2 for Transmuters, +6 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four bars of adamantine
   - 16,000 XP drained from the caster
@@ -613,7 +613,7 @@ Adamantite Golem:
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
 
 Greater Adamantite Golem:
-- Min. level: 31 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 30 (-2 for Transmuters, +8 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Eight bars of adamantine
   - 32,000 XP drained from the caster
@@ -643,7 +643,7 @@ Greater Adamantite Golem:
 - 50% chance to split into two lesser golems of same type on death.
 
 Perfect Adamantite Golem:
-- Min. level: 34 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 33 (-2 for Transmuters, +10 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Eight bars of adamantine
   - One drop of blood from a Solar or Fallen Solar
@@ -716,7 +716,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   disintegrates.
 
 2. Bone Golem
-- Min. level: 16 (-2 for Necromancers and Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 16 (-2 for Necromancers and Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four piles of bones
   - One scroll of Animate Dead
@@ -745,7 +745,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   run around in fear for 2d6 rounds. If they also fail their save vs. death, they will by paralyzed with fear instead.
 
 3. Brain Golem
-- Min. level: 17 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 17 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - One piece of brain tissue
   - One scroll of Domination
@@ -773,7 +773,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   and myconids.
 
 4. Ice Golem
-- Min. level: 19 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 19 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - One shard of magical ice
   - One scroll of Cone of Cold
@@ -799,7 +799,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - May cast Scalding Steam which does 3d10 area of effect cold damage (save vs. breath to avoid)
 
 5. Magic Golem
-- Min. level: 19 (-2 for Wild Mages and Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 19 (-2 for Wild Mages and Transmuters, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - One wild magic stone fragment
   - One scroll of Protection from Magical Weapons, Mantle or Improved Mantle
@@ -827,7 +827,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   everyone in 30 feet radius (save vs. spell for half damage).
 
 6. Lightning Golem
-- Min. level: 22 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 22 (-2 for Transmuters, +6 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - 100,000 gold
   - One scroll of Chain Lightning
