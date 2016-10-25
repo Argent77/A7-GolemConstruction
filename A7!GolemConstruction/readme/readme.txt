@@ -138,6 +138,9 @@ History
 - Rebalanced level requirements for building golems and level adjustments for bards and thieves
 - Fixed duplicate reply options in golem construction dialog when used by mage/thief dual or 
   multiclasses
+- Improved level checks for constructing golems which provides better support for mage/thief class 
+  combinations
+- Fixed incorrect mage level check for perfect adamantite golems
 
 2.2
 - Added German translation
