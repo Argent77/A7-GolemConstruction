@@ -16,7 +16,9 @@ IF
   Global("init", "LOCALS", 0)
   Detect(LastSummonerOf(Myself))
   Global("A7!SundriesPermission", "GLOBAL", 1)
-  AreaCheck("BD0122")
+  OR(2)
+    AreaCheck("BD0122")
+    AreaCheck("BG0704")   // EET: BG1 area also allowed
 THEN
   RESPONSE #100
     SetGlobal("init", "LOCALS", 1)
