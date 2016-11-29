@@ -99,6 +99,12 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
+2.4
+- Added option of listing learned golem types to construction dialog
+- Worked around an issue of not having a weapon equipped after being released from Imprisonment
+- Fixed bug which removed yellow tint from enemy brain golems after death
+- Traified two remaining dialog lines
+
 2.3
 - Improved creature animation for Brain Golems
 - Rebalanced level requirements for building golems and level adjustments for bards and thieves

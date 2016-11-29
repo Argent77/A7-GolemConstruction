@@ -20,6 +20,8 @@
 @41006 = ~Adamantytowy golem~
 @41007 = ~Egzotyczny golem~
 @41008 = ~Po wielu godzinach ciężkiej pracy przy budowie fizycznej powłoki golem jest wreszcie gotowy na ostatnie zaklęcia... Dokładna ilość godzin spędzonych przy budowie ciała golema to: <A7_HOURS>.~
+@41009 = ~Przygotowujesz się na czekające cię zadanie...~
+@41010 = ~...ale nie jesteś w stanie tego uczynić w tej lokacji.~
 @41011 = ~Wybierz wariant golema:~
 @41012 = ~Pomniejszy golem z ciała~
 @41013 = ~Golem z ciała~
@@ -60,6 +62,8 @@
 @41048 = ~Wybierz inny rodzaj golema~
 @41049 = ~Rubinowy golem~
 @41050 = ~Nie możesz kontrolować większej ilości golemów.~
+@41051 = ~Wyświetla listę dostępnych typów golemów~
+@41052 = ~Postać nauczyła się budowy następujących typów golemów:~
 
 
 // *** Wish Djinni dialog ***

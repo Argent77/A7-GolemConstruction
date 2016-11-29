@@ -20,6 +20,8 @@
 @41006 = ~Adamantite Golem~
 @41007 = ~Exotic Golem~
 @41008 = ~After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment...~
+@41009 = ~You prepare yourself for the task before you...~
+@41010 = ~...but are unable to do so in this location.~
 @41011 = ~Select golem variant:~
 @41012 = ~Lesser Flesh Golem~
 @41013 = ~Flesh Golem~
@@ -60,6 +62,8 @@
 @41048 = ~Select different golem type~
 @41049 = ~Ruby Golem~
 @41050 = ~You cannot have any more golems following you.~
+@41051 = ~List available golem types~
+@41052 = ~The following golem types have been learned by <GABBER>:~
 
 
 // *** Wish Djinni dialog ***

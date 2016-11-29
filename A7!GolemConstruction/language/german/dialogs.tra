@@ -20,6 +20,8 @@
 @41006 = ~Adamantitgolem~
 @41007 = ~Exotischer Golem~
 @41008 = ~Nach <A7_HOURS> Stunden harter Arbeit ist der Golem bereit für die abschließende magische Beschwörung...~
+@41009 = ~Ihr startet mit den Vorbereitungen zum Golembau...~
+@41010 = ~...seid aber an diesem Ort nicht dazu in der Lage.~
 @41011 = ~Golemvariante auswählen:~
 @41012 = ~Niederer Fleischgolem~
 @41013 = ~Fleischgolem~
@@ -60,6 +62,8 @@
 @41048 = ~Einen anderen Golemtyp auswählen~
 @41049 = ~Rubingolem~
 @41050 = ~Euch können keine weiteren Golems auf einmal folgen.~
+@41051 = ~Alle verfügbaren Golemtypen aufzählen~
+@41052 = ~<GABBER> hat die folgenden Golemtypen erlernt:~
 
 
 // *** Wish Djinni dialog ***
