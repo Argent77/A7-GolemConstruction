@@ -1,5 +1,15 @@
 // *** Type-specific actions (Greater Flesh Golem) ***
 
+// Work-around to ensure golem is properly equipped after being released from Imprisonment
+IF
+  Die()
+  !StateCheck(Myself, STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Continue()
+END
+
 IF
   Die()
   StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
