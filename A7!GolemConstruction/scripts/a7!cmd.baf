@@ -6,6 +6,7 @@ IF
   See(LastSummonerOf(Myself))
 THEN
   RESPONSE #100
+    EquipMostDamagingMelee()
     AttackOneRound(LastSeenBy(Myself))
 END
 
@@ -14,6 +15,7 @@ IF
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
+    EquipMostDamagingMelee()
     AttackOneRound(LastSeenBy(Myself))
 END
 
@@ -22,6 +24,7 @@ IF
   See([ANYONE])
 THEN
   RESPONSE #100
+    EquipMostDamagingMelee()
     AttackOneRound(LastSeenBy(Myself))
 END
 
