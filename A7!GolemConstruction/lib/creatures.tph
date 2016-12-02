@@ -5,6 +5,39 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_mini~ ~^.+\.bam$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
+// PST Flesh Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+ACTION_IF (slot <= 0) BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_FLESH_PST~ UNLESS ~A7!GOLEM_FLESH_PST~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst/exxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst~ ~^.+\.bam$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+
+// PST Miniature Flesh Golem animation
+LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+ACTION_IF (slot <= 0) BEGIN
+  FAIL @102 // No free creature animation slot found.
+END
+
+LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_FLESH_PST_MINI~ UNLESS ~A7!GOLEM_FLESH_PST_MINI~
+CLEAR_IDS_MAP
+
+COPY ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst_mini/exxx.ini~ ~override/%hexNumber%.ini~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst_mini~ ~^.+\.bam$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
 
 // IWD Iron Golem animation
 APPEND ~animate.ids~ ~0xE250 GOLEM_IRON_IWD~ UNLESS ~0xE250[ %TAB%]+GOLEM_IRON_IWD~
@@ -15,12 +48,6 @@ ACTION_IF (NOT FILE_EXISTS_IN_GAME ~e250.ini~) BEGIN
 END
 
 ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd~ ~^.+\.bam$~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
-    COPY ~%BASH_FOR_FILESPEC%~ ~override~
-  END
-END
-
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/shared~ ~^.+\.wav$~ BEGIN
   ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
   END
@@ -140,6 +167,14 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_ruby~ ~^.+\.bmp$~ BEGIN
 END
 
 
+// Installing creature sound files
+ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/shared~ ~^.+\.wav$~ BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+END
+
+
 
 // Flesh Golems
 COPY ~%MOD_FOLDER%/creatures/a7!glfl1.cre~ ~override~
@@ -149,6 +184,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glfl1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glfl1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd2~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -161,6 +197,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsfl1.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glfl1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd2~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -174,6 +211,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glfl2.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glfl2~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -186,6 +224,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gsfl2.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glfl2~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -199,6 +238,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glfl3.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glfl3~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -214,6 +254,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!glfl4.cre~ ~override~
   WRITE_ASCII SCRIPT_CLASS ~a7!glfl4~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
   WRITE_ASCII DIALOG ~a7!cmd~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   WRITE_BYTE 0x274 specific_golem
   ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
   ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
@@ -862,6 +903,10 @@ END
 
 // Installing enemy golems
 INCLUDE ~%MOD_FOLDER%/lib/creatures_enemy.tph~
+
+
+// Applying creature animation changes to original golems of the game
+INCLUDE ~%MOD_FOLDER%/lib/creatures_vanilla.tph~
 
 
 // Adding random treasure tables for clay golems

@@ -6,10 +6,6 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     WRITE_ASCII DEATHVAR ~kpgol02~ #32
   BUT_ONLY
 
-  COPY_EXISTING ~kpgol04.cre~ ~override~
-    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON_IWD~))
-  BUT_ONLY
-
   // Flesh Golem existence check
 <<<<<<<< .../inlined/a7!glkp1.baf
 IF
@@ -126,7 +122,7 @@ END
     INT_VAR
       fj_loc_x        = 634
       fj_loc_y        = 428
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
       fj_orientation  = 2 // sw
     STR_VAR
       fj_structure_type = "actor"

@@ -6,28 +6,33 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxfl1.cre~ ~override~
   SAY NAME2 @1001 // Lesser Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
 COPY ~%MOD_FOLDER%/creatures/a7!gyfl1.cre~ ~override~
   SAY NAME1 @1001 // Lesser Flesh Golem
   SAY NAME2 @1001 // Lesser Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxfl1~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
 
 COPY ~%MOD_FOLDER%/creatures/a7!gxfl2.cre~ ~override~
   SAY NAME1 @1002 // Flesh Golem
   SAY NAME2 @1002 // Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl2~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
 COPY ~%MOD_FOLDER%/creatures/a7!gyfl2.cre~ ~override~
   SAY NAME1 @1002 // Flesh Golem
   SAY NAME2 @1002 // Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl2~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
 
 COPY ~%MOD_FOLDER%/creatures/a7!gxfl3.cre~ ~override~
   SAY NAME1 @1003 // Greater Flesh Golem
   SAY NAME2 @1003 // Greater Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl3~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
   ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (3)
 
@@ -36,6 +41,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxfl4.cre~ ~override~
   SAY NAME2 @1004 // Perfect Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl4~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
   ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (5)
 

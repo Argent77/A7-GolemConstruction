@@ -1,0 +1,72 @@
+// *** Installing enemy golems ***
+
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // Applying animation to Lesser Stone Golems
+  COPY_EXISTING ~bdpetsg.cre~ ~override~
+                ~bdpetsg2.cre~ ~override~
+                ~bdpetsgs.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+  BUT_ONLY
+
+  // Applying tint to Stone Golems
+  COPY_EXISTING ~bdgolsto.cre~ ~override~
+                ~bdmengo.cre~  ~override~
+                ~bdpetsg.cre~  ~override~
+                ~bdpetsg2.cre~ ~override~
+                ~bdpetsgs.cre~ ~override~
+    LPF APPLY_STONE_GOLEM_TINT END
+  BUT_ONLY
+END
+
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Applying animation to Flesh Golems
+  COPY_EXISTING ~arngol01.cre~ ~override~
+                ~golfle01.cre~ ~override~
+                ~kpgol01.cre~  ~override~
+                ~kpgol06.cre~  ~override~
+                ~tomegol1.cre~ ~override~
+                ~xgolem.cre~   ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
+  BUT_ONLY
+
+  // Applying animation to Lesser Stone Golems
+  COPY_EXISTING ~igolfle1.cre~ ~override~
+                ~igolfle2.cre~ ~override~
+                ~igolfle3.cre~ ~override~
+                ~igolfle4.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+    LPF APPLY_STONE_GOLEM_TINT END
+  BUT_ONLY
+
+  // Applying animation to Iron Golems
+  COPY_EXISTING ~goliro01.cre~ ~override~
+                ~kpgol04.cre~  ~override~
+                ~shiron.cre~   ~override~
+                ~tomegol4.cre~ ~override~
+                ~gorgrd01.cre~ ~override~
+                ~gorgrd02.cre~ ~override~
+                ~gorsta08.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON_IWD~))
+  BUT_ONLY
+
+  // Applying animation and tint to Brain Golems
+  COPY_EXISTING ~golbra01.cre~ ~override~
+                ~udgolem.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
+    LPF APPLY_BRAIN_GOLEM_TINT END
+  BUT_ONLY
+
+  // Applying tint to Stone Golems
+  COPY_EXISTING ~dstone1.cre~  ~override~
+                ~goljug01.cre~ ~override~
+                ~golsto01.cre~ ~override~
+                ~jugjug01.cre~ ~override~
+                ~jugjug02.cre~ ~override~
+                ~kpgol03.cre~  ~override~
+                ~kpgol05.cre~  ~override~
+                ~stgol01.cre~  ~override~
+                ~tomegol3.cre~ ~override~
+    LPF APPLY_STONE_GOLEM_TINT END
+  BUT_ONLY
+END

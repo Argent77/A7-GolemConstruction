@@ -12,12 +12,6 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
       END
     END
   BUT_ONLY
-
-  // Improved animation for Lesser Stone Golems
-  COPY_EXISTING ~bdpetsg.cre~ ~override~
-                ~bdpetsg2.cre~ ~override~
-                ~bdpetsgs.cre~ ~override~
-    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
 END
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
@@ -489,40 +483,4 @@ REPLACE_STATE_TRIGGER ~suelf2~ 4 ~Global("ElvenAvatar","GLOBAL",0) Dead("a7!gxcl
       END
     END
   BUT_ONLY
-
-
-  // Improved animation for Lesser Stone Golems
-  COPY_EXISTING ~igolfle1.cre~ ~override~
-                ~igolfle2.cre~ ~override~
-                ~igolfle3.cre~ ~override~
-                ~igolfle4.cre~ ~override~
-    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
-
-
-  // Improved animation for Brain Golems
-  COPY_EXISTING ~golbra01.cre~ ~override~
-                ~udgolem.cre~ ~override~
-    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
-    LPF ADD_CRE_EFFECT
-    INT_VAR
-      opcode      = 52  // Character Tint Bright
-      target      = 1   // Self
-      timing      = 9   // Instant/Permanent
-      parameter1  = (14 << 8) | (12 << 16) | (8 << 24)  // Color: R=14, G=12, B=8
-      parameter2  = 2   // Location: Major Color
-    END
-    LPF ADD_CRE_EFFECT
-    INT_VAR
-      opcode      = 101 // Immunity to Effect
-      target      = 1   // Self
-      timing      = 9   // Instant/Permanent
-      parameter2  = 9   // Set Color Glow Pulse
-    END
-    LPF ADD_CRE_EFFECT
-    INT_VAR
-      opcode      = 101 // Immunity to Effect
-      target      = 1   // Self
-      timing      = 9   // Instant/Permanent
-      parameter2  = 50  // Character Color Pulse
-    END
 END

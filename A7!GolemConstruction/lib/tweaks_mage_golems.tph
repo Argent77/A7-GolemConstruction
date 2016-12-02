@@ -93,7 +93,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     INT_VAR
       fj_loc_x        = 646
       fj_loc_y        = 446
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~))
       fj_orientation  = 0 // south
     STR_VAR
       fj_structure_type = "actor"
@@ -108,7 +108,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     INT_VAR
       fj_loc_x        = 486
       fj_loc_y        = 274
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
       fj_orientation  = 0 // south
     STR_VAR
       fj_structure_type = "actor"
@@ -122,22 +122,28 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     SET chance = RANDOM (0 5)
     PATCH_IF (chance = 0) BEGIN
       TEXT_SPRINT golemRes ~A7!GXFL2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~)
     END ELSE PATCH_IF (chance = 1) BEGIN
       TEXT_SPRINT golemRes ~A7!GXCL2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 2) BEGIN
       TEXT_SPRINT golemRes ~A7!GXST2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 3) BEGIN
       TEXT_SPRINT golemRes ~A7!GXIR1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON_IWD~)
     END ELSE PATCH_IF (chance = 4) BEGIN
       TEXT_SPRINT golemRes ~A7!GXMI1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END ELSE BEGIN
       TEXT_SPRINT golemRes ~A7!GXAD1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END
     LPF fj_are_structure
     INT_VAR
       fj_loc_x        = 1035
       fj_loc_y        = 690
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = golemAnim
       fj_orientation  = 2 // sw
     STR_VAR
       fj_structure_type = "actor"
@@ -160,16 +166,19 @@ END
     SET chance = RANDOM (0 2)
     PATCH_IF (chance = 0) BEGIN
       TEXT_SPRINT golemRes ~A7!GXFL2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~)
     END ELSE PATCH_IF (chance = 1) BEGIN
       TEXT_SPRINT golemRes ~A7!GXCL2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE BEGIN
       TEXT_SPRINT golemRes ~A7!GXST2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END
     LPF fj_are_structure
     INT_VAR
       fj_loc_x        = 300
       fj_loc_y        = 274
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = golemAnim
       fj_orientation  = 14 // se
     STR_VAR
       fj_structure_type = "actor"
@@ -184,22 +193,28 @@ END
     SET chance = RANDOM (0 5)
     PATCH_IF (chance = 0) BEGIN
       TEXT_SPRINT golemRes ~A7!GXFL4~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~)
     END ELSE PATCH_IF (chance = 1) BEGIN
       TEXT_SPRINT golemRes ~A7!GXCL3~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 2) BEGIN
       TEXT_SPRINT golemRes ~A7!GXST3~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 3) BEGIN
       TEXT_SPRINT golemRes ~A7!GXIR2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON_IWD~)
     END ELSE PATCH_IF (chance = 4) BEGIN
       TEXT_SPRINT golemRes ~A7!GXMI1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END ELSE BEGIN
       TEXT_SPRINT golemRes ~A7!GXAD1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END
     LPF fj_are_structure
     INT_VAR
       fj_loc_x        = 920
       fj_loc_y        = 1080
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = golemAnim
       fj_orientation  = 0 // south
     STR_VAR
       fj_structure_type = "actor"
@@ -223,7 +238,7 @@ END
     INT_VAR
       fj_loc_x        = 2940
       fj_loc_y        = 1478
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_MAGGOT~))
       fj_orientation  = 0 // south
     STR_VAR
       fj_structure_type = "actor"
@@ -238,22 +253,28 @@ END
     SET chance = RANDOM (0 5)
     PATCH_IF (chance = 0) BEGIN
       TEXT_SPRINT golemRes ~A7!GXCL3~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 1) BEGIN
       TEXT_SPRINT golemRes ~A7!GXCL4~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 2) BEGIN
       TEXT_SPRINT golemRes ~A7!GXST3~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 3) BEGIN
       TEXT_SPRINT golemRes ~A7!GXST4~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 4) BEGIN
       TEXT_SPRINT golemRes ~A7!GXMI1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END ELSE BEGIN
       TEXT_SPRINT golemRes ~A7!GXAD1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END
     LPF fj_are_structure
     INT_VAR
       fj_loc_x        = 1340
       fj_loc_y        = 694
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = golemAnim
       fj_orientation  = 0 // south
     STR_VAR
       fj_structure_type = "actor"
@@ -268,7 +289,7 @@ END
     INT_VAR
       fj_loc_x        = 1534
       fj_loc_y        = 1840
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
       fj_orientation  = 8 // north
     STR_VAR
       fj_structure_type = "actor"
@@ -292,7 +313,7 @@ END
     INT_VAR
       fj_loc_x        = 402
       fj_loc_y        = 520
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~))
       fj_orientation  = 14 // se
     STR_VAR
       fj_structure_type = "actor"
@@ -304,7 +325,7 @@ END
     INT_VAR
       fj_loc_x        = 256
       fj_loc_y        = 766
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~))
       fj_orientation  = 14 // se
     STR_VAR
       fj_structure_type = "actor"
@@ -319,22 +340,28 @@ END
     SET chance = RANDOM (0 5)
     PATCH_IF (chance = 0) BEGIN
       TEXT_SPRINT golemRes ~A7!GXCL2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 1) BEGIN
       TEXT_SPRINT golemRes ~A7!GXCL3~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 2) BEGIN
       TEXT_SPRINT golemRes ~A7!GXST2~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 3) BEGIN
       TEXT_SPRINT golemRes ~A7!GXST3~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_CLAY~)
     END ELSE PATCH_IF (chance = 4) BEGIN
       TEXT_SPRINT golemRes ~A7!GXMI1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END ELSE BEGIN
       TEXT_SPRINT golemRes ~A7!GXAD1~
+      SET golemAnim = IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON~)
     END
     LPF fj_are_structure
     INT_VAR
       fj_loc_x        = 630
       fj_loc_y        = 1304
-      fj_animation    = (IDS_OF_SYMBOL (~animate~ ~GOLEM_FLESH~))
+      fj_animation    = golemAnim
       fj_orientation  = 8 // north
     STR_VAR
       fj_structure_type = "actor"
