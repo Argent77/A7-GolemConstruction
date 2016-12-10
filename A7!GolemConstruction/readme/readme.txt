@@ -122,6 +122,9 @@ Writing, coding and testing: Argent77
 
 Polish translation: Cahir
 
+Flesh Golem animation is based on Cuv's "PST Animation Conversion : GSTB - Golem" hosted at 
+Spellhold Studios (http://www.spellholdstudios.net/).
+
 
 Copyright Notice
 ~~~~~~~~~~~~~~~~
@@ -134,6 +137,7 @@ History
 ~~~~~~~
 
 2.4
+- Added new creature animation for Flesh Golems
 - Added option of listing learned golem types to construction dialog
 - Worked around an issue of not having a weapon equipped after being released from Imprisonment
 - Fixed bug which removed yellow tint from enemy brain golems after death
