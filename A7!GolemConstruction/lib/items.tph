@@ -65,6 +65,7 @@ COPY ~%MOD_FOLDER%/items/a7!clay.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30011
 
 COPY ~%MOD_FOLDER%/items/a7!iclay.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gclay.bam~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!cclay.bam~ ~override~
   LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
@@ -122,6 +123,7 @@ COPY ~%MOD_FOLDER%/items/a7!ston.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30021
 
 COPY ~%MOD_FOLDER%/items/a7!iston.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gston.bam~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!cston.bam~ ~override~
   LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
@@ -173,6 +175,7 @@ COPY ~%MOD_FOLDER%/items/a7!iron.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30031
 
 COPY ~%MOD_FOLDER%/items/a7!iiron.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!giron.bam~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!ciron.bam~ ~override~
   LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
@@ -194,6 +197,7 @@ COPY ~%MOD_FOLDER%/items/a7!mith.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30101
 
 COPY ~%MOD_FOLDER%/items/a7!cmith.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gmith.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!imith.bam~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
@@ -227,13 +231,14 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
-// Adamantine bar
+// Adamantine Ore
 COPY ~%MOD_FOLDER%/items/a7!adam.itm~ ~override~
-  SAY NAME1 @30040  // Adamantine Bar
-  SAY NAME2 @30040  // Adamantine Bar
+  SAY NAME1 @30040  // Adamantine Ore
+  SAY NAME2 @30040  // Adamantine Ore
   SAY UNIDENTIFIED_DESC @30041
 
 COPY ~%MOD_FOLDER%/items/a7!cadam.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gadam.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!iadam.bam~ ~override~
 
 
@@ -288,6 +293,7 @@ COPY ~%MOD_FOLDER%/items/a7!bone.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30051
 
 COPY ~%MOD_FOLDER%/items/a7!ibone.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gbone.bam~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!cbone.bam~ ~override~
   LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
@@ -309,6 +315,7 @@ COPY ~%MOD_FOLDER%/items/a7!brin.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30061
 
 COPY ~%MOD_FOLDER%/items/a7!ibrin.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gbrin.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!cbrin.bam~ ~override~
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
@@ -352,6 +359,7 @@ COPY ~%MOD_FOLDER%/items/a7!ice.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30071
 
 COPY ~%MOD_FOLDER%/items/a7!iice.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gice.bam~ ~override~
 
 COPY ~%MOD_FOLDER%/items/a7!cice.bam~ ~override~
   LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
@@ -516,6 +524,7 @@ COPY ~%MOD_FOLDER%/items/a7!wmag.itm~ ~override~
   SAY UNIDENTIFIED_DESC @30081
 
 COPY ~%MOD_FOLDER%/items/a7!cdmag.bam~ ~override~
+     ~%MOD_FOLDER%/items/a7!gdmag.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!idmag.bam~ ~override~
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
