@@ -2,7 +2,7 @@
 // Item-related strings (index 30000..39999)
 
 @30000 = ~Körperteile~
-@30001 = ~Dies ist eine Sammlung verschiedenster menschlicher Körperteile. Sie wurden magisch behandelt, um der natürlichen Verwesungsprozess aufzuhalten..
+@30001 = ~Dies ist eine Sammlung verschiedenster menschlicher Körperteile. Sie wurden magisch behandelt, um der natürlichen Verwesungsprozess aufzuhalten.
 
 EIGENSCHAFTEN:
 
@@ -23,28 +23,28 @@ EIGENSCHAFTEN:
 Gewicht: 25~
 
 @30030 = ~Eisenbarren~
-@30031 = ~Dieser Eisenbarren besteht aus sehr reinen Eisen. Er ist daher sehr gut geeignet, um verzauberte Waffen oder magische Konstrukte herzustellen..
+@30031 = ~Dieser Eisenbarren besteht aus sehr reinem Eisen. Er ist daher gut geeignet, um verzauberte Waffen oder magische Konstrukte herzustellen.
 
 EIGENSCHAFTEN:
 
 Gewicht: 20~
 
-@30040 = ~Adamantitbarren~
-@30041 = ~Es kommt nur selten vor, Adamantit in seiner Ursprungsform zu sehen, Vor Allem, wenn es sich dabei um einen Barren von solch hoher Reinheit handelt. Adamantit kann genutzt werden, um verzauberte Gegenstände oder mächtige magische Konstrukte herzustellen.
+@30040 = ~Adamantiterz~
+@30041 = ~Es kommt nur selten vor, Adamantit in seiner Ursprungsform zu sehen, Vor Allem, wenn es sich dabei um Erz von solch hoher Reinheit handelt. Adamantit kann genutzt werden, um verzauberte Gegenstände oder mächtige magische Konstrukte herzustellen.
 
 EIGENSCHAFTEN:
 
 Gewicht: 20~
 
 @30050 = ~Knochenhaufen~
-@30051 = ~Dieser locker Knochenhaufen besteht vor Allem aus humanoiden Knochen. Alchemisten, Nekromanten und Wandler nutzen Knochen gerne in ihren Experimenten.
+@30051 = ~Dieser lose Knochenhaufen besteht vor Allem aus humanoiden Knochen. Alchemisten, Nekromanten und Wandler nutzen Knochen gerne in ihren Experimenten.
 
 EIGENSCHAFTEN:
 
 Gewicht: 5~
 
 @30060 = ~Hirngewebe~
-@30061 = ~Diese schwammartige Substanz besteht aus Hirngewebe, das magische behandelt wurde, um den Verwesungsprozess aufzuhalten. Illithiden verwenden diese Substanz, um ihre Gehirngolems herzustellen.
+@30061 = ~Diese schwammartige Substanz besteht aus Hirngewebe, das magisch behandelt wurde, um den Verwesungsprozess aufzuhalten. Illithiden verwenden diese Substanz, um ihre Gehirngolems herzustellen.
 
 EIGENSCHAFTEN:
 
@@ -72,7 +72,7 @@ EIGENSCHAFTEN:
 Gewicht: 10~
 
 @30100 = ~Mithrilbrocken~
-@30101 = ~Mithril ist ein seltenes und sehr wertvolles Metall. Es kann in bestimmten Gebirgszügen von Faerûn als auch im Unterreich gewonnen werden. Um reines Mithril zu erzeugen, muss das gewonnene Erz einen komplexen Schmelzprozess in magischem Feuer durchlaufen. Mithril ist leicht und sehr robust. Es kann verwendet werden, um verzauberte Gegenstände hoher Qualität zu erschaffen..
+@30101 = ~Mithril ist ein seltenes und sehr wertvolles Metall. Es kann in bestimmten Gebirgszügen von Faerûn als auch im Unterreich gewonnen werden. Um reines Mithril zu erzeugen, muss das gewonnene Erz einen komplexen Schmelzprozess in magischem Feuer durchlaufen. Mithril ist leicht und sehr robust. Es kann verwendet werden, um verzauberte Gegenstände hoher Qualität zu erschaffen.
 
 EIGENSCHAFTEN:
 
@@ -118,7 +118,7 @@ Gewicht: 2~
 
 @30160 = ~Glühende schwarze Kugel~
 @30161 = ~Spektrale Obsidiankugel~
-@30162 = ~Diese dunkle kristalline Kugel ist ungewöhnlich schwer und strahlt ein unheimliches weißes Licht aus..
+@30162 = ~Diese dunkle kristalline Kugel ist ungewöhnlich schwer und strahlt ein unheimliches weißes Licht aus.
 
 EIGENSCHAFTEN:
 

@@ -53,7 +53,7 @@
 @41039 = ~Gehirngolem~
 @41040 = ~Eisgolem~
 @41041 = ~Magiegolem~
-@41042 = ~Blitzggolem~
+@41042 = ~Blitzgolem~
 @41043 = ~Ihr beginnt mit dem Bau des Golemkörpers...~
 @41044 = ~Madengolem~
 @41045 = ~Magiegolems können nur in Bereichen unbändiger Magie erschaffen werden.~
@@ -99,17 +99,18 @@
 @42500 = ~Habt Ihr Gerätschaften im Angebot, die man für den Bau von Golems nutzen kann?~
 @42501 = ~Hmm... Eine Frage wie diese hört man nicht alle Tage. Leider ist so eine Ausrüstung nur sehr schwer zu bekommen, da keine große Nachfrage besteht.~
 @42502 = ~Aber Ihr habt Glück. In meiner Jugend habe ich mich selbst etwas auf diesem Gebiet versucht. Leider ging es nicht über theoretische Betrachtungen hinaus. Ich bin nun mal in erster Linie ein Gelehrter.~
-@42503 = ~Die Ausrüstung habe ich aber immer noch in meinem Besitz. Ich könnte sie Euch wohl abtretem für den richtigen Preis. Seid Ihr mit 10.000 Goldmünzen einverstanden?~
+@42503 = ~Die Ausrüstung habe ich aber immer noch in meinem Besitz. Ich könnte sie Euch wohl für den richtigen Preis abtreten. Seid Ihr mit 10.000 Goldmünzen einverstanden?~
 @42504 = ~Das ist ziemlich teuer. Könnt Ihr den Preis nicht etwas senken?~
 @42505 = ~Ja, das bin ich. Hier ist Euer Gold.~
 @42506 = ~Das kann ich mir gerade nicht leisten.~
 @42507 = ~Nein, ich bin nicht interessiert.~
-@42508 = ~Leider nicht. Es hat viel Zeit und Mühen gekostet, all die Teile zusammenzubauen. Ich kann sie Euch unmöglich für weniger Gold verkaufen.~
+@42508 = ~Leider nicht. Es hat mir viel Zeit und Mühen gekostet, all die Teile zusammenzubauen. Ich kann sie Euch unmöglich für weniger Gold verkaufen.~
 @42509 = ~In Ordnung. Hier sind Eure 10.000 Goldmünzen.~
 @42510 = ~Ich kann bei Euch wahrscheinlich eine Ausnahme machen, da Ihr mir mein Zauberbuch zurückgebracht habt. Wie wäre es mit 6.000 Goldmünzen? Ihr werdet nirgendwo ein besseres Angebot erhalten.~
 @42511 = ~In Ordnung. Hier sind Eure 6.000 Goldmünzen.~
 @42512 = ~Vielleicht ein ander Mal.~
 @42513 = ~Vielen Dank. Ihr werdet nicht enttäuscht sein. Die Geräte sind immer noch in einem exzellenten Zustand.~
+@42514 = ~Da Ihr mir in Saradush geholfen habt, mein Zauberbuch wiederzuerlangen, kann ich für Euch wohl eine Ausnahme machen. Was sagt Ihr zu 6.000 Goldmünzen? Das ist ein echtes Schnäppchen.~
 
 
 // *** WK - Cambion Aesgareth ***

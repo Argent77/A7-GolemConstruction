@@ -110,6 +110,7 @@
 @42511 = ~Alright. Here are your 6,000 gold.~
 @42512 = ~Perhaps another time.~
 @42513 = ~Thank you. You won't be disappointed. The tools are still in excellent condition.~
+@42514 = ~I can probably make an exception since you helped me to acquire my spellbook back in Saradush. How about 6,000 gold? You won't find a better bargain.~
 
 
 // *** WK - Cambion Aesgareth ***
@@ -170,7 +171,7 @@
 @45007 = ~Nevermind.~
 @45008 = ~This action can not be undone. Are you certain?~
 @45009 = ~Yes!~
-@45010 = ~No!~
+@45010 = ~No.~
 @45011 = ~The golem has been rendered inactive by the protective magics of this place.~
 @45012 = ~You cannot have any more golems following you.~
 

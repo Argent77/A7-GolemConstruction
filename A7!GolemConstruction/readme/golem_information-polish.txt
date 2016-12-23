@@ -826,7 +826,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   - Kwas: 100
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2
 - Porusza się ze zwiększoną prędkością
-- Stałe działanie tarczy błyskawic: atakujący otrzymują 1k8 obrażeń elektrycznych po każdym udanym trafieniu
+- Stałe działanie tarczy błyskawic: atakujący otrzymują 1k8+2 obrażeń elektrycznych po każdym udanym trafieniu
 - Może rzucić na wrogów czar Wyładowanie łańcuchowe
 - Może rzucić czar „Błyskawiczna podróż”, który pozwala golemowi na podróż do dowolnego miejsca w zasięgu jego wzroku,
   zmieniając go w potężną błyskawicę zbliżającą się do celu z prędkością światła. Tak szybka podróż powoduje wytworzenie fali uderzeniowej, która odrzuca wszystkie istoty znajdujące się w zasięgu 2,5 metra od miejsca docelowego, zadając im 1k6 obrażeń od elektryczności. Będący efektem podróży grzmot może również spowodować trwającą 1k4 rund głuchotę u każdej istoty znajdującej się w zasięgu, jeśli ta nie wykona rzutu obronnego przeciw zionięciom. Golem nie musi ponadto czekać, aż jego aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności. Zdolność ta zastępuje „Teleportację”.

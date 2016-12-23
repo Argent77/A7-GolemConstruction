@@ -859,7 +859,7 @@ Varianten erschaffen werden.
   - Säure: 100
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
 - Bewegt sich mit erhöhter Geschwindigkeit
-- Dauerhafter Blitzschild: Angreifer erleiden 1W8 elektrischen Schaden, wenn sie angreifen
+- Dauerhafter Blitzschild: Angreifer erleiden 1W8+2 elektrischen Schaden, wenn sie angreifen
 - Kann "Kettenblitz" auf Feinde in der Umgebung zaubern
 - Kann die Fähigkeit "Blitzreise" anwenden: Sie erlaubt den Blitzgolem, sich sofort zu einem beliebigen Punkt in 
   Reichweite zu teleportieren. Der Golem verwandelt sich dafür in einen mächtigen Blitz und erreicht seinen Zielort 

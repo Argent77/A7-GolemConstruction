@@ -846,7 +846,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Acid: 100
 - Immune to non-magical, +1 and +2 weapons
 - Moves at increased speed
-- Permanent lightning shield: Attackers suffer 1d8 electrical damage on each successful hit
+- Permanent lightning shield: Attackers suffer 1d8+2 electrical damage on each successful hit
 - May cast Chain Lightning on nearby enemies
 - May cast "Lightning Travel" which allows the golem to travel to any point within visual range by transforming into 
   a powerful bolt of lightning and travelling to the target at light speed. The high speed transportation generates 

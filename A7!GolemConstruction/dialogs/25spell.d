@@ -32,7 +32,7 @@ APPEND ~25spell~
   END
 
   IF ~~ purchase.3b
-    SAY ~I can probably make an exception since you helped me to acquire my spellbook back in Saradush. How about 6,000 gold? You won't find a better bargain.~
+    SAY @42514 /* I can probably make an exception since you helped me to acquire my spellbook back in Saradush. How about 6,000 gold? You won't find a better bargain. */
     + ~PartyGoldGT(5999)~ + @42511 /* Alright. Here are your 6,000 gold. */ + purchase.6
     + ~PartyGoldLT(6000)~ + @42506 /* I can't afford it right now. */ + purchase.4
     ++ @42507 /* I'm not interested. */ + purchase.4

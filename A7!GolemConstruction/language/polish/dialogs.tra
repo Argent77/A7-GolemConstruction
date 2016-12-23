@@ -110,6 +110,7 @@
 @42511 = ~W porządku. Oto twoje sześć tysięcy sztuk złota.~
 @42512 = ~Może innym razem.~
 @42513 = ~Dziękuję. Nie będziesz zawiedziony, narzędzia wciąż są w doskonałym stanie.~~Dziękuję. Nie będziesz zawiedziona, narzędzia wciąż są w doskonałym stanie.~
+@42514 = ~Z racji tego, że pomogłeś mi zdobyć księgę czarów w Saradus, mógłbym zrobić dla ciebie wyjątek. Co powiesz na sześć tysięcy sztu złota? Lepszej oferty nie znajdziesz.~ ~Z racji tego, że pomogłaś mi zdobyć księgę czarów w Saradus, mógłbym zrobić dla ciebie wyjątek. Co powiesz na sześć tysięcy sztu złota? Lepszej oferty nie znajdziesz.~
 
 
 // *** WK - Cambion Aesgareth ***
@@ -127,11 +128,11 @@
 
 
 // *** Drow Merchant Nym ***
-@44000 = ~Vendui, witam serdecznie, czcigodny kliencie. Jestem kupiec Nym.~~Vendui, witam serdecznie, czcigodna klientko. Jestem kupiec Nym.~ [a7!nym01]
-@44001 = ~Vendui, witam cię darthiir. Jestem kupiec Nym.~ [a7!nym02]
-@44002 = ~Powinienem zostać tu jeszcze przez jakiś czas, możesz więc wrócić tu w każdej chwili, by przejrzeć moje towary. Aluve.~ [a7!nym03]
-@44003 = ~Ponownie najserdeczniej witam, czcigodny kliencie.~~Ponownie najserdeczniej witam, czcigodna klientko.~ [a7!nym04]
-@44004 = ~Witaj ponownie, darthiir.~ [a7!nym05]
+@44000 = ~Vendui, witam serdecznie, czcigodny kliencie. Jestem kupiec Nym.~~Vendui, witam serdecznie, czcigodna klientko. Jestem kupiec Nym.~
+@44001 = ~Vendui, witam cię darthiir. Jestem kupiec Nym.~
+@44002 = ~Powinienem zostać tu jeszcze przez jakiś czas, możesz więc wrócić tu w każdej chwili, by przejrzeć moje towary. Aluve.~
+@44003 = ~Ponownie najserdeczniej witam, czcigodny kliencie.~~Ponownie najserdeczniej witam, czcigodna klientko.~
+@44004 = ~Witaj ponownie, darthiir.~
 @44005 = ~Czy mogę zaproponować ci moje towary?~
 @44006 = ~A co konkretnie możesz zaoferować?~
 @44007 = ~Giń, drowie ścierwo!~
@@ -170,7 +171,7 @@
 @45007 = ~Nieważne.~
 @45008 = ~Tej czynności nie można cofnąć. Jesteś pewien?~~Tej czynności nie można cofnąć. Jesteś pewna?~
 @45009 = ~Tak!~
-@45010 = ~Nie!~
+@45010 = ~Nie.~
 @45011 = ~Golem został zdezaktywowany przez magię ochronną strzegącą tego miejsca.~
 @45012 = ~Nie możesz kontrolować większej ilości golemów.~
 

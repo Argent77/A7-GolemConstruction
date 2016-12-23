@@ -4,7 +4,7 @@
 @100000 = ~Buch~
 @100001 = ~Altes Buch~
 
-@100002 = ~Nach den obskuren Symbolen auf dem Umschlag zu urteilen, besitzt dieses Buch eindeutig magische Eigenschaften. Solange Ihr nicht versucht, es zu lesen oder zu identifizieren, wird Euch seine wahre Natur allerdings verborgen bleiben.
+@100002 = ~Nach den obskuren Symbolen auf dem Einband zu urteilen, besitzt dieses Buch eindeutig magische Eigenschaften. Solange Ihr nicht versucht, es zu lesen oder zu identifizieren, wird Euch seine wahre Natur allerdings verborgen bleiben.
 
 EIGENSCHAFTEN:
 
@@ -13,9 +13,9 @@ Gewicht: 10~
 @100003 = ~erwarb besondere Fähigkeit: Golem erschaffen~
 @100004 = ~erwarb besondere Fähigkeit: Golem reparieren~
 @100005 = ~Ihr hebt das Buch auf. Zwei der Golems erwachen zum Leben und greifen an.~
-@100006 = ~Das Labor auf dieser Ebene scheint gut ausgerüstet zu sein. Ihr könnt hier wahrscheinlich Golem erschaffen.~
-@100007 = ~Das Labor in diesem Gebiet scheint gut ausgerüstet zu sein. Ihr könnt hier wahrscheinlich Golem erschaffen.~
-@100008 = ~Das Labor auf dieser Ebene scheint gut ausgerüstet zu sein. Ihr könnt hier wahrscheinlich Golem erschaffen.~
+@100006 = ~Das Labor auf dieser Ebene scheint gut ausgerüstet zu sein. Ihr könnt hier wahrscheinlich Golems erschaffen.~
+@100007 = ~Das Labor in diesem Gebiet scheint gut ausgerüstet zu sein. Ihr könnt hier wahrscheinlich Golems erschaffen.~
+@100008 = ~Das Labor auf dieser Ebene scheint gut ausgerüstet zu sein. Ihr könnt hier wahrscheinlich Golems erschaffen.~
 @100009 = ~Die Ausrüstung von Lazarus Librarus erlaubt es Euch, an diesem Ort Golems zu erschaffen.~
 @100010 = ~Eine kleine Anzahl nicht identifizierbarer Gewebestücken kann man in der gallertartigen und schwach leuchtenden Masse erkennen. Ihr entnehmt eine Probe für weitere Untersuchungen.~
 @100011 = ~Nyms Kramladen~
@@ -23,7 +23,7 @@ Gewicht: 10~
 @100013 = ~Nym~
 @100014 = ~Dunkelelfen-Händler~
 @100015 = ~Ihr seid zu weit entfernt, um das zu untersuchen.~
-@100016 = ~Eine eiskalte Aura umgibt diese seltsame Vorrichtung. Bei näherer Betrachtung könnt Ihr ein schwach leuchtende Kristalle in einer der Röhren entdecken.~
+@100016 = ~Eine eiskalte Aura umgibt diese seltsame Vorrichtung. Bei näherer Betrachtung könnt Ihr schwach leuchtende Kristalle in einer der Röhren entdecken.~
 @100017 = ~Ihr nehmt ein paar Frostbeulen in Kauf, um einen der Kristalle aus der seltsamen Vorrichtung zu bergen.~
 @100018 = ~Der Golem wurde deaktiviert.~
 @100019 = ~Gekritzelte Notizen~
@@ -33,7 +33,7 @@ Gewicht: 10~
 @100021 = ~Dieses Areal scheint bereits die richtige Ausrüstung zum Bau von Golems installiert zu haben. Ihr könnt hier wahrscheinlich Golems erschaffen.~
 @100022 = ~Dieses Pergament beinhaltet einige dahingekritzelte Notizen über magische Prozeduren und Experimente. Ein Absatz fällt Euch sofort ins Auge, da es sich auf den Bau und die Instandhaltung von Golems bezieht.
 
-"Die Ausrüstung von Ribald ist einfach, aber effektiv. Sie sollte vorläufig ausreichen, um meine Golemdiener funktionsfähig zu halten. Sollte sie wider Erwarten nicht wie gewünscht funktionieren, kann ich immer noch die Geräte aus dieser Sphäre in den Slums bergen. Meine Informanten meinen, das es dort hochentwickelte Ausrüstung aller Art geben muss."
+"Die Ausrüstung von Ribald ist einfach, aber effektiv. Sie sollte vorläufig ausreichen, um meine Golemdiener funktionsfähig zu halten. Sollte sie wider Erwarten nicht wie gewünscht funktionieren, kann ich immer noch die Geräte aus dieser Sphäre in den Slums bergen. Meine Informanten meinen, dass es dort hochentwickelte Ausrüstung aller Art geben muss."
 
 Der Rest des Pergaments beinhaltet Informationen über komplizierte magische Prozeduren, die Euch nicht sonderlich interessieren.~
 @100023 = ~Vertraute und Anhänger können Gebiete nicht ohne Gruppenmitglieder betreten.~
