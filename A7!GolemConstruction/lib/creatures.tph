@@ -1252,9 +1252,12 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY ~%MOD_FOLDER%/stores/a7!nym2.sto~ ~override~
     SAY NAME2 @100012 // Nym's Exotic Goods
 
-  COPY ~%MOD_FOLDER%/sounds/a7!nym01.wav~ ~override~
-       ~%MOD_FOLDER%/sounds/a7!nym02.wav~ ~override~
-       ~%MOD_FOLDER%/sounds/a7!nym03.wav~ ~override~
-       ~%MOD_FOLDER%/sounds/a7!nym04.wav~ ~override~
-       ~%MOD_FOLDER%/sounds/a7!nym05.wav~ ~override~
+  // Installing language-specific voice files
+  ACTION_FOR_EACH file IN ~a7!nym01.wav~ ~a7!nym02.wav~ ~a7!nym03.wav~ ~a7!nym04.wav~ ~a7!nym05.wav~ BEGIN
+    ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/language/%LANGUAGE%/%file%~) BEGIN
+      COPY ~%MOD_FOLDER%/language/%LANGUAGE%/%file%~ ~override~
+    END ELSE BEGIN
+      COPY ~%MOD_FOLDER%/language/english/%file%~ ~override~
+    END
+  END
 END
