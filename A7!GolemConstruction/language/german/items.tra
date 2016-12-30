@@ -23,14 +23,14 @@ EIGENSCHAFTEN:
 Gewicht: 25~
 
 @30030 = ~Eisenbarren~
-@30031 = ~Dieser Eisenbarren besteht aus sehr reinem Eisen. Er ist daher gut geeignet, um verzauberte Waffen oder magische Konstrukte herzustellen.
+@30031 = ~Dieser Barren besteht aus sehr reinem Eisen. Er ist daher gut geeignet, um verzauberte Waffen oder magische Konstrukte herzustellen.
 
 EIGENSCHAFTEN:
 
 Gewicht: 20~
 
 @30040 = ~Adamantiterz~
-@30041 = ~Es kommt nur selten vor, Adamantit in seiner Ursprungsform zu sehen, Vor Allem, wenn es sich dabei um Erz von solch hoher Reinheit handelt. Adamantit kann genutzt werden, um verzauberte Gegenstände oder mächtige magische Konstrukte herzustellen.
+@30041 = ~Es kommt nur selten vor, Adamantit in seiner Ursprungsform zu sehen, vor Allem, wenn es sich dabei um Erz von solch hoher Reinheit handelt. Adamantit kann genutzt werden, um verzauberte Gegenstände oder mächtige magische Konstrukte herzustellen.
 
 EIGENSCHAFTEN:
 
@@ -51,7 +51,7 @@ EIGENSCHAFTEN:
 Gewicht: 3~
 
 @30070 = ~Magische Eisscherbe~
-@30071 = ~Diese äußerst lichtdurchlässige Eisscherbe ist ungewöhnlich schwer und sehr unanfällig gegenüber physischer Gewalteinwirkung und hohen Temperaturen. Sie kann benutzt werden, um verzauberte Gegenstände oder magische Konstrukte herzustellen.
+@30071 = ~Diese äußerst lichtdurchlässige Eisscherbe ist ungewöhnlich schwer und äußerst unanfällig gegenüber physischer Gewalteinwirkung und hohen Temperaturen. Sie kann benutzt werden, um verzauberte Gegenstände oder magische Konstrukte herzustellen.
 
 EIGENSCHAFTEN:
 
@@ -79,7 +79,7 @@ EIGENSCHAFTEN:
 Gewicht: 15~
 
 @30110 = ~Maschinenteil~
-@30111 = ~Dieses Maschinenteil ist Teil einer Anlage, um Golems zu konstruieren.
+@30111 = ~Dieses Maschinenteil gehört zu einer Ausrüstung, um Golems zu konstruieren.
 
 EIGENSCHAFTEN:
 
@@ -96,7 +96,7 @@ EIGENSCHAFTEN:
 Gewicht: 1~
 
 @30130 = ~Verzauberter Korallenstaub~
-@30131 = ~Dieser Staub wurde aus seltenen Korallen hergestellt, die man nur in bestimmten Gegenden des Leuchtenden Meeres südlich von Calimshan finden kann. Dieser Staub ist von besonderer Reinheit und scheint außerdem verzaubert worden zu sein.
+@30131 = ~Dieser Staub wurde aus seltenen Korallen hergestellt, die man nur in bestimmten Gegenden des Leuchtenden Meeres südlich von Calimshan finden kann. Der Korallenstaub ist von besonderer Reinheit und scheint außerdem verzaubert worden zu sein.
 
 EIGENSCHAFTEN:
 
@@ -139,14 +139,14 @@ EIGENSCHAFTEN:
 Gewicht: 1~
 @30174 = ~Solarier sind wohl die mächtigsten Vertreter der Engel und sind oft als direkte Stellvertreter der Götter unterwegs.
 
-Diese Ampulle scheint einen Tropfen Blut eines Solariers zu beinhalten. Es wird gemunkelt, dass die magischen Kräfte eines einzigen Blutstropfen in den Händen eines fähigen Magiers die Realität verändern kann.
+Diese Ampulle scheint einen Tropfen Blut eines Solariers zu beinhalten. Es wird gemunkelt, dass die magischen Kräfte eines einzigen Blutstropfen in den Händen eines fähigen Magiers selbst die Realität verändern kann.
 
 EIGENSCHAFTEN:
 
 Gewicht: 1~
 @30175 = ~Gefallene Solarier sind die dunklen Gegenstücke der Solarier, und damit ebenfalls eine der mächtigsten Kreaturen des Universums. Gefallene Solarier dienen oft Göttern böser Gesinnung oder mächtigen Dämonenherrschern.
 
-Diese Ampulle scheint einen Tropfen Blut eines gefallenen Solariers zu beinhalten. Es wird gemunkelt, dass die magischen Kräfte eines einzigen Blutstropfen in den Händen eines fähigen Magiers die Realität verändern kann.
+Diese Ampulle scheint einen Tropfen Blut eines gefallenen Solariers zu beinhalten. Es wird gemunkelt, dass die magischen Kräfte eines einzigen Blutstropfen in den Händen eines fähigen Magiers selbst die Realität verändern kann.
 
 EIGENSCHAFTEN:
 
