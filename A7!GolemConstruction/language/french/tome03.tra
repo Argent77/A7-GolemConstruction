@@ -1,0 +1,94 @@
+// -*- coding: utf-8 -*- 
+// Stone Golem related strings (index 3000..3999)
+
+@3000 = ~Grimoire de Fabrication de Golem (Vol. 3)~
+@3001 = ~Golem de pierre mineur~
+@3002 = ~Golem de pierre~
+@3003 = ~Golem de pierre majeur~
+@3004 = ~Golem de pierre parfait~ // Perfect ??
+@3005 = ~A appris comment fabriquer des golems de pierre.~
+
+// *** Book content ***
+@3100 = ~Troisième leçon : les Golems de pierre
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de pierre, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer les golems suivants :
+
+Golem de pierre mineur :
+Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Un bloc de pierre
+
+Golem de pierre :
+Niveau requis : 14 (-2 pour les Transmutateurs, +3 pour les Bardes)
+Composants nécessaires :
+- Deux blocs de pierre
+- Un parchemin de Lenteur
+
+Golem de pierre majeur :
+Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Quatre blocs de pierre
+- Un parchemin de Lenteur
+
+Golem de pierre parfait :
+Niveau requis : 20 (-2 pour les Transmutateurs, +6 pour les Bardes)
+Composants nécessaires :
+- Quatre blocs de pierre
+- Un parchemin de Lenteur
+- Une fiole de Sang de Mimique
+
+Folie dévastatrice : en situation de combat, il y a 1 % de chance que l’esprit élémentaire animant le golem de pierre devienne fou furieux pendant 1d6 rounds. Dans ce cas, le golem attaque la créature la plus proche.
+
+Intelligence requise : 16
+
+Poids : 10~
+
+@3101 = ~Troisième leçon : les Golems de pierre
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de pierre, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+
+Permet de fabriquer les golems suivants :
+
+Golem de pierre mineur :
+Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Un bloc de pierre
+
+Golem de pierre :
+Niveau requis : 14 (-2 pour les Transmutateurs, +3 pour les Bardes)
+Composants nécessaires :
+- Deux blocs de pierre
+- Un parchemin de Lenteur
+
+Golem de pierre majeur :
+Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Quatre blocs de pierre
+- Un parchemin de Lenteur
+
+Golem de pierre parfait :
+Niveau requis : 20 (-2 pour les Transmutateurs, +6 pour les Bardes)
+Composants nécessaires :
+- Quatre blocs de pierre
+- Un parchemin de Lenteur
+- Une fiole de Sang de Mimique
+
+Folie dévastatrice : en situation de combat, il y a 1 % de chance que l’esprit élémentaire animant le golem de pierre devienne fou furieux pendant 1d6 rounds. Dans ce cas, le golem attaque la créature la plus proche.
+
+Intelligence requise : 16
+
+Poids : 1~

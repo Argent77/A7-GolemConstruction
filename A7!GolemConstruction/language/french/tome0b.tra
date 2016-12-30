@@ -1,0 +1,63 @@
+// -*- coding: utf-8 -*- 
+// Magic Golem related strings (index 11000..11999)
+
+@11000 = ~Grimoire secret de Fabrication de Golem (Vol. 5)~
+@11001 = ~Golem magique~
+@11002 = ~A appris comment fabriquer des golems magiques.~
+@11003 = ~Neutralisé par la zone de magie morte~
+
+// *** Book content ***
+@11100 = ~Des Golems magiques
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem magique, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+
+Permet de fabriquer le golem suivant :
+
+Golem magique :
+Niveau requis : 19 (-2 pour les Entropistes et les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Un fragment de Pierre entropique
+- Un parchemin de Protection contre les armes magiques, de Manteau ou de Manteau amélioré
+- Un parchemin de Protection contre la magie
+
+En raison de leur nature spéciale, les golems magiques ne peuvent être construits que dans des zones de magie entropique.
+
+Note de l'auteur : De nombreuses sources laissent à penser que les golems magiques peuvent se révéler allergiques aux zones sans magie et y réagissent de manière étrange.
+
+Intelligence requise : 18
+
+Poids : 10~
+
+@11101 = ~Des Golems magiques
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem magique, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+Permet de fabriquer le golem suivant :
+
+Golem magique :
+Niveau requis : 19 (-2 pour les Entropistes et les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Un fragment de Pierre entropique
+- Un parchemin de Protection contre les armes magiques, de Manteau ou de Manteau amélioré
+- Un parchemin de Protection contre la magie
+
+En raison de leur nature spéciale, les golems magiques ne peuvent être construits que dans des zones de magie entropique.
+
+Note de l'auteur : De nombreuses sources laissent à penser que les golems magiques peuvent se révéler allergiques aux zones sans magie et y réagissent de manière étrange.
+
+Intelligence requise : 18
+
+Poids : 1~

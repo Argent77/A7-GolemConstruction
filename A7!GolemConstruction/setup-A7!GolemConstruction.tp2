@@ -29,6 +29,26 @@ LANGUAGE ~English~
          ~A7!GolemConstruction/language/english/items.tra~
          ~A7!GolemConstruction/language/english/dialogs.tra~
          ~A7!GolemConstruction/language/english/misc.tra~
+LANGUAGE ~Francais (traduction: Gwendolyne)~
+         ~french~
+         ~A7!GolemConstruction/language/french/setup.tra~
+         ~A7!GolemConstruction/language/french/tome01.tra~
+         ~A7!GolemConstruction/language/french/tome02.tra~
+         ~A7!GolemConstruction/language/french/tome03.tra~
+         ~A7!GolemConstruction/language/french/tome04.tra~
+         ~A7!GolemConstruction/language/french/tome05.tra~
+         ~A7!GolemConstruction/language/french/tome06.tra~
+         ~A7!GolemConstruction/language/french/tome07.tra~
+         ~A7!GolemConstruction/language/french/tome08.tra~
+         ~A7!GolemConstruction/language/french/tome09.tra~
+         ~A7!GolemConstruction/language/french/tome0a.tra~
+         ~A7!GolemConstruction/language/french/tome0b.tra~
+         ~A7!GolemConstruction/language/french/tome0c.tra~
+         ~A7!GolemConstruction/language/french/tome0d.tra~
+         ~A7!GolemConstruction/language/french/spells.tra~
+         ~A7!GolemConstruction/language/french/items.tra~
+         ~A7!GolemConstruction/language/french/dialogs.tra~
+         ~A7!GolemConstruction/language/french/misc.tra~
 LANGUAGE ~Deutsch~
          ~german~
          ~A7!GolemConstruction/language/german/setup.tra~

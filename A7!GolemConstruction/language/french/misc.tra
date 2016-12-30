@@ -1,0 +1,43 @@
+// -*- coding: utf-8 -*- 
+// Misc. strings (index 100000..109999)
+
+@100000 = ~Manuel~
+@100001 = ~Grimoire ancien~
+
+@100002 = ~A en juger par les symboles occultes sur sa couverture, ce livre est, d'une façon ou d'une autre, magique. La nature de son enchantement vous demeurera cependant inconnue tant que vous n'aurez pas essayé de le lire ou de l'identifier.
+
+PARAMETRES :
+
+Poids : 10~
+
+@100003 = ~A acquis la capacité spéciale : Construire un Golem~
+@100004 = ~A acquis la capacité spéciale : Réparer un Golem~
+@100005 = ~Alors que vous prenez le grimoire, deux golems s'animent et vous attaquent.~
+@100006 = ~Le laboratoire de ce niveau paraît bien équipé. Vous pouvez sans doute l'utiliser pour fabriquer des golems.~
+@100007 = ~Ce lieu abrite un laboratoire qui semble bien équipé. Vous pouvez probablement l'utiliser pour y fabriquer des golems.~
+@100008 = ~Cet étage semble bien équipé en laboratoires. Vous pouvez probablement l'utiliser pour fabriquer des golems.~
+@100009 = ~Le matériel acheté à Lazarus Librarus vous permet de fabriquer des golems dans ce lieu.~
+@100010 = ~Quelques fragments d'une matière solide non identifiée flottent à la surface de la substance gélatineuse légèrement phosphorescente. Vous en prélevez un échantillon pour un examen plus approfondi.~
+@100011 = ~Bazar de Nym~
+@100012 = ~Produits exotiques de Nym~
+@100013 = ~Nym~
+@100014 = ~Marchand elfe noir~
+@100015 = ~Vous êtes trop loin pour pouvoir l'examiner.~
+@100016 = ~Cet étrange dispositif est entouré d'une aura glacée. En regardant de plus près, vous pouvez distinguer un objet cristallin qui luit faiblement dans l'un de ses tubes.~
+@100017 = ~En retirant le cristal du tube, vous ressentez une profonde douleur glacée.~
+@100018 = ~Le golem a été désactivé.~
+@100019 = ~Notes manuscrites~
+@100020 = ~Ce parchemin est une compilation de notes griffonnées à la hâte. De nombreux passages ont été effacés au cours du temps et ne sont plus lisibles.
+
+"...fabrication de golems. Il est facile de se procurer les matériaux nécessaires, mais ...(indéchiffrable)... impossible sans le mécanisme approprié. Le repaire des morts-vivants pourrait convenir, mais il est encore contrôlé par ...(indéchiffrable)... rechercher des sites alternatifs."~
+@100021 = ~Ce lieu semble déjà disposer des machines nécessaires à la fabrication de golems. Vous pouvez probablement vous en servir pour créer vos propres golems.~
+
+@100022 = ~Ce parchemin contient quelques notes manuscrites sur des expériences et des procédures magiques. Un passage attire votre attention car il traite de la fabrication et de l'entretien des golems.
+
+"Le matériel acheté à Ribald est rudimentaire mais efficace. Pour le moment, il devrait suffire pour conserver mes serviteurs golem dans un état acceptable. À défaut, je peux toujours rapatrier certains équipements de cette sphère dans les Bas Quartiers. Selon, les informations fournies par mes sources, elle contiendrait des machines sophistiquées de toutes sortes."
+
+Le reste du parchemin contient des informations sur des procédures magiques complexes qui ne vous sont d'aucun intérêt.~
+
+@100023 = ~Les familiers et les serviteurs ne peuvent pénétrer seuls dans les zones.~
+@100024 = ~Les familiers et les serviteurs ne peuvent pénétrer dans les échoppes.~
+@100025 = ~Les familiers et les serviteurs ne peuvent ramasser d'objets.~

@@ -1,0 +1,51 @@
+// -*- coding: utf-8 -*- 
+// Brain Golem related strings (index 9000..9999)
+
+@9000 = ~Grimoire secret de Fabrication de Golem (Vol. 3)~
+@9001 = ~Golem cerveau~
+@9002 = ~A appris comment fabriquer des golems cerveau.~
+
+// *** Book content ***
+@9100 = ~Des Golems cerveau
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem cerveau, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer le golem suivant :
+
+Golem cerveau :
+Niveau requis : 17 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Un morceau de tissu cérébral
+- Un parchemin de Domination
+
+Intelligence requise : 18
+
+Poids : 10~
+
+@9101 = ~Des Golems cerveau
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem cerveau, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+Permet de fabriquer le golem suivant :
+
+Golem cerveau :
+Niveau requis : 17 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Un morceau de tissu cérébral
+- Un parchemin de Domination
+
+Intelligence requise : 18
+
+Poids : 1~

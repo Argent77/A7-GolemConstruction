@@ -1,0 +1,54 @@
+// -*- coding: utf-8 -*- 
+// Ice Golem related strings (index 10000..10999)
+
+@10000 = ~Grimoire secret de Fabrication de Golem (Vol. 4)~
+@10001 = ~Golem de glace~
+@10002 = ~A appris comment fabriquer des golems de glace.~
+
+// *** Book content ***
+@10100 = ~Des Golems de glace
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de glace, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer le golem suivant :
+
+Golem de glace :
+Niveau requis : 19 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Un fragment de glace magique
+- Un parchemin de Cône de Froid
+- Un parchemin de Protection contre le Froid
+
+Intelligence requise : 17
+
+Poids : 10~
+
+@10101 = ~Des Golems de glace
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de glace, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+Permet de fabriquer le golem suivant :
+
+Golem de Glace :
+Niveau requis : 19 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Un fragment de glace magique
+- Un parchemin de Cône de Froid
+- Un parchemin de Protection contre le Froid
+
+Intelligence requise : 17
+
+Poids : 1~
+

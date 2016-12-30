@@ -1,0 +1,59 @@
+// -*- coding: utf-8 -*- 
+// Maggot Golem related strings (index 7000..7999)
+
+@7000 = ~Grimoire secret de Fabrication de Golem (Vol. 1)~
+@7001 = ~Golem de vers~
+@7002 = ~A appris comment fabriquer des golems de vers.~
+@7003 = ~La substance du golem a été entièrement consommée par les vers et perd sa cohérence...~
+@7004 = ~La substance du golem a été entièrement consommée par les vers. La frénésie croissante des insectes en quête de toujours plus de nourriture vous fait perdre le contrôle du golem en phase de désintégration...~
+
+// *** Book content ***
+@7100 = ~Des Golems de vers
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de vers, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer le golem suivant :
+
+Golem de vers :
+Niveau requis : 10 (-2 pour les Conjurateurs et les Transmutateurs, +2 pour les Bardes)
+Composant nécessaire :
+- Deux cadavres infectés de larves
+
+Son créateur a 15 % de chance d'attraper une maladie en manipulant le corps infesté de larves du golem pendant sa fabrication.
+
+Folie dévastatrice : en situation de combat, il y a 1 % de chance que l’esprit élémentaire animant le golem de vers devienne fou furieux pendant 1d6 rounds. Dans ce cas, le golem attaque la créature la plus proche.
+
+Intelligence requise : 15
+
+Poids : 10~
+
+@7101 = ~Des Golems de vers
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de vers, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+Permet de fabriquer le golem suivant :
+
+Golem de vers :
+Niveau requis : 10 (-2 pour les Conjurateurs et les Transmutateurs, +2 pour les Bardes)
+Composant nécessaire :
+- Deux cadavres infectés de larves
+
+Son créateur a 15 % de chance d'attraper une maladie en manipulant le corps infesté de larves du golem pendant sa fabrication.
+
+Folie dévastatrice : en situation de combat, il y a 1 % de chance que l’esprit élémentaire animant le golem de vers devienne fou furieux pendant 1d6 rounds. Dans ce cas, le golem attaque la créature la plus proche.
+
+Intelligence requise : 15
+
+Poids : 1~

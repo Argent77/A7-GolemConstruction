@@ -1,0 +1,224 @@
+// -*- coding: utf-8 -*- 
+// Dialogs and misc. strings (index 40000..49999)
+
+// *** Misc. strings ***
+@40000 = ~Bien le bonjour. Voici un peu de mithril pour vous.~
+@40001 = ~Nous l'avons trouvé dans la cachette secrète de Coldhearth. Ça a une valeur inestimable entre de bonnes mains. Pas besoin de me remercier, <CHARNAME>. Vous l'avez bien mérité.~
+@40002 = ~douze~
+@40003 = ~vingt-quatre~
+@40004 = ~trente-six~
+@40005 = ~quarante-huit~
+
+
+// *** Golem Construction dialog ***
+@41000 = ~Choisissez le type de golem que vous voulez construire :~
+@41001 = ~Un golem de chair.~
+@41002 = ~Un golem d'argile.~
+@41003 = ~Un golem de pierre.~
+@41004 = ~Un golem de fer.~
+@41005 = ~Un golem de mithril.~
+@41006 = ~Un golem d'adamantine.~
+@41007 = ~Un golem exotique.~
+@41008 = ~Après <A7_HOURS> heures de dur labeur, l'enveloppe physique du golem est prête pour l'enchantement final...~
+@41009 = ~Vous vous préparez à la tâche qui vous attend...~
+@41010 = ~...mais que vous ne pourrez pas accomplir ici.~
+@41011 = ~De quel modèle ?~
+@41012 = ~Un golem de chair mineur.~
+@41013 = ~Un golem de chair normal.~
+@41014 = ~Un golem de chair majeur.~
+@41015 = ~Un golem de chair parfait.~
+@41016 = ~Je préfère annuler la fabrication.~
+@41017 = ~De quel modèle ?~
+@41018 = ~Un golem d'argile mineur.~
+@41019 = ~Un golem d'argile normal.~
+@41020 = ~Un golem d'argile majeur.~
+@41021 = ~Un golem d'argile parfait.~
+@41022 = ~Un golem de pierre mineur.~
+@41023 = ~Un golem de pierre normal.~
+@41024 = ~Un golem de pierre majeur.~
+@41025 = ~Un golem de pierre parfait.~
+@41026 = ~Un golem de fer mineur.~
+@41027 = ~Un golem de fer normal.~
+@41028 = ~Un golem de fer majeur.~
+@41029 = ~Un golem de fer parfait.~
+@41030 = ~Un golem de mithril mineur.~
+@41031 = ~Un golem de mithril normal.~
+@41032 = ~Un golem de mithril majeur.~
+@41033 = ~Un golem de mithril parfait.~
+@41034 = ~Un golem d'adamantine mineur.~
+@41035 = ~Un golem d'adamantine normal.~
+@41036 = ~Un golem d'adamantine majeur.~
+@41037 = ~Un golem d'adamantine parfait.~
+@41038 = ~Un golem d'os.~
+@41039 = ~Un golem cerveau.~
+@41040 = ~Un golem de glace.~
+@41041 = ~Un golem magique.~
+@41042 = ~Un golem de foudre.~
+@41043 = ~Vous commencez par l'assemblage du corps du golem...~
+@41044 = ~Un golem de vers.~
+@41045 = ~Les golems magiques ne peuvent être fabriqués que dans des zones de magie entropique.~
+@41046 = ~Vous ne pouvez pas fabriquer de golems de mithril sans avoir étudié les principes de création des golems de fer.~
+@41047 = ~Vous ne pouvez pas fabriquer de golems d'adamantine sans avoir étudié les principes de création des golems de fer.~
+@41048 = ~Je veux fabriquer un autre type de golem.~
+@41049 = ~Un golem de rubis.~
+@41050 = ~Vous ne pouvez avoir davantage de serviteurs golems.~
+@41051 = ~Quels types de golems puis-je fabriquer, déjà ?~
+@41052 = ~<GABBER> a appris à fabriquer les types de golems suivants :~
+
+
+// *** Wish Djinni dialog ***
+@41500 = ~Je voudrais transformer mon fer en adamantine.~
+@41501 = ~Je voudrais transformer un de mes lingots de fer en adamantine.~
+@41502 = ~C'est fait, Maître. Tout votre fer a été transformé en un bloc d'adamantine.~
+@41503 = ~C'est fait, Maître. Un de vos lingots de fer a été transformée en un bloc d'adamantine.~
+@41504 = ~Transformer tout votre fer en un seul bloc d'adamantine.~
+@41505 = ~Transformer un de vos lingots de fer en adamantine.~
+@41506 = ~Je voudrais transformer mon fer en mithril.~
+@41507 = ~Je voudrais transformer un de mes lingots de fer en mithril.~
+@41508 = ~C'est fait, Maître. Tout votre fer a été transformé en un seul bloc de mithril.~
+@41509 = ~C'est fait, Maître. Un de vos lingots de fer a été transformée en un bloc de mithril.~
+@41510 = ~Transformer tout votre fer en un seul bloc de mithril.~
+@41511 = ~Transformer un de vos lingots de fer en mithril.~
+
+
+// *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
+@42000 = ~Puis-je vous louer le dernier étage de votre échoppe pour y fabriquer des golems ?~
+@42001 = ~Des golems, vous dites ? C'est un sacré boulot qui vous attend.~
+@42002 = ~Hmm, je pourrais vous le louer pour une somme modique. Que diriez-vous de 500 pièces d'or, et je veillerai personnellement à ce que vous ne soyez pas dérangé ?~ ~Hmm, je pourrais vous le louer pour une somme modique. Que diriez-vous de 500 pièces d'or, et je veillerai personnellement à ce que vous ne soyez pas dérangée ?~
+@42003 = ~C'est une somme plutôt élevée. Que diriez-vous de 250 pièces d'or ?~
+@42004 = ~Marché conclu !~
+@42005 = ~Je n'ai pas assez d'or.~
+@42006 = ~J'ai changé d'avis. Je ne veux pas le louer maintenant.~
+@42007 = ~Très bien. N'hésitez-pas à revenir me voir si vous avez besoin d'aide.~
+@42008 = ~Je pourrais baisser le prix à 400 pièces d'or, mais c'est ma dernière offre.~
+@42009 = ~D'accord. Vous êtes dur en affaires, mais je ne vais pas me plaindre. Ce fut un plaisir de traiter avec vous.~ ~D'accord. Vous êtes dure en affaires, mais je ne vais pas me plaindre. Ce fut un plaisir de traiter avec vous.~
+@42010 = ~Parfait. Ça a été un plaisir de faire des affaires avec vous.~
+
+
+// *** ToB - Lazarus Librarus ***
+@42500 = ~Vendez-vous du matériel permettant de fabriquer des golems ?~
+@42501 = ~Hmm ... Ce genre d'articles est vraiment très difficile à trouver car il n'y a pas beaucoup de demande.~
+@42502 = ~Mais vous avez de la chance. Quand j'étais jeune, j'ai moi aussi quelque peu étudié les principes de la création de golems, même si cela n'a pas abouti à grand-chose. Il est vrai que je suis avant tout un érudit.~
+@42503 = ~J'ai tout de même conservé mon matériel. Je pourrais m'en séparer pour un bon prix. Est-ce que 10 000 pièces d'or vous conviendrait ?~
+@42504 = ~C'est vraiment très cher. Ne pourriez-vous pas baisser un peu le prix ?~
+@42505 = ~Ça me va. Voici votre or.~
+@42506 = ~Je ne peux pas me le permettre en ce moment.~
+@42507 = ~Ça ne m'intéresse pas.~
+@42508 = ~Non, je crains que non. Il m'a fallu des années et beaucoup d'efforts pour acquérir tout le matériel nécessaire. Je ne peux vraiment pas le céder pour moins.~
+@42509 = ~Très bien. Voici 10 000 pièces d'or.~
+@42510 = ~Je pourrais faire une exception puisque vous m'avez aidé à retrouver mon livre de sorts. Que diriez-vous de 6 000 pièces d'or ? Vous ne pourrez faire une meilleure affaire nulle part.~
+@42511 = ~D'accord. Voici vos 6 000 pièces d'or.~
+@42512 = ~Peut-être une autre fois.~
+@42513 = ~Merci. Vous ne serez pas déçu. Le matériel est toujours en parfait état.~ ~Merci. Vous ne serez pas déçue. Le matériel est toujours en parfait état.~
+@42514 = ~Je pourrais faire une exception puisque vous m'avez aidé à retrouver mon livre de sorts à Saradush. Que diriez-vous de 6 000 pièces d'or ? Vous ne pourrez faire une meilleure affaire nulle part.~
+
+
+// *** WK - Cambion Aesgareth ***
+@43000 = ~Excellent. J'ai accès à une Marque Spectrale, à un Parchemin de Souhait et à un livre de connaissances qui sont tous trois des objets de grande valeur. Et j'ai la gemme, bien sûr. Que souhaitez-vous jouer ?~
+@43001 = ~Parfait. J'ai accès à une Marque Spectrale, à un Parchemin de Souhait et à un livre de connaissances qui sont tous trois des objets de grande valeur. Et j'ai la gemme, bien sûr. Que souhaitez-vous jouer ?~
+@43002 = ~Je joue pour le livre de connaissances.~
+@43003 = ~Vous vouliez le livre de connaissances, le voilà ! Si vous voulez rejouer, j'aimerais essayer de gagner ma liberté.~
+
+
+// *** Pocket Plane - Cespenar ***
+@43500 = ~Hein ? Mais c'est quoi, ça ? Une revue cochonne ? Oh... juste un manuel de fabrication de golem.~
+@43501 = ~Mais tu as besoin de toutes les pages pour le relier. Reviens quand tu auras trouvé les pages manquantes.~
+@43502 = ~Tu as toutes les pages manquantes, alors je peux les relier et compléter le livre. Mais il faut 5 000 pièces d'or pour le travail de reliure. Tu le veux ?~
+@43503 = ~D'accord, Cespenar regarde encore.~
+
+
+// *** Drow Merchant Nym ***
+@44000 = ~Vendui - mes plus chaleureuses salutations, honorables clients. Je suis Nym le marchand.~ [a7!nym01]
+@44001 = ~Vendui - mes salutations, darthiir. Je suis Nym le marchand.~[A7!nym02]
+@44002 = ~Je vais rester encore un peu ici, alors n'hésitez pas à revenir nous voir, moi et mes marchandises, quand vous voudrez, honorables clients. Aluvé.~ [a7!nym03]
+@44003 = ~Je vous souhaite à nouveau la bienvenue, honorables clients.~ [a7!nym04]
+@44004 = ~Je vous renouvelle mes salutations, darthiir.~ [a7!nym05]
+@44005 = ~Peut-être ai-je quelque chose qui pourrait vous intéresser ?~
+@44006 = ~Qu'avez-vous à me proposer ?~
+@44007 = ~Meurs, sale vermine drow !~
+@44008 = ~J'ai en stock une grande variété d'articles de qualité pour des aventuriers comme vous. Pour quelques pièces supplémentaires, je peux aussi vous montrer quelques-uns de mes produits exotiques.~
+@44009 = ~Malheureusement, votre victoire sur les habitants de cette colonie m'ont privé d'une bonne source d'approvisionnement de mon stock. Mais je vais essayer d'en trouver d'autres pour répondre aux besoins de clients comme vous qui paient aussi bien.~
+@44010 = ~Oui, qu'avez-vous à vendre ?~
+@44011 = ~Je voudrais jeter un oeil à vos produits exotiques.~
+@44012 = ~Ca ne m'intéresse pas pour le moment. Au revoir, Nym.~
+@44013 = ~Vous arrivez à pic car j'ai de bonnes nouvelles pour vous. J'ai pu réapprovisionner certains de mes produits. Malheureusement, trouver une source convenable dans cette partie des royaumes m'a été extraordinairement coûteuse. Je n'ai pas d'autre choix que d'en reporter une partie des coûts à votre charge, honorables clients.~
+@44014 = ~J'ai pu réapprovisionner certains de mes articles. Malheureusement, je n'ai pas d'autre choix que d'augmenter mes prix encore une fois, honorables clients.~
+@44015 = ~J'ai de nouveau pu réapprovisionner certains de mes articles. Mais ne craignez rien, honorable client, je peux vous les céder sans augmenter mes prix.~
+@44016 = ~Je vous en prie. Vous ne serez pas déçu.~ ~Je vous en prie. Vous ne serez pas déçue.~
+
+
+// *** Jerlia the Ore Merchant ***
+@44500 = ~Je recherche certains matériaux pour fabriquer des golems.~
+@44501 = ~Ah, le fabricant de golems est de retour. Avez-vous besoin d'autre minerai ?~
+@44502 = ~Oui, je voudrais parcourir votre magasin encore une fois.~
+@44503 = ~Pas pour le moment. Peut-être plus tard.~
+@44504 = ~Vous plaisantez, pas vrai ? Eh bien, habituellement, je vends en gros, mais je pourrais faire une exception pour vous. Qu'est-ce que vous recherchez ?~
+@44505 = ~De l'argile ou de la pierre.~
+@44506 = ~Avez-vous quelque chose de spécial à me proposer ? Du fer peut-être, voire du mithril ?~
+@44507 = ~Je peux vous procurer une grande variété de minerais et de pièces de maçonnerie. Pour le bon prix, vous pouvez également acheter quelques matériaux plus exotiques. N'hésitez pas à fouiller partout, et ne vous gênez pas pour choisir ce dont vous avez besoin.~
+@44508 = ~C'est toujours un plaisir.~
+@44509 = ~Vous tombez à pic. Je viens juste de réapprovisionner mon stock avec de nouveaux articles exotiques, en provenance d'une source... particulière.~
+
+
+// *** Golem dialogs ***
+@45000 = ~Le golem vous ignore totalement.~
+@45001 = ~Le golem attend vos ordres.~
+@45002 = ~Suis-moi !~
+@45003 = ~Suis-moi et protège-moi !~
+@45004 = ~Monte la garde !~
+@45005 = ~Monte la garde et défends les lieux !~
+@45006 = ~Détruis-toi !~
+@45007 = ~Tout va bien. Ne change rien.~
+@45008 = ~Cet ordre est irréversible. Le confirmez-vous ?~
+@45009 = ~Oui !~
+@45010 = ~Non.~
+@45011 = ~La magie qui protège ce lieu a désactivé votre golem.~
+@45012 = ~Vous ne pouvez avoir davantage de serviteurs golems.~
+
+
+// *** Jermien of Imnesvale ***
+@45500 = ~Avant de partir, pourriez-vous s'il vous plaît m'apprendre à fabriquer des golems géants ? Je voudrais bien essayer.~
+@45501 = ~Adieu, Jermien.~
+@45502 = ~N'avez-vous donc pas vu que ma folie a failli me coûter la vie, ainsi que celle de ma fille ? La meilleure chose à faire serait de détruire toutes mes notes sur le sujet.~
+@45503 = ~Ne vous inquiétez pas. Je suis assez puissant pour faire face à tous les aléas possibles.~ ~Ne vous inquiétez pas. Je suis assez puissante pour faire face à tous les aléas possibles.~
+@45504 = ~J'ai étudié les arts arcaniques sous la tutelle de mages expérimentés à Château-Suif. Soyez assuré que je ferai preuve d'une extrême prudence.~
+@45505 = ~Je doute qu'avec ce genre d'attitude vous puissiez réussir là où j'ai échoué. Je ne serai pas responsable d'une autre catastrophe. Mes notes doivent être détruites.~
+@45506 = ~Je dois admettre que vos paroles suscitent mon intérêt. Très bien, je vais vous confier mon propre manuel de fabrication de golem. Étudiez-le bien et ne répétez pas mes erreurs.~
+@45507 = ~Vous pouvez également utiliser mon matériel si vous le souhaitez. Je n'en aurai certainement pas besoin pendant un moment.~
+@45508 = ~Je vais prendre congé, maintenant. Adieu.~
+
+
+// *** Journal entries ***
+@49000 = ~Atelier de Fabrication de Golems~
+
+@49001 = ~Atelier de Fabrication de Golems
+
+J'ai pu louer le dernier étage du Bazar des Sorcelleries diverses à la Porte de Baldur. Je devrais pouvoir y fabriquer des golems.~
+
+@49002 = ~Atelier de Fabrication de Golems
+
+Le laboratoire du complexe souterrain situé sous le site de fouille des nains semble bien équipé pour y mener des expériences magiques. Je devrais pouvoir y fabriquer des golems.~
+
+@49003 = ~Atelier de Fabrication de Golems
+
+La sphère planaire a été conçue pour fabriquer des golems. Je devrais pouvoir y créer les miens.~
+
+@49004 = ~Atelier de Fabrication de Golems
+
+La bibliothèque des magiciens du deuxième niveau de la Tour de Garde semble très bien équipée. Je devrais pouvoir y fabriquer des golems.~
+
+@49005 = ~Atelier de Fabrication de Golems
+
+Avec le matériel acheté chez Lazarus Librarus, je devrais pouvoir fabriquer des golems dans mon Antichambre.~
+
+@49006 = ~Atelier de construction Golem
+
+J'ai rencontré un marchand drow qui peut me fournir un large éventail de matériaux nécessaires pour fabriquer des golems. Il m'a aussi promis de reconstituer son stock de temps en temps.~
+
+@49007 = ~Atelier de Fabrication de Golems
+
+La maison de Jermien à Imnesvale semble être bien équipée. Je devrais pouvoir y fabriquer des golems.~
+
+@49008 = ~Atelier de Fabrication de Golems
+
+Les ruines de Kanaglym qui sont accessibles à partir de la rivière souterraine semblent être bien équipées pour mener des expériences magiques. Je devrais pouvoir y fabriquer des golems.~

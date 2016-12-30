@@ -1,0 +1,159 @@
+// -*- coding: utf-8 -*- 
+// Item-related strings (index 30000..39999)
+
+@30000 = ~Morceaux de cadavres~
+@30001 = ~C'est un ensemble de divers morceaux de cadavres humanoïdes. Ils ont été enchantés pour empêcher leur processus naturel de décomposition.
+
+PARAMETRES :
+
+Poids : 10~
+
+@30010 = ~Bloc d'argile~
+@30011 = ~Il s'agit d'un bloc d'argile de bonne qualité. Il est généralement utilisé par les artistes, ou par les magiciens qui souhaitent créer des objets magiques de puissance moyenne.
+
+PARAMETRES :
+
+Poids : 15~
+
+@30020 = ~Bloc de pierre~
+@30021 = ~Ce bloc de roche dure est composé de granite de qualité exceptionnelle mélangé à de petites quantités de minéraux divers qui donnent à cet agrégat une couleur légèrement verdâtre. Prisé par les artistes, il est également très recherché par les magiciens pour créer des objets magiques.
+
+PARAMETRES :
+
+Poids : 25~
+
+@30030 = ~Lingot de fer~
+@30031 = ~La qualité exceptionnelle de ce lingot de fer convient parfaitement à la fabrication d'armes et d'objets magiques.
+
+PARAMETRES :
+
+Poids : 20~
+
+@30040 = ~Minerai d'adamantine~
+@30041 = ~Il est très rare de voir de l'adamantine brute, et encore plus de posséder une quantité de pur minerai d'adamantine. On utilise l'adamantine pour créer des objets enchantés de qualité exceptionnelle ou de puissants artefacts magiques.
+
+PARAMETRES :
+
+Poids : 20~
+
+@30050 = ~Tas d'ossements~
+@30051 = ~Il s'agit d'ossements d'origine humanoïde. Les os sont très appréciés par les alchimistes, les nécromanciens ou les transmutateurs pour réaliser leurs expériences.
+
+PARAMETRES :
+
+Poids : 5~
+
+@30060 = ~Tissu cérébral~
+@30061 = ~Cette matière cérébrale spongieuse semble avoir été enchantée pour empêcher son processus naturel de décomposition. Les illithids l'utilisent pour créer des golems cerveau.
+
+PARAMETRES :
+
+Poids : 3~
+
+@30070 = ~Eclat de glace magique~
+@30071 = ~Cet éclat de glace translucide étonnamment lourd résiste aussi bien aux dégâts physiques qu'aux températures élevées. On l'utilise pour créer des artefacts ou des objets magiques très puissants.
+
+PARAMETRES :
+
+Poids : 15~
+
+@30080 = ~Fragment de Pierre entropique~
+@30081 = ~Ce fragment de roche quelconque a été exposé à de la magie entropique pendant des décennies, voire des siècles. Au fil du temps, il a absorbé une partie substantielle de magie entropique, ce qui le rend presque impossible, ou au mieux imprévisible, à travailler. Il est pourtant très recherché par les mages en raison de ses propriétés uniques.
+
+PARAMETRES :
+
+Poids : 5~
+
+@30090 = ~Cadavre infecté de larves~
+@30091 = ~Ce cadavre en état avancé de décomposition grouille de vermine et d'asticots. La puanteur qui en émane est insupportable.
+
+PARAMETRES :
+
+Poids : 10~
+
+@30100 = ~Bloc de mithril~
+@30101 = ~Le mithril est un métal rare et précieux extrait dans les chaînes de montagnes de certaines régions de Féérune et d'Ombreterre. Pour produire du mithril pur, le minerai doit subir un processus de fusion complexe à l'aide de feu d'origine magique. Léger et robuste, le mithril est utilisé pour créer des objets magiques de grande qualité.
+
+PARAMETRES :
+
+Poids : 15~
+
+@30110 = ~Elément de mécanisme~
+@30111 = ~Cet élément de mécanisme fait partie du matériel nécessaire à la fabrication des golems.
+
+PARAMETRES :
+
+Poids : 25~
+
+@30120 = ~Gemme héliotrope sombre~ // Deep Bloodstone Gem ?
+@30121 = ~L'héliotrope est un quartz verdâtre plutôt sombre, pailleté de cristaux rouges. Quatre-vingt-dix pourcents de ces pierres proviennent des Galènes, la chaîne de montagnes de Damarie, et la plupart d'entre elles d'une mine située dans la Passe des Héliotropes.
+
+Cette gemme particulière a été enchantée pour être investie d'une quantité importante d'énergie magique.
+
+PARAMETRES :
+
+Poids : 1~
+
+@30130 = ~Poudre de corail enchantée~
+@30131 = ~Cette poudre a été produite à partir d'un corail rare qu'on ne trouve que dans certaines régions de la Mer Etincelante, au sud de Calimshan. D'une exceptionnelle pureté, elle est manifestement investie d'un enchantement particulier.
+
+PARAMETRES :
+
+Poids : 1~
+
+@30140 = ~Sang de Mimique~
+@30141 = ~Le sang de mimique est souvent utilisé dans la création de golems.
+
+PARAMETRES :
+
+Poids : 1~
+
+@30150 = ~Jetons de Fer froid~
+@30151 = ~Le fer froid est forgé à une température inférieure à celle du fer ou de l'acier normal afin de préserver ses propriétés spéciales. Ces jetons semblent être d'une telle qualité qu'ils sont tout désignés pour entrer dans la composition d'objets magiques de qualité.
+
+PARAMETRES :
+
+Poids : 2~
+
+@30160 = ~Orbe noir scintillant~
+@30161 = ~Orbe d'obsidienne spectrale~	// NOTE : J'ai considéré que c'était l'obsidienne qui était spectrale et non l'orbe.
+@30162 = ~Cet orbe de cristal sombre étonnamment lourd émet une lumière blanche angoissante.
+
+PARAMETRES :
+
+Poids : 5~
+@30163 = ~Egalement connue sous le nom de verre volcanique, l'obsidienne est surtout réputée pour permettre la fabrication des pierres ioniques ou d'objets magiques similaires. Cet orbe particulier semble doté de grands pouvoirs magiques et est probablement originaire de l'un des plans éthérés.
+
+PARAMETRES :
+
+Poids : 5~
+
+@30170 = ~Fiole mystérieuse~
+@30171 = ~Sang de Solaire~
+@30172 = ~Sang de Solaire déchu~
+@30173 = ~Cette potion de liquide rouge palpite légèrement dans votre paume.
+
+PARAMETRES :
+
+Poids : 1~
+@30174 = ~Les Solaires sont les plus puissants de tous les anges. Ils servent régulièrement d'émissaires ou de champions de la cause d'un être divin.
+
+Ce flacon contient une goutte de sang de l'un d'entre eux. Dans les mains d'un magicien expérimenté, elle détiendrait suffisamment de puissance magique pour pouvoir modifier la réalité.
+
+PARAMETRES :
+
+Poids : 1~
+@30175 = ~Les Solaires déchus sont les contreparties sombres des Solaires, qui sont les plus puissants de tous les anges. Ils servent souvent des êtres divins maléfiques ou de puissantes créatures des Abysses.
+
+Ce flacon contient une goutte de sang de l'un d'entre eux. Dans les mains d'un magicien expérimenté, elle détiendrait suffisamment de puissance magique pour pouvoir modifier la réalité.
+
+PARAMETRES :
+
+Poids : 1~
+
+@30180 = ~Rubis~
+@30181 = ~Le rubis est une pierre précieuse d'un rouge vif nuancé de rose ou de rouge sang. L'aspect ardent qu'il dégage en fait un joyau très recherché par la noblesse. Les alchimistes et les enchanteurs l'apprécient pour son potentiel magique latent.
+
+PARAMETRES :
+
+Poids : 0~

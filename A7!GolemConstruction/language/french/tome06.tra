@@ -1,0 +1,101 @@
+// -*- coding: utf-8 -*- 
+// Adamantite Golem related strings (index 6000..6999)
+
+@6000 = ~Grimoire de Fabrication de Golem (Vol. 6)~
+@6001 = ~Golem d'adamantine mineur~
+@6002 = ~Golem d'adamantine~
+@6003 = ~Golem d'adamantine majeur~
+@6004 = ~Golem d'adamantine parfait~ // Perfect ??
+@6005 = ~A appris comment fabriquer des golems d'adamantine.~
+@6006 = ~Pages d'un Grimoire de Fabrication de Golem~
+@6007 = ~Cette liasse de pages semble faire partie d'un ouvrage plus important. Bien qu'incomplète, elle explique comment fabriquer des golems exceptionnellement puissants.~
+
+// *** Book content ***
+@6100 = ~Sixième leçon : les Golems d'adamantine
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem d'adamantine, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+La fabrication des golems d'adamantine se fonde fortement sur les principes de base de celle des golems de fer. C'est pourquoi la description détaillée des différentes techniques et compétences requises pour en créer fait régulièrement référence à des passages du Volume Quatre de ce recueil de manuels.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer les golems suivants :
+
+Golem d'adamantine mineur :
+Niveau requis : 21 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Deux blocs d'adamantine
+- 8 000 XP perdus par le lanceur
+
+Golem d'adamantine :
+Niveau requis : 25 (-2 pour les Transmutateurs, +6 pour les Bardes)
+Composants nécessaires :
+- Quatre blocs d'adamantine
+- 16 000 XP perdus par le lanceur
+
+Golem d'adamantine majeur :
+Niveau requis : 30 (-2 pour les Transmutateurs, +8 pour les Bardes)
+Composants nécessaires :
+- Huit blocs d'adamantine
+- 32 000 XP perdus par le lanceur
+
+Golem d'adamantine parfait :
+Niveau requis : 33 (-2 pour les Transmutateurs, +10 pour les Bardes
+Composants nécessaires :
+- Huit blocs d'adamantine
+- Une goutte de sang d'un Solaire ou d'un Solaire déchu
+- 64 000 XP perdus par le lanceur
+
+L'adamantine n'existe pas à l'état naturel. On l'obtient en transformant du fer au moyen d'un sort de Souhait ou de Souhait mineur soigneusement énoncé (Note de l'auteur : à confirmer). Seuls des êtres très puissants sont capables d'exécuter une telle tâche, ce qui explique le prix exorbitant de l'adamantine.
+
+Intelligence requise : 18
+
+Poids : 10~
+
+@6101 = ~Sixième leçon : les Golems d'adamantine
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem d'adamantine, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+La fabrication des golems d'adamantine se fonde fortement sur les principes de base de celle des golems de fer. C'est pourquoi la description détaillée des différentes techniques et compétences requises pour en créer fait régulièrement référence à des passages du Volume Quatre de ce recueil de manuels.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de six volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+Permet de fabriquer les golems suivants :
+
+Golem d'adamantine mineur :
+Niveau requis : 21 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Deux lingots d'adamantine
+- 8 000 XP perdus par le lanceur
+
+Golem d'adamantine :
+Niveau requis : 25 (-2 pour les Transmutateurs, +6 pour les Bardes)
+Composants nécessaires :
+- Quatre lingots d'adamantine
+- 16 000 XP perdus par le lanceur
+
+Golem d'adamantine majeur :
+Niveau requis : 30 (-2 pour les Transmutateurs, +8 pour les Bardes)
+Composants nécessaires :
+- Huit lingots d'adamantine
+- 32 000 XP perdus par le lanceur
+
+Golem d'adamantine parfait :
+Niveau requis : 33 (-2 pour les Transmutateurs, +10 pour les Bardes)
+Composants nécessaires :
+- Huit lingots d'adamantine
+- Une goutte de sang d'un Solaire ou d'un Solaire déchu
+- 64 000 XP perdus par le lanceur
+
+L'adamantine n'existe pas à l'état naturel. On l'obtient en transformant du fer au moyen d'un sort de Souhait ou de Souhait mineur soigneusement énoncé (Note de l'auteur : à confirmer). Seuls des êtres très puissants sont capables d'exécuter une telle tâche, ce qui explique le prix exorbitant de l'adamantine.
+
+Intelligence requise : 18
+
+Poids : 1~

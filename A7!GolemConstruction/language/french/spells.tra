@@ -1,0 +1,192 @@
+// -*- coding: utf-8 -*- 
+// Spell-related strings (index 20000..29999)
+
+@20000 = ~Renvoi~
+@20001 = ~Renvoi
+
+Portée : 0
+Durée : instantanée
+Zone d'effet : le lanceur de sort
+Jet de sauvegarde : aucun
+
+Cette capacité ordonne au golem de se désactiver. Les forces magiques qui le maintenaient en un seul morceau se dissipent et l'esprit qui l'animait retourne dans son plan d'existence. Dépourvu de magie, son corps désormais sans vie se désintègre rapidement et se transforme en poussière.~
+@20002 = ~Renvoyé~
+
+@20010 = ~Nuage puant~
+@20011 = ~Nuage puant
+
+Portée : 0
+Durée : 3/2 rounds
+Zone d'effet : rayon de 4,5 mètres
+Jet de sauvegarde : annule
+
+L'énorme masse de morceaux de corps en décomposition qui le constitue permet au golem de créer un nuage de vapeurs nauséabondes centré autour de lui. Tout adversaire pris dans ce nuage doit lancer un jet de sauvegarde contre le poison, sous peine de chanceler et d'être incapable d'attaquer à cause de ses nausées, pendant 1d2 rounds. Ceux qui réussissent leur jet de sauvegarde peuvent quitter le nuage sans en subir les effets néfastes ; mais, s'ils y restent, ils doivent effectuer un nouveau jet de sauvegarde à chaque round. Les effets néfastes du poison peuvent être ralentis ou neutralisés à l'aide de la magie appropriée.~
+
+@20020 = ~Hâte de Golem~
+@20021 = ~Hâte de Golem
+
+Portée : 0
+Durée : 3 rounds
+Zone d'effet : le lanceur de sort
+Jet de sauvegarde : aucun
+
+Cette capacité permet au lanceur de sort de doubler sa vitesse de déplacement, de gagner -2 à son initiative et de pouvoir effectuer une attaque supplémentaire par round. Elle ne peut être cumulée à d'autres du même type. Sorts et incantations ne sont pas affectés. Cette capacité annule le sort de Lenteur.~
+
+@20030 = ~Lenteur du Golem~
+@20031 = ~Lenteur du Golem
+
+Portée : 0
+Durée : 8 rounds
+Zone d'effet : rayon de 9 mètres
+Jet de sauvegarde : annule
+
+Cette capacité ralentit de moitié la vitesse normale de déplacement et d'attaque des créatures. Elle annule le sort de Hâte, mais n'affecte pas pour autant les créatures magiquement accélérées ou ralenties. Les créatures ralenties subissent une pénalité de +4 à la CA, et -4 aux jets d'attaque. Tous les jets de sauvegarde contre cette capacité subissent une pénalité de -4.~
+
+@20040 = ~Nuage de gaz~
+@20041 = ~Nuage de gaz
+
+Portée : 0
+Durée : 3/2 rounds
+Zone d'effet : rayon de 4,5 mètres
+Jet de sauvegarde : spécial
+
+Cette capacité génère un nuage de vapeurs jaune verdâtre tourbillonnantes centré autour du golem. Toute créature prise dans ce nuage doit lancer un jet de sauvegarde contre le poison avec un malus de -2, chaque round, sous peine d'être empoisonnée. L'effet du poison dure trois rounds et fait un point de dégâts par seconde.~
+
+@20050 = ~Piétinement~
+@20051 = ~Piétinement
+
+Portée : 0
+Durée : instantanée
+Zone d'effet : une créature
+Jet de sauvegarde : spécial
+
+En raison de sa taille et de son poids énormes, le golem peut renverser et piétiner les adversaires plus petits que lui. Cette capacité inflige 8d10 +30 points de dégâts contondants et étourdit sa victime pendant un round. Un jet de sauvetage réussi contre la mort à -4 réduit les dégâts de moitié et évite l'étourdissement. Les créatures géantes, comme les dragons ou les géants, ne sont pas affectées.~
+@20052 = ~Piétiné~
+@20053 = ~Trop grand pour être piétiné~
+
+@20060 = ~Chaîne d'éclairs~
+@20061 = ~Chaîne d'éclairs
+
+Portée : 15 mètres
+Durée : instantanée
+Zone d'effet : spéciale
+Jet de sauvegarde : moitié
+
+Cette capacité permet au golem de faire jaillir de ses doigts des éclairs qui sautent vers ses ennemis proches et les brûlent avec de l'électricité. L'éclair cause 6d6 points de dégâts. Un jet de sauvegarde contre les sorts réussi permet de diviser par deux les dégâts subis.~
+
+@20070 = ~Téléportation~
+@20071 = ~Téléportation
+
+Portée : 15 mètres
+Durée : instantanée
+Zone d'effet : le lanceur de sort
+Jet de sauvegarde : aucun
+
+Parfois, les golems de taille géante peuvent se trouver bloqués par des passages trop étroits pour qu'ils les empruntent. Cette capacité leur permet de les traverser en se téléportant sur une courte distance près d'un membre du groupe. Elle ne peut être utilisée avec succès que si aucun ennemi n'est en vue et si le golem voit le membre du groupe.~
+
+@20080 = ~Décharge mentale~	// OU Souffle mental
+@20081 = ~Décharge mentale
+
+Portée : 0
+Durée : instantanée
+Zone d'effet : rayon de 9 mètres
+Jet de sauvegarde : spécial
+
+La puissante masse cérébrale du golem lui permet de libérer une force destructrice d'énergie mentale sur tous ses ennemis situés dans un rayon de 9 mètres autour de lui. Les créatures frappées par le souffle doivent réussir un jet de sauvegarde contre les sorts sous peine de subir 2d8 points de dégâts non-létaux et d'être étourdies pendant 2d4 rounds. Celles qui réussissent leur jet de sauvegarde ne subissent que la moitié des dégâts et ne sont pas étourdies.
+
+Les créatures qui ne pensent pas, comme les morts-vivants, les golems ou les myconides, sont immunisées contre les effets de ce sort.~
+
+@20090 = ~Vapeur glaçante~	// Scalding steam ???
+@20091 = ~Vapeur glaçante
+
+Portée : 0
+Durée : instantanée
+Zone d'effet : rayon de 9 mètres
+Jet de sauvegarde : spécial
+
+Les golems de glace peuvent émettre des vagues de vapeur glacée pour blesser les créatures proches d'eux. Centrée autour du golem, la vague affecte quiconque se trouve dans un rayon de 9 mètres et n'est pas immunisé contre les dommages causés par le froid. Les créatures frappées par la vapeur subissent 3d10 points de dégâts de froid et sont étourdies pour un round. Un jet de sauvetage réussi contre les souffles réduit de moitié les dégâts et évite l'étourdissement.~
+
+@20100 = ~Poussée entropique~ // Wild Magic Flare
+@20101 = ~Poussée entropique
+
+Portée : 12 mètres
+Durée : instantanée
+Zone d'effet : une créature
+Jet de sauvegarde : aucun
+
+Les golems magiques peuvent libérer une bouffée d'énergie magique sur une créature, lui infligeant 3d10 points de dégâts magiques et déclenchant un effet entropique aléatoire. L'effet obtenu peut prendre diverses formes et s'avérer bénéfique ou catastrophique pour la cible, voire pour toute créature dans son voisinage. La résistance à la magie de la cible peut la protéger des dégâts et bloquer les effets de ce sort.~
+
+@20110 = ~Fabriquer un Golem~
+@20111 = ~Fabriquer un Golem
+
+Cette capacité permet au magicien de créer un golem de n'importe quel type à condition de l'avoir intensivement étudié. Le processus de fabrication nécessite certains matériaux dépendant du type et du modèle du golem souhaité. La création de modèles plus puissants ou exotiques peut aussi avoir des répercutions sur la constitution du lanceur.
+
+La fabrication de l'enveloppe physique du golem nécessite une concentration extrême sur une longue période de temps pendant laquelle le magicien ne doit pas être interrompu de quelque façon que ce soit. Un esprit d'origine élémentaire est utilisé pour animer le corps. Puisque l'esprit n'est pas disposé à se soumettre, le magicien doit s'engager dans une bataille mentale pour en prendre le contrôle pendant un round. Il y a 4 % de chance que l'esprit se libère et se retourne contre le magicien pendant 1d4 rounds avant qu'il ne puisse être ramené sous contrôle.
+
+Ce processus est si épuisant mentalement et physiquement que, pendant les cinq rounds suivants, le magicien ne pourra pas lancer de sorts et subira une pénalité de -2 à sa Classe d'armure, à ses jets de sauvegarde et à ses jets de touchers et de dégâts.
+
+Contrairement aux créatures invoquées, les golems peuvent rester au service de leur maître pendant une durée pratiquement illimitée. Ils sont immunisés contre tous les effets de contrôle de l'esprit et à la magie, et suivront toujours à la lettre les ordres de leur maître.~
+
+@20120 = ~Réparer un Golem~
+@20121 = ~Réparer un Golem
+
+L'ensemble du processus dure deux rounds et consiste principalement à réparer ou remplacer les parties endommagées du corps du golem. Pendant ce temps, le golem et le magicien ne seront pas en mesure de réagir à tout événement extérieur. Les golems sévèrement endommagés peuvent nécessiter plusieurs réparations pour être entièrement remis en état.
+
+Le processus de réparation élimine également les pénalités infligées aux golems gravement endommagés.~
+
+@20130 = ~Rire affreux~
+@20131 = ~Rire affreux
+
+Portée : 0
+Durée : instantanée
+Zone d'effet : rayon de 9 mètres
+Jet de sauvegarde : spécial
+
+Le rire affreux d'un golem d'os peut provoquer deux effets chez tous les adversaires qui l'entendent. Ces derniers doivent réussir un jet de sauvegarde contre les sorts avec une pénalité de 2 sous peine d'errer sous l'effet de la panique pendant 2d6 rounds. De plus, un autre jet de sauvegarde réussi contre la mort leur évitera d'être paralysés par la peur à la place.
+
+Les créatures qui ne pensent pas, comme les morts-vivants, les golems ou les myconides, sont immunisées contre les effets de ce sort.~
+
+@20140 = ~Rayon rubis d'inversion~
+@20141 = ~Rayon rubis d'inversion
+
+Portée : 12 mètres
+Durée : instantanée
+Zone d'effet : une créature
+Jet de sauvegarde : aucun
+
+Cette capacité annule l'un des sorts de protection de la cible. Les sorts affectés sont les suivants : Protection contre les sorts mineurs, Globe mineur d'invulnérabilité, Immunité aux sorts, Globe d'invulnérabilité, Renvoi de sorts mineurs, Renvoi de sorts, Bouclier de sorts, Invulnérabilité aux sorts et Piège à sorts. La résistance magique de la cible est ignorée. Le sort annulé sera toujours celui du plus haut niveau (s'il y en a plusieurs, le sort est choisi au hasard).~
+
+@20150 = ~Déplacement éclair~
+@20151 = ~Déplacement éclair
+
+Portée : 12 mètres
+Durée : instantanée
+Zone d'effet : le lanceur de sort
+Jet de sauvegarde : spécial
+
+Cette capacité permet au golem de foudre de se transporter à n'importe quel endroit distant de 12 mètres au plus, même hors de son champ visuel. Le golem se transforme alors en un puissant éclair pour se rendre presque instantanément à l'emplacement ciblé.
+Son déplacement à grande vitesse génère une onde de choc qui renverse et inflige 1d6 points de dégâts électriques à toutes les créatures présentes dans un rayon de 3 mètres autour de son lieu de destination. Le coup de tonnerre qui en résulte les rend également sourdes pendant 1d4 tours si elles ratent un jet de sauvegarde contre les souffles. Les grandes créatures comme les dragons ou les géants ne seront pas emportées par l'onde de choc.
+
+Puisque cette capacité fait partie intégrante de la nature du golem, ce dernier n'a pas besoin d'attendre avant de l'utiliser à nouveau, ni ou une autre.~
+
+
+// Misc. strings
+@21000 = ~Engagé dans un combat mental~
+@21001 = ~Vous ne pouvez pas fabriquer de golems dans des environnements hostiles.~
+@21002 = ~Le golem terminé, la fatigue vous gagne et vous empêche de vous concentrer. Pendant les cinq rounds suivants, vous serez incapable de lancer des sorts et moins performant au combat.~
+@21003 = ~A perdu 4 000 points d'expérience~
+@21004 = ~A perdu 8 000 points d'expérience~
+@21005 = ~A perdu 16 000 points d'expérience~
+@21006 = ~A perdu 32 000 points d'expérience~
+@21007 = ~A perdu 64 000 points d'expérience~
+@21010 = ~Répare un golem...~
+@21011 = ~La cible n'est pas un golem fabriqué.~
+@21012 = ~Le golem est endommagé : Ralenti~
+@21013 = ~Le golem est endommagé : Pénalités d'attaque et de défense~
+@21014 = ~Le golem est endommagé : L'Esprit élémentaire devient agité~	// OU nerveux
+@21015 = ~Le golem est endommagé : Défaillance corporelle~
+@21016 = ~Le golem est endommagé : Défaillance sensorielle~
+@21017 = ~Panique~
+@21018 = ~Paralysé~
+@21019 = ~Protections magiques supprimées~
+@21020 = ~Bouclier électrique~
