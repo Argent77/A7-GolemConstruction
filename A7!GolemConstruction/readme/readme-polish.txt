@@ -108,6 +108,7 @@ History
 - Worked around an issue of not having a weapon equipped after being released from Imprisonment
 - Fixed a bug which removed yellow tint from enemy brain golems after death
 - Traified two remaining dialog lines
+- More fixes and minor improvements
 
 2.3
 - Improved creature animation for Brain Golems
