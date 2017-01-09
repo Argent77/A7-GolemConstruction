@@ -1,12 +1,13 @@
 // *** Functions for internal use ***
 
 /**
- * Converts any positive decimal number into a hexadecimal number
+ * Converts any decimal number into a hexadecimal number
  */
 DEFINE_ACTION_FUNCTION TO_HEX_NUMBER
 INT_VAR
-  value     = 0   // any positive decimal number
-  minDigits = 1   // min. number of digits in return value
+  value     = 0   // the decimal number
+  minDigits = 1   // min. number of digits in return value (not counting sign)
+  prefix    = 0   // whether to return number with "0x" prefix
 RET
   hexNumber       // returned as string without prefix
 BEGIN
@@ -15,10 +16,16 @@ BEGIN
   OUTER_TEXT_SPRINT hexNumber ~~
   ACTION_DEFINE_ARRAY digit BEGIN ~0~ ~1~ ~2~ ~3~ ~4~ ~5~ ~6~ ~7~ ~8~ ~9~ ~a~ ~b~ ~c~ ~d~ ~e~ ~f~ END
 
-  OUTER_SET remainder = value BAND 0x7fffffff   // no negative numbers allowed
-  OUTER_WHILE (remainder != 0) BEGIN
-    OUTER_SET curDigit = remainder BAND 0xf
-    OUTER_SET remainder = remainder BLSR 4
+  ACTION_IF (value < 0) BEGIN
+    OUTER_SET signed = 1
+    OUTER_SET value = 0 - value
+  END ELSE BEGIN
+    OUTER_SET signed = 0
+  END
+
+  OUTER_WHILE (value != 0) BEGIN
+    OUTER_SET curDigit = value BAND 0xf
+    OUTER_SET value = value BLSR 4
     OUTER_TEXT_SPRINT hexDigit $EVAL digit(~%curDigit%~)
     OUTER_TEXT_SPRINT hexNumber ~%hexDigit%%hexNumber%~
   END
@@ -26,17 +33,26 @@ BEGIN
   OUTER_WHILE (STRING_LENGTH ~%hexNumber%~ < minDigits) BEGIN
     OUTER_TEXT_SPRINT hexNumber ~0%hexNumber%~
   END
+
+  ACTION_IF (prefix) BEGIN
+    OUTER_TEXT_SPRINT hexNumber ~0x%hexNumber%~
+  END
+
+  ACTION_IF (signed) BEGIN
+    OUTER_TEXT_SPRINT hexNumber ~-%hexNumber%~
+  END
 END
 
 DEFINE_PATCH_FUNCTION TO_HEX_NUMBER
 INT_VAR
   value     = 0
   minDigits = 1
+  prefix    = 0
 RET
   hexNumber
 BEGIN
   INNER_ACTION BEGIN
-    LAF TO_HEX_NUMBER INT_VAR value = value minDigits = minDigits RET hexNumber END
+    LAF TO_HEX_NUMBER INT_VAR value = value minDigits = minDigits prefix = prefix RET hexNumber END
   END
 END
 
@@ -57,6 +73,20 @@ BEGIN
   ACTION_IF (~%hexNumber%~ STRING_EQUAL ~~) BEGIN
     OUTER_SET value = 0
   END ELSE BEGIN
+    // checking for sign
+    ACTION_IF (~%hexNumber%~ STRING_MATCHES_REGEXP ~-.+~ = 0) BEGIN
+      OUTER_SET signed = 1
+      OUTER_PATCH_SAVE hexNumber ~%hexNumber%~ BEGIN REPLACE_TEXTUALLY ~^-~ ~~ END
+    END ELSE BEGIN
+      OUTER_SET signed = 0
+    END
+
+    // checking for prefix
+    ACTION_IF (~%hexNumber%~ STRING_MATCHES_REGEXP ~^0[xX].+~ = 0) BEGIN
+      OUTER_PATCH_SAVE hexNumber ~%hexNumber%~ BEGIN REPLACE_TEXTUALLY ~^0[xX]~ ~~ END
+    END
+
+    // converting number
     OUTER_SET curValue = 0
     OUTER_SET scale = 1
     OUTER_SET strlen = STRING_LENGTH ~%hexNumber%~
@@ -75,6 +105,11 @@ BEGIN
       OUTER_SET curValue += digit*scale
       OUTER_SET scale = scale BLSL 4
     END
+
+    ACTION_IF (signed) BEGIN
+      OUTER_SET curValue = 0 - curValue
+    END
+
     OUTER_SET value = curValue
   END
 END
@@ -704,3 +739,66 @@ BEGIN
   LPF APPLY_GOLEM_TINT_BRIGHT INT_VAR rgb = 0x080c0e00 END
 END
 
+
+/**
+ * Adds an opcode to set a specific spell state to the current creature or spell resource.
+ */
+DEFINE_PATCH_FUNCTION APPLY_SPELL_STATE
+INT_VAR
+  splstate  = "-1"
+BEGIN
+  PATCH_IF (splstate >= 0) BEGIN
+    READ_ASCII 0 sig (8)
+    PATCH_IF (~%sig%~ STRING_EQUAL ~CRE V1.0~) BEGIN
+      LPF ADD_CRE_EFFECT
+      INT_VAR
+        opcode  = 328     // Set spell state
+        timing  = 9       // Instant/Permanent
+        target  = 1       // Self
+        parameter2  = splstate
+        special = 1       // IWD2 mode
+      END
+    END ELSE PATCH_IF (~%sig%~ STRING_EQUAL ~SPL V1  ~) BEGIN
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 328
+        timing  = 9       // Instant/Permanent
+        target  = 2       // Preset target
+        parameter2    = splstate
+        resist_dispel = 2
+        special = 1       // IWD2 mode
+      END
+    END
+  END
+END
+
+
+/**
+ * Removes the specified spell state from the current creature or spell resource.
+ */
+DEFINE_PATCH_FUNCTION REMOVE_SPELL_STATE
+INT_VAR
+  splstate = "-1"
+BEGIN
+  READ_ASCII 0 sig (8)
+  PATCH_IF (~%sig%~ STRING_EQUAL ~CRE V1.0~) BEGIN
+    LPF ADD_CRE_EFFECT
+    INT_VAR
+      opcode  = 337     // Remove opcode
+      timing  = 9       // Instant/Permanent
+      target  = 1       // Self
+      parameter1  = splstate
+      parameter2  = 328 // Opcode: Set Spell State
+    END
+  END ELSE PATCH_IF (~%sig%~ STRING_EQUAL ~SPL V1  ~) BEGIN
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 337
+      timing  = 9       // Instant/Permanent
+      target  = 2       // Preset target
+      parameter1  = splstate
+      parameter2  = 328 // Opcode: Set Spell State
+      resist_dispel = 2
+    END
+  END
+END

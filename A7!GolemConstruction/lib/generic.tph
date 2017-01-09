@@ -1,8 +1,41 @@
 // *** Generic stuff that has to be defined (first) ***
 
-// SPECIFICS values for all constructed golem types
-OUTER_SET specific_golem  = 200
-APPEND ~specific.ids~ ~%specific_golem% A7!GOLEM~ UNLESS ~^%specific_golem%[ %TAB%]~
+// SPECIFICS value for all constructed golem types
+OUTER_SET specific_golem  = "-1"
+OUTER_FOR (id = 200; id < 256; id += 1) BEGIN
+  // try to find a free slot first
+  OUTER_PATCH ~~ BEGIN
+    LOOKUP_IDS_SYMBOL_OF_INT name ~specific~ id
+  END
+  ACTION_IF (~%name%~ STRING_EQUAL ~%id%~) BEGIN
+    OUTER_SET specific_golem  = id
+    OUTER_SET id = 256
+  END
+END
+ACTION_IF (specific_golem < 0) BEGIN
+  // default to SPECIFIC value = 200
+  OUTER_SET specific_golem  = 200
+END
+APPEND ~specific.ids~ ~%specific_golem% A7!GOLEM~
+
+// SPLSTATE values used for targeting specific golem types or variants
+APPEND ~splstate.ids~ ~167 A7!GOLEM_LESSER~ UNLESS ~A7!GOLEM_LESSER~
+APPEND ~splstate.ids~ ~168 A7!GOLEM_NORMAL~ UNLESS ~A7!GOLEM_NORMAL~
+APPEND ~splstate.ids~ ~169 A7!GOLEM_GREATER~ UNLESS ~A7!GOLEM_GREATER~
+APPEND ~splstate.ids~ ~170 A7!GOLEM_PERFECT~ UNLESS ~A7!GOLEM_PERFECT~
+APPEND ~splstate.ids~ ~171 A7!GOLEM_FLESH~ UNLESS ~A7!GOLEM_FLESH~
+APPEND ~splstate.ids~ ~172 A7!GOLEM_CLAY~ UNLESS ~A7!GOLEM_CLAY~
+APPEND ~splstate.ids~ ~173 A7!GOLEM_STONE~ UNLESS ~A7!GOLEM_STONE~
+APPEND ~splstate.ids~ ~174 A7!GOLEM_IRON~ UNLESS ~A7!GOLEM_IRON~
+APPEND ~splstate.ids~ ~175 A7!GOLEM_MITHRAL~ UNLESS ~A7!GOLEM_MITHRAL~
+APPEND ~splstate.ids~ ~176 A7!GOLEM_ADAMANTITE~ UNLESS ~A7!GOLEM_ADAMANTITE~
+APPEND ~splstate.ids~ ~177 A7!GOLEM_MAGGOT~ UNLESS ~A7!GOLEM_MAGGOT~
+APPEND ~splstate.ids~ ~178 A7!GOLEM_BONE~ UNLESS ~A7!GOLEM_BONE~
+APPEND ~splstate.ids~ ~179 A7!GOLEM_BRAIN~ UNLESS ~A7!GOLEM_BRAIN~
+APPEND ~splstate.ids~ ~180 A7!GOLEM_ICE~ UNLESS ~A7!GOLEM_ICE~
+APPEND ~splstate.ids~ ~181 A7!GOLEM_MAGIC~ UNLESS ~A7!GOLEM_MAGIC~
+APPEND ~splstate.ids~ ~182 A7!GOLEM_LIGHTNING~ UNLESS ~A7!GOLEM_LIGHTNING~
+APPEND ~splstate.ids~ ~183 A7!GOLEM_RUBY~ UNLESS ~A7!GOLEM_RUBY~
 
 // (max. number - 1) of available golems following you
 OUTER_SET max_golem_count = 2
