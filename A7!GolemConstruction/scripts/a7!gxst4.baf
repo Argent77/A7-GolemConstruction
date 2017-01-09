@@ -2,11 +2,22 @@
 
 IF
   Die()
+  CheckSpellState(Myself, A7!GOLEM_STONE)
   StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
 THEN
   RESPONSE #100
     ReallyForceSpellDeadRES("a7!syst2",Myself)
     ReallyForceSpellDeadRES("a7!syst2",Myself)
+END
+
+IF
+  Die()
+  CheckSpellState(Myself, A7!GOLEM_FLESH)
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("a7!syfl2",Myself)
+    ReallyForceSpellDeadRES("a7!syfl2",Myself)
 END
 
 IF

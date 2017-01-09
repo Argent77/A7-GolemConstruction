@@ -146,3 +146,11 @@ BEGIN @30 // Fighter Stronghold golems may continue to serve you
   DESIGNATED 30
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_stronghold_golems.tph~
+
+
+BEGIN @35 // Make golems vulnerable to specific spell effects
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 35
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_vulnerable.tph~

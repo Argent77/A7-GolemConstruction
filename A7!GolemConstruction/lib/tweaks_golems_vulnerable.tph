@@ -1,0 +1,331 @@
+// *** Tweaks: Make golems vulnerable to specific spell effects ***
+
+OUTER_SET splstate_lesser = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LESSER~)
+OUTER_SET splstate_flesh = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_FLESH~)
+OUTER_SET splstate_clay = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_CLAY~)
+OUTER_SET splstate_stone = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_STONE~)
+OUTER_SET splstate_iron = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_IRON~)
+OUTER_SET splstate_adamantite = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_ADAMANTITE~)
+OUTER_SET splstate_maggot = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_MAGGOT~)
+
+// Installing shared resources
+OUTER_SET tra = 3001  // Lesser Stone Golem
+ACTION_FOR_EACH file IN ~a7!tost1.spl~ ~a7!tost2.spl~ ~a7!tost3.spl~ ~a7!tost4.spl~ BEGIN
+  OUTER_SET strref = RESOLVE_STR_REF( (AT tra) )
+  COPY ~%MOD_FOLDER%/spells/%file%~ ~override~
+    // TODO: determine strref offset dynamically
+    WRITE_LONG 0xce strref    // strref for param1 in opcode 103 (Change Name)
+    LPF REMOVE_SPELL_STATE INT_VAR splstate = splstate_flesh END
+    LPF REMOVE_SPELL_STATE INT_VAR splstate = splstate_clay END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_stone END
+  OUTER_SET tra += 1
+END
+
+OUTER_SET tra = 1001  // Lesser Flesh Golem
+OUTER_SET animFleshMini = IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~)
+OUTER_SET animFlesh = IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~)
+ACTION_FOR_EACH file IN ~a7!tofl1.spl~ ~a7!tofl2.spl~ ~a7!tofl3.spl~ ~a7!tofl4.spl~ BEGIN
+  OUTER_SET strref = RESOLVE_STR_REF( (AT tra) )
+  COPY ~%MOD_FOLDER%/spells/%file%~ ~override~
+    // TODO: determine offsets dynamically
+    WRITE_LONG 0x9e (tra = 1001 ? animFleshMini : animFlesh)
+    WRITE_LONG 0xce strref    // strref for param1 in opcode 103 (Change Name)
+    LPF REMOVE_SPELL_STATE INT_VAR splstate = splstate_stone END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_flesh END
+  OUTER_SET tra += 1
+END
+
+
+// Spell-induced transformation: "Flesh to Stone" (Flesh Golem -> Stone Golem)
+COPY ~%MOD_FOLDER%/spells/a7!flst.spl~ ~override~
+  SET strref = RESOLVE_STR_REF(@21021)  // Turned into Stone Golem
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 139   // Display String
+    target        = 2     // Preset target
+    parameter1    = strref
+    timing        = 1     // Instant/Permanent until death
+    resist_dispel = 2
+  END
+  FOR (idx = 1 splstate = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LESSER~); idx < 5; idx += 1 splstate += 1) BEGIN
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate
+      parameter2    = 76    // SPLSTATE = specified value
+      timing        = 4     // Delay/Permanent
+      duration      = 1
+      resist_dispel = 2
+    STR_VAR
+      resource      = EVAL "A7!TOST%idx%"
+    END
+  END
+
+COPY_EXISTING ~spwi604.spl~ ~override~  // Flesh to Stone
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_flesh
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!FLST"
+  END
+
+COPY_EXISTING ~spwi714.spl~ ~override~  // Prismatic Spray
+  // Blue ray causes Petrification
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_flesh
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+    probability1  = 73
+    probability2  = 57
+  STR_VAR
+    resource      = "A7!FLST"
+  END
+
+
+// Spell-induced transformation: "Stone to Flesh" (Stone Golem -> Flesh Golem)
+COPY ~%MOD_FOLDER%/spells/a7!stfl.spl~ ~override~
+  SET strref = RESOLVE_STR_REF(@21022)  // Turned into Flesh Golem
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 139   // Display String
+    target        = 2     // Preset target
+    parameter1    = strref
+    timing        = 1     // Instant/Permanent until death
+    resist_dispel = 2
+  END
+  FOR (idx = 1 splstate = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LESSER~); idx < 5; idx += 1 splstate += 1) BEGIN
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate
+      parameter2    = 76    // SPLSTATE = specified value
+      timing        = 4     // Delay/Permanent
+      duration      = 2
+      resist_dispel = 2
+    STR_VAR
+      resource      = EVAL "A7!TOFL%idx%"
+    END
+  END
+
+COPY_EXISTING ~spwi625.spl~ ~override~  // Stone to Flesh
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_stone
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!STFL"
+  END
+
+COPY_EXISTING ~scrlpet.itm~ ~override~  // Stone to Flesh Scroll
+  LPF ADD_ITEM_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_stone
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!STFL"
+  END
+
+
+// Spell-induced transformation: "Abi-Dalzim's Horrid Wilting" (Clay Golem -> Stone Golem)
+COPY ~%MOD_FOLDER%/spells/a7!clst.spl~ ~override~
+  SET strref = RESOLVE_STR_REF(@21023)  // Dehydrated into Stone Golem
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 139   // Display String
+    target        = 2     // Preset target
+    parameter1    = strref
+    timing        = 1     // Instant/Permanent until death
+    resist_dispel = 2
+  END
+  FOR (idx = 1 splstate = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LESSER~); idx < 5; idx += 1 splstate += 1) BEGIN
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate
+      parameter2    = 76    // SPLSTATE = specified value
+      timing        = 4     // Delay/Permanent
+      duration      = 1
+      resist_dispel = 2
+    STR_VAR
+      resource      = EVAL "A7!TOST%idx%"
+    END
+  END
+
+COPY_EXISTING ~spwi812.spl~ ~override~  // Abi-Dalzim's Horrid Wilting
+              ~spwish32.spl~ ~override~ // Abi-Dalzim's Horrid Wilting
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_clay
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!CLST"
+  END
+
+
+// Spell-induced transformation: Death Spell (auto-slays Maggot Golem)
+COPY ~%MOD_FOLDER%/spells/a7!kill.spl~ ~override~
+
+COPY_EXISTING ~spwi605.spl~ ~override~  // Death Spell
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_maggot
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!KILL"
+  END
+
+
+// Specific spell effect: Cone of Cold and Ice Storm (cause Clay Golems to become slow)
+ACTION_IF (GAME_IS ~bgee~) BEGIN
+  COPY ~%MOD_FOLDER%/spells/bgee/a7!slow.spl~ ~override~
+END ELSE BEGIN
+  COPY ~%MOD_FOLDER%/spells/bg2ee/a7!slow.spl~ ~override~
+END
+
+COPY_EXISTING ~spwi503.spl~  ~override~   // Cone of Cold
+              ~spcryo01.spl~ ~override~   // Cone of Cold
+              ~spin833.spl~  ~override~   // Silver Dragon Cone of Cold
+              ~spwi404.spl~  ~override~   // Ice Storm
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_clay
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!SLOW"
+  END
+
+
+// Specific spell effect: Sunray (reduces physical resistance of Adamantite Golems)
+COPY ~%MOD_FOLDER%/spells//a7!burn.bam~ ~override~
+     ~%MOD_FOLDER%/spells//a7!burn.vvc~ ~override~
+
+COPY ~%MOD_FOLDER%/spells//a7!burn.spl~ ~override~
+  SET strref = RESOLVE_STR_REF(@21024)  // Corroded by sunlight
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 139   // Display String
+    target        = 2     // Preset target
+    parameter1    = strref
+    power         = 7
+    timing        = 1     // Instant/Permanent until death
+    resist_dispel = 2
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 206   // Protection from Spell
+    target        = 2     // Preset target
+    parameter1    = "-1"  // no message
+    power         = 7
+    timing        = 9     // Instant/Permanent until death
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!BURN"
+  END
+
+COPY_EXISTING ~sppr707.spl~ ~override~  // Sunray
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_adamantite
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!BURN"
+  END
+
+
+// Specific spell effect: fire damage from high-level spells apply fire-based attack damage for a short time
+// Potential spells: Meteor Swarm (SPWI911), Dragon's Breath (SPWI922), Comet (SPWI925), Incendiary Cloud (SPWI810), Fire Storm (SPPR705)
+COPY ~%MOD_FOLDER%/spells//a7!fatk.spl~ ~override~
+  SET strref = RESOLVE_STR_REF(@21025)  // Heated up
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 139   // Display String
+    target        = 2     // Preset target
+    parameter1    = strref
+    power         = 9
+    timing        = 1     // Instant/Permanent until death
+    resist_dispel = 2
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 206   // Protection from Spell
+    target        = 2     // Preset target
+    parameter1    = "-1"  // no message
+    power         = 9
+    timing        = 0     // Instant/Limited
+    duration      = 30
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!FATK"
+  END
+
+COPY ~%MOD_FOLDER%/spells//a7!fatk.eff~ ~override~
+
+COPY_EXISTING ~spwi810.spl~ ~override~  // Incendiary Cloud
+              ~spwi911.spl~ ~override~  // Meteor Swarm
+              ~spwi922.spl~ ~override~  // Dragon's Breath
+              ~spwi925.spl~ ~override~  // Comet
+              ~sppr705.spl~ ~override~  // Fire Storm
+  READ_LONG 0x34 level
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode        = 326   // Apply effects list
+    target        = 2     // Preset target
+    parameter1    = splstate_iron
+    parameter2    = 76    // SPLSTATE = specified value
+    power         = level
+    timing        = 9     // Instant/Permanent
+    resist_dispel = 2
+  STR_VAR
+    resource      = "A7!FATK"
+  END

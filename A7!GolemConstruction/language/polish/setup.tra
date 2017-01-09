@@ -8,6 +8,7 @@
 @20 = ~Golemy dla wrogich istot rzucajacych czary~
 @25 = ~Wieksza roznorodnosc wrogich golemow~
 @30 = ~Golemy z Twierdzy wojownika moga ci dalej sluzyc~
+@35 = ~Make golems vulnerable to specific spell effects~
 
 @100 = ~Ta modyfikacja wymaga uprzedniego zainstalowania BG:SoD lub BG2:EE.~
 @101 = ~Ta modyfikacja wymaga uprzedniego zainstalowania glownego komponentu.~

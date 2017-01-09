@@ -22,12 +22,24 @@ END
 
 IF
   Die()
+  CheckSpellState(Myself, A7!GOLEM_FLESH)
   StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
   Global("dismiss", "LOCALS", 0)
 THEN
   RESPONSE #100
     ReallyForceSpellDeadRES("a7!sxfl2",Myself)
     ReallyForceSpellDeadRES("a7!sxfl2",Myself)
+END
+
+IF
+  Die()
+  CheckSpellState(Myself, A7!GOLEM_STONE)
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+  Global("dismiss", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("a7!sxst2",Myself)
+    ReallyForceSpellDeadRES("a7!sxst2",Myself)
 END
 
 // Work-around for issue: Fix creature specifications
