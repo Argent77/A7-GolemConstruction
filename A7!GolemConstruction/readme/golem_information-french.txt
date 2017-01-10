@@ -894,6 +894,32 @@ Vous devriez prendre grand soin de vos golems car ils peuvent souffrir de défai
 La capacité "Réparer un Golem" permet de les remettre en état.
 
 
+Spells that are affecting golems in some way
+============================================
+
+Since golems are non-living constructs they may be affected differently by certain spells. The following effects 
+can be triggered when the Tweaks component "Make golems vulnerable to specific spell effects" has been installed:
+- Flesh to Stone:
+  Turns Flesh Golems into Stone Golems of the same variant if they fail their save vs. Petrify/Polymorph.
+- Stone to Flesh:
+  Turns Stone Golems into Flesh Golems of the same variant if they fail their save vs. Petrify/Polymorph.
+- Abi-Dalzim's Horrid Wilting:
+  This spell dehydrates all Clay Golems in the area of effect and turns them into Stone Golems if they fail their save 
+  vs. Spell at -2 penalty.
+- Death Spell:
+  Kills Maggot Golems automatically (no save allowed).
+- Cone of Cold and Ice Storm:
+  Clay Golems hit by this spell are slowed for five rounds if they fail their save vs. Spell.
+- Sunray:
+  Causes the adamantine alloy of Adamantite Golems to deteriorate which reduces physical resistances permanently 
+  if they fail their save vs. Spell. The "Repair Golem" ability can remove this effect.
+- High-level fire-based spells:
+  These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage 
+  in addition to physical damage.
+  The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud and Fire 
+  Storm.
+
+
 Sites connus dans lesquels vous pouvez fabriquer des golems
 ===========================================================
 

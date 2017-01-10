@@ -895,6 +895,36 @@ Gebt immer gut auf eure Golems acht. Wenn sie zu schwer beschädigt sind, könne
 Diese Fehlfunktionen können aber zusammen mit dem Schaden mit der Fähigkeit "Golem reparieren" beseitigt werden.
 
 
+Zaubersprüche, die spezielle Auswirkungen auf Golems haben
+==========================================================
+
+Golems sind nicht lebende Konstrukte und können daher auf ungewöhnliche Weise von Zaubersprüchen beeinflusst werden.
+Die folgenden Effekte können auftreten, wenn die Modkomponente "Mache Golems anfällig für bestimmte Zauber" 
+installiert wurde:
+- Fleisch zu Stein:
+  Verwandelt Fleischgolems in Steingolems der gleichen Variante, wenn sie ihren Rettungswurf gegen Versteinerung/
+  Verwandlung nicht bestehen.
+- Stein zu Fleisch:
+  Verwandelt Steingolems in Fleischgolems der gleichen Variante, wenn sie ihren Rettungswurf gegen Versteinerung/
+  Verwandlung nicht bestehen.
+- Abi-Dalzims abscheuliche Austrocknung:
+  Dieser Zauber entzieht allen Tongolems im betroffenen Gebiet jegliches Wasser und verwandelt sie dadurch in Stein-
+  golems, wenn sie ihren Rettungswurf -2 gegen Zauber nicht bestehen.
+- Todeszauber:
+  Vernichtet Madengolems automatisch (kein Rettungswurf erlaubt).
+- Kältekegel und Eissturm:
+  Betroffene Tongolems werden für fünf Runden verlangsamt, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen.
+- Sonnenstrahl:
+  Dieser Zauber greift die Adamantitlegierung von Adamantitgolems an, wodurch sich ihre physischen Resistenzen permanent 
+  verschlechtern, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen. Die Fähigkeit "Golem reparieren" kann diesen 
+  Zustand beheben.
+- Hochstufige Zauber mit Feuereffekten:
+  Diese Zauber erhitzen Eisengolems so weit, dass sie für fünf Runden mit ihren Angriffen Feuerschaden verursachen.
+  Es ist kein Rettungswurf erforderlich.
+  Die folgenden Zauber können diesen Effekt hervorrufen: Meteorschwarm, Drachenodem, Komet, Flammende Wolke und 
+  Feuersturm.
+
+
 Orte, an denen man Golems konstruieren kann
 ===========================================
 

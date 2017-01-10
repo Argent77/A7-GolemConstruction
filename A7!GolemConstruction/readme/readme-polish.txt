@@ -74,6 +74,20 @@ Komponent ten dodaje szansę na to, że jeden lub więcej ocalałych z oblężen
 * Istnieje 33% szans na glinianego golema, jeśli ten ocalał.
 * Istnieje 15% szans na żelaznego golema, jeśli ten ocalał.
 
+2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE and EET)
+This component modifies a number of spells so that they can affect specific golem types in a 
+different and sometimes unexpected way. Some spells may cause special harmful effects while other 
+improve or even change the nature of golems. You can find out more in "golem_information.txt".
+
+2.7. Reduce weapon immunities for constructed golems (for BG:SoD, BG2:EE and EET)
+A great number of enemies have trouble hitting golems because of their high weapon enchantment 
+immunities, even in later parts of the game. This component nerfs the power of constructed golems 
+by reducing their innate weapon enchantment immunities to increase the chance that enemies can 
+actually harm them.
+Weapon immunities will be reduced by one level on average, sometimes even more. For example, 
+golems with immunity to enchanted weapons +2 or less will become immune to enchantments of +1 or 
+less. Golems with immunity to non-enchanted weapons only will lose weapon immunity altogether.
+
 
 Szczegóły
 ~~~~~~~~~
@@ -99,6 +113,10 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+2.5
+- Added Tweaks component "Make golems vulnerable to specific spell effects"
+- Added Tweaks component "Reduce weapon immunities for constructed golems"
 
 2.4
 - Added French translation (big thanks to Gwendolyne)

@@ -109,10 +109,26 @@ Geheimtür im Obergeschoss des Schlosses aufzunehmen, wenn ihr das Schloss auf W
 * Mit 15% Wahrscheinlichkeit findet ihr einen Eisengolem vor, wenn der Eisengolem überlebt.
 
 
+2.6. Mache Golems anfällig für bestimmte Zauber (für BG:SoD, BG2:EE and EET)
+Diese Komponente erweitert einige Zaubersprüche, so dass sie Golems auf eine andere, und manchmal 
+unerwartete Weise beeinflussen. Einige Zauber können sich schädlich auswirken, während andere einen 
+positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informationen dazu in 
+"golem_information-german.txt".
+
+2.7. Vermindere Waffenimmunität bei erschaffenen Golems (für BG:SoD, BG2:EE and EET)
+Viele Gegner haben (selbst im fortgeschrittenen Spiel) Probleme, Golems zu treffen, da sie über eine 
+hohe Waffenimmunität verfügen. Diese Komponente vermindert die Immunität gegenüber verzauberter oder 
+normaler Waffen, um die Chance der Gegner zu erhöhen, Golems überhaupt zu treffen.
+Waffenimmunitäten der Golems werden dabei um eine Stufe und in einigen Fällen um zwei Stufen 
+vermindert. Das heißt, Golems mit einer Immunität gegenüber +2 verzauberten Waffen werden nur noch 
+immun gegenüber +1 verzauberten Waffen sein. Golems mit einer Immunität gegenüber normalen Waffen 
+wird die Waffenimmunität ganz entzogen.
+
+
 Einzelheiten
 ~~~~~~~~~~~~
 
-Die Textdatei "golem_information.txt" (in Englisch) im Ordner "readme" listet Einzelheiten zu den 
+Die Textdatei "golem_information-german.txt" im Readme-Ordner listet Einzelheiten zu den 
 Golemeigenschaften, Voraussetzungen zur Konstruktion und vieles mehr auf.
 
 
@@ -134,6 +150,10 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+2.5
+- Added Tweaks component "Make golems vulnerable to specific spell effects"
+- Added Tweaks component "Reduce weapon immunities for constructed golems"
 
 2.4
 - Added French translation (big thanks to Gwendolyne)
