@@ -73,6 +73,7 @@ COPY_EXISTING ~spwi604.spl~ ~override~  // Flesh to Stone
     power         = level
     timing        = 9     // Instant/Permanent
     resist_dispel = 2
+    savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
   STR_VAR
     resource      = "A7!FLST"
   END
@@ -91,6 +92,7 @@ COPY_EXISTING ~spwi714.spl~ ~override~  // Prismatic Spray
     resist_dispel = 2
     probability1  = 73
     probability2  = 57
+    savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
   STR_VAR
     resource      = "A7!FLST"
   END
@@ -133,6 +135,7 @@ COPY_EXISTING ~spwi625.spl~ ~override~  // Stone to Flesh
     power         = level
     timing        = 9     // Instant/Permanent
     resist_dispel = 2
+    savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
   STR_VAR
     resource      = "A7!STFL"
   END
@@ -147,6 +150,7 @@ COPY_EXISTING ~scrlpet.itm~ ~override~  // Stone to Flesh Scroll
     power         = level
     timing        = 9     // Instant/Permanent
     resist_dispel = 2
+    savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
   STR_VAR
     resource      = "A7!STFL"
   END
@@ -190,6 +194,8 @@ COPY_EXISTING ~spwi812.spl~ ~override~  // Abi-Dalzim's Horrid Wilting
     power         = level
     timing        = 9     // Instant/Permanent
     resist_dispel = 2
+    savingthrow   = (1 << 0)  // vs. Spell
+    savebonus     = "-2"
   STR_VAR
     resource      = "A7!CLST"
   END
@@ -235,6 +241,7 @@ COPY_EXISTING ~spwi503.spl~  ~override~   // Cone of Cold
     power         = level
     timing        = 9     // Instant/Permanent
     resist_dispel = 2
+    savingthrow   = (1 << 0)  // vs. Spell
   STR_VAR
     resource      = "A7!SLOW"
   END
@@ -278,6 +285,7 @@ COPY_EXISTING ~sppr707.spl~ ~override~  // Sunray
     power         = level
     timing        = 9     // Instant/Permanent
     resist_dispel = 2
+    savingthrow   = (1 << 0)  // vs. Spell
   STR_VAR
     resource      = "A7!BURN"
   END
