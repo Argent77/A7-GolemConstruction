@@ -1,0 +1,44 @@
+// *** Tweaks: Reduced weapon immunities for constructed golems ***
+
+// Remove weapon immunities
+ACTION_FOR_EACH cre IN ~a7!glfl2.cre~ ~a7!gsfl2.cre~ ~a7!glfl3.cre~ ~a7!glcl2.cre~ 
+                       ~a7!gscl2.cre~ ~a7!glst1.cre~ ~a7!gsst1.cre~ ~a7!glst2.cre~ 
+                       ~a7!gsst2.cre~ ~a7!glir1.cre~ ~a7!gsir1.cre~ ~a7!glbo.cre~ 
+                       ~a7!glic.cre~ BEGIN
+  COPY_EXISTING ~%cre%~ ~override~
+    REMOVE_CRE_ITEM ~IMMUNE1~
+    REMOVE_CRE_ITEM ~IMMUNE2~
+  BUT_ONLY
+END
+
+// +1 -> non-enchanted
+ACTION_FOR_EACH cre IN ~a7!glfl4.cre~ ~a7!glcl3.cre~ ~a7!glcl4.cre~ ~a7!glst3.cre~ 
+                       ~a7!glbr.cre~ ~a7!glru.cre~ BEGIN
+  COPY_EXISTING ~%cre%~ ~override~
+    REPLACE_CRE_ITEM ~IMMUNE1~ #0 #0 #0 ~NONE~ ~LRING~
+  BUT_ONLY
+END
+
+// +2 -> non-enchanted
+ACTION_FOR_EACH cre IN ~a7!glir2.cre~ ~a7!gsir2.cre~ ~a7!glmi1.cre~ ~a7!gsmi1.cre~ 
+                       ~a7!glad1.cre~ ~a7!gsad1.cre~ BEGIN
+  COPY_EXISTING ~%cre%~ ~override~
+    REPLACE_CRE_ITEM ~IMMUNE1~ #0 #0 #0 ~NONE~ ~LRING~
+  BUT_ONLY
+END
+
+// +2 -> +1
+ACTION_FOR_EACH cre IN ~a7!glst4.cre~ ~a7!glir3.cre~ ~a7!glir4.cre~ ~a7!glmi2.cre~ 
+                       ~a7!gsmi2.cre~ ~a7!glmi3.cre~ ~a7!glad2.cre~ ~a7!gsad2.cre~ 
+                       ~a7!gllt.cre~ BEGIN
+  COPY_EXISTING ~%cre%~ ~override~
+    REPLACE_CRE_ITEM ~IMMUNE2~ #0 #0 #0 ~NONE~ ~LRING~
+  BUT_ONLY
+END
+
+// +3 -> +2
+ACTION_FOR_EACH cre IN ~a7!glmi4.cre~ ~a7!glad3.cre~ ~a7!glad4.cre~ BEGIN
+  COPY_EXISTING ~%cre%~ ~override~
+    REPLACE_CRE_ITEM ~IMMUNE3~ #0 #0 #0 ~NONE~ ~LRING~
+  BUT_ONLY
+END

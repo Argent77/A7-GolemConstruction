@@ -154,3 +154,11 @@ BEGIN @35 // Make golems vulnerable to specific spell effects
   DESIGNATED 35
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_vulnerable.tph~
+
+
+BEGIN @40 // Reduce weapon immunities for constructed golems
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 40
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_reduce_immunities.tph~

@@ -795,7 +795,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Crushing: 20
   - Piercing: 20
   - Missile: 20
-- Immune to non-magical and +1 weapons
+- Immune to non-magical weapons
 - May cast Scalding Steam which does 3d10 area of effect cold damage (save vs. breath to avoid)
 
 5. Magic Golem
