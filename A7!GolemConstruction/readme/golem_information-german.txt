@@ -803,7 +803,7 @@ Varianten erschaffen werden.
   - Wucht: 20
   - Stich: 20
   - Geschoss: 20
-- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+- Immun gegen nichtmagische Waffen
 - Kann "Kochenden Dampf" auf alle Wesen in 9 m Radius im sich selbst zaubern: Er richtet 3W10 Kälteschaden an und 
   lähmt das Opfer für eine Runde. Ein erfolgreicher Rettungswurf gg. Odemwaffen halbiert den Schaden und verhindert 
   die Lähmung.

@@ -806,7 +806,7 @@ normale, majeure et parfaite.
   - Armes contondantes : 20
   - Armes perforantes : 20
   - Projectiles : 20
-- Ne peut être touché que par des armes +2 ou supérieures.
+- Ne peut être touché que par des armes magiques.
 - Peut lancer Vapeur glaçante qui inflige 3d10 points de dégâts de froid dans la zone d'effet 
   (un JS contre les souffles les annule).
 

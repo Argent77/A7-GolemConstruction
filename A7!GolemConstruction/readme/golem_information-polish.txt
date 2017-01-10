@@ -15,7 +15,7 @@ Podręczniki budowy golemów nauczają również zdolności „Naprawianie golem
 
 
 Konwencjonalne golemy
-===================
+=====================
 
 Rodzaje konwencjonalnych golemów opisane są w „Podręczniku budowy golemów”, który ma sześć tomów. Same księgi nie są zbyt trudne do zdobycia. Niektóre można kupić u kupców, inne mogą być ukryte w jakimś lochu i strzeżone przez rozmaite istoty.
 
@@ -774,7 +774,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   - Obuchowe: 20
   - Kłute: 20
   - Pociski: 20
-- Niewrażliwość na bronie niemagiczne i o umagicznieniu +1
+- Niewrażliwość na niemagiczne bronie
 - Może rzucić czar Gorąca para, który zadaje 3k10 obrażeń od zimna wszystkim istotom znajdującym się na obszarze jego 
   działania (rzut obronny przeciw zionięciom neguje).
 
@@ -853,7 +853,7 @@ Nie zapominaj dbać o swoje golemy, gdyż mogą one zacząć funkcjonować niepr
 
 
 Lokacje, w których można z powodzeniem budować golemy
-===========================================================
+=====================================================
 
 Siege of Dragonspear:
 - Czarodziejskie Rozmaitości:

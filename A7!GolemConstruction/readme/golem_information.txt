@@ -896,7 +896,8 @@ Shadows of Amn:
 - Planar Sphere:
   The opening area of the Sphere may be suitable for golem building (after dealing with the former owner, of course).
 - Jermien's Home:
-  You may be able to convince him to use his home in Imnesvale for building your own golems.
+  You may be able to convince Jermien to use his home in Imnesvale for building your own golems if the protagonist is 
+  a spellcaster or Imoen is present.
 
 Watcher's Keep:
 - Second Level:
