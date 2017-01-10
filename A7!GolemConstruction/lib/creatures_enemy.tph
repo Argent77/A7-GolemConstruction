@@ -1,23 +1,5 @@
 // *** Installing enemy golems ***
 
-OUTER_SET splstate_golem_lesser = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LESSER~)
-OUTER_SET splstate_golem_normal = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_NORMAL~)
-OUTER_SET splstate_golem_greater = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_GREATER~)
-OUTER_SET splstate_golem_perfect = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_PERFECT~)
-OUTER_SET splstate_golem_flesh = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_FLESH~)
-OUTER_SET splstate_golem_clay = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_CLAY~)
-OUTER_SET splstate_golem_stone = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_STONE~)
-OUTER_SET splstate_golem_iron = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_IRON~)
-OUTER_SET splstate_golem_mithral = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_MITHRAL~)
-OUTER_SET splstate_golem_adamantite = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_ADAMANTITE~)
-OUTER_SET splstate_golem_maggot = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_MAGGOT~)
-OUTER_SET splstate_golem_bone = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_BONE~)
-OUTER_SET splstate_golem_brain = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_BRAIN~)
-OUTER_SET splstate_golem_ice = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_ICE~)
-OUTER_SET splstate_golem_magic = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_MAGIC~)
-OUTER_SET splstate_golem_lightning = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LIGHTNING~)
-OUTER_SET splstate_golem_ruby = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_RUBY~)
-
 // Flesh Golems
 COPY ~%MOD_FOLDER%/creatures/a7!gxfl1.cre~ ~override~
   SAY NAME1 @1001 // Lesser Flesh Golem

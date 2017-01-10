@@ -1,25 +1,64 @@
-// *** Installing enemy golems ***
+// *** Updating vanilla golems ***
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  // Applying animation to Lesser Stone Golems
+  // Applying animation to Flesh Golems
+  COPY_EXISTING ~tomegol1.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
+  BUT_ONLY
+
+  // Applying animation and tint to Lesser Stone Golems
   COPY_EXISTING ~bdpetsg.cre~ ~override~
                 ~bdpetsg2.cre~ ~override~
                 ~bdpetsgs.cre~ ~override~
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
+    LPF APPLY_STONE_GOLEM_TINT END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
   BUT_ONLY
 
   // Applying tint to Stone Golems
   COPY_EXISTING ~bdgolsto.cre~ ~override~
                 ~bdmengo.cre~  ~override~
-                ~bdpetsg.cre~  ~override~
-                ~bdpetsg2.cre~ ~override~
-                ~bdpetsgs.cre~ ~override~
+                ~tomegol3.cre~ ~override~
     LPF APPLY_STONE_GOLEM_TINT END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  BUT_ONLY
+
+  // Updating Thalantyr's Flesh Golem
+  COPY_EXISTING ~fgolem.cre~ ~override~
+    WRITE_BYTE 0x271 (IDS_OF_SYMBOL (~general~ ~GIANTHUMANOID~))
+  BUT_ONLY
+
+  // Updating Flesh Golems
+  COPY_EXISTING ~fgolem.cre~ ~override~
+                ~golemf.cre~ ~override~
+                ~golemf2.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+  BUT_ONLY
+
+  // Updating Clay Golems
+  COPY_EXISTING ~tomegol2.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  BUT_ONLY
+
+  // Updating Iron Golems
+  COPY_EXISTING ~tomegol4.cre~ ~override~
+                ~shiron.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
   BUT_ONLY
 END
 
 
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Fixing golem type to Flesh Golems
+  COPY_EXISTING ~arngol01.cre~ ~override~
+    WRITE_BYTE 0x273 (IDS_OF_SYMBOL (~class~ ~GOLEM_FLESH~))
+  BUT_ONLY
+
   // Applying animation to Flesh Golems
   COPY_EXISTING ~arngol01.cre~ ~override~
                 ~golfle01.cre~ ~override~
@@ -28,15 +67,18 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~tomegol1.cre~ ~override~
                 ~xgolem.cre~   ~override~
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
   BUT_ONLY
 
-  // Applying animation to Lesser Stone Golems
+  // Applying animation to Lesser Clay Golems
   COPY_EXISTING ~igolfle1.cre~ ~override~
                 ~igolfle2.cre~ ~override~
                 ~igolfle3.cre~ ~override~
                 ~igolfle4.cre~ ~override~
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_MINI~))
-    LPF APPLY_STONE_GOLEM_TINT END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
   BUT_ONLY
 
   // Applying animation to Iron Golems
@@ -48,6 +90,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~gorgrd02.cre~ ~override~
                 ~gorsta08.cre~ ~override~
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GOLEM_IRON_IWD~))
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
   BUT_ONLY
 
   // Applying animation and tint to Brain Golems
@@ -55,6 +99,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~udgolem.cre~ ~override~
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
     LPF APPLY_BRAIN_GOLEM_TINT END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_brain END
   BUT_ONLY
 
   // Applying tint to Stone Golems
@@ -68,5 +113,49 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
                 ~stgol01.cre~  ~override~
                 ~tomegol3.cre~ ~override~
     LPF APPLY_STONE_GOLEM_TINT END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
   BUT_ONLY
+
+  // Updating Clay Golems
+  COPY_EXISTING ~clgol01.cre~ ~override~
+                ~csgolem.cre~ ~override~
+                ~golcla01.cre~ ~override~
+                ~golem01.cre~ ~override~
+                ~golsan01.cre~ ~override~
+                ~igolem01.cre~ ~override~
+                ~igolem02.cre~ ~override~
+                ~kpgol02.cre~ ~override~
+                ~ppiron.cre~ ~override~
+                ~obsgol01.cre~ ~override~
+                ~obsgol02.cre~ ~override~
+                ~tomegol2.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  BUT_ONLY
+
+  // Updating Adamantite Golems
+  COPY_EXISTING ~golada01.cre~ ~override~
+                ~gordeckb.cre~ ~override~
+                ~golkill2.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  BUT_ONLY
+
+  // Updating Bone Golems
+  COPY_EXISTING ~icbone01.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_bone END
+  BUT_ONLY
+
+  // Updating Ice Golems
+  COPY_EXISTING ~golice01.cre~ ~override~
+                ~gorgoli.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ice END
+  BUT_ONLY
+
+  // Updating Magic Golems
+  COPY_EXISTING ~golmag01.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_magic END
+  BUT_ONLY
+
 END
