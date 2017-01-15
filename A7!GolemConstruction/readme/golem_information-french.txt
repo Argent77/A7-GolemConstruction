@@ -497,6 +497,9 @@ Golem de mithril :
   - Projectiles : 50
 - Régénère au rythme de 1 PV par tour.
 - Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
 
 Golem de mithril majeur :
 - Niveau requis : 27 (-2 pour les Transmutateurs, +8 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")

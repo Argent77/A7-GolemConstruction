@@ -496,6 +496,8 @@ Mithrilgolem:
   - Geschoss: 50
 - Regeneration: 1 TP pro Phase
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and 
+  und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 
 Höherer Mithrilgolem:
 - Min. Stufe: 27 (-2 für Wandler, +8 für Barden und Diebe mit "Jeden Gegenstand benutzen")

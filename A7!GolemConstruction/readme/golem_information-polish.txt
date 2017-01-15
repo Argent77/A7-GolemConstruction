@@ -476,6 +476,8 @@ Mithrilowy golem:
   - Pociski: 50
 - Regeneracja punktów życia: 1/turę
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2.
+- Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i 
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu)
 
 Większy mithrilowy golem:
 - Minimalny poziom: 27 (-2 dla mistrzów przemian, +8 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)

@@ -492,6 +492,8 @@ Mithral Golem:
   - Missile: 50
 - Regenerates 1 HP per turn
 - Immune to non-magical, +1 and +2 weapons
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+  for one round (save vs. death at -4 penalty for half damage and avoid stun)
 
 Greater Mithral Golem:
 - Min. level: 27 (-2 for Transmuters, +8 for Bards and Thieves with "Use Any Item")
