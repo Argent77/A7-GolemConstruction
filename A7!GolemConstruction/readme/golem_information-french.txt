@@ -894,30 +894,32 @@ Vous devriez prendre grand soin de vos golems car ils peuvent souffrir de défai
 La capacité "Réparer un Golem" permet de les remettre en état.
 
 
-Spells that are affecting golems in some way
-============================================
+Les sorts qui affectent les golems de manière spécifique
+========================================================
 
-Since golems are non-living constructs they may be affected differently by certain spells. The following effects 
-can be triggered when the Tweaks component "Make golems vulnerable to specific spell effects" has been installed:
-- Flesh to Stone:
-  Turns Flesh Golems into Stone Golems of the same variant if they fail their save vs. Petrify/Polymorph.
-- Stone to Flesh:
-  Turns Stone Golems into Flesh Golems of the same variant if they fail their save vs. Petrify/Polymorph.
-- Abi-Dalzim's Horrid Wilting:
-  This spell dehydrates all Clay Golems in the area of effect and turns them into Stone Golems if they fail their save 
-  vs. Spell at -2 penalty.
-- Death Spell:
-  Kills Maggot Golems automatically (no save allowed).
-- Cone of Cold and Ice Storm:
-  Clay Golems hit by this spell are slowed for five rounds if they fail their save vs. Spell.
-- Sunray:
-  Causes the adamantine alloy of Adamantite Golems to deteriorate which reduces physical resistances permanently 
-  if they fail their save vs. Spell. The "Repair Golem" ability can remove this effect.
-- High-level fire-based spells:
-  These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage 
-  in addition to physical damage.
-  The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud and Fire 
-  Storm.
+Certains sorts affectent différemment les golems qui sont des constructions artificielles dénuées de vie. L'installation du
+composant "Rendre les golems vulnérables à certains effets de sorts spécifiques" déclenche les effets suivants :
+- Transmutation de la Chair en Pierre :
+  Transforme les golems de chair en golems de pierre de la même version s'ils ratent un jet de sauvegarde contre la
+  pétrification/métamorphose.
+- Transmutation de la Pierre en Chair :
+  Transforme les golems de pierre en golems de chair de la même version s'ils ratent un jet de sauvegarde contre la
+  pétrification/métamorphose.
+- Flétrissure abominable d'Abi-Dalzim :
+  Ce sort assèche tous les golems d'argile situés dans sa zone d'effet et les transforme en golems de pierre s'ils ratent
+  leur jet de sauvegarde contre les sorts avec un malus de 2.
+- Sort de mort :
+  Détruit automatiquement les golems de vers (sans jet de sauvegarde).
+- Cône de froid et Tempête glaciale :
+  Les golems d'argile atteints par ces sorts sont ralentis pendant cinq rounds s'ils ratent leur jet de sauvegarde contre
+  les sorts.
+- Rayon de soleil :
+  Détériore l'alliage qui constitue les golems d'adamantine, réduisant de manière permanente leur résistance aux dégâts physiques
+  s'ils ratent un jet de sauvegarde contre les sorts. La capacité "Réparer un Golem" permet de supprimer cet effet.
+- Sorts de feu de haut niveau :
+  Ces sorts augmentent la température des golems de fer pendant cinq rounds (sans JS). Pendant cette période, ils assènent des
+  coups infligeant des dégâts de feu en plus des dégâts physiques normaux.
+  Les sorts concernés sont les suivants : Nuée de météores, Souffle de dragon, Comète, Nuage incendiaire et Tempête de feu.
 
 
 Sites connus dans lesquels vous pouvez fabriquer des golems
@@ -938,7 +940,8 @@ Shadows of Amn :
   Le premier niveau de la Sphère peut convenir à la création de golems (après s'être débarrassé de son précédent 
   propriétaire, bien sûr).
 - La maison de Jermien :
-  Vous pouvez peut-être le convaincre d'utiliser sa maison d'Imnesvale pour créer vos propres golems.
+  Vous pouvez peut-être le convaincre d'utiliser sa maison d'Imnesvale pour créer vos propres golems si le protagoniste
+  est un lanceur de sorts ou si Imoen est présente.
 
 La Tour de Garde :
 - Deuxième étage :

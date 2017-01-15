@@ -112,19 +112,20 @@ dans la chapelle du premier étage, derrière les portes secrètes.
 * 33 % de chance pour le golem d'argile s'il survit.
 * 15 % de chance pour le golem de fer s'il survit.
 
-2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE and EET)
-This component modifies a number of spells so that they can affect specific golem types in a 
-different and sometimes unexpected way. Some spells may cause special harmful effects while other 
-improve or even change the nature of golems. You can find out more in "golem_information.txt".
+2.6. Rendre les golems vulnérables aux effets de certains sorts (pour BG:SoD, BG2:EE et EET).
+Ce composant modifie un certain nombre de sorts afin qu'ils puissent affecter des types de golems
+spécifiques d'une manière différente et parfois inattendue. Certains sorts peuvent causer des effets
+nocifs spéciaux alors que d'autres améliorent ou même changent la nature des golems. Consultez le
+fichier "golem_information.txt" pour en savoir plus.
 
-2.7. Reduce weapon immunities for constructed golems (for BG:SoD, BG2:EE and EET)
-A great number of enemies have trouble hitting golems because of their high weapon enchantment 
-immunities, even in later parts of the game. This component nerfs the power of constructed golems 
-by reducing their innate weapon enchantment immunities to increase the chance that enemies can 
-actually harm them.
-Weapon immunities will be reduced by one level on average, sometimes even more. For example, 
-golems with immunity to enchanted weapons +2 or less will become immune to enchantments of +1 or 
-less. Golems with immunity to non-enchanted weapons only will lose weapon immunity altogether.
+2.7. Réduire la résistance aux armes des golems fabriqués (pour BG:SoD, BG2:EE et EET).
+Il est difficile de toucher les golems en raison de leur immunité aux armes magiques au bonus
+élevé, et ceci même dans les dernières parties du jeu. Ce composant atténue la puissance des
+golems fabriqués en réduisant leurs immunités innées aux armes magiques pour que les ennemis
+aient plus de chance de les blesser.
+Ces immunités seront réduites d'un niveau en moyenne, parfois plus. Par exemple, les golems
+immunisés aux armes +2 ou moins deviendront immunisés aux armes +1 ou moins. Les golems immunisés
+aux armes non enchantées perdront toute immunité contre les armes.
 
 
 Détails
