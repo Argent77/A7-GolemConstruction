@@ -345,8 +345,8 @@ Lesser Iron Golem:
   - Saves: 5/7/6/6/8
 - Resistances:
   - Magic: 75
-  - Fire: 50
-  - Magic Fire: 50
+  - Fire: 100
+  - Magic Fire: 100
   - Cold: 100
   - Magic Cold: 100
   - Electricity: 100

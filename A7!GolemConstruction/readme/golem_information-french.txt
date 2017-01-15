@@ -350,8 +350,8 @@ Golem de fer mineur :
   - Jets de sauvegarde : 5/7/6/6/8
 - Résistances :
   - Magie : 75
-  - Feu : 50
-  - Feu magique : 50
+  - Feu : 100
+  - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
   - Electricité : 100

@@ -329,8 +329,8 @@ Pomniejszy żelazny golem:
   - Rzuty obronne: 5/7/6/6/8
 - Odporności:
   - Magia: 75
-  - Ogień: 50
-  - Magiczny ogień: 50
+  - Ogień: 100
+  - Magiczny ogień: 100
   - Zimno: 100
   - Magiczne zimno: 100
   - Elektryczność: 100

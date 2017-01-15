@@ -349,8 +349,8 @@ Niederer Eisengolem:
   - Rettungswürfe: 5/7/6/6/8
 - Widerstand:
   - Magie: 75
-  - Feuer: 50
-  - Magisches Feuer: 50
+  - Feuer: 100
+  - Magisches Feuer: 100
   - Kälte: 100
   - Magische Kälte: 100
   - Elektrizität: 100
