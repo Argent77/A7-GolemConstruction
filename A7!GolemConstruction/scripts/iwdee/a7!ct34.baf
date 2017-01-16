@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Gloomfrost, Tiernon's Forge) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0], 0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([3460.554]))
+    ActionOverride(Player2, JumpToPoint([3405.518]))
+    ActionOverride(Player3, JumpToPoint([3508.590]))
+    ActionOverride(Player4, JumpToPoint([3350.478]))
+    ActionOverride(Player5, JumpToPoint([3458.640]))
+    ActionOverride(Player6, JumpToPoint([3400.670]))
+    ActionOverride(Player1, Face(NE))
+    ActionOverride(Player2, Face(E))
+    ActionOverride(Player3, Face(N))
+    ActionOverride(Player4, Face(E))
+    ActionOverride(Player5, Face(NNE))
+    ActionOverride(Player6, Face(NE))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([3460.554], INSTANT)
+    FadeFromColor([30.0], 0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

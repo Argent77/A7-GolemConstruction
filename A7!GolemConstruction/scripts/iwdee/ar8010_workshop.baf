@@ -1,0 +1,18 @@
+// *** IWD:EE - Lower Dorn's Deep, Malavon's Home ***
+
+IF
+  !ActuallyInCombat()
+  Global("A7!LowerDornsDeepWorkshop", "GLOBAL", 0)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("a7!check1", "MYAREA", 2)
+  Global("a7!check2", "MYAREA", 2)
+  Global("a7!check3", "MYAREA", 2)
+  Global("a7!check4", "MYAREA", 2)
+  Dead("MALAVON")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!LowerDornsDeepWorkshop", "GLOBAL", 1)
+    DisplayString(Player1, @100007) // The laboratory in this area looks well equipped. You can probably use it to construct golems.
+    AddJournalEntry(@140005, QUEST) // Golem Construction Workshop
+    Continue()
+END

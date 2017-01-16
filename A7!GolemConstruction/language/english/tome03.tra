@@ -95,3 +95,90 @@ Requires:
 
 Weight: 1~
 
+
+// *** Book content (IWDEE) ***
+@3110 = ~Third lesson: Stone Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a stone golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golems:
+
+Lesser Stone Golem:
+Min. level: 7 (-1 for Transmuters, +1 for Bards)
+Ingredients:
+- One block of stone
+
+Stone Golem:
+Min. level: 10 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Two blocks of stone
+- One scroll of Slow
+
+Greater Stone Golem:
+Min. level: 13 (-2 for Transmuters, +3 for Bards)
+Ingredients:
+- Four block of stone
+- One scroll of Slow
+
+Perfect Stone Golem:
+Min. level: 15 (-2 for Transmuters, +4 for Bards)
+Ingredients:
+- Four block of stone
+- One scroll of Slow
+- One vial of Mimic's Blood
+
+There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature in sight.
+
+Requires:
+ 16 Intelligence
+
+Weight: 10~
+
+@3111 = ~Third lesson: Stone Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a stone golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+Allows the user to build the following golems:
+
+Lesser Stone Golem:
+Min. level: 7 (-1 for Transmuters, +1 for Bards)
+Ingredients:
+- One block of stone
+
+Stone Golem:
+Min. level: 10 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Two blocks of stone
+- One scroll of Slow
+
+Greater Stone Golem:
+Min. level: 13 (-2 for Transmuters, +3 for Bards)
+Ingredients:
+- Four block of stone
+- One scroll of Slow
+
+Perfect Stone Golem:
+Min. level: 15 (-2 for Transmuters, +4 for Bards)
+Ingredients:
+- Four block of stone
+- One scroll of Slow
+- One vial of Mimic's Blood
+
+There is a 1% chance that a stone golem may go berserk during combat for 1d6 rounds and attack the nearest creature in sight.
+
+Requires:
+ 16 Intelligence
+
+Weight: 1~

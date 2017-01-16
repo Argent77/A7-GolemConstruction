@@ -157,5 +157,62 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COPY_EXISTING ~golmag01.cre~ ~override~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_magic END
   BUT_ONLY
+END
 
+
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  // Updating uncategorized golems
+  COPY_EXISTING ~BKNIGHT.CRE~ ~override~  // Black Knight
+                ~BRONSEN.CRE~ ~override~  // Bronze Sentry
+                ~CYANIMP1.CRE~ ~override~ // Animated Plate
+                ~CYANIMP2.CRE~ ~override~ // Animated Plate
+                ~CYANIMP3.CRE~ ~override~ // Animated Plate
+                ~DLSGEM.CRE~ ~override~   // Icasaracht's Soul Gem
+                ~IDOL.CRE~ ~override~     // The Idol
+                ~KEANIMP2.CRE~ ~override~ // Animated Plate
+                ~KEANIMPH.CRE~ ~override~ // Animated Plate
+                ~PSENTRY.CRE~ ~override~  // Bronze Sentry
+                ~SENTRY.CRE~ ~override~   // Cryshal Sentry
+                ~TARNSEN.CRE~ ~override~  // Tarnished Sentry
+                ~WBISHOP.CRE~ ~override~  // White Bishop
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_fighter END
+  BUT_ONLY
+
+  // Updating Clay Golems
+  COPY_EXISTING ~GOLSAN01.CRE~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  BUT_ONLY
+
+  // Applying tint to Stone Golems
+  COPY_EXISTING ~goljug01.cre~ ~override~
+    LPF APPLY_STONE_GOLEM_TINT END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  BUT_ONLY
+
+  // Updating Iron Golems
+  COPY_EXISTING ~cyirong.cre~ ~override~
+                ~fingol01.cre~ ~override~
+                ~fingol02.cre~ ~override~
+                ~golemiro.cre~ ~override~
+                ~shiron.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+  BUT_ONLY
+
+  // Updating Adamantite Golems
+  COPY_EXISTING ~golada01.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  BUT_ONLY
+
+  // Updating Ice Golems
+  COPY_EXISTING ~cyiceg.cre~ ~override~
+                ~dlgolem.cre~ ~override~
+                ~golemic.cre~ ~override~
+                ~rndigolm.cre~ ~override~
+                ~sagolem.cre~ ~override~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ice END
+  BUT_ONLY
 END

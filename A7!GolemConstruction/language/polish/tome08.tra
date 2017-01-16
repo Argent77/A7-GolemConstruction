@@ -4,6 +4,7 @@
 @8000 = ~Sekretny podręcznik budowy golemów (tom 2)~
 @8001 = ~Kościany golem~
 @8002 = ~Nabyto wiedzę o budowie kościanych golemów.~
+@8010 = ~Sekretny podręcznik budowy golemów (tom 1)~
 
 // *** Book content ***
 @8100 = ~O kościanych golemach
@@ -43,6 +44,56 @@ Pozwala użytkownikowi na budowę następującego golema:
 
 Kościany golem:
 Minimalny poziom: 16 (-2 dla nekromantów i mistrzów przemian, +4 dla bardów)
+Składniki:
+- Cztery sterty kości
+- Jeden zwój z czarem Animacja martwego
+
+Podczas budowy kościanego golema istnieje 50% szans na wyssanie jednego poziomu z rzucającego czar i dodatkowe 10% szans na wyssanie drugiego poziomu.
+
+Wymagania:
+- Inteligencja: 16
+
+Waga: 1~
+
+
+// *** Book content (IWDEE) ***
+@8110 = ~O kościanych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy kościanego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Kościany golem:
+Minimalny poziom: 12 (-2 dla nekromantów i mistrzów przemian, +2 dla bardów)
+Składniki:
+- Cztery sterty kości
+- Jeden zwój z czarem Animacja martwego
+
+Podczas budowy kościanego golema istnieje 50% szans na wyssanie jednego poziomu z rzucającego czar i dodatkowe 10% szans na wyssanie drugiego poziomu.
+
+Wymagania:
+- Inteligencja: 16
+
+Waga: 10~
+
+@8111 = ~O kościanych golemach
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy kościanego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące zestawu podręczników opisujących budowę bardziej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następującego golema:
+
+Kościany golem:
+Minimalny poziom: 12 (-2 dla nekromantów i mistrzów przemian, +2 dla bardów)
 Składniki:
 - Cztery sterty kości
 - Jeden zwój z czarem Animacja martwego

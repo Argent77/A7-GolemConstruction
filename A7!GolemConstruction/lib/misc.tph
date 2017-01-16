@@ -1,30 +1,32 @@
 // *** Misc. stuff not fitting elsewhere ***
 
 // Updating familiar-specific strings for a number of actions
-COPY_EXISTING ~enginest.2da~ ~override~
-  COUNT_2DA_COLS numCols
-  COUNT_2DA_ROWS numCols numRows
-  SET updated = 0
-  FOR (row = 0; row < numRows; row += 1) BEGIN
-    READ_2DA_ENTRY row 0 numCols id
-    PATCH_IF (~%id%~ STRING_EQUAL_CASE ~STRREF_GUI_MIXED_FAMILIARNOTPERMITTEDENTERAREA~) BEGIN
-      SET strref = RESOLVE_STR_REF(@100023) // Familiars and followers cannot enter areas without party members.
-      SET_2DA_ENTRY row 1 numCols ~%strref%~
-      SET updated += 1
-    END ELSE PATCH_IF (~%id%~ STRING_EQUAL_CASE ~STRREF_GUI_MIXED_FAMILIARNOTPERMITTEDENTERSTORE~) BEGIN
-      SET strref = RESOLVE_STR_REF(@100024) // Familiars and followers cannot enter stores.
-      SET_2DA_ENTRY row 1 numCols ~%strref%~
-      SET updated += 1
-    END ELSE PATCH_IF (~%id%~ STRING_EQUAL_CASE ~STRREF_GUI_MIXED_FAMILIARNOTPERMITTEDPICKUPITEM~) BEGIN
-      SET strref = RESOLVE_STR_REF(@100025) // Familiars and followers cannot pick up items.
-      SET_2DA_ENTRY row 1 numCols ~%strref%~
-      SET updated += 1
+ACTION_IF (FILE_EXISTS_IN_GAME ~enginest.2da~) BEGIN
+  COPY_EXISTING ~enginest.2da~ ~override~
+    COUNT_2DA_COLS numCols
+    COUNT_2DA_ROWS numCols numRows
+    SET updated = 0
+    FOR (row = 0; row < numRows; row += 1) BEGIN
+      READ_2DA_ENTRY row 0 numCols id
+      PATCH_IF (~%id%~ STRING_EQUAL_CASE ~STRREF_GUI_MIXED_FAMILIARNOTPERMITTEDENTERAREA~) BEGIN
+        SET strref = RESOLVE_STR_REF(@100023) // Familiars and followers cannot enter areas without party members.
+        SET_2DA_ENTRY row 1 numCols ~%strref%~
+        SET updated += 1
+      END ELSE PATCH_IF (~%id%~ STRING_EQUAL_CASE ~STRREF_GUI_MIXED_FAMILIARNOTPERMITTEDENTERSTORE~) BEGIN
+        SET strref = RESOLVE_STR_REF(@100024) // Familiars and followers cannot enter stores.
+        SET_2DA_ENTRY row 1 numCols ~%strref%~
+        SET updated += 1
+      END ELSE PATCH_IF (~%id%~ STRING_EQUAL_CASE ~STRREF_GUI_MIXED_FAMILIARNOTPERMITTEDPICKUPITEM~) BEGIN
+        SET strref = RESOLVE_STR_REF(@100025) // Familiars and followers cannot pick up items.
+        SET_2DA_ENTRY row 1 numCols ~%strref%~
+        SET updated += 1
+      END
+      PATCH_IF (updated = 3) BEGIN
+        SET row = numRows
+      END
     END
-    PATCH_IF (updated = 3) BEGIN
-      SET row = numRows
-    END
-  END
-BUT_ONLY
+  BUT_ONLY
+END
 
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
@@ -190,4 +192,197 @@ END
   // Use Pocket Plane as golem workshop
   COMPILE ~%MOD_FOLDER%/dialogs/25spell.d~
   EXTEND_TOP ~ar4500.bcs~ ~%MOD_FOLDER%/scripts/ar4500_top.baf~
+END
+
+
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  // Use Dragon's Eye Level 3 as golem building workshop
+  EXTEND_TOP ~ar4003.bcs~ ~%MOD_FOLDER%/scripts/iwdee/ar4003_workshop.baf~
+  COMPILE ~%MOD_FOLDER%/scripts/iwdee/a7!ar40a.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ar40b.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ar40c.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ar40d.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ar40e.baf~
+  COPY_EXISTING ~ar4003.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 900
+      fj_box_top        = 665
+      fj_box_right      = 910
+      fj_box_bottom     = 675
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 905 | (675 << 16)
+      fj_vertex_1       = 900 | (665 << 16)
+      fj_vertex_2       = 910 | (665 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck1"
+      fj_reg_script     = "a7!ar40a"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 870
+      fj_box_top        = 2300
+      fj_box_right      = 880
+      fj_box_bottom     = 2310
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 875 | (2310 << 16)
+      fj_vertex_1       = 870 | (2300 << 16)
+      fj_vertex_2       = 880 | (2300 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck2"
+      fj_reg_script     = "a7!ar40b"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 2130
+      fj_box_top        = 1130
+      fj_box_right      = 2140
+      fj_box_bottom     = 1140
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 2135 | (1140 << 16)
+      fj_vertex_1       = 2130 | (1130 << 16)
+      fj_vertex_2       = 2140 | (1130 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck3"
+      fj_reg_script     = "a7!ar40c"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 3120
+      fj_box_top        = 1350
+      fj_box_right      = 3130
+      fj_box_bottom     = 1360
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 3125 | (1360 << 16)
+      fj_vertex_1       = 3120 | (1350 << 16)
+      fj_vertex_2       = 3130 | (1350 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck4"
+      fj_reg_script     = "a7!ar40d"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 3260
+      fj_box_top        = 2330
+      fj_box_right      = 3270
+      fj_box_bottom     = 2340
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 3265 | (2340 << 16)
+      fj_vertex_1       = 3260 | (2330 << 16)
+      fj_vertex_2       = 3270 | (2330 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck5"
+      fj_reg_script     = "a7!ar40e"
+    END
+
+  // Use Severed Hand, Larrel's Study as golem building workshop
+  COMPILE ~%MOD_FOLDER%/dialogs/iwdee/dgelarit.d~
+
+  // Use Dorn's Deep, Bandoth's Laboratory as golem building workshop
+  COMPILE ~%MOD_FOLDER%/dialogs/iwdee/dbandoth.d~
+  EXTEND_TOP ~ar6014.bcs~ ~%MOD_FOLDER%/scripts/iwdee/ar6014_workshop.baf~
+
+  // Use Lower Dorn's Deep, Malavon's Home as golem building workshop
+  EXTEND_TOP ~ar8010.bcs~ ~%MOD_FOLDER%/scripts/iwdee/ar8010_workshop.baf~
+  COMPILE ~%MOD_FOLDER%/scripts/iwdee/a7!ar80a.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ar80b.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ar80c.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ar80d.baf~
+  COPY_EXISTING ~ar8010.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 330
+      fj_box_top        = 750
+      fj_box_right      = 340
+      fj_box_bottom     = 760
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 335 | (760 << 16)
+      fj_vertex_1       = 330 | (750 << 16)
+      fj_vertex_2       = 340 | (750 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck1"
+      fj_reg_script     = "a7!ar80a"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 540
+      fj_box_top        = 780
+      fj_box_right      = 550
+      fj_box_bottom     = 790
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 545 | (790 << 16)
+      fj_vertex_1       = 540 | (780 << 16)
+      fj_vertex_2       = 550 | (780 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck2"
+      fj_reg_script     = "a7!ar80b"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 900
+      fj_box_top        = 720
+      fj_box_right      = 910
+      fj_box_bottom     = 730
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 905 | (730 << 16)
+      fj_vertex_1       = 900 | (720 << 16)
+      fj_vertex_2       = 910 | (720 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck3"
+      fj_reg_script     = "a7!ar80c"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 1750
+      fj_box_top        = 450
+      fj_box_right      = 1760
+      fj_box_bottom     = 460
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 1755 | (460 << 16)
+      fj_vertex_1       = 1750 | (450 << 16)
+      fj_vertex_2       = 1760 | (450 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!EnemyCheck4"
+      fj_reg_script     = "a7!ar80d"
+    END
+
+  // Use Gloomfrost, Tiernon's Forge as golem building workshop
+  COMPILE ~%MOD_FOLDER%/dialogs/iwdee/dtiernon.d~
+  EXTEND_TOP ~ar9501.bcs~ ~%MOD_FOLDER%/scripts/iwdee/ar9501_workshop.baf~
 END

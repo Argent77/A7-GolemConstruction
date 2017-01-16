@@ -1,0 +1,741 @@
+// *** Handles creation of new containers in selected areas ***
+
+ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+  // Container in underground temple with Fugue Plane portal
+  COPY_EXISTING ~bd5300.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1162
+      fj_loc_y          = 881
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1132
+      fj_box_top        = 840
+      fj_box_right      = 1161
+      fj_box_bottom     = 869
+      fj_vertex_0       = 1144 | (869 << 16)
+      fj_vertex_1       = 1161 | (862 << 16)
+      fj_vertex_2       = 1161 | (856 << 16)
+      fj_vertex_3       = 1147 | (840 << 16)
+      fj_vertex_4       = 1138 | (843 << 16)
+      fj_vertex_5       = 1132 | (851 << 16)
+      fj_vertex_6       = 1132 | (857 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+
+  // Cave below Dragonsiege Castle
+  COPY_EXISTING ~bd5100.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1272
+      fj_loc_y          = 3150
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1265
+      fj_box_top        = 3096
+      fj_box_right      = 1314
+      fj_box_bottom     = 3138
+      fj_vertex_0       = 1294 | (3138 << 16)
+      fj_vertex_1       = 1301 | (3135 << 16)
+      fj_vertex_2       = 1314 | (3113 << 16)
+      fj_vertex_3       = 1312 | (3104 << 16)
+      fj_vertex_4       = 1291 | (3096 << 16)
+      fj_vertex_5       = 1278 | (3097 << 16)
+      fj_vertex_6       = 1270 | (3103 << 16)
+      fj_vertex_7       = 1265 | (3111 << 16)
+      fj_vertex_8       = 1271 | (3127 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container01"
+    END
+END
+
+
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Khalid's body as container
+  COPY_EXISTING ~ar0603.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1351
+      fj_loc_y          = 2456
+      fj_type           = 10      // body
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1378
+      fj_box_top        = 2407
+      fj_box_right      = 1414
+      fj_box_bottom     = 2448
+      fj_vertex_0       = 1400 | (2448 << 16)
+      fj_vertex_1       = 1403 | (2445 << 16)
+      fj_vertex_2       = 1394 | (2432 << 16)
+      fj_vertex_3       = 1401 | (2433 << 16)
+      fj_vertex_4       = 1405 | (2448 << 16)
+      fj_vertex_5       = 1408 | (2447 << 16)
+      fj_vertex_6       = 1406 | (2428 << 16)
+      fj_vertex_7       = 1399 | (2420 << 16)
+      fj_vertex_8       = 1401 | (2419 << 16)
+      fj_vertex_9       = 1406 | (2424 << 16)
+      fj_vertex_10      = 1413 | (2425 << 16)
+      fj_vertex_11      = 1414 | (2422 << 16)
+      fj_vertex_12      = 1406 | (2420 << 16)
+      fj_vertex_13      = 1403 | (2407 << 16)
+      fj_vertex_14      = 1397 | (2407 << 16)
+      fj_vertex_15      = 1396 | (2411 << 16)
+      fj_vertex_16      = 1393 | (2412 << 16)
+      fj_vertex_17      = 1378 | (2407 << 16)
+      fj_vertex_18      = 1378 | (2411 << 16)
+      fj_vertex_19      = 1392 | (2417 << 16)
+      fj_vertex_20      = 1388 | (2432 << 16)
+      fj_vertex_21      = 1399 | (2445 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Body1"
+    END
+
+  // Chest in Cowled Wizard home
+  COPY_EXISTING ~ar0315.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 583
+      fj_loc_y          = 220
+      fj_type           = 3       // drawer
+      fj_lock_diff      = 90
+      fj_flags          = 1       // locked
+      fj_trap_detect    = 90
+      fj_trap_remove_diff = 90
+      fj_trap_active    = 1
+      fj_trap_loc_x     = 606
+      fj_trap_loc_y     = 179
+      fj_box_left       = 582
+      fj_box_top        = 167
+      fj_box_right      = 626
+      fj_box_bottom     = 217
+      fj_vertex_0       = 610 | (217 << 16)
+      fj_vertex_1       = 622 | (208 << 16)
+      fj_vertex_2       = 622 | (204 << 16)
+      fj_vertex_3       = 623 | (202 << 16)
+      fj_vertex_4       = 622 | (199 << 16)
+      fj_vertex_5       = 626 | (195 << 16)
+      fj_vertex_6       = 626 | (187 << 16)
+      fj_vertex_7       = 596 | (167 << 16)
+      fj_vertex_8       = 582 | (179 << 16)
+      fj_vertex_9       = 582 | (196 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+      fj_trap_script    = "CTLB"    // lightning bolt trap
+    END
+
+  // Cache near the Amaunator statue
+  COPY_EXISTING ~ar1400.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 4679
+      fj_loc_y          = 1481
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 4631
+      fj_box_top        = 1432
+      fj_box_right      = 4667
+      fj_box_bottom     = 1461
+      fj_vertex_0       = 4641 | (1461 << 16)
+      fj_vertex_1       = 4660 | (1461 << 16)
+      fj_vertex_2       = 4667 | (1447 << 16)
+      fj_vertex_3       = 4660 | (1434 << 16)
+      fj_vertex_4       = 4642 | (1432 << 16)
+      fj_vertex_5       = 4631 | (1443 << 16)
+      fj_vertex_6       = 4634 | (1455 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+
+  // Cave in Imnesville
+  COPY_EXISTING ~ar1106.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1122
+      fj_loc_y          = 508
+      fj_trap_loc_x     = 1122
+      fj_trap_loc_y     = 508
+      fj_type           = 4       // pile
+      fj_lock_diff      = 0
+      fj_trap_remove_diff = 0
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Pile1"
+    END
+
+  // de'Arnise basement
+  COPY_EXISTING ~ar1301.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1348
+      fj_loc_y          = 1624
+      fj_trap_loc_x     = 1348
+      fj_trap_loc_y     = 1624
+      fj_type           = 4       // pile
+      fj_lock_diff      = 0
+      fj_trap_remove_diff = 0
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Pile1"
+    END
+
+  // WK: Wizard's Library, ice room
+  COPY_EXISTING ~ar3016.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 2140
+      fj_loc_y          = 2840
+      fj_trap_loc_x     = 2140
+      fj_trap_loc_y     = 2840
+      fj_type           = 4       // pile
+      fj_lock_diff      = 0
+      fj_trap_remove_diff = 0
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Pile1"
+    END
+
+  // Abazigal's Chamber
+  COPY_EXISTING ~ar6005.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1355
+      fj_loc_y          = 511
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1360
+      fj_box_top        = 451
+      fj_box_right      = 1432
+      fj_box_bottom     = 518
+      fj_vertex_0       = 1402 | (518 << 16)
+      fj_vertex_1       = 1426 | (502 << 16)
+      fj_vertex_2       = 1432 | (482 << 16)
+      fj_vertex_3       = 1395 | (451 << 16)
+      fj_vertex_4       = 1361 | (454 << 16)
+      fj_vertex_5       = 1360 | (480 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 953
+      fj_loc_y          = 584
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 922
+      fj_box_top        = 503
+      fj_box_right      = 988
+      fj_box_bottom     = 560
+      fj_vertex_0       = 949 | (560 << 16)
+      fj_vertex_1       = 976 | (558 << 16)
+      fj_vertex_2       = 988 | (529 << 16)
+      fj_vertex_3       = 972 | (513 << 16)
+      fj_vertex_4       = 943 | (503 << 16)
+      fj_vertex_5       = 922 | (520 << 16)
+      fj_vertex_6       = 924 | (549 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container2"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 487
+      fj_loc_y          = 839
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 423
+      fj_box_top        = 780
+      fj_box_right      = 478
+      fj_box_bottom     = 836
+      fj_vertex_0       = 445 | (836 << 16)
+      fj_vertex_1       = 478 | (815 << 16)
+      fj_vertex_2       = 474 | (797 << 16)
+      fj_vertex_3       = 462 | (780 << 16)
+      fj_vertex_4       = 434 | (787 << 16)
+      fj_vertex_5       = 423 | (810 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container3"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1779
+      fj_loc_y          = 1196
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1743
+      fj_box_top        = 1218
+      fj_box_right      = 1795
+      fj_box_bottom     = 1306
+      fj_vertex_0       = 1767 | (1306 << 16)
+      fj_vertex_1       = 1789 | (1297 << 16)
+      fj_vertex_2       = 1795 | (1250 << 16)
+      fj_vertex_3       = 1778 | (1218 << 16)
+      fj_vertex_4       = 1752 | (1241 << 16)
+      fj_vertex_5       = 1743 | (1292 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container4"
+    END
+
+  // WK: Wild magic area
+  COPY_EXISTING ~ar3005.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1005
+      fj_loc_y          = 436
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 999
+      fj_box_top        = 371
+      fj_box_right      = 1011
+      fj_box_bottom     = 382
+      fj_vertex_0       = 999 | (379 << 16)
+      fj_vertex_1       = 1005 | (382 << 16)
+      fj_vertex_2       = 1011 | (379 << 16)
+      fj_vertex_3       = 1011 | (371 << 16)
+      fj_vertex_4       = 1005 | (374 << 16)
+      fj_vertex_5       = 999 | (371 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate01"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 401
+      fj_loc_y          = 577
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 386
+      fj_box_top        = 519
+      fj_box_right      = 399
+      fj_box_bottom     = 531
+      fj_vertex_0       = 387 | (531 << 16)
+      fj_vertex_1       = 399 | (520 << 16)
+      fj_vertex_2       = 392 | (519 << 16)
+      fj_vertex_3       = 386 | (528 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate02"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1081
+      fj_loc_y          = 746
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 1088
+      fj_box_top        = 713
+      fj_box_right      = 1101
+      fj_box_bottom     = 736
+      fj_vertex_0       = 1101 | (736 << 16)
+      fj_vertex_1       = 1101 | (721 << 16)
+      fj_vertex_2       = 1088 | (713 << 16)
+      fj_vertex_3       = 1088 | (727 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate03"
+    END
+
+  // WK: Wild magic area
+  COPY_EXISTING ~ar3009.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 661
+      fj_loc_y          = 591
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 644
+      fj_box_top        = 554
+      fj_box_right      = 658
+      fj_box_bottom     = 576
+      fj_vertex_0       = 645 | (576 << 16)
+      fj_vertex_1       = 658 | (569 << 16)
+      fj_vertex_2       = 656 | (554 << 16)
+      fj_vertex_3       = 644 | (561 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate01"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 550
+      fj_loc_y          = 354
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 5)    // disabled
+      fj_trap_remove_diff = 0
+      fj_box_left       = 546
+      fj_box_top        = 268
+      fj_box_right      = 555
+      fj_box_bottom     = 278
+      fj_vertex_0       = 547 | (278 << 16)
+      fj_vertex_1       = 551 | (278 << 16)
+      fj_vertex_2       = 553 | (277 << 16)
+      fj_vertex_3       = 555 | (274 << 16)
+      fj_vertex_4       = 555 | (271 << 16)
+      fj_vertex_5       = 552 | (268 << 16)
+      fj_vertex_6       = 550 | (268 << 16)
+      fj_vertex_7       = 546 | (271 << 16)
+      fj_vertex_8       = 546 | (276 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Crate02"
+    END
+
+  // Shelf in Vicross' Headquarter (Neera's ToB Quest)
+  COPY_EXISTING ~oh6500.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1670
+      fj_loc_y          = 1204
+      fj_type           = 6       // Shelf
+      fj_lock_diff      = 0
+      fj_trap_detect    = 90
+      fj_trap_remove_diff = 90
+      fj_trap_active    = 1
+      fj_trap_loc_x     = 1670
+      fj_trap_loc_y     = 1204
+      fj_box_left       = 1589
+      fj_box_top        = 1065
+      fj_box_right      = 1729
+      fj_box_bottom     = 1240
+      fj_vertex_0       = 1589 | (1148 << 16)
+      fj_vertex_1       = 1589 | (1240 << 16)
+      fj_vertex_2       = 1729 | (1154 << 16)
+      fj_vertex_3       = 1729 | (1065 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Shelf1"
+      fj_trap_script    = "CTFB"    // fire ball trap
+    END
+END
+
+
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  // Ruined library of the Severed Hand
+  COPY_EXISTING ~ar5102.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 446
+      fj_loc_y          = 460
+      fj_type           = 6       // shelf
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_trap_remove_diff = 0
+      fj_box_left       = 415
+      fj_box_top        = 396
+      fj_box_right      = 440
+      fj_box_bottom     = 415
+      fj_vertex_0       = 415 | (415 << 16)
+      fj_vertex_1       = 440 | (410 << 16)
+      fj_vertex_2       = 440 | (396 << 16)
+      fj_vertex_3       = 415 | (400 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Shelf1"
+    END
+
+
+  // Labyrinth in Lower Dorn's Deep
+  COPY_EXISTING ~ar6003.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1868
+      fj_loc_y          = 597
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 1837
+      fj_box_top        = 507
+      fj_box_right      = 1878
+      fj_box_bottom     = 579
+      fj_vertex_0       = 1837 | (568 << 16)
+      fj_vertex_1       = 1844 | (579 << 16)
+      fj_vertex_2       = 1858 | (579 << 16)
+      fj_vertex_3       = 1874 | (570 << 16)
+      fj_vertex_4       = 1878 | (513 << 16)
+      fj_vertex_5       = 1872 | (507 << 16)
+      fj_vertex_6       = 1854 | (518 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 732
+      fj_loc_y          = 1364
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 748
+      fj_box_top        = 1349
+      fj_box_right      = 784
+      fj_box_bottom     = 1396
+      fj_vertex_0       = 748 | (1379 << 16)
+      fj_vertex_1       = 755 | (1396 << 16)
+      fj_vertex_2       = 767 | (1390 << 16)
+      fj_vertex_3       = 779 | (1391 << 16)
+      fj_vertex_4       = 784 | (1382 << 16)
+      fj_vertex_5       = 782 | (1361 << 16)
+      fj_vertex_6       = 773 | (1351 << 16)
+      fj_vertex_7       = 760 | (1349 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container2"
+    END
+
+
+  // Ore cart with container in Lower Dorn's Deep Entrance
+  COPY_EXISTING ~ar8001.are~ ~override~
+    LPF ARE_INDEX_OF_REGION STR_VAR name = "Ore Cart" RET index offset END
+    PATCH_IF (offset > 0) BEGIN
+      READ_LONG (offset + 0x60) flags
+      WRITE_LONG (offset + 0x60) (flags BOR 0x100)  // Trigger deactivated (8)
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 2348
+      fj_loc_y          = 2534
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 2314
+      fj_box_top        = 2522
+      fj_box_right      = 2386
+      fj_box_bottom     = 2549
+      fj_vertex_0       = 2316 | (2522 << 16)
+      fj_vertex_1       = 2314 | (2546 << 16)
+      fj_vertex_2       = 2384 | (2549 << 16)
+      fj_vertex_3       = 2386 | (2525 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+
+
+  // Ore carts with containers in Lower Dorn's Deep Mines
+  COPY_EXISTING ~ar8008.are~ ~override~
+    PATCH_FOR_EACH region IN ~Cart 1~ ~Cart 2~ ~Cart 3~ BEGIN
+      LPF ARE_INDEX_OF_REGION STR_VAR name = EVAL "%region%" RET index offset END
+      PATCH_IF (offset > 0) BEGIN
+        READ_LONG (offset + 0x60) flags
+        WRITE_LONG (offset + 0x60) (flags BOR 0x100)  // Trigger deactivated (8)
+      END
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 2116
+      fj_loc_y          = 721
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 2076
+      fj_box_top        = 714
+      fj_box_right      = 2142
+      fj_box_bottom     = 742
+      fj_vertex_0       = 2076 | (723 << 16)
+      fj_vertex_1       = 2135 | (742 << 16)
+      fj_vertex_2       = 2142 | (732 << 16)
+      fj_vertex_3       = 2083 | (714 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1644
+      fj_loc_y          = 989
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 1612
+      fj_box_top        = 983
+      fj_box_right      = 1682
+      fj_box_bottom     = 1000
+      fj_vertex_0       = 1612 | (994 << 16)
+      fj_vertex_1       = 1681 | (1000 << 16)
+      fj_vertex_2       = 1682 | (989 << 16)
+      fj_vertex_3       = 1612 | (983 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container2"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 580
+      fj_loc_y          = 1050
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 542
+      fj_box_top        = 1041
+      fj_box_right      = 601
+      fj_box_bottom     = 1073
+      fj_vertex_0       = 542 | (1048 << 16)
+      fj_vertex_1       = 593 | (1073 << 16)
+      fj_vertex_2       = 601 | (1065 << 16)
+      fj_vertex_3       = 550 | (1041 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container3"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 685
+      fj_loc_y          = 1095
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 649
+      fj_box_top        = 1098
+      fj_box_right      = 719
+      fj_box_bottom     = 1123
+      fj_vertex_0       = 649 | (1111 << 16)
+      fj_vertex_1       = 714 | (1123 << 16)
+      fj_vertex_2       = 719 | (1110 << 16)
+      fj_vertex_3       = 655 | (1098 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container4"
+    END
+
+
+  // Container in throne of Fallen Temple area
+  COPY_EXISTING ~ar8012.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 1116
+      fj_loc_y          = 1014
+      fj_type           = 3       // drawer
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_trap_active    = 1
+      fj_trap_detect    = 75
+      fj_trap_remove_diff = 75
+      fj_trap_loc_x     = 1125
+      fj_trap_loc_y     = 910
+      fj_box_left       = 1116
+      fj_box_top        = 933
+      fj_box_right      = 1146
+      fj_box_bottom     = 958
+      fj_vertex_0       = 1126 | (958 << 16)
+      fj_vertex_1       = 1146 | (953 << 16)
+      fj_vertex_2       = 1136 | (933 << 16)
+      fj_vertex_3       = 1116 | (938 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Container1"
+      fj_trap_script    = "GNT2014"   // disease and damage
+    END
+
+  // Container in destroyed Idol of Fallen Temple area
+  COPY_EXISTING ~ar8012.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 920
+      fj_loc_y          = 606
+      fj_type           = 7       // altar
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_trap_active    = 1
+      fj_trap_detect    = 75
+      fj_trap_remove_diff = 90
+      fj_trap_loc_x     = 911
+      fj_trap_loc_y     = 549
+      fj_box_left       = 909
+      fj_box_top        = 562
+      fj_box_right      = 924
+      fj_box_bottom     = 578
+      fj_vertex_0       = 910 | (564 << 16)
+      fj_vertex_1       = 909 | (578 << 16)
+      fj_vertex_2       = 924 | (575 << 16)
+      fj_vertex_3       = 923 | (562 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Altar1"
+      fj_trap_script    = "GNT2619"
+    END
+
+  // Lonelywood: stone piles
+  COPY_EXISTING ~ar9100.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 3597
+      fj_loc_y          = 1396
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 3553
+      fj_box_top        = 1360
+      fj_box_right      = 3598
+      fj_box_bottom     = 1384
+      fj_vertex_0       = 3553 | (1360 << 16)
+      fj_vertex_1       = 3557 | (1369 << 16)
+      fj_vertex_2       = 3571 | (1370 << 16)
+      fj_vertex_3       = 3586 | (1384 << 16)
+      fj_vertex_4       = 3598 | (1378 << 16)
+      fj_vertex_5       = 3595 | (1371 << 16)
+      fj_vertex_6       = 3584 | (1371 << 16)
+      fj_vertex_7       = 3576 | (1366 << 16)
+      fj_vertex_8       = 3572 | (1360 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Ground1"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 3097
+      fj_loc_y          = 1147
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = 0
+      fj_box_left       = 3076
+      fj_box_top        = 1160
+      fj_box_right      = 3107
+      fj_box_bottom     = 1182
+      fj_vertex_0       = 3076 | (1164 << 16)
+      fj_vertex_1       = 3076 | (1170 << 16)
+      fj_vertex_2       = 3081 | (1176 << 16)
+      fj_vertex_3       = 3091 | (1176 << 16)
+      fj_vertex_4       = 3101 | (1182 << 16)
+      fj_vertex_5       = 3107 | (1177 << 16)
+      fj_vertex_6       = 3107 | (1169 << 16)
+      fj_vertex_7       = 3100 | (1164 << 16)
+      fj_vertex_8       = 3092 | (1164 << 16)
+      fj_vertex_9       = 3087 | (1160 << 16)
+      fj_vertex_10      = 3081 | (1160 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Ground2"
+    END
+END

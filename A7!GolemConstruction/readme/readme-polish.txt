@@ -76,7 +76,7 @@ Komponent ten dodaje szansę na to, że jeden lub więcej ocalałych z oblężen
 
 2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE and EET)
 This component modifies a number of spells so that they can affect specific golem types in a 
-different and sometimes unexpected way. Some spells may cause special harmful effects while other 
+different and sometimes unexpected way. Some spells may cause special harmful effects while others 
 improve or even change the nature of golems. You can find out more in "golem_information.txt".
 
 2.7. Reduce weapon immunities for constructed golems (for BG:SoD, BG2:EE and EET)
@@ -86,7 +86,7 @@ by reducing their innate weapon enchantment immunities to increase the chance th
 actually harm them.
 Weapon immunities will be reduced by one level on average, sometimes even more. For example, 
 golems with immunity to enchanted weapons +2 or less will become immune to enchantments of +1 or 
-less. Golems with immunity to non-enchanted weapons only will lose weapon immunity altogether.
+less. Golems with immunity to non-enchanted weapons will lose weapon immunity altogether.
 
 
 Szczegóły
@@ -114,9 +114,11 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
-2.5
+3.0
+- Added content for IWD:EE
 - Added Tweaks component "Make golems vulnerable to specific spell effects"
 - Added Tweaks component "Reduce weapon immunities for constructed golems"
+- Fixed stats and attributes of several golem types and variants
 
 2.4
 - Added French translation (big thanks to Gwendolyne)

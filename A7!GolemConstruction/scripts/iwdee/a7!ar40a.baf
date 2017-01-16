@@ -1,0 +1,24 @@
+// *** IWD:EE - Dragon's Eye Level 3 - Check for enemies presence ***
+
+IF
+  OR(5)
+    Detect([PC])
+    GlobalGT("a7!check2", "MYAREA", 0)
+    GlobalGT("a7!check3", "MYAREA", 0)
+    GlobalGT("a7!check4", "MYAREA", 0)
+    GlobalGT("a7!check5", "MYAREA", 0)
+  Global("a7!check1", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7!check1", "MYAREA", 1)
+END
+
+IF
+  !ActuallyInCombat()
+  !Detect([ENEMY])
+  Global("a7!check1", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("a7!check1", "MYAREA", 2)
+    TriggerActivation(Myself, FALSE)
+END

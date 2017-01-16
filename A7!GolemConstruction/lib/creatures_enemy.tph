@@ -1,7 +1,7 @@
 // *** Installing enemy golems ***
 
 // Flesh Golems
-COPY ~%MOD_FOLDER%/creatures/a7!gxfl1.cre~ ~override~
+COPY ~%creFolder%/a7!gxfl1.cre~ ~override~
   SAY NAME1 @1001 // Lesser Flesh Golem
   SAY NAME2 @1001 // Lesser Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl1~ #8
@@ -9,7 +9,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxfl1.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-COPY ~%MOD_FOLDER%/creatures/a7!gyfl1.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gyfl1.cre~ ~override~
   SAY NAME1 @1001 // Lesser Flesh Golem
   SAY NAME2 @1001 // Lesser Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxdef~ #8
@@ -17,8 +18,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gyfl1.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxfl2.cre~ ~override~
+COPY ~%creFolder%/a7!gxfl2.cre~ ~override~
   SAY NAME1 @1002 // Flesh Golem
   SAY NAME2 @1002 // Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl2~ #8
@@ -26,7 +28,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxfl2.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-COPY ~%MOD_FOLDER%/creatures/a7!gyfl2.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gyfl2.cre~ ~override~
   SAY NAME1 @1002 // Flesh Golem
   SAY NAME2 @1002 // Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl2~ #8
@@ -34,8 +37,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gyfl2.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxfl3.cre~ ~override~
+COPY ~%creFolder%/a7!gxfl3.cre~ ~override~
   SAY NAME1 @1003 // Greater Flesh Golem
   SAY NAME2 @1003 // Greater Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl3~ #8
@@ -45,8 +49,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxfl3.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (3)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxfl4.cre~ ~override~
+COPY ~%creFolder%/a7!gxfl4.cre~ ~override~
   SAY NAME1 @1004 // Perfect Flesh Golem
   SAY NAME2 @1004 // Perfect Flesh Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxfl4~ #8
@@ -56,25 +61,28 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxfl4.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (5)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+IF_EXISTS
 
 
 // Clay Golems
-COPY ~%MOD_FOLDER%/creatures/a7!gxcl1.cre~ ~override~
+COPY ~%creFolder%/a7!gxcl1.cre~ ~override~
   SAY NAME1 @2001 // Lesser Clay Golem
   SAY NAME2 @2001 // Lesser Clay Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxcl1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-COPY ~%MOD_FOLDER%/creatures/a7!gycl1.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gycl1.cre~ ~override~
   SAY NAME1 @2001 // Lesser Clay Golem
   SAY NAME2 @2001 // Lesser Clay Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxcl1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxcl2.cre~ ~override~
+COPY ~%creFolder%/a7!gxcl2.cre~ ~override~
   SAY NAME1 @2002 // Clay Golem
   SAY NAME2 @2002 // Clay Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxcl2~ #8
@@ -83,7 +91,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxcl2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (2)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-COPY ~%MOD_FOLDER%/creatures/a7!gycl2.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gycl2.cre~ ~override~
   SAY NAME1 @2002 // Clay Golem
   SAY NAME2 @2002 // Clay Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxcl2~ #8
@@ -92,8 +101,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gycl2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (2)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxcl3.cre~ ~override~
+COPY ~%creFolder%/a7!gxcl3.cre~ ~override~
   SAY NAME1 @2003 // Greater Clay Golem
   SAY NAME2 @2003 // Greater Clay Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxcl3~ #8
@@ -102,8 +112,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxcl3.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (5)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxcl4.cre~ ~override~
+COPY ~%creFolder%/a7!gxcl4.cre~ ~override~
   SAY NAME1 @2004 // Perfect Clay Golem
   SAY NAME2 @2004 // Perfect Clay Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxcl4~ #8
@@ -112,25 +123,28 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxcl4.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (8)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+IF_EXISTS
 
 
 // Stone Golems
-COPY ~%MOD_FOLDER%/creatures/a7!gxst1.cre~ ~override~
+COPY ~%creFolder%/a7!gxst1.cre~ ~override~
   SAY NAME1 @3001 // Lesser Stone Golem
   SAY NAME2 @3001 // Lesser Stone Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxst1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-COPY ~%MOD_FOLDER%/creatures/a7!gyst1.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gyst1.cre~ ~override~
   SAY NAME1 @3001 // Lesser Stone Golem
   SAY NAME2 @3001 // Lesser Stone Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxst1~ #8
   WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxst2.cre~ ~override~
+COPY ~%creFolder%/a7!gxst2.cre~ ~override~
   SAY NAME1 @3002 // Stone Golem
   SAY NAME2 @3002 // Stone Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxst2~ #8
@@ -139,7 +153,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxst2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (2)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-COPY ~%MOD_FOLDER%/creatures/a7!gyst2.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gyst2.cre~ ~override~
   SAY NAME1 @3002 // Stone Golem
   SAY NAME2 @3002 // Stone Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxst2~ #8
@@ -148,8 +163,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gyst2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (2)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxst3.cre~ ~override~
+COPY ~%creFolder%/a7!gxst3.cre~ ~override~
   SAY NAME1 @3003 // Greater Stone Golem
   SAY NAME2 @3003 // Greater Stone Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxst3~ #8
@@ -158,8 +174,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxst3.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (5)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxst4.cre~ ~override~
+COPY ~%creFolder%/a7!gxst4.cre~ ~override~
   SAY NAME1 @3004 // Perfect Stone Golem
   SAY NAME2 @3004 // Perfect Stone Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxst4~ #8
@@ -168,10 +185,11 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxst4.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (8)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+IF_EXISTS
 
 
 // Iron Golems
-COPY ~%MOD_FOLDER%/creatures/a7!gxir1.cre~ ~override~
+COPY ~%creFolder%/a7!gxir1.cre~ ~override~
   SAY NAME1 @4001 // Lesser Iron Golem
   SAY NAME2 @4001 // Lesser Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir1~ #8
@@ -179,7 +197,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxir1.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-COPY ~%MOD_FOLDER%/creatures/a7!gyir1.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gyir1.cre~ ~override~
   SAY NAME1 @4001 // Lesser Iron Golem
   SAY NAME2 @4001 // Lesser Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir1~ #8
@@ -187,8 +206,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gyir1.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxir2.cre~ ~override~
+COPY ~%creFolder%/a7!gxir2.cre~ ~override~
   SAY NAME1 @4002 // Iron Golem
   SAY NAME2 @4002 // Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir2~ #8
@@ -197,7 +217,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxir2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (3)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-COPY ~%MOD_FOLDER%/creatures/a7!gyir2.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gyir2.cre~ ~override~
   SAY NAME1 @4002 // Iron Golem
   SAY NAME2 @4002 // Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir2~ #8
@@ -206,8 +227,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gyir2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (3)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxir3.cre~ ~override~
+COPY ~%creFolder%/a7!gxir3.cre~ ~override~
   SAY NAME1 @4003 // Greater Iron Golem
   SAY NAME2 @4003 // Greater Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir3~ #8
@@ -216,8 +238,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxir3.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (6)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxir4.cre~ ~override~
+COPY ~%creFolder%/a7!gxir4.cre~ ~override~
   SAY NAME1 @4004 // Perfect Iron Golem
   SAY NAME2 @4004 // Perfect Iron Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxir4~ #8
@@ -226,10 +249,11 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxir4.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (9)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+IF_EXISTS
 
 
 // Mithral Golems
-COPY ~%MOD_FOLDER%/creatures/a7!gxmi1.cre~ ~override~
+COPY ~%creFolder%/a7!gxmi1.cre~ ~override~
   SAY NAME1 @5001 // Lesser Mithral Golem
   SAY NAME2 @5001 // Lesser Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi1~ #8
@@ -237,7 +261,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxmi1.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-COPY ~%MOD_FOLDER%/creatures/a7!gymi1.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gymi1.cre~ ~override~
   SAY NAME1 @5001 // Lesser Mithral Golem
   SAY NAME2 @5001 // Lesser Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi1~ #8
@@ -245,8 +270,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gymi1.cre~ ~override~
   WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxmi2.cre~ ~override~
+COPY ~%creFolder%/a7!gxmi2.cre~ ~override~
   SAY NAME1 @5002 // Mithral Golem
   SAY NAME2 @5002 // Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi2~ #8
@@ -255,7 +281,8 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxmi2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-COPY ~%MOD_FOLDER%/creatures/a7!gymi2.cre~ ~override~
+IF_EXISTS
+COPY ~%creFolder%/a7!gymi2.cre~ ~override~
   SAY NAME1 @5002 // Mithral Golem
   SAY NAME2 @5002 // Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi2~ #8
@@ -264,8 +291,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gymi2.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxmi3.cre~ ~override~
+COPY ~%creFolder%/a7!gxmi3.cre~ ~override~
   SAY NAME1 @5003 // Greater Mithral Golem
   SAY NAME2 @5003 // Greater Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi3~ #8
@@ -274,8 +302,9 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxmi3.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxmi4.cre~ ~override~
+COPY ~%creFolder%/a7!gxmi4.cre~ ~override~
   SAY NAME1 @5004 // Perfect Mithral Golem
   SAY NAME2 @5004 // Perfect Mithral Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxmi4~ #8
@@ -284,78 +313,90 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxmi4.cre~ ~override~
   ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (4)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+IF_EXISTS
 
 
 // Adamantite Golems
-COPY ~%MOD_FOLDER%/creatures/a7!gxad1.cre~ ~override~
-  SAY NAME1 @6001 // Lesser Adamantite Golem
-  SAY NAME2 @6001 // Lesser Adamantite Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxad1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
-COPY ~%MOD_FOLDER%/creatures/a7!gyad1.cre~ ~override~
-  SAY NAME1 @6001 // Lesser Adamantite Golem
-  SAY NAME2 @6001 // Lesser Adamantite Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxad1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COPY ~%creFolder%/a7!gxad1.cre~ ~override~
+    SAY NAME1 @6001 // Lesser Adamantite Golem
+    SAY NAME2 @6001 // Lesser Adamantite Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxad1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gyad1.cre~ ~override~
+    SAY NAME1 @6001 // Lesser Adamantite Golem
+    SAY NAME2 @6001 // Lesser Adamantite Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxad1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxad2.cre~ ~override~
-  SAY NAME1 @6002 // Adamantite Golem
-  SAY NAME2 @6002 // Adamantite Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxad2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
-COPY ~%MOD_FOLDER%/creatures/a7!gyad2.cre~ ~override~
-  SAY NAME1 @6002 // Adamantite Golem
-  SAY NAME2 @6002 // Adamantite Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxad2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  COPY ~%creFolder%/a7!gxad2.cre~ ~override~
+    SAY NAME1 @6002 // Adamantite Golem
+    SAY NAME2 @6002 // Adamantite Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxad2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gyad2.cre~ ~override~
+    SAY NAME1 @6002 // Adamantite Golem
+    SAY NAME2 @6002 // Adamantite Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxad2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxad3.cre~ ~override~
-  SAY NAME1 @6003 // Greater Adamantite Golem
-  SAY NAME2 @6003 // Greater Adamantite Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxad3~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (5)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  COPY ~%creFolder%/a7!gxad3.cre~ ~override~
+    SAY NAME1 @6003 // Greater Adamantite Golem
+    SAY NAME2 @6003 // Greater Adamantite Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxad3~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (5)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  IF_EXISTS
 
-COPY ~%MOD_FOLDER%/creatures/a7!gxad4.cre~ ~override~
-  SAY NAME1 @6004 // Perfect Adamantite Golem
-  SAY NAME2 @6004 // Perfect Adamantite Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxad4~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (8)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  COPY ~%creFolder%/a7!gxad4.cre~ ~override~
+    SAY NAME1 @6004 // Perfect Adamantite Golem
+    SAY NAME2 @6004 // Perfect Adamantite Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxad4~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (8)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+  IF_EXISTS
+END
 
 
 // Maggot Golem
-COPY ~%MOD_FOLDER%/creatures/a7!gxmg.cre~ ~override~
-  SAY NAME1 @7001 // Maggot Golem
-  SAY NAME2 @7001 // Maggot Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxmg~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_MAGGOT~))
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_maggot END
+ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COPY ~%creFolder%/a7!gxmg.cre~ ~override~
+    SAY NAME1 @7001 // Maggot Golem
+    SAY NAME2 @7001 // Maggot Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxmg~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_MAGGOT~))
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_maggot END
+  IF_EXISTS
+END
 
 
 // Bone Golem
-COPY ~%MOD_FOLDER%/creatures/a7!gxbo.cre~ ~override~
+COPY ~%creFolder%/a7!gxbo.cre~ ~override~
   SAY NAME1 @8001 // Bone Golem
   SAY NAME2 @8001 // Bone Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxbo~ #8
@@ -363,22 +404,26 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxbo.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in13~ #0 ~innate~   // Hideous Laughter
   ADD_MEMORIZED_SPELL ~a7!in13~ #0 ~innate~ (4)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_bone END
+IF_EXISTS
 
 
 // Brain Golem
-COPY ~%MOD_FOLDER%/creatures/a7!gxbr.cre~ ~override~
-  SAY NAME1 @9001 // Brain Golem
-  SAY NAME2 @9001 // Brain Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxbr~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
-  ADD_KNOWN_SPELL ~a7!in09~ #0 ~innate~   // Mind Blast
-  ADD_MEMORIZED_SPELL ~a7!in09~ #0 ~innate~ (4)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_brain END
+ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COPY ~%creFolder%/a7!gxbr.cre~ ~override~
+    SAY NAME1 @9001 // Brain Golem
+    SAY NAME2 @9001 // Brain Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxbr~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BRAIN~))
+    ADD_KNOWN_SPELL ~a7!in09~ #0 ~innate~   // Mind Blast
+    ADD_MEMORIZED_SPELL ~a7!in09~ #0 ~innate~ (4)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_brain END
+  IF_EXISTS
+END
 
 
 // Ice Golem
-COPY ~%MOD_FOLDER%/creatures/a7!gxic.cre~ ~override~
+COPY ~%creFolder%/a7!gxic.cre~ ~override~
   SAY NAME1 @10001 // Ice Golem
   SAY NAME2 @10001 // Ice Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxic~ #8
@@ -386,21 +431,25 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxic.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in10~ #0 ~innate~   // Scolding Steam
   ADD_MEMORIZED_SPELL ~a7!in10~ #0 ~innate~ (4)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ice END
+IF_EXISTS
 
 
 // Magic Golem
-COPY ~%MOD_FOLDER%/creatures/a7!gxma.cre~ ~override~
-  SAY NAME1 @11001 // Magic Golem
-  SAY NAME2 @11001 // Magic Golem
-  WRITE_ASCII SCRIPT_CLASS ~a7!gxma~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
-  ADD_KNOWN_SPELL ~a7!in11~ #0 ~innate~   // Wild Magic Flare
-  ADD_MEMORIZED_SPELL ~a7!in11~ #0 ~innate~ (3)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_magic END
+ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COPY ~%creFolder%/a7!gxma.cre~ ~override~
+    SAY NAME1 @11001 // Magic Golem
+    SAY NAME2 @11001 // Magic Golem
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxma~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!gxdef~ #8
+    ADD_KNOWN_SPELL ~a7!in11~ #0 ~innate~   // Wild Magic Flare
+    ADD_MEMORIZED_SPELL ~a7!in11~ #0 ~innate~ (3)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_magic END
+  IF_EXISTS
+END
 
 
 // Lightning Golem
-COPY ~%MOD_FOLDER%/creatures/a7!gxlt.cre~ ~override~
+COPY ~%creFolder%/a7!gxlt.cre~ ~override~
   SAY NAME1 @12001 // Lightning Golem
   SAY NAME2 @12001 // Lightning Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxlt~ #8
@@ -411,10 +460,11 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxlt.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~   // Chain Lightning
   ADD_MEMORIZED_SPELL ~a7!in07~ #0 ~innate~ (5)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lightning END
+IF_EXISTS
 
 
 // Ruby Golem
-COPY ~%MOD_FOLDER%/creatures/a7!gxru.cre~ ~override~
+COPY ~%creFolder%/a7!gxru.cre~ ~override~
   SAY NAME1 @13001 // Ruby Golem
   SAY NAME2 @13001 // Ruby Golem
   WRITE_ASCII SCRIPT_CLASS ~a7!gxru~ #8
@@ -423,6 +473,7 @@ COPY ~%MOD_FOLDER%/creatures/a7!gxru.cre~ ~override~
   ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
   ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (3)
   LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ruby END
+IF_EXISTS
 
 
 // Scripts
@@ -447,18 +498,6 @@ COMPILE ~%MOD_FOLDER%/scripts/a7!gxdef.baf~
         ~%MOD_FOLDER%/scripts/a7!gxmi2.baf~
         ~%MOD_FOLDER%/scripts/a7!gxmi3.baf~
         ~%MOD_FOLDER%/scripts/a7!gxmi4.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxad1.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxad2.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxad3.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxad4.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxmg.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxbo.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxbr.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxic.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxma.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxlt.baf~
-        ~%MOD_FOLDER%/scripts/a7!gxru.baf~
-
 
 COPY ~%MOD_FOLDER%/spells/a7!syfl1.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!syfl2.spl~ ~override~
@@ -482,6 +521,21 @@ COPY ~%MOD_FOLDER%/spells/a7!syfl1.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!syir2.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!symi1.eff~ ~override~
      ~%MOD_FOLDER%/spells/a7!symi2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!syad1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!syad2.eff~ ~override~
      ~%MOD_FOLDER%/creatures/a7!mark.cre~ ~override~
+
+ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COMPILE ~%MOD_FOLDER%/scripts/a7!gxad1.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxad2.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxad3.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxad4.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxmg.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxbo.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxbr.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxic.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxma.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxlt.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxru.baf~
+
+  COPY ~%MOD_FOLDER%/spells/a7!syad1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!syad2.eff~ ~override~
+END

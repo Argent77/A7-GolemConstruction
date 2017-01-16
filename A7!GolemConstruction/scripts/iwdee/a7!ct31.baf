@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Severed Hand, Larrel's Study) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0], 0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([245.446]))
+    ActionOverride(Player2, JumpToPoint([335.448]))
+    ActionOverride(Player3, JumpToPoint([264.530]))
+    ActionOverride(Player4, JumpToPoint([360.531]))
+    ActionOverride(Player5, JumpToPoint([424.465]))
+    ActionOverride(Player6, JumpToPoint([314.610]))
+    ActionOverride(Player1, Face(NWW))
+    ActionOverride(Player2, Face(W))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, Face(NWW))
+    ActionOverride(Player5, Face(W))
+    ActionOverride(Player6, Face(NW))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([245.446], INSTANT)
+    FadeFromColor([30.0], 0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

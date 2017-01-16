@@ -1,0 +1,14 @@
+// *** IWD:EE - Dorn's Deep, Bandoth's Laboratory ***
+
+IF
+  !ActuallyInCombat()
+  Global("A7!DornsDeepWorkshop", "GLOBAL", 0)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Dead("BANDOTH")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!DornsDeepWorkshop", "GLOBAL", 1)
+    DisplayString(Player1, @100007) // The laboratory in this area looks well equipped. You can probably use it to construct golems.
+    AddJournalEntry(@140004, QUEST) // Golem Construction Workshop
+    Continue()
+END

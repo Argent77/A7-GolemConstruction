@@ -6,7 +6,6 @@
 @1002 = ~Flesh Golem~
 @1003 = ~Greater Flesh Golem~
 @1004 = ~Perfect Flesh Golem~
-// @1005 = ~You have learned how to construct flesh golems.~
 @1005 = ~Has learned how to construct flesh golems.~
 
 // *** Book content ***
@@ -94,3 +93,88 @@ Requires:
 
 Weight: 1~
 
+
+// *** Book content (IWDEE) ***
+@1110 = ~First lesson: Flesh Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a flesh golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golems:
+
+Lesser Flesh Golem:
+Min. level: 5 (-1 for Transmuters, +1 for Bards)
+Ingredients:
+- One full set of body parts
+
+Flesh Golem:
+Min. level: 7 (-1 for Transmuters, +1 for Bards)
+Ingredients:
+- Two full sets of body parts
+
+Greater Flesh Golem:
+Min. level: 10 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four full sets of body parts
+- One scroll of Stinking Cloud
+
+Perfect Flesh Golem:
+Min. level: 12 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four full sets of body parts
+- One scroll of Stinking Cloud
+- One Deep Bloodstone Gem
+
+There is a 1% chance that a flesh golem may go berserk during combat for 1d6 rounds and attack the nearest creature in sight.
+
+Requires:
+ 15 Intelligence
+
+Weight: 10~
+
+@1111 = ~First lesson: Flesh Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a flesh golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+Allows the user to build the following golems:
+
+Lesser Flesh Golem:
+Min. level: 5 (-1 for Transmuters, +1 for Bards)
+Ingredients:
+- One full set of body parts
+
+Flesh Golem:
+Min. level: 7 (-1 for Transmuters, +1 for Bards)
+Ingredients:
+- Two full sets of body parts
+
+Greater Flesh Golem:
+Min. level: 10 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four full sets of body parts
+- One scroll of Stinking Cloud
+
+Perfect Flesh Golem:
+Min. level: 12 (-2 for Transmuters, +2 for Bards)
+Ingredients:
+- Four full sets of body parts
+- One scroll of Stinking Cloud
+- One Deep Bloodstone Gem
+
+There is a 1% chance that a flesh golem may go berserk during combat for 1d6 rounds and attack the nearest creature in sight.
+
+Requires:
+ 15 Intelligence
+
+Weight: 1~

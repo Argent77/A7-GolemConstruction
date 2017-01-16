@@ -1,0 +1,175 @@
+// *** Actions based on given commands ***
+
+// Default actions when golem turned hostile
+IF
+  Allegiance(Myself, ENEMY)
+  See(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself, ENEMY)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself, ENEMY)
+  See([ANYONE])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+
+// -- Follow, no actions (Command=0) --
+
+// -- Follow, attack (Command=1) --
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(SecondNearest([GOODCUTOFF]))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(ThirdNearest([GOODCUTOFF]))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(FourthNearest([GOODCUTOFF]))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(FifthNearest([GOODCUTOFF]))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(SixthNearest([GOODCUTOFF]))
+  Allegiance(LastSeenBy(Myself), PC)
+  NextTriggerObject(LastSeenBy(Myself))
+  AttackedBy([ENEMY], DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  AttackedBy([ENEMY], DEFAULT)
+  See(LastAttackerOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  Global("Command", "LOCALS", 1)
+  ActionListEmpty()
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(NearestEnemyOf(Myself), 30)
+END
+
+
+// -- Guard, no actions (Command=2) --
+
+// -- Guard, attack (Command=3) --
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  !See([EVILCUTOFF])
+  !NearSavedLocation(Myself, "Location", 4)
+THEN
+  RESPONSE #100
+    MoveToSavedLocation("Location", "LOCALS")
+    Face(S)
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  !NearSavedLocation(Myself, "Location", 40)
+THEN
+  RESPONSE #100
+    MoveToSavedLocation("Location", "LOCALS")
+    Face(S)
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  See([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  AttackedBy([NOTGOOD], DEFAULT)
+  See(LastAttackerOf(Myself))
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastAttackerOf(Myself))
+END
+
+IF
+  Global("Command", "LOCALS", 3)
+  ActionListEmpty()
+  AttackedBy([EVILCUTOFF], DEFAULT)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastAttackerOf(Myself))
+END

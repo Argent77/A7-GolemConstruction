@@ -4,6 +4,7 @@
 @8000 = ~Geheimer Leitfaden der Golemkonstruktion (Band 2)~
 @8001 = ~Knochengolem~
 @8002 = ~Hat gelernt, Knochengolems zu erschaffen.~
+@8010 = ~Geheimer Leitfaden der Golemkonstruktion (Band 1)~
 
 // *** Book content ***
 @8100 = ~Über Knochengolems
@@ -53,3 +54,51 @@ Mindestintelligenz: 16
 
 Gewicht: 1~
 
+
+// *** Book content (IWDEE) ***
+@8110 = ~Über Knochengolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Knochengolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in drei Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Knochengolem:
+Min. Stufe: 12 (-2 für Nekromanten und Wandler, +2 für Barden)
+Zutaten:
+- Vier Knochenhaufen
+- Eine Schriftrolle "Tote beleben"
+
+In 50 Prozent aller Fälle werden dem Erschaffer für fünf Runden drei Punke an Stärke oder Konstitution entzogen, die tödlich wirken können, wenn das entsprechende Attribut auf 0 absinkt.
+
+Mindestintelligenz: 16
+
+Gewicht: 10~
+
+@8111 = ~Über Knochengolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Knochengolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in drei Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Knochengolem:
+Min. Stufe: 12 (-2 für Nekromanten und Wandler, +2 für Barden)
+Zutaten:
+- Vier Knochenhaufen
+- Eine Schriftrolle "Tote beleben"
+
+In 50 Prozent aller Fälle werden dem Erschaffer für fünf Runden drei Punke an Stärke oder Konstitution entzogen, die tödlich wirken können, wenn das entsprechende Attribut auf 0 absinkt.
+
+Mindestintelligenz: 16
+
+Gewicht: 1~

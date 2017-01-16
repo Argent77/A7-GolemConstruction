@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Dragon's Eye Level 3) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0], 0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([3147.2057]))
+    ActionOverride(Player2, JumpToPoint([3087.2098]))
+    ActionOverride(Player3, JumpToPoint([3200.2106]))
+    ActionOverride(Player4, JumpToPoint([3139.2158]))
+    ActionOverride(Player5, JumpToPoint([3045.2170]))
+    ActionOverride(Player6, JumpToPoint([3230.2182]))
+    ActionOverride(Player1, Face(N))
+    ActionOverride(Player2, Face(N))
+    ActionOverride(Player3, Face(N))
+    ActionOverride(Player4, Face(N))
+    ActionOverride(Player5, Face(N))
+    ActionOverride(Player6, Face(N))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([3147.2057], INSTANT)
+    FadeFromColor([30.0], 0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

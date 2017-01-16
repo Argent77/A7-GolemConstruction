@@ -16,3 +16,5 @@
 @102 = ~Nie znaleziono wolnej pozycji na animacje postaci.~
 @103 = ~Ta modyfikacja wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej.~
 @104 = ~Ta modyfikacja wymaga uprzedniego zainstalowania BG2:EE.~
+@105 = ~This component requires BG2:EE or IWD:EE to be installed.~
+@106 = ~This component requires BG:SoD or BG2:EE to be installed.~

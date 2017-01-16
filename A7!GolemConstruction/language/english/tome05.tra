@@ -101,3 +101,96 @@ Requires:
 
 Weight: 1~
 
+
+// *** Book content (IWDEE) ***
+@5110 = ~Fifth lesson: Mithral Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a mithral golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+The construction of mithral golems appears to be heavily based on the basic principles of building iron golems. The manual explains in detail various techniques and skills required to build mithral golems, frequently interrupted by references to passages found in Volume Four of this set of tomes.
+
+From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golems:
+
+Lesser Mithral Golem:
+Min. level: 13 (-2 for Transmuters, +3 for Bards)
+Ingredients:
+- One chunk of mithral
+- 4,000 XP drained from the caster
+
+Mithral Golem:
+Min. level: 17 (-2 for Transmuters, +5 for Bards)
+Ingredients:
+- Two chunks of mithral
+- 8,000 XP drained from the caster
+
+Greater Mithral Golem:
+Min. level: 21 (-2 for Transmuters)
+Ingredients:
+- Four chunks of mithral
+- 16,000 XP drained from the caster
+
+Perfect Mithral Golem:
+Min. level: 23 (-2 for Transmuters)
+Ingredients:
+- Four chunks of mithral
+- One orb of Spectral Obsidian
+- 32,000 XP drained from the caster
+
+Notes from the author: Mithral is hard to come by and thus very expensive. However, it is possible to transform iron into mithral by means of a carefully worded Wish.
+
+Requires:
+ 18 Intelligence
+
+Weight: 10~
+
+@5111 = ~Fifth lesson: Mithral Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a mithral golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+The construction of mithral golems appears to be heavily based on the basic principles of building iron golems. The manual explains in detail various techniques and skills required to build mithral golems, frequently interrupted by references to passages found in Volume Four of this set of tomes.
+
+From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+
+
+Allows the user to build the following golems:
+
+Lesser Mithral Golem:
+Min. level: 13 (-2 for Transmuters, +3 for Bards)
+Ingredients:
+- One chunk of mithral
+- 4,000 XP drained from the caster
+
+Mithral Golem:
+Min. level: 17 (-2 for Transmuters, +5 for Bards)
+Ingredients:
+- Two chunks of mithral
+- 8,000 XP drained from the caster
+
+Greater Mithral Golem:
+Min. level: 21 (-2 for Transmuters)
+Ingredients:
+- Four chunks of mithral
+- 16,000 XP drained from the caster
+
+Perfect Mithral Golem:
+Min. level: 23 (-2 for Transmuters)
+Ingredients:
+- Four chunks of mithral
+- One orb of Spectral Obsidian
+- 32,000 XP drained from the caster
+
+Notes from the author: Mithral is hard to come by and thus very expensive. However, it is possible to transform iron into mithral by means of a carefully worded Wish.
+
+Requires:
+ 18 Intelligence
+
+Weight: 1~

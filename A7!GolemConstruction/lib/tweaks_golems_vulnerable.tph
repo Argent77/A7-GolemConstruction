@@ -11,10 +11,12 @@ OUTER_SET splstate_maggot = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_MAGGOT~)
 // Installing shared resources
 OUTER_SET tra = 3001  // Lesser Stone Golem
 ACTION_FOR_EACH file IN ~a7!tost1.spl~ ~a7!tost2.spl~ ~a7!tost3.spl~ ~a7!tost4.spl~ BEGIN
-  OUTER_SET strref = RESOLVE_STR_REF( (AT tra) )
   COPY ~%MOD_FOLDER%/spells/%file%~ ~override~
-    // TODO: determine strref offset dynamically
-    WRITE_LONG 0xce strref    // strref for param1 in opcode 103 (Change Name)
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 103  // Change Name
+      parameter1 = RESOLVE_STR_REF( (AT tra) )
+    END
     LPF REMOVE_SPELL_STATE INT_VAR splstate = splstate_flesh END
     LPF REMOVE_SPELL_STATE INT_VAR splstate = splstate_clay END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_stone END
@@ -25,11 +27,17 @@ OUTER_SET tra = 1001  // Lesser Flesh Golem
 OUTER_SET animFleshMini = IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~)
 OUTER_SET animFlesh = IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~)
 ACTION_FOR_EACH file IN ~a7!tofl1.spl~ ~a7!tofl2.spl~ ~a7!tofl3.spl~ ~a7!tofl4.spl~ BEGIN
-  OUTER_SET strref = RESOLVE_STR_REF( (AT tra) )
   COPY ~%MOD_FOLDER%/spells/%file%~ ~override~
-    // TODO: determine offsets dynamically
-    WRITE_LONG 0x9e (tra = 1001 ? animFleshMini : animFlesh)
-    WRITE_LONG 0xce strref    // strref for param1 in opcode 103 (Change Name)
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 135  // Polymorph
+      parameter1 = (tra = 1001 ? animFleshMini : animFlesh)
+    END
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 103  // Change Name
+      parameter1 = RESOLVE_STR_REF( (AT tra) )
+    END
     LPF REMOVE_SPELL_STATE INT_VAR splstate = splstate_stone END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_flesh END
   OUTER_SET tra += 1
@@ -77,10 +85,27 @@ COPY_EXISTING ~spwi604.spl~ ~override~  // Flesh to Stone
   STR_VAR
     resource      = "A7!FLST"
   END
+IF_EXISTS
 
 COPY_EXISTING ~spwi714.spl~ ~override~  // Prismatic Spray
   // Blue ray causes Petrification
   READ_LONG 0x34 level
+  // getting probabilities
+  SET prob1 = 73
+  SET prob2 = 57
+  READ_LONG 0x6a ofsEffects
+  PATCH_IF ((SHORT_AT 0x68) > 0) BEGIN  // # abilities
+    READ_SHORT ((LONG_AT 0x64) + 0x1e) numEffects
+    FOR (idx = 0; idx < numEffects; idx += 1) BEGIN
+      SET ofs = ofsEffects + (idx * 0x30)
+      READ_SHORT ofs type
+      PATCH_IF (type = 134) BEGIN
+        READ_BYTE (ofs + 0x12) prob1
+        READ_BYTE (ofs + 0x13) prob2
+        SET idx = numEffects
+      END
+    END
+  END
   LPF ADD_SPELL_EFFECT
   INT_VAR
     opcode        = 326   // Apply effects list
@@ -90,13 +115,13 @@ COPY_EXISTING ~spwi714.spl~ ~override~  // Prismatic Spray
     power         = level
     timing        = 9     // Instant/Permanent
     resist_dispel = 2
-    probability1  = 73
-    probability2  = 57
+    probability1  = prob1
+    probability2  = prob2
     savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
   STR_VAR
     resource      = "A7!FLST"
   END
-
+IF_EXISTS
 
 // Spell-induced transformation: "Stone to Flesh" (Stone Golem -> Flesh Golem)
 COPY ~%MOD_FOLDER%/spells/a7!stfl.spl~ ~override~
@@ -139,8 +164,10 @@ COPY_EXISTING ~spwi625.spl~ ~override~  // Stone to Flesh
   STR_VAR
     resource      = "A7!STFL"
   END
+IF_EXISTS
 
 COPY_EXISTING ~scrlpet.itm~ ~override~  // Stone to Flesh Scroll
+              ~scrlpet2.itm~ ~override~ // Stone to Flesh Scroll (IWDEE)
   LPF ADD_ITEM_EFFECT
   INT_VAR
     opcode        = 326   // Apply effects list
@@ -154,6 +181,7 @@ COPY_EXISTING ~scrlpet.itm~ ~override~  // Stone to Flesh Scroll
   STR_VAR
     resource      = "A7!STFL"
   END
+IF_EXISTS
 
 
 // Spell-induced transformation: "Abi-Dalzim's Horrid Wilting" (Clay Golem -> Stone Golem)
@@ -199,30 +227,36 @@ COPY_EXISTING ~spwi812.spl~ ~override~  // Abi-Dalzim's Horrid Wilting
   STR_VAR
     resource      = "A7!CLST"
   END
+IF_EXISTS
 
 
 // Spell-induced transformation: Death Spell (auto-slays Maggot Golem)
-COPY ~%MOD_FOLDER%/spells/a7!kill.spl~ ~override~
+ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!kill.spl~ ~override~
 
-COPY_EXISTING ~spwi605.spl~ ~override~  // Death Spell
-  READ_LONG 0x34 level
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode        = 326   // Apply effects list
-    target        = 2     // Preset target
-    parameter1    = splstate_maggot
-    parameter2    = 76    // SPLSTATE = specified value
-    power         = level
-    timing        = 9     // Instant/Permanent
-    resist_dispel = 2
-  STR_VAR
-    resource      = "A7!KILL"
-  END
+  COPY_EXISTING ~spwi605.spl~ ~override~  // Death Spell
+    READ_LONG 0x34 level
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate_maggot
+      parameter2    = 76    // SPLSTATE = specified value
+      power         = level
+      timing        = 9     // Instant/Permanent
+      resist_dispel = 2
+    STR_VAR
+      resource      = "A7!KILL"
+    END
+  IF_EXISTS
+END
 
 
 // Specific spell effect: Cone of Cold and Ice Storm (cause Clay Golems to become slow)
 ACTION_IF (GAME_IS ~bgee~) BEGIN
   COPY ~%MOD_FOLDER%/spells/bgee/a7!slow.spl~ ~override~
+END ELSE ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  COPY ~%MOD_FOLDER%/spells/iwdee/a7!slow.spl~ ~override~
 END ELSE BEGIN
   COPY ~%MOD_FOLDER%/spells/bg2ee/a7!slow.spl~ ~override~
 END
@@ -245,50 +279,54 @@ COPY_EXISTING ~spwi503.spl~  ~override~   // Cone of Cold
   STR_VAR
     resource      = "A7!SLOW"
   END
+IF_EXISTS
 
 
 // Specific spell effect: Sunray (reduces physical resistance of Adamantite Golems)
-COPY ~%MOD_FOLDER%/spells//a7!burn.bam~ ~override~
-     ~%MOD_FOLDER%/spells//a7!burn.vvc~ ~override~
+ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COPY ~%MOD_FOLDER%/spells//a7!burn.bam~ ~override~
+       ~%MOD_FOLDER%/spells//a7!burn.vvc~ ~override~
 
-COPY ~%MOD_FOLDER%/spells//a7!burn.spl~ ~override~
-  SET strref = RESOLVE_STR_REF(@21024)  // Corroded by sunlight
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode        = 139   // Display String
-    target        = 2     // Preset target
-    parameter1    = strref
-    power         = 7
-    timing        = 1     // Instant/Permanent until death
-    resist_dispel = 2
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode        = 206   // Protection from Spell
-    target        = 2     // Preset target
-    parameter1    = "-1"  // no message
-    power         = 7
-    timing        = 9     // Instant/Permanent until death
-    resist_dispel = 2
-  STR_VAR
-    resource      = "A7!BURN"
-  END
+  COPY ~%MOD_FOLDER%/spells//a7!burn.spl~ ~override~
+    SET strref = RESOLVE_STR_REF(@21024)  // Corroded by sunlight
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 139   // Display String
+      target        = 2     // Preset target
+      parameter1    = strref
+      power         = 7
+      timing        = 1     // Instant/Permanent until death
+      resist_dispel = 2
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 206   // Protection from Spell
+      target        = 2     // Preset target
+      parameter1    = "-1"  // no message
+      power         = 7
+      timing        = 9     // Instant/Permanent until death
+      resist_dispel = 2
+    STR_VAR
+      resource      = "A7!BURN"
+    END
 
-COPY_EXISTING ~sppr707.spl~ ~override~  // Sunray
-  READ_LONG 0x34 level
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode        = 326   // Apply effects list
-    target        = 2     // Preset target
-    parameter1    = splstate_adamantite
-    parameter2    = 76    // SPLSTATE = specified value
-    power         = level
-    timing        = 9     // Instant/Permanent
-    resist_dispel = 2
-    savingthrow   = (1 << 0)  // vs. Spell
-  STR_VAR
-    resource      = "A7!BURN"
-  END
+  COPY_EXISTING ~sppr707.spl~ ~override~  // Sunray
+    READ_LONG 0x34 level
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate_adamantite
+      parameter2    = 76    // SPLSTATE = specified value
+      power         = level
+      timing        = 9     // Instant/Permanent
+      resist_dispel = 2
+      savingthrow   = (1 << 0)  // vs. Spell
+    STR_VAR
+      resource      = "A7!BURN"
+    END
+  IF_EXISTS
+END
 
 
 // Specific spell effect: fire damage from high-level spells apply fire-based attack damage for a short time
@@ -321,9 +359,11 @@ COPY ~%MOD_FOLDER%/spells//a7!fatk.eff~ ~override~
 
 COPY_EXISTING ~spwi810.spl~ ~override~  // Incendiary Cloud
               ~spwi911.spl~ ~override~  // Meteor Swarm
+              ~spwish24.spl~ ~override~ // Meteor Swarm
               ~spwi922.spl~ ~override~  // Dragon's Breath
               ~spwi925.spl~ ~override~  // Comet
               ~sppr705.spl~ ~override~  // Fire Storm
+              ~sppr738.spl~ ~override~  // Heavenly Inferno (IWDEE)
   READ_LONG 0x34 level
   LPF ADD_SPELL_EFFECT
   INT_VAR
@@ -337,3 +377,4 @@ COPY_EXISTING ~spwi810.spl~ ~override~  // Incendiary Cloud
   STR_VAR
     resource      = "A7!FATK"
   END
+IF_EXISTS

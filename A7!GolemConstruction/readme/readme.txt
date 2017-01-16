@@ -12,8 +12,8 @@ Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spel
 Overview
 ~~~~~~~~
 
-A mod for Siege of Dragonspear, BG2:EE and EET (Enhanced Edition Trilogy) that allows spellcasters 
-to build their own golems.
+A mod for Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) and IWD:EE that allows 
+spellcasters to build their own golems.
 
 You can encounter a great number of golems of various types throughout the game. They are strong, 
 resistant, and utterly loyal to their master. Unfortunately they are mostly hostile towards you.
@@ -34,15 +34,17 @@ Installation
 This is a WeiDU mod, that means it is very easy to install. Simply unpack the downloaded archive 
 into your game directory and run "setup-A7!GolemConstruction.exe".
 Follow the instructions and you are ready to start. It is strongly recommend to install the mod 
-before starting the "Siege of Dragonspear" campaign (BG:EE), or starting a new game (BG2:EE).
+before starting the "Siege of Dragonspear" campaign (BG:EE), or starting a new game (BG2:EE and 
+IWD:EE).
 
-Important: The game must be patched to v2.0 or higher to install this mod.
+Important: BG2:EE must be patched to v2.0 or higher to install this mod.
+           IWD:EE must be patched to v1.4 or higher to install this mod.
 
 
 Components
 ~~~~~~~~~~
 
-1. Golem Construction Ability for Spellcasters (for BG:SoD, BG2:EE and EET)
+1. Golem Construction Ability for Spellcasters (for BG:SoD, BG2:EE, EET and IWD:EE)
 
 The main component of the mod. It installs a number of golem building manuals which can be found 
 all over Faerûn. The "Manual of Golem Building" comes in six volumes containing knowledge about 
@@ -56,7 +58,7 @@ Golem types taught by the Manual of Golem Building:
 - Stone Golems in lesser, regular, greater and perfect variants.
 - Iron Golems in lesser, regular, greater and perfect variants.
 - Mithral Golems in lesser, regular, greater and perfect variants.
-- Adamantite Golems in lesser, regular, greater and perfect variants.
+- Adamantite Golems in lesser, regular, greater and perfect variants (not in IWD:EE).
 
 It is rumored that there is another secret set of tomes which contains knowledge about constructing 
 more exotic types of golems.
@@ -71,6 +73,9 @@ Dwarven Dig Site and the ruins of Kanaglym which are accessible from the Undergr
 In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesvale may be suitable. The 
 Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 
 your Pocket Plane may work, after installing some equipment.
+In IWD:EE you can try the third level of Dragon's Eye, Larrel's Study of the Severed Hand, 
+Bandoth's Tower in Dorn's Deep, Malavon's Home in Lower Dorn's Deep or Tiernon's Forge in 
+Gloomfrost (HoW).
 
 Golems may follow simple commands. To change a command simply talk to them (you may have to force 
 the talk by pressing the Talk button, or pressing F1).
@@ -106,7 +111,7 @@ chapel on the upper floor again, behind the secret doors.
 * There is a 33% chance for a clay golem if the clay golem survives.
 * There is a 15% chance for an iron golem if the iron golem survives.
 
-2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE and EET)
+2.6. Make golems vulnerable to specific spell effects (all supported games)
 This component modifies a number of spells so that they can affect specific golem types in a 
 different and sometimes unexpected way. Some spells may cause special harmful effects while others 
 improve or even change the nature of golems. You can find out more in "golem_information.txt".
@@ -127,6 +132,7 @@ Details
 See "golem_information.txt" in the mod's "readme" folder. It provides information about the 
 minimum caster level and required materials for each golem type, as well as detailed stats, skills 
 and abilities of each golem.
+IWD:EE specific information can be found in "golem_information-iwdee.txt" instead.
 
 
 Credits
@@ -148,9 +154,11 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
-2.5
+3.0
+- Added content for IWD:EE
 - Added Tweaks component "Make golems vulnerable to specific spell effects"
 - Added Tweaks component "Reduce weapon immunities for constructed golems"
+- Fixed stats and attributes of several golem types and variants
 
 2.4
 - Added French translation (big thanks to Gwendolyne)

@@ -4,6 +4,7 @@
 @12000 = ~Geheimer Leitfaden der Golemkonstruktion (Band 6)~
 @12001 = ~Blitzgolem~
 @12002 = ~Hat gelernt, Blitzgolems zu erschaffen.~
+@12010 = ~Geheimer Leitfaden der Golemkonstruktion (Band 3)~
 
 // *** Book content ***
 @12100 = ~Über Blitzgolems
@@ -49,3 +50,47 @@ Mindestintelligenz: 17
 
 Gewicht: 1~
 
+
+// *** Book content (IWDEE) ***
+@12110 = ~Über Blitzgolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Blitzgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in drei Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Blitzgolem:
+Min. Stufe: 17 (-2 für Wandler, +5 für Barden)
+Zutaten:
+- 100.000 Goldmünzen
+- Eine Schriftrolle "Kettenblitz"
+
+Mindestintelligenz: 17
+
+Gewicht: 10~
+
+@12111 = ~Über Blitzgolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Blitzgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in drei Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Blitzgolem:
+Min. Stufe: 17 (-2 für Wandler, +5 für Barden)
+Zutaten:
+- 100.000 Goldmünzen
+- Eine Schriftrolle "Kettenblitz"
+
+Mindestintelligenz: 17
+
+Gewicht: 1~

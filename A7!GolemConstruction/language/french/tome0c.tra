@@ -4,6 +4,7 @@
 @12000 = ~Grimoire secret de Fabrication de Golem (Vol. 6)~
 @12001 = ~Golem de foudre~
 @12002 = ~A appris comment fabriquer des golems de foudre.~
+@12010 = ~Grimoire secret de Fabrication de Golem (Vol. 3)~
 
 // *** Book content ***
 @12100 = ~Des Golems de foudre
@@ -50,3 +51,48 @@ Intelligence requise : 17
 
 Poids : 1~
 
+
+// *** Book content (IWDEE) ***
+@12110 = ~Des Golems de foudre
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de foudre, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de trois volumes. Il contient également plusieurs références sur l'existence d'un ensemble de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer le golem suivant :
+
+Golem de foudre :
+Niveau requis : 17 (-2 pour les Transmutateurs, +5 pour les Bardes)
+Composants nécessaires :
+- 100 000 pièces d'or
+- Un parchemin de Chaîne d'éclairs
+
+Intelligence requise : 17
+
+Poids : 10~
+
+@12111 = ~Des Golems de foudre
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de foudre, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de trois volumes. Il contient également plusieurs références sur l'existence d'un ensemble de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+Permet de fabriquer le golem suivant :
+
+Golem de foudre :
+Niveau requis : 17 (-2 pour les Transmutateurs, +5 pour les Bardes)
+Composants nécessaires :
+- 100 000 pièces d'or
+- Un parchemin de Chaîne d'éclairs
+
+Intelligence requise : 17
+
+Poids : 1~

@@ -1,5 +1,5 @@
 BACKUP ~A7!GolemConstruction/backup~
-AUTHOR ~Argent77~
+AUTHOR ~Argent77 at Spellhold Studios~
 VERSION ~2.4~
 
 ALWAYS
@@ -29,6 +29,7 @@ LANGUAGE ~English~
          ~A7!GolemConstruction/language/english/items.tra~
          ~A7!GolemConstruction/language/english/dialogs.tra~
          ~A7!GolemConstruction/language/english/misc.tra~
+         ~A7!GolemConstruction/language/english/iwdee.tra~
 LANGUAGE ~Francais (traduction: Gwendolyne)~
          ~french~
          ~A7!GolemConstruction/language/french/setup.tra~
@@ -49,6 +50,7 @@ LANGUAGE ~Francais (traduction: Gwendolyne)~
          ~A7!GolemConstruction/language/french/items.tra~
          ~A7!GolemConstruction/language/french/dialogs.tra~
          ~A7!GolemConstruction/language/french/misc.tra~
+         ~A7!GolemConstruction/language/english/iwdee.tra~
 LANGUAGE ~Deutsch~
          ~german~
          ~A7!GolemConstruction/language/german/setup.tra~
@@ -69,6 +71,7 @@ LANGUAGE ~Deutsch~
          ~A7!GolemConstruction/language/german/items.tra~
          ~A7!GolemConstruction/language/german/dialogs.tra~
          ~A7!GolemConstruction/language/german/misc.tra~
+         ~A7!GolemConstruction/language/english/iwdee.tra~
 LANGUAGE ~Polski (tlumaczenie: Cahir)~
          ~polish~
          ~A7!GolemConstruction/language/polish/setup.tra~
@@ -89,11 +92,13 @@ LANGUAGE ~Polski (tlumaczenie: Cahir)~
          ~A7!GolemConstruction/language/polish/items.tra~
          ~A7!GolemConstruction/language/polish/dialogs.tra~
          ~A7!GolemConstruction/language/polish/misc.tra~
+         ~A7!GolemConstruction/language/english/iwdee.tra~
 
 
 BEGIN @0  // Golem Construction ability for spellcasters
-  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @100   // This mod requires BG:SoD or BG2:EE to be installed.
-  REQUIRE_PREDICATE FILE_EXISTS ~engine.lua~ @103   // This mod requires the game to be patched to v2.0 or higher.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @100   // This mod requires BG:SoD, BG2:EE or IWD:EE to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~ AND FILE_EXISTS ~engine.lua~) OR 
+                    (GAME_IS ~iwdee~ AND FILE_EXISTS_IN_GAME ~clearwhr.2da~) @103    // This component requires game patch >= v2.0 (BG:SoD and BG2:EE) or >= v1.4 (IWD:EE).
   DESIGNATED 0
 
   INCLUDE ~%MOD_FOLDER%/lib/generic.tph~
@@ -101,13 +106,14 @@ BEGIN @0  // Golem Construction ability for spellcasters
   INCLUDE ~%MOD_FOLDER%/lib/items.tph~
   INCLUDE ~%MOD_FOLDER%/lib/creatures.tph~
   INCLUDE ~%MOD_FOLDER%/lib/tomes.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/containers.tph~
   INCLUDE ~%MOD_FOLDER%/lib/distribute.tph~
   INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
 
 
 BEGIN @10 // Replace original Golem Manual
-  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
-  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This mod requires BG2:EE to be installed.
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 10
 
@@ -115,8 +121,8 @@ BEGIN @10 // Replace original Golem Manual
 
 
 BEGIN @15 // Improve enemy spellcaster AI
-  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
-  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This mod requires BG2:EE to be installed.
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 15
 
@@ -124,7 +130,8 @@ BEGIN @15 // Improve enemy spellcaster AI
 
 
 BEGIN @20 // Golems for enemy spellcasters
-  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD or BG2:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 20
 
@@ -132,7 +139,8 @@ BEGIN @20 // Golems for enemy spellcasters
 
 
 BEGIN @25 // Greater variety of enemy golem types
-  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD or BG2:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 25
 
@@ -140,8 +148,8 @@ BEGIN @25 // Greater variety of enemy golem types
 
 
 BEGIN @30 // Fighter Stronghold golems may continue to serve you
-  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
-  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This mod requires BG2:EE to be installed.
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 30
 
@@ -149,7 +157,7 @@ BEGIN @30 // Fighter Stronghold golems may continue to serve you
 
 
 BEGIN @35 // Make golems vulnerable to specific spell effects
-  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 35
 
@@ -157,7 +165,8 @@ BEGIN @35 // Make golems vulnerable to specific spell effects
 
 
 BEGIN @40 // Reduce weapon immunities for constructed golems
-  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This mod requires the main component to be installed.
+  REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD or BG2:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 40
 

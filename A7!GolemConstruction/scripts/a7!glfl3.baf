@@ -25,7 +25,7 @@ IF
   CheckSpellState(Myself, A7!GOLEM_FLESH)
   StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
   Global("dismiss", "LOCALS", 0)
-  RandomNum(2, 1)
+  RandomNum(%chance%, 1)
 THEN
   RESPONSE #100
     ReallyForceSpellDeadRES("a7!sxfl1",Myself)
@@ -37,7 +37,7 @@ IF
   CheckSpellState(Myself, A7!GOLEM_STONE)
   StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
   Global("dismiss", "LOCALS", 0)
-  RandomNum(2, 1)
+  RandomNum(%chance%, 1)
 THEN
   RESPONSE #100
     ReallyForceSpellDeadRES("a7!sxst1",Myself)

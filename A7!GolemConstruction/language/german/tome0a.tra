@@ -4,6 +4,7 @@
 @10000 = ~Geheimer Leitfaden der Golemkonstruktion (Band 4)~
 @10001 = ~Eisgolem~
 @10002 = ~Hat gelernt, Eisgolems zu erschaffen.~
+@10010 = ~Geheimer Leitfaden der Golemkonstruktion (Band 2)~
 
 // *** Book content ***
 @10100 = ~Über Eisgolems
@@ -51,3 +52,49 @@ Mindestintelligenz: 17
 
 Gewicht: 1~
 
+
+// *** Book content (IWDEE) ***
+@10110 = ~Über Eisgolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Eisgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in drei Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Eisgolem:
+Min. level: 14 (-2 für Wandler, +3 für Barden)
+Zutaten:
+- Eine magische Eisscherbe
+- Eine Schriftrolle "Kältekegel"
+- Eine Schriftrolle "Schutzformel gegen Kälte"
+
+Mindestintelligenz: 17
+
+Gewicht: 10~
+
+@10111 = ~Über Eisgolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Eisgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in drei Bänden daherkommt. Er erwähnt außerdem die Existenz einer Sammlung, die sich mit der Konstruktion von herkömmlichen Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Eisgolem:
+Min. level: 14 (-2 für Wandler, +3 für Barden)
+Zutaten:
+- Eine magische Eisscherbe
+- Eine Schriftrolle "Kältekegel"
+- Eine Schriftrolle "Schutzformel gegen Kälte"
+
+Mindestintelligenz: 17
+
+Gewicht: 1~

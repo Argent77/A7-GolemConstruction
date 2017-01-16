@@ -11,8 +11,10 @@
 @35 = ~Make golems vulnerable to specific spell effects~
 @40 = ~Reduce weapon immunities for constructed golems~
 
-@100 = ~This mod requires BG:SoD or BG2:EE to be installed.~
-@101 = ~This mod requires the main component to be installed.~
+@100 = ~This component requires BG:SoD, BG2:EE or IWD:EE to be installed.~
+@101 = ~This component requires the main component to be installed.~
 @102 = ~No free creature animation slot found.~
-@103 = ~This mod requires the game to be patched to v2.0 or higher.~
-@104 = ~This mod requires BG2:EE to be installed.~
+@103 = ~This component requires game patch >= v2.0 (BG:SoD and BG2:EE) or >= v1.4 (IWD:EE).~
+@104 = ~This component requires BG2:EE to be installed.~
+@105 = ~This component requires BG2:EE or IWD:EE to be installed.~
+@106 = ~This component requires BG:SoD or BG2:EE to be installed.~

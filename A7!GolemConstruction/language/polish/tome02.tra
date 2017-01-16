@@ -92,3 +92,89 @@ Wymagania:
 - Inteligencja: 16
 
 Waga: 1~
+
+
+// *** Book content (IWDEE) ***
+@2110 = ~Lekcja druga: gliniane golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy glinianego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+PARAMETRY:
+
+Właściwości ładunków:
+- Dodaje nową zdolność, która pozwala użytkownikowi budować własne golemy
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy gliniany golem:
+Minimalny poziom: 7 (-1 dla mistrzów przemian, +1 dla bardów)
+Składniki:
+- Jeden blok gliniany
+
+Gliniany golem:
+Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa bloki gliniane
+- Jeden zwój z czarem Przyspieszenie ruchów
+
+Większy gliniany golem:
+Minimalny poziom: 13 (-2 dla mistrzów przemian, +3 dla bardów)
+Składniki:
+- Cztery bloki gliniane
+- Jeden zwój z czarem Przyspieszenie ruchów
+
+Idealny gliniany golem:
+Minimalny poziom: 15 (-2 dla mistrzów przemian, +4 dla bardów)
+Składniki:
+- Cztery bloki gliniane
+- Jeden zwój z czarem Przyspieszenie ruchów
+- Jeden worek z zaczarowanym sproszkowanym koralem
+
+Istnieje 1% szans, że gliniany golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą się w zasięgu jego wzroku.
+
+Wymagania:
+- Inteligencja: 16
+
+Waga: 10~
+
+@2111 = ~Lekcja druga: gliniane golemy
+
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy glinianego golema oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Opisuje również szczegółowo aparaturę niezbędną do zbudowania ciała golema. To ostatnie wymaganie sprawia, że ilość lokacji, w których można rozpocząć budowę, jest ograniczona do zaledwie kilku miejsc w całym Faerûnie.
+
+Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej kolekcji. Zawiera również odniesienia dotyczące drugiego zestawu podręczników opisujących budowę mniej konwencjonalnych typów golemów.
+
+Pozwala użytkownikowi na budowę następujących golemów:
+
+Pomniejszy gliniany golem:
+Minimalny poziom: 7 (-1 dla mistrzów przemian, +1 dla bardów)
+Składniki:
+- Jeden blok gliniany
+
+Gliniany golem:
+Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+Składniki:
+- Dwa bloki gliniane
+- Jeden zwój z czarem Przyspieszenie ruchów
+
+Większy gliniany golem:
+Minimalny poziom: 13 (-2 dla mistrzów przemian, +3 dla bardów)
+Składniki:
+- Cztery bloki gliniane
+- Jeden zwój z czarem Przyspieszenie ruchów
+
+Idealny gliniany golem:
+Minimalny poziom: 15 (-2 dla mistrzów przemian, +4 dla bardów)
+Składniki:
+- Cztery bloki gliniane
+- Jeden zwój z czarem Przyspieszenie ruchów
+- Jeden worek z zaczarowanym sproszkowanym koralem
+
+Istnieje 1% szans, że gliniany golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą się w zasięgu jego wzroku.
+
+Wymagania:
+- Inteligencja: 16
+
+Waga: 1~

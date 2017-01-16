@@ -4,6 +4,7 @@
 @13000 = ~Secret Manual of Golem Building (Vol. 7)~
 @13001 = ~Ruby Golem~
 @13002 = ~Has learned how to construct ruby golems.~
+@13010 = ~Secret Manual of Golem Building (Vol. 4)~
 
 // *** Book content ***
 @13100 = ~About Ruby Golems
@@ -54,3 +55,52 @@ Requires:
 
 Weight: 1~
 
+
+// *** Book content (IWDEE) ***
+@13110 = ~About Ruby Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a ruby golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that originally comes in three volumes. This fourth volume has been added at a later date by a drow sorcerer of great power. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golem:
+
+Ruby Golem:
+Min. level: 16 (-2 for Transmuters, +4 for Bards)
+Ingredients:
+- Four Ruby Gems
+- Two Fire Agate Gems
+- One scroll of Ruby Ray of Reversal
+
+Requires:
+ 17 Intelligence
+
+Weight: 10~
+
+@13111 = ~About Ruby Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a ruby golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that originally comes in three volumes. This fourth volume has been added at a later date by a drow sorcerer of great power. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+Allows the user to build the following golem:
+
+Ruby Golem:
+Min. level: 16 (-2 for Transmuters, +4 for Bards)
+Ingredients:
+- Four Ruby Gems
+- Two Fire Agate Gems
+- One scroll of Ruby Ray of Reversal
+
+Requires:
+ 17 Intelligence
+
+Weight: 1~

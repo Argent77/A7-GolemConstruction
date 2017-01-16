@@ -88,3 +88,85 @@ Composants nécessaires :
 Intelligence requise : 17
 
 Poids : 1~
+
+
+// *** Book content (IWDEE) ***
+@4110 = ~Quatrième leçon : les Golems de fer
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de fer, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de cinq volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer les golems suivants :
+
+Golem de fer mineur :
+Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Un lingot de fer
+
+Golem de fer :
+Niveau requis : 14 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Deux lingots de fer
+- Un parchemin de Nuage mortel
+
+Golem de fer majeur :
+Niveau requis : 17 (-2 pour les Transmutateurs, +5 pour les Bardes)
+Composants nécessaires :
+- Quatre lingots de fer
+- Un parchemin de Nuage mortel
+
+Golem de fer parfait :
+Niveau requis : 19 (-2 pour les Transmutateurs)
+Composants nécessaires :
+- Quatre lingots de fer
+- Un parchemin de Nuage mortel
+- Des jetons de fer froid
+
+Intelligence requise : 17
+
+Poids : 10~
+
+@4111 = ~Quatrième leçon : les Golems de fer
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de fer, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de cinq volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+
+Permet de fabriquer les golems suivants :
+
+Golem de fer mineur :
+Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Un lingot de fer
+
+Golem de fer :
+Niveau requis : 14 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Deux lingots de fer
+- Un parchemin de Nuage mortel
+
+Golem de fer majeur :
+Niveau requis : 17 (-2 pour les Transmutateurs, +5 pour les Bardes)
+Composants nécessaires :
+- Quatre lingots de fer
+- Un parchemin de Nuage mortel
+
+Golem de fer parfait :
+Niveau requis : 19 (-2 pour les Transmutateurs)
+Composants nécessaires :
+- Quatre lingots de fer
+- Un parchemin de Nuage mortel
+- Des jetons de fer froid
+
+Intelligence requise : 17
+
+Poids : 1~

@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Lower Dorn's Deep, Malavon's Home) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0], 0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([328.544]))
+    ActionOverride(Player2, JumpToPoint([256.595]))
+    ActionOverride(Player3, JumpToPoint([407.595]))
+    ActionOverride(Player4, JumpToPoint([328.650]))
+    ActionOverride(Player5, JumpToPoint([234.695]))
+    ActionOverride(Player6, JumpToPoint([426.695]))
+    ActionOverride(Player1, Face(N))
+    ActionOverride(Player2, Face(N))
+    ActionOverride(Player3, Face(N))
+    ActionOverride(Player4, Face(N))
+    ActionOverride(Player5, Face(N))
+    ActionOverride(Player6, Face(N))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([328.544], INSTANT)
+    FadeFromColor([30.0], 0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

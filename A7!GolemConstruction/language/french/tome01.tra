@@ -6,7 +6,6 @@
 @1002 = ~Golem de chair~
 @1003 = ~Golem de chair majeur~
 @1004 = ~Golem de chair parfait~ // Perfect ??
-// @1005 = ~You have learned how to construct flesh golems.~
 @1005 = ~A appris comment fabriquer des golems de chair.~
 
 // *** Book content ***
@@ -91,3 +90,85 @@ Intelligence requise : 15
 
 Poids : 1~
 
+
+// *** Book content (IWDEE) ***
+@1110 = ~Première leçon : les Golems de chair
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de chair, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de cinq volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer les golems suivants :
+
+Golem de chair mineur :
+Niveau requis : 5 (-1 pour les Transmutateurs, +1 pour les Bardes)
+Composants nécessaires :
+- Un ensemble complet de morceaux de cadavres
+
+Golem de chair :
+Niveau requis : 7 (-1 pour les Transmutateurs, +1 pour les Bardes)
+Composants nécessaires :
+- Deux ensembles complets de morceaux de cadavres
+
+Golem de chair majeur :
+Niveau requis : 10 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Quatre ensembles complets de morceaux de cadavres
+- Un parchemin de Nuage puant
+
+Golem de chair parfait :
+Niveau requis : 12 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Quatre ensembles complets de morceaux de cadavres
+- Un parchemin de Nuage puant
+- Une gemme héliotrope sombre
+
+Folie dévastatrice : en situation de combat, il y a 1 % de chance que l’esprit élémentaire animant le golem de chair devienne fou furieux pendant 1d6 rounds. Dans ce cas, le golem attaque la créature la plus proche.
+
+Intelligence requise : 15
+
+Poids : 10~
+
+@1111 = ~Première leçon : les Golems de chair
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de chair, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de cinq volumes. Il contient également plusieurs brèves références sur l'existence d'un autre recueil de manuels sensés traiter de la fabrication de types de golems beaucoup moins traditionnels.
+
+Permet de fabriquer les golems suivants :
+
+Golem de chair mineur :
+Niveau requis : 5 (-1 pour les Transmutateurs, +1 pour les Bardes)
+Composants nécessaires :
+- Un ensemble complet de morceaux de cadavres
+
+Golem de chair :
+Niveau requis : 7 (-1 pour les Transmutateurs, +1 pour les Bardes)
+Composants nécessaires :
+- Deux ensembles complets de morceaux de cadavres
+
+Golem de chair majeur :
+Niveau requis : 10 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Quatre ensembles complets de morceaux de cadavres
+- Un parchemin de Nuage puant
+
+Golem de chair parfait :
+Niveau requis : 12 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Quatre ensembles complets de morceaux de cadavres
+- Un parchemin de Nuage puant
+- Une gemme héliotrope sombre
+
+Folie dévastatrice : en situation de combat, il y a 1 % de chance que l’esprit élémentaire animant le golem de chair devienne fou furieux pendant 1d6 rounds. Dans ce cas, le golem attaque la créature la plus proche.
+
+Intelligence requise : 15
+
+Poids : 1~

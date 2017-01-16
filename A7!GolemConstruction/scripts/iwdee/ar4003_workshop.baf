@@ -1,0 +1,21 @@
+// *** IWD:EE - Dragon's Eye Level 3 ***
+
+IF
+  !ActuallyInCombat()
+  Global("A7!DragonsEyeWorkshop", "GLOBAL", 0)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("a7!check1", "MYAREA", 2)
+  Global("a7!check2", "MYAREA", 2)
+  Global("a7!check3", "MYAREA", 2)
+  Global("a7!check4", "MYAREA", 2)
+  Global("a7!check5", "MYAREA", 2)
+  Dead("PRESIO")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!DragonsEyeWorkshop", "GLOBAL", 1)
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
+    DisplayString(Player1, @100006) // The laboratory on this level looks well equipped. You can probably use it to construct golems.
+    AddJournalEntry(@140000, QUEST) // Golem Construction Workshop
+    Continue()
+END

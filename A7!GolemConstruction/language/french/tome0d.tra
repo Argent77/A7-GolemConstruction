@@ -4,6 +4,7 @@
 @13000 = ~Grimoire secret de Fabrication de Golem (Vol. 7)~
 @13001 = ~Golem de rubis~
 @13002 = ~A appris comment fabriquer des golems de rubis.~
+@13010 = ~Grimoire secret de Fabrication de Golem (Vol. 4)~
 
 // *** Book content ***
 @13100 = ~Des Golems de rubis
@@ -43,6 +44,54 @@ Permet de fabriquer le golem suivant :
 
 Golem de Rubis :
 Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Quatre gemmes de rubis
+- Deux gemmes d'Agate de feu
+- Un parchemin de Rayon rubis d'inversion
+
+Intelligence requise : 17
+
+Poids : 1~
+
+
+// *** Book content (IWDEE) ***
+@13110 = ~Des Golems de rubis
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de rubis, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil original de trois volumes. Ce septième volume a été rédigé bien plus tardivement par le zulkir de l'Évocation, Aznar Thrul, un dirigeant des Sorciers Rouges de Thay. Il contient également plusieurs références sur l'existence d'un ensemble de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer le golem suivant :
+
+Golem de Rubis :
+Niveau requis : 16 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Quatre gemmes de rubis
+- Deux gemmes d'Agate de feu
+- Un parchemin de Rayon rubis d'inversion
+
+Intelligence requise : 17
+
+Poids : 10~
+
+@13111 = ~Des Golems de rubis
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem de rubis, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil original de trois volumes. Ce septième volume a été rédigé bien plus tardivement par le zulkir de l'Évocation, Aznar Thrul, un dirigeant des Sorciers Rouges de Thay. Il contient également plusieurs références sur l'existence d'un ensemble de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+Permet de fabriquer le golem suivant :
+
+Golem de Rubis :
+Niveau requis : 16 (-2 pour les Transmutateurs, +4 pour les Bardes)
 Composants nécessaires :
 - Quatre gemmes de rubis
 - Deux gemmes d'Agate de feu

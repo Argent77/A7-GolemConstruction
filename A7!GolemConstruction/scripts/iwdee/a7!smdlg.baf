@@ -1,0 +1,107 @@
+// *** Helper creature: Golem Crafting (IWDEE) ***
+
+// Don't construct golems in hostile territory
+IF
+  OR(2)
+    ActuallyInCombat()
+    Detect([ENEMY])
+THEN
+  RESPONSE #100
+    DisplayString(LastSummonerOf(Myself), @21001) // You are unable to construct golems in hostile environments.
+    DestroySelf()
+END
+
+// Checking location: Dragon's Eye Level 3, Laboratory
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!DragonsEyeWorkshop", "GLOBAL", 1)
+  AreaCheck("AR4003")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initDragonsEye", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Severed Hand, Larrel's Study
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!SeveredHandWorkshop", "GLOBAL", 1)
+  AreaCheck("AR5103")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initSeveredHand", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Dorn's Deep, Bandoth's Laboratory
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!DornsDeepWorkshop", "GLOBAL", 1)
+  AreaCheck("AR6014")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initDornsDeep", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Lower Dorn's Deep, Malavon's Simulacrum Home
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!LowerDornsDeepWorkshop", "GLOBAL", 1)
+  AreaCheck("AR8010")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initLowerDornsDeep", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: HoW - Gloomfrost, Tiernon
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!GloomfrostWorkshop", "GLOBAL", 1)
+  AreaCheck("AR9501")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initGloomfrost", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+
+// Unsupported area for constructing golems
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initCancelled", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+
+// Failsafe: Wait for a couple of round and disappear
+IF
+  Global("init2", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("init2", "LOCALS", 1)
+    SetGlobalTimer("initTimer", "LOCALS", FIVE_ROUNDS)
+END
+
+IF
+  Global("init2", "LOCALS", 1)
+  GlobalTimerExpired("initTimer", "LOCALS")
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

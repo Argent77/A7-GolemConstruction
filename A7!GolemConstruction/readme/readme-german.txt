@@ -37,7 +37,7 @@ heruntergeladene Zipdatei in das Spieleverzeichnis und startet "setup-A7!GolemCo
 Folgt den Anweisungen des Programms und die Mod ist startbereit. Ihr solltet ein neues "Siege of 
 Dragonspear" oder BG2:EE-Spiel starten, um nichts zu verpassen.
 
-Wichtig: Die Mod funktioniert nur für Spiele in der Version 2.0 oder höher.
+Wichtig: Die Mod benötigt mindestens BG2:EE-Spielversion 2.0 oder IWD:EE-Spielversion 1.4.
 
 
 Komponenten
@@ -108,8 +108,7 @@ Geheimtür im Obergeschoss des Schlosses aufzunehmen, wenn ihr das Schloss auf W
 * Mit 33% Wahrscheinlichkeit findet ihr einen Tongolem vor, wenn der Tongolem überlebt.
 * Mit 15% Wahrscheinlichkeit findet ihr einen Eisengolem vor, wenn der Eisengolem überlebt.
 
-
-2.6. Mache Golems anfällig für bestimmte Zauber (für BG:SoD, BG2:EE and EET)
+2.6. Mache Golems anfällig für bestimmte Zauber (für alle unterstützten Spiele)
 Diese Komponente erweitert einige Zaubersprüche, so dass sie Golems auf eine andere, und manchmal 
 unerwartete Weise beeinflussen. Einige Zauber können sich schädlich auswirken, während andere einen 
 positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informationen dazu in 
@@ -130,6 +129,7 @@ Einzelheiten
 
 Die Textdatei "golem_information-german.txt" im Readme-Ordner listet Einzelheiten zu den 
 Golemeigenschaften, Voraussetzungen zur Konstruktion und vieles mehr auf.
+Informationen zur IWD:EE-Variante der Mod gibt es in "golem_information-iwdee-german.txt".
 
 
 Credits
@@ -151,9 +151,11 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
-2.5
+3.0
+- Added content for IWD:EE
 - Added Tweaks component "Make golems vulnerable to specific spell effects"
 - Added Tweaks component "Reduce weapon immunities for constructed golems"
+- Fixed stats and attributes of several golem types and variants
 
 2.4
 - Added French translation (big thanks to Gwendolyne)

@@ -16,6 +16,8 @@
 @102 = ~Aucun emplacement (slot) d'animation n'est disponible.~
 @103 = ~Ce mod requiert un jeu beneficiant du patch v2.0 ou ulterieur.~
 @104 = ~Ce mod necessite l'installation de BG2:EE.~
+@105 = ~This component requires BG2:EE or IWD:EE to be installed.~
+@106 = ~This component requires BG:SoD or BG2:EE to be installed.~
 
 
 // WeiDU prompts

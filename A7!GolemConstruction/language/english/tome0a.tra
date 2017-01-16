@@ -4,6 +4,7 @@
 @10000 = ~Secret Manual of Golem Building (Vol. 4)~
 @10001 = ~Ice Golem~
 @10002 = ~Has learned how to construct ice golems.~
+@10010 = ~Secret Manual of Golem Building (Vol. 2)~
 
 // *** Book content ***
 @10100 = ~About Ice Golems
@@ -54,3 +55,52 @@ Requires:
 
 Weight: 1~
 
+
+// *** Book content (IWDEE) ***
+@10110 = ~About Ice Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an ice golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in three volumes. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+STATISTICS:
+
+Charged ability:
+- Adds a new ability which enables the user to build golems on their own
+  Usage: Place into quick item slot and use it
+
+Allows the user to build the following golem:
+
+Ice Golem:
+Min. level: 14 (-2 for Transmuters, +3 for Bards)
+Ingredients:
+- One shard of magical ice
+- One scroll of Cone of Cold
+- One scroll of Protection from Cold
+
+Requires:
+ 17 Intelligence
+
+Weight: 10~
+
+@10111 = ~About Ice Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an ice golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+
+From what you can gather this book is part of a collection that comes in three volumes. It also contains several references to a set of manuals about building more conventional types of golems.
+
+
+Allows the user to build the following golem:
+
+Ice Golem:
+Min. level: 14 (-2 for Transmuters, +3 for Bards)
+Ingredients:
+- One shard of magical ice
+- One scroll of Cone of Cold
+- One scroll of Protection from Cold
+
+Requires:
+ 17 Intelligence
+
+Weight: 1~

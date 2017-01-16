@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Dorn's Deep, Bandoth's Laboratory) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0], 0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([510.455]))
+    ActionOverride(Player2, JumpToPoint([423.493]))
+    ActionOverride(Player3, JumpToPoint([559.529]))
+    ActionOverride(Player4, JumpToPoint([467.573]))
+    ActionOverride(Player5, JumpToPoint([380.587]))
+    ActionOverride(Player6, JumpToPoint([526.622]))
+    ActionOverride(Player1, Face(NNE))
+    ActionOverride(Player2, Face(NNE))
+    ActionOverride(Player3, Face(NNE))
+    ActionOverride(Player4, Face(NNE))
+    ActionOverride(Player5, Face(NNE))
+    ActionOverride(Player6, Face(NNE))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([510.455], INSTANT)
+    FadeFromColor([30.0], 0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

@@ -8,3 +8,45 @@ END
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   LAF DISTRIBUTE_ITEMS STR_VAR table = EVAL ~%MOD_FOLDER%/tables/items_bg2.2da~ END
 END
+
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  LAF DISTRIBUTE_ITEMS STR_VAR table = EVAL ~%MOD_FOLDER%/tables/items_iwd.2da~ END
+
+  // Special: Several items are added to Orrick's store in later chapters
+<<<<<<<< .../inlined/orrick_store.baf
+IF
+  Global("A7!OrrickStore","AR2100",0)
+  GlobalGT("Chapter","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("A7!OrrickStore","AR2100",1)
+    AddStoreItem("KUORK0","SCRL97",1,1)
+    AddStoreItem("KUORK0","SCRL1H",1,1)
+    AddStoreItem("KUORK0","SCRL2D",1,1)
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+IF
+  Global("A7!OrrickStore","AR2100",0)
+  GlobalGT("Chapter","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("A7!OrrickStore","AR2100",1)
+    AddStoreItem("KUORK0","SCRL97",1,1)
+    AddStoreItem("KUORK0","SCRL1H",1,1)
+    AddStoreItem("KUORK0","SCRL2D",1,1)
+    AddStoreItem("KUORK0","SCRL2E",1,1)
+    AddStoreItem("KUORK0","SCRL2F",1,1)
+    AddStoreItem("KUORK0","SCCLITE",1,1)
+    AddStoreItem("KUORK0","SCRL8G",1,1)
+    AddStoreItem("KUORK0","A7!TOM03",1,1)
+    SetInterrupt(TRUE)
+    Continue()
+END
+>>>>>>>>
+  EXTEND_TOP ~ar2100.bcs~ ~.../inlined/orrick_store.baf~
+
+END

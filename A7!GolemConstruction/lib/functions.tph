@@ -142,6 +142,72 @@ BEGIN
 END
 
 
+/**
+ * Adds a new entry to SPLPROT.2DA and returns its index. If an identical entry already exists it will return 
+ * the index of that entry instead.
+ * INT_VAR stat     A code from STATS.IDS or an extended stat code starting at 0x100 (256).
+ * STR_VAR value    Either a numeric value that is evaluated by "stat", or a default value "*" for specific stats.
+ *                  (Note: "-1" indicates a user-defined value.)
+ * STR_VAR relation Specifies how to evaluate the value.
+ *                  (Note: Not all extended stats require a relation code. Use "*" in this case.)
+ * RET index        Entry number that can be used to refer to this operation in various effect opcodes.
+ *                  Returns -1 on error.
+ */
+DEFINE_ACTION_FUNCTION ADD_SPLPROT_ENTRY
+INT_VAR
+  stat      = "-1"
+STR_VAR
+  value     = "*"
+  relation  = "*"
+RET
+  index
+BEGIN
+  OUTER_SET index = "-1"
+
+  ACTION_IF (stat >= 0) BEGIN
+    LAF TO_HEX_NUMBER INT_VAR value = stat RET hexNumber END
+    OUTER_TEXT_SPRINT valueHex ~0x%hexNumber%~
+    ACTION_IF (~%value%~ STRING_EQUAL ~~) BEGIN
+      OUTER_TEXT_SPRINT value ~*~
+    END
+    ACTION_IF (~%relation%~ STRING_EQUAL ~~) BEGIN
+      OUTER_TEXT_SPRINT relation ~*~
+    END
+
+    ACTION_IF (FILE_EXISTS_IN_GAME ~splprot.2da~) BEGIN
+      COPY_EXISTING ~splprot.2da~ ~override~
+        READ_2DA_ENTRIES_NOW table 4
+        // Search for identical entries
+        FOR (idx = 0; idx < table; idx += 1) BEGIN
+          READ_2DA_ENTRY_FORMER table idx 1 curStat
+          PATCH_IF (~%stat%~ STRING_EQUAL ~%curStat%~ OR ~%valueHex%~ STRING_EQUAL_CASE ~%curStat%~) BEGIN
+            READ_2DA_ENTRY_FORMER table idx 2 curValue
+            PATCH_IF (~%value%~ STRING_EQUAL ~%curValue%~) BEGIN
+              READ_2DA_ENTRY_FORMER table idx 3 curRelation
+              PATCH_IF (~%relation%~ STRING_EQUAL ~%curRelation%~) BEGIN
+                SET index = idx
+                SET idx = table
+              END
+            END
+          END
+        END
+
+        PATCH_IF (index < 0) BEGIN
+          // Add new entry
+          PATCH_IF (stat >= 0x100) BEGIN
+            TEXT_SPRINT line ~%table%        %valueHex%        %value%         %relation%~
+          END ELSE BEGIN
+            TEXT_SPRINT line ~%table%        %stat%          %value%         %relation%~
+          END
+          INSERT_2DA_ROW table 4 ~%line%~
+          SET index = table
+        END
+      BUT_ONLY
+    END
+  END
+END
+
+
 // Animation slots reserved by vanilla or mod-added game creatures (in hexadecimal format)
 // Supported mods:
 // - Bearwalker + extended Werebear animation
@@ -620,22 +686,25 @@ BEGIN
                 ADD_CRE_ITEM ~%item%~ (count) (count2) (count3) ~%name%~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16 QITEM1 QITEM2 QITEM3 QUIVER1 QUIVER2 QUIVER3 QUIVER4~
               BUT_ONLY
             END
-          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~STORE~) BEGIN
+          END ELSE ACTION_IF (~%type%~ STRING_EQUAL_CASE ~STORE~ OR ~%type%~ STRING_EQUAL_CASE ~STORE+~) BEGIN
             ACTION_IF (FILE_EXISTS_IN_GAME ~%res%.sto~) BEGIN
               COPY_EXISTING ~%res%.sto~ ~override~
-                // TODO: This is a work-around for missing variable evaluation of ADD_STORE_ITEM's flags parameter. Update when fixed in WeiDU.
-                PATCH_IF (~%name%~ STRING_EQUAL_CASE ~*~ OR ~%name%~ STRING_EQUAL_CASE ~IDENTIFIED~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~UNSTEALABLE~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~UNSTEALABLE~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~STOLEN~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~STOLEN~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&STOLEN~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&STOLEN~ (count)
-                END ELSE PATCH_IF (~%name%~ STRING_EQUAL_CASE ~IDENTIFIED&UNSTEALABLE~) BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~IDENTIFIED&UNSTEALABLE~ (count)
+                TO_UPPER name
+                PATCH_MATCH ~%name%~ WITH
+                  ~IDENTIFIED~ ~UNSTEALABLE~ ~STOLEN~ ~IDENTIFIED&STOLEN~ ~IDENTIFIED&UNSTEALABLE~
+                  BEGIN
+                  END
+                  ~*~
+                  BEGIN
+                    TEXT_SPRINT name ~IDENTIFIED~
+                  END
+                  DEFAULT
+                    TEXT_SPRINT name ~NONE~
+                END
+                PATCH_IF (~%type%~ STRING_EQUAL_CASE ~STORE~) BEGIN
+                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~%name%~ (count)
                 END ELSE BEGIN
-                  ADD_STORE_ITEM ~%item%~ LAST (count2) (count3) (0) ~NONE~ (count)
+                  ADD_STORE_ITEM + ~%item%~ LAST (count2) (count3) (0) ~%name%~ (count)
                 END
               BUT_ONLY
             END

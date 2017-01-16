@@ -6,13 +6,15 @@
 @10 = ~Ersetze originalen Leitfaden der Golemkonstruktion~
 @15 = ~Verbesserte feindliche Magier-KI~
 @20 = ~Golems fuer feindliche Magier~
-@25 = ~Groessere Bandbreite an feindlichen Golemtypen~
+@25 = ~Groessere Vielfalt an feindlichen Golemtypen~
 @30 = ~Uebernehme Golems in Schloss de'Arnise~
 @35 = ~Mache Golems anfaellig fuer bestimmte Zauber~
 @40 = ~Vermindere Waffenimmunitaet bei erschaffenen Golems~
 
-@100 = ~Diese Mod benoetigt BG:SoD oder BG2:EE.~
+@100 = ~Diese Komponente benoetigt BG:SoD oder BG2:EE.~
 @101 = ~Diese Option benoetigt die Hauptkomponente der Mod.~
 @102 = ~Es wurde kein freier Eintrag fuer Monsteranimationen gefunden.~
-@103 = ~Diese Mod benoetigt die Spielversion 2.0 oder hoeher.~
-@104 = ~Diese Mod benoetigt BG2:EE.~
+@103 = ~Diese Komponente benoetigt Spielversion >= v2.0 (BG:SoD und BG2:EE) oder >= v1.4 (IWD:EE).~
+@104 = ~Diese Komponente benoetigt BG2:EE.~
+@105 = ~Diese Komponente benoetigt BG2:EE oder IWD:EE.~
+@106 = ~Diese Komponente benoetigt BG:SoD oder BG2:EE.~

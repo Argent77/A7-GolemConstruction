@@ -1,0 +1,14 @@
+// *** IWD:EE - Gloomfrost, Tiernon's Forge ***
+
+IF
+  !ActuallyInCombat()
+  Global("A7!GloomfrostWorkshop", "GLOBAL", 0)
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Dead("TIERNON")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!GloomfrostWorkshop", "GLOBAL", 1)
+    DisplayString(Player1, @100026) // The forge in this place looks well constructed. You can probably use it to build golems.
+    AddJournalEntry(@140007, QUEST) // Golem Construction Workshop
+    Continue()
+END

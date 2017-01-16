@@ -4,6 +4,7 @@
 @8000 = ~Grimoire secret de Fabrication de Golem (Vol. 2)~
 @8001 = ~Golem d'os~
 @8002 = ~A appris comment fabriquer des golems d'os.~
+@8010 = ~Grimoire secret de Fabrication de Golem (Vol. 1)~
 
 // *** Book content ***
 @8100 = ~Des Golems d'os
@@ -44,6 +45,56 @@ Permet de fabriquer le golem suivant :
 
 Golem d'os :
 Niveau requis : 16 (-2 pour les Nécromanciens et les Transmutateurs, +4 pour les Bardes)
+Composants nécessaires :
+- Quatre tas d'ossements
+- Un parchemin d'Animation des morts
+
+À l'issue du processus de fabrication, le créateur a 50 % de chance de perdre un niveau et 10 % d'en perdre deux.
+
+Intelligence requise : 16
+
+Poids : 1~
+
+
+// *** Book content (IWDEE) ***
+@8110 = ~Des Golems d'os
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem d'os, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de trois volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+PARAMETRES :
+
+Capacité spéciale :
+- Gain d'une nouvelle capacité permettant de fabriquer des golems
+Utilisation : Placez-le dans un emplacement d'objet rapide
+
+Permet de fabriquer le golem suivant :
+
+Golem d'os :
+Niveau requis : 12 (-2 pour les Nécromanciens et les Transmutateurs, +2 pour les Bardes)
+Composants nécessaires :
+- Quatre tas d'ossements
+- Un parchemin d'Animation des morts
+
+À l'issue du processus de fabrication, le créateur a 50 % de chance de perdre un niveau et 10 % d'en perdre deux.
+
+Intelligence requise : 16
+
+Poids : 10~
+
+@8111 = ~Des Golems d'os
+
+Ce livre contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem d'os, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Il décrit également de manière exhaustive l'équipement nécessaire pour parvenir à assembler le corps du golem ; ce qui limite le nombre de sites dans lesquels entreprendre un tel processus à seulement quelques-uns dans tout Féérune.
+
+De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un recueil plus complet de trois volumes. Il contient également plusieurs références sur l'existence d'un autre recueil de manuels traitant de la fabrication de types de golems plus traditionnels.
+
+
+Permet de fabriquer le golem suivant :
+
+Golem d'os :
+Niveau requis : 12 (-2 pour les Nécromanciens et les Transmutateurs, +2 pour les Bardes)
 Composants nécessaires :
 - Quatre tas d'ossements
 - Un parchemin d'Animation des morts
