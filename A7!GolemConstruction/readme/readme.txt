@@ -108,7 +108,7 @@ chapel on the upper floor again, behind the secret doors.
 
 2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE and EET)
 This component modifies a number of spells so that they can affect specific golem types in a 
-different and sometimes unexpected way. Some spells may cause special harmful effects while other 
+different and sometimes unexpected way. Some spells may cause special harmful effects while others 
 improve or even change the nature of golems. You can find out more in "golem_information.txt".
 
 2.7. Reduce weapon immunities for constructed golems (for BG:SoD, BG2:EE and EET)
@@ -118,7 +118,7 @@ by reducing their innate weapon enchantment immunities to increase the chance th
 actually harm them.
 Weapon immunities will be reduced by one level on average, sometimes even more. For example, 
 golems with immunity to enchanted weapons +2 or less will become immune to enchantments of +1 or 
-less. Golems with immunity to non-enchanted weapons only will lose weapon immunity altogether.
+less. Golems with immunity to non-enchanted weapons will lose weapon immunity altogether.
 
 
 Details

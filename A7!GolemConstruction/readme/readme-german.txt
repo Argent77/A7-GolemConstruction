@@ -121,8 +121,8 @@ hohe Waffenimmunität verfügen. Diese Komponente vermindert die Immunität gege
 normaler Waffen, um die Chance der Gegner zu erhöhen, Golems überhaupt zu treffen.
 Waffenimmunitäten der Golems werden dabei um eine Stufe und in einigen Fällen um zwei Stufen 
 vermindert. Das heißt, Golems mit einer Immunität gegenüber +2 verzauberten Waffen werden nur noch 
-immun gegenüber +1 verzauberten Waffen sein. Golems mit einer Immunität gegenüber normalen Waffen 
-wird die Waffenimmunität ganz entzogen.
+immun gegenüber +1 verzauberten Waffen sein. Golems mit einer Immunität gegenüber nichtmagischen 
+Waffen wird die Waffenimmunität ganz entzogen.
 
 
 Einzelheiten
