@@ -466,7 +466,7 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
     END
 
 
-  // Labyrinth in Lower Dorn's Deep
+  // Labyrinth in Dorn's Deep
   COPY_EXISTING ~ar6003.are~ ~override~
     LPF fj_are_structure
     INT_VAR
@@ -512,6 +512,36 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
     STR_VAR
       fj_structure_type = "container"
       fj_name           = "A7!Container2"
+    END
+
+
+  // Dorn's Deep - Bandoth's Tower
+  COMPILE ~%MOD_FOLDER%/scripts/iwdee/a7!trap1.baf~ EVAL
+  COPY_EXISTING ~ar6014.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x          = 548
+      fj_loc_y          = 450
+      fj_type           = 8       // non-visible
+      fj_lock_diff      = 0
+      fj_flags          = (1 << 3) | (1 << 5)  // trap resets, disabled
+      fj_trap_detect    = 100
+      fj_trap_remove_diff = 100
+      fj_trap_active    = 1
+      fj_trap_loc_x     = 543
+      fj_trap_loc_y     = 397
+      fj_box_left       = 507
+      fj_box_top        = 349
+      fj_box_right      = 580
+      fj_box_bottom     = 408
+      fj_vertex_0       = 507 | (386 << 16)
+      fj_vertex_1       = 578 | (405 << 16)
+      fj_vertex_2       = 578 | (368 << 16)
+      fj_vertex_3       = 507 | (350 << 16)
+    STR_VAR
+      fj_structure_type = "container"
+      fj_name           = "A7!Furnace1"
+      fj_trap_script    = "A7!TRAP1"
     END
 
 

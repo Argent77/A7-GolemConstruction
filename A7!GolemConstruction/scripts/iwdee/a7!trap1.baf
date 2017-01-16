@@ -1,0 +1,20 @@
+// *** Fire trap - Bandoth's Tower ***
+IF
+  Opened([PC])
+  Global("A7!TrapMessage", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TrapMessage", "MYAREA", 1)
+    DisplayStringHead(Myself, @120000)  // You take some fire damage from the blistering heat of the furnace.
+    ReallyForceSpellRES("A7!TFA", LastTrigger) // Fire Arrow
+    Wait(2)
+END
+
+IF
+  Opened([PC])
+  !Global("A7!TrapMessage", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("A7!TFA", LastTrigger) // Fire Arrow
+    Wait(2)
+END

@@ -2,6 +2,7 @@
 // Misc. strings (index 120000..149999)
 
 // *** Misc. strings ***
+@120000 = ~You take some fire damage from the blistering heat of the furnace.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***

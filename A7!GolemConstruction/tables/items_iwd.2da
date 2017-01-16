@@ -176,6 +176,7 @@ ACTOR       BANDOTH     *                         A7!GLST   1     0       0
 CONTAINER   AR9400      Tomb*3                    A7!GLST   1     0       0
 CONTAINER   AR9712      Container*5               A7!GLST   1     0       0
 STORE       LDD_NYM     *                         A7!GLST   1     0       0
+CONTAINER   AR6014      A7!Furnace1               A7!GLIR   1     0       0
 CONTAINER   AR9400      Wylfdene's*Tomb           A7!GLIR   1     0       0
 STORE       TIERNON     *                         A7!GLIR   1     0       0
 CONTAINER   AR8012      A7!Altar1                 A7!GLMI   1     0       0

@@ -9,7 +9,8 @@ END
 ADD_TRANS_TRIGGER ~dbandoth~ 26 ~OR(2) !Global("A7!GolemAbility", "GLOBAL", 1) !Global("A7!DornsDeepWorkshop", "GLOBAL", 0)~
 
 EXTEND_TOP ~dbandoth~ 26
-  IF ~Global("A7!GolemAbility", "GLOBAL", 1) Global("A7!DornsDeepWorkshop", "GLOBAL", 0)~ DO ~SetGlobal("A7!DornsDeepWorkshop", "GLOBAL", 1) AddJournalEntry(@140004, QUEST)~ + bandoth.1
+  IF ~Global("A7!GolemAbility", "GLOBAL", 1) Global("A7!DornsDeepWorkshop", "GLOBAL", 0)~ 
+    DO ~SetGlobal("A7!DornsDeepWorkshop", "GLOBAL", 1) AddJournalEntry(@140004, QUEST) ContainerEnable("A7!Furnace1", TRUE)~ + bandoth.1
 END
 
 APPEND ~dbandoth~
@@ -48,13 +49,13 @@ APPEND ~dbandoth~
 
   IF ~~ bandoth.3.3
     SAY @122013 /* Well, I guess that will do. Be on your way now. I have wasted enough time on you already. */
-    IF ~~ DO ~SetGlobal("A7!DornsDeepWorkshop", "GLOBAL", 1) AddJournalEntry(@140002, QUEST)~ EXIT
+    IF ~~ DO ~SetGlobal("A7!DornsDeepWorkshop", "GLOBAL", 1) AddJournalEntry(@140002, QUEST) ContainerEnable("A7!Furnace1", TRUE)~ EXIT
   END
 
   IF ~~ bandoth.4
     SAY @122014 /* You dare to threaten me in my own home? I should kick you out right now for this insolence. */
     = @122015 /* But since I don't want to lose my life over such trivial matters I will make an exception and comply with your wishes. Do what you have to do, but don't expect any more charity from me. */
-    IF ~~ DO ~SetGlobal("A7!DornsDeepWorkshop", "GLOBAL", 1) AddJournalEntry(@140003, QUEST)~ EXIT
+    IF ~~ DO ~SetGlobal("A7!DornsDeepWorkshop", "GLOBAL", 1) AddJournalEntry(@140003, QUEST) ContainerEnable("A7!Furnace1", TRUE)~ EXIT
   END
 
   IF ~~ bandoth.5

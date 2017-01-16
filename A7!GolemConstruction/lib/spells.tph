@@ -592,3 +592,9 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
 END ELSE ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/wishes.d~
 END
+
+
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  // Fire Arrow trap
+  COPY ~%MOD_FOLDER%/spells/iwdee/a7!tfa.spl~ ~override~
+END
