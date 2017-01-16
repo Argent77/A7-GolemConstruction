@@ -1094,6 +1094,7 @@ END ELSE BEGIN
           ~%MOD_FOLDER%/scripts/a7!glmg.baf~
           ~%MOD_FOLDER%/scripts/a7!glbr.baf~
           ~%MOD_FOLDER%/scripts/a7!glma.baf~
+          EVAL
 END
 
 
