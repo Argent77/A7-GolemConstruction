@@ -28,8 +28,10 @@ IF
   %random%
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     ReallyForceSpellDeadRES("a7!sxcl2",Myself)
     ReallyForceSpellDeadRES("a7!sxcl2",Myself)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -40,8 +42,10 @@ IF
   %random%
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     ReallyForceSpellDeadRES("a7!sxst2",Myself)
     ReallyForceSpellDeadRES("a7!sxst2",Myself)
+    SetInterrupt(TRUE)
 END
 
 // Work-around for issue: Fix creature specifications

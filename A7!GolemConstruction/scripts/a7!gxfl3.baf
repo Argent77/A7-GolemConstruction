@@ -7,8 +7,10 @@ IF
   RandomNum(2, 1)
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     ReallyForceSpellDeadRES("a7!syfl1",Myself)
     ReallyForceSpellDeadRES("a7!syfl1",Myself)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -18,8 +20,10 @@ IF
   RandomNum(2, 1)
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     ReallyForceSpellDeadRES("a7!syst1",Myself)
     ReallyForceSpellDeadRES("a7!syst1",Myself)
+    SetInterrupt(TRUE)
 END
 
 IF

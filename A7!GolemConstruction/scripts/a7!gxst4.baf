@@ -6,8 +6,10 @@ IF
   StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     ReallyForceSpellDeadRES("a7!syst2",Myself)
     ReallyForceSpellDeadRES("a7!syst2",Myself)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -16,8 +18,10 @@ IF
   StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     ReallyForceSpellDeadRES("a7!syfl2",Myself)
     ReallyForceSpellDeadRES("a7!syfl2",Myself)
+    SetInterrupt(TRUE)
 END
 
 IF

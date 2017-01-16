@@ -27,8 +27,10 @@ IF
   RandomNum(%chance%, 1)
 THEN
   RESPONSE #100
+    SetInterrupt(FALSE)
     ReallyForceSpellDeadRES("a7!sxad1",Myself)
     ReallyForceSpellDeadRES("a7!sxad1",Myself)
+    SetInterrupt(TRUE)
 END
 
 // Work-around for issue: Fix creature specifications
