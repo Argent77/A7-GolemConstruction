@@ -174,6 +174,19 @@ The high speed transportation generates a shockwave that will blow away and caus
 
 Since this ability is part of the golem's nature it does not have to wait for its aura to be cleansed before using the same or another ability again.~
 
+@20160 = ~Banish Golem Spirit~
+@20161 = ~Banish Golem Spirit
+(Conjuration/Summoning)
+
+Level: 6
+Range: Visual range of the caster
+Duration: Permanent
+Casting time: 9
+Area of Effect: 1 creature
+Saving Throw: Neg.
+
+This spell attempts to sever the connection between golem body and the elemental spirit bound to it. If the target fails a Saving Throw vs. Spell it is destroyed instantly. Otherwise the target takes 2d6 damage and has a 25% chance to go berserk for five rounds. Perfect golem variants are not affected. The target's Magic Resistance, if any, does not affect this spell.~
+
 
 // Misc. strings
 @21000 = ~Engaged in mental combat~
@@ -200,3 +213,4 @@ Since this ability is part of the golem's nature it does not have to wait for it
 @21023 = ~Dehydrated into Stone Golem~
 @21024 = ~Corroded by sunlight~
 @21025 = ~Heated up~
+@21026 = ~Discovered a spell scroll: Banish Golem Spirit~

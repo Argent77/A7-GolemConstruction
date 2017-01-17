@@ -598,3 +598,58 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
   // Fire Arrow trap
   COPY ~%MOD_FOLDER%/spells/iwdee/a7!tfa.spl~ ~override~
 END
+
+
+// Mage spell "Banish Golem Spirit"
+COPY_EXISTING ~pskullt.pro~ ~override/a7!bskul.pro~
+  WRITE_ASCII 0x104 ~A7!BSKUL~ #8
+
+ADD_PROJECTILE ~override/a7!bskul.pro~
+
+COPY ~%MOD_FOLDER%/spells/a7!wi61.spl~ ~override~
+  SAY NAME1 @20160  // Banish Golem Spirit
+  SAY UNIDENTIFIED_DESC @20161  // Banish Golem Spirit description
+  READ_LONG 0x64 ofsAbil
+  READ_SHORT 0x68 numAbil
+  FOR (idx = 0; idx < numAbil; idx += 1) BEGIN
+    SET ofs = ofsAbil + (idx * 0x28)
+    WRITE_SHORT (ofs + 0x26) ~%a7!bskul%~
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 324      // Immunity to spell and message
+    target = 2        // Preset target
+    power = 0         // don't set to nonzero to affect even bone or magic golems
+    parameter2 = 28   // RACE != GOLEM
+    timing = 0        // Instant/Limited
+    duration = 1
+    resist_dispel = 2
+    insert_point = 0
+  STR_VAR
+    resource = "A7!WI61"
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 324      // Immunity to spell and message
+    target = 2        // Preset target
+    power = 0         // don't set to nonzero to affect even bone or magic golems
+    parameter1 = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_PERFECT~)
+    parameter2 = 110  // SPLSTATE = parameter1
+    timing = 0        // Instant/Limited
+    duration = 1
+    resist_dispel = 2
+    insert_point = 0
+  STR_VAR
+    resource = "A7!WI61"
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!scl1.itm~ ~override~
+  SAY NAME2 @20160  // Banish Golem Spirit
+  SAY IDENTIFIED_DESC @20161  // Banish Golem Spirit description
+
+COPY ~%MOD_FOLDER%/spells/a7!bskul.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wi61a.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wi61b.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wi61c.bam~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wi61a.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wi61b.eff~ ~override~

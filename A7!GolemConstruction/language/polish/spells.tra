@@ -175,6 +175,19 @@ Zdolność ta pozwala golemowi błyskawic na przeniesienie się w wybrane miejsc
 
 Ze względu na to, że zdolność ta jest wynikiem takiej, a nie innej natury golema, nie musi on czekać, aż jego aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności.~
 
+@20160 = ~Banish Golem Spirit~
+@20161 = ~Banish Golem Spirit
+(Conjuration/Summoning)
+
+Level: 6
+Range: Visual range of the caster
+Duration: Permanent
+Casting time: 9
+Area of Effect: 1 creature
+Saving Throw: Neg.
+
+This spell attempts to sever the connection between golem body and the elemental spirit bound to it. If the target fails a saving throw vs. spell it is destroyed instantly. Otherwise the target takes 2d6 damage and has a 25% chance to go berserk for five rounds. Perfect golem variants are not affected. The target's Magic Resistance, if any, does not affect this spell.~
+
 
 // Misc. strings
 @21000 = ~Pochłonięty walką umysłową~
@@ -201,3 +214,4 @@ Ze względu na to, że zdolność ta jest wynikiem takiej, a nie innej natury go
 @21023 = ~Dehydrated into Stone Golem~
 @21024 = ~Corroded by sunlight~
 @21025 = ~Heated up~
+@21026 = ~Discovered a spell scroll: Banish Golem Spirit~

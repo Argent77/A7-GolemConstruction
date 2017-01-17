@@ -169,6 +169,19 @@ Son déplacement à grande vitesse génère une onde de choc qui renverse et inf
 
 Puisque cette capacité fait partie intégrante de la nature du golem, ce dernier n'a pas besoin d'attendre avant de l'utiliser à nouveau, ni ou une autre.~
 
+@20160 = ~Banish Golem Spirit~
+@20161 = ~Banish Golem Spirit
+(Conjuration/Summoning)
+
+Level: 6
+Range: Visual range of the caster
+Duration: Permanent
+Casting time: 9
+Area of Effect: 1 creature
+Saving Throw: Neg.
+
+This spell attempts to sever the connection between golem body and the elemental spirit bound to it. If the target fails a saving throw vs. spell it is destroyed instantly. Otherwise the target takes 2d6 damage and has a 25% chance to go berserk for five rounds. Perfect golem variants are not affected. The target's Magic Resistance, if any, does not affect this spell.~
+
 
 // Misc. strings
 @21000 = ~Engagé dans un combat mental~
@@ -195,3 +208,4 @@ Puisque cette capacité fait partie intégrante de la nature du golem, ce dernie
 @21023 = ~Dehydrated into Stone Golem~
 @21024 = ~Corroded by sunlight~
 @21025 = ~Heated up~
+@21026 = ~Discovered a spell scroll: Banish Golem Spirit~
