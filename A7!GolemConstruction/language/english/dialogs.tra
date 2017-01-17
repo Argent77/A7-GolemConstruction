@@ -64,6 +64,8 @@
 @41050 = ~You cannot have any more golems following you.~
 @41051 = ~List available golem types~
 @41052 = ~The following golem types have been learned by <GABBER>:~
+@41053 = ~Fix: Reset golem counter (active golems: <A7GLCNT>)~
+@41054 = ~The counter reset is still in process. You have to try again later.~
 
 
 // *** Wish Djinni dialog ***

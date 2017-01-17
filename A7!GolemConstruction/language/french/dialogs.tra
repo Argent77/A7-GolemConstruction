@@ -64,6 +64,8 @@
 @41050 = ~Vous ne pouvez avoir davantage de serviteurs golems.~
 @41051 = ~Quels types de golems puis-je fabriquer, déjà ?~
 @41052 = ~<GABBER> a appris à fabriquer les types de golems suivants :~
+@41053 = ~Fix: Reset golem counter (active golems: <A7GLCNT>)~
+@41054 = ~The counter reset is still in process. You have to try again later.~
 
 
 // *** Wish Djinni dialog ***

@@ -64,6 +64,8 @@
 @41050 = ~Nie możesz kontrolować większej ilości golemów.~
 @41051 = ~Wyświetla listę dostępnych typów golemów~
 @41052 = ~Postać nauczyła się budowy następujących typów golemów:~
+@41053 = ~Fix: Reset golem counter (active golems: <A7GLCNT>)~
+@41054 = ~The counter reset is still in process. You have to try again later.~
 
 
 // *** Wish Djinni dialog ***

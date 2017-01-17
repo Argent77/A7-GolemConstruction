@@ -4,14 +4,15 @@ BEGIN ~a7!smdlg~
 
 IF ~Global("stage", "LOCALS", 0)~ Golem.Prepare
   SAY @41009 /* You prepare yourself for the task before you... */
-  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initCancelled", "LOCALS", 1)~ + Golem.Location.Cancelled
-  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initDragonsEye", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct30")~ EXIT
-  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initSeveredHand", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct31")~ EXIT
-  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initDornsDeep", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct32")~ EXIT
-  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initLowerDornsDeep", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct33")~ EXIT
-  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initGloomfrost", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) StartCutSceneMode() StartCutScene("a7!ct34")~ EXIT
-  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("A7!Debug", "GLOBAL", 1)~ DO ~SetGlobal("stage", "LOCALS", 1)~ + Golem.Type
-  IF ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)~ + Golem.Limit.Reached
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initCancelled", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", -1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initDragonsEye", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct30")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initSeveredHand", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct31")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initDornsDeep", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct32")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initLowerDornsDeep", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct33")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initGloomfrost", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct34")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("A7!Debug", "GLOBAL", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
+  IF ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)~ DO ~SetGlobal("stage", "LOCALS", -2) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
+  IF ~GlobalTimerNotExpired("A7!GolemCountTimer", "GLOBAL")~ + Golem.Counter.Active
 END
 
 IF ~Global("stage", "LOCALS", 1)~ Golem.Type
@@ -28,6 +29,7 @@ IF ~Global("stage", "LOCALS", 1)~ Golem.Type
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + @41007 /* Exotic Golem */ + Golem.Type.Exotic
   ++ @41051 /* List available golem types */ + Golem.List.Init
+  ++ @41053 /* Fix: Reset golem counter (active golems: <A7GLCNT>) */ DO ~ SetGlobal("A7!GolemCount", "GLOBAL", 0) SetGlobalTimer("A7!GolemCountTimer", "GLOBAL", 12) DestroySelf()~ EXIT
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
@@ -176,8 +178,15 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 9)~ Golem.Type
   IF ~Global("GolemType", "LOCALS", 13)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smru", Myself)) DestroySelf()~ EXIT
 END
 
-IF ~~ Golem.Limit.Reached
+IF ~Global("stage", "LOCALS", -2)~ Golem.Limit.Reached
   SAY @41050 /* You cannot have any more golems following you. */
+  ++ @41053 /* Fix: Reset golem counter (active golems: <A7GLCNT>) */ DO ~ SetGlobal("A7!GolemCount", "GLOBAL", 0) SetGlobalTimer("A7!GolemCountTimer", "GLOBAL", 12) DestroySelf()~ EXIT
+  ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
+END
+
+
+IF ~~ Golem.Counter.Active
+  SAY @41054 /* The counter reset is still in process. You have to try again later. */
   IF ~~ DO ~DestroySelf()~ EXIT
 END
 
@@ -329,9 +338,10 @@ IF ~~ Golem.Type.Exotic
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
-IF ~~ Golem.Location.Cancelled
+IF ~Global("stage", "LOCALS", -1)~ Golem.Location.Cancelled
   SAY @41010 /* ...but are unable to do so in this location. */
-  IF ~~ DO ~DestroySelf()~ EXIT
+  ++ @41053 /* Fix: Reset golem counter (active golems: <A7GLCNT>) */ DO ~ SetGlobal("A7!GolemCount", "GLOBAL", 0) SetGlobalTimer("A7!GolemCountTimer", "GLOBAL", 12) DestroySelf()~ EXIT
+  ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
 
 

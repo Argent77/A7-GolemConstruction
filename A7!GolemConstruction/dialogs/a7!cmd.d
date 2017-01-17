@@ -13,7 +13,7 @@ IF ~Allegiance(LastTalkedToBy, PC) OR(2) Global("MasterOverride", "LOCALS", 1) N
       DO ~SetGlobal("Command", "LOCALS", 0)~ EXIT
   + ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 0) !Allegiance(Myself, FAMILIAR)~ + @45002 /* Follow me! */
-      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("Command", "LOCALS", 0) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar()~ EXIT
+      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("CountActive", "LOCALS", 1) SetGlobal("Command", "LOCALS", 0) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar()~ EXIT
   + ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 0) !Allegiance(Myself, FAMILIAR)~ + @45002 /* Follow me! */ + Golem.Limit.Reached
 
@@ -21,7 +21,7 @@ IF ~Allegiance(LastTalkedToBy, PC) OR(2) Global("MasterOverride", "LOCALS", 1) N
       DO ~SetGlobal("Command", "LOCALS", 1)~ EXIT
   + ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 1) !Allegiance(Myself, FAMILIAR)~ + @45003 /* Follow and protect me! */
-      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("Command", "LOCALS", 1) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar()~ EXIT
+      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("CountActive", "LOCALS", 1) SetGlobal("Command", "LOCALS", 1) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar()~ EXIT
   + ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 1) !Allegiance(Myself, FAMILIAR)~ + @45003 /* Follow and protect me! */ + Golem.Limit.Reached
 

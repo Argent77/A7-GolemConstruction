@@ -64,6 +64,8 @@
 @41050 = ~Euch können keine weiteren Golems auf einmal folgen.~
 @41051 = ~Alle verfügbaren Golemtypen aufzählen~
 @41052 = ~<GABBER> hat die folgenden Golemtypen erlernt:~
+@41053 = ~Fix: Golemzähler zurücksetzen (Aktive Golems: <A7GLCNT>)~
+@41054 = ~Das Zurücksetzen des Zählers läuft noch. Versucht es später noch einmal.~
 
 
 // *** Wish Djinni dialog ***

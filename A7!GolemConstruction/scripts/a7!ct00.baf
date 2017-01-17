@@ -1,0 +1,17 @@
+// *** Generic golem construction cutscene ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    FadeFromColor([15.0],0)
+    Wait(1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

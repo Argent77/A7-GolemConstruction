@@ -73,3 +73,29 @@ THEN
     Kill(Myself)
     SetInterrupt(TRUE)
 END
+
+// Reset golem count: register this golem as counted
+IF
+  GlobalTimerNotExpired("A7!GolemCountTimer", "GLOBAL")
+  Global("CountActive", "LOCALS", 0)
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("CountActive", "LOCALS", 1)
+    IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("A7!GolemCountTimer", "GLOBAL")
+  Global("CountActive", "LOCALS", 1)
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("CountActive", "LOCALS", 0)
+    SetInterrupt(TRUE)
+    Continue()
+END
