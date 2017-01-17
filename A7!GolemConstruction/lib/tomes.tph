@@ -697,30 +697,32 @@ END
 
 
 // Add chance of gaining spell scrolls when using tomes
-ACTION_FOR_EACH tome IN ~a7!tom01.itm~ ~a7!tom02.itm~ ~a7!tom03.itm~ ~a7!tom04.itm~ ~a7!tom05.itm~ ~a7!tom06.itm~ ~a7!tom07.itm~ 
-                        ~a7!tom08.itm~ ~a7!tom09.itm~ ~a7!tom0a.itm~ ~a7!tom0b.itm~ ~a7!tom0c.itm~ ~a7!tom0d.itm~ BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%tome%~) BEGIN
-    COPY_EXISTING ~%tome%~ ~override~
-      // Discover scroll Banish Golem Spirit (30% chance)
-      LPF ADD_ITEM_EFFECT
-      INT_VAR
-        opcode = 122      // Create inventory item
-        target = 1        // Self
-        parameter1 = 1    // # to create
-        timing = 9        // Instant/Permanent
-        probability1 = 29
-        probability2 = 0
-      STR_VAR
-        resource = "A7!SCL1"  // ITM resource
-      END
-      LPF ADD_ITEM_EFFECT
-      INT_VAR
-        opcode = 139      // Display String
-        target = 1        // Self
-        parameter1 = RESOLVE_STR_REF(@21026)  // Discovered a spell scroll: Banish Golem Spirit
-        timing = 9        // Instant/Permanent
-        probability1 = 29
-        probability2 = 0
-      END
+ACTION_IF (NOT GAME_IS ~bgee~) BEGIN
+  ACTION_FOR_EACH tome IN ~a7!tom01.itm~ ~a7!tom02.itm~ ~a7!tom03.itm~ ~a7!tom04.itm~ ~a7!tom05.itm~ ~a7!tom06.itm~ ~a7!tom07.itm~ 
+                          ~a7!tom08.itm~ ~a7!tom09.itm~ ~a7!tom0a.itm~ ~a7!tom0b.itm~ ~a7!tom0c.itm~ ~a7!tom0d.itm~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%tome%~) BEGIN
+      COPY_EXISTING ~%tome%~ ~override~
+        // Discover scroll Banish Golem Spirit (30% chance)
+        LPF ADD_ITEM_EFFECT
+        INT_VAR
+          opcode = 122      // Create inventory item
+          target = 1        // Self
+          parameter1 = 1    // # to create
+          timing = 9        // Instant/Permanent
+          probability1 = 29
+          probability2 = 0
+        STR_VAR
+          resource = "A7!SCL1"  // ITM resource
+        END
+        LPF ADD_ITEM_EFFECT
+        INT_VAR
+          opcode = 139      // Display String
+          target = 1        // Self
+          parameter1 = RESOLVE_STR_REF(@21026)  // Discovered a spell scroll: Banish Golem Spirit
+          timing = 9        // Instant/Permanent
+          probability1 = 29
+          probability2 = 0
+        END
+    END
   END
 END

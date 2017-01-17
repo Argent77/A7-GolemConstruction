@@ -634,7 +634,7 @@ COPY ~%MOD_FOLDER%/spells/a7!wi61.spl~ ~override~
     target = 2        // Preset target
     power = 0         // don't set to nonzero to affect even bone or magic golems
     parameter1 = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_PERFECT~)
-    parameter2 = 110  // SPLSTATE = parameter1
+    parameter2 = 76   // SPLSTATE = parameter1
     timing = 0        // Instant/Limited
     duration = 1
     resist_dispel = 2
