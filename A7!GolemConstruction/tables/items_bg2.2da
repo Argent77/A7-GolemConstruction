@@ -6,6 +6,8 @@ CONTAINER   AR0315      A7!Container1   SCRL1H    1     0       0
 CONTAINER   AR0603      Container*5     SCRL2D    1     0       0
 CONTAINER   AR0603      Container*3     SCRL97    1     0       0
 CONTAINER   OH6500      A7!Shelf1       SCRL8G    1     0       0
+STORE       RIBALD3     *               A7!SCL1   1     0       0
+STORE       25SPELL     *               A7!SCL1   1     0       0
 ACTOR       ARNMAN07    UNSTEALABLE     A7!BODY   1     0       0
 ACTOR       LIN         UNSTEALABLE     A7!BODY   1     0       0
 STORE       HGKAR01     *               A7!BODY   5     0       0

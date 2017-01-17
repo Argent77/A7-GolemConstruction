@@ -8,7 +8,7 @@
 // *** Dialog: Gelarith of the Severed Hand ***
 @121000 = ~The Astrolab looks like very advanced technology. Can I use it to construct golems in this place?~
 @121001 = ~I must take my leave. Farewell.~
-@121002 = ~Golems you say? Hmm. We have built the Astrolab primarily for researching space and time. They would be of little use for the task you suggested.~
+@121002 = ~Golems you say? Hmm. We have built the Astrolab primarily for researching space and time. It would be of little use for the task you suggested.~
 @121003 = ~However, there are tools right over there on the table that have been used to construct and maintain the Astrolab and other machinery. You can use them to build your golems. But don't touch any of the other devices in this room.~
 @121004 = ~Understood. And thank you.~
 
@@ -37,7 +37,7 @@
 @123000 = ~Your forge is impressive. Can I use it to construct golems in this place?~
 @123001 = ~I couldn't help but notice your impressive forge. Before I go, would you allow me to use it for constructing golems in this place?~
 @123002 = ~I understand. Your forge is impressive, Tiernon. Can I use it to construct golems in this place?~
-@123003 = ~If you say so? I have noticed your impressive forge. Can I use it to construct golems in this place?~
+@123003 = ~If you say so. I have noticed your impressive forge. Can I use it to construct golems in this place?~
 @123004 = ~I couldn't help but notice your impressive forge. Before you go rest, would you allow me to use it for constructing golems in this place?~
 @123005 = ~Eh? The forge is like a part of m'self. But be my guest if ye insist so much. Just don't be hammerin' it to oblivion with yer clumsy smithing skills.~
 @123006 = ~Thank you, Tiernon.~

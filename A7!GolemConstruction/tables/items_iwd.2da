@@ -96,6 +96,7 @@ CONTAINER   AR9101      Scrolls                   SCCLITE   1     0       0
 CONTAINER   AR9717      Container*3               SCCLITE   1     0       0
 STORE       EDION       *                         SCCLITE   1     0       0
 STORE       KIERAN2     *                         SCCLITE   1     0       0
+STORE       LDD_NYM     *                         A7!SCL1   1     0       0
 CONTAINER   AR1201      Chest*2                   A7!BODY   1     0       0
 CONTAINER   AR3101      Sarcophagus*1             A7!BODY   1     0       0
 CONTAINER   AR4001      Erevain's*Body            A7!BODY   1     0       0
