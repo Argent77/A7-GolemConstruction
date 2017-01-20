@@ -520,7 +520,12 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     SAY IDENTIFIED_DESC @100022 // ...
 END
 ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  // TODO: Add a note early on to give the player a hint about the earliest building location
+  // Add a note early on to give the player a hint about a golem building location
+  COPY ~%MOD_FOLDER%/items/a7!note3.itm~ ~override~
+    SAY NAME1 @100019  // Scribbled Notes
+    SAY NAME2 @100019  // Scribbled Notes
+    SAY UNIDENTIFIED_DESC @100027 // ...
+    SAY IDENTIFIED_DESC @100027 // ...
 END
 
 COPY ~%MOD_FOLDER%/items/a7!cnote.bam~ ~override~
