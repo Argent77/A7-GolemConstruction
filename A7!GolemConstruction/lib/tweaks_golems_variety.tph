@@ -348,7 +348,12 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
         REPLACE_TEXTUALLY ~"GOLADA01"~ ~"A7!GXMI3"~
       END
 
-      REPLACE_TEXTUALLY ~"GOLMAG01"~ ~"A7!GXMA"~
+      SET chance = RANDOM (0 3)
+      PATCH_IF (chance = 0) BEGIN
+        REPLACE_TEXTUALLY ~"GOLMAG01"~ ~"A7!GXLT"~
+      END ELSE BEGIN
+        REPLACE_TEXTUALLY ~"GOLMAG01"~ ~"A7!GXMA"~
+      END
 
       SET chance = RANDOM (0 4)
       PATCH_IF (chance < 2) BEGIN
@@ -475,9 +480,9 @@ REPLACE_STATE_TRIGGER ~suelf2~ 4 ~Global("ElvenAvatar","GLOBAL",0) Dead("a7!gxcl
         END ELSE PATCH_IF (~%value%~ STRING_EQUAL_CASE ~golmag01~) BEGIN
           SET chance = RANDOM (0 3)
           PATCH_IF (chance = 0) BEGIN
-            REPLACE_TEXTUALLY ~golmag01~ ~a7!gxlt ~
+            REPLACE_TEXTUALLY ~golmag01~ ~a7!gxlt~
           END ELSE BEGIN
-            REPLACE_TEXTUALLY ~golmag01~ ~a7!gxma ~
+            REPLACE_TEXTUALLY ~golmag01~ ~a7!gxma~
           END
         END
       END

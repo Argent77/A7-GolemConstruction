@@ -646,6 +646,9 @@ COPY ~%MOD_FOLDER%/spells/a7!wi61.spl~ ~override~
 COPY ~%MOD_FOLDER%/spells/a7!scl1.itm~ ~override~
   SAY NAME2 @20160  // Banish Golem Spirit
   SAY IDENTIFIED_DESC @20161  // Banish Golem Spirit description
+  PATCH_IF (GAME_IS ~iwdee~) BEGIN
+    WRITE_ASCII 0x58 "" #8
+  END
 
 COPY ~%MOD_FOLDER%/spells/a7!bskul.bam~ ~override~
      ~%MOD_FOLDER%/spells/a7!wi61a.bam~ ~override~
