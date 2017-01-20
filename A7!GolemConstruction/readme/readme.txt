@@ -74,8 +74,8 @@ In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesvale may be suita
 Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 
 your Pocket Plane may work, after installing some equipment.
 In IWD:EE you can try the third level of Dragon's Eye, Larrel's Study of the Severed Hand, 
-Bandoth's Tower in Dorn's Deep, Malavon's Home in Lower Dorn's Deep or Tiernon's Forge in 
-Gloomfrost (HoW).
+Bandoth's Tower in Dorn's Deep, Malavon's Home in Lower Dorn's Deep or Tiernon's Forge in the 
+Gloomfrost Mountains (HoW).
 
 Golems may follow simple commands. To change a command simply talk to them (you may have to force 
 the talk by pressing the Talk button, or pressing F1).
@@ -156,8 +156,9 @@ History
 
 3.0
 - Added content for IWD:EE
-- Added Tweaks component "Make golems vulnerable to specific spell effects"
-- Added Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new Tweaks component "Make golems vulnerable to specific spell effects"
+- Added new Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new spell "Banish Golem Spirit"
 - Fixed stats and attributes of several golem types and variants
 
 2.4

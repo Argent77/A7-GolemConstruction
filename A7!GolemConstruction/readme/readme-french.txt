@@ -157,8 +157,9 @@ History
 
 3.0
 - Added content for IWD:EE
-- Added Tweaks component "Make golems vulnerable to specific spell effects"
-- Added Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new Tweaks component "Make golems vulnerable to specific spell effects"
+- Added new Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new spell "Banish Golem Spirit"
 - Fixed stats and attributes of several golem types and variants
 
 2.4

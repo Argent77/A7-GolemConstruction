@@ -73,6 +73,9 @@ in Baldurs Gate, der Ausgrabungsstelle der Zwerge und in den Ruinen von Kanaglym
 Schatten von Amn gibt es die Sphäre der Ebenen und Jermiens Heim in Imnestal. Ihr könnt es auch in 
 der Bibliothek der Elementarmagier in der zweiten Ebene der Wachenden Festung versuchen. In Thron 
 des Bhaal könnte das Einsprengsel genutzt werden, wenn ihr die richtige Ausrüstung installiert.
+In IWD:EE kann man es auf der dritten Ebene des Drachenauges, in Larrels Arbeitszimmer der 
+Abgetrennten Hand, in Bandoths Turm von Dorntief, in Malavons Palast in Unter-Dorntief oder in 
+Tiernons Schmiede in den Finsterfrostbergen versuchen.
 
 Golems folgen einfachen Befehlen. Redet mit dem Golem, um neue Befehle zu geben. Man kann das Reden 
 mit der Reden-Schaltfläche (oder F1) erzwingen.
@@ -153,8 +156,9 @@ History
 
 3.0
 - Added content for IWD:EE
-- Added Tweaks component "Make golems vulnerable to specific spell effects"
-- Added Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new Tweaks component "Make golems vulnerable to specific spell effects"
+- Added new Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new spell "Banish Golem Spirit"
 - Fixed stats and attributes of several golem types and variants
 
 2.4
