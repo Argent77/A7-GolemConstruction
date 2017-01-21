@@ -47,7 +47,7 @@ Lesser Flesh Golem:
 - Stats:
   - STR: 13
   - HP: 30
-  - AC: 9
+  - AC: 7
   - THAC0: 12
   - APR: 1
   - Saves (death/wand/polymorph/breath/spell): 12/13/12/13/13
@@ -66,7 +66,7 @@ Flesh Golem:
 - Stats:
   - STR: 14
   - HP: 40
-  - AC: 6
+  - AC: 5
   - THAC0: 10
   - APR: 3/2
   - Saves: 10/11/10/11/11
@@ -138,7 +138,7 @@ Lesser Clay Golem:
 - Stats:
   - STR: 13
   - HP: 35
-  - AC: 7
+  - AC: 5
   - THAC0: 10
   - APR: 1
   - Saves: 9/11/10/10/12
@@ -161,7 +161,7 @@ Clay Golem:
 - Stats:
   - STR: 15
   - HP: 45
-  - AC: 4
+  - AC: 3
   - THAC0: 8
   - APR: 1
   - Saves: 7/9/8/8/10
@@ -248,7 +248,7 @@ Lesser Stone Golem:
 - Stats:
   - STR: 13
   - HP: 40
-  - AC: 7
+  - AC: 5
   - THAC0: 9
   - APR: 1
   - Saves: 7/9/8/7/10
@@ -265,7 +265,7 @@ Stone Golem:
 - Stats:
   - STR: 15
   - HP: 50
-  - AC: 4
+  - AC: 3
   - THAC0: 7
   - APR: 3/2
   - Saves: 5/7/6/5/8

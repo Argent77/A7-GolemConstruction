@@ -51,7 +51,7 @@ Niederer Fleischgolem:
 - Eigenschaften:
   - Stärke: 13
   - TP: 30
-  - RK: 9
+  - RK: 7
   - ETW0: 12
   - APR: 1
   - Rettungswürfe (Tod/Zauberstab/Verwandlung/Odemwaffe/Zauber): 12/13/12/13/13
@@ -70,7 +70,7 @@ Fleischgolem:
 - Eigenschaften:
   - Stärke: 14
   - TP: 40
-  - RK: 6
+  - RK: 5
   - ETW0: 10
   - APR: 3/2
   - Rettungswürfe: 10/11/10/11/11
@@ -142,7 +142,7 @@ Niederer Tongolem:
 - Eigenschaften:
   - Stärke: 13
   - TP: 35
-  - RK: 7
+  - RK: 5
   - ETW0: 10
   - APR: 1
   - Rettungswürfe: 9/11/10/10/12
@@ -252,7 +252,7 @@ Niederer Steingolem:
 - Eigenschaften:
   - Stärke: 13
   - TP: 40
-  - RK: 7
+  - RK: 5
   - ETW0: 9
   - APR: 1
   - Rettungswürfe: 7/9/8/7/10
