@@ -5,6 +5,15 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_mini~ ~^.+\.bam$~ BEGIN
   COPY ~%BASH_FOR_FILESPEC%~ ~override~
 END
 
+
+// Fix: IWD:EE contains corrupted Clay Golem BAMs in v1.4.0
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_clay~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+END
+
+
 // PST Flesh Golem animation
 LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
 ACTION_IF (slot <= 0) BEGIN
@@ -1653,8 +1662,6 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   ACTION_FOR_EACH file IN ~a7!nym01.wav~ ~a7!nym02.wav~ ~a7!nym03.wav~ ~a7!nym04.wav~ ~a7!nym05.wav~ BEGIN
     ACTION_IF (FILE_EXISTS ~%MOD_FOLDER%/language/%LANGUAGE%/%file%~) BEGIN
       COPY ~%MOD_FOLDER%/language/%LANGUAGE%/%file%~ ~override~
-    END ELSE BEGIN
-      COPY ~%MOD_FOLDER%/language/english/%file%~ ~override~
     END
   END
 END
