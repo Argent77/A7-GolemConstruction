@@ -8,13 +8,13 @@
 @20 = ~Golemy dla wrogich istot rzucajacych czary~
 @25 = ~Wieksza roznorodnosc wrogich golemow~
 @30 = ~Golemy z Twierdzy wojownika moga ci dalej sluzyc~
-@35 = ~Make golems vulnerable to specific spell effects~
-@40 = ~Reduce weapon immunities for constructed golems~
+@35 = ~Golemy staja sie podatne na okreslone efekty czarow~
+@40 = ~Redukuj niewrazliwosci na bron dla konstruowanych golemow~
 
-@100 = ~Ta modyfikacja wymaga uprzedniego zainstalowania BG:SoD lub BG2:EE.~
-@101 = ~Ta modyfikacja wymaga uprzedniego zainstalowania glownego komponentu.~
+@100 = ~Ten komponent wymaga uprzedniego zainstalowania BG:SoD, BG2:EE lub IWD:EE~
+@101 = ~Ten komponent wymaga uprzedniego zainstalowania glownego komponentu.~
 @102 = ~Nie znaleziono wolnej pozycji na animacje postaci.~
-@103 = ~Ta modyfikacja wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej.~
-@104 = ~Ta modyfikacja wymaga uprzedniego zainstalowania BG2:EE.~
-@105 = ~This component requires BG2:EE or IWD:EE to be installed.~
-@106 = ~This component requires BG:SoD or BG2:EE to be installed.~
+@103 = ~Ten komponent wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej, w przypadku BG:SoD i BG2:EE, albo do wersji 1.4 lub wyzszej, w przypadku IWD:EE.~
+@104 = ~Ten komponent wymaga uprzedniego zainstalowania BG2:EE.~
+@105 = ~Ten komponent wymaga uprzedniego zainstalowania BG2:EE lub IWD:EE.~
+@106 = ~Ten komponent wymaga uprzedniego zainstalowania BG:SoD lub BG2:EE.~

@@ -854,30 +854,25 @@ Bardziej zaawansowane golemy mogą również wykonywać następujące polecenia:
 Nie zapominaj dbać o swoje golemy, gdyż mogą one zacząć funkcjonować nieprawidłowo, jeśli zostaną mocno uszkodzone. Usterki te mogą zostać jednak usunięte za pomocą zdolności „Naprawienie golema”.
 
 
-Spells that are affecting golems in some way
-============================================
+Czary, które wpływają w jakiś sposób na golemy
+==============================================
 
-Since golems are non-living constructs they may be affected differently by certain spells. The following effects 
-can be triggered when the Tweaks component "Make golems vulnerable to specific spell effects" has been installed:
-- Flesh to Stone:
-  Turns Flesh Golems into Stone Golems of the same variant if they fail their save vs. Petrify/Polymorph.
-- Stone to Flesh:
-  Turns Stone Golems into Flesh Golems of the same variant if they fail their save vs. Petrify/Polymorph.
-- Abi-Dalzim's Horrid Wilting:
-  This spell dehydrates all Clay Golems in the area of effect and turns them into Stone Golems if they fail their save 
-  vs. Spell at -2 penalty.
-- Death Spell:
-  Kills Maggot Golems automatically (no save allowed).
-- Cone of Cold and Ice Storm:
-  Clay Golems hit by this spell are slowed for five rounds if they fail their save vs. Spell.
-- Sunray:
-  Causes the adamantine alloy of Adamantite Golems to deteriorate which reduces physical resistances permanently 
-  if they fail their save vs. Spell. The "Repair Golem" ability can remove this effect.
-- High-level fire-based spells:
-  These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage 
-  in addition to physical damage.
-  The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud and Fire 
-  Storm.
+Z racji tego, że golemy są nieożywionymi konstruktami, niektóre zaklęcia mogą na nie wpływać inaczej niż na innych. Następujące efekty mogą zostać wywołane po zainstalowaniu komponentu o nazwie „Golemy staja się podatne na określone efekty czarów”:
+- Ciało w kamień:
+  Przemienia golemy z ciała w kamienne golemy tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw petryfikacji/polimorfii.
+- Kamień w ciało:
+  Przemienia kamienne golemy w golemy z ciała tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw petryfikacji/polimorfii.
+- Plugawy uwiąd Abi-Dalzima:
+  Zaklęcie to sprawia, że wszystkie gliniane golemy zostają pozbawione całej zawartości wody, przemieniając się tym samym w kamienne golemy, jeśli nie wykonają rzutu obronnego przeciw czarom z modyfikatorem -2.
+- Zaklęcie śmierci:
+  Automatycznie zabija golemy larwalne (bez rzutu obronnego).
+- Stożek zimna i Lodowa nawałnica:
+  Trafione tym zaklęciem gliniane golemy zostają spowolnione na pięć rund, jeśli nie wykonają rzutu obronnego przeciw czarom.
+- Promień słońca:
+  Sprawia, że stop adamantyny, z którego zbudowane są adamantytowe golemy, ulega osłabieniu, osłabiając na stałe odporności golemów, jeśli te nie wykonają rzutu obronnego przeciw czarom. Zdolność „Naprawianie golema” usuwa ten efekt.
+- Wysokopoziomowe zaklęcia oparte na ogniu:
+  Zaklęcia te spowodują rozgrzanie żelaznych golemów na pięć rund (bez rzutu obronnego). W tym czasie mogą one, oprócz fizycznych obrażeń, zadawać również obrażenia od ognia.
+  Znane są następujące czary mogące wywołać ten efekt: Rój meteorów, Oddech smoka, Kometa, Zapalająca chmura oraz Burza ognia.
 
 
 Lokacje, w których można z powodzeniem budować golemy
@@ -895,7 +890,7 @@ Cienie Amn:
 - Kula sfer:
   Pierwszy obszar Kuli może być odpowiedni do budowy golemów (po pozbyciu się poprzedniego właściciela, rzecz jasna).
 - Dom Jermiena:
-  Można go przekonać go, by pozwolił ci korzystać ze swojego domu w Imnesvale do budowy własnych golemów.
+  Istnieje możliwość przekonania Jermiena, by ten użyczył swego domu w Imnesvale do budowania własnych golemów, jeśli postać główna potrafi rzucać czary lub w drużynie znajduje się Imoen.
 
 Twierdza Strażnika:
 - Drugi poziom:

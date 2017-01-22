@@ -175,24 +175,25 @@ Zdolność ta pozwala golemowi błyskawic na przeniesienie się w wybrane miejsc
 
 Ze względu na to, że zdolność ta jest wynikiem takiej, a nie innej natury golema, nie musi on czekać, aż jego aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności.~
 
-@20160 = ~Banish Golem Spirit~
-@20161 = ~Banish Golem Spirit
-(Conjuration/Summoning)
+@20160 = ~Wypędzenie ducha z golema~
+@20161 = ~Wypędzenie ducha z golema
+(Sprowadzanie/Przywoływanie)
 
-Level: 6
-Range: Visual range of the caster
-Duration: Permanent
-Casting time: 9
-Area of Effect: 1 creature
-Saving Throw: Neg.
+Poziom: 6
+Zasięg: pole widzenia rzucającego czar
+Czas działania: stały
+Czas rzucania: 9
+Obszar działania: 1 istota
+Rzut obronny: neguje
 
-This spell attempts to sever the connection between golem body and the elemental spirit bound to it. If the target fails a saving throw vs. spell it is destroyed instantly. Otherwise the target takes 2d6 damage and has a 25% chance to go berserk for five rounds. Perfect golem variants are not affected. The target's Magic Resistance, if any, does not affect this spell.~
+Czar ten próbuje zerwać połączenie pomiędzy ciałem golema a uwięzionym w nim duchem żywiołaka. Jeśli cel nie wykona rzutu obronnego przeciw czarom, zostaje natychmiast zniszczony. W innym wypadku otrzymuje 2k6 obrażeń i ma 25% szans na wpadnięcie w szał na pięć rund. Zaklęcie to nie działa na idealne warianty golemów. Posiadana przez cel odporność na magię nie ma wpływu na działanie tego czaru.~
 
 
 // Misc. strings
 @21000 = ~Pochłonięty walką umysłową~
 @21001 = ~Nie możesz budować golemów we wrogim środowisku.~
-@21002 = ~Wybudowanie golema sprawiło, że jesteś zmęczony i nieuważny. Przez następne pięć rund nie możesz rzucać czarów i jesteś mniej skuteczny w fizycznej walce.~~Wybudowanie golema sprawiło, że jesteś zmęczona i nieuważna. Przez następne pięć rund nie możesz rzucać czarów i jesteś mniej skuteczna w fizycznej walce.~
+@21002 = ~Wybudowanie golema sprawiło, że jesteś zmęczony i nieuważny. Przez następne pięć rund nie możesz rzucać czarów i jesteś mniej skuteczny w fizycznej walce.~
+         ~Wybudowanie golema sprawiło, że jesteś zmęczona i nieuważna. Przez następne pięć rund nie możesz rzucać czarów i jesteś mniej skuteczna w fizycznej walce.~
 @21003 = ~Stracono 4000 punktów doświadczenia~
 @21004 = ~Stracono 8000 punktów doświadczenia~
 @21005 = ~Stracono 16000 punktów doświadczenia~
@@ -209,9 +210,9 @@ This spell attempts to sever the connection between golem body and the elemental
 @21018 = ~Sparaliżowany~
 @21019 = ~Czary ochronne usunięte~
 @21020 = ~Tarcza błyskawic~
-@21021 = ~Turned into Stone Golem~
-@21022 = ~Turned into Flesh Golem~
-@21023 = ~Dehydrated into Stone Golem~
-@21024 = ~Corroded by sunlight~
-@21025 = ~Heated up~
-@21026 = ~Discovered a spell scroll: Banish Golem Spirit~
+@21021 = ~Przemieniony w kamiennego golema~
+@21022 = ~Przemieniony w golema z ciała~
+@21023 = ~Pozbawiony wody i przemieniony w kamiennego golema~
+@21024 = ~Skorodowany w wyniku działania promieni słonecznych~
+@21025 = ~Rozgrzany~
+@21026 = ~Odkryto czar: Wypędzenie ducha z golema~

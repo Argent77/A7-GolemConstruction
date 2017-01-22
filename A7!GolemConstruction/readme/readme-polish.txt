@@ -12,7 +12,7 @@ Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spel
 Ogólny zarys
 ~~~~~~~~~~~~
 
-Ta modyfikacja jest przeznaczona do następujących gier: Siege of Dragonspear, BG2:EE oraz EET (Enhanced Edition Trilogy). Pozwala ona osobom mogącym rzucać czary na budowę własnych golemów.
+Jest to modyfikacja do gry Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) i IWD:EE, która pozwala postaciom mogącym rzucać czary na budowę własnych golemów.
 
 W grze można napotkać dużą ilość golemów różnych typów. Są one silne, odporne i całkowicie lojalne swemu panu. Niestety są one zazwyczaj wrogie w stosunku do postaci gracza.
 
@@ -24,15 +24,15 @@ Golemy mogą istnieć praktycznie przez nieograniczoną ilość czasu (z pewnymi
 Instalacja
 ~~~~~~~~~~
 
-Jest to modyfikacja WeiDU, co oznacza, iż jest bardzo prosta w instalacji. Wystarczy rozpakować pobrane archiwum do katalogu z grą, a następnie uruchomić plik „setup-A7!GolemConstruction.exe”. Należy postępować zgodnie z instrukcjami, co spowoduje zainstalowanie modyfikacji. Zaleca się zainstalowanie tej modyfikacji przed rozpoczęciem kampanii „Siege of Dragonspear” (BGEE) lub rozpoczęcie nowej gry (BG2:EE).
+Jest to modyfikacja WeiDU, co oznacza, iż jest bardzo prosta w instalacji. Wystarczy rozpakować pobrane archiwum do katalogu z grą, a następnie uruchomić plik „setup-A7!GolemConstruction.exe”. Po wykonaniu wszystkich instrukcji możliwe będzie rozpoczęcie gry. Zaleca się instalację modyfikacji przed rozpoczęciem kampanii „Siege of Dragonspear” (w przypadku BG:EE) lub rozpoczęcie nowej gry (w przypadku BG2:EE lub IWD:EE).
 
-Ważne: Aby można było zainstalować tę modyfikację, gra musi zostać wcześniej zaktualizowana do wersji v2.0 lub wyższej.
+Ważne: Aby możliwa była instalacja tej modyfikacji, gra BG2:EE musi zostać zaktualizowana do wersji 2.0 lub wyższej, a gra IWD:EE do wersji 1.4 lub wyższej.
 
 
 Komponenty
 ~~~~~~~~~~
 
-1. Zdolność budowania golemów dla rzucających czary (BG:SoD, BG2:EE i EET)
+1. Zdolność budowania golemów dla rzucających czary (BG:SoD, BG2:EE, EET i IWD:EE)
 
 Jest to główny komponent tej modyfikacji. Instaluje on pewną liczbę podręczników do budowy golemów, które mogą być odnalezione w różnych miejscach Faerûnu. „Podręcznik budowy golemów” składa się z sześciu tomów zawierających wiedzę o budowie różnych rodzajów golemów. Każdy z tomów posiada pojedynczy ładunek potężnej magii, która zapewnia użytkownikowi możliwość używania zdolności „Budowanie golema” i „Naprawianie golema”. Po zużyciu zawartej w księdze magii będzie jej można dalej używać jako materiału źródłowego na temat określonych typów golemów.
 
@@ -44,11 +44,12 @@ Rodzaje golemów, których budowy można się nauczyć z Podręcznika budowy gol
 - Kamienne golemy w pomniejszych, zwykłych, większych oraz idealnych wariantach.
 - Żelazne golemy w pomniejszych, zwykłych, większych oraz idealnych wariantach.
 - Mithrilowe golemy w pomniejszych, zwykłych, większych oraz idealnych wariantach.
-- Adamantytowe golemy w pomniejszych, zwykłych, większych oraz idealnych wariantach.
+- Adamantytowe golemy w pomniejszych, zwykłych, większych i idealnych wariantach (nie dotyczy IWD:EE).
 
 Każdy golem wymaga materiałów niezbędnych do wykonania jego fizycznej powłoki oraz dodatkowych składników koniecznych do obdarzenia go kluczowymi właściwościami. Stworzenie idealnego wariantu jest wyczynem samym w sobie i wymaga ściśle określonego artefaktu, który musi zostać użyty w procesie zaklinania.
 
 Budowa golemów wymaga czasu i musi się odbywać w miejscach posiadających odpowiednie wyposażenie. W kampanii Siege of Dragonspear można do tego celu wykorzystać Czarodziejskie Rozmaitości, Skarbnicę Niewiedzy pod Krasnoludzkimi wykopaliskami oraz ruiny Kanaglymu, do których można się dostać z obszaru Podziemnej rzeki. W kampanii Cienie Amn odpowiednimi miejscami mogą być Kula sfer i dom Jermiena w Imnesvale. Biblioteka czarodzieja na drugim piętrze Twierdzy Strażnika też wydaje się odpowiednim wyborem. W Tronie Bhaala można skorzystać ze Sfery kieszeniowej, pod warunkiem zainstalowania w niej odpowiedniej aparatury.
+W IWDE:EE można spróbować szczęścia na trzecim poziomie Smoczego Oka, w gabinecie Larella w Odciętej Dłoni, wieży Bandotha w Głębi Dorna lub kuźni Tiernona w górach Ponurego Mrozu (Serce Zimy).
 
 Golemy mogą wykonywać proste polecenia. Aby je zmienić, należy po prostu z nimi porozmawiać (może być w tym celu konieczne wymuszenie rozmowy poprzez wciśnięcie przycisku Rozmowa lub klawisza F1).
 
@@ -74,25 +75,18 @@ Komponent ten dodaje szansę na to, że jeden lub więcej ocalałych z oblężen
 * Istnieje 33% szans na glinianego golema, jeśli ten ocalał.
 * Istnieje 15% szans na żelaznego golema, jeśli ten ocalał.
 
-2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE and EET)
-This component modifies a number of spells so that they can affect specific golem types in a 
-different and sometimes unexpected way. Some spells may cause special harmful effects while others 
-improve or even change the nature of golems. You can find out more in "golem_information.txt".
+2.6. Golemy stają się podatne na określone efekty czarów (wszystkie obsługiwane gry)
+Komponent ten modyfikuje pewną ilość zaklęć tak, aby działały one na określone rodzaje golemów w inny, czasem niespodziewany sposób. Niektóre czary mogą wywoływać u golemów określone szkodliwe efekty, inne zaś potrafią je wzmacniać lub nawet zmieniać ich strukturę. Więcej informacji znajdziesz w pliku „golem_information-polish.txt”.
 
-2.7. Reduce weapon immunities for constructed golems (for BG:SoD, BG2:EE and EET)
-A great number of enemies have trouble hitting golems because of their high weapon enchantment 
-immunities, even in later parts of the game. This component nerfs the power of constructed golems 
-by reducing their innate weapon enchantment immunities to increase the chance that enemies can 
-actually harm them.
-Weapon immunities will be reduced by one level on average, sometimes even more. For example, 
-golems with immunity to enchanted weapons +2 or less will become immune to enchantments of +1 or 
-less. Golems with immunity to non-enchanted weapons will lose weapon immunity altogether.
+2.7. Redukuj niewrażliwości na broń dla konstruowanych golemów (BG:SoD, BG2:EE i EET)
+Duża ilość wrogów ma problemy z trafianiem golemów ze względu na ich wysoką niewrażliwość na działanie broni, co widoczne jest nawet w późniejszych fragmentach gry. Komponent ten osłabia siłę konstruowanych golemów, redukując ich niewrażliwość na broń, co zwiększa szansę wrogów na ich zranienie. 
+Niewrażliwość na broń zostanie obniżona średnio o jeden poziom, czasem nawet więcej. Przykładowo, golemy niewrażliwe na działanie broni +2 lub słabszych staną się niewrażliwe na działanie broni o umagicznieniu +1 lub broni niemagicznych. Golemy niewrażliwe na działanie broni niemagicznych całkowicie stracą niewrażliwość.
 
 
 Szczegóły
 ~~~~~~~~~
 
-Patrz plik „golem_information-polish” w folderze „Readme”, w którym zawarto informacje o minimalnym poziomie czarującego, materiałach wymaganych do budowy każdego rodzaju golema, a także ich szczegółowe statystyki oraz opisy umiejętności i zdolności. 
+Patrz plik „golem_information-polish.txt” w folderze „Readme”, w którym zawarto informacje o minimalnym poziomie czarującego, materiałach wymaganych do budowy każdego rodzaju golema, a także ich szczegółowe statystyki oraz opisy umiejętności i zdolności. Informacje dotyczące IWD:EE można znaleźć w pliku „golem_information-iwdee.txt”.
 
 
 Credits
