@@ -1,44 +1,31 @@
 // *** Generic stuff that has to be defined (first) ***
 
 // SPECIFICS value for all constructed golem types
-OUTER_SET specific_golem  = "-1"
-OUTER_FOR (id = 200; id < 256; id += 1) BEGIN
-  // try to find a free slot first
-  OUTER_PATCH ~~ BEGIN
-    LOOKUP_IDS_SYMBOL_OF_INT name ~specific~ id
-  END
-  ACTION_IF (~%name%~ STRING_EQUAL ~%id%~) BEGIN
-    OUTER_SET specific_golem  = id
-    OUTER_SET id = 256
-  END
-END
-ACTION_IF (specific_golem < 0) BEGIN
-  // default to SPECIFIC value = 200
-  OUTER_SET specific_golem  = 200
-END
-APPEND ~specific.ids~ ~%specific_golem% A7!GOLEM~
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 200 STR_VAR idsFile = "specific.ids" identifier = "A7!GOLEM" RET value END
+OUTER_SET specific_golem = value
 
-// SPLSTATE values used for targeting specific golem types or variants
-APPEND ~splstate.ids~ ~167 A7!GOLEM_LESSER~ UNLESS ~A7!GOLEM_LESSER~
-APPEND ~splstate.ids~ ~168 A7!GOLEM_NORMAL~ UNLESS ~A7!GOLEM_NORMAL~
-APPEND ~splstate.ids~ ~169 A7!GOLEM_GREATER~ UNLESS ~A7!GOLEM_GREATER~
-APPEND ~splstate.ids~ ~170 A7!GOLEM_PERFECT~ UNLESS ~A7!GOLEM_PERFECT~
-APPEND ~splstate.ids~ ~171 A7!GOLEM_FLESH~ UNLESS ~A7!GOLEM_FLESH~
-APPEND ~splstate.ids~ ~172 A7!GOLEM_CLAY~ UNLESS ~A7!GOLEM_CLAY~
-APPEND ~splstate.ids~ ~173 A7!GOLEM_STONE~ UNLESS ~A7!GOLEM_STONE~
-APPEND ~splstate.ids~ ~174 A7!GOLEM_IRON~ UNLESS ~A7!GOLEM_IRON~
-APPEND ~splstate.ids~ ~175 A7!GOLEM_MITHRAL~ UNLESS ~A7!GOLEM_MITHRAL~
-APPEND ~splstate.ids~ ~178 A7!GOLEM_BONE~ UNLESS ~A7!GOLEM_BONE~
-APPEND ~splstate.ids~ ~180 A7!GOLEM_ICE~ UNLESS ~A7!GOLEM_ICE~
-APPEND ~splstate.ids~ ~182 A7!GOLEM_LIGHTNING~ UNLESS ~A7!GOLEM_LIGHTNING~
-APPEND ~splstate.ids~ ~183 A7!GOLEM_RUBY~ UNLESS ~A7!GOLEM_RUBY~
+// Defining SPLSTATE values used for targeting specific golem types or variants
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 167 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_LESSER" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 168 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_NORMAL" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 169 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_GREATER" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 170 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_PERFECT" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 171 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_FLESH" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 172 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_CLAY" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 173 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_STONE" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 174 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_IRON" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 175 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_MITHRAL" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 178 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_BONE" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 180 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_ICE" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 182 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_LIGHTNING" END
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 183 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_RUBY" END
 ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  APPEND ~splstate.ids~ ~184 A7!GOLEM_FIGHTER~ UNLESS ~A7!GOLEM_FIGHTER~  // Used for Animated Plates and similar constructs
+  // Used for Animated Plates and similar constructs
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 184 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_FIGHTER" END
 END ELSE BEGIN
-  APPEND ~splstate.ids~ ~176 A7!GOLEM_ADAMANTITE~ UNLESS ~A7!GOLEM_ADAMANTITE~
-  APPEND ~splstate.ids~ ~177 A7!GOLEM_MAGGOT~ UNLESS ~A7!GOLEM_MAGGOT~
-  APPEND ~splstate.ids~ ~179 A7!GOLEM_BRAIN~ UNLESS ~A7!GOLEM_BRAIN~
-  APPEND ~splstate.ids~ ~181 A7!GOLEM_MAGIC~ UNLESS ~A7!GOLEM_MAGIC~
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 176 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_ADAMANTITE" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 177 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_MAGGOT" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 179 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_BRAIN" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 181 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_MAGIC" END
 END
 
 // (max. number - 1) of available golems following you
