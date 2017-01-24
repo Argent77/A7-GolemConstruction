@@ -467,9 +467,11 @@ END
 ACTION_IF (GAME_IS ~iwdee~) BEGIN
   OUTER_TEXT_SPRINT dlgName ~%MOD_FOLDER%/dialogs/iwdee/a7!smdlg.d~
   OUTER_TEXT_SPRINT bafName ~%MOD_FOLDER%/scripts/iwdee/a7!smdlg.baf~
+  OUTER_TEXT_SPRINT bamName ~%MOD_FOLDER%/spells/iwdee/a7!smglb.bam~
 END ELSE BEGIN
   OUTER_TEXT_SPRINT dlgName ~%MOD_FOLDER%/dialogs/a7!smdlg.d~
   OUTER_TEXT_SPRINT bafName ~%MOD_FOLDER%/scripts/a7!smdlg.baf~
+  OUTER_TEXT_SPRINT bamName ~%MOD_FOLDER%/spells/a7!smglb.bam~
 END
 COMPILE ~%dlgName%~ EVAL
 COMPILE ~%bafName%~
@@ -486,7 +488,7 @@ COPY ~%MOD_FOLDER%/items/a7!invis.itm~ ~override~
      ~%MOD_FOLDER%/items/a7!nosel.itm~ ~override~
 
 COPY ~%MOD_FOLDER%/spells/a7!smdlg.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smglb.bam~ ~override~
+     ~%bamName%~ ~override~
 
 
 // "Repair Golem" ability
