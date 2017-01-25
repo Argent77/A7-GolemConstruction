@@ -878,7 +878,7 @@ Chaque golem dispose par défaut des capacités suivantes :
 1. Renvoi        : L'activer provoque la désintégration du golem. Elle est irréversible.
 2. Téléportation : Le golem se téléporte près d'un membre du groupe situé dans son champ de vision. Utile pour les 
                    golems de taille géante qui peuvent se trouver bloqués par des passages trop étroits pour qu'ils 
-				   les empruntent. Elle ne peut être utilisée avec succès que si aucun ennemi n'est en vue.
+                   les empruntent. Elle ne peut être utilisée avec succès que si aucun ennemi n'est en vue.
 
 Vous pouvez aussi donner des ordres simples à vos golems. Les modèles mineurs de golems de chair, d'argile et de pierre, 
 ainsi que les golems de vers peuvent obéir aux ordres suivants :

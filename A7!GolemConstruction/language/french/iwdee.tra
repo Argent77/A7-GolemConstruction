@@ -2,71 +2,71 @@
 // Misc. strings (index 120000..149999)
 
 // *** Misc. strings ***
-@120000 = ~La chaleur torride qui émane du fourneau vous brûle.~
+@120000 = ~La chaleur torride qui Ã©mane du fourneau vous brÃ»le.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
-@121000 = ~Manifestement, cet astrolabe est le fruit d'une technologie très avancée. Pourrais-je l'utiliser pour construire des golems ?~
+@121000 = ~Manifestement, cet astrolabe est le fruit d'une technologie trÃ¨s avancÃ©e. Pourrais-je l'utiliser pour construire des golems ?~
 @121001 = ~Je dois m'en aller. Au revoir.~
-@121002 = ~Des golems ? Hum. Nous avons construit l'Astrolabe principalement pour effectuer des recherches sur l'univers et le temps. Il vous serait de peu d'utilité pour ce que vous comptez faire.~
-@121003 = ~Cependant, vous trouverez sur la table de droite des outils qui nous ont servi à construire et à entretenir l'astrolabe et d'autres machines. Vous pouvez les utiliser pour construire vos golems. Mais ne touchez pas aux autres dispositifs de la pièce.~
+@121002 = ~Des golems ? Hum. Nous avons construit l'Astrolabe principalement pour effectuer des recherches sur l'univers et le temps. Il vous serait de peu d'utilitÃ© pour ce que vous comptez faire.~
+@121003 = ~Cependant, vous trouverez sur la table de droite des outils qui nous ont servi Ã  construire et Ã  entretenir l'astrolabe et d'autres machines. Vous pouvez les utiliser pour construire vos golems. Mais ne touchez pas aux autres dispositifs de la piÃ¨ce.~
 @121004 = ~Compris. Je vous remercie.~
 
 
 // *** Dialog: Bandoth of Lower Dorn's Deep ***
-@122000 = ~Votre atelier est bien équipé. Ça vous dérange si nous y construisons des golems ?~
+@122000 = ~Votre atelier est bien Ã©quipÃ©. Ã‡a vous dÃ©range si nous y construisons des golems ?~
 @122001 = ~Utilisez ce lieu comme bon vous semble.~
-@122002 = ~Avez-vous perdu l'esprit ? Vous avez usé de ma patience depuis déjà trop longtemps. Pourquoi devrais-je tolérer encore votre présence plus longtemps ?~
-@122003 = ~Une compensation monétaire vous ferait-elle changer d'avis ?~
-@122004 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier si vous ne souhaitez pas avoir une lame plantée dans le dos avant que cette conversation ne prenne fin.~
-@122005 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier si vous n'avez pas envie qu'une boule de feu ne vous envoie de suite rejoindre le grand néant.~
-@122006 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier ou je vous décapite sans hésitation.~
+@122002 = ~Avez-vous perdu l'esprit ? Vous avez usÃ© de ma patience depuis dÃ©jÃ  trop longtemps. Pourquoi devrais-je tolÃ©rer encore votre prÃ©sence plus longtemps ?~
+@122003 = ~Une compensation monÃ©taire vous ferait-elle changer d'avis ?~
+@122004 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier si vous ne souhaitez pas avoir une lame plantÃ©e dans le dos avant que cette conversation ne prenne fin.~
+@122005 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier si vous n'avez pas envie qu'une boule de feu ne vous envoie de suite rejoindre le grand nÃ©ant.~
+@122006 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier ou je vous dÃ©capite sans hÃ©sitation.~
 @122007 = ~A vrai dire, je ne trouve aucune bonne raison pour l'instant.~
-@122008 = ~Ha ! Aucune somme d'argent ne pourrait changer l'opinion que j'ai de vous. Mais ça ne signifie pas que je ne peux pas essayer de tolérer votre présence un peu plus longtemps.~
-@122009 = ~Donnez-moi 4 000 pièces d'or et vous pourrez construire autant de golems que vous voulez. Mais ne venez pas m'ennuyer avec vos conversations mesquines. D'accord ?~
-@122010 = ~Marché conclu.~
+@122008 = ~Ha ! Aucune somme d'argent ne pourrait changer l'opinion que j'ai de vous. Mais Ã§a ne signifie pas que je ne peux pas essayer de tolÃ©rer votre prÃ©sence un peu plus longtemps.~
+@122009 = ~Donnez-moi 4 000 piÃ¨ces d'or et vous pourrez construire autant de golems que vous voulez. Mais ne venez pas m'ennuyer avec vos conversations mesquines. D'accord ?~
+@122010 = ~MarchÃ© conclu.~
 @122011 = ~Je refuse. C'est bien trop cher pour moi.~
-@122012 = ~Donnez-moi 2 000 pièces d'or et vous pourrez construire autant de golems que vous voulez. Ça vous va ?~
-@122013 = ~Eh bien, j'imagine que ça ira. Occupez-vous de vos affaires, maintenant. J'ai déjà perdu assez de temps avec vous.~
-@122014 = ~Vous osez me menacer dans ma propre maison ? Je devrais vous chasser à coups de pieds dans le derrière pour une telle insolence.~
-@122015 = ~Mais puisque je ne tiens pas à perdre la vie pour des questions aussi triviales, je vais faire une exception et répondre à vos souhaits. Faites ce que vous avez à faire, mais n'attendez plus rien de moi.~
-@122016 = ~Alors, ne me dérangez plus.~
+@122012 = ~Donnez-moi 2 000 piÃ¨ces d'or et vous pourrez construire autant de golems que vous voulez. Ã‡a vous va ?~
+@122013 = ~Eh bien, j'imagine que Ã§a ira. Occupez-vous de vos affaires, maintenant. J'ai dÃ©jÃ  perdu assez de temps avec vous.~
+@122014 = ~Vous osez me menacer dans ma propre maison ? Je devrais vous chasser Ã  coups de pieds dans le derriÃ¨re pour une telle insolence.~
+@122015 = ~Mais puisque je ne tiens pas Ã  perdre la vie pour des questions aussi triviales, je vais faire une exception et rÃ©pondre Ã  vos souhaits. Faites ce que vous avez Ã  faire, mais n'attendez plus rien de moi.~
+@122016 = ~Alors, ne me dÃ©rangez plus.~
 
 
 // *** Dialog: Tiernon of Gloomfrost ***
 @123000 = ~Votre forge est impressionnante. Pourrais-je l'utiliser pour construire des golems ?~
-@123001 = ~Je n'ai pas pu m'empêcher de remarquer votre impressionnante forge. Avant de partir, m'autoriseriez-vous à l'utiliser pour construire des golems ?~
+@123001 = ~Je n'ai pas pu m'empÃªcher de remarquer votre impressionnante forge. Avant de partir, m'autoriseriez-vous Ã  l'utiliser pour construire des golems ?~
 @123002 = ~Je comprends. Votre forge est impressionnante, Tiernon. Pourrais-je l'utiliser pour construire des golems ?~
-@123003 = ~Si vous le dites... J'ai remarqué votre forge impressionnante. Puis-je l'utiliser pour construire des golems ?~
-@123004 = ~Je n'ai pas pu m'empêcher de remarquer votre impressionnante forge. Avant que vous n'alliez vous reposer, m'autoriseriez-vous à l'utiliser pour construire des golems ?~
-@123005 = ~Comment ? Cette forge, c'est comme une partie de moi. Mais puisque vous avez l'air d'insister, ne vous gênez pas. Vu vos piètres talents de forgeron, je vous demande juste de ne pas la massacrer sous vos coups de marteau.~
+@123003 = ~Si vous le dites... J'ai remarquÃ© votre forge impressionnante. Puis-je l'utiliser pour construire des golems ?~
+@123004 = ~Je n'ai pas pu m'empÃªcher de remarquer votre impressionnante forge. Avant que vous n'alliez vous reposer, m'autoriseriez-vous Ã  l'utiliser pour construire des golems ?~
+@123005 = ~Comment ? Cette forge, c'est comme une partie de moi. Mais puisque vous avez l'air d'insister, ne vous gÃªnez pas. Vu vos piÃ¨tres talents de forgeron, je vous demande juste de ne pas la massacrer sous vos coups de marteau.~
 @123006 = ~Merci, Tiernon.~
 
 
 // *** Journal entries ***
-@ 140000 = ~ Atelier Construction Golem
+@140000 = ~Atelier de Fabrication de Golems
 
-Le laboratoire de Presio dans les cavernes de l'Oeil du Dragon semble être bien équipé pour y mener des expériences magiques. Je devrais pouvoir y fabriquer des golems.~
+Le laboratoire de Presio dans les cavernes de l'Oeil du Dragon semble Ãªtre bien Ã©quipÃ© pour y mener des expÃ©riences magiques. Je devrais pouvoir y fabriquer des golems.~
 
 @140001 = ~Atelier de Fabrication de Golems
 
-Pour me remercier de l'avoir aidé à réparer l'astrolabe, Gelarith m'a permis d'utiliser ses outils pour fabriquer des golems tout en haut de la tour de la Main Tranchée.~
+Pour me remercier de l'avoir aidÃ© Ã  rÃ©parer l'astrolabe, Gelarith m'a permis d'utiliser ses outils pour fabriquer des golems tout en haut de la tour de la Main TranchÃ©e.~
 
 @140002 = ~Atelier de Fabrication de Golems
 
-Le magicien Bandoth m'a permis d'utiliser son laboratoire pour fabriquer des golems en échange d'une substantielle somme d'argent. Je peux y accéder à partir de l'entrée de Profondorn.~
+Le magicien Bandoth m'a permis d'utiliser son laboratoire pour fabriquer des golems en Ã©change d'une substantielle somme d'argent. Je peux y accÃ©der Ã  partir de l'entrÃ©e de Profondorn.~
 
 @140003 = ~Atelier de Fabrication de Golems
 
-J'ai pu convaincre le magicien Bandoth qu'il serait bon pour sa santé de me laisser utiliser son laboratoire pour fabriquer des golems. Je peux y accéder à partir de l'entrée de Profondorn.~
+J'ai pu convaincre le magicien Bandoth qu'il serait bon pour sa santÃ© de me laisser utiliser son laboratoire pour fabriquer des golems. Je peux y accÃ©der Ã  partir de l'entrÃ©e de Profondorn.~
 
 @140004 = ~Atelier de Fabrication de Golems
 
-J'ai repris le laboratoire du magicien Bandoth qui semble bien équipé pour fabriquer des golems. Je peux y accéder à partir de l'entrée de Profondorn.~
+J'ai repris le laboratoire du magicien Bandoth qui semble bien Ã©quipÃ© pour fabriquer des golems. Je peux y accÃ©der Ã  partir de l'entrÃ©e de Profondorn.~
 
 @140005 = ~Atelier de Fabrication de Golems
 
-La salle d'étude du magicien fou Malavon est bien équipée pour mener des expérimentations magiques. Je devrais pouvoir y fabriquer des golems.~
+La salle d'Ã©tude du magicien fou Malavon est bien Ã©quipÃ©e pour mener des expÃ©rimentations magiques. Je devrais pouvoir y fabriquer des golems.~
 
 @140006 = ~Atelier de Fabrication de Golems
 
@@ -74,4 +74,4 @@ Le forgeron nain Tiernon m'a gracieusement permis d'utiliser sa forge. Je devrai
 
 @140007 = ~Atelier de Fabrication de Golems
 
-La forge du forgeron nain Tiernon, mort récemment, devrait me permettre de fabriquer des golems dans son atelier du glacier de Morneglace.~
+La forge du forgeron nain Tiernon, mort rÃ©cemment, devrait me permettre de fabriquer des golems dans son atelier du glacier de Morneglace.~

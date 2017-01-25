@@ -86,7 +86,7 @@ Niewrażliwość na broń zostanie obniżona średnio o jeden poziom, czasem naw
 Szczegóły
 ~~~~~~~~~
 
-Patrz plik „golem_information-polish.txt” w folderze „Readme”, w którym zawarto informacje o minimalnym poziomie czarującego, materiałach wymaganych do budowy każdego rodzaju golema, a także ich szczegółowe statystyki oraz opisy umiejętności i zdolności. Informacje dotyczące IWD:EE można znaleźć w pliku „golem_information-iwdee.txt”.
+Patrz plik „golem_information-polish.txt” w folderze „Readme”, w którym zawarto informacje o minimalnym poziomie czarującego, materiałach wymaganych do budowy każdego rodzaju golema, a także ich szczegółowe statystyki oraz opisy umiejętności i zdolności. Informacje dotyczące IWD:EE można znaleźć w pliku „golem_information-iwdee-polish.txt”.
 
 
 Credits

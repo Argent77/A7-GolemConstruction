@@ -308,7 +308,7 @@ Perfect Stone Golem:
   - STR: 18
   - HP: 90
   - AC: 0
-  - THAC0: 3
+  - THAC0: 2
   - APR: 2
   - Saves: 3/5/4/3/6
 - Resistances:

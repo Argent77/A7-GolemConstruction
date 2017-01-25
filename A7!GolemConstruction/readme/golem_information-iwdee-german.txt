@@ -312,7 +312,7 @@ Perfekter Steingolem:
   - Stärke: 18
   - TP: 90
   - RK: 0
-  - ETW0: 3
+  - ETW0: 2
   - APR: 2
   - Rettungswürfe: 3/5/4/3/6
 - Widerstand:
