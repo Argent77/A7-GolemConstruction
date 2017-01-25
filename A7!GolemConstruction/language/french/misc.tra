@@ -41,9 +41,9 @@ Le reste du parchemin contient des informations sur des procédures magiques com
 @100023 = ~Les familiers et les serviteurs ne peuvent pénétrer seuls dans les zones.~
 @100024 = ~Les familiers et les serviteurs ne peuvent pénétrer dans les échoppes.~
 @100025 = ~Les familiers et les serviteurs ne peuvent ramasser d'objets.~
-@100026 = ~The forge in this place looks well constructed. You can probably use it to build golems.~
-@100027 = ~This parchment contains a few scribbled notes which were probably meant to be added to a journal or diary of some sorts.
+@100026 = ~Cette forge semble vraiment bien conçue. Vous pourriez probablement l'utiliser pour fabriquer des golems.~
+@100027 = ~Ce parchemin renferme quelques notes griffonnées qui étaient sans doute destinées à remplir un journal intime.
 
-"Brother Ignasius brought back a curious tome the other day. It appears to deal with the construction of golems. Our sages will be happy to study it. 
+" L'autre jour, Frère Ignasius a rapporté un étrange grimoire. Il semble vouloir construire des golems. Nos érudits seront heureux de l'étudier.
 
-Unfortunately we don't have the required tools at our disposal to build golems ourselves. If we could only find a mage with a well equipped laboratory. But alas, the only place known to us is the abandoned elven outpost the Severed Hand which is supposed to house the fabled Astrolab. I fear none of our monks has the strength to visit this dark place, let alone salvaging the required machinery..."~
+Malheureusement, nous ne disposons pas des outils nécessaires pour fabriquer des golems. Si seulement nous pouvions trouver un mage disposant d'un laboratoire bien équipé. Hélas, le seul site adéquat qui nous vient à l'esprit est l'avant-poste elfique abandonné de la Main Tranchée qui est censé abriter le légendaire Astrolabe. Je crains qu'aucun de nos moines ne soit assez puissant pour explorer ce lieu obscur, sans parler de récupérer l'équipement nécessaire... "~

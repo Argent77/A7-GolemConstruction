@@ -1,697 +1,724 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~ Detailed information about all provided golem types (IWD:EE) ~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ Information détaillée sur les types de golem que l'on peut fabriquer (IWD:EE) ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Introduction
 ============
 
-Golems can be constructed with the "Construct Golem" ability which you can learn from the various golem building manuals.
-A short dialog allows you to select the desired golem type and variant to build. The construction of the physical 
-body takes several hours up to several days, followed by the enchantment process. There is a 4 percent chance that 
-the golem may break free and turn on the caster for 1d4 rounds before it finally submits to your will. After the 
-construction process finished the caster will be too tired to cast spells or fight properly for several rounds.
+Les Golems sont fabriqués avec la capacité "Fabriquer un Golem" que l'on apprend en lisant divers grimoires 
+de fabrication de golem. Elle ouvre un bref dialogue qui vous permet de choisir le type et la version du 
+golem que vous souhaitez construire. La durée de création de l'enveloppe physique du golem est variable et 
+peut prendre plusieurs heures, voire plusieurs jours. Une fois terminée, le golem reçoit un dernier enchantement. 
+Il y a 4 pourcents de chance qu'il se libère et se retourne contre vous pendant 1d4 rounds avant qu'il ne 
+finisse par se soumettre à votre volonté. Une fois le golem achevé, vous serez pendant plusieurs rounds trop  
+épuisé pour lancer des sorts ou vous battre correctement.
 
-Because of the equipment required to successfully construct the golem's body you are limited to a few selected locations 
-where you can actually build a golem. Promising locations are usually (abandoned) strongholds of powerful mages.
-More details can be found at the end of this document.
+En raison du matériel requis pour réussir à fabriquer le corps d'un golem, il n'existe qu'un nombre restreint 
+de sites dans lesquels vous pouvez vraiment créer des golems. Ce sont généralement des places fortes (abandonnées) 
+de mages puissants.
+Vous trouverez plus de détails sur ce sujet à la fin de ce document.
 
-The "Construct Golem" ability can be used as many times as needed without the need to rest in between (although it is 
-strongly recommended).
+Vous pouvez utiliser la capacité "Fabriquer un Golem" autant de fois que vous le souhaitez sans avoir besoin 
+de vous reposer entre chaque (bien que ce soit fortement recommandé).
 
-Golem manuals will also teach you the "Repair Golem" ability. It can be used once per day in any location, but does 
-not work while enemies are around. The repair process takes about two rounds. Heavily damaged golems may require several 
-attempts to restore them to full health.
-
-
-Conventional Golems
-===================
-
-Conventional golem types are described in the "Manual of Golem Building" which comes in five volumes. The tomes 
-themselves are not terribly difficult to obtain. Some can be purchased from merchants while others may be hidden 
-in some dungeon or guarded by creatures.
-
-The materials required to build golems are also obtainable from various sources. More common ingredients can be bought 
-from merchants, looted from creatures or found in various locations, while the more expensive or exotic materials are 
-available by other means.
-
-Conventional golem types can be build in lesser, regular, greater and perfect variants. Each variant requires its own 
-materials. The perfect variant will also require a specific artifact of power which is only available in limited numbers.
+La lecture des grimoires de fabrication de golem vous permettra également d'apprendre la capacité "Réparer un Golem". 
+Elle peut être utilisée une fois par jour et n'importe où, mais ne fonctionne pas en présence d'ennemis. Le processus 
+de réparation dure environ deux rounds. Plusieurs tentatives peuvent être nécessaires pour réparer complètement les 
+golems sévèrement endommagés.
 
 
-1. Flesh Golems
+Les Golems Traditionnels
+========================
 
-Lesser Flesh Golem:
-- Min. level: 5 (-1 for Transmuters, +1 for Bards)
-- Ingredients:
-  - One full set of body parts
-- Stats:
-  - STR: 13
-  - HP: 30
-  - AC: 9
-  - THAC0: 12
-  - APR: 1
-  - Saves (death/wand/polymorph/breath/spell): 12/13/12/13/13
-- Resistances:
-  - Magic: 50
-  - Cold: 50
-  - Magic Cold: 50
-  - Electricity: 50
-- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
+Les types de golems traditionnels sont décrits dans le "Grimoire de Fabrication de Golem", recueil en cinq 
+volumes. Il n'est pas très difficile de se procurer ces tomes. Certains peuvent être achetés auprès de marchands, 
+d'autres sont cachés dans certains donjons ou en possession de certaines créatures.
 
-Flesh Golem:
-- Min. level: 7 (-1 for Transmuters, +1 for Bards)
-- Ingredients:
-  - Two full sets of body parts
-- Stats:
-  - STR: 14
-  - HP: 40
-  - AC: 6
-  - THAC0: 10
-  - APR: 3/2
-  - Saves: 10/11/10/11/11
-- Resistances:
-  - Magic: 75
-  - Cold: 80
-  - Magic Cold: 80
-  - Electricity: 80
-- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
+Les matériaux nécessaires à la fabrication de golems peuvent aussi être obtenus de diverses manières. Les composants 
+les plus élémentaires peuvent être achetés dans des boutiques, récupérés sur des créatures ou trouvés à divers 
+endroits, alors que les matériaux les plus onéreux et les plus exotiques sont disponibles par d'autres moyens.
 
-Greater Flesh Golem:
-- Min. level: 10 (-2 for Transmuters, +2 for Bards)
-- Ingredients:
-  - Four full sets of body parts
-  - One scroll of Stinking Cloud
-- Stats:
-  - STR: 16
-  - HP: 55
-  - AC: 3
-  - THAC0: 6
-  - APR: 3/2
-  - Saves: 8/9/8/9/9
-- Resistances:
-  - Magic: 95
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Piercing: 50
-  - Missile: 50
-- Immune to non-magical weapons
-- May cast Stinking Cloud on self
-- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
-- 25% chance to split into two lesser golems of same type on death.
-
-Perfect Flesh Golem:
-- Min. level: 12 (-2 for Transmuters, +2 for Bards)
-- Ingredients:
-  - Four full sets of body parts
-  - One scroll of Stinking Cloud
-  - One Deep Bloodstone Gem
-- Stats:
-  - STR: 17
-  - HP: 65
-  - AC: 2
-  - THAC0: 5
-  - APR: 2
-  - Saves: 7/8/7/8/8
-- Resistances:
-  - Magic: 100
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 125
-  - Piercing: 85
-  - Missile: 85
-- Regenerates 1 HP per turn
-- Immune to non-magical weapons
-- May cast Stinking Cloud on self
-- 50% chance to split into two lesser golems of same type on death.
+Les types de golems conventionnels peuvent être créés en version mineure, normale, majeure et parfaite, chacune 
+nécessitant ses propres matériaux. Le modèle parfait nécessite aussi un artefact puissant et spécifique qu'on ne 
+trouve qu'en nombre limité.
 
 
-2. Clay Golems
+1. Golems de chair
 
-Lesser Clay Golem:
-- Min. level: 7 (-1 for Transmuters, +1 for Bards)
-- Ingredients:
-  - One block of clay
-- Stats:
-  - STR: 13
-  - HP: 35
-  - AC: 7
-  - THAC0: 10
-  - APR: 1
-  - Saves: 9/11/10/10/12
-- Resistances:
-  - Magic: 65
-  - Cold: 50
-  - Magic Cold: 50
-  - Electricity: 75
-  - Slashing: 50
-  - Piercing: 50
-  - Missile: 50
-- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
+Golem de chair mineur :
+- Niveau requis : 5 (-1 pour les Transmutateurs, +1 pour les Bardes)
+- Composants nécessaires :
+  - Un ensemble complet de morceaux de cadavres
+- Caractéristiques :
+  - FORCE : 13
+  - PV : 30
+  - CA : 7
+  - TAC0 : 12
+  - APR : 1
+  - Jets de sauvegarde (mort/baguettes/pétrification/souffle/sorts) : 12/13/12/13/13
+- Résistances :
+  - Magie : 50
+  - Froid : 50
+  - Froid magique : 50
+  - Electricité : 50
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
-Clay Golem:
-- Min. level: 10 (-2 for Transmuters, +2 for Bards)
-- Ingredients:
-  - Two blocks of clay
-  - One scroll of Haste
-- Stats:
-  - STR: 15
-  - HP: 45
-  - AC: 4
-  - THAC0: 8
-  - APR: 1
-  - Saves: 7/9/8/8/10
-- Resistances:
-  - Magic: 90
-  - Fire: 25
-  - Magic Fire: 25
-  - Cold: 75
-  - Magic Cold: 75
-  - Electricity: 100
-  - Slashing: 90
-  - Piercing: 90
-  - Missile: 90
-- May cast Haste on self
-- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
+Golem de chair :
+- Niveau requis : 7 (-1 pour les Transmutateurs, +1 pour les Bardes)
+- Composants nécessaires :
+  - Deux ensembles complets de morceaux de cadavres
+- Caractéristiques :
+  - FORCE : 14
+  - PV : 40
+  - CA : 5
+  - TAC0 : 10
+  - APR : 3/2
+  - Jets de sauvegarde : 10/11/10/11/11
+- Résistances :
+  - Magie : 75
+  - Froid : 80
+  - Froid magique : 80
+  - Electricité : 80
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
-Greater Clay Golem:
-- Min. level: 13 (-2 for Transmuters, +3 for Bards)
-- Ingredients:
-  - Four block of clay
-  - One scroll of Haste
-- Stats:
-  - STR: 17
-  - HP: 60
-  - AC: 1
-  - THAC0: 5
-  - APR: 3/2
-  - Saves: 5/7/6/6/8
-- Resistances:
-  - Magic: 100
-  - Fire: 50
-  - Magic Fire: 50
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 50
-  - Slashing: 99
-  - Piercing: 99
-  - Missile: 99
-- Immune to non-magical weapons
-- May cast Haste on self
-- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
-- 25% chance to split into two lesser golems of same type on death.
+Golem de chair majeur :
+- Niveau requis : 10 (-2 pour les Transmutateurs, +2 pour les Bardes)
+- Composants nécessaires :
+  - Quatre ensembles complets de morceaux de cadavres
+  - Un parchemin de Nuage puant
+- Caractéristiques :
+  - FORCE : 16
+  - PV : 55
+  - CA : 3
+  - TAC0 : 6
+  - APR : 3/2
+  - Jets de sauvegarde : 8/9/8/9/9
+- Résistances :
+  - Magie : 95
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Nuage puant sur lui-même.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+- A 25 % de chance de se séparer en deux golems de chair mineurs lorsqu'il meurt.
 
-Perfect Clay Golem:
-- Min. level: 15 (-2 for Transmuters, +4 for Bards)
-- Ingredients:
-  - Four block of clay
-  - One scroll of Haste
-  - One bag of Enchanted Coral Powder
-- Stats:
-  - STR: 18
-  - HP: 75
-  - AC: 0
-  - THAC0: 3
-  - APR: 3/2
-  - Saves: 4/6/5/5/7
-- Resistances:
-  - Magic: 100
-  - Fire: 50
-  - Magic Fire: 50
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 75
-  - Slashing: 100
-  - Crushing: 20
-  - Piercing: 100
-  - Missile: 100
-- Regenerates 1 HP per turn
-- Immune to non-magical weapons
-- May cast Haste on self
-- 50% chance to split into two lesser golems of same type on death.
+Golem de chair parfait :
+- Niveau requis : 12 (-2 pour les Transmutateurs, +2 pour les Bardes)
+- Composants nécessaires :
+  - Quatre ensembles complets de morceaux de cadavres
+  - Un parchemin de Nuage puant
+  - Une gemme héliotrope sombre
+- Caractéristiques :
+  - FORCE : 17
+  - PV : 65
+  - CA : 2
+  - TAC0 : 5
+  - APR : 2
+  - Jets de sauvegarde : 7/8/7/8/8
+- Résistances :
+  - Magie : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 125
+  - Armes perforantes : 85
+  - Projectiles : 85
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Nuage puant sur lui-même.
+- A 50 % de chance de se séparer en deux golems de chair mineurs lorsqu'il meurt.
 
 
-3. Stone Golems
+2. Golems d'argile
 
-Lesser Stone Golem:
-- Min. level: 7 (-1 for Transmuters, +1 for Bards)
-- Ingredients:
-  - One block of stone
-- Stats:
-  - STR: 13
-  - HP: 40
-  - AC: 7
-  - THAC0: 9
-  - APR: 1
-  - Saves: 7/9/8/7/10
-- Resistances:
-  - Magic: 75
-- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
+Golem d'argile mineur :
+- Niveau requis : 7 (-1 pour les Transmutateurs, +1 pour les Bardes)
+- Composants nécessaires :
+  - Un bloc d'argile
+- Caractéristiques :
+  - FORCE : 13
+  - PV : 35
+  - CA : 5
+  - TAC0 : 10
+  - APR : 1
+  - Jets de sauvegarde : 9/11/10/10/12
+- Résistances :
+  - Magie : 65
+  - Froid : 50
+  - Froid magique : 50
+  - Electricité : 75
+  - Armes tranchantes : 50
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
-Stone Golem:
-- Min. level: 10 (-2 for Transmuters, +2 for Bards)
-- Ingredients:
-  - Two blocks of stone
-  - One scroll of Slow
-- Stats:
-  - STR: 15
-  - HP: 50
-  - AC: 4
-  - THAC0: 7
-  - APR: 3/2
-  - Saves: 5/7/6/5/8
-- Resistances:
-  - Magic: 90
-- Immune to non-magical weapons
-- May cast Slow on opponents in 30 feet radius of golem
-- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
+Golem d'argile :
+- Niveau requis : 10 (-2 pour les Transmutateurs, +2 pour les Bardes)
+- Composants nécessaires :
+  - Deux blocs d'argile
+  - Un parchemin de Hâte
+- Caractéristiques :
+  - FORCE : 15
+  - PV : 45
+  - CA : 3
+  - TAC0 : 8
+  - APR : 1
+  - Jets de sauvegarde : 7/9/8/8/10
+- Résistances :
+  - Magie : 90
+  - Feu : 25
+  - Feu magique : 25
+  - Froid : 75
+  - Froid magique : 75
+  - Electricité : 100
+  - Armes tranchantes : 90
+  - Armes perforantes : 90
+  - Projectiles : 90
+- Peut lancer Hâte sur lui-même.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
-Greater Stone Golem:
-- Min. level: 13 (-2 for Transmuters, +3 for Bards)
-- Ingredients:
-  - Four blocks of stone
-  - One scroll of Slow
-- Stats:
-  - STR: 17
-  - HP: 75
-  - AC: 1
-  - THAC0: 4
-  - APR: 3/2
-  - Saves: 4/6/5/4/7
-- Resistances:
-  - Magic: 100
-  - Electricity: 50
-  - Acid: 50
-- Immune to non-magical weapons
-- May cast Slow on opponents in 30 feet radius of golem
-- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
-  in sight.
-- 25% chance to split into two lesser golems of same type on death.
+Golem d'argile majeur :
+- Niveau requis : 13 (-2 pour les Transmutateurs, +3 pour les Bardes)
+- Composants nécessaires :
+  - Quatre blocs d'argile
+  - Un parchemin de Hâte
+- Caractéristiques :
+  - FORCE : 17
+  - PV : 60
+  - CA : 1
+  - TAC0 : 5
+  - APR : 3/2
+  - Jets de sauvegarde : 5/7/6/6/8
+- Résistances :
+  - Magie : 100
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 50
+  - Armes tranchantes : 99
+  - Armes perforantes : 99
+  - Projectiles : 99
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Hâte sur lui-même.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+- A 25 % de chance de se séparer en deux golems d'argile mineurs lorsqu'il meurt.
 
-Perfect Stone Golem:
-- Min. level: 15 (-2 for Transmuters, +4 for Bards)
-- Ingredients:
-  - Four blocks of stone
-  - One scroll of Slow
-  - One vial of Mimic's Blood
-- Stats:
-  - STR: 18
-  - HP: 90
-  - AC: 0
-  - THAC0: 3
-  - APR: 2
-  - Saves: 3/5/4/3/6
-- Resistances:
-  - Magic: 100
-  - Fire: 50
-  - Magic Fire: 50
-  - Cold: 50
-  - Magic Cold: 50
-  - Electricity: 75
-  - Acid: 75
-- Regenerates 1 HP per turn
-- Immune to non-magical and +1 weapons
-- May cast Slow on self which affects surrounding opponents
-- 50% chance to split into two lesser golems of same type on death.
+Golem d'argile parfait :
+- Niveau requis : 15 (-2 pour les Transmutateurs, +4 pour les Bardes)
+- Composants nécessaires :
+  - Quatre blocs d'argile
+  - Un parchemin de Hâte
+  - Un sac de Poudre de corail enchantée
+- Caractéristiques :
+  - FORCE : 18
+  - PV : 75
+  - CA : 0
+  - TAC0 : -3
+  - APR : 3/2
+  - Jets de sauvegarde : 4/6/5/5/7
+- Résistances :
+  - Magie : 100
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 75
+  - Armes tranchantes : 100
+  - Armes contondantes : 20
+  - Armes perforantes : 100
+  - Projectiles : 100
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Hâte sur lui-même.
+- A 50 % de chance de se séparer en deux golems d'argile mineurs lorsqu'il meurt.
 
 
-4. Iron Golems
+3. Golems de pierre
 
-Lesser Iron Golem:
-- Min. level: 11 (-2 for Transmuters, +2 for Bards)
-- Ingredients:
-  - One bar of iron
-- Stats:
-  - STR: 14
-  - HP: 50
-  - AC: 5
-  - THAC0: 6
-  - APR: 3/2
-  - Saves: 5/7/6/6/8
-- Resistances:
-  - Magic: 75
-  - Fire: 100
-  - Magic Fire: 100
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 50
-- Immune to non-magical weapons
+Golem de pierre mineur :
+- Niveau requis : 7 (-1 pour les Transmutateurs, +1 pour les Bardes)
+- Composants nécessaires :
+ - Un bloc de pierre
+- Caractéristiques :
+  - FORCE : 13
+  - PV : 40
+  - CA : 5
+  - TAC0 : 9
+  - APR : 1
+  - Jets de sauvegarde : 7/9/8/7/10
+- Résistances :
+  - Magie : 75
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
-Iron Golem:
-- Min. level: 14 (-2 for Transmuters, +4 for Bards)
-- Ingredients:
-  - Two bars of iron
-  - One scroll of Cloudkill
-- Stats:
-  - STR: 16
-  - HP: 70
-  - AC: 3
-  - THAC0: 3
-  - APR: 2
-  - Saves: 3/5/4/4/6
-- Resistances:
-  - Magic: 90
-  - Fire: 100
-  - Magic Fire: 100
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 75
-- Immune to non-magical weapons
-- May cast Gas Cloud on self
+Golem de pierre :
+- Niveau requis : 10 (-2 pour les Transmutateurs, +2 pour les Bardes)
+- Composants nécessaires :
+  - Deux blocs de pierre
+  - Un parchemin de Lenteur
+- Caractéristiques :
+  - FORCE : 15
+  - PV : 50
+  - CA : 3
+  - TAC0 : 7
+  - APR : 3/2
+  - Jets de sauvegarde : 5/7/6/5/8
+- Résistances :
+  - Magie : 90
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
-Greater Iron Golem:
-- Min. level: 17 (-2 for Transmuters, +5 for Bards)
-- Ingredients:
-  - Four bars of iron
-  - One scroll of Cloudkill
-- Stats:
-  - STR: 18
-  - HP: 95
-  - AC: 1
-  - THAC0: 1
-  - APR: 2
-  - Saves: 1/3/2/2/4
-- Resistances
-  - Magic: 100
-  - Fire: 100
-  - Magic Fire: 100
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 100
-  - Slashing: 20
-  - Piercing: 20
-  - Missile: 20
-- Regenerates 1 HP per turn
-- Immune to non-magical and +1 weapons
-- May cast Gas Cloud on self
-- 25% chance to split into two lesser golems of same type on death.
+Golem de pierre majeur :
+- Niveau requis : 13 (-2 pour les Transmutateurs, +3 pour les Bardes)
+- Composants nécessaires :
+  - Quatre blocs de pierre
+  - Un parchemin de Lenteur
+- Caractéristiques :
+  - FORCE : 17
+  - PV : 75
+  - CA : 1
+  - TAC0 : 4
+  - APR : 3/2
+  - Jets de sauvegarde : 4/6/5/4/7
+- Résistances :
+  - Magie : 100
+  - Electricité : 50
+  - Acide : 50
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre 
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+- A 25 % de chance de se séparer en deux golems de pierre mineurs lorsqu'il meurt.
 
-Perfect Iron Golem:
-- Min. level: 19 (-2 for Transmuters)
-- Ingredients:
-  - Four bars of iron
-  - One scroll of Cloudkill
-  - Chips of Cold Iron
-- Stats:
-  - STR: 19
-  - HP: 110
-  - AC: 0
-  - THAC0: -1
-  - APR: 5/2
-  - Saves: 0/2/1/1/3
-- Resistances:
-  - Magic: 100
-  - Fire: 100
-  - Magic Fire: 100
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 100
-  - Slashing: 50
-  - Crushing: 20
-  - Piercing: 50
-  - Missile: 50
+Golem de pierre parfait :
+- Niveau requis : 15 (-2 pour les Transmutateurs, +4 pour les Bardes)
+- Composants nécessaires :
+  - Quatre blocs de pierre
+  - Un parchemin de Lenteur
+  - Une fiole de Sang de Mimique
+- Caractéristiques :
+  - FORCE : 18
+  - PV : 90
+  - CA : 0
+  - TAC0 : 2
+  - APR : 2
+  - Jets de sauvegarde : 3/5/4/3/6
+- Résistances :
+  - Magie : 100
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 50
+  - Froid magique : 50
+  - Electricité : 75
+  - Acide : 75
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
+- A 50 % de chance de se séparer en deux golems de pierre mineurs lorsqu'il meurt.
+
+
+4. Golems de fer
+
+Golem de fer mineur :
+- Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes)
+- Composants nécessaires :
+  - Un lingot de fer
+- Caractéristiques :
+  - FORCE : 14
+  - PV : 50
+  - CA : 5
+  - TAC0 : 6
+  - APR : 3/2
+  - Jets de sauvegarde : 5/7/6/6/8
+- Résistances :
+  - Magie : 75
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 50
+- Ne peut être touché que par des armes magiques.
+
+Golem de fer :
+- Niveau requis : 14 (-2 pour les Transmutateurs, +4 pour les Bardes)
+- Composants nécessaires :
+  - Deux lingots de fer
+  - Un parchemin de Nuage mortel
+- Caractéristiques :
+  - FORCE : 16
+  - PV : 70
+  - CA : 3
+  - TAC0 : 3
+  - APR : 2
+  - Jets de sauvegarde : 3/5/4/4/6
+- Résistances :
+  - Magie : 90
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 75
+  - Projectiles : 20
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Nuage de gaz sur lui-même.
+
+Golem de fer majeur :
+- Niveau requis : 17 (-2 pour les Transmutateurs, +5 pour les Bardes)
+- Composants nécessaires :
+  - Quatre lingots de fer
+  - Un parchemin de Nuage mortel
+- Caractéristiques :
+  - FORCE : 18
+  - PV : 95
+  - CA : 1
+  - TAC0 : 1
+  - APR : 2
+  - Jets de sauvegarde : 1/3/2/2/4
+- Résistances :
+  - Magie : 100
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 100
+  - Armes tranchantes : 20
+  - Armes contondantes : 20
+  - Armes perforantes : 20
+  - Projectiles : 50
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Nuage de gaz sur lui-même.
+- A 25 % de chance de se séparer en deux golems de fer mineurs lorsqu'il meurt.
+
+Golem de fer parfait :
+- Niveau requis : 19 (-2 pour les Transmutateurs)
+- Composants nécessaires :
+  - Quatre lingots de fer
+  - Un parchemin de Nuage mortel
+  - Des jetons de fer froid
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 110
+  - CA : 0
+  - TAC0 : -1
+  - APR : 5/2
+  - Jets de sauvegarde : 0/2/1/1/3
+- Résistances :
+  - Magie : 100
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 100
+  - Armes tranchantes : 50
+  - Armes contondantes : 50
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Régénère au rythme de 1 PV tous les trois rounds.
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Nuage de gaz sur lui-même.
+- Se sépare toujours en deux golems de fer lorsqu'il meurt.
+
 - Regenerates 1 HP per three rounds
 - Immune to non-magical and +1 weapons
 - May cast Gas Cloud on self
-- 50% chance to split into two lesser golems of same type on death.
+- A 50 % de chance de se séparer en deux golems de fer mineurs lorsqu'il meurt.
 
 
-5. Mithral Golems
+5. Golems de mithril
 
-Lesser Mithral Golem:
-- Min. level: 13 (-2 for Transmuters, +3 for Bards)
-- Ingredients:
-  - One chunk of mithral
-  - 4,000 XP drained from the caster
-- Stats:
-  - STR: 16
-  - HP: 60
-  - AC: 4
-  - THAC0: 4
-  - APR: 3/2
-  - Saves: 6/8/7/7/9
-- Resistances:
-  - Magic: 90
-  - Fire: 100
-  - Magic Fire: 100
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 100
-- Immune to non-magical weapons
+Golem de mithril mineur :
+- Niveau requis : 13 (-2 pour les Transmutateurs, +3 pour les Bardes)
+- Composants nécessaires :
+  - Un bloc de mithril
+  - 4 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 16
+  - PV : 60
+  - CA : 4
+  - TAC0 : 4
+  - APR : 3/2
+  - Jets de sauvegarde : 6/8/7/7/9
+- Résistances :
+  - Magie : 90
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 100
+- Ne peut être touché que par des armes magiques.
 
-Mithral Golem:
-- Min. level: 17 (-2 for Transmuters, +5 for Bards)
-- Ingredients:
-  - Two chunks of mithral
-  - 8,000 XP drained from the caster
-- Stats:
-  - STR: 18
-  - HP: 80
-  - AC: 1
-  - THAC0: 2
-  - APR: 2
-  - Saves: 4/6/5/5/7
-- Resistances:
-  - Magic: 100
-  - Fire: 125
-  - Magic Fire: 125
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 100
-  - Slashing: 25
-  - Piercing: 25
-  - Missile: 25
-- Regenerates 1 HP per turn
-- Immune to non-magical and +1 weapons
+Golem de mithril :
+- Niveau requis : 17 (-2 pour les Transmutateurs, +5 pour les Bardes)
+- Composants nécessaires :
+  - Deux blocs de mithril
+  - 8 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 18
+  - PV : 80
+  - CA : 1
+  - TAC0 : 2
+  - APR : 2
+  - Jets de sauvegarde : 4/6/5/5/7
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 100
+  - Armes tranchantes : 25
+  - Armes perforantes : 25
+  - Projectiles : 25
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +2 ou supérieures.
 
-Greater Mithral Golem:
-- Min. level: 21 (-2 for Transmuters)
-- Ingredients:
-  - Four chunks of mithral
-  - 16,000 XP drained from the caster
-- Stats:
-  - STR: 20
-  - HP: 110
-  - AC: -2
-  - THAC0: -1
-  - APR: 2
-  - Saves: 3/5/4/4/6
-- Resistances:
-  - Magic: 100
-  - Fire: 125
-  - Magic Fire: 125
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 100
-  - Slashing: 50
-  - Crushing: 25
-  - Piercing: 50
-  - Missile: 50
-- Regenerates 1 HP per three rounds
-- Immune to non-magical, +1 and +2 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
-  for one round (save vs. death at -4 penalty for half damage and avoid stun)
-- 25% chance to split into two lesser golems of same type on death.
+Golem de mithril majeur :
+- Niveau requis : 21 (-2 pour les Transmutateurs)
+- Composants nécessaires :
+  - Quatre blocs de mithril
+  - 16 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 20
+  - PV : 110
+  - CA : -2
+  - TAC0 : -1
+  - APR : 2
+  - Jets de sauvegarde : 3/5/4/4/6
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 100
+  - Armes tranchantes : 50
+  - Armes contondantes : 25
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Régénère au rythme de 1 PV tous les trois rounds.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+- A 25 % de chance de se séparer en deux golems de mithril mineurs lorsqu'il meurt.
 
-Perfect Mithral Golem:
-- Min. level: 23 (-2 for Transmuters)
-- Ingredients:
-  - Four chunks of mithral
-  - One orb of Spectral Obsidian
-  - 32,000 XP drained from the caster
-- Stats:
-  - STR: 21
-  - HP: 125
-  - AC: -4
-  - THAC0: -3
-  - APR: 5/2
-  - Saves: 1/3/2/2/4
-- Resistances:
-  - Magic: 100
-  - Fire: 125
-  - Magic Fire: 125
-  - Cold: 100
-  - Magic Cold: 100
-  - Electricity: 100
-  - Acid: 100
-  - Slashing: 75
-  - Crushing: 50
-  - Piercing: 75
-  - Missile: 75
-- Regenerates 1 HP per round
-- Immune to non-magical, +1 and +2 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
-  for one round (save vs. death at -4 penalty for half damage and avoid stun)
-- 50% chance to split into two lesser golems of same type on death.
-
-
-
-Exotic Golems
-=============
-
-Exotic golem types are described in the "Secret Manual of Golem Building" which is supposed to come in three volumes.
-
-Golems described in these tomes are unique, and therefore not available as lesser, greater or perfect variants.
-
-1. Bone Golem
-- Min. level: 12 (-2 for Necromancers and Transmuters, +2 for Bards)
-- Ingredients:
-  - Four piles of bones
-  - One scroll of Animate Dead
-  - 50% chance that the construction process drains three points of strength or constitution for five turns from the 
-    caster, possibly killing the caster if fully drained.
-- Stats:
-  - STR: 16
-  - HP: 56
-  - AC: 0
-  - THAC0: 7
-  - APR: 3/2
-  - Saves: 9/12/10/9/13
-- Resistances:
-  - Magic: 50
-  - Fire: 25
-  - Magic Fire: 25
-  - Cold: 100
-  - Magic Cold: 100
-  - Slashing: 50
-  - Piercing: 50
-  - Missile: 50
-- May cast "Hideous Laughter" which affects enemies within 30 ft. range: Victims that fail their save vs. spell will 
-  run around in fear for 2d6 rounds. If they also fail their save vs. death, they will by paralyzed with fear instead.
-
-2. Ice Golem
-- Min. level: 14 (-2 for Transmuters, +3 for Bards)
-- Ingredients:
-  - One shard of magical ice
-  - One scroll of Cone of Cold
-  - One scroll of Protection from Cold
-- Stats:
-  - STR: 18
-  - HP: 75
-  - AC: -2
-  - THAC0: 4
-  - APR: 3/2
-  - Saves: 6/9/8/8/10
-- Resistances:
-  - Magic: 75
-  - Fire: -25
-  - Magic Fire: -25
-  - Cold: 100
-  - Magic Cold: 100
-  - Slashing: 20
-  - Piercing: 20
-  - Missile: 40
-- Immune to non-magical weapons
-- May cast Scalding Steam which does 3d10 area of effect cold damage (save vs. breath to avoid)
-
-3. Lightning Golem
-- Min. level: 17 (-2 for Transmuters, +5 for Bards)
-- Ingredients:
-  - 100,000 gold
-  - One scroll of Chain Lightning
-- Stats:
-  - STR: 19
-  - HP: 80
-  - AC: -2
-  - THAC0: 6
-  - APR: 2
-  - Saves: 6/8/7/7/9
-- Resistance:
-  - Magic: 100
-  - Cold: 85
-  - Magic Cold: 85
-  - Electricity: 125
-  - Acid: 50
-  - Slashing: 25
-  - Piercing: 50
-  - Missile: 50
-- Immune to non-magical and +1 weapons
-- Moves at increased speed
-- Permanent lightning shield: Attackers suffer 1d8+2 electrical damage on each successful hit
-- May cast Chain Lightning on nearby enemies
-- May cast "Lightning Travel" which allows the golem to travel to any point within visual range by transforming into 
-  a powerful bolt of lightning and travelling to the target at light speed. The high speed transportation generates 
-  a shockwave that will blow away and cause 1d6 lightning damage to all creatures within 8 feet radius of the target 
-  location. The resulting thunderclap may also cause deafness to any creature in range for 1d4 rounds if they fail 
-  their Saving Throw vs. Breath. The golem also does not have to wait for its aura to be cleansed before using the 
-  same or another ability again. This ability replaces "Teleport".
+Golem de mithril parfait :
+- Niveau requis : 23 (-2 pour les Transmutateurs)
+- Composants nécessaires :
+  - Quatre blocs de mithril
+  - Un Orbe d'obsidienne spectrale
+  - 32 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 21
+  - PV : 125
+  - CA : -4
+  - TAC0 : -3
+  - APR : 5/2
+  - Jets de sauvegarde : 1/3/2/2/4
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Electricité : 100
+  - Acide : 100
+  - Armes tranchantes : 75
+  - Armes contondantes : 50
+  - Armes perforantes : 75
+  - Projectiles : 75
+- Régénère au rythme de 1 PV par round.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+- A 50 % de chance de se séparer en deux golems de mithril mineurs lorsqu'il meurt.
+- Se sépare toujours en deux golems de mithril lorsqu'il meurt.
 
 
-Each golem has the following abilities by default:
-1. Dismiss:  Activating this ability will cause the golem to disintegrate. The process is irreversible.
-2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with 
-             big circle sizes so they won't get stuck in narrow pathways. It can only be used while no enemies are 
-             around.
 
-You can also give your golems simple commands. Lesser variants of flesh, clay and stone golems may follow the following 
-orders:
-- Follow me! (The golem becomes controllable, but does not act on its own. This is the default action after activation.)
-- Stand guard! (The golem turns neutral and does not budge from its current position.)
-- Destroy yourself! (Causes the golem to disintegrate. This command is the same as the "Dismiss" ability, but can also 
-                     be issued when the golem is on guard duty.)
+Golems exotiques
+================
 
-More advanced golems may also follow the following orders:
-- Follow and protect me! (The golem becomes controllable and will attack any hostile creature in sight, or enemies that 
-                          are attacking party members.)
-- Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns 
-                                    to its guarded position.)
+Les types de golems exotiques sont décrits dans le "Grimoire secret de Fabrication de Golem", un recueil qui se 
+composerait de trois volumes.
 
-You should always take good care of your golems as they may start to malfunction when badly hurt. These penalties can 
-be removed by the "Repair Golem" ability.
+Les golems décrits dans ces volumes sont uniques et ne sont par conséquent pas disponibles en versions mineure, 
+normale, majeure et parfaite.
 
-
-Spells that are affecting golems in some way
-============================================
-
-Since golems are non-living constructs they may be affected differently by certain spells. The following effects can 
-be triggered when the Tweaks component "Make golems vulnerable to specific spell effects" has been installed:
-- Flesh to Stone:
-  Turns Flesh Golems into Stone Golems of the same variant if they fail their Saving Throw vs. Petrify/Polymorph.
-- Stone to Flesh:
-  Turns Stone Golems into Flesh Golems of the same variant if they fail their Saving Throw vs. Petrify/Polymorph.
-- Abi-Dalzim's Horrid Wilting:
-  This spell dehydrates all Clay Golems in the area of effect and turns them into Stone Golems if they fail their 
-  Saving Throw vs. Spell at -2 penalty.
-- Cone of Cold and Ice Storm:
-  Clay Golems hit by this spell are slowed for five rounds if they fail their Saving Throw vs. Spell.
-- High-level fire-based spells:
-  These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage 
-  in addition to physical damage.
-  The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud, Fire 
-  Storm and Heavenly Inferno (Enfer divin?).
+1. Golem d'os
+- Niveau requis : 12 (-2 pour les Nécromanciens et les Transmutateurs, +2 pour les Bardes).
+- Composants nécessaires :
+  - Quatre tas d'ossements
+  - Un parchemin d'Animation des morts
+  - À l'issue du processus de fabrication, le créateur a 50 % de chance de perdre trois points de constitution pendant 
+  cinq tours, et donc d'en mourir si elle est totalement absorbée.
+- Caractéristiques :
+  - FORCE : 16
+  - PV : 56
+  - CA : 0
+  - TAC0 : 7
+  - APR : 3/2
+  - Jets de sauvegarde : 9/12/10/9/13
+- Résistances :
+  - Magie : 50
+  - Feu : 25
+  - Feu magique : 25
+  - Froid : 100
+  - Froid magique : 100
+  - Armes tranchantes : 50
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Peut lancer "Rire affreux" qui affecte ses ennemis dans un rayon de 9 mètres : Ceux qui ratent leur JS contre les sorts 
+  erreront sous l'effet de la panique pendant 2d6 rounds. De plus, un autre jet de sauvegarde réussi contre la mort leur 
+  évitera d'être paralysés par la peur à la place.
 
 
-Known locations where you can successfully construct golems
+2. Golem de glace
+- Niveau requis : 14 (-2 pour les Transmutateurs, +3 pour les Bardes)
+- Composants nécessaires :
+  - Un éclat de glace magique
+  - Un parchemin de Cône de Froid
+  - Un parchemin de Protection contre le Froid
+- Caractéristiques :
+  - FORCE : 18
+  - PV : 75
+  - CA : -2
+  - TAC0 : 4
+  - APR : 3/2
+  - Jets de sauvegarde : 6/9/8/8/10
+- Résistances :
+  - Magie : 75
+  - Feu : -25
+  - Feu magique : -25
+  - Froid : 100
+  - Froid magique : 100
+  - Armes tranchantes : 20
+  - Armes perforantes : 20
+  - Projectiles : 40
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Vapeur glaçante qui inflige 3d10 points de dégâts de froid dans la zone d'effet 
+  (un JS contre les souffles les annule).
+
+
+3. Golem de foudre
+- Niveau requis : 17 (-2 pour les Transmutateurs, +5 pour les Bardes)
+- Composants nécessaires :
+  - 100 000 pièces d'or
+  - Un parchemin de Chaîne d'éclairs
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 80
+  - CA : -2
+  - TAC0 : 6
+  - APR : 2
+  - Jets de sauvegarde : 6/8/7/7/9
+- Résistances :
+  - Magie : 100
+  - Froid : 85
+  - Froid magique : 85
+  - Electricité : 125
+  - Acide : 50
+  - Armes tranchantes : 25
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Se déplace à une vitesse supérieure.
+- Bouclier électrique permanent : tout adversaire touchant le golem subit 1d8 +2 points de dégâts électriques.
+- Peut lancer Chaîne d'éclairs sur ses ennemis proches.
+- Peut lancer "Déplacement éclair" qui lui permet de se transporter presque instantanément à n'importe quel endroit 
+  dans son champ visuel en se transformant en un puissant éclair. Son déplacement à grande vitesse génère une onde 
+  de choc qui renverse et inflige 1d6 points de dégâts électriques à toutes les créatures présentes dans un rayon de 
+  3 mètres autour de son lieu de destination. Le coup de tonnerre qui en résulte les rend également sourdes pendant 
+  1d4 tours si elles ratent un jet de sauvegarde contre les souffles. Puisque cette capacité fait partie intégrante 
+  de la nature du golem, ce dernier n'a pas besoin d'attendre avant de l'utiliser à nouveau, ni ou une autre.
+  Cette capacité remplace "Téléportation".
+
+
+
+Chaque golem dispose par défaut des capacités suivantes :
+1. Renvoi        : L'activer provoque la désintégration du golem. Elle est irréversible.
+2. Téléportation : Le golem se téléporte près d'un membre du groupe situé dans son champ de vision. Utile pour les 
+                   golems de taille géante qui peuvent se trouver bloqués par des passages trop étroits pour qu'ils 
+				   les empruntent. Elle ne peut être utilisée avec succès que si aucun ennemi n'est en vue.
+
+Vous pouvez aussi donner des ordres simples à vos golems. Les modèles mineurs de golems de chair, d'argile et de pierre 
+peuvent obéir aux ordres suivants :
+- Suis-moi ! (Le golem devient contrôlable mais n'agit pas par lui-même. C'est son état par défaut lorsqu'il est activé.)
+- Monte la garde ! (Le golem redevient neutre et ne s'éloigne pas de sa position.)
+- Détruis-toi ! (Oblige le golem à se désintégrer. Cette commande est identique à la capacité "Renvoi", mais peut aussi 
+                 être activée lorsque le golem monte la garde.)
+
+Les golems plus évolués peuvent aussi répondre aux ordres suivants :
+- Suis-moi et protège-moi ! (Le golem devient contrôlable et attaquera à vue toute créature hostile ou tout ennemi qui 
+                             s'en prendra aux membres du groupe.)
+- Monte la garde et défends les lieux ! (Le golem devient neutre et attaque toute créature hostile qu'il voit. Il retourne 
+                                         toujours à la position qu'il garde.)
+
+Vous devriez prendre grand soin de vos golems car ils peuvent souffrir de défaillances lorsqu'ils sont lourdement endommagés. 
+La capacité "Réparer un Golem" permet de les remettre en état.
+
+
+Les sorts qui affectent les golems de manière spécifique
+========================================================
+
+Certains sorts affectent différemment les golems qui sont des constructions artificielles dénuées de vie. L'installation du
+composant "Rendre les golems vulnérables à certains effets de sorts spécifiques" déclenche les effets suivants :
+- Transmutation de la Chair en Pierre :
+  Transforme les golems de chair en golems de pierre de la même version s'ils ratent un jet de sauvegarde contre la
+  pétrification/métamorphose.
+- Transmutation de la Pierre en Chair :
+  Transforme les golems de pierre en golems de chair de la même version s'ils ratent un jet de sauvegarde contre la
+  pétrification/métamorphose.
+- Flétrissure abominable d'Abi-Dalzim :
+  Ce sort assèche tous les golems d'argile situés dans sa zone d'effet et les transforme en golems de pierre s'ils ratent
+  leur jet de sauvegarde contre les sorts avec un malus de 2.
+- Cône de froid et Tempête glaciale :
+  Les golems d'argile atteints par ces sorts sont ralentis pendant cinq rounds s'ils ratent leur jet de sauvegarde contre
+  les sorts.
+- Sorts de feu de haut niveau :
+  Ces sorts augmentent la température des golems de fer pendant cinq rounds (sans JS). Pendant cette période, ils assènent 
+  des coups infligeant des dégâts de feu en plus des dégâts physiques normaux.
+  Les sorts concernés sont les suivants : Nuée de météores, Souffle de dragon, Comète, Nuage incendiaire et Tempête de feu 
+  et Enfer divin.
+
+
+Sites connus dans lesquels vous pouvez fabriquer des golems
 ===========================================================
 
-- Dragon's Eye Level 3, Laboratory:
-  You may be able to use the laboratory after taking care of Presio and his undead minions.
+- Niveau 3 de l'Oeil du Dragon :
+  Vous pouvez utiliser le laboratoire après vous être débarrassé de Presio et de ses serviteurs morts-vivants.
 
-- Severed Hand, Larrel's Study:
-  The caretaker Gelarith may allow you to build golems in this place if you helped him fixing the AstroLab.
+- La Main Tranchée, Étude de Larrel :
+  Le gardien Gelarith peut vous autoriser à y fabriquer des golems si vous l'aidez à réparer l'astrolabe.
 
-- Dorn's Deep, Bandoth's Laboratory:
-  You can bribe, threaten or kill Bandoth if you want to use his laboratory as another location for building golems.
+- Profondorn, laboratoire de Bandoth :
+  Vous pouvez soudoyer, menacer ou tuer Bandoth si vous souhaitez utiliser son laboratoire pour fabriquer des golems.
 
-- Lower Dorn's Deep, Home of the drow wizard Malavon:
-  This place can be used to construct golems after taking care of Malavon and his minions.
+- Bas Profondorn, maison du magicien drow Malavon :
+  Vous pouvez y construire des golems après vous être débarrassé de Malavon et de ses serviteurs.
 
-- Gloomfrost, Tiernon's Forge:
-  Tiernon might allow you to use his forge if you ask nicely. Alternatively you can simply kill him.
+- Glacier de Morneglace, forge de Tiernon :
+  Tiernon peut vous autoriser à utiliser sa forge si vous le lui demandez gentiment. Sinon, vous pouvez tout aussi bien le tuer.
+  

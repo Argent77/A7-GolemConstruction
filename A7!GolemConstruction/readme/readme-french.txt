@@ -12,8 +12,8 @@ Discussion :      http://www.shsforums.net/topic/58696-mod-golem-construction-fo
 Généralités
 ~~~~~~~~~~~
 
-Un mod pour Siege of Dragonspear, BG2:EE et EET (Enhanced Edition Trilogy) qui permet aux 
-lanceurs de sorts de fabriquer leur propre golem.
+Un mod pour Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) et IWD:EE qui permet 
+aux lanceurs de sorts de fabriquer leur propre golem.
 
 Partout dans le jeu, vous rencontrez de nombreux golems de types divers et variés. Ils sont 
 puissants, résistants et indéfectiblement loyaux à leur maître. Malheureusement, ils sont la 
@@ -36,15 +36,17 @@ Installation
 Il s'agit d'un mod WeiDU, donc très facile à installer. Il suffit de décompresser l'archive 
 téléchargée dans votre répertoire de jeu, d'exécuter "setup-A7!GolemConstruction.exe" et de 
 suivre les instructions. Il est fortement recommandé d'installer le mod avant de commencer 
-la campagne "Siege of Dragonspear" (BG:EE) ou de commencer une nouvelle partie (BG2:EE).
+la campagne "Siege of Dragonspear" (BG:EE) ou de commencer une nouvelle partie (BG2:EE et 
+IWD:EE).
 
-Important : Le jeu doit être doté du patch v2.0 ou supérieur pour que l'installation fonctionne.
+Important : BG2:EE doit être doté du patch v2.0 ou supérieur pour que l'installation fonctionne.
+Important : IWD:EE doit être doté du patch v1.4 ou supérieur pour que l'installation fonctionne.
 
 
 Composants
 ~~~~~~~~~~
 
-1. Capacité de Fabrication de Golem pour lanceurs de sorts (pour BG:SoD, BG2:EE et EET)
+1. Capacité de Fabrication de Golem pour lanceurs de sorts (pour BG:SoD, BG2:EE, EET et IWD:EE)
 
 C'est le composant principal du mod. Il installe plusieurs manuels de fabrication de golem 
 à travers tout Féérune. Le "Grimoire de Fabrication de Golem" est un recueil de six volumes 
@@ -59,7 +61,7 @@ Types de golems dont on peut apprendre le processus de fabrication :
 - Golems de pierre en versions mineure, normale, majeure et parfaite.
 - Golems de fer en versions mineure, normale, majeure et parfaite.
 - Golems de mithril en versions mineure, normale, majeure et parfaite.
-- Golems d'adamantine en versions mineure, normale, majeure et parfaite.
+- Golems d'adamantine en versions mineure, normale, majeure et parfaite (non disponible dans IWD:EE).
 
 Il existerait un autre recueil mystérieux de six volumes qui traiterait de la fabrication de 
 types de golems plus exotiques.
@@ -78,6 +80,9 @@ des magiciens élémentaristes du deuxième étage de la Tour de Garde. Dans l'e
 de Bhaal, votre Antichambre peut s'y prêter, à condition d'y installer le matériel nécessaire.
 Les Golems peuvent obéir à des ordres simples. Pour ce faire, il suffit de leur parler (si 
 nécessaire en utilisant le bouton Dialogue ou en appuyant sur la touche F1).
+Dans IWD:EE, vous pouvez essayer le troisième niveau de l'Oeil du Dragon, l'étude de Larrel 
+dans la Main Tranchée, la Tour de Bandoth à Profondorn, la maison de Malavon dans le Bas 
+Profondorn ou la forge de Tiernon dans le glacier Morneglace (HoW).
 
 
 2. Modifications du jeu (nécessite l'installation du composant principal)
@@ -112,7 +117,7 @@ dans la chapelle du premier étage, derrière les portes secrètes.
 * 33 % de chance pour le golem d'argile s'il survit.
 * 15 % de chance pour le golem de fer s'il survit.
 
-2.6. Rendre les golems vulnérables aux effets de certains sorts (pour BG:SoD, BG2:EE et EET).
+2.6. Rendre les golems vulnérables aux effets de certains sorts (pour tous les jeux).
 Ce composant modifie un certain nombre de sorts afin qu'ils puissent affecter des types de golems
 spécifiques d'une manière différente et parfois inattendue. Certains sorts peuvent causer des effets
 nocifs spéciaux alors que d'autres améliorent ou même changent la nature des golems. Consultez le
@@ -134,6 +139,8 @@ Détails
 Consultez le fichier "golem_information.txt" dans le répertoire "readme". Il fournit des informations 
 sur le niveau minimum requis et les matériaux nécessaires pour créer chaque type de golem, ainsi qu'un 
 détail des caractéristiques, compétences et capacités de chaque golem.
+Par ailleurs, vous trouverez des informations spécifiques pour IWD:EE dans le fichier 
+"golem_information-iwdee-french.txt".
 
 
 Crédits

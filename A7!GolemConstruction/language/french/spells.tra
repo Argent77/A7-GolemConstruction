@@ -169,18 +169,18 @@ Son déplacement à grande vitesse génère une onde de choc qui renverse et inf
 
 Puisque cette capacité fait partie intégrante de la nature du golem, ce dernier n'a pas besoin d'attendre avant de l'utiliser à nouveau, ni ou une autre.~
 
-@20160 = ~Banish Golem Spirit~
-@20161 = ~Banish Golem Spirit
-(Conjuration/Summoning)
+@20160 = ~Bannissement d'un esprit de golem~
+@20161 = ~Bannissement d'un esprit de golem
+(Conjuration/Convocation)
 
-Level: 6
-Range: Visual range of the caster
-Duration: Permanent
-Casting time: 9
-Area of Effect: 1 creature
-Saving Throw: Neg.
+Niveau : 6
+Portée : champ visuel
+Durée : permanente
+Temps d'incantation : 9
+Zone d'effet : une créature
+Jet de sauvegarde : annule
 
-This spell attempts to sever the connection between golem body and the elemental spirit bound to it. If the target fails a saving throw vs. spell it is destroyed instantly. Otherwise the target takes 2d6 damage and has a 25% chance to go berserk for five rounds. Perfect golem variants are not affected. The target's Magic Resistance, if any, does not affect this spell.~
+Ce sort s'efforce de rompre la connexion liant le golem et l'esprit élémentaire qui l'anime. Si la cible rate un jet de sauvegarde contre les sorts, elle est instantanément détruite. Sinon, elle subit 2d6 points de dégâts et a 25 % de chance de devenir berserk pendant cinq rounds. Les golems parfaits ne sont pas affectés. La résistance à la magie ne protège pas des effets de ce sort.~
 
 
 // Misc. strings
@@ -203,9 +203,9 @@ This spell attempts to sever the connection between golem body and the elemental
 @21018 = ~Paralysé~
 @21019 = ~Protections magiques supprimées~
 @21020 = ~Bouclier électrique~
-@21021 = ~Turned into Stone Golem~
-@21022 = ~Turned into Flesh Golem~
-@21023 = ~Dehydrated into Stone Golem~
-@21024 = ~Corroded by sunlight~
-@21025 = ~Heated up~
-@21026 = ~Discovered a spell scroll: Banish Golem Spirit~
+@21021 = ~Transformé en Golem de pierre~
+@21022 = ~Transformé en Golem de chair~
+@21023 = ~Déshydraté en Golem de pierre~
+@21024 = ~Corrodé par la lumière du soleil~
+@21025 = ~Chauffé à blanc~
+@21026 = ~A découvert un parchemin de sort : Bannissement d'un esprit de golem.~

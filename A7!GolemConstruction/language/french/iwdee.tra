@@ -2,77 +2,76 @@
 // Misc. strings (index 120000..149999)
 
 // *** Misc. strings ***
-@120000 = ~You take some fire damage from the blistering heat of the furnace.~
+@120000 = ~La chaleur torride qui émane du fourneau vous brûle.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
-@121000 = ~The Astrolab looks like very advanced technology. Can I use it to construct golems in this place?~
-@121001 = ~I must take my leave. Farewell.~
-@121002 = ~Golems you say? Hmm. We have built the Astrolab primarily for researching space and time. They would be of little use for the task you suggested.~
-@121003 = ~However, there are tools right over there on the table that have been used to construct and maintain the Astrolab and other machinery. You can use them to build your golems. But don't touch any of the other devices in this room.~
-@121004 = ~Understood. And thank you.~
+@121000 = ~Manifestement, cet astrolabe est le fruit d'une technologie très avancée. Pourrais-je l'utiliser pour construire des golems ?~
+@121001 = ~Je dois m'en aller. Au revoir.~
+@121002 = ~Des golems ? Hum. Nous avons construit l'Astrolabe principalement pour effectuer des recherches sur l'univers et le temps. Il vous serait de peu d'utilité pour ce que vous comptez faire.~
+@121003 = ~Cependant, vous trouverez sur la table de droite des outils qui nous ont servi à construire et à entretenir l'astrolabe et d'autres machines. Vous pouvez les utiliser pour construire vos golems. Mais ne touchez pas aux autres dispositifs de la pièce.~
+@121004 = ~Compris. Je vous remercie.~
 
 
 // *** Dialog: Bandoth of Lower Dorn's Deep ***
-@122000 = ~Your workshop is well equipped. Do you mind if we build golems in this place?~
-@122001 = ~Do whatever you want with this place.~
-@122002 = ~Are you out of your mind? You have tested my patience far too long already. Why should I allow your presence any longer?~
-@122003 = ~Would a monetary compensation change your mind?~
-@122004 = ~How about this? Allow me to use this workshop or you will have a knife in your back before this conversation is over.~
-@122005 = ~How about this? Allow me to use this workshop or this fireball will blast you to oblivion right now.~
-@122006 = ~How about this? Allow me to use this workshop or I will chop your head off without hesitation.~
-@122007 = ~I can't think of a good reason right now.~
-@122008 = ~Hah! No amount of money could change my mind about you. But that doesn't mean I cannot try to tolerate your presence a bit longer.~
-@122009 = ~Give me 4000 gold and you can build as many golems as you want. Just don't bother me with any petty conversations. Agreed?~
-@122010 = ~It's a deal.~
-@122011 = ~I refuse. That's too expensive for me.~
-@122012 = ~Give me 2000 gold and you can build as many golems as you want. Do you accept?~
-@122013 = ~Well, I guess that will do. Be on your way now. I have wasted enough time on you already.~
-@122014 = ~You dare to threaten me in my own home? I should kick you out right now for this insolence.~
-@122015 = ~But since I don't want to lose my life over such trivial matters I will make an exception and comply with your wishes. Do what you have to do, but don't expect any more charity from me.~
-@122016 = ~Then bother me no further.~
+@122000 = ~Votre atelier est bien équipé. Ça vous dérange si nous y construisons des golems ?~
+@122001 = ~Utilisez ce lieu comme bon vous semble.~
+@122002 = ~Avez-vous perdu l'esprit ? Vous avez usé de ma patience depuis déjà trop longtemps. Pourquoi devrais-je tolérer encore votre présence plus longtemps ?~
+@122003 = ~Une compensation monétaire vous ferait-elle changer d'avis ?~
+@122004 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier si vous ne souhaitez pas avoir une lame plantée dans le dos avant que cette conversation ne prenne fin.~
+@122005 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier si vous n'avez pas envie qu'une boule de feu ne vous envoie de suite rejoindre le grand néant.~
+@122006 = ~Et que dites-vous de ceci ? Permettez-moi d'utiliser cet atelier ou je vous décapite sans hésitation.~
+@122007 = ~A vrai dire, je ne trouve aucune bonne raison pour l'instant.~
+@122008 = ~Ha ! Aucune somme d'argent ne pourrait changer l'opinion que j'ai de vous. Mais ça ne signifie pas que je ne peux pas essayer de tolérer votre présence un peu plus longtemps.~
+@122009 = ~Donnez-moi 4 000 pièces d'or et vous pourrez construire autant de golems que vous voulez. Mais ne venez pas m'ennuyer avec vos conversations mesquines. D'accord ?~
+@122010 = ~Marché conclu.~
+@122011 = ~Je refuse. C'est bien trop cher pour moi.~
+@122012 = ~Donnez-moi 2 000 pièces d'or et vous pourrez construire autant de golems que vous voulez. Ça vous va ?~
+@122013 = ~Eh bien, j'imagine que ça ira. Occupez-vous de vos affaires, maintenant. J'ai déjà perdu assez de temps avec vous.~
+@122014 = ~Vous osez me menacer dans ma propre maison ? Je devrais vous chasser à coups de pieds dans le derrière pour une telle insolence.~
+@122015 = ~Mais puisque je ne tiens pas à perdre la vie pour des questions aussi triviales, je vais faire une exception et répondre à vos souhaits. Faites ce que vous avez à faire, mais n'attendez plus rien de moi.~
+@122016 = ~Alors, ne me dérangez plus.~
 
 
 // *** Dialog: Tiernon of Gloomfrost ***
-@123000 = ~Your forge is impressive. Can I use it to construct golems in this place?~
-@123001 = ~I couldn't help but notice your impressive forge. Before I go, would you allow me to use it for constructing golems in this place?~
-@123002 = ~I understand. Your forge is impressive, Tiernon. Can I use it to construct golems in this place?~
-@123003 = ~If you say so? I have noticed your impressive forge. Can I use it to construct golems in this place?~
-@123004 = ~I couldn't help but notice your impressive forge. Before you go rest, would you allow me to use it for constructing golems in this place?~
-@123005 = ~Eh? The forge is like a part of m'self. But be my guest if ye insist so much. Just don't be hammerin' it to oblivion with yer clumsy smithing skills.~
-@123006 = ~Thank you, Tiernon.~
+@123000 = ~Votre forge est impressionnante. Pourrais-je l'utiliser pour construire des golems ?~
+@123001 = ~Je n'ai pas pu m'empêcher de remarquer votre impressionnante forge. Avant de partir, m'autoriseriez-vous à l'utiliser pour construire des golems ?~
+@123002 = ~Je comprends. Votre forge est impressionnante, Tiernon. Pourrais-je l'utiliser pour construire des golems ?~
+@123003 = ~Si vous le dites... J'ai remarqué votre forge impressionnante. Puis-je l'utiliser pour construire des golems ?~
+@123004 = ~Je n'ai pas pu m'empêcher de remarquer votre impressionnante forge. Avant que vous n'alliez vous reposer, m'autoriseriez-vous à l'utiliser pour construire des golems ?~
+@123005 = ~Comment ? Cette forge, c'est comme une partie de moi. Mais puisque vous avez l'air d'insister, ne vous gênez pas. Vu vos piètres talents de forgeron, je vous demande juste de ne pas la massacrer sous vos coups de marteau.~
+@123006 = ~Merci, Tiernon.~
 
 
 // *** Journal entries ***
-@140000 = ~Golem Construction Workshop
+@ 140000 = ~ Atelier Construction Golem
 
-Presio's laboratory in the Dragon's Eye caverns appears to be well equipped for magical experiments of all sorts. I should be able to construct golems in this place.~
+Le laboratoire de Presio dans les cavernes de l'Oeil du Dragon semble être bien équipé pour y mener des expériences magiques. Je devrais pouvoir y fabriquer des golems.~
 
-@140001 = ~Golem Construction Workshop
+@140001 = ~Atelier de Fabrication de Golems
 
-Gelarith of the Severed Hand allowed me to use his tools for building golems on the highest level of the tower after helping him to repair the Astrolab.~
+Pour me remercier de l'avoir aidé à réparer l'astrolabe, Gelarith m'a permis d'utiliser ses outils pour fabriquer des golems tout en haut de la tour de la Main Tranchée.~
 
-@140002 = ~Golem Construction Workshop
+@140002 = ~Atelier de Fabrication de Golems
 
-The wizard Bandoth allowed me to use his laboratory for building golems after offering a substantial amount of gold. His workshop can be accessed from the opening area of Dorn's Deep.~
+Le magicien Bandoth m'a permis d'utiliser son laboratoire pour fabriquer des golems en échange d'une substantielle somme d'argent. Je peux y accéder à partir de l'entrée de Profondorn.~
 
-@140003 = ~Golem Construction Workshop
+@140003 = ~Atelier de Fabrication de Golems
 
-I was able to convince the wizard Bandoth that it would be a good for his health if he let me use his laboratory for building golems. His workshop can be accessed from the opening area of Dorn's Deep.~
+J'ai pu convaincre le magicien Bandoth qu'il serait bon pour sa santé de me laisser utiliser son laboratoire pour fabriquer des golems. Je peux y accéder à partir de l'entrée de Profondorn.~
 
-@140004 = ~Golem Construction Workshop
+@140004 = ~Atelier de Fabrication de Golems
 
-I have taken over the laboratory from the wizard Bandoth which looks suitable for building golems. The workshop can be accessed from the opening area of Dorn's Deep.~
+J'ai repris le laboratoire du magicien Bandoth qui semble bien équipé pour fabriquer des golems. Je peux y accéder à partir de l'entrée de Profondorn.~
 
-@140005 = ~Golem Construction Workshop
+@140005 = ~Atelier de Fabrication de Golems
 
-The study of the mad wizard Malavon is well equipped for magical experiments. I should be able to construct golems in that place.~
+La salle d'étude du magicien fou Malavon est bien équipée pour mener des expérimentations magiques. Je devrais pouvoir y fabriquer des golems.~
 
-@140006 = ~Golem Construction Workshop
+@140006 = ~Atelier de Fabrication de Golems
 
-The dwarven blacksmith Tiernon has graciously allowed me to use his smithing forge. I should be able to construct golems at his workshop in the Gloomfrost mountains.~
+Le forgeron nain Tiernon m'a gracieusement permis d'utiliser sa forge. Je devrais pouvoir fabriquer des golems dans son atelier du glacier de Morneglace.~
 
-@140007 = ~Golem Construction Workshop
+@140007 = ~Atelier de Fabrication de Golems
 
-The smithing forge of the recently deceased dwarven blacksmith Tiernon should allow me to construct golems at his workshop in the Gloomfrost mountains.~
-
+La forge du forgeron nain Tiernon, mort récemment, devrait me permettre de fabriquer des golems dans son atelier du glacier de Morneglace.~
