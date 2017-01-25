@@ -176,8 +176,8 @@ Die hohe Geschwindigkeit und ausstrahlende Energie erzeugen eine Schockwelle, di
 
 Da diese Fähigkeit Teil der Golemnatur ist, muss der Blitzgolem nicht warten, bevor er die Blitzreise oder eine andere Fähigkeit erneut wirkt.~
 
-@20160 = ~Golemseele verbannen~
-@20161 = ~Golemseele verbannen
+@20160 = ~Golemseele bannen~
+@20161 = ~Golemseele bannen
 
 Grad: 6
 Schule: Beschwörung
@@ -187,7 +187,7 @@ Zeitaufwand: 9
 Bereich: 1 Wesen
 Rettungswurf: Ja (gg. Zauber)
 
-Dieser Zauber versucht die Verbindung zwischen Golemkörper und -seele zu unterbrechen und den Geist zurück in seine Heimatebene zu verbannen. Wenn dem Opfer kein erfolgreicher Rettungswurf gegen Zauber gelingt, wird es augenblicklich zerstört. Andernfalls erleidet das Opfer 2W6 Schadenspunkte und verfällt in 25 Prozent aller Fälle für fünf Runden in Raserei. Perfekte Golemvarianten sind nicht betroffen. Gegen den Zauber schützt kein Magiewiderstand.~
+Dieser Zauber versucht die Verbindung zwischen Golemkörper und -seele zu unterbrechen und den Geist zurück in seine Heimatebene zu verbannen. Wenn dem Opfer kein erfolgreicher Rettungswurf gegen Zauber gelingt, wird es augenblicklich zerstört. Andernfalls erleidet es 2W6 Schadenspunkte und verfällt in 25 Prozent aller Fälle für fünf Runden in Raserei. Perfekte Golemvarianten sind nicht betroffen. Gegen den Zauber schützt kein Magiewiderstand.~
 
 
 // Misc. strings
@@ -216,3 +216,4 @@ Dieser Zauber versucht die Verbindung zwischen Golemkörper und -seele zu unterb
 @21024 = ~Korrodiert durch Sonnenlicht~
 @21025 = ~Aufgeheizt~
 @21026 = ~Hat Schriftrolle entdeckt: Golemseele verbannen~
+@21027 = ~Betäubt~

@@ -364,6 +364,15 @@ END
 
 // Ice Golem items
 COPY ~%MOD_FOLDER%/items/a7!eqic.itm~ ~override~
+     ~%MOD_FOLDER%/items/a7!wpic.itm~ ~override~
+     ~%MOD_FOLDER%/spells/a7!wpic1.spl~ ~override~
+
+COPY ~%MOD_FOLDER%/spells/a7!wpic2.spl~ ~override~
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@21027)  // Stunned
+  END
 
 // Magic Golem weapon
 ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
