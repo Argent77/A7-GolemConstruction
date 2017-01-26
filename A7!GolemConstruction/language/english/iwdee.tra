@@ -3,6 +3,9 @@
 
 // *** Misc. strings ***
 @120000 = ~You take some fire damage from the blistering heat of the furnace.~
+@120001 = ~This study looks well enough equipped. It can probably be used to construct golems - after making sure this floor is safe enough for such a task.~
+@120002 = ~This study looks well enough equipped. It can probably be used to construct golems.~
+@120003 = ~After making this floor of the castle safe the study can be used to construct golems.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
@@ -75,3 +78,11 @@ The dwarven blacksmith Tiernon has graciously allowed me to use his smithing for
 @140007 = ~Golem Construction Workshop
 
 The smithing forge of the recently deceased dwarven blacksmith Tiernon should allow me to construct golems at his workshop in the Gloomfrost mountains.~
+
+@140008 = ~Golem Construction Workshop
+
+The study in Castle Maluradek is well enough equipped for magical experiments. I might be able to construct golems in this place after making sure that I'm not disturbed by any hostile creatures roaming the upper floor of the castle.~
+
+@140009 = ~Golem Construction Workshop
+
+The study on the upper floor of Castle Maluradek appears to be well enough equipped for magical experiments. I should be able to construct golems in that place.~

@@ -1,0 +1,60 @@
+// *** IWD:EE - Castle Maluradek, Second Floor, Study - Triggers messages ***
+
+IF
+  Range([GOODCUTOFF], 11)
+  OR(4)
+    !Dead("LordMaluradek")
+    !Dead("Beholder_1")
+    !Dead("Beholder_2")
+    !Dead("Beholder_3")
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("a7!Ready", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7!Ready", "MYAREA", 1)
+    DisplayStringHead("A7!Helper", @120001) // The study of this castle looks well enough equipped. You could probably use it to construct golems - after making sure this floor is safe enough for such a task.
+    AddJournalEntry(@140008, QUEST) // Golem Construction Workshop
+END
+
+IF
+  !ActuallyInCombat()
+  !Detect([ENEMY])
+  Range([GOODCUTOFF], 11)
+  Dead("LordMaluradek")
+  Dead("Beholder_1")
+  Dead("Beholder_2")
+  Dead("Beholder_3")
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("a7!Ready", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("a7!Ready", "MYAREA", 2)
+    SetGlobal("A7!MaluradekWorkshop", "GLOBAL", 1)
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
+    AddAreaType(CANRESTOTHER)
+    DisplayStringHead("A7!Helper", @120002) // The study of this castle looks well enough equipped. You can probably use it to construct golems.
+    AddJournalEntry(@140009, QUEST) // Golem Construction Workshop
+END
+
+IF
+  !ActuallyInCombat()
+  !Detect([ENEMY])
+  Range([GOODCUTOFF], 11)
+  Dead("LordMaluradek")
+  Dead("Beholder_1")
+  Dead("Beholder_2")
+  Dead("Beholder_3")
+  Global("A7!GolemAbility", "GLOBAL", 1)
+  Global("a7!Ready", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("a7!Ready", "MYAREA", 2)
+    SetGlobal("A7!MaluradekWorkshop", "GLOBAL", 1)
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
+    AddAreaType(CANRESTOTHER)
+    DisplayStringHead("A7!Helper", @120003) // After making this floor of the castle safe you can use the study to construct golems.
+    EraseJournalEntry(@140008) // Golem Construction Workshop
+    AddJournalEntry(@140009, QUEST) // Golem Construction Workshop
+END

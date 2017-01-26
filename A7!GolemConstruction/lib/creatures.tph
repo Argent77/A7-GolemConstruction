@@ -1087,6 +1087,7 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct32.baf~
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct33.baf~
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct34.baf~
+          ~%MOD_FOLDER%/scripts/iwdee/a7!ct35.baf~
 END ELSE BEGIN
   COMPILE ~%MOD_FOLDER%/scripts/a7!cmd.baf~
           ~%MOD_FOLDER%/scripts/a7!cmdma.baf~

@@ -385,4 +385,42 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
   // Use Gloomfrost, Tiernon's Forge as golem building workshop
   COMPILE ~%MOD_FOLDER%/dialogs/iwdee/dtiernon.d~
   EXTEND_TOP ~ar9501.bcs~ ~%MOD_FOLDER%/scripts/iwdee/ar9501_workshop.baf~
+
+  // Use study on second floor of Castle Maluradek (TotLM) as golem building workshop
+  COMPILE ~%MOD_FOLDER%/scripts/iwdee/a7!ar97a.baf~
+  COPY_EXISTING ~ar9712.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 2280
+      fj_box_top        = 1545
+      fj_box_right      = 2290
+      fj_box_bottom     = 1555
+      fj_cursor_idx     = 0       // default cursor
+      fj_flags          = (1 << 1)  // [Trap resets]
+      fj_trap_active    = 1         // is trapped
+      fj_vertex_0       = 2285 | (1555 << 16)
+      fj_vertex_1       = 2280 | (1545 << 16)
+      fj_vertex_2       = 2290 | (1545 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!Watcher"
+      fj_reg_script     = "a7!ar97a"
+    END
+    LPF fj_are_structure
+    INT_VAR
+      fj_type           = 0       // proximiy trigger
+      fj_box_left       = 2280
+      fj_box_top        = 1475
+      fj_box_right      = 2290
+      fj_box_bottom     = 1485
+      fj_cursor_idx     = 0       // default cursor
+      fj_vertex_0       = 2285 | (1485 << 16)
+      fj_vertex_1       = 2280 | (1475 << 16)
+      fj_vertex_2       = 2290 | (1475 << 16)
+    STR_VAR
+      fj_structure_type = "region"
+      fj_name           = "A7!Helper"
+      fj_reg_script     = "a7!ar97a"
+    END
 END

@@ -82,7 +82,8 @@ Les Golems peuvent obéir à des ordres simples. Pour ce faire, il suffit de leu
 nécessaire en utilisant le bouton Dialogue ou en appuyant sur la touche F1).
 Dans IWD:EE, vous pouvez essayer le troisième niveau de l'Oeil du Dragon, l'étude de Larrel 
 dans la Main Tranchée, la Tour de Bandoth à Profondorn, la maison de Malavon dans le Bas 
-Profondorn ou la forge de Tiernon dans le glacier Morneglace (HoW).
+Profondorn, la forge de Tiernon dans le glacier Morneglace (HoW)
+or the study on the second floor of Castle Maluradek (TotLM).
 
 
 2. Modifications du jeu (nécessite l'installation du composant principal)

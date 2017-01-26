@@ -3,6 +3,9 @@
 
 // *** Misc. strings ***
 @120000 = ~Ihr erleidet ein paar Verbrennungen durch die brennende Hitze des Glutofens.~
+@120001 = ~Dieses Arbeitszimmer scheint recht gut ausgestattet zu sein. Man kann hier wahrscheinlich Golems erschaffen - wenn dieses Stockwerk sicher genug wäre.~
+@120002 = ~Dieses Arbeitszimmer scheint recht gut ausgestattet zu sein. Man kann hier wahrscheinlich Golems erschaffen.~
+@120003 = ~Nachdem das Stockwerk sicher genug gemacht wurde, kann man dieses Arbeitszimmer zum Golems erschaffen nutzen.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
@@ -75,3 +78,11 @@ Der Zwerg Tiernon hat mir erlaubt, seine Schmiede in Finsterfrost zu benutzen. I
 @140007 = ~Werkstatt für den Golembau
 
 Die Schmiede des kürzlich verstorbenen Zwerges Tiernon in Finsterfrost sollte mir gestatten, Golems zu erschaffen.~
+
+@140008 = ~Werkstatt für den Golembau
+
+Das Arbeitszimmer in Schloss Maluradek scheint recht gut geignet zu sein, um magische Experimente durchzuführen. Wenn ich es schaffen könnte, die feindlichen Kreaturen im Obergeschoss des Schlosses zu beseitigen, sollte ich dort in der Lage sein, Golems zu erschaffen.~
+
+@140009 = ~Werkstatt für den Golembau
+
+Das Arbeitszimmer im Obergeschoss von Schloss Maluradek scheint recht gut geeignet zu sein, um magische Experimente durchzuführen. Ich sollte dort in der Lage sein, Golems zu erschaffen.~

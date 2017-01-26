@@ -713,3 +713,7 @@ Orte, an denen man Golems konstruieren kann
 - Finsterfrost, Tiernons Schmiede:
   Der Zwergenschmied Tiernon kann euch erlauben, mit seinem Werkzeugen Golems zu erschaffen. Oder aber man tötet ihn 
   einfach.
+
+- Schloss Maluradek (TotLM):
+  Das Arbeitszimmer im südöstlichen Winkel des Obergeschosses kann genutzt werden, nachdem die Umgebung von 
+  feindlichen Kreaturen gesäubert wurde.

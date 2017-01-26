@@ -74,8 +74,8 @@ In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesvale may be suita
 Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 
 your Pocket Plane may work, after installing some equipment.
 In IWD:EE you can try the third level of Dragon's Eye, Larrel's Study of the Severed Hand, 
-Bandoth's Tower in Dorn's Deep, Malavon's Home in Lower Dorn's Deep or Tiernon's Forge in the 
-Gloomfrost Mountains (HoW).
+Bandoth's Tower in Dorn's Deep, Malavon's Home in Lower Dorn's Deep, Tiernon's Forge in the 
+Gloomfrost Mountains (HoW) or the study on the upper floor of Castle Maluradek (TotLM).
 
 Golems may follow simple commands. To change a command simply talk to them (you may have to force 
 the talk by pressing the Talk button, or pressing F1).

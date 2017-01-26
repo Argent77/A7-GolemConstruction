@@ -3,6 +3,9 @@
 
 // *** Misc. strings ***
 @120000 = ~La chaleur torride qui émane du fourneau vous brûle.~
+@120001 = ~This study looks well enough equipped. It can probably be used to construct golems - after making sure this floor is safe enough for such a task.~
+@120002 = ~This study looks well enough equipped. It can probably be used to construct golems.~
+@120003 = ~After making this floor of the castle safe the study can be used to construct golems.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
@@ -75,3 +78,11 @@ Le forgeron nain Tiernon m'a gracieusement permis d'utiliser sa forge. Je devrai
 @140007 = ~Atelier de Fabrication de Golems
 
 La forge du forgeron nain Tiernon, mort récemment, devrait me permettre de fabriquer des golems dans son atelier du glacier de Morneglace.~
+
+@140008 = ~Golem Construction Workshop
+
+The study of Castle Maluradek is well enough equipped for magical experiments. I might be able to construct golems in this place after making sure that I'm not disturbed by any hostile creature roaming the second floor of the castle.~
+
+@140009 = ~Golem Construction Workshop
+
+The study on the second floor of Castle Maluradek appears to be well enough equipped for magical experiments. I should be able to construct golems in that place.~

@@ -10,6 +10,7 @@ IF ~Global("stage", "LOCALS", 0)~ Golem.Prepare
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initDornsDeep", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct32")~ EXIT
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initLowerDornsDeep", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct33")~ EXIT
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initGloomfrost", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct34")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initMaluradek", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct35")~ EXIT
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("A7!Debug", "GLOBAL", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
   IF ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)~ DO ~SetGlobal("stage", "LOCALS", -2) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
   IF ~GlobalTimerNotExpired("A7!GolemCountTimer", "GLOBAL")~ + Golem.Counter.Active

@@ -76,6 +76,19 @@ THEN
     StartDialogueNoSet(LastSummonerOf(Myself))
 END
 
+// Checking location: TotLM - Castle Maluradek, second floor
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  Global("A7!MaluradekWorkshop", "GLOBAL", 1)
+  AreaCheck("AR9712")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initMaluradek", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
 
 // Unsupported area for constructing golems
 IF

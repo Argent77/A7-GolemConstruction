@@ -74,8 +74,9 @@ Schatten von Amn gibt es die Sphäre der Ebenen und Jermiens Heim in Imnestal. I
 der Bibliothek der Elementarmagier in der zweiten Ebene der Wachenden Festung versuchen. In Thron 
 des Bhaal könnte das Einsprengsel genutzt werden, wenn ihr die richtige Ausrüstung installiert.
 In IWD:EE kann man es auf der dritten Ebene des Drachenauges, in Larrels Arbeitszimmer der 
-Abgetrennten Hand, in Bandoths Turm von Dorntief, in Malavons Palast in Unter-Dorntief oder in 
-Tiernons Schmiede in den Finsterfrostbergen versuchen.
+Abgetrennten Hand, in Bandoths Turm von Dorntief, in Malavons Palast in Unter-Dorntief, in 
+Tiernons Schmiede in den Finsterfrostbergen oder im Arbeitszimmer im Obergeschoss von Schloss 
+Maluradek (TotLM) versuchen.
 
 Golems folgen einfachen Befehlen. Redet mit dem Golem, um neue Befehle zu geben. Man kann das Reden 
 mit der Reden-Schaltfläche (oder F1) erzwingen.

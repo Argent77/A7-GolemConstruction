@@ -675,7 +675,7 @@ be triggered when the Tweaks component "Make golems vulnerable to specific spell
   These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage 
   in addition to physical damage.
   The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud, Fire 
-  Storm and Heavenly Inferno (Enfer divin / Himmlisches Inferno / Niebianskie pieklo).
+  Storm and Heavenly Inferno.
 
 
 Known locations where you can successfully construct golems
@@ -695,3 +695,6 @@ Known locations where you can successfully construct golems
 
 - Gloomfrost, Tiernon's Forge:
   Tiernon might allow you to use his forge if you ask nicely. Alternatively you can simply kill him.
+
+- Castle Maluradek (TotLM):
+  The study in the southeastern corner of the upper floor can be used after making the area safe.

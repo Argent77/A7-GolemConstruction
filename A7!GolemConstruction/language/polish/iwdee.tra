@@ -3,6 +3,9 @@
 
 // *** Misc. strings ***
 @120000 = ~Otrzymujesz kilka obrażeń od piekielnego gorąca, które wydobywa się z pieca.~
+@120001 = ~This study looks well enough equipped. It can probably be used to construct golems - after making sure this floor is safe enough for such a task.~
+@120002 = ~This study looks well enough equipped. It can probably be used to construct golems.~
+@120003 = ~After making this floor of the castle safe the study can be used to construct golems.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
@@ -75,3 +78,11 @@ Krasnoludzki kowal Tiernon pozwolił mi łaskawie na używanie swojej kuźni. B�
 @140007 = ~Warsztat budowy golemów
 
 Kuźnia zmarłego niedawno krasnoludzkiego kowala Tiernona pozwoli mi na budowę golemów w jego warsztacie w górach Ponurego Mrozu.~
+
+@140008 = ~Golem Construction Workshop
+
+The study of Castle Maluradek is well enough equipped for magical experiments. I might be able to construct golems in this place after making sure that I'm not disturbed by any hostile creature roaming the second floor of the castle.~
+
+@140009 = ~Golem Construction Workshop
+
+The study on the second floor of Castle Maluradek appears to be well enough equipped for magical experiments. I should be able to construct golems in that place.~

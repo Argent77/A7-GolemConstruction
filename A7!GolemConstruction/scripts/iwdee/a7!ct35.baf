@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Castle Maluradek, Second Floor) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0], 0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([2315.1558]))
+    ActionOverride(Player2, JumpToPoint([2256.1560]))
+    ActionOverride(Player3, JumpToPoint([2305.1508]))
+    ActionOverride(Player4, JumpToPoint([2244.1510]))
+    ActionOverride(Player5, JumpToPoint([2274.1468]))
+    ActionOverride(Player6, JumpToPoint([2200.1544]))
+    ActionOverride(Player1, Face(SE))
+    ActionOverride(Player2, Face(SE))
+    ActionOverride(Player3, Face(SE))
+    ActionOverride(Player4, Face(SE))
+    ActionOverride(Player5, Face(SE))
+    ActionOverride(Player6, Face(SE))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([2315.1558], INSTANT)
+    FadeFromColor([30.0], 0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

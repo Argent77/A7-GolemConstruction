@@ -49,7 +49,8 @@ Rodzaje golemów, których budowy można się nauczyć z Podręcznika budowy gol
 Każdy golem wymaga materiałów niezbędnych do wykonania jego fizycznej powłoki oraz dodatkowych składników koniecznych do obdarzenia go kluczowymi właściwościami. Stworzenie idealnego wariantu jest wyczynem samym w sobie i wymaga ściśle określonego artefaktu, który musi zostać użyty w procesie zaklinania.
 
 Budowa golemów wymaga czasu i musi się odbywać w miejscach posiadających odpowiednie wyposażenie. W kampanii Siege of Dragonspear można do tego celu wykorzystać Czarodziejskie Rozmaitości, Skarbnicę Niewiedzy pod Krasnoludzkimi wykopaliskami oraz ruiny Kanaglymu, do których można się dostać z obszaru Podziemnej rzeki. W kampanii Cienie Amn odpowiednimi miejscami mogą być Kula sfer i dom Jermiena w Imnesvale. Biblioteka czarodzieja na drugim piętrze Twierdzy Strażnika też wydaje się odpowiednim wyborem. W Tronie Bhaala można skorzystać ze Sfery kieszeniowej, pod warunkiem zainstalowania w niej odpowiedniej aparatury.
-W IWDE:EE można spróbować szczęścia na trzecim poziomie Smoczego Oka, w gabinecie Larella w Odciętej Dłoni, wieży Bandotha w Głębi Dorna lub kuźni Tiernona w górach Ponurego Mrozu (Serce Zimy).
+W IWDE:EE można spróbować szczęścia na trzecim poziomie Smoczego Oka, w gabinecie Larella w Odciętej Dłoni, wieży Bandotha w Głębi Dorna, kuźni Tiernona w górach Ponurego Mrozu (Serce Zimy) lub
+or the study on the second floor of Castle Maluradek (TotLM).
 
 Golemy mogą wykonywać proste polecenia. Aby je zmienić, należy po prostu z nimi porozmawiać (może być w tym celu konieczne wymuszenie rozmowy poprzez wciśnięcie przycisku Rozmowa lub klawisza F1).
 
