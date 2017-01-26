@@ -225,6 +225,63 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     END
 END
 
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  // Special copy of Iron Golem Manual for Malavon
+  COPY ~%MOD_FOLDER%/items/a7!tomm4.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @4006 // Malavon's Manual of Golem Building (Vol. 4)
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    SAY IDENTIFIED_DESC @4112 // This amazing tome contains theoretical musings on the construction and control of golems.
+    WRITE_ASCII 0x58 ~~ #8    // no description image
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@4005)  // Has learned how to construct iron golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+
+  COPY ~%MOD_FOLDER%/items/a7!tomy4.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @4006 // Malavon's Manual of Golem Building (Vol. 4)
+    SAY UNIDENTIFIED_DESC @4113 // This amazing tome contains theoretical musings on the construction and control of golems.
+    WRITE_ASCII 0x58 ~~ #8    // no description image
+
+  // Replacing Golem Building Book of the game
+  OUTER_SET replaced = 0
+  COPY_EXISTING ~ar8007.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_EVALUATE ~\(ActionOverride(".+",CreateItem(\)"cdmgolem"\(,[0-9]+,[0-9]+,[0-9]+))\)~ BEGIN SET replaced += 1 END ~\1"a7!tomm4"\2~
+      PATCH_IF (replaced) BEGIN
+        REPLACE_TEXTUALLY ~PartyHasItem("cdmgolem")~ ~OR(2) PartyHasItem("a7!tomm4") PartyHasItem("a7!tomy4")~
+      END
+    END
+  BUT_ONLY
+
+  // Fallback solution: Add to Malavon's inventory
+  ACTION_IF (NOT replaced) BEGIN
+    COPY_EXISTING ~malavon.cre~ ~override~
+      ADD_CRE_ITEM ~a7!tomm4~ (0) (0) (0) ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+  END
+END
+
 
 // Mithral Golem Manual
 COPY ~%MOD_FOLDER%/items/a7!tom05.itm~ ~override~

@@ -7,6 +7,7 @@
 @4003 = ~Höherer Eisengolem~
 @4004 = ~Perfekter Eisengolem~
 @4005 = ~Hat gelernt, Eisengolems zu erschaffen.~
+@4006 = ~Malavons Leitfaden der Golemkonstruktion (Band 4)~
 
 // *** Book content ***
 @4100 = ~Vierte Lektion: Eisengolems
@@ -137,6 +138,91 @@ Gewicht: 10~
 In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Eisengolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
 
 Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in fünf Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
+
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Niederer Eisengolem:
+Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Ein Eisenbarren
+
+Eisengolem:
+Min. Stufe: 14 (-2 für Wandler, +4 für Barden)
+Zutaten:
+- Zwei Eisenbarren
+- Eine Schriftrolle "Todeswolke"
+
+Höherer Eisengolem:
+Min. Stufe: 17 (-2 für Wandler, +5 für Barden)
+Zutaten:
+- Vier Eisenbarren
+- Eine Schriftrolle "Todeswolke"
+
+Perfekter Eisengolem:
+Min. Stufe: 19 (-2 für Wandler)
+Zutaten:
+- Vier Eisenbarren
+- Eine Schriftrolle "Todeswolke"
+- Stücke kalten Eisens
+
+Mindestintelligenz: 17
+
+Gewicht: 1~
+
+
+// *** Book content of Mavalon's version (IWDEE) ***
+@4112 = ~Vierte Lektion: Eisengolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Eisengolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in fünf Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
+
+Dieses Exemplar scheint dem Dunkelelfenmagier Malavon zu gehören. Es enthält eine Reihe seltsamer Sprüche, die Befehle wohl für seine eigenen Schöpfungen sind.
+
+
+EIGENSCHAFTEN:
+
+Die Magie dieses Buches erlaubt es dem Nutzer, selbst Golems zu konstruieren.
+Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des Buches wird verbraucht, nachdem es einmal benutzt wurde.
+
+Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
+
+Niederer Eisengolem:
+Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
+Zutaten:
+- Ein Eisenbarren
+
+Eisengolem:
+Min. Stufe: 14 (-2 für Wandler, +4 für Barden)
+Zutaten:
+- Zwei Eisenbarren
+- Eine Schriftrolle "Todeswolke"
+
+Höherer Eisengolem:
+Min. Stufe: 17 (-2 für Wandler, +5 für Barden)
+Zutaten:
+- Vier Eisenbarren
+- Eine Schriftrolle "Todeswolke"
+
+Perfekter Eisengolem:
+Min. Stufe: 19 (-2 für Wandler)
+Zutaten:
+- Vier Eisenbarren
+- Eine Schriftrolle "Todeswolke"
+- Stücke kalten Eisens
+
+Mindestintelligenz: 17
+
+Gewicht: 10~
+
+@4113 = ~Vierte Lektion: Eisengolems
+
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Eisengolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+
+Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in fünf Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
+
+Dieses Exemplar scheint dem Dunkelelfenmagier Malavon zu gehören. Es enthält eine Reihe seltsamer Sprüche, die Befehle wohl für seine eigenen Schöpfungen sind.
 
 
 Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:

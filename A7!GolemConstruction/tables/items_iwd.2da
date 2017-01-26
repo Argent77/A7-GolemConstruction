@@ -189,7 +189,6 @@ STORE       LDD_NYM     *                         A7!TOM02  1     0       0
 CONTAINER   AR9712      Container*7               A7!TOM03  0     0       0
 STORE       BANDOTH     *                         A7!TOM03  1     0       0
 STORE       LDD_NYM     *                         A7!TOM03  1     0       0
-ACTOR       MALAVON     *                         A7!TOM04  0     0       0
 ACTOR       LORDM       *                         A7!TOM05  0     0       0
 CONTAINER   AR6006      Container*12              A7!TOM08  0     0       0
 CONTAINER   AR8012      A7!Container1             A7!TOM08  0     0       0
