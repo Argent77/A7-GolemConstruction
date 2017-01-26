@@ -130,11 +130,11 @@
 
 
 // *** Drow Merchant Nym ***
-@44000 = ~Vendui - seid herzlichst gegrüßt, ehrenwerter Kunde. Ich bin Nym, ein Händler.~
-@44001 = ~Vendui - seid gegrüßt, darthiir. Ich bin Nym, ein Händler.~
-@44002 = ~Ich verbleibe hier noch ein wenig länger. Daher zögert nicht, mich erneut zu besuchen und meine Waren zu begutachten.  Aluve.~
-@44003 = ~Seid nochmals herzlichst gegrüßt, ehrenwerter Kunde.~
-@44004 = ~Seid nochmals gegrüßt, darthiir.~
+@44000 = ~Vendui - seid mir bestens gegrüßt, ehrenwerter Kunde. Ich bin Nym, ein Händler.~ [a7!nym01]
+@44001 = ~Vendui - seid mir gegrüßt, darthiir. Ich bin Nym, ein Händler.~ [a7!nym02]
+@44002 = ~Ich werde noch ein wenig hierbleiben. Falls Ihr Lust habt, später wiederzukommen und einen Blick auf meine Waren zu werfen, wäre mir das eine besondere Freude, ehrenwerter Kunde.  Aluve.~ [a7!nym03]
+@44003 = ~Es freut mich zutiefst, Euch wiederzusehen, ehrenwerter Kunde.~ [a7!nym04]
+@44004 = ~Seid gegrüßt, darthiir.~ [a7!nym05]
 @44005 = ~Habt Ihr Interesse, meine Waren zu begutachten?~
 @44006 = ~Was habt Ihr im Angebot?~
 @44007 = ~Stirb, Drow-Abschaum!~
