@@ -11,6 +11,6 @@ APPEND ~dgelarit~
   IF ~~ gelarit.1
     SAY @121002 /* Golems you say? Hmm. We have built the Astrolab primarily for researching space and time. They would be of little use for the task you suggested. */
     = @121003 /* However, there are tools right over there on the table that have been used to construct and maintain the Astrolab and other machinery. You can use them to build your golems. But don't touch any of the other devices in this room. */
-    ++ @121004 /* Understood. And thank you. */ DO ~SetGlobal("A7!SeveredHandWorkshop", "GLOBAL", 1) AddJournalEntry(@140001, QUEST)~ EXIT
+    ++ @121004 /* Understood. And thank you. */ DO ~SetGlobal("A7!SeveredHandWorkshop", "GLOBAL", 1) SetRestEncounterProbabilityDay(0) SetRestEncounterProbabilityNight(0) AddAreaType(CANRESTOTHER) AddJournalEntry(@140001, QUEST)~ EXIT
   END
 END

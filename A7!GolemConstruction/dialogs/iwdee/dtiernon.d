@@ -36,6 +36,6 @@ END
 APPEND ~dtiernon~
   IF ~~ tiernon.1
     SAY @123005 /* Eh? The forge is like a part of m'self. But be my guest if ye insist so much. Just don't be hammerin' it to oblivion with yer clumsy smithing skills. */
-    ++ @123006 /* Thank you, Tiernon. */ DO ~SetGlobal("A7!GloomfrostWorkshop", "GLOBAL", 1) AddJournalEntry(@140006, QUEST)~ EXIT
+    ++ @123006 /* Thank you, Tiernon. */ DO ~SetGlobal("A7!GloomfrostWorkshop", "GLOBAL", 1) SetRestEncounterProbabilityDay(0) SetRestEncounterProbabilityNight(0) AddAreaType(CANRESTOTHER) AddJournalEntry(@140006, QUEST)~ EXIT
   END
 END

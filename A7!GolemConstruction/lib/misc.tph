@@ -421,6 +421,5 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
     STR_VAR
       fj_structure_type = "region"
       fj_name           = "A7!Helper"
-      fj_reg_script     = "a7!ar97a"
     END
 END

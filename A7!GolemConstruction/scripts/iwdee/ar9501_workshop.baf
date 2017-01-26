@@ -8,6 +8,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!GloomfrostWorkshop", "GLOBAL", 1)
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
+    AddAreaType(CANRESTOTHER)
     DisplayString(Player1, @100026) // The forge in this place looks well constructed. You can probably use it to build golems.
     AddJournalEntry(@140007, QUEST) // Golem Construction Workshop
     Continue()
