@@ -80,8 +80,10 @@ Komponent ten dodaje szansę na to, że jeden lub więcej ocalałych z oblężen
 Komponent ten modyfikuje pewną ilość zaklęć tak, aby działały one na określone rodzaje golemów w inny, czasem niespodziewany sposób. Niektóre czary mogą wywoływać u golemów określone szkodliwe efekty, inne zaś potrafią je wzmacniać lub nawet zmieniać ich strukturę. Więcej informacji znajdziesz w pliku „golem_information-polish.txt”.
 
 2.7. Redukuj niewrażliwości na broń dla konstruowanych golemów (BG:SoD, BG2:EE i EET)
-Duża ilość wrogów ma problemy z trafianiem golemów ze względu na ich wysoką niewrażliwość na działanie broni, co widoczne jest nawet w późniejszych fragmentach gry. Komponent ten osłabia siłę konstruowanych golemów, redukując ich niewrażliwość na broń, co zwiększa szansę wrogów na ich zranienie. 
-Niewrażliwość na broń zostanie obniżona średnio o jeden poziom, czasem nawet więcej. Przykładowo, golemy niewrażliwe na działanie broni +2 lub słabszych staną się niewrażliwe na działanie broni o umagicznieniu +1 lub broni niemagicznych. Golemy niewrażliwe na działanie broni niemagicznych całkowicie stracą niewrażliwość.
+A great number of enemies have trouble hitting or damaging golems because of their numerous immunities 
+and high resistances, even in later parts of the game. This component nerfs the power of 
+constructed golems by reducing their weapon enchantment immunities as well as by lowering various 
+magical, elemental and physical resistances.
 
 
 Szczegóły

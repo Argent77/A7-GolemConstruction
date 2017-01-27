@@ -119,13 +119,10 @@ positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informatione
 "golem_information-german.txt".
 
 2.7. Vermindere Waffenimmunität bei erschaffenen Golems (für BG:SoD, BG2:EE and EET)
-Viele Gegner haben (selbst im fortgeschrittenen Spiel) Probleme, Golems zu treffen, da sie über eine 
-hohe Waffenimmunität verfügen. Diese Komponente vermindert die Immunität gegenüber verzauberter oder 
-normaler Waffen, um die Chance der Gegner zu erhöhen, Golems überhaupt zu treffen.
-Waffenimmunitäten der Golems werden dabei um eine Stufe und in einigen Fällen um zwei Stufen 
-vermindert. Das heißt, Golems mit einer Immunität gegenüber +2 verzauberten Waffen werden nur noch 
-immun gegenüber +1 verzauberten Waffen sein. Golems mit einer Immunität gegenüber nichtmagischen 
-Waffen wird die Waffenimmunität ganz entzogen.
+Viele Gegner haben selbst im fortgeschrittenen Spiel Probleme, Golems zu treffen oder zu verletzen, 
+da sie über viele Immunitäten und hohe Resistenzen verfügen. Diese Komponente vermindert die 
+Widerstandsfähigkeit von konstruierten Golems, in dem sie Waffenimmunitäten absenkt und diverse 
+magische, elementare unt physische Resistenzen vermindert.
 
 
 Einzelheiten

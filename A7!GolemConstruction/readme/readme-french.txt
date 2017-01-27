@@ -125,13 +125,10 @@ nocifs spéciaux alors que d'autres améliorent ou même changent la nature des 
 fichier "golem_information.txt" pour en savoir plus.
 
 2.7. Réduire la résistance aux armes des golems fabriqués (pour BG:SoD, BG2:EE et EET).
-Il est difficile de toucher les golems en raison de leur immunité aux armes magiques au bonus
-élevé, et ceci même dans les dernières parties du jeu. Ce composant atténue la puissance des
-golems fabriqués en réduisant leurs immunités innées aux armes magiques pour que les ennemis
-aient plus de chance de les blesser.
-Ces immunités seront réduites d'un niveau en moyenne, parfois plus. Par exemple, les golems
-immunisés aux armes +2 ou moins deviendront immunisés aux armes +1 ou moins. Les golems immunisés
-aux armes non enchantées perdront toute immunité contre les armes.
+A great number of enemies have trouble hitting or damaging golems because of their numerous immunities 
+and high resistances, even in later parts of the game. This component nerfs the power of 
+constructed golems by reducing their weapon enchantment immunities as well as by lowering various 
+magical, elemental and physical resistances.
 
 
 Détails

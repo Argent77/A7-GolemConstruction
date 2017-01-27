@@ -164,7 +164,7 @@ BEGIN @35 // Make golems vulnerable to specific spell effects
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_vulnerable.tph~
 
 
-BEGIN @40 // Reduce weapon immunities for constructed golems
+BEGIN @40 // Reduce weapon immunities and resistances for constructed golems
   REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD or BG2:EE to be installed.
   GROUP @1  // Tweaks
