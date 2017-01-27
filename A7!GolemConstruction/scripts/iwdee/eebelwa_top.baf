@@ -1,0 +1,99 @@
+// Combat script of Belhifet (true form)
+
+IF
+  See(NearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_PERFECT)
+  !GlobalTimerNotExpired("A7!DestroyGolemTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    ForceSpellRES("A7!WI61", LastSeenBy(Myself))  // Banish Golem Spirit
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    Continue()
+END
+
+IF
+  See(SecondNearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_PERFECT)
+  !GlobalTimerNotExpired("A7!DestroyGolemTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    ForceSpellRES("A7!WI61", LastSeenBy(Myself))  // Banish Golem Spirit
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    Continue()
+END
+
+IF
+  See(ThirdNearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_PERFECT)
+  !GlobalTimerNotExpired("A7!DestroyGolemTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    ForceSpellRES("A7!WI61", LastSeenBy(Myself))  // Banish Golem Spirit
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    Continue()
+END
+
+IF
+  See(FourthNearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_PERFECT)
+  !GlobalTimerNotExpired("A7!DestroyGolemTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    ForceSpellRES("A7!WI61", LastSeenBy(Myself))  // Banish Golem Spirit
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    Continue()
+END
+
+IF
+  See(FifthNearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_PERFECT)
+  !GlobalTimerNotExpired("A7!DestroyGolemTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    ForceSpellRES("A7!WI61", LastSeenBy(Myself))  // Banish Golem Spirit
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    Continue()
+END
+
+IF
+  See(SixthNearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_PERFECT)
+  !GlobalTimerNotExpired("A7!DestroyGolemTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    ForceSpellRES("A7!WI61", LastSeenBy(Myself))  // Banish Golem Spirit
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    Continue()
+END
+
+IF
+  See(SeventhNearestEnemyOf(Myself))
+  Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_PERFECT)
+  !GlobalTimerNotExpired("A7!DestroyGolemTimer", "LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    ForceSpellRES("A7!WI61", LastSeenBy(Myself))  // Banish Golem Spirit
+  RESPONSE #50
+    SetGlobalTimer("A7!DestroyGolemTimer", "LOCALS", THREE_ROUNDS)
+    Continue()
+END

@@ -1643,8 +1643,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
-// Drow Merchant Nym
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  // Drow Merchant Nym
   COPY ~%MOD_FOLDER%/creatures/a7!nym.cre~ ~override~
     SAY NAME1 @100013 // Nym
     SAY NAME2 @100014 // Dark Elf Merchant
@@ -1665,4 +1665,9 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
       COPY ~%MOD_FOLDER%/language/%LANGUAGE%/%file%~ ~override~
     END
   END
+END
+
+ACTION_IF (GAME_IS ~iwdee~) BEGIN
+  // Adding golem-specific actions to Belhifet in final battle
+  EXTEND_TOP ~eebelwa.bcs~ ~%MOD_FOLDER%/scripts/iwdee/eebelwa_top.baf~
 END
