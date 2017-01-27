@@ -422,4 +422,7 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
       fj_structure_type = "region"
       fj_name           = "A7!Helper"
     END
+
+  // Workaround for creatures with huge selection circle: Increase narrow passageway
+  COPY ~%creFolder%/ar1104sr.bmp~ ~override~
 END
