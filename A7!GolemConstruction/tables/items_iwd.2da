@@ -92,6 +92,7 @@ STORE       KIERAN2     *                         SCRL6I    1     0       0
 STORE       LDD_NYM     *                         SCRL6I    1     0       0
 CONTAINER   AR8011      Wardrobe                  SCRL8G    1     0       0
 STORE+      LDD_NYM     *                         SCRL8G    2     0       0
+ACTOR       ADRAN       *                         SCRLA4    1     0       0
 CONTAINER   AR9101      Scrolls                   SCCLITE   1     0       0
 CONTAINER   AR9717      Container*3               SCCLITE   1     0       0
 STORE       EDION       *                         SCCLITE   1     0       0
