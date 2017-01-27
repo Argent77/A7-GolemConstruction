@@ -43,7 +43,8 @@ END
 
 IF ~~ Golem.List.Init
   SAY @41052 /* The following golem types have been learned by <GABBER>: */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -61,7 +62,8 @@ END
 
 IF ~~ Golem.List.Flesh
   SAY @41001 /* Flesh Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -78,7 +80,8 @@ END
 
 IF ~~ Golem.List.Clay
   SAY @41002 /* Clay Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -94,7 +97,8 @@ END
 
 IF ~~ Golem.List.Stone
   SAY @41003 /* Stone Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -109,7 +113,8 @@ END
 
 IF ~~ Golem.List.Iron
   SAY @41004 /* Iron Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -123,7 +128,8 @@ END
 
 IF ~~ Golem.List.Mithral
   SAY @41005 /* Mithral Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -136,7 +142,8 @@ END
 
 IF ~~ Golem.List.Adamantite
   SAY @41006 /* Adamantite Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -148,7 +155,8 @@ END
 
 IF ~~ Golem.List.Exotic.Maggot
   SAY @41044 /* Maggot Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -159,7 +167,8 @@ END
 
 IF ~~ Golem.List.Exotic.Bone
   SAY @41038 /* Bone Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -169,7 +178,8 @@ END
 
 IF ~~ Golem.List.Exotic.Brain
   SAY @41039 /* Brain Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -178,7 +188,8 @@ END
 
 IF ~~ Golem.List.Exotic.Ice
   SAY @41040 /* Ice Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMagic", "LOCALS", 1)~ + Golem.List.Exotic.Magic
@@ -186,20 +197,23 @@ END
 
 IF ~~ Golem.List.Exotic.Magic
   SAY @41041 /* Magic Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemLightning", "LOCALS", 1)~ + Golem.List.Exotic.Lightning
 END
 
 IF ~~ Golem.List.Exotic.Lightning
   SAY @41042 /* Lightning Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
   IF ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemRuby", "LOCALS", 1)~ + Golem.List.Exotic.Ruby
 END
 
 IF ~~ Golem.List.Exotic.Ruby
   SAY @41049 /* Ruby Golem */
-  IF ~True()~ + Golem.Type
+  IF ~True()~ DO ~DestroySelf()~ EXIT
+  IF ~Global("stage", "LOCALS", 1)~ + Golem.Type
 END
 
 
@@ -261,6 +275,7 @@ END
 
 IF ~Global("stage", "LOCALS", -2)~ Golem.Limit.Reached
   SAY @41050 /* You cannot have any more golems following you. */
+  ++ @41051 /* List available golem types */ + Golem.List.Init
   ++ @41053 /* Fix: Reset golem counter (active golems: <A7GLCNT>) */ DO ~ SetGlobal("A7!GolemCount", "GLOBAL", 0) SetGlobalTimer("A7!GolemCountTimer", "GLOBAL", 12) DestroySelf()~ EXIT
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
@@ -757,6 +772,7 @@ END
 
 IF ~Global("stage", "LOCALS", -1)~ Golem.Location.Cancelled
   SAY @41010 /* ...but are unable to do so in this location. */
+  ++ @41051 /* List available golem types */ + Golem.List.Init
   ++ @41053 /* Fix: Reset golem counter (active golems: <A7GLCNT>) */ DO ~ SetGlobal("A7!GolemCount", "GLOBAL", 0) SetGlobalTimer("A7!GolemCountTimer", "GLOBAL", 12) DestroySelf()~ EXIT
   ++ @41016 /* Cancel construction */ DO ~DestroySelf()~ EXIT
 END
