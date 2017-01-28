@@ -1,0 +1,73 @@
+// *** Control script for Malavon's iron golems ***
+
+IF
+  Global("Golem_Commands", "GLOBAL", 2)
+  Global("CDLocalVar0", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("Command", "LOCALS", 2)   // "Stand guard" mode
+    SetGlobal("init", "LOCALS", 2)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, NEUTRAL)
+    SetDialogue("A7!CMD")
+    ChangeAIScript("A7!CMD", DEFAULT)
+    ChangeAIScript("", GENERAL)
+    ChangeAIScript("", RACE)
+    ChangeAIScript("A7!GLIR2", CLASS)
+    ChangeAIScript("A7!GLDEF", OVERRIDE)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    ApplySpellRES("a7!cfw", Myself)   // Apply "Clear Fog of War" effect
+    SetGlobal("CDLocalVar0", "LOCALS", 1)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
+  Global("Golem_Commands", "GLOBAL", 3)
+  Global("CDLocalVar0", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
+    SetGlobal("CountActive", "LOCALS", 1)
+    SetGlobal("Command", "LOCALS", 1)   // "Follow and protect me" mode
+    SetGlobal("init", "LOCALS", 2)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, FAMILIAR)
+    AddFamiliar()
+    SetDialogue("A7!CMD")
+    ChangeAIScript("A7!CMD", DEFAULT)
+    ChangeAIScript("", GENERAL)
+    ChangeAIScript("", RACE)
+    ChangeAIScript("A7!GLIR2", CLASS)
+    ChangeAIScript("A7!GLDEF", OVERRIDE)
+    AttackReevaluate("simulacrum", 6)
+    ApplySpellRES("a7!cfw", Myself)   // Apply "Clear Fog of War" effect
+    SetGlobal("CDLocalVar0", "LOCALS", 1)
+    SetInterrupt(TRUE)
+END
+
+IF
+  GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
+  Global("Golem_Commands", "GLOBAL", 3)
+  Global("CDLocalVar0", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("Command", "LOCALS", 3)   // "Stand guard and defend area" mode
+    SetGlobal("init", "LOCALS", 2)
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SetDialogue("A7!CMD")
+    ChangeAIScript("A7!CMD", DEFAULT)
+    ChangeAIScript("", GENERAL)
+    ChangeAIScript("", RACE)
+    ChangeAIScript("A7!GLIR2", CLASS)
+    ChangeAIScript("A7!GLDEF", OVERRIDE)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    AttackReevaluate("simulacrum", 6)
+    ApplySpellRES("a7!cfw", Myself)   // Apply "Clear Fog of War" effect
+    SetGlobal("CDLocalVar0", "LOCALS", 1)
+    SetInterrupt(TRUE)
+END
