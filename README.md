@@ -56,8 +56,8 @@ This component adds a chance that one or more golems from the chapel who survive
 #### 2.6. Make golems vulnerable to specific spell effects (all supported games)
 This component modifies a number of spells so that they can affect specific golem types in a different and sometimes unexpected way. Some spells may cause special harmful effects while others improve or even change the nature of golems. You can find out more in "golem_information.txt".
 
-#### 2.7. Reduce weapon immunities for constructed golems (for BG:SoD, BG2:EE and EET)
-A great number of enemies have trouble hitting golems because of their high weapon enchantment immunities, even in later parts of the game. This component nerfs the power of constructed golems by reducing their innate weapon enchantment immunities to increase the chance that enemies can actually harm them. Weapon immunities will be reduced by one level on average, sometimes even more. For example, golems with immunity to enchanted weapons +2 or less will become immune to enchantments of +1 or less. Golems with immunity to non-enchanted weapons will lose weapon immunity altogether.
+#### 2.7. Reduce weapon immunities and resistances for constructed golems (for BG:SoD, BG2:EE and EET)
+A great number of enemies have trouble hitting or damaging golems because of their numerous immunities and high resistances, even in later parts of the game. This component nerfs the power of constructed golems by reducing their weapon enchantment immunities as well as by lowering various magical, elemental and physical resistances.
 
 
 ## Copyright Notice
