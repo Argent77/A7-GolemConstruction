@@ -164,8 +164,10 @@ History
 3.0
 - Added content for IWD:EE
 - Added new Tweaks component "Make golems vulnerable to specific spell effects"
-- Added new Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new Tweaks component "Reduce weapon immunities and resistances for constructed golems"
 - Added new spell "Banish Golem Spirit"
+- Added German voice files for Nym
+- Added script fixer to construction dialog in case of problems with max. number of golem followers
 - Fixed stats and attributes of several golem types and variants
 
 2.4

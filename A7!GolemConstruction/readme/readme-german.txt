@@ -118,7 +118,7 @@ unerwartete Weise beeinflussen. Einige Zauber können sich schädlich auswirken,
 positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informationen dazu in 
 "golem_information-german.txt".
 
-2.7. Vermindere Waffenimmunität bei erschaffenen Golems (für BG:SoD, BG2:EE and EET)
+2.7. Vermindere Waffenimmunitaeten und Resistenzen bei erschaffenen Golems (für BG:SoD, BG2:EE and EET)
 Viele Gegner haben selbst im fortgeschrittenen Spiel Probleme, Golems zu treffen oder zu verletzen, 
 da sie über viele Immunitäten und hohe Resistenzen verfügen. Diese Komponente vermindert die 
 Widerstandsfähigkeit von konstruierten Golems, in dem sie Waffenimmunitäten absenkt und diverse 
@@ -155,8 +155,10 @@ History
 3.0
 - Added content for IWD:EE
 - Added new Tweaks component "Make golems vulnerable to specific spell effects"
-- Added new Tweaks component "Reduce weapon immunities for constructed golems"
+- Added new Tweaks component "Reduce weapon immunities and resistances for constructed golems"
 - Added new spell "Banish Golem Spirit"
+- Added German voice files for Nym
+- Added script fixer to construction dialog in case of problems with max. number of golem followers
 - Fixed stats and attributes of several golem types and variants
 
 2.4
