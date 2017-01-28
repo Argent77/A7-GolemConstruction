@@ -80,10 +80,10 @@ des magiciens élémentaristes du deuxième étage de la Tour de Garde. Dans l'e
 de Bhaal, votre Antichambre peut s'y prêter, à condition d'y installer le matériel nécessaire.
 Les Golems peuvent obéir à des ordres simples. Pour ce faire, il suffit de leur parler (si 
 nécessaire en utilisant le bouton Dialogue ou en appuyant sur la touche F1).
-Dans IWD:EE, vous pouvez essayer le troisième niveau de l'Oeil du Dragon, l'étude de Larrel 
-dans la Main Tranchée, la Tour de Bandoth à Profondorn, la maison de Malavon dans le Bas 
-Profondorn, la forge de Tiernon dans le glacier Morneglace (HoW)
-or the study on the second floor of Castle Maluradek (TotLM).
+Dans IWD:EE, vous pouvez essayer le troisième niveau de l'Oeil du Dragon, l'étude de Larrel
+dans la Main Tranchée, la Tour de Bandoth à Profondorn, la maison de Malavon dans le Bas
+Profondorn, la forge de Tiernon dans le glacier Morneglace (HoW) ou le bureau du second étage 
+de la Forteresse de Maluradek (TotLM).
 
 
 2. Modifications du jeu (nécessite l'installation du composant principal)
@@ -124,11 +124,12 @@ spécifiques d'une manière différente et parfois inattendue. Certains sorts pe
 nocifs spéciaux alors que d'autres améliorent ou même changent la nature des golems. Consultez le
 fichier "golem_information.txt" pour en savoir plus.
 
-2.7. Réduire la résistance aux armes des golems fabriqués (pour BG:SoD, BG2:EE et EET).
-A great number of enemies have trouble hitting or damaging golems because of their numerous immunities 
-and high resistances, even in later parts of the game. This component nerfs the power of 
-constructed golems by reducing their weapon enchantment immunities as well as by lowering various 
-magical, elemental and physical resistances.
+2.7. Réduire les résistances et l'immunité aux armes des golems fabriqués (pour BG:SoD, BG2:EE et EET).
+Il est difficile de toucher les golems en raison de leur immunité aux armes magiques au bonus élevé
+et de leur résistance importante à certains types de dégâts, et ceci même dans les dernières parties 
+du jeu.
+Ce composant atténue la puissance des golems fabriqués en réduisant leurs immunités innées aux armes
+magiques ainsi que leur résistance à la magie, aux éléments et aux dégâts physiques.
 
 
 Détails

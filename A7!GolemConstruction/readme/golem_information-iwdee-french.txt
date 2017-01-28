@@ -722,5 +722,5 @@ Sites connus dans lesquels vous pouvez fabriquer des golems
 - Glacier de Morneglace, forge de Tiernon :
   Tiernon peut vous autoriser à utiliser sa forge si vous le lui demandez gentiment. Sinon, vous pouvez tout aussi bien le tuer.
 
-- Castle Maluradek (TotLM):
-  The study in the south eastern corner of the second floor can be used after making the area safe.
+- Forteresse de Maluradek (TotLM) :
+  Le bureau dans la partie sud-est du second étage peut être utilisé une fois l'étage sécurisé.

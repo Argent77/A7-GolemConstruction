@@ -3,9 +3,9 @@
 
 // *** Misc. strings ***
 @120000 = ~La chaleur torride qui émane du fourneau vous brûle.~
-@120001 = ~This study looks well enough equipped. It can probably be used to construct golems - after making sure this floor is safe enough for such a task.~
-@120002 = ~This study looks well enough equipped. It can probably be used to construct golems.~
-@120003 = ~After making this floor of the castle safe the study can be used to construct golems.~
+@120001 = ~Ce bureau semble assez bien équipé. Il pourrait probablement servir à fabriquer des golems - à condition que le reste de l'étage soit sécurisé.~
+@120002 = ~Ce bureau semble assez bien équipé. Vous pourriez probablement l'utiliser pour fabriquer des golems.~
+@120003 = ~L'étage de la forteresse ayant été sécurisé, vous pouvez utiliser le bureau pour fabriquer des golems.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
@@ -79,10 +79,10 @@ Le forgeron nain Tiernon m'a gracieusement permis d'utiliser sa forge. Je devrai
 
 La forge du forgeron nain Tiernon, mort récemment, devrait me permettre de fabriquer des golems dans son atelier du glacier de Morneglace.~
 
-@140008 = ~Golem Construction Workshop
+@140008 = ~Atelier de Fabrication de Golems
 
-The study of Castle Maluradek is well enough equipped for magical experiments. I might be able to construct golems in this place after making sure that I'm not disturbed by any hostile creature roaming the second floor of the castle.~
+La salle d'étude de la Forteresse de Maluradek est bien équipée pour mener des expérimentations magiques. Je devrais pouvoir y fabriquer des golems une fois le reste du second étage du château débarrassé de toutes les créatures hostiles qui le hantent.~
 
-@140009 = ~Golem Construction Workshop
+@140009 = ~Atelier de Fabrication de Golems
 
-The study on the second floor of Castle Maluradek appears to be well enough equipped for magical experiments. I should be able to construct golems in that place.~
+La salle d'étude de la Forteresse de Maluradek est bien équipée pour mener des expérimentations magiques. Je devrais pouvoir y fabriquer des golems.~
