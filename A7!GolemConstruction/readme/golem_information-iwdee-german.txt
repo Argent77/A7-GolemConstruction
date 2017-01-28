@@ -51,7 +51,7 @@ Niederer Fleischgolem:
 - Eigenschaften:
   - Stärke: 13
   - TP: 30
-  - RK: 7
+  - RK: 6
   - ETW0: 12
   - APR: 1
   - Rettungswürfe (Tod/Zauberstab/Verwandlung/Odemwaffe/Zauber): 12/13/12/13/13
@@ -70,8 +70,8 @@ Fleischgolem:
 - Eigenschaften:
   - Stärke: 14
   - TP: 40
-  - RK: 5
-  - ETW0: 10
+  - RK: 4
+  - ETW0: 9
   - APR: 3/2
   - Rettungswürfe: 10/11/10/11/11
 - Widerstand:
@@ -90,7 +90,7 @@ Höherer Fleischgolem:
 - Eigenschaften:
   - Stärke: 16
   - TP: 55
-  - RK: 3
+  - RK: 2
   - ETW0: 6
   - APR: 3/2
   - Rettungswürfe: 8/9/8/9/9
@@ -116,7 +116,7 @@ Perfekter Fleischgolem:
 - Eigenschaften:
   - Stärke: 17
   - TP: 65
-  - RK: 2
+  - RK: 0
   - ETW0: 5
   - APR: 2
   - Rettungswürfe: 7/8/7/8/8
@@ -141,7 +141,7 @@ Niederer Tongolem:
   - Ein Tonblock
 - Eigenschaften:
   - Stärke: 13
-  - TP: 35
+  - TP: 40
   - RK: 5
   - ETW0: 10
   - APR: 1
@@ -167,7 +167,7 @@ Tongolem:
   - TP: 45
   - RK: 4
   - ETW0: 8
-  - APR: 1
+  - APR: 3/2
   - Rettungswürfe: 7/9/8/8/10
 - Widerstand:
   - Magie: 90
@@ -221,9 +221,9 @@ Perfekter Tongolem:
 - Eigenschaften:
   - Stärke: 18
   - TP: 75
-  - RK: 0
+  - RK: -1
   - ETW0: 3
-  - APR: 3/2
+  - APR: 2
   - Rettungswürfe: 4/6/5/5/7
 - Widerstand:
   - Magie: 100
@@ -252,9 +252,9 @@ Niederer Steingolem:
 - Eigenschaften:
   - Stärke: 13
   - TP: 40
-  - RK: 5
+  - RK: 4
   - ETW0: 9
-  - APR: 1
+  - APR: 3/2
   - Rettungswürfe: 7/9/8/7/10
 - Widerstand:
   - Magie: 75
@@ -269,7 +269,7 @@ Steingolem:
 - Eigenschaften:
   - Stärke: 15
   - TP: 50
-  - RK: 4
+  - RK: 2
   - ETW0: 7
   - APR: 3/2
   - Rettungswürfe: 5/7/6/5/8
@@ -288,9 +288,9 @@ Höherer Steingolem:
 - Eigenschaften:
   - Stärke: 17
   - TP: 75
-  - RK: 1
+  - RK: 0
   - ETW0: 4
-  - APR: 3/2
+  - APR: 2
   - Rettungswürfe: 4/6/5/4/7
 - Widerstand:
   - Magie: 100
@@ -311,7 +311,7 @@ Perfekter Steingolem:
 - Eigenschaften:
   - Stärke: 18
   - TP: 90
-  - RK: 0
+  - RK: -2
   - ETW0: 2
   - APR: 2
   - Rettungswürfe: 3/5/4/3/6
@@ -359,7 +359,7 @@ Eisengolem:
   - Eine Schriftrolle "Todeswolke"
 - Eigenschaften:
   - Stärke: 16
-  - TP: 70
+  - TP: 80
   - RK: 3
   - ETW0: 3
   - APR: 2
@@ -382,8 +382,8 @@ Höherer Eisengolem:
   - Eine Schriftrolle "Todeswolke"
 - Eigenschaften:
   - Stärke: 18
-  - TP: 95
-  - RK: 1
+  - TP: 100
+  - RK: 0
   - ETW0: 1
   - APR: 2
   - Rettungswürfe: 1/3/2/2/4
@@ -411,8 +411,8 @@ Perfekter Eisengolem:
   - Stücke kalten Eisens
 - Eigenschaften:
   - Stärke: 19
-  - TP: 110
-  - RK: 0
+  - TP: 120
+  - RK: -2
   - ETW0: -1
   - APR: 5/2
   - Rettungswürfe: 0/2/1/1/3
@@ -444,7 +444,7 @@ Niederer Mithrilgolem:
 - Eigenschaften:
   - Stärke: 16
   - TP: 60
-  - RK: 4
+  - RK: 2
   - ETW0: 4
   - APR: 3/2
   - Rettungswürfe: 6/8/7/7/9
@@ -466,7 +466,7 @@ Mithrilgolem:
 - Eigenschaften:
   - Stärke: 18
   - TP: 80
-  - RK: 1
+  - RK: -1
   - ETW0: 2
   - APR: 2
   - Rettungswürfe: 4/6/5/5/7
@@ -492,7 +492,7 @@ Höherer Mithrilgolem:
 - Eigenschaften:
   - Stärke: 20
   - TP: 110
-  - RK: -2
+  - RK: -5
   - ETW0: -1
   - APR: 2
   - Rettungswürfe: 3/5/4/4/6
@@ -523,7 +523,7 @@ Perfekter Mithrilgolem:
 - Eigenschaften:
   - Stärke: 21
   - TP: 125
-  - RK: -4
+  - RK: -7
   - ETW0: -3
   - APR: 5/2
   - Rettungswürfe: 1/3/2/2/4
@@ -566,9 +566,9 @@ Varianten erschaffen werden.
 - Eigenschaften:
   - Stärke: 16
   - TP: 56
-  - RK: 0
+  - RK: -1
   - ETW0: 7
-  - APR: 3/2
+  - APR: 2
   - Rettungswürfe: 9/12/10/9/13
 - Widerstand:
   - Magie: 50
@@ -619,9 +619,9 @@ Varianten erschaffen werden.
 - Eigenschaften:
   - Stärke: 19
   - TP: 80
-  - RK: -2
-  - ETW0: 6
-  - APR: 2
+  - RK: -4
+  - ETW0: 5
+  - APR: 3
   - Rettungswürfe: 6/8/7/7/9
 - Resistance:
   - Magie: 100

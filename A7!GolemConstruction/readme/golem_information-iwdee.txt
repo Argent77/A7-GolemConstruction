@@ -47,7 +47,7 @@ Lesser Flesh Golem:
 - Stats:
   - STR: 13
   - HP: 30
-  - AC: 7
+  - AC: 6
   - THAC0: 12
   - APR: 1
   - Saves (death/wand/polymorph/breath/spell): 12/13/12/13/13
@@ -66,8 +66,8 @@ Flesh Golem:
 - Stats:
   - STR: 14
   - HP: 40
-  - AC: 5
-  - THAC0: 10
+  - AC: 4
+  - THAC0: 9
   - APR: 3/2
   - Saves: 10/11/10/11/11
 - Resistances:
@@ -86,7 +86,7 @@ Greater Flesh Golem:
 - Stats:
   - STR: 16
   - HP: 55
-  - AC: 3
+  - AC: 2
   - THAC0: 6
   - APR: 3/2
   - Saves: 8/9/8/9/9
@@ -112,7 +112,7 @@ Perfect Flesh Golem:
 - Stats:
   - STR: 17
   - HP: 65
-  - AC: 2
+  - AC: 0
   - THAC0: 5
   - APR: 2
   - Saves: 7/8/7/8/8
@@ -137,7 +137,7 @@ Lesser Clay Golem:
   - One block of clay
 - Stats:
   - STR: 13
-  - HP: 35
+  - HP: 40
   - AC: 5
   - THAC0: 10
   - APR: 1
@@ -163,7 +163,7 @@ Clay Golem:
   - HP: 45
   - AC: 3
   - THAC0: 8
-  - APR: 1
+  - APR: 3/2
   - Saves: 7/9/8/8/10
 - Resistances:
   - Magic: 90
@@ -217,9 +217,9 @@ Perfect Clay Golem:
 - Stats:
   - STR: 18
   - HP: 75
-  - AC: 0
+  - AC: -1
   - THAC0: 3
-  - APR: 3/2
+  - APR: 2
   - Saves: 4/6/5/5/7
 - Resistances:
   - Magic: 100
@@ -248,9 +248,9 @@ Lesser Stone Golem:
 - Stats:
   - STR: 13
   - HP: 40
-  - AC: 5
+  - AC: 4
   - THAC0: 9
-  - APR: 1
+  - APR: 3/2
   - Saves: 7/9/8/7/10
 - Resistances:
   - Magic: 75
@@ -265,7 +265,7 @@ Stone Golem:
 - Stats:
   - STR: 15
   - HP: 50
-  - AC: 3
+  - AC: 2
   - THAC0: 7
   - APR: 3/2
   - Saves: 5/7/6/5/8
@@ -284,9 +284,9 @@ Greater Stone Golem:
 - Stats:
   - STR: 17
   - HP: 75
-  - AC: 1
+  - AC: 0
   - THAC0: 4
-  - APR: 3/2
+  - APR: 2
   - Saves: 4/6/5/4/7
 - Resistances:
   - Magic: 100
@@ -307,7 +307,7 @@ Perfect Stone Golem:
 - Stats:
   - STR: 18
   - HP: 90
-  - AC: 0
+  - AC: -2
   - THAC0: 2
   - APR: 2
   - Saves: 3/5/4/3/6
@@ -355,7 +355,7 @@ Iron Golem:
   - One scroll of Cloudkill
 - Stats:
   - STR: 16
-  - HP: 70
+  - HP: 80
   - AC: 3
   - THAC0: 3
   - APR: 2
@@ -378,8 +378,8 @@ Greater Iron Golem:
   - One scroll of Cloudkill
 - Stats:
   - STR: 18
-  - HP: 95
-  - AC: 1
+  - HP: 100
+  - AC: 0
   - THAC0: 1
   - APR: 2
   - Saves: 1/3/2/2/4
@@ -407,8 +407,8 @@ Perfect Iron Golem:
   - Chips of Cold Iron
 - Stats:
   - STR: 19
-  - HP: 110
-  - AC: 0
+  - HP: 120
+  - AC: -2
   - THAC0: -1
   - APR: 5/2
   - Saves: 0/2/1/1/3
@@ -440,7 +440,7 @@ Lesser Mithral Golem:
 - Stats:
   - STR: 16
   - HP: 60
-  - AC: 4
+  - AC: 2
   - THAC0: 4
   - APR: 3/2
   - Saves: 6/8/7/7/9
@@ -462,7 +462,7 @@ Mithral Golem:
 - Stats:
   - STR: 18
   - HP: 80
-  - AC: 1
+  - AC: -1
   - THAC0: 2
   - APR: 2
   - Saves: 4/6/5/5/7
@@ -488,7 +488,7 @@ Greater Mithral Golem:
 - Stats:
   - STR: 20
   - HP: 110
-  - AC: -2
+  - AC: -5
   - THAC0: -1
   - APR: 2
   - Saves: 3/5/4/4/6
@@ -519,7 +519,7 @@ Perfect Mithral Golem:
 - Stats:
   - STR: 21
   - HP: 125
-  - AC: -4
+  - AC: -7
   - THAC0: -3
   - APR: 5/2
   - Saves: 1/3/2/2/4
@@ -560,9 +560,9 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Stats:
   - STR: 16
   - HP: 56
-  - AC: 0
+  - AC: -1
   - THAC0: 7
-  - APR: 3/2
+  - APR: 2
   - Saves: 9/12/10/9/13
 - Resistances:
   - Magic: 50
@@ -609,9 +609,9 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Stats:
   - STR: 19
   - HP: 80
-  - AC: -2
-  - THAC0: 6
-  - APR: 2
+  - AC: -4
+  - THAC0: 5
+  - APR: 3
   - Saves: 6/8/7/7/9
 - Resistance:
   - Magic: 100

@@ -52,7 +52,7 @@ Golem de chair mineur :
 - Caractéristiques :
   - FORCE : 13
   - PV : 30
-  - CA : 7
+  - CA : 6
   - TAC0 : 12
   - APR : 1
   - Jets de sauvegarde (mort/baguettes/pétrification/souffle/sorts) : 12/13/12/13/13
@@ -71,8 +71,8 @@ Golem de chair :
 - Caractéristiques :
   - FORCE : 14
   - PV : 40
-  - CA : 5
-  - TAC0 : 10
+  - CA : 4
+  - TAC0 : 9
   - APR : 3/2
   - Jets de sauvegarde : 10/11/10/11/11
 - Résistances :
@@ -91,7 +91,7 @@ Golem de chair majeur :
 - Caractéristiques :
   - FORCE : 16
   - PV : 55
-  - CA : 3
+  - CA : 2
   - TAC0 : 6
   - APR : 3/2
   - Jets de sauvegarde : 8/9/8/9/9
@@ -117,7 +117,7 @@ Golem de chair parfait :
 - Caractéristiques :
   - FORCE : 17
   - PV : 65
-  - CA : 2
+  - CA : 0
   - TAC0 : 5
   - APR : 2
   - Jets de sauvegarde : 7/8/7/8/8
@@ -142,7 +142,7 @@ Golem d'argile mineur :
   - Un bloc d'argile
 - Caractéristiques :
   - FORCE : 13
-  - PV : 35
+  - PV : 40
   - CA : 5
   - TAC0 : 10
   - APR : 1
@@ -168,7 +168,7 @@ Golem d'argile :
   - PV : 45
   - CA : 3
   - TAC0 : 8
-  - APR : 1
+  - APR : 3/2
   - Jets de sauvegarde : 7/9/8/8/10
 - Résistances :
   - Magie : 90
@@ -222,9 +222,9 @@ Golem d'argile parfait :
 - Caractéristiques :
   - FORCE : 18
   - PV : 75
-  - CA : 0
+  - CA : -1
   - TAC0 : -3
-  - APR : 3/2
+  - APR : 2
   - Jets de sauvegarde : 4/6/5/5/7
 - Résistances :
   - Magie : 100
@@ -253,9 +253,9 @@ Golem de pierre mineur :
 - Caractéristiques :
   - FORCE : 13
   - PV : 40
-  - CA : 5
+  - CA : 4
   - TAC0 : 9
-  - APR : 1
+  - APR : 3/2
   - Jets de sauvegarde : 7/9/8/7/10
 - Résistances :
   - Magie : 75
@@ -270,7 +270,7 @@ Golem de pierre :
 - Caractéristiques :
   - FORCE : 15
   - PV : 50
-  - CA : 3
+  - CA : 2
   - TAC0 : 7
   - APR : 3/2
   - Jets de sauvegarde : 5/7/6/5/8
@@ -289,9 +289,9 @@ Golem de pierre majeur :
 - Caractéristiques :
   - FORCE : 17
   - PV : 75
-  - CA : 1
+  - CA : 0
   - TAC0 : 4
-  - APR : 3/2
+  - APR : 2
   - Jets de sauvegarde : 4/6/5/4/7
 - Résistances :
   - Magie : 100
@@ -312,7 +312,7 @@ Golem de pierre parfait :
 - Caractéristiques :
   - FORCE : 18
   - PV : 90
-  - CA : 0
+  - CA : -2
   - TAC0 : 2
   - APR : 2
   - Jets de sauvegarde : 3/5/4/3/6
@@ -360,7 +360,7 @@ Golem de fer :
   - Un parchemin de Nuage mortel
 - Caractéristiques :
   - FORCE : 16
-  - PV : 70
+  - PV : 80
   - CA : 3
   - TAC0 : 3
   - APR : 2
@@ -384,8 +384,8 @@ Golem de fer majeur :
   - Un parchemin de Nuage mortel
 - Caractéristiques :
   - FORCE : 18
-  - PV : 95
-  - CA : 1
+  - PV : 100
+  - CA : 0
   - TAC0 : 1
   - APR : 2
   - Jets de sauvegarde : 1/3/2/2/4
@@ -414,8 +414,8 @@ Golem de fer parfait :
   - Des jetons de fer froid
 - Caractéristiques :
   - FORCE : 19
-  - PV : 110
-  - CA : 0
+  - PV : 120
+  - CA : -2
   - TAC0 : -1
   - APR : 5/2
   - Jets de sauvegarde : 0/2/1/1/3
@@ -452,7 +452,7 @@ Golem de mithril mineur :
 - Caractéristiques :
   - FORCE : 16
   - PV : 60
-  - CA : 4
+  - CA : 2
   - TAC0 : 4
   - APR : 3/2
   - Jets de sauvegarde : 6/8/7/7/9
@@ -474,7 +474,7 @@ Golem de mithril :
 - Caractéristiques :
   - FORCE : 18
   - PV : 80
-  - CA : 1
+  - CA : -1
   - TAC0 : 2
   - APR : 2
   - Jets de sauvegarde : 4/6/5/5/7
@@ -500,7 +500,7 @@ Golem de mithril majeur :
 - Caractéristiques :
   - FORCE : 20
   - PV : 110
-  - CA : -2
+  - CA : -5
   - TAC0 : -1
   - APR : 2
   - Jets de sauvegarde : 3/5/4/4/6
@@ -532,7 +532,7 @@ Golem de mithril parfait :
 - Caractéristiques :
   - FORCE : 21
   - PV : 125
-  - CA : -4
+  - CA : -7
   - TAC0 : -3
   - APR : 5/2
   - Jets de sauvegarde : 1/3/2/2/4
@@ -577,9 +577,9 @@ normale, majeure et parfaite.
 - Caractéristiques :
   - FORCE : 16
   - PV : 56
-  - CA : 0
+  - CA : -1
   - TAC0 : 7
-  - APR : 3/2
+  - APR : 2
   - Jets de sauvegarde : 9/12/10/9/13
 - Résistances :
   - Magie : 50
@@ -630,9 +630,9 @@ normale, majeure et parfaite.
 - Caractéristiques :
   - FORCE : 19
   - PV : 80
-  - CA : -2
-  - TAC0 : 6
-  - APR : 2
+  - CA : -4
+  - TAC0 : 5
+  - APR : 3
   - Jets de sauvegarde : 6/8/7/7/9
 - Résistances :
   - Magie : 100

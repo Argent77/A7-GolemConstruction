@@ -33,7 +33,7 @@ Pomniejszy golem z ciała:
 - Statystyki:
   - S: 13
   - PŻ: 30
-  - KP: 7
+  - KP: 6
   - TraK0: 12
   - Ataki na rundę: 1
   - Rzuty obronne (śmierć/różdżki/polimorfia/zionięcia/czary): 12/13/12/13/13
@@ -51,8 +51,8 @@ Golem z ciała:
 - Statystyki:
   - S: 14
   - PŻ: 40
-  - KP: 5
-  - TraK0: 10
+  - KP: 4
+  - TraK0: 9
   - Ataki na rundę: 3/2
   - Rzuty obronne: 10/11/10/11/11
 - Odporności:
@@ -70,7 +70,7 @@ Większy golem z ciała:
 - Statystyki:
   - S: 16
   - PŻ: 55
-  - KP: 3
+  - KP: 2
   - TraK0: 6
   - Ataki na rundę: 3/2
   - Rzuty obronne: 8/9/8/9/9
@@ -95,7 +95,7 @@ Idealny golem z ciała:
 - Statystyki:
   - S: 17
   - PŻ: 65
-  - KP: 2
+  - KP: 0
   - TraK0: 5
   - Ataki na rundę: 2
   - Rzuty obronne: 7/8/7/8/8
@@ -120,7 +120,7 @@ Pomniejszy gliniany golem:
   - Jeden blok gliniany
 - Statystyki:
   - S: 13
-  - PŻ: 35
+  - PŻ: 40
   - KP: 5
   - TraK0: 10
   - Ataki na rundę: 1
@@ -146,7 +146,7 @@ Gliniany golem:
   - PŻ: 45
   - KP: 3
   - TraK0: 8
-  - Ataki na rundę: 1
+  - Ataki na rundę: 3/2
   - Rzuty obronne: 7/9/8/8/10
 - Odporności:
   - Magia: 90
@@ -200,9 +200,9 @@ Idealny gliniany golem:
 - Statystyki:
   - S: 18
   - PŻ: 75
-  - KP: 0
+  - KP: -1
   - TraK0: 3
-  - Ataki na rundę: 3/2
+  - Ataki na rundę: 2
   - Rzuty obronne: 4/6/5/5/7
 - Odporności:
   - Magia: 100
@@ -231,9 +231,9 @@ Pomniejszy kamienny golem:
 - Statystyki:
   - S: 13
   - PŻ: 40
-  - KP: 5
+  - KP: 4
   - TraK0: 9
-  - Ataki na rundę: 1
+  - Ataki na rundę: 3/2
   - Rzuty obronne: 7/9/8/7/10
 - Odporności:
   - Magia: 75
@@ -247,7 +247,7 @@ Kamienny golem:
 - Statystyki:
   - S: 15
   - PŻ: 50
-  - KP: 4
+  - KP: 2
   - TraK0: 7
   - Ataki na rundę: 3/2
   - Rzuty obronne: 5/7/6/5/8
@@ -265,9 +265,9 @@ Większy kamienny golem:
 - Statystyki:
   - S: 17
   - PŻ: 75
-  - KP: 1
+  - KP: 0
   - TraK0: 4
-  - Ataki na rundę: 3/2
+  - Ataki na rundę: 2
   - Rzuty obronne: 4/6/5/4/7
 - Odporności:
   - Magia: 100
@@ -288,7 +288,7 @@ Idealny kamienny golem:
 - Statystyki:
   - S: 18
   - PŻ: 90
-  - KP: 0
+  - KP: -2
   - TraK0: 2
   - Ataki na rundę: 2
   - Rzuty obronne: 3/5/4/3/6
@@ -336,7 +336,7 @@ Pomniejszy żelazny golem:
   - Jeden zwój z czarem Zabójcza chmura
 - Statystyki:
   - S: 16
-  - PŻ: 70
+  - PŻ: 80
   - KP: 3
   - TraK0: 3
   - Ataki na rundę: 2
@@ -359,8 +359,8 @@ Większy żelazny golem:
   - Jeden zwój z czarem Zabójcza chmura
 - Statystyki:
   - S: 18
-  - PŻ: 95
-  - KP: 1
+  - PŻ: 100
+  - KP: 0
   - TraK0: 1
   - Ataki na rundę: 2
   - Rzuty obronne: 1/3/2/2/4
@@ -388,8 +388,8 @@ Idealny żelazny golem:
   - Żetony z zimnego żelaza
 - Statystyki:
   - S: 19
-  - PŻ: 110
-  - KP: 0
+  - PŻ: 120
+  - KP: -2
   - TraK0: -1
   - Ataki na rundę: 5/2
   - Rzuty obronne: 0/2/1/1/3
@@ -421,7 +421,7 @@ Pomniejszy mithrilowy golem:
 - Statystyki:
   - S: 16
   - PŻ: 60
-  - KP: 4
+  - KP: 2
   - TraK0: 4
   - Ataki na rundę: 3/2
   - Rzuty obronne: 6/8/7/7/9
@@ -443,7 +443,7 @@ Mithrilowy golem:
 - Statystyki:
   - S: 18
   - PŻ: 80
-  - KP: 1
+  - KP: -1
   - TraK0: 2
   - Ataki na rundę: 2
   - Rzuty obronne: 4/6/5/5/7
@@ -469,7 +469,7 @@ Większy mithrilowy golem:
 - Statystyki:
   - S: 20
   - PŻ: 110
-  - KP: -2
+  - KP: -5
   - TraK0: -1
   - Ataki na rundę: 2
   - Rzuty obronne: 3/5/4/4/6
@@ -500,7 +500,7 @@ Idealny mithrilowy golem:
 - Statystyki:
   - S: 21
   - PŻ: 125
-  - KP: -4
+  - KP: -7
   - TraK0: -3
   - Ataki na rundę: 5/2
   - Rzuty obronne: 1/3/2/2/4
@@ -541,9 +541,9 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
 - Statystyki:
   - S: 16
   - PŻ: 56
-  - KP: 0
+  - KP: -1
   - TraK0: 7
-  - Ataki na rundę: 3/2
+  - Ataki na rundę: 2
   - Rzuty obronne: 9/12/10/9/13
 - Odporności:
   - Magia: 50
@@ -591,9 +591,9 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
 - Statystyki:
   - S: 19
   - PŻ: 80
-  - KP: -2
-  - TraK0: 6
-  - Ataki na rundę: 2
+  - KP: -4
+  - TraK0: 5
+  - Ataki na rundę: 3
   - Rzuty obronne: 6/8/7/7/9
 - Odporności:
   - Magia: 100
