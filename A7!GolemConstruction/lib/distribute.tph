@@ -24,6 +24,7 @@ THEN
     AddStoreItem("KUORK0","SCRL97",1,1)
     AddStoreItem("KUORK0","SCRL1H",1,1)
     AddStoreItem("KUORK0","SCRL2D",1,1)
+    AddStoreItem("KUORK0","A7!TOM01",1,1)
     SetInterrupt(TRUE)
     Continue()
 END
