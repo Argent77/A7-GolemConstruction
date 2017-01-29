@@ -60,7 +60,7 @@ Die Leitfäden der Golemkonstruktion lehren euch die folgenden Golemtypen:
 - Steingolems in niederer, regulärer, höherer und perfekter Variante.
 - Eisengolems in niederer, regulärer, höherer und perfekter Variante.
 - Mithrilgolems in niederer, regulärer, höherer und perfekter Variante.
-- Adamantitgolems in niederer, regulärer, höherer und perfekter Variante.
+- Adamantitgolems in niederer, regulärer, höherer und perfekter Variante (nicht in IWD:EE).
 
 Jeder Golem benötigt bestimmte Materialien zur Konstruktion des Körpers, and manchmal weitere 
 Komponenten für Spezialfähigkeiten und Schlüsselmerkmale. Perfekte Golemvarianten zu erschaffen 

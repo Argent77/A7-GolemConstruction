@@ -2,7 +2,7 @@
 // Misc. strings (index 120000..149999)
 
 // *** Misc. strings ***
-@120000 = ~Ihr erleidet ein paar Verbrennungen durch die brennende Hitze des Glutofens.~
+@120000 = ~Ihr erleidet ein paar Verbrennungen durch die Hitze des Glutofens.~
 @120001 = ~Dieses Arbeitszimmer scheint recht gut ausgestattet zu sein. Man kann hier wahrscheinlich Golems erschaffen - wenn dieses Stockwerk sicher genug wäre.~
 @120002 = ~Dieses Arbeitszimmer scheint recht gut ausgestattet zu sein. Man kann hier wahrscheinlich Golems erschaffen.~
 @120003 = ~Nachdem das Stockwerk sicher genug gemacht wurde, kann man dieses Arbeitszimmer zum Golems erschaffen nutzen.~
