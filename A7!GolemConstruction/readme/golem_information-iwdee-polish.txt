@@ -667,5 +667,5 @@ Lokacje, w których można z powodzeniem budować golemy
 - Kuźnia Tiernona w Posępnym Mrozie:
   Tiernon może zezwolić na używanie swojej kuźni, jeśli ładnie go o to poprosisz. Możesz go też po prostu zabić.
 
-- Castle Maluradek (TotLM):
-  The study in the south eastern corner of the second floor can be used after making the area safe.
+- Zamek Maluradek (TotLM):
+  Gabinet położony w południowo-zachodniej części górnego piętra może zostać wykorzystany do budowy golemów po zabezpieczeniu okolicy.

@@ -49,8 +49,7 @@ Rodzaje golemów, których budowy można się nauczyć z Podręcznika budowy gol
 Każdy golem wymaga materiałów niezbędnych do wykonania jego fizycznej powłoki oraz dodatkowych składników koniecznych do obdarzenia go kluczowymi właściwościami. Stworzenie idealnego wariantu jest wyczynem samym w sobie i wymaga ściśle określonego artefaktu, który musi zostać użyty w procesie zaklinania.
 
 Budowa golemów wymaga czasu i musi się odbywać w miejscach posiadających odpowiednie wyposażenie. W kampanii Siege of Dragonspear można do tego celu wykorzystać Czarodziejskie Rozmaitości, Skarbnicę Niewiedzy pod Krasnoludzkimi wykopaliskami oraz ruiny Kanaglymu, do których można się dostać z obszaru Podziemnej rzeki. W kampanii Cienie Amn odpowiednimi miejscami mogą być Kula sfer i dom Jermiena w Imnesvale. Biblioteka czarodzieja na drugim piętrze Twierdzy Strażnika też wydaje się odpowiednim wyborem. W Tronie Bhaala można skorzystać ze Sfery kieszeniowej, pod warunkiem zainstalowania w niej odpowiedniej aparatury.
-W IWDE:EE można spróbować szczęścia na trzecim poziomie Smoczego Oka, w gabinecie Larella w Odciętej Dłoni, wieży Bandotha w Głębi Dorna, kuźni Tiernona w górach Ponurego Mrozu (Serce Zimy) lub
-or the study on the second floor of Castle Maluradek (TotLM).
+W IWDE:EE można spróbować szczęścia na trzecim poziomie Smoczego Oka, w gabinecie Larella w Odciętej Dłoni, wieży Bandotha w Głębi Dorna, kuźni Tiernona w górach Ponurego Mrozu (Serce Zimy) lub gabinecie na górnym piętrze Zamku Maluradek (TotLM).
 
 Golemy mogą wykonywać proste polecenia. Aby je zmienić, należy po prostu z nimi porozmawiać (może być w tym celu konieczne wymuszenie rozmowy poprzez wciśnięcie przycisku Rozmowa lub klawisza F1).
 
@@ -79,11 +78,8 @@ Komponent ten dodaje szansę na to, że jeden lub więcej ocalałych z oblężen
 2.6. Golemy stają się podatne na określone efekty czarów (wszystkie obsługiwane gry)
 Komponent ten modyfikuje pewną ilość zaklęć tak, aby działały one na określone rodzaje golemów w inny, czasem niespodziewany sposób. Niektóre czary mogą wywoływać u golemów określone szkodliwe efekty, inne zaś potrafią je wzmacniać lub nawet zmieniać ich strukturę. Więcej informacji znajdziesz w pliku „golem_information-polish.txt”.
 
-2.7. Redukuj niewrażliwości na broń dla konstruowanych golemów (BG:SoD, BG2:EE i EET)
-A great number of enemies have trouble hitting or damaging golems because of their numerous immunities 
-and high resistances, even in later parts of the game. This component nerfs the power of 
-constructed golems by reducing their weapon enchantment immunities as well as by lowering various 
-magical, elemental and physical resistances.
+2.7. Redukuj niewrażliwości na broń i odporności dla konstruowanych golemów (BG:SoD, BG2:EE i EET)
+Duża ilość wrogów ma problemy z trafianiem golemów ze względu na ich niewrażliwość na działanie broni oraz wysokie odporności, co widoczne jest nawet w późniejszych fragmentach gry. Komponent ten osłabia siłę konstruowanych golemów, redukując ich niewrażliwość na broń, a także obniżając posiadane przez nie odporności na magię, żywioły oraz fizyczne obrażenia.
 
 
 Szczegóły

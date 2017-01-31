@@ -9,8 +9,7 @@
 @25 = ~Wieksza roznorodnosc wrogich golemow~
 @30 = ~Golemy z Twierdzy wojownika moga ci dalej sluzyc~
 @35 = ~Golemy staja sie podatne na okreslone efekty czarow~
-@40 = ~Redukuj niewrazliwosci na bron dla konstruowanych golemow~
-@40 = ~Reduce weapon immunities and resistances for constructed golems~
+@40 = ~Redukuj niewrazliwosci na bron i odpornosci dla konstruowanych golemow~
 
 @100 = ~Ten komponent wymaga uprzedniego zainstalowania BG:SoD, BG2:EE lub IWD:EE~
 @101 = ~Ten komponent wymaga uprzedniego zainstalowania glownego komponentu.~

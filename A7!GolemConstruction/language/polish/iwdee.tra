@@ -3,9 +3,9 @@
 
 // *** Misc. strings ***
 @120000 = ~Otrzymujesz kilka obrażeń od piekielnego gorąca, które wydobywa się z pieca.~
-@120001 = ~This study looks well enough equipped. It can probably be used to construct golems - after making sure this floor is safe enough for such a task.~
-@120002 = ~This study looks well enough equipped. It can probably be used to construct golems.~
-@120003 = ~After making this floor of the castle safe the study can be used to construct golems.~
+@120001 = ~Ten gabinet wygląda na dobrze wyposażony. Prawdopodobnie można go wykorzystać do budowy golemów… po uprzednim upewnieniu się, że piętro to zostało oczyszczone z wrogów.~
+@120002 = ~Ten gabinet wygląda na dobrze wyposażony. Prawdopodobnie można go wykorzystać do budowy golemów.~
+@120003 = ~Po oczyszczeniu tego piętra z wrogów gabinet ten można wykorzystać do budowy golemów.~
 
 
 // *** Dialog: Gelarith of the Severed Hand ***
@@ -79,10 +79,10 @@ Krasnoludzki kowal Tiernon pozwolił mi łaskawie na używanie swojej kuźni. B�
 
 Kuźnia zmarłego niedawno krasnoludzkiego kowala Tiernona pozwoli mi na budowę golemów w jego warsztacie w górach Ponurego Mrozu.~
 
-@140008 = ~Golem Construction Workshop
+@140008 = ~Warsztat budowy golemów
 
-The study of Castle Maluradek is well enough equipped for magical experiments. I might be able to construct golems in this place after making sure that I'm not disturbed by any hostile creature roaming the second floor of the castle.~
+Gabinet w Zamku Maluradeka jest wystarczająco dobrze wyposażony, aby można było w nim przeprowadzać magiczne eksperymenty. Być może będę w stanie budować w tym miejscu golemy, jeśli zadbam wcześniej o to, aby nie przeszkadzały mi stworzenia grasujące na górnym piętrze zamku.~
 
-@140009 = ~Golem Construction Workshop
+@140009 = ~Warsztat budowy golemów
 
-The study on the second floor of Castle Maluradek appears to be well enough equipped for magical experiments. I should be able to construct golems in that place.~
+Gabinet w Zamku Maluradek jest wystarczająco dobrze wyposażony, aby można było w nim przeprowadzać magiczne eksperymenty. Być może będę w stanie budować w tym miejscu golemy.~
