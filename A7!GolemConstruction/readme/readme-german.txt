@@ -12,8 +12,8 @@ Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spel
 Übersicht
 ~~~~~~~~~
 
-Eine Mod für Siege of Dragonspear, BG2:EE und EET (Enhanced Edition Trilogy), die es deinen 
-Magiern erlaubt, eigene Golems zu erschaffen.
+Eine Mod für Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) und IWD:EE, die es 
+deinen Magiern erlaubt, eigene Golems zu erschaffen.
 
 Im Spiel gibt es eine Menge Golems, die eurer Gruppe über den Weg laufen. Sie sind mächtig, 
 resistent und äußerst loyal gegenüber ihren Schöpfern. Leider sind sie euch häufig feindlich 
