@@ -1,7 +1,7 @@
 "Golems erschaffen" für Magier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    2.4
+Version:    3.0
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
@@ -118,7 +118,7 @@ unerwartete Weise beeinflussen. Einige Zauber können sich schädlich auswirken,
 positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informationen dazu in 
 "golem_information-german.txt".
 
-2.7. Vermindere Waffenimmunitaeten und Resistenzen bei erschaffenen Golems (für BG:SoD, BG2:EE and EET)
+2.7. Vermindere Waffenimmunitäten und Resistenzen bei erschaffenen Golems (für BG:SoD, BG2:EE and EET)
 Viele Gegner haben selbst im fortgeschrittenen Spiel Probleme, Golems zu treffen oder zu verletzen, 
 da sie über viele Immunitäten und hohe Resistenzen verfügen. Diese Komponente vermindert die 
 Widerstandsfähigkeit von konstruierten Golems, in dem sie Waffenimmunitäten absenkt und diverse 
