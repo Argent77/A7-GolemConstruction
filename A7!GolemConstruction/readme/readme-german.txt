@@ -43,7 +43,7 @@ Wichtig: Die Mod benötigt mindestens BG2:EE-Spielversion 2.0 oder IWD:EE-Spielv
 Komponenten
 ~~~~~~~~~~~
 
-1. "Golems erschaffen" fuer Magier (für BG:SoD, BG2:EE und EET)
+1. "Golems erschaffen" fuer Magier (für BG:SoD, BG2:EE, EET und IWD:EE)
 
 Die Hauptkomponente dieser Mod. Sie installiert eine Reihe von Leitfäden zum Erschaffen von Golems 
 in ganz Faerûn. Den "Leitfaden der Golemkonstruktion" gibt es in sechs Bänden. Jeder Band 

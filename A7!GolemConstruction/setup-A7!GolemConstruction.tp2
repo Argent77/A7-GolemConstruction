@@ -50,7 +50,7 @@ LANGUAGE ~Francais (traduction: Gwendolyne)~
          ~A7!GolemConstruction/language/french/items.tra~
          ~A7!GolemConstruction/language/french/dialogs.tra~
          ~A7!GolemConstruction/language/french/misc.tra~
-         ~A7!GolemConstruction/language/english/iwdee.tra~
+         ~A7!GolemConstruction/language/french/iwdee.tra~
 LANGUAGE ~Deutsch~
          ~german~
          ~A7!GolemConstruction/language/german/setup.tra~
@@ -71,7 +71,7 @@ LANGUAGE ~Deutsch~
          ~A7!GolemConstruction/language/german/items.tra~
          ~A7!GolemConstruction/language/german/dialogs.tra~
          ~A7!GolemConstruction/language/german/misc.tra~
-         ~A7!GolemConstruction/language/english/iwdee.tra~
+         ~A7!GolemConstruction/language/german/iwdee.tra~
 LANGUAGE ~Polski (tlumaczenie: Cahir)~
          ~polish~
          ~A7!GolemConstruction/language/polish/setup.tra~
@@ -92,7 +92,7 @@ LANGUAGE ~Polski (tlumaczenie: Cahir)~
          ~A7!GolemConstruction/language/polish/items.tra~
          ~A7!GolemConstruction/language/polish/dialogs.tra~
          ~A7!GolemConstruction/language/polish/misc.tra~
-         ~A7!GolemConstruction/language/english/iwdee.tra~
+         ~A7!GolemConstruction/language/polish/iwdee.tra~
 
 
 BEGIN @0  // Golem Construction ability for spellcasters
