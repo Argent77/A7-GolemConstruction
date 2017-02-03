@@ -1,7 +1,7 @@
 "Golems erschaffen" für Magier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    3.0
+Version:    3.1
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
@@ -151,6 +151,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+3.1
+- Fixed incorrect path to IWDEE-specific lines of text from English to the selected language
 
 3.0
 - Added content for IWD:EE
