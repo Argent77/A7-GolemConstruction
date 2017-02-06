@@ -1,5 +1,5 @@
 # Golem Construction for Spellcasters
-*A mod for BG:EE - Siege of Dragonspear, BG2:EE, EET and IWD:EE that allows spellcasters to build their own golems.*
+*A mod for BG:EE, BG2:EE, EET and IWD:EE that allows spellcasters to build their own golems.*
 
 
 ## Overview
@@ -12,11 +12,9 @@ Golems can exist for a virtually unlimited time (with exceptions), or until dest
 
 ## Components
 
-### 1. Golem Construction Ability for Spellcasters (for BG:SoD, BG2:EE, EET and IWD:EE)
+### 1. Golem Construction Ability for Spellcasters (for BG:EE, BG2:EE, EET and IWD:EE)
 
 The main component of the mod. It installs a number of golem building manuals which can be found all over Faerûn. The "Manual of Golem Building" comes in six volumes containing knowledge about building different types of golems. Each tome contains a single charge of powerful magic which provides the user with the "Construct Golem" and "Repair Golem" abilities. After the tome's magic is spent it can still be used as reference about building specific types of golems.
-
-It is rumored that there is another secret set of tomes which contains knowledge about constructing more exotic types of golems.
 
 **Golem types taught by the Manuals of Golem Building:**
 - Flesh Golems in lesser, regular, greater and perfect variants.
@@ -25,6 +23,8 @@ It is rumored that there is another secret set of tomes which contains knowledge
 - Iron Golems in lesser, regular, greater and perfect variants.
 - Mithral Golems in lesser, regular, greater and perfect variants.
 - Adamantite Golems in lesser, regular, greater and perfect variants (not in IWD:EE).
+
+It is rumored that there is another secret set of tomes which contains knowledge about constructing more exotic types of golems. You might also commission golems in the BG:EE part of the game if you can find the right tomes.
 
 Each golem requires materials for constructing the physical shell, and possibly additional ingredients to implement specific key features of the golem. Creating perfect variant is a feat by itself and requires certain unique artifacts of power for the enchantment process.
 
@@ -53,7 +53,7 @@ This component adds a chance that one or more golems from the chapel who survive
 - There is a 33% chance for a clay golem if the clay golem survives.
 - There is a 15% chance for an iron golem if the iron golem survives.
 
-#### 2.6. Make golems vulnerable to specific spell effects (all supported games)
+#### 2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE, EET and IWD:EE)
 This component modifies a number of spells so that they can affect specific golem types in a different and sometimes unexpected way. Some spells may cause special harmful effects while others improve or even change the nature of golems. You can find out more in "golem_information.txt".
 
 #### 2.7. Reduce weapon immunities and resistances for constructed golems (for BG:SoD, BG2:EE and EET)

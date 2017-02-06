@@ -76,7 +76,7 @@ Komponent ten dodaje szansę na to, że jeden lub więcej ocalałych z oblężen
 * Istnieje 33% szans na glinianego golema, jeśli ten ocalał.
 * Istnieje 15% szans na żelaznego golema, jeśli ten ocalał.
 
-2.6. Golemy stają się podatne na określone efekty czarów (wszystkie obsługiwane gry)
+2.6. Golemy stają się podatne na określone efekty czarów (BG:SoD, BG2:EE, EET i IWD:EE)
 Komponent ten modyfikuje pewną ilość zaklęć tak, aby działały one na określone rodzaje golemów w inny, czasem niespodziewany sposób. Niektóre czary mogą wywoływać u golemów określone szkodliwe efekty, inne zaś potrafią je wzmacniać lub nawet zmieniać ich strukturę. Więcej informacji znajdziesz w pliku „golem_information-polish.txt”.
 
 2.7. Redukuj niewrażliwości na broń i odporności dla konstruowanych golemów (BG:SoD, BG2:EE i EET)

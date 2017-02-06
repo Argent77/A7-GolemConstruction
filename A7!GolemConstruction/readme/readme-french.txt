@@ -46,7 +46,7 @@ Important : IWD:EE doit être doté du patch v1.4 ou supérieur pour que l'insta
 Composants
 ~~~~~~~~~~
 
-1. Capacité de Fabrication de Golem pour lanceurs de sorts (pour BG:SoD, BG2:EE, EET et IWD:EE)
+1. Capacité de Fabrication de Golem pour lanceurs de sorts (pour BG:EE, BG2:EE, EET et IWD:EE)
 
 C'est le composant principal du mod. Il installe plusieurs manuels de fabrication de golem 
 à travers tout Féérune. Le "Grimoire de Fabrication de Golem" est un recueil de six volumes 
@@ -119,7 +119,7 @@ dans la chapelle du premier étage, derrière les portes secrètes.
 * 33 % de chance pour le golem d'argile s'il survit.
 * 15 % de chance pour le golem de fer s'il survit.
 
-2.6. Rendre les golems vulnérables aux effets de certains sorts (pour tous les jeux).
+2.6. Rendre les golems vulnérables aux effets de certains sorts (pour BG:SoD, BG2:EE, EET et IWD:EE).
 Ce composant modifie un certain nombre de sorts afin qu'ils puissent affecter des types de golems
 spécifiques d'une manière différente et parfois inattendue. Certains sorts peuvent causer des effets
 nocifs spéciaux alors que d'autres améliorent ou même changent la nature des golems. Consultez le

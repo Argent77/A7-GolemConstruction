@@ -114,7 +114,7 @@ Geheimtür im Obergeschoss des Schlosses aufzunehmen, wenn ihr das Schloss auf W
 * Mit 33% Wahrscheinlichkeit findet ihr einen Tongolem vor, wenn der Tongolem überlebt.
 * Mit 15% Wahrscheinlichkeit findet ihr einen Eisengolem vor, wenn der Eisengolem überlebt.
 
-2.6. Mache Golems anfällig für bestimmte Zauber (für alle unterstützten Spiele)
+2.6. Mache Golems anfällig für bestimmte Zauber (für BG:SoD, BG2:EE, EET und IWD:EE)
 Diese Komponente erweitert einige Zaubersprüche, so dass sie Golems auf eine andere, und manchmal 
 unerwartete Weise beeinflussen. Einige Zauber können sich schädlich auswirken, während andere einen 
 positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informationen dazu in 

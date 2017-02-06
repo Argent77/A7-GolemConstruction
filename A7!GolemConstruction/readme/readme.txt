@@ -111,7 +111,7 @@ chapel on the upper floor again, behind the secret doors.
 * There is a 33% chance for a clay golem if the clay golem survives.
 * There is a 15% chance for an iron golem if the iron golem survives.
 
-2.6. Make golems vulnerable to specific spell effects (all supported games)
+2.6. Make golems vulnerable to specific spell effects (for BG:SoD, BG2:EE, EET and IWD:EE)
 This component modifies a number of spells so that they can affect specific golem types in a 
 different and sometimes unexpected way. Some spells may cause special harmful effects while others 
 improve or even change the nature of golems. You can find out more in "golem_information.txt".
