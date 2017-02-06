@@ -317,7 +317,7 @@ IF_EXISTS
 
 
 // Adamantite Golems
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!gxad1.cre~ ~override~
     SAY NAME1 @6001 // Lesser Adamantite Golem
     SAY NAME2 @6001 // Lesser Adamantite Golem
@@ -383,7 +383,7 @@ END
 
 
 // Maggot Golem
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!gxmg.cre~ ~override~
     SAY NAME1 @7001 // Maggot Golem
     SAY NAME2 @7001 // Maggot Golem
@@ -408,7 +408,7 @@ IF_EXISTS
 
 
 // Brain Golem
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!gxbr.cre~ ~override~
     SAY NAME1 @9001 // Brain Golem
     SAY NAME2 @9001 // Brain Golem
@@ -435,7 +435,7 @@ IF_EXISTS
 
 
 // Magic Golem
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!gxma.cre~ ~override~
     SAY NAME1 @11001 // Magic Golem
     SAY NAME2 @11001 // Magic Golem
@@ -523,7 +523,7 @@ COPY ~%MOD_FOLDER%/spells/a7!syfl1.spl~ ~override~
      ~%MOD_FOLDER%/spells/a7!symi2.eff~ ~override~
      ~%MOD_FOLDER%/creatures/a7!mark.cre~ ~override~
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COMPILE ~%MOD_FOLDER%/scripts/a7!gxad1.baf~
           ~%MOD_FOLDER%/scripts/a7!gxad2.baf~
           ~%MOD_FOLDER%/scripts/a7!gxad3.baf~

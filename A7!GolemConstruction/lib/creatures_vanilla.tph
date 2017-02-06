@@ -1,6 +1,6 @@
 // *** Updating vanilla golems ***
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // Applying animation to Flesh Golems
   COPY_EXISTING ~tomegol1.cre~ ~override~
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
@@ -53,7 +53,7 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
 END
 
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Fixing golem type to Flesh Golems
   COPY_EXISTING ~arngol01.cre~ ~override~
     WRITE_BYTE 0x273 (IDS_OF_SYMBOL (~class~ ~GOLEM_FLESH~))
@@ -160,7 +160,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   // Updating uncategorized golems
   COPY_EXISTING ~BKNIGHT.CRE~ ~override~  // Black Knight
                 ~BRONSEN.CRE~ ~override~  // Bronze Sentry

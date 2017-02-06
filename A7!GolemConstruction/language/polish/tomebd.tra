@@ -1,0 +1,16 @@
+// -*- coding: utf-8 -*- 
+// Bone Doll related strings (index 15000..14999)
+
+@15000 = ~Forbidden Manual of Golem Building (Vol. 2)~
+@15001 = ~Bone Doll~
+
+// *** Book content ***
+@15100 = ~About Bone Dolls
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a bone doll, how to animate it and make it follow the creator's commands to the letter. Several illustrations suggest that forbidden necromantic rituals play an integral part to animate the construct.
+
+Experienced necromancers may be interested in tomes like this.
+
+STATISTICS:
+
+Weight: 1~

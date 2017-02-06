@@ -1,0 +1,14 @@
+// *** Doll Golem attacks Nemphre on sight - continued ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("nemphre")
+    ForceSpellRES("a7!ctdg1", [0.0.GOLEM.0.A7!MARKED])
+    SmallWait(3)
+    Kill([0.0.GOLEM.0.A7!MARKED])
+    Wait(3)
+    SetGlobal("A7!DollSighted", "LOCALS", 2)
+    StartDialogNoSet([PC])
+END

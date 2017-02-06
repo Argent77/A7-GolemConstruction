@@ -1,0 +1,163 @@
+// *** Type-specific actions: Arkion's Doll Golem ***
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SaveLocation("LOCALS", "Location1", [168.308])  // Face(NW)
+    SaveLocation("LOCALS", "Location2", [216.374])  // Face(SW)
+    SaveLocation("LOCALS", "Location3", [282.248])  // Face(NW)
+    SaveLocation("LOCALS", "Location4", [410.178])  // Face(NW)
+    SaveLocation("LOCALS", "Location5", [438.178])  // Face(NE)
+END
+
+
+// Combat script
+IF
+  Heard([NOTGOOD], 99)
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+    MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+  AttackedBy([GOODCUTOFF], DEFAULT)
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    Shout(99)
+    Enemy()
+    AttackReevaluate(LastAttackerOf(Myself), 30)
+END
+
+IF
+  Allegiance("arkion", ENEMY)
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  See(LastAttackerOf("arkion"))
+  Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  !Dead("arkion")
+  Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    MoveToObject("arkion")
+END
+
+
+// Servant script
+IF
+  !GlobalTimerNotExpired("MoveTimer", "LOCALS")
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 1)
+    MoveToSavedLocation("Location1", "LOCALS")
+    Face(NW)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 2)
+    MoveToSavedLocation("Location2", "LOCALS")
+    Face(SW)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 3)
+    MoveToSavedLocation("Location3", "LOCALS")
+    Face(NW)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 4)
+    MoveToSavedLocation("Location4", "LOCALS")
+    Face(NW)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 5)
+    MoveToSavedLocation("Location5", "LOCALS")
+    Face(NE)
+END
+
+IF
+  Global("Move", "LOCALS", 1)
+  NearSavedLocation(Myself, "Location1", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 2)
+  NearSavedLocation(Myself, "Location2", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 3)
+  NearSavedLocation(Myself, "Location3", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 4)
+  NearSavedLocation(Myself, "Location4", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 5)
+  NearSavedLocation(Myself, "Location5", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  GlobalGT("Move", "LOCALS", 10)
+  GlobalTimerNotExpired("MoveTimer", "LOCALS")
+  !GlobalTimerNotExpired("BusyTimer", "LOCALS")
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CAST)
+    VerbalConstant(Myself, SELECT_COMMON)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CAST)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CONJURE)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CONJURE)
+    VerbalConstant(Myself, SELECT_ACTION)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+END

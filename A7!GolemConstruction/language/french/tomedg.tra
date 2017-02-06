@@ -1,0 +1,16 @@
+// -*- coding: utf-8 -*- 
+// Doll Golem related strings (index 14000..14999)
+
+@14000 = ~Forbidden Manual of Golem Building (Vol. 1)~
+@14001 = ~Doll Golem~
+
+// *** Book content ***
+@14100 = ~About Doll Golems
+
+This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a doll golem, how to animate it and make it follow the creator's commands to the letter. Several illustrations suggest that forbidden necromantic rituals play an integral part to animate the construct.
+
+Experienced necromancers may be interested in tomes like this.
+
+STATISTICS:
+
+Weight: 1~

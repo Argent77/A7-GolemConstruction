@@ -12,8 +12,8 @@ Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spel
 Overview
 ~~~~~~~~
 
-A mod for Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) and IWD:EE that allows 
-spellcasters to build their own golems.
+A mod for BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) and IWD:EE that allows spellcasters to 
+build their own golems.
 
 You can encounter a great number of golems of various types throughout the game. They are strong, 
 resistant, and utterly loyal to their master. Unfortunately they are mostly hostile towards you.
@@ -33,18 +33,17 @@ Installation
 
 This is a WeiDU mod, that means it is very easy to install. Simply unpack the downloaded archive 
 into your game directory and run "setup-A7!GolemConstruction.exe".
-Follow the instructions and you are ready to start. It is strongly recommend to install the mod 
-before starting the "Siege of Dragonspear" campaign (BG:EE), or starting a new game (BG2:EE and 
-IWD:EE).
+Follow the instructions and you are ready to start. It is strongly recommend to start a new game 
+after installing the mod.
 
-Important: BG2:EE must be patched to v2.0 or higher to install this mod.
+Important: BG:EE and BG2:EE must be patched to v2.0 or higher to install this mod.
            IWD:EE must be patched to v1.4 or higher to install this mod.
 
 
 Components
 ~~~~~~~~~~
 
-1. Golem Construction Ability for Spellcasters (for BG:SoD, BG2:EE, EET and IWD:EE)
+1. Golem Construction Ability for Spellcasters (for BG:EE, BG2:EE, EET and IWD:EE)
 
 The main component of the mod. It installs a number of golem building manuals which can be found 
 all over Faerûn. The "Manual of Golem Building" comes in six volumes containing knowledge about 
@@ -61,7 +60,8 @@ Golem types taught by the Manual of Golem Building:
 - Adamantite Golems in lesser, regular, greater and perfect variants (not in IWD:EE).
 
 It is rumored that there is another secret set of tomes which contains knowledge about constructing 
-more exotic types of golems.
+more exotic types of golems. You might also commission golems in the BG:EE part of the game if you 
+can find the right tomes.
 
 Each golem requires materials for constructing the physical shell, and possibly additional 
 ingredients to implement specific key features of the golem. Creating perfect variant is a feat 
@@ -140,6 +140,8 @@ Writing, coding and testing: Argent77
 Polish translation: Cahir
 French translation: Gwendolyne
 
+Doll golem and bone doll creature animations ported from Diablo II by Blizzard Entertainment.
+
 
 Copyright Notice
 ~~~~~~~~~~~~~~~~
@@ -150,6 +152,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+3.2
+- Added two new golem types that can be commissioned during the BG1 part of the game
 
 3.1
 - Fixed incorrect path to IWDEE-specific lines of text from English to the selected language

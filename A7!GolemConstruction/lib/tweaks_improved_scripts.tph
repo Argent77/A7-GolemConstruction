@@ -1,6 +1,6 @@
 // *** Tweaks: Improved combat scripts for enemy mages ***
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // mage scripts
   OUTER_TEXT_SPRINT condition ~~
   ACTION_FOR_EACH script IN ~mage7~ ~mage8~ ~mage8a~ ~mage8b~ ~mage8c~ ~mage8d~ ~mage8e~ 

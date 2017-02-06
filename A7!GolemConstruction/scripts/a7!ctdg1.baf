@@ -1,0 +1,28 @@
+// *** Doll Golem attacks Nemphre on sight ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    MoveToObject("nemphre")
+    SetSequence(SEQ_ATTACK)
+    VerbalConstant(Myself, ATTACK)
+    SmallWait(5)
+    ActionOverride("nemphre", SetSequence(SEQ_DAMAGE))
+    VerbalConstant("nemphre", DAMAGE)
+    ActionOverride("nemphre", FaceObject([0.0.GOLEM.0.A7!MARKED]))
+    Wait(2)
+    DisplayStringHead("nemphre", @40006)  // What the hell is going on?! To oblivion with you!
+    Wait(1)
+    SetSequence(SEQ_ATTACK)
+    VerbalConstant(Myself, ATTACK)
+    SmallWait(5)
+    ActionOverride("nemphre", SetSequence(SEQ_DAMAGE))
+    VerbalConstant("nemphre", DAMAGE)
+    Wait(2)
+    SetSequence(SEQ_ATTACK)
+    VerbalConstant(Myself, ATTACK)
+    IncrementGlobal("A7!GolemCount", "GLOBAL", -1)
+    StartCutScene("a7!ctdg2")
+END

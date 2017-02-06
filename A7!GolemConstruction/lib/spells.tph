@@ -1,13 +1,15 @@
 // *** Installs spell-related resources ***
 
 // Permanent visual effect for perfect golems
-COPY ~%MOD_FOLDER%/spells/a7!glfx1.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glfx2.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glfx3.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glfx1.vvc~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glfx2.vvc~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glfx3.vvc~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glfx1.wav~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!glfx1.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glfx2.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glfx3.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glfx1.vvc~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glfx2.vvc~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glfx3.vvc~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glfx1.wav~ ~override~
+END
 
 
 // Dismiss Golem
@@ -20,95 +22,107 @@ COPY ~%MOD_FOLDER%/spells/a7!in01a.eff~ ~override~
 
 
 // Stinking Cloud
-COPY ~%MOD_FOLDER%/spells/a7!in02.spl~ ~override~
-  SAY NAME1 @20010  // Stinking Cloud
-  SAY UNIDENTIFIED_DESC @20011  // ...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    LPF ALTER_SPELL_HEADER
-    INT_VAR
-      projectile = 338  // idpro95
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!in02.spl~ ~override~
+    SAY NAME1 @20010  // Stinking Cloud
+    SAY UNIDENTIFIED_DESC @20011  // ...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      LPF ALTER_SPELL_HEADER
+      INT_VAR
+        projectile = 338  // idpro95
+      END
     END
-  END
 
-COPY ~%MOD_FOLDER%/spells/a7!in02b.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!in02b.bam~ ~override~
+END
 
 
 // Golem Haste
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in03.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in03.spl~
-END
-COPY ~%resName%~ ~override~
-  SAY NAME1 @20020  // Golem Haste
-  SAY UNIDENTIFIED_DESC @20021  // ...
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in03.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in03.spl~
+  END
+  COPY ~%resName%~ ~override~
+    SAY NAME1 @20020  // Golem Haste
+    SAY UNIDENTIFIED_DESC @20021  // ...
 
-COPY ~%MOD_FOLDER%/spells/a7!in03b.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!in03b.bam~ ~override~
+END
 
 
 // Golem Slow
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in04.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in04.spl~
-END
-COPY ~%resName%~ ~override~
-  SAY NAME1 @20030  // Golem Slow
-  SAY UNIDENTIFIED_DESC @20031  // ...
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in04.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in04.spl~
+  END
+  COPY ~%resName%~ ~override~
+    SAY NAME1 @20030  // Golem Slow
+    SAY UNIDENTIFIED_DESC @20031  // ...
 
-COPY ~%MOD_FOLDER%/spells/a7!in04b.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!in04b.bam~ ~override~
+END
 
 
 // Gas Cloud
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in05.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in05.spl~
-END
-COPY ~%resName%~ ~override~
-  SAY NAME1 @20040  // Gas Cloud
-  SAY UNIDENTIFIED_DESC @20041  // ...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    LPF ALTER_SPELL_HEADER
-    INT_VAR
-      projectile = 342  // idpro187
-    END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in05.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in05.spl~
   END
+  COPY ~%resName%~ ~override~
+    SAY NAME1 @20040  // Gas Cloud
+    SAY UNIDENTIFIED_DESC @20041  // ...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      LPF ALTER_SPELL_HEADER
+      INT_VAR
+        projectile = 342  // idpro187
+      END
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!in05b.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!in05b.bam~ ~override~
+END
 
 
 // Trample
-COPY ~%MOD_FOLDER%/spells/a7!in06.spl~ ~override~
-  SAY NAME1 @20050  // Trample
-  SAY UNIDENTIFIED_DESC @20051  // ...
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!in06.spl~ ~override~
+    SAY NAME1 @20050  // Trample
+    SAY UNIDENTIFIED_DESC @20051  // ...
 
-COPY ~%MOD_FOLDER%/spells/a7!in06a.spl~ ~override~
-  LPF ALTER_SPELL_EFFECT
-  INT_VAR
-    match_opcode = 139  // Display String
-    parameter1 = RESOLVE_STR_REF(@20052)  // Trampled
-  END
+  COPY ~%MOD_FOLDER%/spells/a7!in06a.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@20052)  // Trampled
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!in06b.spl~ ~override~
-  LPF ALTER_SPELL_EFFECT
-  INT_VAR
-    match_opcode = 139  // Display String
-    parameter1 = RESOLVE_STR_REF(@20053)  // Too big to trample
-  END
+  COPY ~%MOD_FOLDER%/spells/a7!in06b.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@20053)  // Too big to trample
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!in06b.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!in06b.bam~ ~override~
+END
 
 
 // Chain Lightning
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in07.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in07.spl~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in07.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in07.spl~
+  END
+  COPY ~%resName%~ ~override~
+    SAY NAME1 @20060  // Chain Lightning
+    SAY UNIDENTIFIED_DESC @20061  // ...
 END
-COPY ~%resName%~ ~override~
-  SAY NAME1 @20060  // Chain Lightning
-  SAY UNIDENTIFIED_DESC @20061  // ...
 
 
 // Teleport
@@ -124,7 +138,7 @@ COPY ~%MOD_FOLDER%/spells/a7!dmndr.bam~ ~override~
      ~%MOD_FOLDER%/spells/a7!in08a.spl~ ~override~
 
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   // Mind Blast
   ADD_PROJECTILE ~%MOD_FOLDER%/spells/a7!in09.pro~
   COPY ~%MOD_FOLDER%/spells/a7!in09.spl~ ~override~
@@ -137,16 +151,18 @@ END
 
 
 // Scalding Steam
-COPY ~%MOD_FOLDER%/spells/a7!in10.spl~ ~override~
-  SAY NAME1 @20090  // Scalding Steam
-  SAY UNIDENTIFIED_DESC @20091  // ...
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!in10.spl~ ~override~
+    SAY NAME1 @20090  // Scalding Steam
+    SAY UNIDENTIFIED_DESC @20091  // ...
 
-COPY ~%MOD_FOLDER%/spells/a7!in10b.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!in10a.spl~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!in10b.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!in10a.spl~ ~override~
+END
 
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  // Wild Magic Flare
+// Wild Magic Flare
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/spells/a7!in11.spl~ ~override~
     SAY NAME1 @20100  // Wild Magic Flare
     SAY UNIDENTIFIED_DESC @20101  // ...
@@ -165,79 +181,55 @@ END
 
 
 // Hideous Laughter
-COPY ~%MOD_FOLDER%/spells/a7!in13.spl~ ~override~
-  SAY NAME1 @20130  // Hideous Laughter
-  SAY UNIDENTIFIED_DESC @20131  // ...
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!in13.spl~ ~override~
+    SAY NAME1 @20130  // Hideous Laughter
+    SAY UNIDENTIFIED_DESC @20131  // ...
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in13a.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in13a.spl~
-END
-COPY ~%resName%~ ~override~
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 2     // Preset target
-    parameter1 = RESOLVE_STR_REF(@21017)  // Panic
-    timing = 1      // Instant/Permanent until death
-    resist_dispel = 1
-    insert_point = 0
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!in13a.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!in13a.spl~
   END
+  COPY ~%resName%~ ~override~
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 2     // Preset target
+      parameter1 = RESOLVE_STR_REF(@21017)  // Panic
+      timing = 1      // Instant/Permanent until death
+      resist_dispel = 1
+      insert_point = 0
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!in13b.spl~ ~override~
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 2     // Preset target
-    parameter1 = RESOLVE_STR_REF(@21018)  // Paralyzed
-    timing = 1      // Instant/Permanent until death
-    resist_dispel = 1
-    insert_point = 0
-  END
+  COPY ~%MOD_FOLDER%/spells/a7!in13b.spl~ ~override~
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 2     // Preset target
+      parameter1 = RESOLVE_STR_REF(@21018)  // Paralyzed
+      timing = 1      // Instant/Permanent until death
+      resist_dispel = 1
+      insert_point = 0
+    END
 
 
-// Allows Resist/Remove Fear to protect against this ability
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-COPY_EXISTING ~sppr108.spl~ ~override~  // Remove Fear
-              ~spcl222.spl~ ~override~  // Remove Fear
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 206   // Protection from Spell
-    target  = 2     // Preset target
-    timing = 0      // Instant/Limited
-    duration = 60
-    resist_dispel = 3
-  STR_VAR
-    resource = "A7!IN13B"
-  END
-
-COPY_EXISTING ~spwi210.spl~ ~override~  // Resist Fear
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 206   // Protection from Spell
-    target  = 2     // Preset target
-    timing = 0      // Instant/Limited
-    duration = 300
-    resist_dispel = 3
-  STR_VAR
-    resource = "A7!IN13B"
-  END
-
-  COPY_EXISTING ~spcl115.spl~ ~override~  // The Tale of Curran Strongheart - Immunity to Fear
+  // Allows Resist/Remove Fear to protect against this ability
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+  COPY_EXISTING ~sppr108.spl~ ~override~  // Remove Fear
+                ~spcl222.spl~ ~override~  // Remove Fear
     LPF ADD_SPELL_EFFECT
     INT_VAR
       opcode  = 206   // Protection from Spell
       target  = 2     // Preset target
       timing = 0      // Instant/Limited
-      duration = 7
-      resist_dispel = 2
+      duration = 60
+      resist_dispel = 3
     STR_VAR
       resource = "A7!IN13B"
     END
-END ELSE BEGIN
-  COPY_EXISTING ~sppr108.spl~ ~override~  // Remove Fear
-                ~spwi210.spl~ ~override~  // Resist Fear
+
+  COPY_EXISTING ~spwi210.spl~ ~override~  // Resist Fear
     LPF ADD_SPELL_EFFECT
     INT_VAR
       opcode  = 206   // Protection from Spell
@@ -248,164 +240,216 @@ END ELSE BEGIN
     STR_VAR
       resource = "A7!IN13B"
     END
-END
 
-COPY ~%MOD_FOLDER%/spells/a7!in13b.bam~ ~override~
+    COPY_EXISTING ~spcl115.spl~ ~override~  // The Tale of Curran Strongheart - Immunity to Fear
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 206   // Protection from Spell
+        target  = 2     // Preset target
+        timing = 0      // Instant/Limited
+        duration = 7
+        resist_dispel = 2
+      STR_VAR
+        resource = "A7!IN13B"
+      END
+  END ELSE BEGIN
+    COPY_EXISTING ~sppr108.spl~ ~override~  // Remove Fear
+                  ~spwi210.spl~ ~override~  // Resist Fear
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 206   // Protection from Spell
+        target  = 2     // Preset target
+        timing = 0      // Instant/Limited
+        duration = 300
+        resist_dispel = 3
+      STR_VAR
+        resource = "A7!IN13B"
+      END
+  END
+
+  COPY ~%MOD_FOLDER%/spells/a7!in13b.bam~ ~override~
+END
 
 
 // Ruby Ray of Reversal
-COPY ~%MOD_FOLDER%/spells/a7!in14.spl~ ~override~
-  SAY NAME1 @20140  // Ruby Ray of Reversal
-  SAY UNIDENTIFIED_DESC @20141  // ...
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 2     // Preset target
-    parameter1 = RESOLVE_STR_REF(@21019)  // Spell Protections Removed
-    timing = 1      // Instant/Permanent until death
-    resist_dispel = 2
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!in14.spl~ ~override~
+    SAY NAME1 @20140  // Ruby Ray of Reversal
+    SAY UNIDENTIFIED_DESC @20141  // ...
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 2     // Preset target
+      parameter1 = RESOLVE_STR_REF(@21019)  // Spell Protections Removed
+      timing = 1      // Instant/Permanent until death
+      resist_dispel = 2
+    END
+END
 
 
 // Lightning Travel
-COPY ~%MOD_FOLDER%/spells/a7!in15.spl~ ~override~
-  SAY NAME1 @20150  // Lightning Travel
-  SAY UNIDENTIFIED_DESC @20151  // ...
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!in15.spl~ ~override~
+    SAY NAME1 @20150  // Lightning Travel
+    SAY UNIDENTIFIED_DESC @20151  // ...
 
-COPY ~%MOD_FOLDER%/spells/a7!in15a.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!in15b.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!in15a.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!in15b.bam~ ~override~
+END
+
+
+// Bone Doll self-destruct spell
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  ADD_PROJECTILE ~%MOD_FOLDER%/spells/a7!skull.pro~
+  COPY ~%MOD_FOLDER%/spells/a7!sxbd.spl~ ~override~
+    WRITE_SHORT 0x98 ~%a7!skull%~
+END
 
 
 // "Create Golem" spells and related resources
-COPY ~%MOD_FOLDER%/spells/a7!prtl.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!prtl.wav~ ~override~
-     ~%MOD_FOLDER%/spells/a7!prtl.vvc~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smfl1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smfl2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smfl3.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smfl4.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl3.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl4.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst3.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst4.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir3.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir4.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi3.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi4.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad3.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad4.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmg.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smbo.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smbr.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smic.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smma.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smlt.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smru.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxfl1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxfl2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxcl1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxcl2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxst1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxst2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxir1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxir2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxmi1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxmi2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxad1.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxad2.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxfl1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxfl2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxcl1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxcl2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxst1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxst2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxir1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxir2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxmi1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxmi2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxad1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!sxad2.spl~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!prtl.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prtl.wav~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prtl.vvc~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smfl1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smfl2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smfl3.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smfl4.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl3.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl4.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst3.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst4.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir3.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir4.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi3.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi4.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad3.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad4.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmg.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smbo.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smbr.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smic.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smma.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smlt.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smru.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxfl1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxfl2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxcl1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxcl2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxst1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxst2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxir1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxir2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxmi1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxmi2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxad1.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxad2.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxfl1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxfl2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxcl1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxcl2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxst1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxst2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxir1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxir2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxmi1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxmi2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxad1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!sxad2.spl~ ~override~
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT smbo_spl ~%MOD_FOLDER%/spells/iwdee/a7!smbo.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT smbo_spl ~%MOD_FOLDER%/spells/a7!smbo.spl~
-END
-COPY ~%MOD_FOLDER%/spells/a7!smfl1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smfl2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smfl3.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smfl4.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl3.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smcl4.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst3.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smst4.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir3.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smir4.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi3.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmi4.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad1.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad2.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad3.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smad4.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smmg.spl~ ~override~
-     ~%smbo_spl%~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smbr.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smic.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smma.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smlt.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!smru.spl~ ~override~
-  LPF ALTER_SPELL_EFFECT
-  INT_VAR
-    match_opcode = 139  // Display String
-    parameter1 = RESOLVE_STR_REF(@21000)  // Engaged in mental combat
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT smbo_spl ~%MOD_FOLDER%/spells/iwdee/a7!smbo.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT smbo_spl ~%MOD_FOLDER%/spells/a7!smbo.spl~
   END
+  COPY ~%MOD_FOLDER%/spells/a7!smfl1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smfl2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smfl3.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smfl4.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl3.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smcl4.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst3.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smst4.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir3.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smir4.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi3.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmi4.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad3.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smad4.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smmg.spl~ ~override~
+       ~%smbo_spl%~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smbr.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smic.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smma.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smlt.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smru.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@21000)  // Engaged in mental combat
+    END
+END
+
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!smbd.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smbd.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smbd2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smdg.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smdg.eff~ ~override~
+END
 
 
 // Make golem immune during mental battle with creator
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!sum1.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!sum1.spl~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!sum1.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!sum1.spl~
+  END
+  COPY ~%resName%~ ~override~
 END
-COPY ~%resName%~ ~override~
 
 
 // Make caster fatigued and inattentive
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!sum2.spl~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!sum2.spl~
-END
-COPY ~%resName%~ ~override~
-  LPF ALTER_SPELL_EFFECT
-  INT_VAR
-    match_opcode = 139  // Display String
-    parameter1 = RESOLVE_STR_REF(@21002)  // Crafting the golem leaves you fatigued and inattentive...
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!sum2.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!sum2.spl~
   END
+  COPY ~%resName%~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@21002)  // Crafting the golem leaves you fatigued and inattentive...
+    END
+END
 
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  // Disease from constructing Maggot Golems
+// Disease from constructing Maggot Golems
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/spells/a7!sum3.spl~ ~override~
-    SET strref = (GAME_IS ~bg2ee eet~) ? 54337 : 31238
+    SET strref = (GAME_IS_BG2EE OR GAME_IS_EET) ? 54337 : 31238
     LPF ALTER_SPELL_EFFECT
     INT_VAR
       match_opcode = 139  // Display String
@@ -415,149 +459,159 @@ END
 
 
 // Drain stats or levels from the target
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  COPY ~%MOD_FOLDER%/spells/iwdee/a7!sum4.spl~ ~override~
-END ELSE BEGIN
-  COPY ~%MOD_FOLDER%/spells/a7!sum4.spl~ ~override~
-    LPF ALTER_SPELL_EFFECT
-    INT_VAR
-      match_opcode = 139  // Display String
-      parameter1 = (GAME_IS ~bg2ee eet~ ? 41495 : 25802)  // One Level Drained
-    END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/spells/iwdee/a7!sum4.spl~ ~override~
+  END ELSE BEGIN
+    COPY ~%MOD_FOLDER%/spells/a7!sum4.spl~ ~override~
+      LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display String
+        parameter1 = (GAME_IS_BG2EE OR GAME_IS_EET) ? 41495 : 25802  // One Level Drained
+      END
 
-  COPY ~%MOD_FOLDER%/spells/a7!sum5.spl~ ~override~
-    LPF ALTER_SPELL_EFFECT
-    INT_VAR
-      match_opcode = 139  // Display String
-      parameter1 = (GAME_IS ~bg2ee eet~ ? 40968 : 25803)  // Two Levels Drained
-    END
+    COPY ~%MOD_FOLDER%/spells/a7!sum5.spl~ ~override~
+      LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display String
+        parameter1 = (GAME_IS_BG2EE OR GAME_IS_EET) ? 40968 : 25803  // Two Levels Drained
+      END
+  END
 END
 
 
 // Golem going berserk during combat
-COPY ~%MOD_FOLDER%/spells/a7!brsk.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!brska.spl~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!brsk.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!brska.spl~ ~override~
+END
 
 
 // XP draining spells
-ACTION_DEFINE_ASSOCIATIVE_ARRAY ref_spl BEGIN
-  "a7!xpmi1" => "21003"
-  "a7!xpmi2" => "21004"
-  "a7!xpmi3" => "21005"
-  "a7!xpmi4" => "21006"
-  "a7!xpad1" => "21004"
-  "a7!xpad2" => "21005"
-  "a7!xpad3" => "21006"
-  "a7!xpad4" => "21007"
-END
-ACTION_PHP_EACH ref_spl AS spl => ref BEGIN
-  COPY ~%MOD_FOLDER%/spells/%spl%.spl~ ~override~
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode  = 139   // Display String
-      target  = 1     // Self
-      parameter1 = RESOLVE_STR_REF((AT ref))  // Caster has lost [ref] Experience
-      timing = 9      // Instant/Permanent
-      resist_dispel = 2
-    END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY ref_spl BEGIN
+    "a7!xpmi1" => "21003"
+    "a7!xpmi2" => "21004"
+    "a7!xpmi3" => "21005"
+    "a7!xpmi4" => "21006"
+    "a7!xpad1" => "21004"
+    "a7!xpad2" => "21005"
+    "a7!xpad3" => "21006"
+    "a7!xpad4" => "21007"
+  END
+  ACTION_PHP_EACH ref_spl AS spl => ref BEGIN
+    COPY ~%MOD_FOLDER%/spells/%spl%.spl~ ~override~
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 139   // Display String
+        target  = 1     // Self
+        parameter1 = RESOLVE_STR_REF((AT ref))  // Caster has lost [ref] Experience
+        timing = 9      // Instant/Permanent
+        resist_dispel = 2
+      END
+  END
 END
 
 
 // "Construct Golem" ability
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  OUTER_TEXT_SPRINT dlgName ~%MOD_FOLDER%/dialogs/iwdee/a7!smdlg.d~
-  OUTER_TEXT_SPRINT bafName ~%MOD_FOLDER%/scripts/iwdee/a7!smdlg.baf~
-  OUTER_TEXT_SPRINT bamName ~%MOD_FOLDER%/spells/iwdee/a7!smglb.bam~
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT dlgName ~%MOD_FOLDER%/dialogs/a7!smdlg.d~
-  OUTER_TEXT_SPRINT bafName ~%MOD_FOLDER%/scripts/a7!smdlg.baf~
-  OUTER_TEXT_SPRINT bamName ~%MOD_FOLDER%/spells/a7!smglb.bam~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    OUTER_TEXT_SPRINT dlgName ~%MOD_FOLDER%/dialogs/iwdee/a7!smdlg.d~
+    OUTER_TEXT_SPRINT bafName ~%MOD_FOLDER%/scripts/iwdee/a7!smdlg.baf~
+    OUTER_TEXT_SPRINT bamName ~%MOD_FOLDER%/spells/iwdee/a7!smglb.bam~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT dlgName ~%MOD_FOLDER%/dialogs/a7!smdlg.d~
+    OUTER_TEXT_SPRINT bafName ~%MOD_FOLDER%/scripts/a7!smdlg.baf~
+    OUTER_TEXT_SPRINT bamName ~%MOD_FOLDER%/spells/a7!smglb.bam~
+  END
+  COMPILE ~%dlgName%~ EVAL
+  COMPILE ~%bafName%~
+
+  COPY ~%MOD_FOLDER%/creatures/a7!smdlg.cre~ ~override~
+    SAY NAME1 @20110  // Craft Golem
+    SAY NAME2 @20110  // Craft Golem
+
+  COPY ~%MOD_FOLDER%/spells/a7!smgl.spl~ ~override~
+    SAY NAME1 @20110  // Craft Golem
+    SAY UNIDENTIFIED_DESC @20111  // Craft Golem description
+
+  COPY ~%MOD_FOLDER%/items/a7!invis.itm~ ~override~
+       ~%MOD_FOLDER%/items/a7!nosel.itm~ ~override~
+
+  COPY ~%MOD_FOLDER%/spells/a7!smdlg.eff~ ~override~
+       ~%bamName%~ ~override~
 END
-COMPILE ~%dlgName%~ EVAL
-COMPILE ~%bafName%~
-
-COPY ~%MOD_FOLDER%/creatures/a7!smdlg.cre~ ~override~
-  SAY NAME1 @20110  // Craft Golem
-  SAY NAME2 @20110  // Craft Golem
-
-COPY ~%MOD_FOLDER%/spells/a7!smgl.spl~ ~override~
-  SAY NAME1 @20110  // Craft Golem
-  SAY UNIDENTIFIED_DESC @20111  // Craft Golem description
-
-COPY ~%MOD_FOLDER%/items/a7!invis.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!nosel.itm~ ~override~
-
-COPY ~%MOD_FOLDER%/spells/a7!smdlg.eff~ ~override~
-     ~%bamName%~ ~override~
 
 
 // "Repair Golem" ability
-COPY ~%MOD_FOLDER%/spells/a7!glr.spl~ ~override~
-  SAY NAME1 @20120  // Repair Golem
-  SAY UNIDENTIFIED_DESC @20121  // Repair Golem description
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode = 177      // Use EFF file
-    target = 2        // Preset target
-    parameter1 = specific_golem
-    parameter2 = 6    // SPECIFIC.IDS
-    timing = 1        // Instant/Permanent until death
-    resist_dispel = 0
-  STR_VAR
-    resource = EVAL "a7!glr1a"
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode = 177      // Use EFF file
-    target = 2        // Preset target
-    parameter1 = specific_golem
-    parameter2 = 6    // SPECIFIC.IDS
-    timing = 1        // Instant/Permanent until death
-    resist_dispel = 0
-  STR_VAR
-    resource = EVAL "a7!glr1b"
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode = 326      // Apply effects list
-    target = 2        // Preset target
-    parameter1 = specific_golem
-    parameter2 = splprot_not_specific  // SPECIFIC != param1 (as defined in generic.tph)
-    timing = 1        // Instant/Permanent until death
-    resist_dispel = 0
-  STR_VAR
-    resource = EVAL "a7!glr2"
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!glr.spl~ ~override~
+    SAY NAME1 @20120  // Repair Golem
+    SAY UNIDENTIFIED_DESC @20121  // Repair Golem description
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 177      // Use EFF file
+      target = 2        // Preset target
+      parameter1 = specific_golem
+      parameter2 = 6    // SPECIFIC.IDS
+      timing = 1        // Instant/Permanent until death
+      resist_dispel = 0
+    STR_VAR
+      resource = EVAL "a7!glr1a"
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 177      // Use EFF file
+      target = 2        // Preset target
+      parameter1 = specific_golem
+      parameter2 = 6    // SPECIFIC.IDS
+      timing = 1        // Instant/Permanent until death
+      resist_dispel = 0
+    STR_VAR
+      resource = EVAL "a7!glr1b"
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 326      // Apply effects list
+      target = 2        // Preset target
+      parameter1 = specific_golem
+      parameter2 = splprot_not_specific  // SPECIFIC != param1 (as defined in generic.tph)
+      timing = 1        // Instant/Permanent until death
+      resist_dispel = 0
+    STR_VAR
+      resource = EVAL "a7!glr2"
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!glr1b.spl~ ~override~
-  LPF ALTER_SPELL_EFFECT
-  INT_VAR
-    match_opcode = 139  // Display String
-    parameter1 = RESOLVE_STR_REF(@21010)  // Repairing golem...
-  END
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!glr1b.spl~ ~override~
     LPF ALTER_SPELL_EFFECT
     INT_VAR
-      match_opcode = 142  // Display portrait icon
-      parameter2 = 87
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@21010)  // Repairing golem...
     END
-  END
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 142  // Display portrait icon
+        parameter2 = 87
+      END
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!glr2.spl~ ~override~
-  LPF ALTER_SPELL_EFFECT
-  INT_VAR
-    match_opcode = 139  // Display String
-    parameter1 = RESOLVE_STR_REF(@21011)  // Target is not a constructed golem.
-  END
+  COPY ~%MOD_FOLDER%/spells/a7!glr2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@21011)  // Target is not a constructed golem.
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!glr1a.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glr1b.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glr1a.spl~ ~override~
-     ~%MOD_FOLDER%/spells/a7!glrb.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!glr1a.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glr1b.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glr1a.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!glrb.bam~ ~override~
+END
 
 
 // Golem damage simulation
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/iwdee/a7!dmg1.spl~
 END ELSE BEGIN
   OUTER_TEXT_SPRINT resName ~%MOD_FOLDER%/spells/a7!dmg1.spl~
@@ -589,72 +643,72 @@ COPY ~%MOD_FOLDER%/spells/a7!dmg2.spl~ ~override~
 
 
 // Wish expansion
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/iwdee/wishes.d~
-END ELSE ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+END ELSE ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/wishes.d~
 END
 
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  // Fire Arrow trap
+// Fire Arrow trap
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/spells/iwdee/a7!tfa.spl~ ~override~
 END
 
 
 // Mage spell "Banish Golem Spirit"
-COPY_EXISTING ~pskullt.pro~ ~override/a7!bskul.pro~
-  WRITE_ASCII 0x104 ~A7!BSKUL~ #8
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY_EXISTING ~pskullt.pro~ ~override/a7!bskul.pro~
+    WRITE_ASCII 0x104 ~A7!BSKUL~ #8
 
-ADD_PROJECTILE ~override/a7!bskul.pro~
+  ADD_PROJECTILE ~override/a7!bskul.pro~
 
-COPY ~%MOD_FOLDER%/spells/a7!wi61.spl~ ~override~
-  SAY NAME1 @20160  // Banish Golem Spirit
-  SAY UNIDENTIFIED_DESC @20161  // Banish Golem Spirit description
-  READ_LONG 0x64 ofsAbil
-  READ_SHORT 0x68 numAbil
-  FOR (idx = 0; idx < numAbil; idx += 1) BEGIN
-    SET ofs = ofsAbil + (idx * 0x28)
-    WRITE_SHORT (ofs + 0x26) ~%a7!bskul%~
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode = 324      // Immunity to spell and message
-    target = 2        // Preset target
-    power = 0         // don't set to nonzero to affect even bone or magic golems
-    parameter2 = 28   // RACE != GOLEM
-    timing = 0        // Instant/Limited
-    duration = 1
-    resist_dispel = 2
-    insert_point = 0
-  STR_VAR
-    resource = "A7!WI61"
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode = 324      // Immunity to spell and message
-    target = 2        // Preset target
-    power = 0         // don't set to nonzero to affect even bone or magic golems
-    parameter1 = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_PERFECT~)
-    parameter2 = 76   // SPLSTATE = parameter1
-    timing = 0        // Instant/Limited
-    duration = 1
-    resist_dispel = 2
-    insert_point = 0
-  STR_VAR
-    resource = "A7!WI61"
-  END
+  COPY ~%MOD_FOLDER%/spells/a7!wi61.spl~ ~override~
+    SAY NAME1 @20160  // Banish Golem Spirit
+    SAY UNIDENTIFIED_DESC @20161  // Banish Golem Spirit description
+    READ_LONG 0x64 ofsAbil
+    READ_SHORT 0x68 numAbil
+    FOR (idx = 0; idx < numAbil; idx += 1) BEGIN
+      SET ofs = ofsAbil + (idx * 0x28)
+      WRITE_SHORT (ofs + 0x26) ~%a7!bskul%~
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 324      // Immunity to spell and message
+      target = 2        // Preset target
+      power = 0         // don't set to nonzero to affect even bone or magic golems
+      parameter2 = 28   // RACE != GOLEM
+      timing = 0        // Instant/Limited
+      duration = 1
+      resist_dispel = 2
+      insert_point = 0
+    STR_VAR
+      resource = "A7!WI61"
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode = 324      // Immunity to spell and message
+      target = 2        // Preset target
+      power = 0         // don't set to nonzero to affect even bone or magic golems
+      parameter1 = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_PERFECT~)
+      parameter2 = 76   // SPLSTATE = parameter1
+      timing = 0        // Instant/Limited
+      duration = 1
+      resist_dispel = 2
+      insert_point = 0
+    STR_VAR
+      resource = "A7!WI61"
+    END
 
-COPY ~%MOD_FOLDER%/spells/a7!scl1.itm~ ~override~
-  SAY NAME2 @20160  // Banish Golem Spirit
-  SAY IDENTIFIED_DESC @20161  // Banish Golem Spirit description
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    WRITE_ASCII 0x58 "" #8
-  END
+  COPY ~%MOD_FOLDER%/spells/a7!scl1.itm~ ~override~
+    SAY NAME2 @20160  // Banish Golem Spirit
+    SAY IDENTIFIED_DESC @20161  // Banish Golem Spirit description
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 "" #8 END
 
-COPY ~%MOD_FOLDER%/spells/a7!bskul.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wi61a.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wi61b.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wi61c.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wi61a.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wi61b.eff~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!bskul.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wi61a.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wi61b.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wi61c.bam~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wi61a.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wi61b.eff~ ~override~
+END

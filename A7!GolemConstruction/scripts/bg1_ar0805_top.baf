@@ -1,0 +1,32 @@
+// *** BG1EE: Arkion's home ***
+
+IF
+  OnCreation()
+  GlobalTimerExpired("A7!GolemBuildTimer", "MYAREA")
+  Global("A7!GolemBuild", "MYAREA", 2)
+  !Dead("arkion")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!GolemBuild", "MYAREA", 3)
+    CreateCreatureObject("a7!gxdo", "arkion", 0, 0, 0)
+    Continue()
+END
+
+IF
+  OnCreation()
+  GlobalTimerExpired("A7!GolemBuildTimer", "MYAREA")
+  Global("A7!GolemBuild", "MYAREA", 2)
+  Dead("arkion")
+THEN
+  RESPONSE #100
+    SetGlobal("A7!GolemBuild", "MYAREA", 3)
+    Continue()
+END
+
+IF
+  Global("A7!GolemBuild", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!GolemBuild", "MYAREA", 2)
+    SetGlobalTimer("A7!GolemBuildTimer", "MYAREA", 2400)
+END

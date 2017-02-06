@@ -25,6 +25,8 @@ LANGUAGE ~English~
          ~A7!GolemConstruction/language/english/tome0b.tra~
          ~A7!GolemConstruction/language/english/tome0c.tra~
          ~A7!GolemConstruction/language/english/tome0d.tra~
+         ~A7!GolemConstruction/language/english/tomebd.tra~
+         ~A7!GolemConstruction/language/english/tomedg.tra~
          ~A7!GolemConstruction/language/english/spells.tra~
          ~A7!GolemConstruction/language/english/items.tra~
          ~A7!GolemConstruction/language/english/dialogs.tra~
@@ -46,6 +48,8 @@ LANGUAGE ~Francais (traduction: Gwendolyne)~
          ~A7!GolemConstruction/language/french/tome0b.tra~
          ~A7!GolemConstruction/language/french/tome0c.tra~
          ~A7!GolemConstruction/language/french/tome0d.tra~
+         ~A7!GolemConstruction/language/french/tomebd.tra~
+         ~A7!GolemConstruction/language/french/tomedg.tra~
          ~A7!GolemConstruction/language/french/spells.tra~
          ~A7!GolemConstruction/language/french/items.tra~
          ~A7!GolemConstruction/language/french/dialogs.tra~
@@ -67,6 +71,8 @@ LANGUAGE ~Deutsch~
          ~A7!GolemConstruction/language/german/tome0b.tra~
          ~A7!GolemConstruction/language/german/tome0c.tra~
          ~A7!GolemConstruction/language/german/tome0d.tra~
+         ~A7!GolemConstruction/language/german/tomebd.tra~
+         ~A7!GolemConstruction/language/german/tomedg.tra~
          ~A7!GolemConstruction/language/german/spells.tra~
          ~A7!GolemConstruction/language/german/items.tra~
          ~A7!GolemConstruction/language/german/dialogs.tra~
@@ -88,6 +94,8 @@ LANGUAGE ~Polski (tlumaczenie: Cahir)~
          ~A7!GolemConstruction/language/polish/tome0b.tra~
          ~A7!GolemConstruction/language/polish/tome0c.tra~
          ~A7!GolemConstruction/language/polish/tome0d.tra~
+         ~A7!GolemConstruction/language/polish/tomebd.tra~
+         ~A7!GolemConstruction/language/polish/tomedg.tra~
          ~A7!GolemConstruction/language/polish/spells.tra~
          ~A7!GolemConstruction/language/polish/items.tra~
          ~A7!GolemConstruction/language/polish/dialogs.tra~
@@ -96,7 +104,7 @@ LANGUAGE ~Polski (tlumaczenie: Cahir)~
 
 
 BEGIN @0  // Golem Construction ability for spellcasters
-  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @100   // This mod requires BG:SoD, BG2:EE or IWD:EE to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @100   // This component requires BG:EE, BG2:EE or IWD:EE to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~ AND FILE_EXISTS ~engine.lua~) OR 
                     (GAME_IS ~iwdee~ AND FILE_EXISTS_IN_GAME ~clearwhr.2da~) @103    // This component requires game patch >= v2.0 (BG:SoD and BG2:EE) or >= v1.4 (IWD:EE).
   DESIGNATED 0
@@ -158,6 +166,7 @@ BEGIN @30 // Fighter Stronghold golems may continue to serve you
 
 BEGIN @35 // Make golems vulnerable to specific spell effects
   REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @107  // This component requires BG:Sod, BG2:EE or IWD:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 35
 

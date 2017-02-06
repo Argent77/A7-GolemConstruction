@@ -1,6 +1,6 @@
 // *** Tweaks: Golems for enemy spellcasters ***
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // Ruins of Kanaglym
 <<<<<<<< .../inlined/a7!b5300.baf
 IF
@@ -55,7 +55,7 @@ END
 END
 
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Slaver Compound
   COPY_EXISTING ~ar0405.are~ ~override~
     SET chance = RANDOM (0 2)

@@ -1,0 +1,16 @@
+// *** Golem construction cutscene (BG1EE Nemphre animates Bone Doll) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("nemphre")
+    ForceSpellRES("a7!smbd2", LastTalkedToBy) // Drain level
+    SmallWait(20)
+    Face(NW)
+    ForceSpellRES("a7!smbd", Myself)  // Summon Bone Doll
+    Wait(3)
+    FaceObject(LastTalkedToBy)
+    SmallWait(10)
+    StartDialogueNoSet(LastTalkedToBy)
+END

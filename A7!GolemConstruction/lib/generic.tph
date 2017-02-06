@@ -3,30 +3,41 @@
 // SPECIFICS value for all constructed golem types
 LAF ADD_IDS_ENTRY INT_VAR preferredValue = 200 STR_VAR idsFile = "specific.ids" identifier = "A7!GOLEM" RET value END
 OUTER_SET specific_golem = value
+// SPECIFICS value used in special situations for targeting purposes
+LAF ADD_IDS_ENTRY INT_VAR preferredValue = 199 STR_VAR idsFile = "specific.ids" identifier = "A7!MARKED" RET value END
+OUTER_SET specific_marked = value
 
 // Defining SPLSTATE values used for targeting specific golem types or variants
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 167 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_LESSER" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 168 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_NORMAL" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 169 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_GREATER" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 170 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_PERFECT" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 171 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_FLESH" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 172 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_CLAY" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 173 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_STONE" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 174 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_IRON" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 175 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_MITHRAL" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 178 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_BONE" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 180 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_ICE" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 182 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_LIGHTNING" END
-LAF ADD_IDS_ENTRY INT_VAR preferredValue = 183 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_RUBY" END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 167 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_LESSER" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 168 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_NORMAL" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 169 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_GREATER" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 170 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_PERFECT" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 171 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_FLESH" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 172 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_CLAY" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 173 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_STONE" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 174 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_IRON" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 175 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_MITHRAL" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 178 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_BONE" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 180 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_ICE" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 182 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_LIGHTNING" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 183 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_RUBY" END
+END
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   // Used for Animated Plates and similar constructs
   LAF ADD_IDS_ENTRY INT_VAR preferredValue = 184 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_FIGHTER" END
-END ELSE BEGIN
+END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   LAF ADD_IDS_ENTRY INT_VAR preferredValue = 176 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_ADAMANTITE" END
   LAF ADD_IDS_ENTRY INT_VAR preferredValue = 177 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_MAGGOT" END
   LAF ADD_IDS_ENTRY INT_VAR preferredValue = 179 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_BRAIN" END
   LAF ADD_IDS_ENTRY INT_VAR preferredValue = 181 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_MAGIC" END
 END
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 165 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_DOLL" END
+  LAF ADD_IDS_ENTRY INT_VAR preferredValue = 166 STR_VAR idsFile = "splstate.ids" identifier = "A7!GOLEM_BONE_DOLL" END
+END
+
 
 // (max. number - 1) of available golems following you
 OUTER_SET max_golem_count = 2
@@ -46,7 +57,7 @@ APPEND ~gtimes.ids~ ~72000 TEN_DAYS~ UNLESS ~TEN_DAYS~
 APPEND ~state.ids~ ~0x00000F00 A7_STATE_IMMEDIATE_DEATH~ UNLESS ~A7_STATE_IMMEDIATE_DEATH~
 
 // Golem abilities are ported over to BG2EE
-ACTION_IF (GAME_IS ~bg2ee~) BEGIN
+ACTION_IF (GAME_IS_BG2EE) BEGIN
   COPY_EXISTING - ~varimprt.2da~ ~override~
     COUNT_2DA_COLS numCols
     COUNT_2DA_ROWS numCols numRows
@@ -92,12 +103,17 @@ END
 
 
 // Grouping relevant journal entries
-ACTION_IF (GAME_IS ~bgee~) BEGIN
-  ADD_JOURNAL @49001 @49002 @49008
-END ELSE ACTION_IF (GAME_IS ~bg2ee~) BEGIN
+ACTION_IF (GAME_IS_BGEE) BEGIN
+  ADD_JOURNAL @49009 @49010
+END ELSE ACTION_IF (GAME_IS_SOD) BEGIN
+  ADD_JOURNAL @49001 @49002 @49008 @49009 @49010
+END ELSE ACTION_IF (GAME_IS_BG2EE) BEGIN
   ADD_JOURNAL @49003 @49004 @49005 @49006 @49007
-END ELSE ACTION_IF (GAME_IS ~eet~) BEGIN
-  ADD_JOURNAL @49001 @49002 @49003 @49004 @49005 @49006 @49007 @49008
-END ELSE ACTION_IF (GAME_IS ~iwdee~) BEGIN
+END ELSE ACTION_IF (GAME_IS_EET) BEGIN
+  ADD_JOURNAL @49001 @49002 @49003 @49004 @49005 @49006 @49007 @49008 @49009 @49010
+END ELSE ACTION_IF (GAME_IS_IWDEE) BEGIN
   ADD_JOURNAL @140000 @140001 @140002 @140003 @140004 @140005 @140006 @140007 @140008 @140009
+END ELSE ACTION_IF (GAME_IS_EET_IWD) BEGIN
+  // TODO: update when IWD-in-EET is ready
+  ADD_JOURNAL @49001 @49002 @49003 @49004 @49005 @49006 @49007 @49008 @49009 @49010 @140000 @140001 @140002 @140003 @140004 @140005 @140006 @140007 @140008 @140009
 END

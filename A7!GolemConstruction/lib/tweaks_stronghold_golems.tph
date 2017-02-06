@@ -1,6 +1,6 @@
 // *** Tweaks: Fighter Stronghold golems may continue to serve you ***
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Fixing stronghold golems
   COPY_EXISTING ~kpgol02.cre~ ~override~
     WRITE_ASCII DEATHVAR ~kpgol02~ #32

@@ -853,7 +853,7 @@ Varianten erschaffen werden.
   - ETW0: 6
   - APR: 2
   - Rettungswürfe: 4/6/5/5/7
-- Resistance:
+- Widerstand:
   - Magie: 100
   - Kälte: 100
   - Magische Kälte: 100
@@ -870,6 +870,70 @@ Varianten erschaffen werden.
   oder Riesen, werden nicht weggestoßen. Der folgende Donnerschlag kann zusätzlich Taubheit auslösen, wenn der 
   Rettungswurf gg. Odemwaffen misslingt. Der Golem muss nicht warten, um die gleicher oder eine andere Fähigkeit zu 
   wirken. Diese Fähigkeit ersetzt "Teleportation".
+
+
+Golems in BG1:EE
+================
+
+Diese Golemarten werden im "Verbotenen Leitfaden der Golemkonstruktion" beschrieben und können irgendwo während eures 
+Abenteuers im BG1-Teil des Spiels entdeckt werden. Ihr müsst außerdem einen fähigen Magier finden, der sie für euch 
+erschaffen kann. Mehr dazu weiter unten.
+
+1. Puppengolem
+- Zutaten:
+  - Ein kompletter Satz Körperteile
+  - Ein verfluchter Gegengifttrank
+- Eigenschaften:
+  - Stärke: 12
+  - TP: 40
+  - RK: 4
+  - ETW0: 11
+  - APR: 1
+  - Rettungswürfe: 13/14/13/14/14
+- Widerstand:
+  - Magie: 50
+  - Kälte: 80
+  - Magische Kälte: 80
+  - Elektrizität: 50
+  - Stich: 25
+  - Geschoss: 25
+- Immun gegen nichtmagische Waffen
+- Jeder Angriff kann das Opfer mit einem unkontrollierbaren Gelächter infizieren, falls der Rettungswurf gg. Zauber +2 
+  misslingt. Das Opfer ist dann nicht mehr in der Lage, irgendwelche Aktionen auszuführen. In jeder weiteren Runde 
+  richten Muskelkrämpfe, die durch das Gelächter ausgelöst werden, +1W4 Schaden pro Runde an. Das Opfer kann jede 
+  Runde einen weiteren Rettungswurf gg. Zauber +2 würfeln, um diesen Anfall zu überwinden. Anderenfalls endet der 
+  Anfall nach einer Phase oder einem erfolgreichen 'Magie bannen' Zauber. Magiewiderstand kann diesen Effekt aufhalten. 
+  Untote und Konstrukte sind nicht betroffen. Wenn der Anfall überwunden wurde, ist das Opfer für die Hälfte der Runden 
+  erschöpft, den es im Lachanfall verbracht hat. Die Erschöpfung schlägt sich durch einen +1 Malus auf RK, ETW0 
+  und alle Rettungswürfe nieder.
+- Der Nekromant Arkion wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Er lebt in Baldurs Gate, 
+  südlich des Wirtshauses 'Elfgesang'.
+
+2. Knochenpuppe
+- Zutaten:
+  - Ein Knochenhaufen
+  - Ein wenig Lebensenergie
+- Stats:
+  - Stärke: 12
+  - TP: 30
+  - RK: 6
+  - ETW0: 10
+  - APR: 2
+  - Rettungswürfe: 13/14/13/14/14
+- Widerstand:
+  - Magie: 75
+  - Feuer: 20
+  - Magisches Feuer: 20
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Stich: 50
+  - Geschoss: 50
+- Immun gegen nichtmagische Waffen
+- Knochenpuppen explodieren wenn sie zerstört werden und richten bei allen Geschöpfen in 5 m Radius 2W6 Stichschaden 
+  und 1W6 Wuchtschaden an.
+- Die Nekromantin Nemphre wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Sie lebt in Baldurs Gate, 
+  östlich des Gasthauses 'Zur Funkelnden Klinge'.
 
 
 Jeder Golem hat zusätzlich die folgenden Fähigkeiten:

@@ -11,13 +11,14 @@
 @35 = ~Rendre les golems vulnerables aux effets de certains sorts~
 @40 = ~Reduire les resistances et l'immunite aux armes des golems fabriques~
 
-@100 = ~Ce composant necessite l'installation de BG:SoD, BG2:EE ou d'IWD:EE.~
+@100 = ~Ce composant necessite l'installation de BG:EE, BG2:EE ou d'IWD:EE.~
 @101 = ~Ce composant requiert l'installation prealable du composant principal.~
 @102 = ~Aucun emplacement (slot) d'animation n'est disponible.~
 @103 = ~Ce composant necessite un jeu beneficiant du patch >= v2.0 (BG:SoD et BG2:EE) ou >= v1.4 (IWD:EE).~
-@104 = ~Ce composant necessite l'installation de BG:SoD, BG2:EE.~
+@104 = ~Ce composant necessite l'installation de BG2:EE.~
 @105 = ~Ce composant necessite l'installation de BG2:EE ou d'IWD:EE..~
 @106 = ~Ce composant necessite l'installation de BG:SoD ou de BG2:EE.~
+@107 = ~Ce composant necessite l'installation de BG:SoD, BG2:EE ou d'IWD:EE.~
 
 
 // WeiDU prompts

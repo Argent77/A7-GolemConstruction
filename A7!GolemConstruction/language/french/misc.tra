@@ -47,3 +47,9 @@ Le reste du parchemin contient des informations sur des procédures magiques com
 " L'autre jour, Frère Ignasius a rapporté un étrange grimoire. Il semble vouloir construire des golems. Nos érudits seront heureux de l'étudier.
 
 Malheureusement, nous ne disposons pas des outils nécessaires pour fabriquer des golems. Si seulement nous pouvions trouver un mage disposant d'un laboratoire bien équipé. Hélas, le seul site adéquat qui nous vient à l'esprit est l'avant-poste elfique abandonné de la Main Tranchée qui est censé abriter le légendaire Astrolabe. Je crains qu'aucun de nos moines ne soit assez puissant pour explorer ce lieu obscur, sans parler de récupérer l'équipement nécessaire... "~
+@100028 = ~This tome appears to be written in a strange arcane code or language. The letters of the text change their form as soon as you try to concentrate on them. Judging by the illustrations found on the pages you guess that it deals with the construction of magical constructs of some kind.
+
+STATISTICS:
+
+Weight: 1~
+@100029 = ~Golem Servant~

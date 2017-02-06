@@ -1,238 +1,190 @@
 // *** Installs golem manuals and related resources ***
 
 // Shared resources
-COPY ~%MOD_FOLDER%/items/a7!tome1.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!tome2.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!abil.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!abil2.eff~ ~override~
+ACTION_IF (GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tome3.bam~ ~override~
+END ELSE BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tome1.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!tome2.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!abil.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!abil2.eff~ ~override~
+END
 
 
 // Flesh Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom01.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @1000 // Manual of Golem Building (Vol. 1)
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY IDENTIFIED_DESC @1110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY IDENTIFIED_DESC @1100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@1005)  // Has learned how to construct flesh golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom01.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @1000 // Manual of Golem Building (Vol. 1)
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY IDENTIFIED_DESC @1110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY IDENTIFIED_DESC @1100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@1005)  // Has learned how to construct flesh golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomx1.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @1000 // Manual of Golem Building (Vol. 1)
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY UNIDENTIFIED_DESC @1111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY UNIDENTIFIED_DESC @1101 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
+  COPY ~%MOD_FOLDER%/items/a7!tomx1.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @1000 // Manual of Golem Building (Vol. 1)
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY UNIDENTIFIED_DESC @1111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY UNIDENTIFIED_DESC @1101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomg1.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!toml1.eff~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!tomg1.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!toml1.eff~ ~override~
+END
 
 
 // Clay Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom02.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @2000 // Manual of Golem Building (Vol. 2)
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY IDENTIFIED_DESC @2110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY IDENTIFIED_DESC @2100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@2005)  // Has learned how to construct clay golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom02.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @2000 // Manual of Golem Building (Vol. 2)
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY IDENTIFIED_DESC @2110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY IDENTIFIED_DESC @2100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@2005)  // Has learned how to construct clay golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomx2.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @2000 // Manual of Golem Building (Vol. 2)
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY UNIDENTIFIED_DESC @2111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY UNIDENTIFIED_DESC @2101 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
+  COPY ~%MOD_FOLDER%/items/a7!tomx2.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @2000 // Manual of Golem Building (Vol. 2)
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY UNIDENTIFIED_DESC @2111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY UNIDENTIFIED_DESC @2101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomg2.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!toml2.eff~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!tomg2.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!toml2.eff~ ~override~
+END
 
 
 // Stone Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom03.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @3000 // Manual of Golem Building (Vol. 3)
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY IDENTIFIED_DESC @3110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY IDENTIFIED_DESC @3100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@3005)  // Has learned how to construct stone golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom03.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @3000 // Manual of Golem Building (Vol. 3)
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY IDENTIFIED_DESC @3110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY IDENTIFIED_DESC @3100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@3005)  // Has learned how to construct stone golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomx3.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @3000 // Manual of Golem Building (Vol. 3)
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY UNIDENTIFIED_DESC @3111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY UNIDENTIFIED_DESC @3101 // This amazing tome contains theoretical musings on the construction and control of golems.
+  COPY ~%MOD_FOLDER%/items/a7!tomx3.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @3000 // Manual of Golem Building (Vol. 3)
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY UNIDENTIFIED_DESC @3111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY UNIDENTIFIED_DESC @3101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+
+  COPY ~%MOD_FOLDER%/items/a7!tomg3.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!toml3.eff~ ~override~
+
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    // Add to de'Arnise Keep (see item table), guarded by golems
+    EXTEND_BOTTOM ~kpgol02.bcs~ ~%MOD_FOLDER%/scripts/kpgol02_bottom.baf~
+    EXTEND_BOTTOM ~kpgol04.bcs~ ~%MOD_FOLDER%/scripts/kpgol04_bottom.baf~
   END
-
-COPY ~%MOD_FOLDER%/items/a7!tomg3.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!toml3.eff~ ~override~
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to de'Arnise Keep (see item table), guarded by golems
-  EXTEND_BOTTOM ~kpgol02.bcs~ ~%MOD_FOLDER%/scripts/kpgol02_bottom.baf~
-  EXTEND_BOTTOM ~kpgol04.bcs~ ~%MOD_FOLDER%/scripts/kpgol04_bottom.baf~
 END
 
 
 // Iron Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom04.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @4000 // Manual of Golem Building (Vol. 4)
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY IDENTIFIED_DESC @4110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY IDENTIFIED_DESC @4100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@4005)  // Has learned how to construct iron golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-
-COPY ~%MOD_FOLDER%/items/a7!tomx4.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @4000 // Manual of Golem Building (Vol. 4)
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY UNIDENTIFIED_DESC @4111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY UNIDENTIFIED_DESC @4101 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-
-COPY ~%MOD_FOLDER%/items/a7!tomg4.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!toml4.eff~ ~override~
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to hidden stash in Firkraag's dungeon (TODO: can't be added to item table because of duplicate container name)
-  COPY_EXISTING ~ar1202.are~ ~override~
-    LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 10 skip = 1 STR_VAR name = ~Container 11~ RET index END
-    LPF fj_are_structure
-    INT_VAR
-      fj_con_itm_idx    = index
-    STR_VAR
-      fj_structure_type = "itm"
-      fj_name           = "a7!tom04"
-    END
-END
-
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  // Special copy of Iron Golem Manual for Malavon
-  COPY ~%MOD_FOLDER%/items/a7!tomm4.itm~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom04.itm~ ~override~
     SAY NAME1 @100000 // Manual
-    SAY NAME2 @4006 // Malavon's Manual of Golem Building (Vol. 4)
+    SAY NAME2 @4000 // Manual of Golem Building (Vol. 4)
     SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-    SAY IDENTIFIED_DESC @4112 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY IDENTIFIED_DESC @4110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY IDENTIFIED_DESC @4100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
     LPF ADD_SPELL_EFFECT
     INT_VAR
       opcode  = 139   // Display String
@@ -258,83 +210,145 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
       resist_dispel = 0
     END
 
-  COPY ~%MOD_FOLDER%/items/a7!tomy4.itm~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!tomx4.itm~ ~override~
     SAY NAME1 @100000 // Manual
-    SAY NAME2 @4006 // Malavon's Manual of Golem Building (Vol. 4)
-    SAY UNIDENTIFIED_DESC @4113 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-
-  // Replacing Golem Building Book of the game
-  OUTER_SET replaced = 0
-  COPY_EXISTING ~ar8007.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-      REPLACE_EVALUATE ~\(ActionOverride(".+",CreateItem(\)"cdmgolem"\(,[0-9]+,[0-9]+,[0-9]+))\)~ BEGIN SET replaced += 1 END ~\1"a7!tomm4"\2~
-      PATCH_IF (replaced) BEGIN
-        REPLACE_TEXTUALLY ~PartyHasItem("cdmgolem")~ ~OR(2) PartyHasItem("a7!tomm4") PartyHasItem("a7!tomy4")~
-      END
+    SAY NAME2 @4000 // Manual of Golem Building (Vol. 4)
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY UNIDENTIFIED_DESC @4111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY UNIDENTIFIED_DESC @4101 // This amazing tome contains theoretical musings on the construction and control of golems.
     END
-  BUT_ONLY
 
-  // Fallback solution: Add to Malavon's inventory
-  ACTION_IF (NOT replaced) BEGIN
-    COPY_EXISTING ~malavon.cre~ ~override~
-      ADD_CRE_ITEM ~a7!tomm4~ (0) (0) (0) ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+  COPY ~%MOD_FOLDER%/items/a7!tomg4.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!toml4.eff~ ~override~
+
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    // Add to hidden stash in Firkraag's dungeon (TODO: can't be added to item table because of duplicate container name)
+    COPY_EXISTING ~ar1202.are~ ~override~
+      LPF ARE_INDEX_OF_CONTAINER INT_VAR defaultIndex = 10 skip = 1 STR_VAR name = ~Container 11~ RET index END
+      LPF fj_are_structure
+      INT_VAR
+        fj_con_itm_idx    = index
+      STR_VAR
+        fj_structure_type = "itm"
+        fj_name           = "a7!tom04"
+      END
+  END
+
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    // Special copy of Iron Golem Manual for Malavon
+    COPY ~%MOD_FOLDER%/items/a7!tomm4.itm~ ~override~
+      SAY NAME1 @100000 // Manual
+      SAY NAME2 @4006 // Malavon's Manual of Golem Building (Vol. 4)
+      SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+      SAY IDENTIFIED_DESC @4112 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 139   // Display String
+        target  = 1     // Self
+        parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+        timing = 9      // Instant/Permanent
+        resist_dispel = 0
+      END
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 139   // Display String
+        target  = 1     // Self
+        parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+        timing = 9      // Instant/Permanent
+        resist_dispel = 0
+      END
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 139   // Display String
+        target  = 1     // Self
+        parameter1 = RESOLVE_STR_REF(@4005)  // Has learned how to construct iron golems.
+        timing = 9      // Instant/Permanent
+        resist_dispel = 0
+      END
+
+    COPY ~%MOD_FOLDER%/items/a7!tomy4.itm~ ~override~
+      SAY NAME1 @100000 // Manual
+      SAY NAME2 @4006 // Malavon's Manual of Golem Building (Vol. 4)
+      SAY UNIDENTIFIED_DESC @4113 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+
+    // Replacing Golem Building Book of the game
+    OUTER_SET replaced = 0
+    COPY_EXISTING ~ar8007.bcs~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_EVALUATE ~\(ActionOverride(".+",CreateItem(\)"cdmgolem"\(,[0-9]+,[0-9]+,[0-9]+))\)~ BEGIN SET replaced += 1 END ~\1"a7!tomm4"\2~
+        PATCH_IF (replaced) BEGIN
+          REPLACE_TEXTUALLY ~PartyHasItem("cdmgolem")~ ~OR(2) PartyHasItem("a7!tomm4") PartyHasItem("a7!tomy4")~
+        END
+      END
+    BUT_ONLY
+
+    // Fallback solution: Add to Malavon's inventory
+    ACTION_IF (NOT replaced) BEGIN
+      COPY_EXISTING ~malavon.cre~ ~override~
+        ADD_CRE_ITEM ~a7!tomm4~ (0) (0) (0) ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    END
   END
 END
 
 
 // Mithral Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom05.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @5000 // Manual of Golem Building (Vol. 5)
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY IDENTIFIED_DESC @5110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY IDENTIFIED_DESC @5100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@5005)  // Has learned how to construct mithral golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom05.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @5000 // Manual of Golem Building (Vol. 5)
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY IDENTIFIED_DESC @5110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY IDENTIFIED_DESC @5100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@5005)  // Has learned how to construct mithral golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomx5.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY NAME2 @5000 // Manual of Golem Building (Vol. 5)
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY UNIDENTIFIED_DESC @5111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY UNIDENTIFIED_DESC @5101 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
+  COPY ~%MOD_FOLDER%/items/a7!tomx5.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY NAME2 @5000 // Manual of Golem Building (Vol. 5)
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY UNIDENTIFIED_DESC @5111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY UNIDENTIFIED_DESC @5101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomg5.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!toml5.eff~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!tomg5.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!toml5.eff~ ~override~
+END
 
 
 // Adamantite Golem Manual
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!ifrg1.bam~ ~override~
        ~%MOD_FOLDER%/items/a7!ifrg2.bam~ ~override~
   COPY ~%MOD_FOLDER%/items/a7!tfrg1.itm~ ~override~
@@ -382,7 +396,7 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tomg6.eff~ ~override~
        ~%MOD_FOLDER%/items/a7!toml6.eff~ ~override~
 
-  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
     // Add option of restoring the golem manual to Cespenar
     EXTEND_BOTTOM ~botsmith.bcs~ ~%MOD_FOLDER%/scripts/botsmith_bottom.baf~
     COMPILE ~%MOD_FOLDER%/dialogs/botsmith.d~
@@ -391,7 +405,7 @@ END
 
 
 // Maggot Golem Manual
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tom07.itm~ ~override~
     SAY NAME1 @100000 // Manual
     SAY NAME2 @7000 // Secret Manual of Golem Building (Vol. 1)
@@ -430,7 +444,7 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tomg7.eff~ ~override~
        ~%MOD_FOLDER%/items/a7!toml7.eff~ ~override~
 
-  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
     // Add to Mekrath's Lair on condition
     EXTEND_TOP ~ar0705.bcs~ ~%MOD_FOLDER%/scripts/ar0705_top.baf~
   END
@@ -438,64 +452,66 @@ END
 
 
 // Bone Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom08.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @8010 // Secret Manual of Golem Building (Vol. 1)
-    SAY IDENTIFIED_DESC @8110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @8000 // Secret Manual of Golem Building (Vol. 2)
-    SAY IDENTIFIED_DESC @8100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@8002)  // Has learned how to construct bone golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom08.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @8010 // Secret Manual of Golem Building (Vol. 1)
+      SAY IDENTIFIED_DESC @8110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @8000 // Secret Manual of Golem Building (Vol. 2)
+      SAY IDENTIFIED_DESC @8100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@8002)  // Has learned how to construct bone golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomx8.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @8010 // Secret Manual of Golem Building (Vol. 1)
-    SAY UNIDENTIFIED_DESC @8111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @8000 // Secret Manual of Golem Building (Vol. 2)
-    SAY UNIDENTIFIED_DESC @8101 // This amazing tome contains theoretical musings on the construction and control of golems.
+  COPY ~%MOD_FOLDER%/items/a7!tomx8.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @8010 // Secret Manual of Golem Building (Vol. 1)
+      SAY UNIDENTIFIED_DESC @8111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @8000 // Secret Manual of Golem Building (Vol. 2)
+      SAY UNIDENTIFIED_DESC @8101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+
+  COPY ~%MOD_FOLDER%/items/a7!tomg8.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!toml8.eff~ ~override~
+
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    // Add to shelf in Abazigal's Lair - Bone Fiend Room (on condition)
+    EXTEND_TOP ~ar6012.bcs~ ~%MOD_FOLDER%/scripts/ar6012_top.baf~
   END
-
-COPY ~%MOD_FOLDER%/items/a7!tomg8.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!toml8.eff~ ~override~
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Add to shelf in Abazigal's Lair - Bone Fiend Room (on condition)
-  EXTEND_TOP ~ar6012.bcs~ ~%MOD_FOLDER%/scripts/ar6012_top.baf~
 END
 
 
 // Brain Golem Manual
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tom09.itm~ ~override~
     SAY NAME1 @100000 // Manual
     SAY NAME2 @9000 // Secret Manual of Golem Building (Vol. 3)
@@ -534,7 +550,7 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tomg9.eff~ ~override~
        ~%MOD_FOLDER%/items/a7!toml9.eff~ ~override~
 
-  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
     // Special mindflayer in WK/Level 4
     EXTEND_TOP ~ar3021.bcs~ ~%MOD_FOLDER%/scripts/ar3021_top.baf~
   END
@@ -542,59 +558,61 @@ END
 
 
 // Ice Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom0a.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @10010 // Secret Manual of Golem Building (Vol. 2)
-    SAY IDENTIFIED_DESC @10110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @10000 // Secret Manual of Golem Building (Vol. 4)
-    SAY IDENTIFIED_DESC @10100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@10002)  // Has learned how to construct ice golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom0a.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @10010 // Secret Manual of Golem Building (Vol. 2)
+      SAY IDENTIFIED_DESC @10110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @10000 // Secret Manual of Golem Building (Vol. 4)
+      SAY IDENTIFIED_DESC @10100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@10002)  // Has learned how to construct ice golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomxa.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @10010 // Secret Manual of Golem Building (Vol. 2)
-    SAY UNIDENTIFIED_DESC @10111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @10000 // Secret Manual of Golem Building (Vol. 4)
-    SAY UNIDENTIFIED_DESC @10101 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
+  COPY ~%MOD_FOLDER%/items/a7!tomxa.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @10010 // Secret Manual of Golem Building (Vol. 2)
+      SAY UNIDENTIFIED_DESC @10111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @10000 // Secret Manual of Golem Building (Vol. 4)
+      SAY UNIDENTIFIED_DESC @10101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomga.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!tomla.eff~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!tomga.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!tomla.eff~ ~override~
+END
 
 
 // Magic Golem Manual
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tom0b.itm~ ~override~
     SAY NAME1 @100000 // Manual
     SAY NAME2 @11000 // Secret Manual of Golem Building (Vol. 5)
@@ -633,7 +651,7 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tomgb.eff~ ~override~
        ~%MOD_FOLDER%/items/a7!tomlb.eff~ ~override~
 
-  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
     // You can win a tome from Aesgareth in WK
     COMPILE ~%MOD_FOLDER%/dialogs/gorcamb.d~
 
@@ -644,117 +662,140 @@ END
 
 
 // Lightning Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom0c.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @12010 // Secret Manual of Golem Building (Vol. 3)
-    SAY IDENTIFIED_DESC @12110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @12000 // Secret Manual of Golem Building (Vol. 6)
-    SAY IDENTIFIED_DESC @12100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@12002)  // Has learned how to construct lightning golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom0c.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @12010 // Secret Manual of Golem Building (Vol. 3)
+      SAY IDENTIFIED_DESC @12110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @12000 // Secret Manual of Golem Building (Vol. 6)
+      SAY IDENTIFIED_DESC @12100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@12002)  // Has learned how to construct lightning golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomxc.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @12010 // Secret Manual of Golem Building (Vol. 3)
-    SAY UNIDENTIFIED_DESC @12111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @12000 // Secret Manual of Golem Building (Vol. 6)
-    SAY UNIDENTIFIED_DESC @12101 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
+  COPY ~%MOD_FOLDER%/items/a7!tomxc.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @12010 // Secret Manual of Golem Building (Vol. 3)
+      SAY UNIDENTIFIED_DESC @12111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @12000 // Secret Manual of Golem Building (Vol. 6)
+      SAY UNIDENTIFIED_DESC @12101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomgc.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!tomlc.eff~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!tomgc.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!tomlc.eff~ ~override~
+END
 
 
 // Ruby Golem Manual
-COPY ~%MOD_FOLDER%/items/a7!tom0d.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @13010 // Secret Manual of Golem Building (Vol. 4)
-    SAY IDENTIFIED_DESC @13110 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @13000 // Secret Manual of Golem Building (Vol. 7)
-    SAY IDENTIFIED_DESC @13100 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    opcode  = 139   // Display String
-    target  = 1     // Self
-    parameter1 = RESOLVE_STR_REF(@13002)  // Has learned how to construct ruby golems.
-    timing = 9      // Instant/Permanent
-    resist_dispel = 0
-  END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!tom0d.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    SAY UNIDENTIFIED_DESC @100002 // Judging by the arcane symbols printed on its cover...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @13010 // Secret Manual of Golem Building (Vol. 4)
+      SAY IDENTIFIED_DESC @13110 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @13000 // Secret Manual of Golem Building (Vol. 7)
+      SAY IDENTIFIED_DESC @13100 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100003)  // Gained a special ability: Construct Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@100004)  // Gained a special ability: Repair Golem
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode  = 139   // Display String
+      target  = 1     // Self
+      parameter1 = RESOLVE_STR_REF(@13002)  // Has learned how to construct ruby golems.
+      timing = 9      // Instant/Permanent
+      resist_dispel = 0
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomxd.itm~ ~override~
-  SAY NAME1 @100000 // Manual
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    SAY NAME2 @13010 // Secret Manual of Golem Building (Vol. 4)
-    SAY UNIDENTIFIED_DESC @13111 // This amazing tome contains theoretical musings on the construction and control of golems.
-    WRITE_ASCII 0x58 ~~ #8    // no description image
-  END ELSE BEGIN
-    SAY NAME2 @13000 // Secret Manual of Golem Building (Vol. 7)
-    SAY UNIDENTIFIED_DESC @13101 // This amazing tome contains theoretical musings on the construction and control of golems.
-  END
+  COPY ~%MOD_FOLDER%/items/a7!tomxd.itm~ ~override~
+    SAY NAME1 @100000 // Manual
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      SAY NAME2 @13010 // Secret Manual of Golem Building (Vol. 4)
+      SAY UNIDENTIFIED_DESC @13111 // This amazing tome contains theoretical musings on the construction and control of golems.
+      WRITE_ASCII 0x58 ~~ #8    // no description image
+    END ELSE BEGIN
+      SAY NAME2 @13000 // Secret Manual of Golem Building (Vol. 7)
+      SAY UNIDENTIFIED_DESC @13101 // This amazing tome contains theoretical musings on the construction and control of golems.
+    END
 
-COPY ~%MOD_FOLDER%/items/a7!tomgd.eff~ ~override~
-     ~%MOD_FOLDER%/items/a7!tomld.eff~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!tomgd.eff~ ~override~
+       ~%MOD_FOLDER%/items/a7!tomld.eff~ ~override~
+END
 
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  // Doll Golem manual
+  COPY ~%MOD_FOLDER%/items/a7!tomdg.itm~ ~override~
+    SAY NAME1 @100001 // Ancient Manual
+    SAY NAME2 @14001  // Forbidden Manual of Golem Building (Vol. 1)
+    SAY UNIDENTIFIED_DESC @100028 // This tome appears to be written in a strange arcane code or language...
+    SAY IDENTIFIED_DESC @14100 // This amazing tome contains theoretical musings on the construction and control of golems.
+END
+
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  // Bone Doll manual
+  COPY ~%MOD_FOLDER%/items/a7!tombd.itm~ ~override~
+    SAY NAME1 @100001 // Ancient Manual
+    SAY NAME2 @15001  // Forbidden Manual of Golem Building (Vol. 2)
+    SAY UNIDENTIFIED_DESC @100028 // This tome appears to be written in a strange arcane code or language...
+    SAY IDENTIFIED_DESC @15100 // This amazing tome contains theoretical musings on the construction and control of golems.
+END
+
+
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Re-apply golem abilities for imported characters
   EXTEND_BOTTOM ~ar0602.bcs~ ~%MOD_FOLDER%/scripts/ar0602_bottom.baf~
 END
 
 
 // Add chance of gaining spell scrolls when using tomes
-ACTION_IF (NOT GAME_IS ~bgee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_SOD) BEGIN
   ACTION_FOR_EACH tome IN ~a7!tom01.itm~ ~a7!tom02.itm~ ~a7!tom03.itm~ ~a7!tom04.itm~ ~a7!tom05.itm~ ~a7!tom06.itm~ ~a7!tom07.itm~ 
                           ~a7!tom08.itm~ ~a7!tom09.itm~ ~a7!tom0a.itm~ ~a7!tom0b.itm~ ~a7!tom0c.itm~ ~a7!tom0d.itm~ BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%tome%~) BEGIN

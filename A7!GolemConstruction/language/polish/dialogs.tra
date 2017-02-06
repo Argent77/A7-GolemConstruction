@@ -9,6 +9,11 @@
 @40003 = ~dwadzieścia cztery~
 @40004 = ~trzydzieści sześć~
 @40005 = ~czterdzieści osiem~
+@40006 = ~What the hell is going on?! To oblivion with you!~
+@40007 = ~::Ha ha::~
+@40008 = ~::Ho ho::~
+@40009 = ~::Hee hee::~
+@40010 = ~Laughing uncontrollably~
 
 
 // *** Golem Construction dialog ***
@@ -288,3 +293,11 @@ Ruiny Kanaglymu, do których można się dostać z okolic Podziemnej rzeki, wygl
 ~Warsztat do budowy golemów
 
 Ruiny Kanaglymu, do których można się dostać z okolic Podziemnej rzeki, wyglądają na dobrze wyposażone do przeprowadzania w nich magicznych eksperymentów. Powinnnam być w stanie budować tam golemy.~
+
+@49009 = ~Golem Construction Workshop
+
+The necromancer Arkion was interested in my tome about constructing doll golems. I can probably commission my very own Doll Golem if I need one. Arkion can be found in his home in Baldur's Gate, south of the Elfsong Tavern.~
+
+@49010 = ~Golem Construction Workshop
+
+The necromancer Nemphre was interested in my tome about constructing bone dolls. I can probably commission my very own Bone Doll if I need one. Nemphre can be found in her home in Baldur's Gate, east of the Blade and Stars Inn.~

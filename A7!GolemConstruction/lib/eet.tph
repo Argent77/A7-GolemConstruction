@@ -7,3 +7,12 @@ OUTER_FOR (i = 1; i < 11; ++i) BEGIN
   OUTER_TEXT_SPRINT name_source ~bg2_chapter_%i%~
   OUTER_SET EVAL ~%name_source%~ = bg2_chapter
 END
+
+// Make area names compatible with EET
+ACTION_IF (GAME_IS ~eet~) BEGIN
+  OUTER_TEXT_SPRINT PREFIX_AREA_BG1 ~BG~
+  OUTER_TEXT_SPRINT PREFIX_AREA_IWD ~ID~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT PREFIX_AREA_BG1 ~AR~
+  OUTER_TEXT_SPRINT PREFIX_AREA_IWD ~AR~
+END

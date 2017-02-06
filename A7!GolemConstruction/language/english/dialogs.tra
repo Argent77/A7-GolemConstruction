@@ -8,6 +8,11 @@
 @40003 = ~twenty-four~
 @40004 = ~thirty-six~
 @40005 = ~forty-eight~
+@40006 = ~What the hell is going on?! To oblivion with you!~
+@40007 = ~::Ha ha::~
+@40008 = ~::Ho ho::~
+@40009 = ~::Hee hee::~
+@40010 = ~Laughing uncontrollably~
 
 
 // *** Golem Construction dialog ***
@@ -193,6 +198,58 @@
 @45511 = ~C'mon Mr. J! What harm can be done when we try it out ourselves? I promise to be extra careful. Pretty please!~
 
 
+// *** The necromancer Arkion ***
+@46000 = ~I came across a curious tome that deals with the construction of some weird kind of golems. It sounds rather grisly, so I thought you might be interested.~
+@46001 = ~I'd like to commission the construction of a doll golem. Are you up to the task?~
+@46002 = ~Certainly, cousin. Goodbye.~
+@46003 = ~I don't think so. Goodbye.~
+@46004 = ~Come back later. Work like this takes time.~
+@46005 = ~Ah, you return. Look at this beauty. It's a true masterpiece, and it's yours. Just take it out of sight before I change my mind.~
+@46006 = ~Let me see! Hmm, yes... interesting read. Good thing you brought it to me. I can't wait to try it out.~
+@46007 = ~Does that mean you can build golems for me?~
+@46008 = ~Not so fast, my dark cousin. First I need the right materials. And I'd like to be paid for my service.~
+@46009 = ~I require a fresh corpse and a cursed Antidote potion for the golem body. My fee is 2000 gold. Still interested?~
+@46010 = ~Yes, I'm interested.~
+@46011 = ~I don't have enough money right now. Perhaps later.~
+@46012 = ~I don't have a fresh corpse. Perhaps later.~
+@46013 = ~I don't have a cursed Antidote potion. Perhaps later.~
+@46014 = ~I'm not interested. Goodbye.~
+@46015 = ~Certainly. Do you have a fresh corpse, a cursed Antidote and the 2000 gold?~
+@46016 = ~Yes, here they are.~
+@46017 = ~Ah, that one looks juicy. Put everything over there on the table.~
+@46018 = ~I reckon that construction will take about a day. Come back tomorrow.~
+
+// *** The necromancer Nemphre ***
+@46500 = ~Does poor Arkion think he can defeat me with half-hearted attempts like this? He will never be my equal as long as I live.~
+@46501 = ~And you are a fool indeed to trust his work so easily.~
+@46502 = ~Hmpf. I don't deal with underlings. Begone.~
+@46503 = ~I told you to come back later. Now leave me to my work!~
+@46504 = ~Ah, there you are. I've been waiting for you. I hope you are alive and well?~
+@46505 = ~The bone doll is finished. Almost. It merely needs a spark of life for the finishing touch. Now hold still. It doesn't hurt much.~
+@46506 = ~What are you--~
+@46507 = ~There you are. Your bone doll is complete. You know what comes next. Please hold still for a moment.~
+@46508 = ~Hmm. You are certainly resilient, my good <MANWOMAN>.~
+@46509 = ~What have you done to me?!~
+@46510 = ~Didn't I tell you that I needed a bit of your life force? Don't worry too much about it. You will regenerate over time. A good night's rest should suffice.~
+@46511 = ~Now take your bone doll and go.~
+@46512 = ~Ah, the fool returns. What does it want this time?~
+@46513 = ~How about a deal? I came across a curious tome that deals with the grisly details of constructing some weird kind of golems. I thought you might be interested?~
+@46514 = ~I'd like to commission the construction of a bone doll.~
+@46515 = ~I don't want anything. Goodbye.~
+@46516 = ~Give it to me! Hmm... this is interesting indeed. I take it you want one for yourself?~
+@46517 = ~Yes. Can you do it?~
+@46518 = ~Of course. But are you able meet my needs?~
+@46519 = ~I need a complete set of bones for the golem body. Moreover, I need a means to animate it. But that is for later. And I'm not doing it for free. Pay me 2000 gold up front or don't waste my time any further.~
+@46520 = ~Certainly, here it is.~
+@46521 = ~I don't have enough money right now. Perhaps later.~
+@46522 = ~I don't have the set of bones. Perhaps later.~
+@46523 = ~I'm not really interested. Goodbye.~
+@46524 = ~Certainly. Do you have a set of bones and the 2000 gold?~
+@46525 = ~Yes, here it is.~
+@46526 = ~It looks like everything is in order. Construction will take a day. Come back alive and well tomorrow. You won't regret it.~
+@46527 = ~Then you are of no further use to me. Return only when you have everything I need.~
+
+
 // *** Journal entries ***
 @49000 = ~Golem Construction Workshop~
 
@@ -227,3 +284,11 @@ Jermien's home in Imnesvale appears to be well equipped. I should be able to con
 @49008 = ~Golem Construction Workshop
 
 The Ruins of Kanaglym which are accessible from the Underground River appear to be well equipped for magical experiments. I should be able to construct golems in that place.~
+
+@49009 = ~Golem Construction Workshop
+
+The necromancer Arkion was interested in my tome about constructing doll golems. I can probably commission my very own Doll Golem if I need one. Arkion can be found in his home in Baldur's Gate, south of the Elfsong Tavern.~
+
+@49010 = ~Golem Construction Workshop
+
+The necromancer Nemphre was interested in my tome about constructing bone dolls. I can probably commission my very own Bone Doll if I need one. Nemphre can be found in her home in Baldur's Gate, east of the Blade and Stars Inn.~

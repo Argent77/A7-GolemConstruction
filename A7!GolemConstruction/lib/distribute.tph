@@ -1,15 +1,19 @@
 // *** Add items, tomes, etc. to containers, creatures and stores ***
 
 // Scattering items across the world: items and their locations are listed in 2da tables
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   LAF DISTRIBUTE_ITEMS STR_VAR table = EVAL ~%MOD_FOLDER%/tables/items_bg1.2da~ END
 END
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  LAF DISTRIBUTE_ITEMS STR_VAR table = EVAL ~%MOD_FOLDER%/tables/items_sod.2da~ END
+END
+
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   LAF DISTRIBUTE_ITEMS STR_VAR table = EVAL ~%MOD_FOLDER%/tables/items_bg2.2da~ END
 END
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   LAF DISTRIBUTE_ITEMS STR_VAR table = EVAL ~%MOD_FOLDER%/tables/items_iwd.2da~ END
 
   // Special: Several items are added to Orrick's store in later chapters

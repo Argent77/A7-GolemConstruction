@@ -1,0 +1,51 @@
+// *** Default golem script for doll golems ***
+
+// Required initializations
+IF
+  Global("init", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    FaceObject(LastSummonerOf(Myself))
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SetGlobal("Command", "LOCALS", 2)
+    SetGlobal("init", "LOCALS", 2)
+END
+
+// Dismiss Golem has been triggered
+IF
+  Global("dismiss", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("dismiss", "LOCALS", 2)
+    SetInterrupt(FALSE)
+    DisplayString(Myself, @20002) // Dismissed
+    Kill(Myself)
+    SetInterrupt(TRUE)
+END
+
+// Reset golem count: register this golem as counted
+IF
+  GlobalTimerNotExpired("A7!GolemCountTimer", "GLOBAL")
+  Global("CountActive", "LOCALS", 0)
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("CountActive", "LOCALS", 1)
+    IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
+    SetInterrupt(TRUE)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("A7!GolemCountTimer", "GLOBAL")
+  Global("CountActive", "LOCALS", 1)
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("CountActive", "LOCALS", 0)
+    SetInterrupt(TRUE)
+    Continue()
+END

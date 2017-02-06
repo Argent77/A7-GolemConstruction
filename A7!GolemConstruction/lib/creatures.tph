@@ -1,13 +1,15 @@
 // *** Installs creature-related resources ***
 
 // Miniature Clay Golem animation
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_mini~ ~^.+\.bam$~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_mini~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
 
 // Fix: IWD:EE contains corrupted Clay Golem BAMs in v1.4.0
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_clay~ ~^.+\.bam$~ BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
   END
@@ -15,41 +17,45 @@ END
 
 
 // PST Flesh Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
-ACTION_IF (slot <= 0) BEGIN
-  FAIL @102 // No free creature animation slot found.
-END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
 
-LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_FLESH_PST~ UNLESS ~A7!GOLEM_FLESH_PST~
-CLEAR_IDS_MAP
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_FLESH_PST~ UNLESS ~A7!GOLEM_FLESH_PST~
+  CLEAR_IDS_MAP
 
-COPY ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst/exxx.ini~ ~override/%hexNumber%.ini~
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst/exxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst~ ~^.+\.bam$~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
 
 // PST Miniature Flesh Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
-ACTION_IF (slot <= 0) BEGIN
-  FAIL @102 // No free creature animation slot found.
-END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
 
-LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_FLESH_PST_MINI~ UNLESS ~A7!GOLEM_FLESH_PST_MINI~
-CLEAR_IDS_MAP
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_FLESH_PST_MINI~ UNLESS ~A7!GOLEM_FLESH_PST_MINI~
+  CLEAR_IDS_MAP
 
-COPY ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst_mini/exxx.ini~ ~override/%hexNumber%.ini~
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst_mini/exxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst_mini~ ~^.+\.bam$~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_flesh_pst_mini~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
 
 // IWD Iron Golem animation
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   APPEND ~animate.ids~ ~0xE250 GOLEM_IRON_IWD~ UNLESS ~0xE250[ %TAB%]+GOLEM_IRON_IWD~
   CLEAR_IDS_MAP
 
@@ -66,44 +72,48 @@ END
 
 
 // IWD Miniature Iron Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
-ACTION_IF (slot <= 0) BEGIN
-  FAIL @102 // No free creature animation slot found.
-END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
 
-LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_IRON_IWD_MINI~ UNLESS ~A7!GOLEM_IRON_IWD_MINI~
-CLEAR_IDS_MAP
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_IRON_IWD_MINI~ UNLESS ~A7!GOLEM_IRON_IWD_MINI~
+  CLEAR_IDS_MAP
 
-COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini/exxx.ini~ ~override/%hexNumber%.ini~
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini/exxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini~ ~^.+\.bam$~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_iwd_mini~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
 
 // Miniature Iron Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
-ACTION_IF (slot <= 0) BEGIN
-  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
   ACTION_IF (slot <= 0) BEGIN
-    FAIL @102 // No free creature animation slot found.
+    LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+    ACTION_IF (slot <= 0) BEGIN
+      FAIL @102 // No free creature animation slot found.
+    END
   END
-END
 
-LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_IRON_MINI~ UNLESS ~A7!GOLEM_IRON_MINI~
-CLEAR_IDS_MAP
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_IRON_MINI~ UNLESS ~A7!GOLEM_IRON_MINI~
+  CLEAR_IDS_MAP
 
-COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_mini/7xxx.ini~ ~override/%hexNumber%.ini~
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_iron_mini/7xxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_mini~ ~^.+\.bam$~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_iron_mini~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
 
 // Brain Golem animation
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
   ACTION_IF (slot <= 0) BEGIN
     FAIL @102 // No free creature animation slot found.
@@ -124,27 +134,29 @@ END
 
 
 // Lightning Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
-ACTION_IF (slot <= 0) BEGIN
-  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
   ACTION_IF (slot <= 0) BEGIN
-    FAIL @102 // No free creature animation slot found.
+    LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+    ACTION_IF (slot <= 0) BEGIN
+      FAIL @102 // No free creature animation slot found.
+    END
   END
-END
 
-LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_LIGHTNING~ UNLESS ~A7!GOLEM_LIGHTNING~
-CLEAR_IDS_MAP
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_LIGHTNING~ UNLESS ~A7!GOLEM_LIGHTNING~
+  CLEAR_IDS_MAP
 
-COPY ~%MOD_FOLDER%/creatures/anim/golem_lightning/7xxx.ini~ ~override/%hexNumber%.ini~
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_lightning/7xxx.ini~ ~override/%hexNumber%.ini~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_lightning~ ~^.+\.bmp$~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_lightning~ ~^.+\.bmp$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
 
 // Maggot Golem animation
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7300 slotMax = slotMin + 0xff RET slot END
   ACTION_IF (slot <= 0) BEGIN
     LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
@@ -166,19 +178,59 @@ END
 
 
 // Ruby Golem animation
-LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
-ACTION_IF (slot <= 0) BEGIN
-  FAIL @102 // No free creature animation slot found.
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
+
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_RUBY~ UNLESS ~A7!GOLEM_RUBY~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_ruby/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_ruby~ ~^.+\.bmp$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
-LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
-APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_RUBY~ UNLESS ~A7!GOLEM_RUBY~
-CLEAR_IDS_MAP
 
-COPY ~%MOD_FOLDER%/creatures/anim/golem_ruby/exxx.ini~ ~override/%hexNumber%.ini~
+// Doll Golem animation
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_ruby~ ~^.+\.bmp$~ BEGIN
-  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_DOLL~ UNLESS ~A7!GOLEM_DOLL~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_doll/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_doll~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+END
+
+
+// Bone Doll animation
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL @102 // No free creature animation slot found.
+  END
+
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% A7!GOLEM_BONE_DOLL~ UNLESS ~A7!GOLEM_BONE_DOLL~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/creatures/anim/golem_bone_doll/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_bone_doll~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
 END
 
 
@@ -207,564 +259,578 @@ OUTER_SET splstate_golem_ice = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_ICE~)
 OUTER_SET splstate_golem_magic = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_MAGIC~)
 OUTER_SET splstate_golem_lightning = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LIGHTNING~)
 OUTER_SET splstate_golem_ruby = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_RUBY~)
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   OUTER_SET splstate_golem_fighter = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_FIGHTER~)
 END
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  OUTER_SET splstate_golem_doll = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_DOLL~)
+  OUTER_SET splstate_golem_bone_doll = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_BONE_DOLL~)
+END
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   OUTER_TEXT_SPRINT creFolder ~%MOD_FOLDER%/creatures/iwdee~
 END ELSE BEGIN
   OUTER_TEXT_SPRINT creFolder ~%MOD_FOLDER%/creatures~
 END
 
 // Flesh Golems
-COPY ~%creFolder%/a7!glfl1.cre~ ~override~
-  SAY NAME1 @1001 // Lesser Flesh Golem
-  SAY NAME2 @1001 // Lesser Flesh Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glfl1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd2~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsfl1.cre~ ~override~
-  SAY NAME1 @1001 // Lesser Flesh Golem
-  SAY NAME2 @1001 // Lesser Flesh Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glfl1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd2~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glfl1.cre~ ~override~
+    SAY NAME1 @1001 // Lesser Flesh Golem
+    SAY NAME2 @1001 // Lesser Flesh Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glfl1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd2~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsfl1.cre~ ~override~
+    SAY NAME1 @1001 // Lesser Flesh Golem
+    SAY NAME2 @1001 // Lesser Flesh Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glfl1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd2~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST_MINI~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glfl2.cre~ ~override~
-  SAY NAME1 @1002 // Flesh Golem
-  SAY NAME2 @1002 // Flesh Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glfl2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsfl2.cre~ ~override~
-  SAY NAME1 @1002 // Flesh Golem
-  SAY NAME2 @1002 // Flesh Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glfl2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glfl2.cre~ ~override~
+    SAY NAME1 @1002 // Flesh Golem
+    SAY NAME2 @1002 // Flesh Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glfl2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsfl2.cre~ ~override~
+    SAY NAME1 @1002 // Flesh Golem
+    SAY NAME2 @1002 // Flesh Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glfl2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glfl3.cre~ ~override~
-  SAY NAME1 @1003 // Greater Flesh Golem
-  SAY NAME2 @1003 // Greater Flesh Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glfl3~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
-  SET count = (GAME_IS ~iwdee~) ? 2 : 3
-  ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (3)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glfl3.cre~ ~override~
+    SAY NAME1 @1003 // Greater Flesh Golem
+    SAY NAME2 @1003 // Greater Flesh Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glfl3~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
+    SET count = GAME_IS_IWDEE ? 2 : 3
+    ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (3)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glfl4.cre~ ~override~
-  SAY NAME1 @1004 // Perfect Flesh Golem
-  SAY NAME2 @1004 // Perfect Flesh Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glfl4~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
-  SET count = (GAME_IS ~iwdee~) ? 3 : 5
-  ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glfl4.cre~ ~override~
+    SAY NAME1 @1004 // Perfect Flesh Golem
+    SAY NAME2 @1004 // Perfect Flesh Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glfl4~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_FLESH_PST~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
+    SET count = GAME_IS_IWDEE ? 3 : 5
+    ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
+  IF_EXISTS
+END
 
 
 // Clay Golems
-COPY ~%creFolder%/a7!glcl1.cre~ ~override~
-  SAY NAME1 @2001 // Lesser Clay Golem
-  SAY NAME2 @2001 // Lesser Clay Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glcl1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd2~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-IF_EXISTS
-COPY ~%creFolder%/a7!gscl1.cre~ ~override~
-  SAY NAME1 @2001 // Lesser Clay Golem
-  SAY NAME2 @2001 // Lesser Clay Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glcl1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd2~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glcl1.cre~ ~override~
+    SAY NAME1 @2001 // Lesser Clay Golem
+    SAY NAME2 @2001 // Lesser Clay Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glcl1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd2~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gscl1.cre~ ~override~
+    SAY NAME1 @2001 // Lesser Clay Golem
+    SAY NAME2 @2001 // Lesser Clay Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glcl1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd2~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glcl2.cre~ ~override~
-  SAY NAME1 @2002 // Clay Golem
-  SAY NAME2 @2002 // Clay Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glcl2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
-  SET count = (GAME_IS ~iwdee~) ? 1 : 2
-  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-IF_EXISTS
-COPY ~%creFolder%/a7!gscl2.cre~ ~override~
-  SAY NAME1 @2002 // Clay Golem
-  SAY NAME2 @2002 // Clay Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glcl2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
-  SET count = (GAME_IS ~iwdee~) ? 1 : 2
-  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glcl2.cre~ ~override~
+    SAY NAME1 @2002 // Clay Golem
+    SAY NAME2 @2002 // Clay Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glcl2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+    SET count = GAME_IS_IWDEE ? 1 : 2
+    ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gscl2.cre~ ~override~
+    SAY NAME1 @2002 // Clay Golem
+    SAY NAME2 @2002 // Clay Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glcl2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+    SET count = GAME_IS_IWDEE ? 1 : 2
+    ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glcl3.cre~ ~override~
-  SAY NAME1 @2003 // Greater Clay Golem
-  SAY NAME2 @2003 // Greater Clay Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glcl3~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
-  SET count = (GAME_IS ~iwdee~) ? 3 : 5
-  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glcl3.cre~ ~override~
+    SAY NAME1 @2003 // Greater Clay Golem
+    SAY NAME2 @2003 // Greater Clay Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glcl3~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+    SET count = GAME_IS_IWDEE ? 3 : 5
+    ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glcl4.cre~ ~override~
-  SAY NAME1 @2004 // Perfect Clay Golem
-  SAY NAME2 @2004 // Perfect Clay Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glcl4~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
-  SET count = (GAME_IS ~iwdee~) ? 4 : 8
-  ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glcl4.cre~ ~override~
+    SAY NAME1 @2004 // Perfect Clay Golem
+    SAY NAME2 @2004 // Perfect Clay Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glcl4~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
+    SET count = GAME_IS_IWDEE ? 4 : 8
+    ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
+  IF_EXISTS
+END
 
 
 // Stone Golems
-COPY ~%creFolder%/a7!glst1.cre~ ~override~
-  SAY NAME1 @3001 // Lesser Stone Golem
-  SAY NAME2 @3001 // Lesser Stone Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glst1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd2~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsst1.cre~ ~override~
-  SAY NAME1 @3001 // Lesser Stone Golem
-  SAY NAME2 @3001 // Lesser Stone Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glst1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd2~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glst1.cre~ ~override~
+    SAY NAME1 @3001 // Lesser Stone Golem
+    SAY NAME2 @3001 // Lesser Stone Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glst1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd2~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsst1.cre~ ~override~
+    SAY NAME1 @3001 // Lesser Stone Golem
+    SAY NAME2 @3001 // Lesser Stone Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glst1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd2~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glst2.cre~ ~override~
-  SAY NAME1 @3002 // Stone Golem
-  SAY NAME2 @3002 // Stone Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glst2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
-  SET count = (GAME_IS ~iwdee~) ? 1 : 2
-  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsst2.cre~ ~override~
-  SAY NAME1 @3002 // Stone Golem
-  SAY NAME2 @3002 // Stone Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glst2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
-  SET count = (GAME_IS ~iwdee~) ? 1 : 2
-  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glst2.cre~ ~override~
+    SAY NAME1 @3002 // Stone Golem
+    SAY NAME2 @3002 // Stone Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glst2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+    SET count = GAME_IS_IWDEE ? 1 : 2
+    ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsst2.cre~ ~override~
+    SAY NAME1 @3002 // Stone Golem
+    SAY NAME2 @3002 // Stone Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glst2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+    SET count = GAME_IS_IWDEE ? 1 : 2
+    ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glst3.cre~ ~override~
-  SAY NAME1 @3003 // Greater Stone Golem
-  SAY NAME2 @3003 // Greater Stone Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glst3~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
-  SET count = (GAME_IS ~iwdee~) ? 3 : 5
-  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glst3.cre~ ~override~
+    SAY NAME1 @3003 // Greater Stone Golem
+    SAY NAME2 @3003 // Greater Stone Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glst3~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+    SET count = GAME_IS_IWDEE ? 3 : 5
+    ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glst4.cre~ ~override~
-  SAY NAME1 @3004 // Perfect Stone Golem
-  SAY NAME2 @3004 // Perfect Stone Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glst4~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
-  SET count = (GAME_IS ~iwdee~) ? 4 : 8
-  ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glst4.cre~ ~override~
+    SAY NAME1 @3004 // Perfect Stone Golem
+    SAY NAME2 @3004 // Perfect Stone Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glst4~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
+    SET count = GAME_IS_IWDEE ? 4 : 8
+    ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
+  IF_EXISTS
+END
 
 
 // Iron Golems
-COPY ~%creFolder%/a7!glir1.cre~ ~override~
-  SAY NAME1 @4001 // Lesser Iron Golem
-  SAY NAME2 @4001 // Lesser Iron Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glir1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsir1.cre~ ~override~
-  SAY NAME1 @4001 // Lesser Iron Golem
-  SAY NAME2 @4001 // Lesser Iron Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glir1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glir1.cre~ ~override~
+    SAY NAME1 @4001 // Lesser Iron Golem
+    SAY NAME2 @4001 // Lesser Iron Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glir1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsir1.cre~ ~override~
+    SAY NAME1 @4001 // Lesser Iron Golem
+    SAY NAME2 @4001 // Lesser Iron Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glir1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_IWD_MINI~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glir2.cre~ ~override~
-  SAY NAME1 @4002 // Iron Golem
-  SAY NAME2 @4002 // Iron Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glir2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
-  SET count = (GAME_IS ~iwdee~) ? 2 : 3
-  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsir2.cre~ ~override~
-  SAY NAME1 @4002 // Iron Golem
-  SAY NAME2 @4002 // Iron Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glir2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
-  SET count = (GAME_IS ~iwdee~) ? 2 : 3
-  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glir2.cre~ ~override~
+    SAY NAME1 @4002 // Iron Golem
+    SAY NAME2 @4002 // Iron Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glir2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+    SET count = GAME_IS_IWDEE ? 2 : 3
+    ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsir2.cre~ ~override~
+    SAY NAME1 @4002 // Iron Golem
+    SAY NAME2 @4002 // Iron Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glir2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+    SET count = GAME_IS_IWDEE ? 2 : 3
+    ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glir3.cre~ ~override~
-  SAY NAME1 @4003 // Greater Iron Golem
-  SAY NAME2 @4003 // Greater Iron Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glir3~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
-  SET count = (GAME_IS ~iwdee~) ? 3 : 6
-  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glir3.cre~ ~override~
+    SAY NAME1 @4003 // Greater Iron Golem
+    SAY NAME2 @4003 // Greater Iron Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glir3~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+    SET count = GAME_IS_IWDEE ? 3 : 6
+    ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glir4.cre~ ~override~
-  SAY NAME1 @4004 // Perfect Iron Golem
-  SAY NAME2 @4004 // Perfect Iron Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glir4~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
-  SET count = (GAME_IS ~iwdee~) ? 4 : 9
-  ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
-IF_EXISTS
+  COPY ~%creFolder%/a7!glir4.cre~ ~override~
+    SAY NAME1 @4004 // Perfect Iron Golem
+    SAY NAME2 @4004 // Perfect Iron Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glir4~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
+    SET count = GAME_IS_IWDEE ? 4 : 9
+    ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
+  IF_EXISTS
+END
 
 
 // Mithral Golems
-COPY ~%creFolder%/a7!glmi1.cre~ ~override~
-  SAY NAME1 @5001 // Lesser Mithral Golem
-  SAY NAME2 @5001 // Lesser Mithral Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glmi1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsmi1.cre~ ~override~
-  SAY NAME1 @5001 // Lesser Mithral Golem
-  SAY NAME2 @5001 // Lesser Mithral Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glmi1~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glmi1.cre~ ~override~
+    SAY NAME1 @5001 // Lesser Mithral Golem
+    SAY NAME2 @5001 // Lesser Mithral Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glmi1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsmi1.cre~ ~override~
+    SAY NAME1 @5001 // Lesser Mithral Golem
+    SAY NAME2 @5001 // Lesser Mithral Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glmi1~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_IRON_MINI~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+  IF_EXISTS
 
-COPY ~%creFolder%/a7!glmi2.cre~ ~override~
-  SAY NAME1 @5002 // Mithral Golem
-  SAY NAME2 @5002 // Mithral Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glmi2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  PATCH_IF (NOT GAME_IS ~iwdee~) BEGIN
+  COPY ~%creFolder%/a7!glmi2.cre~ ~override~
+    SAY NAME1 @5002 // Mithral Golem
+    SAY NAME2 @5002 // Mithral Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glmi2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    PATCH_IF (NOT GAME_IS_IWDEE) BEGIN
+      ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+      ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
+    END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+  IF_EXISTS
+  COPY ~%creFolder%/a7!gsmi2.cre~ ~override~
+    SAY NAME1 @5002 // Mithral Golem
+    SAY NAME2 @5002 // Mithral Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glmi2~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    PATCH_IF (NOT GAME_IS_IWDEE) BEGIN
+      ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+      ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
+    END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+  IF_EXISTS
+
+  COPY ~%creFolder%/a7!glmi3.cre~ ~override~
+    SAY NAME1 @5003 // Greater Mithral Golem
+    SAY NAME2 @5003 // Greater Mithral Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glmi3~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
-  END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-IF_EXISTS
-COPY ~%creFolder%/a7!gsmi2.cre~ ~override~
-  SAY NAME1 @5002 // Mithral Golem
-  SAY NAME2 @5002 // Mithral Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gsdef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glmi2~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  PATCH_IF (NOT GAME_IS ~iwdee~) BEGIN
+    SET count = GAME_IS_IWDEE ? 1 : 2
+    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+  IF_EXISTS
+
+  COPY ~%creFolder%/a7!glmi4.cre~ ~override~
+    SAY NAME1 @5004 // Perfect Mithral Golem
+    SAY NAME2 @5004 // Perfect Mithral Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glmi4~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
-  END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-IF_EXISTS
-
-COPY ~%creFolder%/a7!glmi3.cre~ ~override~
-  SAY NAME1 @5003 // Greater Mithral Golem
-  SAY NAME2 @5003 // Greater Mithral Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glmi3~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  SET count = (GAME_IS ~iwdee~) ? 1 : 2
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-IF_EXISTS
-
-COPY ~%creFolder%/a7!glmi4.cre~ ~override~
-  SAY NAME1 @5004 // Perfect Mithral Golem
-  SAY NAME2 @5004 // Perfect Mithral Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glmi4~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
-  SET count = (GAME_IS ~iwdee~) ? 2 : 4
-  ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
-IF_EXISTS
+    SET count = GAME_IS_IWDEE ? 2 : 4
+    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
+  IF_EXISTS
+END
 
 
 // Adamantite Golems
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!glad1.cre~ ~override~
     SAY NAME1 @6001 // Lesser Adamantite Golem
     SAY NAME2 @6001 // Lesser Adamantite Golem
@@ -872,7 +938,7 @@ END
 
 
 // Maggot Golem
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!glmg.cre~ ~override~
     SAY NAME1 @7001 // Maggot Golem
     SAY NAME2 @7001 // Maggot Golem
@@ -895,27 +961,29 @@ END
 
 
 // Bone Golem
-COPY ~%creFolder%/a7!glbo.cre~ ~override~
-  SAY NAME1 @8001 // Bone Golem
-  SAY NAME2 @8001 // Bone Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glbo~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in13~ #0 ~innate~   // Hideous Laughter
-  SET count = (GAME_IS ~iwdee~) ? 2 : 4
-  ADD_MEMORIZED_SPELL ~a7!in13~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_bone END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glbo.cre~ ~override~
+    SAY NAME1 @8001 // Bone Golem
+    SAY NAME2 @8001 // Bone Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glbo~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in13~ #0 ~innate~   // Hideous Laughter
+    SET count = GAME_IS_IWDEE ? 2 : 4
+    ADD_MEMORIZED_SPELL ~a7!in13~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_bone END
+  IF_EXISTS
+END
 
 
 // Brain Golem
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!glbr.cre~ ~override~
     SAY NAME1 @9001 // Brain Golem
     SAY NAME2 @9001 // Brain Golem
@@ -937,31 +1005,33 @@ END
 
 
 // Ice Golem
-COPY ~%creFolder%/a7!glic.cre~ ~override~
-  SAY NAME1 @10001 // Ice Golem
-  SAY NAME2 @10001 // Ice Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glic~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in10~ #0 ~innate~   // Scolding Steam
-  SET count = (GAME_IS ~iwdee~) ? 2 : 4
-  ADD_MEMORIZED_SPELL ~a7!in10~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ice END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glic.cre~ ~override~
+    SAY NAME1 @10001 // Ice Golem
+    SAY NAME2 @10001 // Ice Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glic~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in10~ #0 ~innate~   // Scolding Steam
+    SET count = GAME_IS_IWDEE ? 2 : 4
+    ADD_MEMORIZED_SPELL ~a7!in10~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ice END
+  IF_EXISTS
 
-// Slightly reduce Ice Golem selection circle size
-COPY_EXISTING ~e0f0.ini~ ~override~
-  REPLACE_TEXTUALLY CASE_INSENSITIVE ~ellipse[ %TAB%]*=[ %TAB%]*[0-9]+~ ~ellipse=28~
+  // Slightly reduce Ice Golem selection circle size
+  COPY_EXISTING ~e0f0.ini~ ~override~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ellipse[ %TAB%]*=[ %TAB%]*[0-9]+~ ~ellipse=28~
+END
 
 
 // Magic Golem
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%creFolder%/a7!glma.cre~ ~override~
     SAY NAME1 @11001 // Magic Golem
     SAY NAME2 @11001 // Magic Golem
@@ -982,71 +1052,147 @@ END
 
 
 // Lightning Golem
-COPY ~%creFolder%/a7!gllt.cre~ ~override~
-  SAY NAME1 @12001 // Lightning Golem
-  SAY NAME2 @12001 // Lightning Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!gllt~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_LIGHTNING~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in15~ #0 ~innate~   // Lightning Travel
-  ADD_MEMORIZED_SPELL ~a7!in15~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~   // Chain Lightning
-  SET count = (GAME_IS ~iwdee~) ? 3 : 5
-  ADD_MEMORIZED_SPELL ~a7!in07~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lightning END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!gllt.cre~ ~override~
+    SAY NAME1 @12001 // Lightning Golem
+    SAY NAME2 @12001 // Lightning Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!gllt~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_LIGHTNING~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in15~ #0 ~innate~   // Lightning Travel
+    ADD_MEMORIZED_SPELL ~a7!in15~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in07~ #0 ~innate~   // Chain Lightning
+    SET count = GAME_IS_IWDEE ? 3 : 5
+    ADD_MEMORIZED_SPELL ~a7!in07~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lightning END
+  IF_EXISTS
+END
 
 
 // Ruby Golem
-COPY ~%creFolder%/a7!glru.cre~ ~override~
-  SAY NAME1 @13001 // Ruby Golem
-  SAY NAME2 @13001 // Ruby Golem
-  WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
-  WRITE_ASCII SCRIPT_CLASS ~a7!glru~ #8
-  WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
-  WRITE_ASCII DIALOG ~a7!cmd~ #8
-  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_RUBY~))
-  WRITE_BYTE 0x274 specific_golem
-  ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
-  ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-  ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
-  SET count = (GAME_IS ~iwdee~) ? 2 : 3
-  ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (count)
-  LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ruby END
-IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%creFolder%/a7!glru.cre~ ~override~
+    SAY NAME1 @13001 // Ruby Golem
+    SAY NAME2 @13001 // Ruby Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldef~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glru~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_RUBY~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
+    SET count = GAME_IS_IWDEE ? 2 : 3
+    ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (count)
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_ruby END
+  IF_EXISTS
+END
 
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+// Doll Golem
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COPY ~%creFolder%/a7!gldo.cre~ ~override~
+    SAY NAME1 @14001  // Doll Golem
+    SAY NAME2 @14001  // Doll Golem
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldl~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!gldo~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd3~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_DOLL~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_doll END
+  IF_EXISTS
+
+  COPY ~%creFolder%/a7!gxdo.cre~ ~override~
+    SAY NAME1 @100029  // Golem Servant
+    SAY NAME2 @100029  // Golem Servant
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxdl~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxdo~ #8
+    WRITE_ASCII DIALOG ~a7!cmdx~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_DOLL~))
+    WRITE_BYTE 0x274 specific_golem
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_doll END
+  IF_EXISTS
+END
+
+
+// Bone Doll
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COPY ~%creFolder%/a7!glbd.cre~ ~override~
+    SAY NAME1 @15001  // Bone Doll
+    SAY NAME2 @15001  // Bone Doll
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gldl~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!glbd~ #8
+    WRITE_ASCII SCRIPT_DEFAULT ~a7!cmd~ #8
+    WRITE_ASCII DIALOG ~a7!cmd3~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BONE_DOLL~))
+    WRITE_BYTE 0x274 specific_golem
+    ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
+    ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
+    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_bone_doll END
+  IF_EXISTS
+
+  COPY ~%creFolder%/a7!gxbd.cre~ ~override~
+    SAY NAME1 @100029  // Golem Servant
+    SAY NAME2 @100029  // Golem Servant
+    WRITE_ASCII SCRIPT_OVERRIDE ~a7!gxdl~ #8
+    WRITE_ASCII SCRIPT_CLASS ~a7!gxbd~ #8
+    WRITE_ASCII DIALOG ~a7!cmdx~ #8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~A7!GOLEM_BONE_DOLL~))
+    WRITE_BYTE 0x274 specific_golem
+    LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_bone_doll END
+  IF_EXISTS
+END
+
+
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/iwdee/a7!fam.itm~ ~override~
-END ELSE ACTION_IF (GAME_IS ~bgee~) BEGIN
+END ELSE ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD) BEGIN
   COPY ~%MOD_FOLDER%/items/bgee/a7!fam.itm~ ~override~
 END ELSE BEGIN
   COPY ~%MOD_FOLDER%/items/bg2ee/a7!fam.itm~ ~override~
 END
 
-COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd.d~
-        ~%MOD_FOLDER%/dialogs/a7!cmd2.d~
-        EVAL
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd_soa.d~
-          ~%MOD_FOLDER%/dialogs/a7!cmd2_soa.d~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd.d~
+          ~%MOD_FOLDER%/dialogs/a7!cmd2.d~
+          EVAL
+END
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd3.d~
+          ~%MOD_FOLDER%/dialogs/a7!cmdx.d~
+          EVAL
 END
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+  COMPILE ~%MOD_FOLDER%/dialogs/a7!cmd_soa.d~
+          ~%MOD_FOLDER%/dialogs/a7!cmd2_soa.d~
+          ~%MOD_FOLDER%/dialogs/a7!cmd3_soa.d~
+END
+
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   OUTER_SET chance = 4    // RandomNum(chance, 1)
   OUTER_TEXT_SPRINT random ~RandomNum(2, 1)~
 END ELSE BEGIN
   OUTER_SET chance = 2    // RandomNum(chance, 1)
   OUTER_TEXT_SPRINT random ~~
 END
+
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
 COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
         ~%MOD_FOLDER%/scripts/a7!gsdef.baf~
         ~%MOD_FOLDER%/scripts/a7!glfl1.baf~
@@ -1079,8 +1225,19 @@ COMPILE ~%MOD_FOLDER%/scripts/a7!gldef.baf~
         ~%MOD_FOLDER%/scripts/a7!ct03.baf~
         ~%MOD_FOLDER%/scripts/a7!ct04.baf~
         EVAL
+END
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COMPILE ~%MOD_FOLDER%/scripts/a7!gldl.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxdl.baf~
+          ~%MOD_FOLDER%/scripts/a7!gldo.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxdo.baf~
+          ~%MOD_FOLDER%/scripts/a7!glbd.baf~
+          ~%MOD_FOLDER%/scripts/a7!gxbd.baf~
+          EVAL
+END
+
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   COMPILE ~%MOD_FOLDER%/scripts/iwdee/a7!cmd.baf~
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct30.baf~
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct31.baf~
@@ -1088,7 +1245,9 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct33.baf~
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct34.baf~
           ~%MOD_FOLDER%/scripts/iwdee/a7!ct35.baf~
-END ELSE BEGIN
+END
+
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COMPILE ~%MOD_FOLDER%/scripts/a7!cmd.baf~
           ~%MOD_FOLDER%/scripts/a7!cmdma.baf~
           ~%MOD_FOLDER%/scripts/a7!ct10.baf~
@@ -1108,135 +1267,152 @@ END ELSE BEGIN
           EVAL
 END
 
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COMPILE ~%MOD_FOLDER%/scripts/a7!ctbd1.baf~
+END
+
 
 // handling game-specific events
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   EXTEND_TOP ~a7!cmd.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_sod.baf~
   EXTEND_TOP ~a7!cmdma.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_sod.baf~
 END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   EXTEND_TOP ~a7!cmd.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_soa.baf~
   EXTEND_TOP ~a7!cmdma.bcs~ ~%MOD_FOLDER%/scripts/a7!cmd_soa.baf~
 END
 
 
 // Installing enemy golems
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   INCLUDE ~%MOD_FOLDER%/lib/creatures_enemy.tph~
 END
 
 
 // Applying creature animation changes to original golems of the game
-INCLUDE ~%MOD_FOLDER%/lib/creatures_vanilla.tph~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  INCLUDE ~%MOD_FOLDER%/lib/creatures_vanilla.tph~
+END
 
 
 // Adding random treasure tables for clay golems
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDCL1" item = "A7!CLAY" END
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 30 STR_VAR treasure = "A7!RDCL2" item = "A7!CLAY" END
-ACTION_IF (GAME_IS ~bgee~) BEGIN
-  COPY_EXISTING ~a7!glcl1.cre~ ~override~
-                ~a7!gxcl1.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 15 STR_VAR treasure = "A7!RDCL1" item = "A7!CLAY" END
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 30 STR_VAR treasure = "A7!RDCL2" item = "A7!CLAY" END
 
-  COPY_EXISTING ~a7!glcl2.cre~ ~override~
-                ~a7!gscl2.cre~ ~override~
-                ~a7!gxcl2.cre~ ~override~
-                ~a7!gycl2.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
-END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY_EXISTING ~igolfle1.cre~ ~override~
-                ~igolfle2.cre~ ~override~
-                ~igolfle3.cre~ ~override~
-                ~igolfle4.cre~ ~override~
-                ~a7!glcl1.cre~ ~override~
-                ~a7!gscl1.cre~ ~override~
-                ~a7!gxcl1.cre~ ~override~
-                ~a7!gycl1.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+  ACTION_IF (GAME_IS_SOD) BEGIN
+    COPY_EXISTING ~a7!glcl1.cre~ ~override~
+                  ~a7!gxcl1.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
 
-  COPY_EXISTING ~clgol01.cre~ ~override~
-                ~golcla01.cre~ ~override~
-                ~kpgol02.cre~ ~override~
-                ~ppiron.cre~ ~override~
-                ~a7!glcl2.cre~ ~override~
-                ~a7!gscl2.cre~ ~override~
-                ~a7!gxcl2.cre~ ~override~
-                ~a7!gycl2.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
-END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  COPY_EXISTING ~a7!glcl1.cre~ ~override~
-                ~a7!gxcl1.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+    COPY_EXISTING ~a7!glcl2.cre~ ~override~
+                  ~a7!gscl2.cre~ ~override~
+                  ~a7!gxcl2.cre~ ~override~
+                  ~a7!gycl2.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
 
-  COPY_EXISTING ~a7!glcl2.cre~ ~override~
-                ~a7!gscl2.cre~ ~override~
-                ~a7!gxcl2.cre~ ~override~
-                ~a7!gycl2.cre~ ~override~
-                ~golsan01.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    COPY_EXISTING ~igolfle1.cre~ ~override~
+                  ~igolfle2.cre~ ~override~
+                  ~igolfle3.cre~ ~override~
+                  ~igolfle4.cre~ ~override~
+                  ~a7!glcl1.cre~ ~override~
+                  ~a7!gscl1.cre~ ~override~
+                  ~a7!gxcl1.cre~ ~override~
+                  ~a7!gycl1.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+
+    COPY_EXISTING ~clgol01.cre~ ~override~
+                  ~golcla01.cre~ ~override~
+                  ~kpgol02.cre~ ~override~
+                  ~ppiron.cre~ ~override~
+                  ~a7!glcl2.cre~ ~override~
+                  ~a7!gscl2.cre~ ~override~
+                  ~a7!gxcl2.cre~ ~override~
+                  ~a7!gycl2.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
+
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    COPY_EXISTING ~a7!glcl1.cre~ ~override~
+                  ~a7!gxcl1.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdcl1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+
+    COPY_EXISTING ~a7!glcl2.cre~ ~override~
+                  ~a7!gscl2.cre~ ~override~
+                  ~a7!gxcl2.cre~ ~override~
+                  ~a7!gycl2.cre~ ~override~
+                  ~golsan01.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdcl2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
 END
 
 
 // Adding random treasure tables for stone golems
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDST1" item = "A7!STON" END
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDST2" item = "A7!STON" END
-  COPY_EXISTING ~bdgolsto.cre~ ~override~
-                ~bdmengo.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDST1" item = "A7!STON" END
 
-  COPY_EXISTING ~bdpetsg.cre~ ~override~
-                ~bdpetsg2.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdst2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+  ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
+    LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDST2" item = "A7!STON" END
+    COPY_EXISTING ~bdgolsto.cre~ ~override~
+                  ~bdmengo.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
 
-  ACTION_IF (GAME_IS ~bgee~) BEGIN
-    COPY_EXISTING ~a7!glst2.cre~ ~override~
+    COPY_EXISTING ~bdpetsg.cre~ ~override~
+                  ~bdpetsg2.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdst2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+
+    ACTION_IF (GAME_IS_SOD) BEGIN
+      COPY_EXISTING ~a7!glst2.cre~ ~override~
+                    ~a7!gsst2.cre~ ~override~
+                    ~a7!gxst2.cre~ ~override~
+                    ~a7!gyst2.cre~ ~override~
+        ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+      IF_EXISTS
+    END
+  END
+
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    COPY_EXISTING ~dstone1.cre~ ~override~
+                  ~golsto01.cre~ ~override~
+                  ~jugjug01.cre~ ~override~
+                  ~kpgol03.cre~ ~override~
+                  ~kpgol05.cre~ ~override~
+                  ~stgol01.cre~ ~override~
+                  ~a7!glst2.cre~ ~override~
                   ~a7!gsst2.cre~ ~override~
                   ~a7!gxst2.cre~ ~override~
                   ~a7!gyst2.cre~ ~override~
       ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
     IF_EXISTS
   END
-END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY_EXISTING ~dstone1.cre~ ~override~
-                ~golsto01.cre~ ~override~
-                ~jugjug01.cre~ ~override~
-                ~kpgol03.cre~ ~override~
-                ~kpgol05.cre~ ~override~
-                ~stgol01.cre~ ~override~
-                ~a7!glst2.cre~ ~override~
-                ~a7!gsst2.cre~ ~override~
-                ~a7!gxst2.cre~ ~override~
-                ~a7!gyst2.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
-END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  COPY_EXISTING ~a7!glst2.cre~ ~override~
-                ~a7!gsst2.cre~ ~override~
-                ~a7!gxst2.cre~ ~override~
-                ~a7!gyst2.cre~ ~override~
-                ~goljug01.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    COPY_EXISTING ~a7!glst2.cre~ ~override~
+                  ~a7!gsst2.cre~ ~override~
+                  ~a7!gxst2.cre~ ~override~
+                  ~a7!gyst2.cre~ ~override~
+                  ~goljug01.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdst1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
 END
 
 
 // Adding random treasure tables for iron golems
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDIR1" item = "A7!IRON" END
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 40 STR_VAR treasure = "A7!RDIR2" item = "A7!IRON" END
+
   COPY_EXISTING ~a7!glir1.cre~ ~override~
                 ~a7!gxir1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
@@ -1252,7 +1428,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     ADD_CRE_ITEM ~a7!rdir2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
   IF_EXISTS
 END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   COPY_EXISTING ~a7!glir1.cre~ ~override~
                 ~a7!gxir1.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdir1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
@@ -1274,8 +1451,9 @@ END
 
 
 // Adding random treasure tables for mithral golems
-ACTION_IF (GAME_IS ~bg2ee eet iwdee~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET OR GAME_IS_IWDEE) BEGIN
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDMI1" item = "A7!MITH" END
+
   COPY_EXISTING ~a7!glmi1.cre~ ~override~
                 ~a7!gsmi1.cre~ ~override~
                 ~a7!gxmi1.cre~ ~override~
@@ -1294,8 +1472,9 @@ END
 
 
 // Adding random treasure tables for adamantite golems
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDAD1" item = "A7!ADAM" END
+
   COPY_EXISTING ~a7!glad1.cre~ ~override~
                 ~a7!gsad1.cre~ ~override~
                 ~a7!gxad1.cre~ ~override~
@@ -1318,7 +1497,34 @@ END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBO1" item = "A7!BONE" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 5 STR_VAR treasure = "A7!RDBO2" item = "A7!BONE" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBO3" item = "A7!BONE" defItem = "0" END   // for containers
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COPY_EXISTING ~skelwa.cre~ ~override~
+                ~skelwa02.cre~ ~override~
+                ~skelwa03.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbo1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+  IF_EXISTS
+
+  COPY_EXISTING ~skelaci.cre~ ~override~
+                ~skeldis.cre~ ~override~
+                ~skelet.cre~ ~override~
+                ~skelet02.cre~ ~override~
+                ~skelet03.cre~ ~override~
+                ~skeletb.cre~ ~override~
+                ~skelets.cre~ ~override~
+                ~skelet_a.cre~ ~override~
+                ~skelet_b.cre~ ~override~
+                ~skelet_c.cre~ ~override~
+                ~skelfire.cre~ ~override~
+                ~skelice.cre~ ~override~
+                ~skelmel.cre~ ~override~
+                ~cdmhskel.cre~ ~override~
+    ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+  IF_EXISTS
+END
+
+
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   COPY_EXISTING ~icbone01.cre~ ~override~
                 ~ar18skel.cre~ ~override~
                 ~ceskel01.cre~ ~override~
@@ -1344,7 +1550,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
   IF_EXISTS
 END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   COPY_EXISTING ~dliceaxe.cre~ ~override~
                 ~dlicehnd.cre~ ~override~
                 ~dliceswd.cre~ ~override~
@@ -1377,9 +1584,10 @@ END
 
 
 // Adding random treasure tables for brain golems
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDBR1" item = "A7!BRIN" END
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBR2" item = "A7!BRIN" END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDBR1" item = "A7!BRIN" END
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 25 STR_VAR treasure = "A7!RDBR2" item = "A7!BRIN" END
+
   COPY_EXISTING ~udgolem.cre~ ~override~
                 ~golbra01.cre~ ~override~
     ADD_CRE_ITEM ~a7!rdbr2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
@@ -1393,42 +1601,51 @@ END
 
 
 // Adding random treasure tables for ice golems
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDIC1" item = "A7!ICE" END
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 5 STR_VAR treasure = "A7!RDIC2" item = "A7!ICE" END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY_EXISTING ~golice01.cre~ ~override~
-                ~gorgoli.cre~ ~override~
-                ~a7!glic.cre~ ~override~
-                ~a7!gxic.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdic1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
-END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  COPY_EXISTING ~cyiceg.cre~ ~override~
-                ~dlgolem.cre~ ~override~
-                ~golemic.cre~ ~override~
-                ~rndigolm.cre~ ~override~
-                ~sagolem.cre~ ~override~
-                ~a7!glic.cre~ ~override~
-                ~a7!gxic.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdic1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_SOD) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDIC1" item = "A7!ICE" END
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 5 STR_VAR treasure = "A7!RDIC2" item = "A7!ICE" END
 
-  COPY_EXISTING ~dliceaxe.cre~ ~override~
-                ~dlicehnd.cre~ ~override~
-                ~dliceswd.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdic2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    COPY_EXISTING ~golice01.cre~ ~override~
+                  ~gorgoli.cre~ ~override~
+                  ~a7!glic.cre~ ~override~
+                  ~a7!gxic.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdic1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
+
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    COPY_EXISTING ~cyiceg.cre~ ~override~
+                  ~dlgolem.cre~ ~override~
+                  ~golemic.cre~ ~override~
+                  ~rndigolm.cre~ ~override~
+                  ~sagolem.cre~ ~override~
+                  ~a7!glic.cre~ ~override~
+                  ~a7!gxic.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdic1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+
+    COPY_EXISTING ~dliceaxe.cre~ ~override~
+                  ~dlicehnd.cre~ ~override~
+                  ~dliceswd.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdic2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
 END
 
 
 // Adding random treasure tables for flesh and maggot golems
-LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 20 chance_1 = 10 STR_VAR treasure = "A7!RDBD1" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
-LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 30 chance_1 = 5 STR_VAR treasure = "A7!RDBD2" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
+ACTION_IF (GAME_IS_BGEE) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDBD1" item = "A7!BODY" END
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 30 STR_VAR treasure = "A7!RDBD2" item = "A7!BODY" END
+END ELSE BEGIN
+  LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 20 chance_1 = 10 STR_VAR treasure = "A7!RDBD1" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
+  LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 30 chance_1 = 5 STR_VAR treasure = "A7!RDBD2" item_0 = "A7!BODY" item_1 = "A7!MBDY" END
+END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDBD3" item = "A7!BODY" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 35 STR_VAR treasure = "A7!RDBD4" item = "A7!BODY" END
 LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 10 STR_VAR treasure = "A7!RDBD5" item = "A7!BODY" END
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   COPY_EXISTING ~bddead01.cre~ ~override~
                 ~bdghast.cre~ ~override~
                 ~bdjunia2.cre~ ~override~
@@ -1458,7 +1675,7 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
   IF_EXISTS
 
-  ACTION_IF (GAME_IS ~bgee~) BEGIN
+  ACTION_IF (GAME_IS_SOD) BEGIN
     COPY_EXISTING ~a7!glfl2.cre~ ~override~
                   ~a7!glfl3.cre~ ~override~
                   ~a7!glfl4.cre~ ~override~
@@ -1469,7 +1686,8 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     IF_EXISTS
   END
 END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   COPY_EXISTING ~bhghoul1.cre~ ~override~
                 ~bhghoul2.cre~ ~override~
                 ~bhghoul3.cre~ ~override~
@@ -1532,7 +1750,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
     ADD_CRE_ITEM ~a7!rdbo2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
   IF_EXISTS
 END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   COPY_EXISTING ~drowned.cre~ ~override~
                 ~ktmum1.cre~ ~override~
                 ~lzombiej.cre~ ~override~
@@ -1583,44 +1802,48 @@ END
 
 
 // Adding random treasure tables for ruby golems
-LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDRU1" item = "A7!RUBY" END
-LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 10 chance_1 = 10 STR_VAR treasure = "A7!RDRU2" item_0 = "A7!RUBY" item_1 = "MISC16" END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  COPY_EXISTING ~a7!glru.cre~ ~override~
-                ~a7!gxru.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
-END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  COPY_EXISTING ~sal8001.cre~ ~override~
-                ~sal8005.cre~ ~override~
-                ~sal8008.cre~ ~override~
-                ~salamand.cre~ ~override~
-                ~salamanr.cre~ ~override~
-                ~rldsalfi.cre~ ~override~
-    ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-    ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
-  IF_EXISTS
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_SOD) BEGIN
+  LAF DEFINE_RANDOM_TREASURE INT_VAR chance = 20 STR_VAR treasure = "A7!RDRU1" item = "A7!RUBY" END
+  LAF DEFINE_RANDOM_TREASURE_EX INT_VAR chance_0 = 10 chance_1 = 10 STR_VAR treasure = "A7!RDRU2" item_0 = "A7!RUBY" item_1 = "MISC16" END
+
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    COPY_EXISTING ~a7!glru.cre~ ~override~
+                  ~a7!gxru.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+      ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+      ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+      ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
+
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    COPY_EXISTING ~sal8001.cre~ ~override~
+                  ~sal8005.cre~ ~override~
+                  ~sal8008.cre~ ~override~
+                  ~salamand.cre~ ~override~
+                  ~salamanr.cre~ ~override~
+                  ~rldsalfi.cre~ ~override~
+      ADD_CRE_ITEM ~a7!rdru1~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+      ADD_CRE_ITEM ~a7!rdru2~ #1 #0 #0 ~UNSTEALABLE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+    IF_EXISTS
+  END
 END
 
 
 // Belegarm
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   EXTEND_BOTTOM ~bdbelega.bcs~ ~%MOD_FOLDER%/scripts/a7!bdbeleg_bottom.baf~
 END
 
 
 // Brother Deepvein
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/bddeep.d~
 END
 
 
 // Ore Merchant Jerlia
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/scjerlia.d~
   COMPILE ~%MOD_FOLDER%/scripts/a7!jerl.baf~ EVAL
 
@@ -1643,8 +1866,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Drow Merchant Nym
+// Drow Merchant Nym
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   COPY ~%MOD_FOLDER%/creatures/a7!nym.cre~ ~override~
     SAY NAME1 @100013 // Nym
     SAY NAME2 @100014 // Dark Elf Merchant
@@ -1667,7 +1890,8 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   END
 END
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  // Adding golem-specific actions to Belhifet in final battle
+
+// Adding golem-specific actions to Belhifet in final battle
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   EXTEND_TOP ~eebelwa.bcs~ ~%MOD_FOLDER%/scripts/iwdee/eebelwa_top.baf~
 END

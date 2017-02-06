@@ -12,8 +12,8 @@ Discussion :      http://www.shsforums.net/topic/58696-mod-golem-construction-fo
 Généralités
 ~~~~~~~~~~~
 
-Un mod pour Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) et IWD:EE qui permet 
-aux lanceurs de sorts de fabriquer leur propre golem.
+Un mod pour BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) et IWD:EE qui permet aux lanceurs de 
+sorts de fabriquer leur propre golem.
 
 Partout dans le jeu, vous rencontrez de nombreux golems de types divers et variés. Ils sont 
 puissants, résistants et indéfectiblement loyaux à leur maître. Malheureusement, ils sont la 
@@ -65,6 +65,7 @@ Types de golems dont on peut apprendre le processus de fabrication :
 
 Il existerait un autre recueil mystérieux de six volumes qui traiterait de la fabrication de 
 types de golems plus exotiques.
+You might also commission golems in the BG:EE part of the game if you can find the right tomes.
 
 Chaque golem nécessite des matériaux spécifiques pour façonner son enveloppe physique, ainsi 
 que des composants supplémentaires pour le doter de capacités spéciales selon sa version. 
@@ -150,6 +151,8 @@ Writing, coding and testing: Argent77
 Polish translation: Cahir
 French translation: Gwendolyne
 
+Doll golem and bone doll creature animations ported from Diablo II by Blizzard Entertainment.
+
 
 Copyright Notice
 ~~~~~~~~~~~~~~~~
@@ -160,6 +163,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+3.2
+- Added two new golem types that can be commissioned during the BG1 part of the game
 
 3.1
 - Fixed incorrect path to IWDEE-specific lines of text from English to the selected language

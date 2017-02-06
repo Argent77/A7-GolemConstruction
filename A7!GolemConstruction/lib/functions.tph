@@ -1,5 +1,14 @@
 // *** Functions for internal use ***
 
+// To determine game types more easily
+OUTER_SET GAME_IS_BGEE = (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) ? 1 : 0
+OUTER_SET GAME_IS_SOD = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0
+OUTER_SET GAME_IS_BG2EE = (GAME_IS ~bg2ee~) ? 1 : 0
+OUTER_SET GAME_IS_IWDEE = (GAME_IS ~iwdee~) ? 1 : 0
+OUTER_SET GAME_IS_EET = (GAME_IS ~eet~) ? 1 : 0
+OUTER_SET GAME_IS_EET_IWD = (GAME_IS ~eet~ AND FILE_EXISTS_IN_GAME ~id1000.are~) ? 1 : 0
+
+
 /**
  * Converts any decimal number into a hexadecimal number
  */
@@ -748,6 +757,7 @@ STR_VAR
 BEGIN
   ACTION_IF (FILE_EXISTS ~%table%~) BEGIN
     COPY - ~%table%~ ~%table%~
+      EVALUATE_BUFFER
       COUNT_2DA_ROWS 7 numRows
       FOR (idx = 0; idx < numRows; ++idx) BEGIN
         READ_2DA_ENTRY idx 0 7 type

@@ -1,6 +1,6 @@
 // *** Handles creation of new containers in selected areas ***
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // Container in underground temple with Fugue Plane portal
   COPY_EXISTING ~bd5300.are~ ~override~
     LPF fj_are_structure
@@ -57,7 +57,7 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
 END
 
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Khalid's body as container
   COPY_EXISTING ~ar0603.are~ ~override~
     LPF fj_are_structure
@@ -441,7 +441,7 @@ ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
 END
 
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   // Ruined library of the Severed Hand
   COPY_EXISTING ~ar5102.are~ ~override~
     LPF fj_are_structure

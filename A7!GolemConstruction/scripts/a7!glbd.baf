@@ -1,0 +1,43 @@
+// *** Type-specific actions (Bone Doll) ***
+
+// Work-around to ensure golem is properly equipped after being released from Imprisonment
+IF
+  Die()
+  !StateCheck(Myself, STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Continue()
+END
+
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("A7!GolemCount", "GLOBAL", -1)
+    Continue()
+END
+
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    ReallyForceSpellDeadRES("a7!sxbd", Myself)
+    SetInterrupt(TRUE)
+END
+
+// Work-around for issue: Fix creature specifications
+IF
+  !Specifics(Myself, A7!GOLEM)
+THEN
+  RESPONSE #100
+    ChangeGeneral(Myself, HUMANOID)
+    ChangeRace(Myself, GOLEM)
+    ChangeClass(Myself, SKELETON)
+    ChangeSpecifics(Myself, A7!GOLEM)
+    ChangeGender(Myself, NIETHER)
+END

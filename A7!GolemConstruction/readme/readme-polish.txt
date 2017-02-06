@@ -12,7 +12,7 @@ Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spel
 Ogólny zarys
 ~~~~~~~~~~~~
 
-Jest to modyfikacja do gry Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) i IWD:EE, która pozwala postaciom mogącym rzucać czary na budowę własnych golemów.
+Jest to modyfikacja do gry BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) i IWD:EE, która pozwala postaciom mogącym rzucać czary na budowę własnych golemów.
 
 W grze można napotkać dużą ilość golemów różnych typów. Są one silne, odporne i całkowicie lojalne swemu panu. Niestety są one zazwyczaj wrogie w stosunku do postaci gracza.
 
@@ -32,11 +32,9 @@ Ważne: Aby możliwa była instalacja tej modyfikacji, gra BG2:EE musi zostać z
 Komponenty
 ~~~~~~~~~~
 
-1. Zdolność budowania golemów dla rzucających czary (BG:SoD, BG2:EE, EET i IWD:EE)
+1. Zdolność budowania golemów dla rzucających czary (BG:EE, BG2:EE, EET i IWD:EE)
 
 Jest to główny komponent tej modyfikacji. Instaluje on pewną liczbę podręczników do budowy golemów, które mogą być odnalezione w różnych miejscach Faerûnu. „Podręcznik budowy golemów” składa się z sześciu tomów zawierających wiedzę o budowie różnych rodzajów golemów. Każdy z tomów posiada pojedynczy ładunek potężnej magii, która zapewnia użytkownikowi możliwość używania zdolności „Budowanie golema” i „Naprawianie golema”. Po zużyciu zawartej w księdze magii będzie jej można dalej używać jako materiału źródłowego na temat określonych typów golemów.
-
-Chodzą słuchy, że istnieje drugi, sekretny zestaw tomów, zawierający wiedzę o budowie bardziej egzotycznych typów golemów.
 
 Rodzaje golemów, których budowy można się nauczyć z Podręcznika budowy golemów:
 - Golemy z ciała w pomniejszych, zwykłych, większych oraz idealnych wariantach.
@@ -45,6 +43,9 @@ Rodzaje golemów, których budowy można się nauczyć z Podręcznika budowy gol
 - Żelazne golemy w pomniejszych, zwykłych, większych oraz idealnych wariantach.
 - Mithrilowe golemy w pomniejszych, zwykłych, większych oraz idealnych wariantach.
 - Adamantytowe golemy w pomniejszych, zwykłych, większych i idealnych wariantach (nie dotyczy IWD:EE).
+
+Chodzą słuchy, że istnieje drugi, sekretny zestaw tomów, zawierający wiedzę o budowie bardziej egzotycznych typów golemów. You might also commission golems in the BG:EE part of the game if you can find the right tomes.
+
 
 Każdy golem wymaga materiałów niezbędnych do wykonania jego fizycznej powłoki oraz dodatkowych składników koniecznych do obdarzenia go kluczowymi właściwościami. Stworzenie idealnego wariantu jest wyczynem samym w sobie i wymaga ściśle określonego artefaktu, który musi zostać użyty w procesie zaklinania.
 
@@ -96,6 +97,8 @@ Writing, coding and testing: Argent77
 Polish translation: Cahir
 French translation: Gwendolyne
 
+Doll golem and bone doll creature animations ported from Diablo II by Blizzard Entertainment.
+
 
 Copyright Notice
 ~~~~~~~~~~~~~~~~
@@ -106,6 +109,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+3.2
+- Added two new golem types that can be commissioned during the BG1 part of the game
 
 3.1
 - Fixed incorrect path to IWDEE-specific lines of text from English to the selected language

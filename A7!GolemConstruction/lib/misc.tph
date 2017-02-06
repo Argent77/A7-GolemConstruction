@@ -29,7 +29,74 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~enginest.2da~) BEGIN
 END
 
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  // For constructing (bone) doll golems
+  COMPILE ~%MOD_FOLDER%/dialogs/arkion.d~
+          ~%MOD_FOLDER%/dialogs/nemphr.d~
+          ~%MOD_FOLDER%/scripts/a7!ctdg1.baf~
+          ~%MOD_FOLDER%/scripts/a7!ctdg2.baf~
+
+  COPY ~%MOD_FOLDER%/spells/a7!ctdg1.spl~ ~override~
+
+  COPY_EXISTING ~nemphr.cre~ ~override~
+    READ_ASCII SCRIPT_OVERRIDE script (8) NULL
+    PATCH_IF (~%script%~ STRING_EQUAL ~~ OR ~%script%~ STRING_EQUAL_CASE ~none~) BEGIN
+      TEXT_SPRINT script ~NEMPHR~
+      WRITE_ASCIIE SCRIPT_OVERRIDE ~%script%~ #8
+    END
+  BUT_ONLY
+
+  <<<<<<<<  .../inlined/a7!golem/%script%.baf
+  IF
+    See([FAMILIAR.0.GOLEM])
+    CheckSpellState(LastSeenBy(Myself), A7!GOLEM_DOLL)
+    Global("A7!DollSighted", "LOCALS", 0)
+  THEN
+    RESPONSE #100
+      SetGlobal("A7!DollSighted", "LOCALS", 1)
+      ActionOverride(LastSeenBy(Myself), ChangeSpecifics(Myself, A7!MARKED))
+      ActionOverride(LastSeenBy(Myself), SetGlobal("A7!NemphreAttack", "LOCALS", 1))
+  END
+  >>>>>>>>
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+    EXTEND_TOP ~%script%.bcs~ ~.../inlined/a7!golem/%script%.baf~
+  END ELSE BEGIN
+    COMPILE ~.../inlined/a7!golem/%script%.baf~
+  END
+
+  // Arkion's golem servant
+  COPY_EXISTING ~%PREFIX_AREA_BG1%0805.are~ ~override~
+    READ_ASCII AREA_SCRIPT script (8) NULL
+    PATCH_IF (~%script%~ STRING_EQUAL ~~ OR ~%script%~ STRING_EQUAL_CASE ~none~) BEGIN
+      TEXT_SPRINT script ~%SOURCE_RES%~
+      WRITE_ASCIIE AREA_SCRIPT ~%script%~ #8
+    END
+  BUT_ONLY
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+    <<<<<<<< .../scripts/%script%.baf
+    >>>>>>>>
+    COMPILE ~.../scripts/%script%.baf~
+  END
+  EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/bg1_ar0805_top.baf~
+
+  // Nemphre's golem servant
+  COPY_EXISTING ~%PREFIX_AREA_BG1%0813.are~ ~override~
+    READ_ASCII AREA_SCRIPT script (8) NULL
+    PATCH_IF (~%script%~ STRING_EQUAL ~~ OR ~%script%~ STRING_EQUAL_CASE ~none~) BEGIN
+      TEXT_SPRINT script ~%SOURCE_RES%~
+      WRITE_ASCIIE AREA_SCRIPT ~%script%~ #8
+    END
+  BUT_ONLY
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+    <<<<<<<< .../scripts/%script%.baf
+    >>>>>>>>
+    COMPILE ~.../scripts/%script%.baf~
+  END
+  EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/bg1_ar0813_top.baf~
+END
+
+
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // Renting second floor of Sorcerous Sundries for building golems
   COMPILE ~%MOD_FOLDER%/dialogs/bdhalbaz.d~
 
@@ -137,7 +204,8 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
     END
 END
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // importing items into starting dungeon (one tome and one ingredient)
 <<<<<<<< .../inlined/ar0602.baf
 IF
@@ -158,7 +226,7 @@ END
        ~%MOD_FOLDER%/items/a7!impt2.2da~ ~override~
        ~%MOD_FOLDER%/items/a7!impt3.2da~ ~override~
        ~%MOD_FOLDER%/items/a7!impt4.2da~ ~override~
-    PATCH_IF (GAME_IS ~eet~ AND FILE_EXISTS_IN_GAME ~k#import.2da~) BEGIN
+    PATCH_IF (GAME_IS_EET AND FILE_EXISTS_IN_GAME ~k#import.2da~) BEGIN
       // registering all import items in EET's importation table
       COUNT_2DA_ROWS 2 numRows
       FOR (row = 1; row < numRows; row += 1) BEGIN  // skip row 0 which is 2DA signature
@@ -195,7 +263,7 @@ END
 END
 
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
+ACTION_IF (GAME_IS_IWDEE) BEGIN
   // Use Dragon's Eye Level 3 as golem building workshop
   EXTEND_TOP ~ar4003.bcs~ ~%MOD_FOLDER%/scripts/iwdee/ar4003_workshop.baf~
   COMPILE ~%MOD_FOLDER%/scripts/iwdee/a7!ar40a.baf~

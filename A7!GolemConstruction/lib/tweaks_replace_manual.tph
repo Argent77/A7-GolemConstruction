@@ -1,6 +1,6 @@
 // *** Tweaks: Replace original Golem Manual ***
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Removing Golem Manual
   COPY_EXISTING ~ar3001.are~ ~override~
     LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome01" END

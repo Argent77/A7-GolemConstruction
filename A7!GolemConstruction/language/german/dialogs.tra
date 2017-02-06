@@ -8,6 +8,11 @@
 @40003 = ~vierundzwanzig~
 @40004 = ~sechsunddreißig~
 @40005 = ~achtundvierzig~
+@40006 = ~Was zur Hölle geht hier vor?! In den Abgrund mit dir!~
+@40007 = ~::Ha-ha::~
+@40008 = ~::Ho-ho::~
+@40009 = ~::Hi-hi::~
+@40010 = ~Lacht unkontrolliert~
 
 
 // *** Golem Construction dialog ***
@@ -227,3 +232,11 @@ Jermiens Heim in Imnestal scheint gut ausgerüstet zu sein. Dort sollte ich in d
 @49008 = ~Werkstatt für den Golembau
 
 Die Ruinen von Kanaglym, die vom Unterirdischen Fluss aus zugänglich sind, scheinen gut für magische Experimente ausgestattet zu sein. Dort sollte ich in der Lage sein, Golems zu erschaffen.~
+
+@49009 = ~Werkstatt für den Golembau
+
+Der Nekromant Arkion hat sich sehr für meinen Leitfaden des Golembaus interessiert. Ich kann wahrscheinlich bei ihm meine ganz eigenen Puppengolems in Auftrag geben. Ich kann Arkion in seiner Unterkunft in Baldurs Gate, südlich des Wirtshauses 'Elfgesang', finden.~
+
+@49010 = ~Werkstatt für den Golembau
+
+Die Nekromantin Nemphre hat sich sehr für meinen Leitfaden des Golembaus interessiert. Ich kann wahrscheinlich bei ihr meine ganz eigenen Knochenpuppen in Auftrag geben. Ich kann Nemphre in ihrer Unterkunft in Baldurs Gate, östlich des Gasthauses 'Zur Funkelnden Klinge', finden.~

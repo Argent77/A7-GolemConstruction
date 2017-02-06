@@ -1,0 +1,174 @@
+// *** Type-specific actions: Nemphre's Bone Doll ***
+
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    ReallyForceSpellDeadRES("a7!sxbd", Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    SaveLocation("LOCALS", "Location1", [104.316])  // Face(NW)
+    SaveLocation("LOCALS", "Location2", [184.344])  // Face(SW)
+    SaveLocation("LOCALS", "Location3", [280.374])  // Face(NE)
+    SaveLocation("LOCALS", "Location4", [472.116])  // Face(NW)
+    SaveLocation("LOCALS", "Location5", [534.188])  // Face(NE)
+END
+
+// Combat script
+IF
+  NextTriggerObject("nemphre")
+  AttackedBy([GOODCUTOFF], DEFAULT)
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+    MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+  AttackedBy([GOODCUTOFF], DEFAULT)
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+    AttackReevaluate(LastAttackerOf(Myself), 30)
+END
+
+IF
+  Allegiance("nemphre", ENEMY)
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+    MoveToObject("nemphre")
+END
+
+IF
+  See(LastAttackerOf("nemphre"))
+  Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself), 30)
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  !Dead("nemphre")
+  Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #100
+    MoveToObject("nemphre")
+END
+
+
+// Servant script
+IF
+  !GlobalTimerNotExpired("MoveTimer", "LOCALS")
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 1)
+    MoveToSavedLocation("Location1", "LOCALS")
+    Face(NW)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 2)
+    MoveToSavedLocation("Location2", "LOCALS")
+    Face(SW)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 3)
+    MoveToSavedLocation("Location3", "LOCALS")
+    Face(NE)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 4)
+    MoveToSavedLocation("Location4", "LOCALS")
+    Face(NW)
+  RESPONSE #20
+    SetGlobalTimer("MoveTimer", "LOCALS", 10)
+    SetGlobal("Move", "LOCALS", 5)
+    MoveToSavedLocation("Location5", "LOCALS")
+    Face(NE)
+    NoAction()
+END
+
+IF
+  Global("Move", "LOCALS", 1)
+  NearSavedLocation(Myself, "Location1", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 2)
+  NearSavedLocation(Myself, "Location2", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 3)
+  NearSavedLocation(Myself, "Location3", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 4)
+  NearSavedLocation(Myself, "Location4", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  Global("Move", "LOCALS", 5)
+  NearSavedLocation(Myself, "Location5", 0)
+THEN
+  RESPONSE #20
+    IncrementGlobal("Move", "LOCALS", 10)
+END
+
+IF
+  GlobalGT("Move", "LOCALS", 10)
+  GlobalTimerNotExpired("MoveTimer", "LOCALS")
+  !GlobalTimerNotExpired("BusyTimer", "LOCALS")
+  !Allegiance(Myself, ENEMY)
+THEN
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CAST)
+    VerbalConstant(Myself, SELECT_COMMON)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CAST)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CONJURE)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+    SetSequence(SEQ_CONJURE)
+    VerbalConstant(Myself, SELECT_ACTION)
+  RESPONSE #20
+    SetGlobalTimer("BusyTimer", "LOCALS", 6)
+END

@@ -8,112 +8,120 @@ COPY ~%MOD_FOLDER%/items/a7!body.itm~ ~override~
   SAY NAME1 @30000  // Body Parts
   SAY NAME2 @30000  // Body Parts
   SAY UNIDENTIFIED_DESC @30001
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+  PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
 COPY ~%MOD_FOLDER%/items/a7!cbody.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!ibody.bam~ ~override~
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   EXTEND_TOP ~ar0603.bcs~ ~%MOD_FOLDER%/scripts/ar0603_top.baf~
 END
 
 
 // Clay block
-COPY ~%MOD_FOLDER%/items/a7!clay.itm~ ~override~
-  SAY NAME1 @30010  // Clay Block
-  SAY NAME2 @30010  // Clay Block
-  SAY UNIDENTIFIED_DESC @30011
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!clay.itm~ ~override~
+    SAY NAME1 @30010  // Clay Block
+    SAY NAME2 @30010  // Clay Block
+    SAY UNIDENTIFIED_DESC @30011
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!iclay.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!gclay.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!iclay.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!gclay.bam~ ~override~
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!cclay.bam~ ~override~
-    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
-  ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
-    LAF INSTALL_PVRZ
-    INT_VAR
-      original_base_index = original_base_index
-      new_base_index = new_base_index
-    STR_VAR
-      source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!cclay.bam~ ~override~
+      LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+    ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+      LAF INSTALL_PVRZ
+      INT_VAR
+        original_base_index = original_base_index
+        new_base_index = new_base_index
+      STR_VAR
+        source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+      END
     END
   END
 END
 
 
 // Stone block
-COPY ~%MOD_FOLDER%/items/a7!ston.itm~ ~override~
-  SAY NAME1 @30020  // Stone Block
-  SAY NAME2 @30020  // Stone Block
-  SAY UNIDENTIFIED_DESC @30021
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!ston.itm~ ~override~
+    SAY NAME1 @30020  // Stone Block
+    SAY NAME2 @30020  // Stone Block
+    SAY UNIDENTIFIED_DESC @30021
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!iston.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!gston.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!iston.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!gston.bam~ ~override~
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!cston.bam~ ~override~
-    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
-  ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
-    LAF INSTALL_PVRZ
-    INT_VAR
-      original_base_index = original_base_index
-      new_base_index = new_base_index
-    STR_VAR
-      source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!cston.bam~ ~override~
+      LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+    ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+      LAF INSTALL_PVRZ
+      INT_VAR
+        original_base_index = original_base_index
+        new_base_index = new_base_index
+      STR_VAR
+        source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+      END
     END
   END
-END
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-  EXTEND_TOP ~bd5300.bcs~ ~%MOD_FOLDER%/scripts/bd5300_top.baf~
+  ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
+    EXTEND_TOP ~bd5300.bcs~ ~%MOD_FOLDER%/scripts/bd5300_top.baf~
+  END
 END
 
 
 // Iron bar
-COPY ~%MOD_FOLDER%/items/a7!iron.itm~ ~override~
-  SAY NAME1 @30030  // Iron Bar
-  SAY NAME2 @30030  // Iron Bar
-  SAY UNIDENTIFIED_DESC @30031
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!iron.itm~ ~override~
+    SAY NAME1 @30030  // Iron Bar
+    SAY NAME2 @30030  // Iron Bar
+    SAY UNIDENTIFIED_DESC @30031
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!iiron.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!giron.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!iiron.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!giron.bam~ ~override~
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!ciron.bam~ ~override~
-    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
-  ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
-    LAF INSTALL_PVRZ
-    INT_VAR
-      original_base_index = original_base_index
-      new_base_index = new_base_index
-    STR_VAR
-      source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!ciron.bam~ ~override~
+      LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+    ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+      LAF INSTALL_PVRZ
+      INT_VAR
+        original_base_index = original_base_index
+        new_base_index = new_base_index
+      STR_VAR
+        source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+      END
     END
   END
 END
 
 
 // Mithral chunk
-COPY ~%MOD_FOLDER%/items/a7!mith.itm~ ~override~
-  SAY NAME1 @30100  // Chunk of Mithral
-  SAY NAME2 @30100  // Chunk of Mithral
-  SAY UNIDENTIFIED_DESC @30101
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!mith.itm~ ~override~
+    SAY NAME1 @30100  // Chunk of Mithral
+    SAY NAME2 @30100  // Chunk of Mithral
+    SAY UNIDENTIFIED_DESC @30101
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!cmith.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!gmith.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!imith.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!cmith.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!gmith.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!imith.bam~ ~override~
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  EXTEND_TOP ~ar1400.bcs~ ~%MOD_FOLDER%/scripts/ar1400_top.baf~
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    EXTEND_TOP ~ar1400.bcs~ ~%MOD_FOLDER%/scripts/ar1400_top.baf~
+  END
 END
 
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   // Adamantine Ore
   COPY ~%MOD_FOLDER%/items/a7!adam.itm~ ~override~
     SAY NAME1 @30040  // Adamantine Ore
@@ -127,7 +135,7 @@ END
 
 
 // Maggot-infested body
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!mbdy.itm~ ~override~
     SAY NAME1 @30090  // Maggot-infested Body
     SAY NAME2 @30090  // Maggot-infested Body
@@ -143,12 +151,12 @@ COPY ~%MOD_FOLDER%/items/a7!bone.itm~ ~override~
   SAY NAME1 @30050  // Pile of Bones
   SAY NAME2 @30050  // Pile of Bones
   SAY UNIDENTIFIED_DESC @30051
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+  PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
 COPY ~%MOD_FOLDER%/items/a7!ibone.bam~ ~override~
      ~%MOD_FOLDER%/items/a7!gbone.bam~ ~override~
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!cbone.bam~ ~override~
     LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
   ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
@@ -164,7 +172,7 @@ END
 
 
 // Brain tissue
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!brin.itm~ ~override~
     SAY NAME1 @30060  // Brain Tissue
     SAY NAME2 @30060  // Brain Tissue
@@ -175,7 +183,7 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
        ~%MOD_FOLDER%/items/a7!cbrin.bam~ ~override~
 END
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // get one piece from strange "Glass Thingy" in abandoned temple of Cyric
   COPY_EXISTING ~bd7230.are~ ~override~
     READ_SHORT 0x5a numTriggers
@@ -210,67 +218,69 @@ END
 
 
 // Shard of magical ice
-COPY ~%MOD_FOLDER%/items/a7!ice.itm~ ~override~
-  SAY NAME1 @30070  // Shard of Magical Ice
-  SAY NAME2 @30070  // Shard of Magical Ice
-  SAY UNIDENTIFIED_DESC @30071
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!ice.itm~ ~override~
+    SAY NAME1 @30070  // Shard of Magical Ice
+    SAY NAME2 @30070  // Shard of Magical Ice
+    SAY UNIDENTIFIED_DESC @30071
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!iice.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!gice.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!iice.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!gice.bam~ ~override~
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!cice.bam~ ~override~
-    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
-  ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
-    LAF INSTALL_PVRZ
-    INT_VAR
-      original_base_index = original_base_index
-      new_base_index = new_base_index
-    STR_VAR
-      source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
-    END
-  END
-END
-
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  EXTEND_TOP ~ar6005.bcs~ ~%MOD_FOLDER%/scripts/ar6005_top.baf~
-
-  // get one piece from cold machine in Planar Sphere
-  COPY_EXISTING ~ar0412.are~ ~override~
-    READ_SHORT 0x5a numTriggers
-    READ_LONG 0x5c ofsTriggers
-    FOR (idx = 0; idx < numTriggers; ++idx) BEGIN
-      SET curOfs = ofsTriggers + (idx * 0xc4)
-      READ_ASCII (curOfs + 0x00) name ( 32 ) NULL
-      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~Info Trigger 1~) BEGIN
-        WRITE_LONG (curOfs + 0x34) 8    // use activation cursor
-        READ_LONG (curOfs + 0x64) infoText  // strref of original text
-        PATCH_IF (infoText < 0) BEGIN SET infoText = 44979 END  // using predefined default if needed
-        WRITE_LONG (curOfs + 0x64) "-1"
-        READ_ASCII (curOfs + 0x7c) script
-        PATCH_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
-          INNER_ACTION BEGIN
-            EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1.baf~
-            EXTEND_BOTTOM ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1_bottom.baf~ EVAL
-          END
-        END ELSE BEGIN
-          INNER_ACTION BEGIN
-            COMPILE ~%MOD_FOLDER%/scripts/a7!ice1.baf~
-            EXTEND_BOTTOM ~a7!ice1.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1_bottom.baf~ EVAL
-          END
-          WRITE_ASCII (curOfs + 0x7c) "a7!ice1" #8
-        END
-
-        // stop searching
-        SET idx = numTriggers
+  ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!cice.bam~ ~override~
+      LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+    ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+      LAF INSTALL_PVRZ
+      INT_VAR
+        original_base_index = original_base_index
+        new_base_index = new_base_index
+      STR_VAR
+        source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
       END
     END
+  END
+
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    EXTEND_TOP ~ar6005.bcs~ ~%MOD_FOLDER%/scripts/ar6005_top.baf~
+
+    // get one piece from cold machine in Planar Sphere
+    COPY_EXISTING ~ar0412.are~ ~override~
+      READ_SHORT 0x5a numTriggers
+      READ_LONG 0x5c ofsTriggers
+      FOR (idx = 0; idx < numTriggers; ++idx) BEGIN
+        SET curOfs = ofsTriggers + (idx * 0xc4)
+        READ_ASCII (curOfs + 0x00) name ( 32 ) NULL
+        PATCH_IF (~%name%~ STRING_EQUAL_CASE ~Info Trigger 1~) BEGIN
+          WRITE_LONG (curOfs + 0x34) 8    // use activation cursor
+          READ_LONG (curOfs + 0x64) infoText  // strref of original text
+          PATCH_IF (infoText < 0) BEGIN SET infoText = 44979 END  // using predefined default if needed
+          WRITE_LONG (curOfs + 0x64) "-1"
+          READ_ASCII (curOfs + 0x7c) script
+          PATCH_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+            INNER_ACTION BEGIN
+              EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1.baf~
+              EXTEND_BOTTOM ~%script%.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1_bottom.baf~ EVAL
+            END
+          END ELSE BEGIN
+            INNER_ACTION BEGIN
+              COMPILE ~%MOD_FOLDER%/scripts/a7!ice1.baf~
+              EXTEND_BOTTOM ~a7!ice1.bcs~ ~%MOD_FOLDER%/scripts/a7!ice1_bottom.baf~ EVAL
+            END
+            WRITE_ASCII (curOfs + 0x7c) "a7!ice1" #8
+          END
+
+          // stop searching
+          SET idx = numTriggers
+        END
+      END
+  END
 END
 
 
 // Wild magic stone fragment
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!wmag.itm~ ~override~
     SAY NAME1 @30080  // Wild Magic Stone Fragment
     SAY NAME2 @30080  // Wild Magic Stone Fragment
@@ -279,74 +289,84 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!cdmag.bam~ ~override~
        ~%MOD_FOLDER%/items/a7!gdmag.bam~ ~override~
        ~%MOD_FOLDER%/items/a7!idmag.bam~ ~override~
-END
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  EXTEND_TOP ~oh6100.bcs~ ~%MOD_FOLDER%/scripts/oh6100_top.baf~
-  EXTEND_TOP ~ar3005.bcs~ ~%MOD_FOLDER%/scripts/ar3005_top.baf~
-  EXTEND_TOP ~ar3009.bcs~ ~%MOD_FOLDER%/scripts/ar3009_top.baf~
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    EXTEND_TOP ~oh6100.bcs~ ~%MOD_FOLDER%/scripts/oh6100_top.baf~
+    EXTEND_TOP ~ar3005.bcs~ ~%MOD_FOLDER%/scripts/ar3005_top.baf~
+    EXTEND_TOP ~ar3009.bcs~ ~%MOD_FOLDER%/scripts/ar3009_top.baf~
+  END
 END
 
 
 // Ruby Gem
-COPY ~%MOD_FOLDER%/items/a7!ruby.itm~ ~override~
-  SAY NAME2 @30180  // Ruby
-  SAY IDENTIFIED_DESC @30181  // A ruby is a pink to blood-red colored gemstone...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!ruby.itm~ ~override~
+    SAY NAME2 @30180  // Ruby
+    SAY IDENTIFIED_DESC @30181  // A ruby is a pink to blood-red colored gemstone...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!iruby.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!iruby.bam~ ~override~
 
-// Adding ruby gem to random treasure
-COPY_EXISTING ~rndtres.2da~ ~override~
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN
-    TEXT_SPRINT refItem ~misc38~
-  END ELSE BEGIN
-    TEXT_SPRINT refItem ~misc43~
-  END
-  COUNT_2DA_COLS numCols
-  COUNT_2DA_ROWS numCols numRows
-  FOR (curRow = 0; curRow < numRows; ++curRow) BEGIN
-    SET curCol = 0
-    SET found = 0
-    SET freeIndex = 0
-    // searching for emerald entries
-    FOR (curCol = 0; curCol < numCols; ++curCol) BEGIN
-      READ_2DA_ENTRY curRow curCol numCols value
-      PATCH_IF (~%value%~ STRING_EQUAL_CASE ~%refItem%~) BEGIN
-        SET found += 1
+  // Adding ruby gem to random treasure
+  COPY_EXISTING ~rndtres.2da~ ~override~
+    PATCH_IF (GAME_IS_IWDEE) BEGIN
+      TEXT_SPRINT refItem ~misc38~
+    END ELSE BEGIN
+      TEXT_SPRINT refItem ~misc43~
+    END
+    COUNT_2DA_COLS numCols
+    COUNT_2DA_ROWS numCols numRows
+    FOR (curRow = 0; curRow < numRows; ++curRow) BEGIN
+      SET curCol = 0
+      SET found = 0
+      SET freeIndex = 0
+      // searching for emerald entries
+      FOR (curCol = 0; curCol < numCols; ++curCol) BEGIN
+        READ_2DA_ENTRY curRow curCol numCols value
+        PATCH_IF (~%value%~ STRING_EQUAL_CASE ~%refItem%~) BEGIN
+          SET found += 1
+        END
+        PATCH_IF (~%value%~ STRING_EQUAL_CASE ~*~) BEGIN
+          SET freeIndex = curCol
+          SET curCol = numCols
+        END
       END
-      PATCH_IF (~%value%~ STRING_EQUAL_CASE ~*~) BEGIN
-        SET freeIndex = curCol
-        SET curCol = numCols
+      // adding ruby entries in equal measure
+      WHILE (found > 0 AND freeIndex < numCols) BEGIN
+        SET_2DA_ENTRY curRow freeIndex numCols ~A7!RUBY~
+        SET freeIndex += 1
+        SET found -= 1
       END
     END
-    // adding ruby entries in equal measure
-    WHILE (found > 0 AND freeIndex < numCols) BEGIN
-      SET_2DA_ENTRY curRow freeIndex numCols ~A7!RUBY~
-      SET freeIndex += 1
-      SET found -= 1
-    END
-  END
+END
 
 
 // Flesh Golem items
-COPY ~%MOD_FOLDER%/items/a7!eqfl.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!wpfl.itm~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqfl.itm~ ~override~
+       ~%MOD_FOLDER%/items/a7!wpfl.itm~ ~override~
+END
 
 // Clay Golem items
-COPY ~%MOD_FOLDER%/items/a7!eqcl.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!wpcl.itm~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqcl.itm~ ~override~
+       ~%MOD_FOLDER%/items/a7!wpcl.itm~ ~override~
+END
 
 // Stone Golem item
-COPY ~%MOD_FOLDER%/items/a7!eqst.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!wpst.itm~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqst.itm~ ~override~
+       ~%MOD_FOLDER%/items/a7!wpst.itm~ ~override~
+END
 
 // Iron Golem items
-COPY ~%MOD_FOLDER%/items/a7!eqir.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!wpir.itm~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqir.itm~ ~override~
+       ~%MOD_FOLDER%/items/a7!wpir.itm~ ~override~
+END
 
 // Maggot Golem weapon
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!eqmg.itm~ ~override~
        ~%MOD_FOLDER%/items/a7!wpmg.itm~ ~override~
        ~%MOD_FOLDER%/spells/a7!wpmg1.eff~ ~override~
@@ -354,138 +374,227 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
 END
 
 // Bone Golem items
-COPY ~%MOD_FOLDER%/items/a7!eqbo.itm~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqbo.itm~ ~override~
+END
 
 // Brain Golem items
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!eqbr.itm~ ~override~
        ~%MOD_FOLDER%/items/a7!wpbr.itm~ ~override~
 END
 
 // Ice Golem items
-COPY ~%MOD_FOLDER%/items/a7!eqic.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!wpic.itm~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wpic1.spl~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqic.itm~ ~override~
+       ~%MOD_FOLDER%/items/a7!wpic.itm~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpic1.spl~ ~override~
 
-COPY ~%MOD_FOLDER%/spells/a7!wpic2.spl~ ~override~
-  LPF ALTER_SPELL_EFFECT
-  INT_VAR
-    match_opcode = 139  // Display String
-    parameter1 = RESOLVE_STR_REF(@21027)  // Stunned
-  END
+  COPY ~%MOD_FOLDER%/spells/a7!wpic2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 139  // Display String
+      parameter1 = RESOLVE_STR_REF(@21027)  // Stunned
+    END
+END
 
 // Magic Golem weapon
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!eqma.itm~ ~override~
        ~%MOD_FOLDER%/items/a7!wpma.itm~ ~override~
 END
 
 // Lightning Golem weapon
-COPY ~%MOD_FOLDER%/spells/a7!wplt2.spl~ ~override~
-  SAY NAME1 @21020  // Lightning Shield
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!wplt2.spl~ ~override~
+    SAY NAME1 @21020  // Lightning Shield
 
-COPY ~%MOD_FOLDER%/items/a7!wplt.itm~ ~override~
-     ~%MOD_FOLDER%/spells/a7!wplt1.spl~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!wplt.itm~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wplt1.spl~ ~override~
+END
 
 // Ruby Golem items
-COPY ~%MOD_FOLDER%/items/a7!eqru.itm~ ~override~
-     ~%MOD_FOLDER%/items/a7!wpru.itm~ ~override~
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!eqru.itm~ ~override~
+       ~%MOD_FOLDER%/items/a7!wpru.itm~ ~override~
+END
 
+// Doll Golem items
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!wpdg.itm~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpdga.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpdgb.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpdgc.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpdgd.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpdge.spl~ ~override~
+
+  COPY ~%MOD_FOLDER%/spells/a7!wpdg.spl~ ~override~
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 139   // Display text
+      power         = 1
+      target        = 2     // Preset target
+      parameter1    = RESOLVE_STR_REF(@40010)  // Laughing uncontrollably
+      timing        = 1     // Instant/Permanent until death
+      resist_dispel = 1     // Dispel/Not bypass resistance
+      insert_point  = 0
+    END
+
+  OUTER_FOR (idx = 0; idx < 10; ++idx) BEGIN
+    COPY ~%MOD_FOLDER%/spells/a7!wpdg%idx%.spl~ ~override~
+  END
+
+  COPY ~%MOD_FOLDER%/spells/a7!wpdgx.spl~ ~override~
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 330   // Float text
+      power         = 1
+      target        = 2     // Preset target
+      parameter1    = RESOLVE_STR_REF(@40009)  // ::Hee hee::
+      timing        = 4     // Delay/Permanent
+      duration      = 4
+      resist_dispel = 1     // Dispel/Not bypass resistance
+      probability1  = 79
+      probability2  = 30
+      insert_point  = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 330   // Float text
+      power         = 1
+      target        = 2     // Preset target
+      parameter1    = RESOLVE_STR_REF(@40008)  // ::Ho ho::
+      timing        = 4     // Delay/Permanent
+      duration      = 2
+      resist_dispel = 1     // Dispel/Not bypass resistance
+      probability1  = 100
+      probability2  = 50
+      insert_point  = 0
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 330   // Float text
+      power         = 1
+      target        = 2     // Preset target
+      parameter1    = RESOLVE_STR_REF(@40007)  // ::Ha ha::
+      timing        = 4     // Delay/Permanent
+      duration      = 0
+      resist_dispel = 1     // Dispel/Not bypass resistance
+      probability1  = 49
+      probability2  = 0
+      insert_point  = 0
+    END
+END
+
+// Bone Doll weapon
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!wpbd.itm~ ~override~
+END
 
 // Deep Bloodstone Gem
-COPY ~%MOD_FOLDER%/items/a7!glfl.itm~ ~override~
-  SAY NAME1 @30120  // Deep Bloodstone Gem
-  SAY NAME2 @30120  // Deep Bloodstone Gem
-  SAY UNIDENTIFIED_DESC @30121  // ...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!glfl.itm~ ~override~
+    SAY NAME1 @30120  // Deep Bloodstone Gem
+    SAY NAME2 @30120  // Deep Bloodstone Gem
+    SAY UNIDENTIFIED_DESC @30121  // ...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!cglfl.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!iglfl.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!cglfl.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!iglfl.bam~ ~override~
+END
 
 
 // Bag of Coral Powder
-COPY ~%MOD_FOLDER%/items/a7!glcl.itm~ ~override~
-  SAY NAME1 @30130  // Enchanted Coral Powder
-  SAY NAME2 @30130  // Enchanted Coral Powder
-  SAY UNIDENTIFIED_DESC @30131  // ...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!glcl.itm~ ~override~
+    SAY NAME1 @30130  // Enchanted Coral Powder
+    SAY NAME2 @30130  // Enchanted Coral Powder
+    SAY UNIDENTIFIED_DESC @30131  // ...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!cglcl.bam~ ~override~
-END
+  ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!cglcl.bam~ ~override~
+  END
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  // TODO: remove after IWDEE has been upgraded to v2.x
-  COPY ~%MOD_FOLDER%/items/iwdee/a7!iglcl.bam~ ~override~
-END ELSE BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!iglcl.bam~ ~override~
-    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
-  ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
-    LAF INSTALL_PVRZ
-    INT_VAR
-      original_base_index = original_base_index
-      new_base_index = new_base_index
-    STR_VAR
-      source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    // TODO: remove after IWDEE has been upgraded to v2.x
+    COPY ~%MOD_FOLDER%/items/iwdee/a7!iglcl.bam~ ~override~
+  END ELSE BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!iglcl.bam~ ~override~
+      LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+    ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+      LAF INSTALL_PVRZ
+      INT_VAR
+        original_base_index = original_base_index
+        new_base_index = new_base_index
+      STR_VAR
+        source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+      END
     END
   END
 END
 
 
 // Mimic's Blood
-COPY ~%MOD_FOLDER%/items/a7!glst.itm~ ~override~
-  SAY NAME1 @30140  // Mimic's Blood
-  SAY NAME2 @30140  // Mimic's Blood
-  SAY UNIDENTIFIED_DESC @30141  // ...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!glst.itm~ ~override~
+    SAY NAME1 @30140  // Mimic's Blood
+    SAY NAME2 @30140  // Mimic's Blood
+    SAY UNIDENTIFIED_DESC @30141  // ...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!cglst.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!iglst.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!cglst.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!iglst.bam~ ~override~
+END
 
 
 // Chips of Cold Iron
-COPY ~%MOD_FOLDER%/items/a7!glir.itm~ ~override~
-  SAY NAME1 @30150  // Chips of Cold Iron
-  SAY NAME2 @30150  // Chips of Cold Iron
-  SAY UNIDENTIFIED_DESC @30151  // ...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!glir.itm~ ~override~
+    SAY NAME1 @30150  // Chips of Cold Iron
+    SAY NAME2 @30150  // Chips of Cold Iron
+    SAY UNIDENTIFIED_DESC @30151  // ...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-COPY ~%MOD_FOLDER%/items/a7!cglir.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!iglir.bam~ ~override~
+  COPY ~%MOD_FOLDER%/items/a7!cglir.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!iglir.bam~ ~override~
+END
 
 
 // Spectral obsidian orb
-COPY ~%MOD_FOLDER%/items/a7!glmi.itm~ ~override~
-  SAY NAME1 @30160  // Glowing Black Orb
-  SAY NAME2 @30161  // Spectral Obsidian Orb
-  SAY UNIDENTIFIED_DESC @30162  // ...
-  SAY IDENTIFIED_DESC @30163  // ...
-  PATCH_IF (GAME_IS ~iwdee~) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/items/a7!glmi.itm~ ~override~
+    SAY NAME1 @30160  // Glowing Black Orb
+    SAY NAME2 @30161  // Spectral Obsidian Orb
+    SAY UNIDENTIFIED_DESC @30162  // ...
+    SAY IDENTIFIED_DESC @30163  // ...
+    PATCH_IF (GAME_IS_IWDEE) BEGIN WRITE_ASCII 0x58 ~~ #8 END // no description image
 
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!cglmi.bam~ ~override~
-END
+  ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!cglmi.bam~ ~override~
+  END
 
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  // TODO: remove after IWDEE has been upgraded to v2.x
-  COPY ~%MOD_FOLDER%/items/iwdee/a7!iglmi.bam~ ~override~
-END ELSE BEGIN
-  COPY ~%MOD_FOLDER%/items/a7!iglmi.bam~ ~override~
-    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
-  ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
-    LAF INSTALL_PVRZ
-    INT_VAR
-      original_base_index = original_base_index
-      new_base_index = new_base_index
-    STR_VAR
-      source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    // TODO: remove after IWDEE has been upgraded to v2.x
+    COPY ~%MOD_FOLDER%/items/iwdee/a7!iglmi.bam~ ~override~
+  END ELSE BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!iglmi.bam~ ~override~
+      LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+    ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN
+      LAF INSTALL_PVRZ
+      INT_VAR
+        original_base_index = original_base_index
+        new_base_index = new_base_index
+      STR_VAR
+        source_file = EVAL ~%MOD_FOLDER%/items/mos%original_base_index%.pvrz~
+      END
     END
   END
 END
 
 
 // Blood of a (Fallen) Solar
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!glad1.itm~ ~override~
     SAY NAME1 @30170  // Blood of a Solar
     SAY NAME2 @30171  // Blood of a Solar
@@ -500,49 +609,53 @@ ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
 
   COPY ~%MOD_FOLDER%/items/a7!cglad.bam~ ~override~
        ~%MOD_FOLDER%/items/a7!iglad.bam~ ~override~
-END
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
   // Demogorgon drops a vial
-  COPY_EXISTING ~demogor2.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY ~\(SetGlobal("SPRITE_IS_DEADDEMOGOR2","GLOBAL",1)\)~ ~\1 DropItem("a7!glad2", [-1.-1])~
-    END
-  BUT_ONLY
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    COPY_EXISTING ~demogor2.bcs~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~\(SetGlobal("SPRITE_IS_DEADDEMOGOR2","GLOBAL",1)\)~ ~\1 DropItem("a7!glad2", [-1.-1])~
+      END
+    BUT_ONLY
+  END
 END
 
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   // Notes about golem building locations in SoD
-  COPY ~%MOD_FOLDER%/items/a7!note1.itm~ ~override~
-    SAY NAME1 @100019  // Scribbled Notes
-    SAY NAME2 @100019  // Scribbled Notes
-    SAY UNIDENTIFIED_DESC @100020 // ...
-    SAY IDENTIFIED_DESC @100020 // ...
-END
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
-  // Notes about golem building locations in BG2
-  COPY ~%MOD_FOLDER%/items/a7!note2.itm~ ~override~
-    SAY NAME1 @100019  // Scribbled Notes
-    SAY NAME2 @100019  // Scribbled Notes
-    SAY UNIDENTIFIED_DESC @100022 // ...
-    SAY IDENTIFIED_DESC @100022 // ...
-END
-ACTION_IF (GAME_IS ~iwdee~) BEGIN
-  // Add a note early on to give the player a hint about a golem building location
-  COPY ~%MOD_FOLDER%/items/a7!note3.itm~ ~override~
-    SAY NAME1 @100019  // Scribbled Notes
-    SAY NAME2 @100019  // Scribbled Notes
-    SAY UNIDENTIFIED_DESC @100027 // ...
-    SAY IDENTIFIED_DESC @100027 // ...
-END
+  ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!note1.itm~ ~override~
+      SAY NAME1 @100019  // Scribbled Notes
+      SAY NAME2 @100019  // Scribbled Notes
+      SAY UNIDENTIFIED_DESC @100020 // ...
+      SAY IDENTIFIED_DESC @100020 // ...
+  END
 
-COPY ~%MOD_FOLDER%/items/a7!cnote.bam~ ~override~
-     ~%MOD_FOLDER%/items/a7!inote.bam~ ~override~
+  // Notes about golem building locations in BG2
+  ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!note2.itm~ ~override~
+      SAY NAME1 @100019  // Scribbled Notes
+      SAY NAME2 @100019  // Scribbled Notes
+      SAY UNIDENTIFIED_DESC @100022 // ...
+      SAY IDENTIFIED_DESC @100022 // ...
+  END
+
+  // Add a note early on to give the player a hint about a golem building location
+  ACTION_IF (GAME_IS_IWDEE) BEGIN
+    COPY ~%MOD_FOLDER%/items/a7!note3.itm~ ~override~
+      SAY NAME1 @100019  // Scribbled Notes
+      SAY NAME2 @100019  // Scribbled Notes
+      SAY UNIDENTIFIED_DESC @100027 // ...
+      SAY IDENTIFIED_DESC @100027 // ...
+  END
+
+  COPY ~%MOD_FOLDER%/items/a7!cnote.bam~ ~override~
+       ~%MOD_FOLDER%/items/a7!inote.bam~ ~override~
+END
 
 
 // Pieces of machinery for golem building
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   OUTER_FOR (idx = 1; idx <= 4; ++idx) BEGIN
     COPY ~%MOD_FOLDER%/items/a7!eqm%idx%.itm~ ~override~
       SAY NAME1 @30110  // Piece of machinery

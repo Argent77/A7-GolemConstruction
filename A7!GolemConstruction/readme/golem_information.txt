@@ -858,6 +858,68 @@ Golems described in these tomes are unique, and therefore not available as lesse
   same or another ability again. This ability replaces "Teleport".
 
 
+Golems that can be commissioned in BG:EE
+========================================
+
+These types of golems are described in the "Forbidden Manual of Golem Building" which can be found somewhere during 
+your adventures in the BG1 part of the game. You have to find an experienced mage who may be able to construct them 
+for you. More about it below.
+
+1. Doll Golem
+- Ingredients:
+  - One full set of body parts
+  - One cursed Antidote potion
+- Stats:
+  - STR: 12
+  - HP: 40
+  - AC: 4
+  - THAC0: 11
+  - APR: 1
+  - Saves: 13/14/13/14/14
+- Resistances:
+  - Magic: 50
+  - Cold: 80
+  - Magic Cold: 80
+  - Electricity: 50
+  - Piercing: 25
+  - Missile: 25
+- Immune to non-magical weapons
+- Special: Each attack has a chance to apply an uncontrollable laughter to the target if it fails a save vs. spell 
+  with a +2 bonus. The victim becomes unable to perform any other actions. Starting with the second round, each 
+  successive round causes +1d4 damage compared to the previous round, which is caused by the muscle spasms imposed by 
+  the laughter. The victim is allowed to make a save vs. spell with a +2 bonus after every round to end the laughter. 
+  Otherwise it ends after one turn or when removed by a Dispel Magic. Magic resistance can prevent the effect 
+  altogether. Undead and constructs are not affected. After the effect ended the victim is fatigued for half the time 
+  it was under the effect of laughter, which includes a -1 penalty to AC, THAC0 and all saving throws.
+- This golem can be built by the necromancer Arkion (for a fee) who lives in Baldur's Gate, south of the Elfsong Tavern.
+
+2. Bone Doll
+- Ingredients:
+  - A pile of bones
+  - A small portion of life energy
+- Stats:
+  - STR: 12
+  - HP: 30
+  - AC: 6
+  - THAC0: 10
+  - APR: 2
+  - Saves: 13/14/13/14/14
+- Resistances:
+  - Magic: 75
+  - Fire: 20
+  - Magic Fire: 20
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Piercing: 50
+  - Missile: 50
+- Immune to non-magical weapons
+- Special: The bone doll explodes when it dies which causes 2d6 piercing damage and 1d6 crushing damage to everyone 
+  in 15 feet radius.
+- This golem can be built by the necromancer Nemphre (for a fee) who lives in Baldur's Gate, east of the Blade and 
+  Stars Inn.
+
+
 Each golem has the following abilities by default:
 1. Dismiss:  Activating this ability will cause the golem to disintegrate. The process is irreversible.
 2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with 

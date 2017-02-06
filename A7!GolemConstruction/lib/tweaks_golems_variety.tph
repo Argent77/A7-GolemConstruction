@@ -1,6 +1,6 @@
 // *** Tweaks: Greater variety of enemy golem types ***
 
-ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // Stone Golem
   COPY_EXISTING ~bd1000.are~ ~override~
     LPF ARE_INDEX_OF_ACTOR STR_VAR name = "BDMENGO1" RET offset END
@@ -14,7 +14,7 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   BUT_ONLY
 END
 
-ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Planar Prison
   COPY_EXISTING ~ar0521.are~ ~override~
     // Replacing golems

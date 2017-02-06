@@ -1,0 +1,44 @@
+// *** Type-specific actions (Doll Golem) ***
+
+// Work-around to ensure golem is properly equipped after being released from Imprisonment
+IF
+  Die()
+  !StateCheck(Myself, STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Continue()
+END
+
+IF
+  Die()
+  StateCheck(Myself, A7_STATE_IMMEDIATE_DEATH)  // STATE_EXPLODING_DEATH | STATE_FLAME_DEATH | STATE_ACID_DEATH | STATE_DEAD
+  GlobalLT("Command", "LOCALS", 2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("A7!GolemCount", "GLOBAL", -1)
+END
+
+// Doll Golem attacks Nemphre on sight
+IF
+  See("nemphre")
+  Global("A7!NemphreAttack", "LOCALS", 1)
+THEN
+RESPONSE #100
+  SetGlobal("A7!NemphreAttack", "LOCALS", 2)
+  ClearAllActions()
+  StartCutSceneMode()
+  StartCutScene("a7!ctdg1")
+END
+
+// Work-around for issue: Fix creature specifications
+IF
+  !Specifics(Myself, A7!GOLEM)
+THEN
+  RESPONSE #100
+    ChangeGeneral(Myself, HUMANOID)
+    ChangeRace(Myself, GOLEM)
+    ChangeClass(Myself, GOLEM_FLESH)
+    ChangeSpecifics(Myself, A7!GOLEM)
+    ChangeGender(Myself, NIETHER)
+END

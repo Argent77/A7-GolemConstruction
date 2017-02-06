@@ -11,10 +11,11 @@
 @35 = ~Mache Golems anfaellig fuer bestimmte Zauber~
 @40 = ~Vermindere Waffenimmunitaeten und Resistenzen bei erschaffenen Golems~
 
-@100 = ~Diese Komponente benoetigt BG:SoD oder BG2:EE.~
+@100 = ~Diese Komponente benoetigt BG:EE, BG2:EE oder IWD:EE.~
 @101 = ~Diese Option benoetigt die Hauptkomponente der Mod.~
 @102 = ~Es wurde kein freier Eintrag fuer Monsteranimationen gefunden.~
 @103 = ~Diese Komponente benoetigt Spielversion >= v2.0 (BG:SoD und BG2:EE) oder >= v1.4 (IWD:EE).~
 @104 = ~Diese Komponente benoetigt BG2:EE.~
 @105 = ~Diese Komponente benoetigt BG2:EE oder IWD:EE.~
 @106 = ~Diese Komponente benoetigt BG:SoD oder BG2:EE.~
+@107 = ~Diese Komponente benoetigt BG:SoD oder BG2:EE.~

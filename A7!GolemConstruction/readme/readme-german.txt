@@ -12,8 +12,8 @@ Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spel
 Übersicht
 ~~~~~~~~~
 
-Eine Mod für Siege of Dragonspear, BG2:EE, EET (Enhanced Edition Trilogy) und IWD:EE, die es 
-deinen Magiern erlaubt, eigene Golems zu erschaffen.
+Eine Mod für BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) und IWD:EE, die es deinen Magiern 
+erlaubt, eigene Golems zu erschaffen.
 
 Im Spiel gibt es eine Menge Golems, die eurer Gruppe über den Weg laufen. Sie sind mächtig, 
 resistent und äußerst loyal gegenüber ihren Schöpfern. Leider sind sie euch häufig feindlich 
@@ -34,25 +34,23 @@ Installation
 
 Dies ist eine WeiDU Mod. Das bedeutet, sie ist sehr einfach zu installieren. Entpackt die 
 heruntergeladene Zipdatei in das Spieleverzeichnis und startet "setup-A7!GolemConstruction.exe". 
-Folgt den Anweisungen des Programms und die Mod ist startbereit. Ihr solltet ein neues "Siege of 
-Dragonspear" oder BG2:EE-Spiel starten, um nichts zu verpassen.
+Folgt den Anweisungen des Programms und die Mod ist startbereit. Ihr solltet ein neues Spiel 
+starten, um nichts zu verpassen.
 
-Wichtig: Die Mod benötigt mindestens BG2:EE-Spielversion 2.0 oder IWD:EE-Spielversion 1.4.
+Wichtig: Die Mod benötigt mindestens Spielversion 2.0 für BG:EE und BG2:EE, oder Spielversion 1.4 
+         für IWD:EE.
 
 
 Komponenten
 ~~~~~~~~~~~
 
-1. "Golems erschaffen" fuer Magier (für BG:SoD, BG2:EE, EET und IWD:EE)
+1. "Golems erschaffen" fuer Magier (für BG:EE, BG2:EE, EET und IWD:EE)
 
 Die Hauptkomponente dieser Mod. Sie installiert eine Reihe von Leitfäden zum Erschaffen von Golems 
 in ganz Faerûn. Den "Leitfaden der Golemkonstruktion" gibt es in sechs Bänden. Jeder Band 
 beschreibt einen anderen Golemtyp. Die Leitfäden besitzen eine magische Ladung, die dem Anwender 
 die Spezialfähigkeiten geben, Golems zu erschaffen oder zu reparieren. Wenn diese Ladung verbraucht 
 wurde, verwandelt sich der Leitfaden in ein reguläres Buch.
-
-Es wird gemunkelt, dass es noch eine andere Sammlung an Leitfäden gibt, die den Bau von exotischen 
-Golems erklären.
 
 Die Leitfäden der Golemkonstruktion lehren euch die folgenden Golemtypen:
 - Fleischgolems in niederer, regulärer, höherer und perfekter Variante.
@@ -61,6 +59,10 @@ Die Leitfäden der Golemkonstruktion lehren euch die folgenden Golemtypen:
 - Eisengolems in niederer, regulärer, höherer und perfekter Variante.
 - Mithrilgolems in niederer, regulärer, höherer und perfekter Variante.
 - Adamantitgolems in niederer, regulärer, höherer und perfekter Variante (nicht in IWD:EE).
+
+Es wird gemunkelt, dass es noch eine andere Sammlung an Leitfäden gibt, die den Bau von exotischen 
+Golems erklären. Während eures BG1-Abenteuers könnt ihr außerdem Golems in Auftrag geben, falls 
+ihr die entsprechenden Leitfäden finden könnt.
 
 Jeder Golem benötigt bestimmte Materialien zur Konstruktion des Körpers, and manchmal weitere 
 Komponenten für Spezialfähigkeiten und Schlüsselmerkmale. Perfekte Golemvarianten zu erschaffen 
@@ -141,6 +143,8 @@ Writing, coding and testing: Argent77
 Polish translation: Cahir
 French translation: Gwendolyne
 
+Doll golem and bone doll creature animations ported from Diablo II by Blizzard Entertainment.
+
 
 Copyright Notice
 ~~~~~~~~~~~~~~~~
@@ -151,6 +155,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+3.2
+- Added two new golem types that can be commissioned during the BG1 part of the game
 
 3.1
 - Fixed incorrect path to IWDEE-specific lines of text from English to the selected language

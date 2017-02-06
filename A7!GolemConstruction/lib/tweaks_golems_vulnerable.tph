@@ -236,7 +236,7 @@ IF_EXISTS
 
 
 // Spell-induced transformation: Death Spell (auto-slays Maggot Golem)
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/spells/a7!kill.spl~ ~override~
 
   COPY_EXISTING ~spwi605.spl~ ~override~  // Death Spell
@@ -259,9 +259,9 @@ END
 
 
 // Specific spell effect: Cone of Cold and Ice Storm (cause Clay Golems to become slow)
-ACTION_IF (GAME_IS ~bgee~) BEGIN
+ACTION_IF (GAME_IS_SOD) BEGIN
   COPY ~%MOD_FOLDER%/spells/bgee/a7!slow.spl~ ~override~
-END ELSE ACTION_IF (GAME_IS ~iwdee~) BEGIN
+END ELSE ACTION_IF (GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/spells/iwdee/a7!slow.spl~ ~override~
 END ELSE BEGIN
   COPY ~%MOD_FOLDER%/spells/bg2ee/a7!slow.spl~ ~override~
@@ -290,7 +290,7 @@ IF_EXISTS
 
 
 // Specific spell effect: Sunray (reduces physical resistance of Adamantite Golems)
-ACTION_IF (NOT GAME_IS ~iwdee~) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/spells//a7!burn.bam~ ~override~
        ~%MOD_FOLDER%/spells//a7!burn.vvc~ ~override~
 
