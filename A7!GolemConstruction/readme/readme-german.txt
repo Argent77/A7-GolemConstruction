@@ -123,8 +123,8 @@ positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informatione
 2.7. Vermindere Waffenimmunitäten und Resistenzen bei erschaffenen Golems (für BG:SoD, BG2:EE and EET)
 Viele Gegner haben selbst im fortgeschrittenen Spiel Probleme, Golems zu treffen oder zu verletzen, 
 da sie über viele Immunitäten und hohe Resistenzen verfügen. Diese Komponente vermindert die 
-Widerstandsfähigkeit von konstruierten Golems, in dem sie Waffenimmunitäten absenkt und diverse 
-magische, elementare unt physische Resistenzen vermindert.
+Widerstandsfähigkeit von konstruierten Golems, in dem sie Waffenimmunitäten absenkt (i.d.R. um eine 
+Stufe, manchmal um zwei) und diverse magische, elementare unt physische Resistenzen vermindert.
 
 
 Einzelheiten
@@ -158,6 +158,9 @@ History
 
 3.2
 - Added two new golem types that can be commissioned during the BG1 part of the game
+- Added mod support for pure BG:EE installations (without SoD)
+- Fixed a compatibility issue with SCS
+- Several minor fixes and improvements
 
 3.1
 - Fixed incorrect path to IWDEE-specific lines of text from English to the selected language

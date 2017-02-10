@@ -5,23 +5,38 @@
 Wprowadzenie
 ============
 
-Golemy buduje się przy pomocy zdolności „Budowanie golema”, której można nauczyć się, studiując różne podręczniki budowania golemów. Krótki dialog umożliwia ci wybranie rodzaju i wariantu golema, którego chcesz zbudować. Skonstruowanie fizycznego ciała zajmuje od kilku godzin do kilku dni, po których następuje proces rzucania zaklęć. Istnieje 4% szans, że golem uwolni się i zwróci na 1k4 rund przeciw rzucającemu zaklęcia, zanim ostatecznie podda się jego woli. Po ukończeniu budowy, rzucający czar będzie zbyt zmęczony, by móc używać zaklęć lub walczyć przez kilka kolejnych rund.
+Golemy buduje się przy pomocy zdolności „Budowanie golema”, której można nauczyć się, studiując różne podręczniki 
+budowania golemów. Krótki dialog umożliwia ci wybranie rodzaju i wariantu golema, którego chcesz zbudować. 
+Skonstruowanie fizycznego ciała zajmuje od kilku godzin do kilku dni, po których następuje proces rzucania zaklęć. 
+Istnieje 4% szans, że golem uwolni się i zwróci na 1k4 rund przeciw rzucającemu zaklęcia, zanim ostatecznie podda się 
+jego woli. Po ukończeniu budowy, rzucający czar będzie zbyt zmęczony, by móc używać zaklęć lub walczyć przez kilka 
+kolejnych rund.
 
-Ze względu na konieczność korzystania z niezbędnej aparatury jesteś ograniczony do kilku wybranych lokacji, na których możesz zbudować golema. Obiecującymi miejscami są z reguły (opuszczone) twierdze potężnych magów. Więcej szczegółów na ten temat znajduje się na końcu dokumentu.
+Ze względu na konieczność korzystania z niezbędnej aparatury jesteś ograniczony do kilku wybranych lokacji, na których 
+możesz zbudować golema. Obiecującymi miejscami są z reguły (opuszczone) twierdze potężnych magów. Więcej szczegółów na 
+ten temat znajduje się na końcu dokumentu.
 
-Zdolność „Budowanie golema” może być używana tyle razy ile to konieczne bez konieczności odpoczynku pomiędzy kolejnymi użyciami (aczkolwiek jest to zalecane).
+Zdolność „Budowanie golema” może być używana tyle razy ile to konieczne bez konieczności odpoczynku pomiędzy kolejnymi 
+użyciami (aczkolwiek jest to zalecane).
 
-Podręczniki budowy golemów nauczają również zdolności „Naprawianie golema”. Można jej użyć raz dziennie w dowolnej lokacji, jednak nie gdy w pobliżu są wrogowie. Proces naprawy zajmuje dwie rundy. Mocno uszkodzone golemy mogą wymagać więcej użyć, aby dojść do pełni sprawności.
+Podręczniki budowy golemów nauczają również zdolności „Naprawianie golema”. Można jej użyć raz dziennie w dowolnej 
+lokacji, jednak nie gdy w pobliżu są wrogowie. Proces naprawy zajmuje dwie rundy. Mocno uszkodzone golemy mogą wymagać 
+więcej użyć, aby dojść do pełni sprawności.
 
 
 Konwencjonalne golemy
 =====================
 
-Rodzaje konwencjonalnych golemów opisane są w „Podręczniku budowy golemów”, który ma sześć tomów. Same księgi nie są zbyt trudne do zdobycia. Niektóre można kupić u kupców, inne mogą być ukryte w jakimś lochu i strzeżone przez rozmaite istoty.
+Rodzaje konwencjonalnych golemów opisane są w „Podręczniku budowy golemów”, który ma sześć tomów. Same księgi nie są 
+zbyt trudne do zdobycia. Niektóre można kupić u kupców, inne mogą być ukryte w jakimś lochu i strzeżone przez rozmaite 
+istoty.
 
-Materiały do budowy golemów również można uzyskać z różnych źródeł. Pospolitsze składniki można kupić u kupców, znaleźć przy ciałach zabitych istot lub w różnych lokacjach, podczas gdy droższe i bardziej egzotyczne materiały można zdobyć w inny sposób.
+Materiały do budowy golemów również można uzyskać z różnych źródeł. Pospolitsze składniki można kupić u kupców, 
+znaleźć przy ciałach zabitych istot lub w różnych lokacjach, podczas gdy droższe i bardziej egzotyczne materiały 
+można zdobyć w inny sposób.
 
-Konwencjonalne golemy można budować w kilku wariantach: pomniejszym, zwykłym, większym i idealnym. Każdy z nich wymaga różnych materiałów. Wariant idealny wymaga również konkretnego artefaktu, który występuje w ograniczonej ilości.
+Konwencjonalne golemy można budować w kilku wariantach: pomniejszym, zwykłym, większym i idealnym. Każdy z nich wymaga 
+różnych materiałów. Wariant idealny wymaga również konkretnego artefaktu, który występuje w ograniczonej ilości.
 
 
 1. Golemy z ciała
@@ -42,7 +57,8 @@ Pomniejszy golem z ciała:
   - Zimno: 75
   - Magiczne zimno: 75
   - Elektryczność: 75
-- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą	się w zasięgu jego wzroku.
+- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą 
+  się w zasięgu jego wzroku.
 
 Golem z ciała:
 - Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
@@ -63,7 +79,8 @@ Golem z ciała:
   - Kłute: 25
   - Pociski: 25
 - Niewrażliwość na niemagiczne bronie
-- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą	się w zasięgu jego wzroku.
+- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą 
+  się w zasięgu jego wzroku.
 
 Większy golem z ciała:
 - Minimalny poziom: 14 (-2 dla mistrzów przemian, +3 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
@@ -86,7 +103,7 @@ Większy golem z ciała:
   - Pociski: 75
 - Niewrażliwość na niemagiczne bronie
 - Może rzucić na siebie czar Śmierdząca chmura
-- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą	 
+- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą 
   się w zasięgu jego wzroku
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
@@ -137,7 +154,7 @@ Pomniejszy gliniany golem:
   - Sieczne: 75
   - Kłute: 75
   - Pociski: 75
-- Istnieje 1% szans, że gliniany golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą   	
+- Istnieje 1% szans, że gliniany golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą 
   się w zasięgu jego wzroku.
 
 Gliniany golem:
@@ -477,7 +494,8 @@ Mithrilowy golem:
 - Regeneracja punktów życia: 1/turę
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2.
 - Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i 
-  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu)
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i 
+  zapobiega ogłuszeniu)
 
 Większy mithrilowy golem:
 - Minimalny poziom: 27 (-2 dla mistrzów przemian, +8 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
@@ -506,7 +524,8 @@ Większy mithrilowy golem:
 - Regeneracja punktów życia: 1/3 rundy
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2
 - Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i 
-  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu)
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i 
+  zapobiega ogłuszeniu)
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny mithrilowy golem:
@@ -537,7 +556,8 @@ Idealny mithrilowy golem:
 - Regeneracja punktów życia: 1/rundę
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1, +2 i +3
 - Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i 
-  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu)
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i 
+  zapobiega ogłuszeniu)
 - Zawsze dzieli się po śmierci na dwa zwykłe golemy tego samego typu.
 
 
@@ -596,7 +616,8 @@ Adamantytowy golem:
 - Regeneracja punktów życia: 1/turę
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2
 - Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i 
-  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu).
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i 
+  zapobiega ogłuszeniu).
 
 Większy adamantytowy golem:
 - Minimalny poziom: 30 (-2 dla mistrzów przemian, +8 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
@@ -625,7 +646,8 @@ Większy adamantytowy golem:
 - Regeneracja punktów życia: 1/3 rundy
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1, +2 i +3
 - Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i 
-  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu)
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i 
+  zapobiega ogłuszeniu)
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny adamantytowy golem:
@@ -656,14 +678,16 @@ Idealny adamantytowy golem:
 - Regeneracja punktów życia: 1/rundę
 - Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1, +2 i +3
 - Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i 
-  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu)
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i 
+  zapobiega ogłuszeniu)
 - Zawsze dzieli się po śmierci na dwa zwykłe golemy tego samego typu.
 
 
 Egzotyczne golemy
 =============
 
-Rodzaje egzotycznych golemów opisane są w „Sekretnym podręczniku budowy golemów”, który również powinien mieć sześć tomów, lecz jest trudniejszy do zdobycia.
+Rodzaje egzotycznych golemów opisane są w „Sekretnym podręczniku budowy golemów”, który również powinien mieć sześć tomów, 
+lecz jest trudniejszy do zdobycia.
 
 Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją one w wariantach pomniejszym, większym i idealnym.
 
@@ -691,7 +715,10 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
 - Podczas budowy golema larwalnego istnieje 15% szans, że rzucający czar zarazi się chorobą od jego pokrytego larwami ciała, w
   wyniku czego będzie tracił 2 punkty życia co rundę przez pięć tur, a ponadto będzie w tym czasie spowolniony.
 - Specjalny atak: „Duszenie”: Oprócz otrzymania 2k6 obrażeń obuchowych cel zostaje unieruchomiony na jedną rundę i będzie 
-  otrzymywał 1 obrażenie kłute co sekundę, jeśli nie wykona rzutu obronnego przeciw czarom. W każdej rundzie cel musi wykonać rzut obronny przeciw czarom z modyfikatorem +4, aby się uwolnić, w przeciwnym wypadku pozostanie unieruchomiony oraz otrzyma obrażenia przez kolejną rundę. Efekt może zostać usunięty za pomocą czaru Rozproszenie magii lub zablokowany przez odporność na magię
+  otrzymywał 1 obrażenie kłute co sekundę, jeśli nie wykona rzutu obronnego przeciw czarom. W każdej rundzie cel musi wykonać 
+  rzut obronny przeciw czarom z modyfikatorem +4, aby się uwolnić, w przeciwnym wypadku pozostanie unieruchomiony oraz otrzyma 
+  obrażenia przez kolejną rundę. Efekt może zostać usunięty za pomocą czaru Rozproszenie magii lub zablokowany przez odporność 
+  na magię
 - Istnieje 1% szans, że golem larwalny wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
   się w zasięgu jego wzroku
 - Golem larwalny istnieje tylko 1k4 +6 dni czasu gry. Po upłynięciu tego czasu istnieje 50% szans, że wpadnie on w amok na 1k6 
@@ -703,7 +730,7 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   - Cztery sterty kości
   - Jeden zwój z czarem Animacja martwego
   - Podczas budowy kościanego golema istnieje 50% szans na wyssanie jednego poziomu z rzucającego czar i dodatkowe 10% szans 
-	na wyssanie drugiego poziomu
+    na wyssanie drugiego poziomu
 - Statystyki:
   - S: 21
   - PŻ: 65
@@ -724,7 +751,8 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   - Pociski: 50
 - Niewrażliwość na niemagiczne bronie
 - Może rzucić czar „Ohydny śmiech”, który działa na wrogów znajdujących się w zasięgu 10 metrów od golema. Ofiary, które nie 
-  wykonają rzutu obronnego przeciw czarom. będą uciekały ze strachu przez 2k6 rund. Jeśli nie wykonają również rzutu obronnego przeciw śmierci, będą zamiast tego sparaliżowane ze strachu.
+  wykonają rzutu obronnego przeciw czarom. będą uciekały ze strachu przez 2k6 rund. Jeśli nie wykonają również rzutu obronnego 
+  przeciw śmierci, będą zamiast tego sparaliżowane ze strachu.
 
 3. Mózgowy golem
 - Minimalny poziom: 17 (-2 dla mistrzów przemian, +4 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
@@ -751,7 +779,8 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
 - Regeneracja punktów życia: 1/turę
 - Niewrażliwość na bronie niemagiczne i o umagicznieniu +1
 - Może rzucić zaklęcie Uderzenie umysłowe, które działa na wszystkich wrogów w promieniu 10 metrów od golema. Ofiary zostają 
-  ogłuszone na 2k4 rundy oraz otrzymują 2k8 stłuczeń (rzut obronny przeciw czarom zmniejsza otrzymane obrażenia o połowę i zapobiega ogłuszeniu). Czar ten nie działa na nieumarłych, golemy i mykonidów.
+  ogłuszone na 2k4 rundy oraz otrzymują 2k8 stłuczeń (rzut obronny przeciw czarom zmniejsza otrzymane obrażenia o połowę i 
+  zapobiega ogłuszeniu). Czar ten nie działa na nieumarłych, golemy i mykonidów.
 
 4. Lodowy golem
 - Minimalny poziom: 19 (-2 dla mistrzów przemian, +4 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
@@ -806,7 +835,8 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
 - Każdy udany atak dystansowy wysysa jeden ładunek z naładowanych przedmiotów oraz jeden zapamiętany czar maga
 - Może rzucić czar Błysk dzikiej magii, który zadaje celowi 3k10 obrażeń od magii i może wywołać falę dzikiej energii
 - Ulega zniszczeniu po wejściu do strefy martwej magii. W takim przypadku istnieje 50% szans, że golem wybuchnie energią 
-  magiczną, zadając 2k6 magicznych obrażeń wszystkim, którzy znajdują się w promieniu 10 metrów od niego (rzut obronny przeciw czarom zmniejsza otrzymane obrażenia o połowę).
+  magiczną, zadając 2k6 magicznych obrażeń wszystkim, którzy znajdują się w promieniu 10 metrów od niego (rzut obronny 
+  przeciw czarom zmniejsza otrzymane obrażenia o połowę).
 
 6. Golem błyskawic
 - Minimalny poziom: 22 (-2 dla mistrzów przemian, +6 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
@@ -831,7 +861,11 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
 - Stałe działanie tarczy błyskawic: atakujący otrzymują 1k8+2 obrażeń elektrycznych po każdym udanym trafieniu
 - Może rzucić na wrogów czar Wyładowanie łańcuchowe
 - Może rzucić czar „Błyskawiczna podróż”, który pozwala golemowi na podróż do dowolnego miejsca w zasięgu jego wzroku,
-  zmieniając go w potężną błyskawicę zbliżającą się do celu z prędkością światła. Tak szybka podróż powoduje wytworzenie fali uderzeniowej, która odrzuca wszystkie istoty znajdujące się w zasięgu 2,5 metra od miejsca docelowego, zadając im 1k6 obrażeń od elektryczności. Będący efektem podróży grzmot może również spowodować trwającą 1k4 rund głuchotę u każdej istoty znajdującej się w zasięgu, jeśli ta nie wykona rzutu obronnego przeciw zionięciom. Golem nie musi ponadto czekać, aż jego aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności. Zdolność ta zastępuje „Teleportację”.
+  zmieniając go w potężną błyskawicę zbliżającą się do celu z prędkością światła. Tak szybka podróż powoduje wytworzenie 
+  fali uderzeniowej, która odrzuca wszystkie istoty znajdujące się w zasięgu 2,5 metra od miejsca docelowego, zadając 
+  im 1k6 obrażeń od elektryczności. Będący efektem podróży grzmot może również spowodować trwającą 1k4 rund głuchotę u 
+  każdej istoty znajdującej się w zasięgu, jeśli ta nie wykona rzutu obronnego przeciw zionięciom. Golem nie musi ponadto 
+  czekać, aż jego aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności. Zdolność ta zastępuje „Teleportację”.
 
 
 Golems that can be commissioned in BG:EE
@@ -875,7 +909,7 @@ for you. More about it below.
   - A small portion of life energy
 - Stats:
   - STR: 12
-  - HP: 30
+  - HP: 35
   - AC: 6
   - THAC0: 10
   - APR: 2
@@ -899,9 +933,11 @@ for you. More about it below.
 Każdy golem dysponuje domyślnie następującymi zdolnościami:
 1. Odesłanie: Aktywowanie tej zdolności powoduje zniszczenie golema. Proces ten jest nieodwracalny.
 2. Teleportacja: Golem teleportuje się w pobliże wybranego członka drużyny, znajdującego się w zasięgu wzroku. Zdolność ta
-   może być konieczna dla golemów o dużym rozmiarze, aby nie blokowały się w wąskich przejściach. Można jej użyć tylko, jeśli w pobliżu nie ma żadnych wrogów.
+   może być konieczna dla golemów o dużym rozmiarze, aby nie blokowały się w wąskich przejściach. Można jej użyć tylko, jeśli 
+   w pobliżu nie ma żadnych wrogów.
 
-Możesz również wydawać swoim golemom proste polecenia. Pomniejsze warianty golemów z ciała, glinianych i kamiennych, a także golemy larwalne mogą wykonywać następujące polecenia:
+Możesz również wydawać swoim golemom proste polecenia. Pomniejsze warianty golemów z ciała, glinianych i kamiennych, a także 
+golemy larwalne mogą wykonywać następujące polecenia:
 - Za mną! (Golema można kontrolować, ale nie może działać na własną rękę. Jest to domyślne działanie zaraz po aktywacji).
 - Stój na straży! (Golem staje się neutralny i nie rusza się z zajmowanej przez siebie pozycji).
 - Zniszcz siebie! (Powoduje zniszczenie golema. Polecenie to jest identyczne ze zdolnością Odesłanie, lecz może być użyte 
@@ -913,27 +949,35 @@ Bardziej zaawansowane golemy mogą również wykonywać następujące polecenia:
 - Stój na straży i broń obszaru! (Golem staje się neutralny i atakuje każdą wrogą istotę w zasięgu wzroku. Następnie zawsze 
   wraca na pozycję, której broni).
 
-Nie zapominaj dbać o swoje golemy, gdyż mogą one zacząć funkcjonować nieprawidłowo, jeśli zostaną mocno uszkodzone. Usterki te mogą zostać jednak usunięte za pomocą zdolności „Naprawienie golema”.
+Nie zapominaj dbać o swoje golemy, gdyż mogą one zacząć funkcjonować nieprawidłowo, jeśli zostaną mocno uszkodzone. Usterki 
+te mogą zostać jednak usunięte za pomocą zdolności „Naprawienie golema”.
 
 
 Czary, które wpływają w jakiś sposób na golemy
 ==============================================
 
-Z racji tego, że golemy są nieożywionymi konstruktami, niektóre zaklęcia mogą na nie wpływać inaczej niż na innych. Następujące efekty mogą zostać wywołane po zainstalowaniu komponentu o nazwie „Golemy staja się podatne na określone efekty czarów”:
+Z racji tego, że golemy są nieożywionymi konstruktami, niektóre zaklęcia mogą na nie wpływać inaczej niż na innych. 
+Następujące efekty mogą zostać wywołane po zainstalowaniu komponentu o nazwie „Golemy staja się podatne na określone 
+efekty czarów”:
 - Ciało w kamień:
-  Przemienia golemy z ciała w kamienne golemy tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw petryfikacji/polimorfii.
+  Przemienia golemy z ciała w kamienne golemy tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw 
+  petryfikacji/polimorfii.
 - Kamień w ciało:
-  Przemienia kamienne golemy w golemy z ciała tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw petryfikacji/polimorfii.
+  Przemienia kamienne golemy w golemy z ciała tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw 
+  petryfikacji/polimorfii.
 - Plugawy uwiąd Abi-Dalzima:
-  Zaklęcie to sprawia, że wszystkie gliniane golemy zostają pozbawione całej zawartości wody, przemieniając się tym samym w kamienne golemy, jeśli nie wykonają rzutu obronnego przeciw czarom z modyfikatorem -2.
+  Zaklęcie to sprawia, że wszystkie gliniane golemy zostają pozbawione całej zawartości wody, przemieniając się tym samym 
+  w kamienne golemy, jeśli nie wykonają rzutu obronnego przeciw czarom z modyfikatorem -2.
 - Zaklęcie śmierci:
   Automatycznie zabija golemy larwalne (bez rzutu obronnego).
 - Stożek zimna i Lodowa nawałnica:
   Trafione tym zaklęciem gliniane golemy zostają spowolnione na pięć rund, jeśli nie wykonają rzutu obronnego przeciw czarom.
 - Promień słońca:
-  Sprawia, że stop adamantyny, z którego zbudowane są adamantytowe golemy, ulega osłabieniu, osłabiając na stałe odporności golemów, jeśli te nie wykonają rzutu obronnego przeciw czarom. Zdolność „Naprawianie golema” usuwa ten efekt.
+  Sprawia, że stop adamantyny, z którego zbudowane są adamantytowe golemy, ulega osłabieniu, osłabiając na stałe odporności golemów, 
+  jeśli te nie wykonają rzutu obronnego przeciw czarom. Zdolność „Naprawianie golema” usuwa ten efekt.
 - Wysokopoziomowe zaklęcia oparte na ogniu:
-  Zaklęcia te spowodują rozgrzanie żelaznych golemów na pięć rund (bez rzutu obronnego). W tym czasie mogą one, oprócz fizycznych obrażeń, zadawać również obrażenia od ognia.
+  Zaklęcia te spowodują rozgrzanie żelaznych golemów na pięć rund (bez rzutu obronnego). W tym czasie mogą one, oprócz fizycznych 
+  obrażeń, zadawać również obrażenia od ognia.
   Znane są następujące czary mogące wywołać ten efekt: Rój meteorów, Oddech smoka, Kometa, Zapalająca chmura oraz Burza ognia.
 
 
@@ -944,20 +988,25 @@ Siege of Dragonspear:
 - Czarodziejskie Rozmaitości:
   Możesz wynająć drugie piętro od właściciela sklepu.
 - Skarbnica Nieśmierci:
-  Loch ten znajduje się pod Krasnoludzkimi wykopaliskami. Musisz najpierw oczyścić ten obszar z nieumarłych sług i pozbyć się urzędującego władcę.
+  Loch ten znajduje się pod Krasnoludzkimi wykopaliskami. Musisz najpierw oczyścić ten obszar z nieumarłych sług i pozbyć 
+  się urzędującego władcę.
 - Ruiny of Kanaglymu:
-  Ruiny są dostępne z obszaru Podziemnej rzeki. Musisz najpierw oczyścić ten obszar ze wszystkich wrogów i uporać się z Kherriun'em.
+  Ruiny są dostępne z obszaru Podziemnej rzeki. Musisz najpierw oczyścić ten obszar ze wszystkich wrogów i uporać się 
+  z Kherriun'em.
 
 Cienie Amn:
 - Kula sfer:
   Pierwszy obszar Kuli może być odpowiedni do budowy golemów (po pozbyciu się poprzedniego właściciela, rzecz jasna).
 - Dom Jermiena:
-  Istnieje możliwość przekonania Jermiena, by ten użyczył swego domu w Imnesvale do budowania własnych golemów, jeśli postać główna potrafi rzucać czary lub w drużynie znajduje się Imoen.
+  Istnieje możliwość przekonania Jermiena, by ten użyczył swego domu w Imnesvale do budowania własnych golemów, jeśli postać 
+  główna potrafi rzucać czary lub w drużynie znajduje się Imoen.
 
 Twierdza Strażnika:
 - Drugi poziom:
-  Biblioteka czarodzieja jest odpowiednio wyposażona, ale musisz najpierw rozbroić wszelkie mechanizmy obronne (w tym istotę, która strzeże urządzenia teleportującego na następny poziom).
+  Biblioteka czarodzieja jest odpowiednio wyposażona, ale musisz najpierw rozbroić wszelkie mechanizmy obronne (w tym istotę, 
+  która strzeże urządzenia teleportującego na następny poziom).
 
 Tron Bhaala:
 - Sfera kieszeniowa:
-  Miejsce to wygląda na wystarczająco bezpieczne do przeprowadzania wszelkiego rodzaju magicznych eksperymentów. Księgarz Łazarz może zapewnić odpowiedni sprzęt w przystępnej cenie.
+  Miejsce to wygląda na wystarczająco bezpieczne do przeprowadzania wszelkiego rodzaju magicznych eksperymentów. Księgarz 
+  Łazarz może zapewnić odpowiedni sprzęt w przystępnej cenie.

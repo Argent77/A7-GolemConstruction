@@ -915,7 +915,7 @@ for you. More about it below.
   - A small portion of life energy
 - Stats:
   - STR: 12
-  - HP: 30
+  - HP: 35
   - AC: 6
   - THAC0: 10
   - APR: 2

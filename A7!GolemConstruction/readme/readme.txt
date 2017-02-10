@@ -119,8 +119,8 @@ improve or even change the nature of golems. You can find out more in "golem_inf
 2.7. Reduce weapon immunities and resistances for constructed golems (for BG:SoD, BG2:EE and EET)
 A great number of enemies have trouble hitting or damaging golems because of their numerous immunities 
 and high resistances, even in later parts of the game. This component nerfs the power of 
-constructed golems by reducing their weapon enchantment immunities as well as by lowering various 
-magical, elemental and physical resistances.
+constructed golems by reducing their weapon enchantment immunities (usually by one level, sometimes 
+by two) as well as by lowering various magical, elemental and physical resistances.
 
 
 Details
@@ -155,6 +155,9 @@ History
 
 3.2
 - Added two new golem types that can be commissioned during the BG1 part of the game
+- Added mod support for pure BG:EE installations (without SoD)
+- Fixed a compatibility issue with SCS
+- Several minor fixes and improvements
 
 3.1
 - Fixed incorrect path to IWDEE-specific lines of text from English to the selected language

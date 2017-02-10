@@ -166,6 +166,9 @@ History
 
 3.2
 - Added two new golem types that can be commissioned during the BG1 part of the game
+- Added mod support for pure BG:EE installations (without SoD)
+- Fixed a compatibility issue with SCS
+- Several minor fixes and improvements
 
 3.1
 - Fixed incorrect path to IWDEE-specific lines of text from English to the selected language

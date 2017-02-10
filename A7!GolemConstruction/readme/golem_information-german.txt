@@ -901,13 +901,13 @@ erschaffen kann. Mehr dazu weiter unten.
 - Jeder Angriff kann das Opfer mit einem unkontrollierbaren Gelächter infizieren, falls der Rettungswurf gg. Zauber +2 
   misslingt. Das Opfer ist dann nicht mehr in der Lage, irgendwelche Aktionen auszuführen. In jeder weiteren Runde 
   richten Muskelkrämpfe, die durch das Gelächter ausgelöst werden, +1W4 Schaden pro Runde an. Das Opfer kann jede 
-  Runde einen weiteren Rettungswurf gg. Zauber +2 würfeln, um diesen Anfall zu überwinden. Anderenfalls endet der 
-  Anfall nach einer Phase oder einem erfolgreichen 'Magie bannen' Zauber. Magiewiderstand kann diesen Effekt aufhalten. 
+  Runde einen weiteren Rettungswurf gg. Zauber +2 würfeln, um diesen Anfall zu überwinden. Anderenfalls endet er 
+  nach einer Phase oder einem erfolgreichen 'Magie bannen' Zauber. Magiewiderstand kann diesen Effekt aufhalten. 
   Untote und Konstrukte sind nicht betroffen. Wenn der Anfall überwunden wurde, ist das Opfer für die Hälfte der Runden 
-  erschöpft, den es im Lachanfall verbracht hat. Die Erschöpfung schlägt sich durch einen +1 Malus auf RK, ETW0 
+  erschöpft, den es im Lachanfall verbracht hat. Die Erschöpfung schlägt sich durch einen -1 Malus auf RK, ETW0 
   und alle Rettungswürfe nieder.
 - Der Nekromant Arkion wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Er lebt in Baldurs Gate, 
-  südlich des Wirtshauses 'Elfgesang'.
+  südlich der Taverne „Elfgesang“.
 
 2. Knochenpuppe
 - Zutaten:
@@ -915,7 +915,7 @@ erschaffen kann. Mehr dazu weiter unten.
   - Ein wenig Lebensenergie
 - Stats:
   - Stärke: 12
-  - TP: 30
+  - TP: 35
   - RK: 6
   - ETW0: 10
   - APR: 2
@@ -930,10 +930,10 @@ erschaffen kann. Mehr dazu weiter unten.
   - Stich: 50
   - Geschoss: 50
 - Immun gegen nichtmagische Waffen
-- Knochenpuppen explodieren wenn sie zerstört werden und richten bei allen Geschöpfen in 5 m Radius 2W6 Stichschaden 
+- Knochenpuppen explodieren wenn sie zerstört werden und richten bei allen Geschöpfen in 4 m Radius 2W6 Stichschaden 
   und 1W6 Wuchtschaden an.
 - Die Nekromantin Nemphre wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Sie lebt in Baldurs Gate, 
-  östlich des Gasthauses 'Zur Funkelnden Klinge'.
+  östlich des Gasthauses „Zur Funkelnden Klinge“.
 
 
 Jeder Golem hat zusätzlich die folgenden Fähigkeiten:

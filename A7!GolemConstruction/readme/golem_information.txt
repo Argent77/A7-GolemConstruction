@@ -899,7 +899,7 @@ for you. More about it below.
   - A small portion of life energy
 - Stats:
   - STR: 12
-  - HP: 30
+  - HP: 35
   - AC: 6
   - THAC0: 10
   - APR: 2
@@ -915,7 +915,7 @@ for you. More about it below.
   - Missile: 50
 - Immune to non-magical weapons
 - Special: The bone doll explodes when it dies which causes 2d6 piercing damage and 1d6 crushing damage to everyone 
-  in 15 feet radius.
+  in 10 feet radius.
 - This golem can be built by the necromancer Nemphre (for a fee) who lives in Baldur's Gate, east of the Blade and 
   Stars Inn.
 
