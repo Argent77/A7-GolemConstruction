@@ -28,12 +28,14 @@ END
 IF ~GlobalGT("HelpNemphre", "GLOBAL", 1) Global("A7!GolemBuildState", "LOCALS", 1) GlobalTimerExpired("A7!GolemBuildTimer", "LOCALS") Global("A7!GolemLifeForce", "LOCALS", 0)~ nemphr.finished.intro.1
   SAY @46504 /* Ah, there you are. I've been waiting for you. I hope you are alive and well? */
   = @46505 /* The bone doll is finished. Almost. It merely needs a spark of life for the finishing touch. Now hold still. It doesn't hurt much. */
-  ++ @46506 /* What are you-- */ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 2) ClearAllActions() StartCutSceneMode() StartCutScene("a7!ctbd1")~ EXIT
+  + ~LevelGT(LastTalkedToBy, 1)~ + @46506 /* What are you-- */ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 2) ClearAllActions() StartCutSceneMode() StartCutScene("a7!ctbd1")~ EXIT
+  + ~LevelLT(LastTalkedToBy, 2)~ + @46506 /* What are you-- */ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 2) ClearAllActions() StartCutSceneMode() StartCutScene("a7!ctbd2")~ EXIT
 END
 
 IF ~Allegiance(LastTalkedToBy, PC) GlobalGT("HelpNemphre", "GLOBAL", 1) Global("A7!GolemBuildState", "LOCALS", 1) GlobalTimerExpired("A7!GolemBuildTimer", "LOCALS") !Global("A7!GolemLifeForce", "LOCALS", 0)~ nemphr.finished.1
   SAY @46507 /* There you are. Your bone doll is complete. You know what comes next. Please hold still for a moment. */
-  IF ~~ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 2) ClearAllActions() StartCutSceneMode() StartCutScene("a7!ctbd1")~ EXIT
+  IF ~LevelGT(LastTalkedToBy, 1)~ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 2) ClearAllActions() StartCutSceneMode() StartCutScene("a7!ctbd1")~ EXIT
+  IF ~LevelLT(LastTalkedToBy, 2)~ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 2) ClearAllActions() StartCutSceneMode() StartCutScene("a7!ctbd2")~ EXIT
 END
 
 // Finished taking life force

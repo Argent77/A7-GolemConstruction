@@ -1,9 +1,10 @@
 // *** Installs golem manuals and related resources ***
 
 // Shared resources
-ACTION_IF (GAME_IS_BGEE) BEGIN
+ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tome3.bam~ ~override~
-END ELSE BEGIN
+END
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!tome1.bam~ ~override~
        ~%MOD_FOLDER%/items/a7!tome2.bam~ ~override~
        ~%MOD_FOLDER%/items/a7!abil.eff~ ~override~

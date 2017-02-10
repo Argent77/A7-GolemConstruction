@@ -414,6 +414,7 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   COPY ~%MOD_FOLDER%/spells/a7!smbd.spl~ ~override~
        ~%MOD_FOLDER%/spells/a7!smbd.eff~ ~override~
        ~%MOD_FOLDER%/spells/a7!smbd2.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!smbd3.spl~ ~override~
        ~%MOD_FOLDER%/spells/a7!smdg.spl~ ~override~
        ~%MOD_FOLDER%/spells/a7!smdg.eff~ ~override~
 END

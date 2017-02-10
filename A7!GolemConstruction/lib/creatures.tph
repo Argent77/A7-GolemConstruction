@@ -1269,6 +1269,7 @@ END
 
 ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   COMPILE ~%MOD_FOLDER%/scripts/a7!ctbd1.baf~
+          ~%MOD_FOLDER%/scripts/a7!ctbd2.baf~
 END
 
 
