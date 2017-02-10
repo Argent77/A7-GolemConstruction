@@ -198,6 +198,58 @@
 @45511 = ~Geben Sie sich einen Ruck! Was kann schon groß passieren? Ich verspreche Ihnen, besonders vorsichtig zu sein.~
 
 
+// *** The necromancer Arkion ***
+@46000 = ~Ich bin auf ein sonderbares Buch gestoßen, das sich anscheinend mit der Erschaffung seltsamer Konstrukte befasst. Es hört sich ziemlich grausig an, daher dachte ich, Euch könnte es interessieren.~
+@46001 = ~Ich möchte gern einen Puppengolem in Auftrag geben. Seid Ihr dazu in der Lage?~
+@46002 = ~Aber sicher, Bruder. Lebt wohl!~
+@46003 = ~Lieber nicht. Lebt wohl!~
+@46004 = ~Kommt später wieder. Diese Arbeit braucht seine Zeit.~
+@46005 = ~Ah, Ihr seid es? Schaut Euch nur dieses Prachtstück an. Ist es nicht wunderbar? Und es gehört Euch. Jetzt nehmt es mit Euch, bevor ich meine Meinung ändere.~
+@46006 = ~Zeigt her! Hmm, ja... sehr interessant. Ihr habt gut daran getan, es zu mir zu bringen. Ich kann es gar nicht erwarten, so etwas auszuprobieren.~
+@46007 = ~Heißt das, Ihr könnt mir einen Golem bauen?~
+@46008 = ~Nicht so schnell, mein dunkler Bruder. Zuerst brauche ich natürlich die richtigen Zutaten. Auch möchte ich für meine Arbeit entlohnt werden.~ ~Nicht so schnell, meine dunkle Schwester. Zuerst brauche ich natürlich die richtigen Zutaten. Auch möchte ich für meine Arbeit entlohnt werden.~
+@46009 = ~Bringt mir eine frischen Kadaver und einen verfluchten Gegengifttrank für den Golemkörper. Der Preis für meine Arbeit beträgt 2000 Goldmünzen. Seid Ihr noch interessiert?~
+@46010 = ~Ja natürlich.~
+@46011 = ~Ich habe gerade nicht genug Goldmünzen bei mir. Vielleicht später.~
+@46012 = ~Ich habe keinen frischen Kadaver bei mir. Vielleicht später.~
+@46013 = ~Ich habe keinen verfluchten Gegengifttrank bei mir. Vielleicht später.~
+@46014 = ~Nein, wohl doch nicht. Lebt wohl!~
+@46015 = ~Aber sicher. Habt Ihr mir dafür einen frischen Kadaver, einen verfluchten Gegengifttrank und 2000 Goldmünzen mitgebracht?~
+@46016 = ~Ja. Hier ist alles.~
+@46017 = ~Ah, der sieht ja noch richtig saftig aus. Legt alles dort hinten auf den Tisch.~
+@46018 = ~Ich denke, dass der Bau nicht länger als einen Tag dauern wird. Kommt morgen wieder.~
+
+// *** The necromancer Nemphre ***
+@46500 = ~Glaubt dieser einfältige Arkion, dass mich solche halbherzigen Versuche aus der Fassung bringen? Solange ich lebe wird er mir niemals ebenbürtig sein.~
+@46501 = ~Und Ihr seid wirklich ein Narr, wenn Ihr seinen Arbeiten so blindlings vertraut.~
+@46502 = ~Hrmpf! Ich gebe mich nicht mit Untergebenen ab. Verschwindet!~
+@46503 = ~Sagte ich Euch nicht, später wiederzukommen? Lasst mich in Ruhe meine Arbeit machen!~
+@46504 = ~Ah, da seid Ihr ja. Ich habe bereits auf Euch gewartet. Hoffentlich seid Ihr so gesund und munter wie Ihr ausseht?~
+@46505 = ~Die Knochenpuppe ist fertig. Oder fast. Für den letzten Schliff brauche ich lediglich noch ein klein wenig Lebensenergie. Jetzt haltet mal still. Es wird nur etwas zwicken.~
+@46506 = ~Was habt Ihr--~
+@46507 = ~Da seid Ihr ja. Eure Knochenpuppe ist fertig. Ihr wisst ja, was jetzt kommt. Also haltet mal für einen Moment still.~
+@46508 = ~Hmm. Ihr seid wirklich unverwüstlich, mein guter Herr.~ ~Hmm. Ihr seid wirklich unverwüstlich, meine gute Frau.~
+@46509 = ~Was habt Ihr mir angetan?!~
+@46510 = ~Sagte ich nicht, dass ich ein wenig Eurer Lebensenergie brauche? Macht Euch deswegen nicht zu viele Gedanken. Sie wird sich mit der Zeit neu bilden. Eine ausgiebige Rast sollte reichen.~
+@46511 = ~So. Da habt Ihr Eure Knochenpuppe. Jetzt geht bitte.~
+@46512 = ~Ah, der Narr kehrt zurück? Was will er dieses Mal?~ ~Ah, die Närrin kehrt zurück? Was will sie dieses Mal?~
+@46513 = ~Wie wäre es mit einem Angebot? Ich bin auf ein sonderbares Buch gestoßen, das sich in grausigen Einzelheiten mit der Erschaffung seltsamer Konstrukte befasst. Ich dachte, das würde Euer Interesse wecken?~
+@46514 = ~Ich möchte den Bau einer Knochenpuppe in Auftrag geben.~
+@46515 = ~Ich will gar nichts. Lebt wohl!~
+@46516 = ~Gebt her! Hmm... das ist mal ein interessanter Fund. Ich nehme an, Ihr wollt einen dieser Konstrukte für Euch selbst haben?~
+@46517 = ~Ja genau. Schafft Ihr das?~
+@46518 = ~Aber sicher doch, wenn Ihr mir die nötigen Zutaten bringt.~
+@46519 = ~Ich brauche eine kompletten Satz Knochen für den Golemkörper und eine Möglichkeit, sie zu beleben. Aber dazu später mehr. Außerdem arbeite ich nicht für umsonst. Zahlt mir 2000 Goldmünzen im Voraus oder verschwendet nicht weiter meine Zeit.~
+@46520 = ~Natürlich. Hier ist alles.~
+@46521 = ~Ich habe gerade nicht genug Goldmünzen bei mir. Vielleicht später.~
+@46522 = ~Ich habe keine Satz Knochen bei mir. Vielleicht später.~
+@46523 = ~Ich bin nicht wirklich daran interessiert. Lebt wohl!~
+@46524 = ~Natürlich. Habt Ihr einen Satz Knochen und meine 2000 Goldmünzen bei Euch?~
+@46525 = ~Ja. Hier ist alles.~
+@46526 = ~Es scheint alles da zu sein. Die Konstruktion wird wohl einen Tag in Anspruch nehmen. Kommt morgen gesund und munter zurück. Ihr werdet es nicht bereuen.~
+@46527 = ~Dann habe ich Euch nichts weiter zu sagen. Kommt erst wieder, wenn Ihr alles bei Euch habt.~
+
+
 // *** Journal entries ***
 @49000 = ~Werkstatt für den Golembau~
 
@@ -235,8 +287,8 @@ Die Ruinen von Kanaglym, die vom Unterirdischen Fluss aus zugänglich sind, sche
 
 @49009 = ~Werkstatt für den Golembau
 
-Der Nekromant Arkion hat sich sehr für meinen Leitfaden des Golembaus interessiert. Ich kann wahrscheinlich bei ihm meine ganz eigenen Puppengolems in Auftrag geben. Ich kann Arkion in seiner Unterkunft in Baldurs Gate, südlich des Wirtshauses 'Elfgesang', finden.~
+Der Nekromant Arkion hat sich sehr für meinen Leitfaden des Golembaus interessiert. Ich kann wahrscheinlich bei ihm meine ganz eigenen Puppengolems in Auftrag geben. Ich kann Arkion in seiner Unterkunft in Baldurs Gate, südlich der Taverne „Elfgesang“, finden.~
 
 @49010 = ~Werkstatt für den Golembau
 
-Die Nekromantin Nemphre hat sich sehr für meinen Leitfaden des Golembaus interessiert. Ich kann wahrscheinlich bei ihr meine ganz eigenen Knochenpuppen in Auftrag geben. Ich kann Nemphre in ihrer Unterkunft in Baldurs Gate, östlich des Gasthauses 'Zur Funkelnden Klinge', finden.~
+Die Nekromantin Nemphre hat sich sehr für meinen Leitfaden des Golembaus interessiert. Ich kann wahrscheinlich bei ihr meine ganz eigenen Knochenpuppen in Auftrag geben. Ich kann Nemphre in ihrer Unterkunft in Baldurs Gate, östlich des Gasthauses „Zur Funkelnden Klinge“, finden.~
