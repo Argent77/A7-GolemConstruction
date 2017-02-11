@@ -9,11 +9,11 @@
 @40003 = ~dwadzieścia cztery~
 @40004 = ~trzydzieści sześć~
 @40005 = ~czterdzieści osiem~
-@40006 = ~What the hell is going on?! To oblivion with you!~
+@40006 = ~Co u licha się tu dzieje?! Do diabła z wami!~
 @40007 = ~::Ha ha::~
 @40008 = ~::Ho ho::~
 @40009 = ~::Hee hee::~
-@40010 = ~Laughing uncontrollably~
+@40010 = ~Niekontrolowany śmiech~
 
 
 // *** Golem Construction dialog ***
@@ -226,6 +226,72 @@
 @45510 = ~Hmm. Ponieważ tak łatwo poradziliście sobie z moim nieudanym eksperymentem, myślę, że mógłbym zrobić dla was wyjątek. No dobrze, dam wam swoją prywatną księgę budowy golemów. Przestudiujcie ją uważnie i nie popełnijcie moich błędów.~
 @45511 = ~Proszę, Panie J! Co takiego może się stać, jeśli wypróbujemy tego sami? Obiecuję być wyjątkowo ostrożna. Bardzo proszę!~
 
+// *** The necromancer Arkion ***
+@46000 = ~Natknąłem się ostatnio na ciekawą księgę, w której opisano sposób budowy dziwacznych rodzajów golemów. Wygląda to nieco makabrycznie, pomyślałem więc, że może cię zainteresować.~
+         ~Natknęłam się ostatnio na ciekawą księgę, w której opisano sposób budowy dziwacznych rodzajów golemów. Wygląda to nieco makabrycznie, pomyślałam więc, że może cię zainteresować.~
+@46001 = ~Chcę złożyć zamówienie na budowę lalkowego golema. Podołasz temu zadaniu? ~
+@46002 = ~Oczywiście, kuzynie. Żegnaj.~
+         ~Oczywiście, kuzynko. Żegnaj.~
+@46003 = ~Nie sądzę. Żegnaj.~
+@46004 = ~Wróć później. Takie zadanie wymaga czasu.~
+@46005 = ~Ach, wróciłeś. Spójrz na to cudo. Prawdziwe dzieło sztuki i należy ono do ciebie. Zabierz je tylko sprzed moich oczu, zanim się rozmyślę.~
+         ~Ach, wróciłaś. Spójrz na to cudo. Prawdziwe dzieło sztuki i należy ono do ciebie. Zabierz je tylko sprzed moich oczu, zanim się rozmyślę.~
+@46006 = ~Niech no spojrzę! Hmm, tak… ciekawa lektura. Dobrze, że przyniosłeś ją do mnie. Już nie mogę się doczekać, aż ją przestudiuję.~
+         ~Niech no spojrzę! Hmm, tak… ciekawa lektura. Dobrze, że przyniosłaś ją do mnie. Już nie mogę się doczekać, aż ją przestudiuję.~
+@46007 = ~Czy to oznacza, że możesz dla mnie budować golemy?~
+@46008 = ~Nie tak szybko, mój mroczny kuzynie. Najpierw będę potrzebował odpowiednich materiałów. I chcę też otrzymać zapłatę za swoje usługi.~
+         ~Nie tak szybko, moja mroczna kuzynko. Najpierw będę potrzebował odpowiednich materiałów. I chcę też otrzymać zapłatę za swoje usługi.~
+@46009 = ~Potrzebuję świeżych zwłok i przeklętego antidotum, by ukształtować ciało golema. Moje honorarium to dwa tysiące sztuk złota. Nadal zainteresowany?~
+         ~Potrzebuję świeżych zwłok i przeklętego antidotum, by ukształtować ciało golema. Moje honorarium to dwa tysiące sztuk złota. Nadal zainteresowana?~
+@46010 = ~Tak, jestem zainteresowany.~
+         ~Tak, jestem zainteresowana.~
+@46011 = ~Nie mam w tej chwili wystarczającej ilości pieniędzy. Może później.~
+@46012 = ~Nie mam przy sobie świeżych zwłok. Może później.~
+@46013 = ~Nie mam przy sobie przeklętego antidotum. Może później.~
+@46014 = ~Nie jestem zainteresowany. Żegnaj.~
+         ~Nie jestem zainteresowana. Żegnaj.~
+@46015 = ~Oczywiście. Masz ze sobą świeże zwłoki, przeklęte antidotum i dwa tysiące sztuk złota?~
+@46016 = ~Tak, oto one.~
+@46017 = ~Ach, te zwłoki wyglądają soczyście. Połóż wszystko na tamtym stole.~
+@46018 = ~Myślę, że budowa zajmie jeden dzień. Wróć do mnie jutro.~
+
+// *** The necromancer Nemphre ***
+@46500 = ~Czyżby biedaczek Arkion myślał, że może pokonać mnie takimi niemrawymi próbami? Póki żyję, nigdy nie dorówna mi mocą.~
+@46501 = ~A ty jesteś głupcem, zawierzając tak bezgranicznie jego dziełom.~
+         ~A ty jesteś głupia, zawierzając tak bezgranicznie jego dziełom.~
+@46502 = ~Nie zadaję się ze sługami. Idź precz.~
+@46503 = ~Mówiłam, żebyś przyszedł później. A teraz daj mi pracować!~
+         ~Mówiłam, żebyś przyszła później. A teraz daj mi pracować!~
+@46504 = ~Ach, tu jesteś. Czekałam na ciebie. Mam nadzieję, że zdrowie ci dopisuje?~
+@46505 = ~Kościana lalka jest gotowa. Prawie. Trzeba w nią jeszcze tylko tchnąć nieco życia. Nie ruszaj się. Nie będzie za bardzo bolało.~
+@46506 = ~Co ty rob…~
+@46507 = ~No i proszę. Twoja kościana lalka jest gotowa. Wiesz, co należy teraz zrobić. Stój przez chwilę nieruchomo.~
+@46508 = ~Hmm, Trzeba przyznać, że jesteś wytrzymały.~
+         ~Hmm, Trzeba przyznać, że jesteś wytrzymała.~
+@46509 = ~Coś ty mi zrobiła?!~
+@46510 = ~Czyżbym ci nie powiedziała, że potrzebuję odrobiny twoich sił życiowych? Nie martw się o to zbytnio. Z czasem się zregenerujesz. Całonocny sen powinien wystarczyć.~
+@46511 = ~A teraz zabieraj swoją kościaną lalkę i odejdź.~
+@46512 = ~Ach, głupiec powrócił. Czego chce tym razem?~
+         ~Ach, wróciła głupia dziewucha. Czego chce tym razem?~
+@46513 = ~Co powiesz, abyśmy dobili targu? Natknąłem się na ciekawą księgę, która zawiera makabryczne szczegóły budowy dziwnych rodzajów golemów. Pomyślałem, że możesz być zainteresowana?~
+         ~Co powiesz, abyśmy dobiły targu? Natknęłam się na ciekawą księgę, która zawiera makabryczne szczegóły budowy dziwnych rodzajów golemów. Pomyślałam, że możesz być zainteresowana?~
+@46514 = ~Chcę złożyć zamówienie na budowę kościanej lalki.~
+@46515 = ~Niczego nie chcę. Żegnaj.~
+@46516 = ~Daj mi to! Hmm… to faktycznie niezwykle interesujące. Jak rozumiem, chcesz mieć takiego golema dla siebie?~
+@46517 = ~Tak. Potrafisz go zbudować?~
+@46518 = ~Oczywiście. Pytanie, czy ty potrafisz spełnić moje warunki?~
+@46519 = ~Potrzebuję kompletu kości, z których wykonam ciało golema. Co więcej, potrzebuję też czegoś, czym mogłabym go ożywić. Ale tym zajmiemy się później. Poza tym nie zamierzam robić tego za darmo. Zapłać mi dwa tysiące sztuk złota z góry albo nie marnuj więcej mojego czasu.~
+@46520 = ~Oczywiście, oto wszystko, czego potrzebujesz.~
+@46521 = ~Nie mam w tej chwili wystarczającej ilości pieniędzy. Może później.~
+@46522 = ~Nie mam przy sobie kompletu kości. Może później.~
+@46523 = ~Prawdę mówiąc, nie jestem zainteresowany. Żegnaj.~
+         ~Prawdę mówiąc, nie jestem zainteresowana. Żegnaj.~
+@46524 = ~Oczywiście. Masz przy sobie komplet kości i dwa tysiące sztuk złota?~
+@46525 = ~Tak, oto one.~
+@46526 = ~Wygląda na to, że wszystko w porządku. Budowa zajmie jeden dzień. Wróć jutro cały i zdrów. Nie pożałujesz.~
+         ~Wygląda na to, że wszystko w porządku. Budowa zajmie jeden dzień. Wróć jutro cała i zdrowa. Nie pożałujesz.~
+@46527 = ~A więc na nic mi się już nie przydasz. Wróć tylko, jeśli zdobędziesz wszystko, czego potrzebuję.~
+
 
 // *** Journal entries ***
 @49000 = ~Warsztat do budowy golemów~
@@ -294,10 +360,17 @@ Ruiny Kanaglymu, do których można się dostać z okolic Podziemnej rzeki, wygl
 
 Ruiny Kanaglymu, do których można się dostać z okolic Podziemnej rzeki, wyglądają na dobrze wyposażone do przeprowadzania w nich magicznych eksperymentów. Powinnnam być w stanie budować tam golemy.~
 
-@49009 = ~Golem Construction Workshop
+@49009 = 
+~Warsztat budowy golemów
 
-The necromancer Arkion was interested in my tome about constructing doll golems. I can probably commission my very own Doll Golem if I need one. Arkion can be found in his home in Baldur's Gate, south of the Elfsong Tavern.~
+Nekromanta Arkion był zainteresowany moją księgą opisującą sposób budowy lalkowych golemów. Prawdopodobnie będę dzięki temu mógł składać u niego zamówienia na budowę mojego własnego lalkowego golema. Arkiona można spotkać w jego domu we Wrotach Baldura, na południe od tawerny Elfia Pieśń.~
+~Warsztat budowy golemów
 
-@49010 = ~Golem Construction Workshop
+Nekromanta Arkion był zainteresowany moją księgą opisującą sposób budowy lalkowych golemów. Prawdopodobnie będę dzięki temu mogła składać u niego zamówienia na budowę mojego własnego lalkowego golema. Arkiona można spotkać w jego domu we Wrotach Baldura, na południe od tawerny Elfia Pieśń.~
 
-The necromancer Nemphre was interested in my tome about constructing bone dolls. I can probably commission my very own Bone Doll if I need one. Nemphre can be found in her home in Baldur's Gate, east of the Blade and Stars Inn.~
+@49010 = ~Warsztat budowy golemów
+
+Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budowy kościanych lalek. Prawdopodobnie będę dzięki temu mógł składać u niej zamówienia na budowę mojej własnej kościanej lalki. Nemphre można spotkać w jej domu we Wrotach Baldura, na wschód od gospody Ostrze i Gwiazdy.~
+~Warsztat budowy golemów
+
+Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budowy kościanych lalek. Prawdopodobnie będę dzięki temu mogła składać u niej zamówienia na budowę mojej własnej kościanej lalki. Nemphre można spotkać w jej domu we Wrotach Baldura, na wschód od gospody Ostrze i Gwiazdy.~

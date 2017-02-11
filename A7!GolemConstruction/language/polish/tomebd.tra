@@ -1,16 +1,16 @@
 // -*- coding: utf-8 -*- 
 // Bone Doll related strings (index 15000..14999)
 
-@15000 = ~Forbidden Manual of Golem Building (Vol. 2)~
-@15001 = ~Bone Doll~
+@15000 = ~Zakazany podręcznik budowy golemów (tom 2)~
+@15001 = ~Kościana lalka~
 
 // *** Book content ***
-@15100 = ~About Bone Dolls
+@15100 = ~O kościanych lalkach
 
-This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a bone doll, how to animate it and make it follow the creator's commands to the letter. Several illustrations suggest that forbidden necromantic rituals play an integral part to animate the construct.
+Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy kościanej lalki oraz sposobu jej ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywała co do joty polecenia swego stwórcy. Kilka ilustracji sugeruje, że w ożywieniu konstruktu dużą rolę odgrywają zakazane nekromantyczne rytuały.
 
-Experienced necromancers may be interested in tomes like this.
+Doświadczeni nekromanci mogą być zainteresowani tego typu księgami.
 
-STATISTICS:
+PARAMETRY:
 
-Weight: 1~
+Waga: 1~

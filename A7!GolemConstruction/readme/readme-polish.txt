@@ -34,12 +34,12 @@ Instalacja
 
 Jest to modyfikacja WeiDU, co oznacza, iż jest bardzo prosta w instalacji. Wystarczy rozpakować 
 pobrane archiwum do katalogu z grą, a następnie uruchomić plik „setup-A7!GolemConstruction.exe”. 
-Po wykonaniu wszystkich instrukcji możliwe będzie rozpoczęcie gry. Zaleca się instalację 
-modyfikacji przed rozpoczęciem kampanii „Siege of Dragonspear” (w przypadku BG:EE) lub rozpoczęcie 
-nowej gry (w przypadku BG2:EE lub IWD:EE).
+Po wykonaniu wszystkich instrukcji możliwe będzie rozpoczęcie gry. Po instalacji tej modyfikacji 
+zaleca się rozpoczęcie nowej gry.
 
-Ważne: Aby możliwa była instalacja tej modyfikacji, gra BG2:EE musi zostać zaktualizowana do 
-       wersji 2.0 lub wyższej, a gra IWD:EE do wersji 1.4 lub wyższej.
+Ważne: Aby możliwa była instalacja tej modyfikacji, zarówno BG:EE jak i BG2:EE muszą być 
+       zaktualizowane do wersji 2.0 lub wyższej. Z kolei IWD:EE musi być zaktualizowana do 
+       wersji 1.4 lub wyższej.
 
 
 Komponenty
@@ -63,9 +63,8 @@ Rodzaje golemów, których budowy można się nauczyć z Podręcznika budowy gol
 - Adamantytowe golemy w pomniejszych, zwykłych, większych i idealnych wariantach (nie dotyczy IWD:EE).
 
 Chodzą słuchy, że istnieje drugi, sekretny zestaw tomów, zawierający wiedzę o budowie bardziej 
-egzotycznych typów golemów. You might also commission golems in the BG:EE part of the game if 
-you can find the right tomes.
-
+egzotycznych typów golemów. Możesz również zlecić budowę golemów w części BG:EE, jeśli odnajdziesz 
+odpowiednie księgi.
 
 Każdy golem wymaga materiałów niezbędnych do wykonania jego fizycznej powłoki oraz dodatkowych 
 składników koniecznych do obdarzenia go kluczowymi właściwościami. Stworzenie idealnego wariantu 
@@ -128,9 +127,10 @@ znajdziesz w pliku „golem_information-polish.txt”.
 
 2.7. Redukuj niewrażliwości na broń i odporności dla konstruowanych golemów (BG:SoD, BG2:EE i EET)
 Duża ilość wrogów ma problemy z trafianiem golemów ze względu na ich niewrażliwość na działanie 
-broni oraz wysokie odporności, co widoczne jest nawet w późniejszych fragmentach gry. Komponent 
-ten osłabia siłę konstruowanych golemów, redukując ich niewrażliwość na broń, a także obniżając 
-posiadane przez nie odporności na magię, żywioły oraz fizyczne obrażenia.
+broni oraz wysokie odporności, co widoczne jest nawet w późniejszych fragmentach gry. Komponent ten 
+osłabia siłę zbudowanych golemów, redukując ich niewrażliwości na działanie magicznej broni (zazwyczaj 
+o jeden poziom, czasem o dwa), jak również obniżając ich odporności przeciw obrażeniom magicznym, 
+fizycznym i żywiołom.
 
 
 Szczegóły
