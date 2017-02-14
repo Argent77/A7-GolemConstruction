@@ -29,6 +29,18 @@ THEN
 END
 
 
+// Workaround if golem is not changing to correct allegiance
+IF
+  OR(2)
+    Global("Command", "LOCALS", 2)
+    Global("Command", "LOCALS", 3)
+  !Allegiance(Myself, GOODBUTBLUE)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+END
+
+
 // -- Follow, no actions (Command=0) --
 
 // -- Follow, attack (Command=1) --
