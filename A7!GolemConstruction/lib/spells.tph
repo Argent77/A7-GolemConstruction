@@ -216,30 +216,30 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
 
   // Allows Resist/Remove Fear to protect against this ability
   ACTION_IF (GAME_IS_IWDEE) BEGIN
-  COPY_EXISTING ~sppr108.spl~ ~override~  // Remove Fear
-                ~spcl222.spl~ ~override~  // Remove Fear
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode  = 206   // Protection from Spell
-      target  = 2     // Preset target
-      timing = 0      // Instant/Limited
-      duration = 60
-      resist_dispel = 3
-    STR_VAR
-      resource = "A7!IN13B"
-    END
+    COPY_EXISTING ~sppr108.spl~ ~override~  // Remove Fear
+                  ~spcl222.spl~ ~override~  // Remove Fear
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 206   // Protection from Spell
+        target  = 2     // Preset target
+        timing = 0      // Instant/Limited
+        duration = 60
+        resist_dispel = 3
+      STR_VAR
+        resource = "A7!IN13B"
+      END
 
-  COPY_EXISTING ~spwi210.spl~ ~override~  // Resist Fear
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode  = 206   // Protection from Spell
-      target  = 2     // Preset target
-      timing = 0      // Instant/Limited
-      duration = 300
-      resist_dispel = 3
-    STR_VAR
-      resource = "A7!IN13B"
-    END
+    COPY_EXISTING ~spwi210.spl~ ~override~  // Resist Fear
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode  = 206   // Protection from Spell
+        target  = 2     // Preset target
+        timing = 0      // Instant/Limited
+        duration = 300
+        resist_dispel = 3
+      STR_VAR
+        resource = "A7!IN13B"
+      END
 
     COPY_EXISTING ~spcl115.spl~ ~override~  // The Tale of Curran Strongheart - Immunity to Fear
       LPF ADD_SPELL_EFFECT

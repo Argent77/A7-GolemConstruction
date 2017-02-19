@@ -1,5 +1,7 @@
 // *** Tweaks: Make golems vulnerable to specific spell effects ***
 
+OUTER_SET SPELL_REV = (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) ? 1 : 0
+
 OUTER_SET splstate_lesser = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LESSER~)
 OUTER_SET splstate_flesh = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_FLESH~)
 OUTER_SET splstate_clay = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_CLAY~)
@@ -70,60 +72,122 @@ COPY ~%MOD_FOLDER%/spells/a7!flst.spl~ ~override~
     END
   END
 
-COPY_EXISTING ~spwi604.spl~ ~override~  // Flesh to Stone
-  READ_LONG 0x34 level
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    insert_point  = 0
-    opcode        = 326   // Apply effects list
-    target        = 2     // Preset target
-    parameter1    = splstate_flesh
-    parameter2    = 76    // SPLSTATE = specified value
-    power         = level
-    timing        = 9     // Instant/Permanent
-    resist_dispel = 2
-    savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
-  STR_VAR
-    resource      = "A7!FLST"
-  END
-IF_EXISTS
-
-COPY_EXISTING ~spwi714.spl~ ~override~  // Prismatic Spray
-  // Blue ray causes Petrification
-  READ_LONG 0x34 level
-  // getting probabilities
-  SET prob1 = 73
-  SET prob2 = 57
-  READ_LONG 0x6a ofsEffects
-  PATCH_IF ((SHORT_AT 0x68) > 0) BEGIN  // # abilities
-    READ_SHORT ((LONG_AT 0x64) + 0x1e) numEffects
-    FOR (idx = 0; idx < numEffects; idx += 1) BEGIN
-      SET ofs = ofsEffects + (idx * 0x30)
-      READ_SHORT ofs type
-      PATCH_IF (type = 134) BEGIN
-        READ_BYTE (ofs + 0x12) prob1
-        READ_BYTE (ofs + 0x13) prob2
-        SET idx = numEffects
+ACTION_IF (SPELL_REV) BEGIN
+  COPY_EXISTING ~spwi604.spl~ ~override~  // Flesh to Stone
+    READ_LONG 0x34 level
+    // Change existing effect to temporary immunity to this spell
+    SET found = 0
+    READ_LONG 0x64 ofsAbil
+    READ_SHORT 0x68 numAbil
+    READ_LONG 0x6a ofsEffects
+    FOR (i = 0; i < numAbil; ++i) BEGIN
+      SET ofs = ofsAbil + (i * 0x28)
+      READ_SHORT (ofs + 0x1e) numEffects
+      READ_SHORT (ofs + 0x20) idxEffects
+      FOR (j = 0; j < numEffects; ++j) BEGIN
+        SET ofs = ofsEffects + ((idxEffects + j) * 0x30)
+        READ_SHORT ofs opcode
+        READ_SHORT (ofs + 4) param1
+        READ_SHORT (ofs + 8) param2
+        PATCH_IF (opcode = 177 AND param1 = 144 AND param2 = 4) BEGIN // Use EFF file (RACE=GOLEM)
+          WRITE_SHORT ofs 324         // Opcode: Immunity to spell and message
+          WRITE_LONG (ofs + 4) 0      // Param1: unused
+          WRITE_LONG (ofs + 8) 27     // Param2: SPLPROT value RACE=GOLEM
+          WRITE_BYTE (ofs + 12) 0     // Timing: Instant/Limited
+          WRITE_LONG (ofs + 14) 6     // Duration
+          WRITE_ASCIIE (ofs + 20) ~%SOURCE_RES%~ #8
+          SET found = 1
+          SET j = numEffects  // terminate effects loop
+        END
       END
     END
-  END
-  LPF ADD_SPELL_EFFECT
-  INT_VAR
-    insert_point  = 0
-    opcode        = 326   // Apply effects list
-    target        = 2     // Preset target
-    parameter1    = splstate_flesh
-    parameter2    = 76    // SPLSTATE = specified value
-    power         = level
-    timing        = 9     // Instant/Permanent
-    resist_dispel = 2
-    probability1  = prob1
-    probability2  = prob2
-    savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
-  STR_VAR
-    resource      = "A7!FLST"
-  END
-IF_EXISTS
+    PATCH_IF (found = 0) BEGIN
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        insert_point  = 0
+        opcode        = 324   // Immunity to spell and message
+        target        = 2     // Preset target
+        parameter2    = 27    // SPLPROT value RACE=GOLEM
+        timing        = 0     // Instant/Limited
+        delay         = 6
+      STR_VAR
+        resource      = EVAL "%SOURCE_RES%"
+      END
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      insert_point  = 0
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate_flesh
+      parameter2    = 76    // SPLSTATE = specified value
+      power         = level
+      timing        = 9     // Instant/Permanent
+      resist_dispel = 2
+      savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
+    STR_VAR
+      resource      = "A7!FLST"
+    END
+  IF_EXISTS
+END ELSE BEGIN
+  COPY_EXISTING ~spwi604.spl~ ~override~  // Flesh to Stone
+    READ_LONG 0x34 level
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      insert_point  = 0
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate_flesh
+      parameter2    = 76    // SPLSTATE = specified value
+      power         = level
+      timing        = 9     // Instant/Permanent
+      resist_dispel = 2
+      savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
+    STR_VAR
+      resource      = "A7!FLST"
+    END
+  IF_EXISTS
+END
+
+ACTION_IF (NOT SPELL_REV) BEGIN
+  // Note: SpellRev removed petrification aspect
+  COPY_EXISTING ~spwi714.spl~ ~override~  // Prismatic Spray
+    // Blue ray causes Petrification
+    READ_LONG 0x34 level
+    // getting probabilities
+    SET prob1 = 73
+    SET prob2 = 57
+    READ_LONG 0x6a ofsEffects
+    PATCH_IF ((SHORT_AT 0x68) > 0) BEGIN  // # abilities
+      READ_SHORT ((LONG_AT 0x64) + 0x1e) numEffects
+      FOR (idx = 0; idx < numEffects; idx += 1) BEGIN
+        SET ofs = ofsEffects + (idx * 0x30)
+        READ_SHORT ofs type
+        PATCH_IF (type = 134) BEGIN
+          READ_BYTE (ofs + 0x12) prob1
+          READ_BYTE (ofs + 0x13) prob2
+          SET idx = numEffects
+        END
+      END
+    END
+    LPF ADD_SPELL_EFFECT
+    INT_VAR
+      insert_point  = 0
+      opcode        = 326   // Apply effects list
+      target        = 2     // Preset target
+      parameter1    = splstate_flesh
+      parameter2    = 76    // SPLSTATE = specified value
+      power         = level
+      timing        = 9     // Instant/Permanent
+      resist_dispel = 2
+      probability1  = prob1
+      probability2  = prob2
+      savingthrow   = (1 << 4)  // vs. Petrify/Polymorph
+    STR_VAR
+      resource      = "A7!FLST"
+    END
+  IF_EXISTS
+END
 
 // Spell-induced transformation: "Stone to Flesh" (Stone Golem -> Flesh Golem)
 COPY ~%MOD_FOLDER%/spells/a7!stfl.spl~ ~override~
@@ -214,8 +278,15 @@ COPY ~%MOD_FOLDER%/spells/a7!clst.spl~ ~override~
     END
   END
 
-COPY_EXISTING ~spwi812.spl~ ~override~  // Abi-Dalzim's Horrid Wilting
-              ~spwish32.spl~ ~override~ // Abi-Dalzim's Horrid Wilting
+ACTION_IF (SPELL_REV) BEGIN
+  OUTER_TEXT_SPRINT spwi812 ~spwi812d.spl~
+  OUTER_TEXT_SPRINT spwish32 ~a7!dummy.spl~ // Currently buggy (v4beta14)
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT spwi812 ~spwi812.spl~
+  OUTER_TEXT_SPRINT spwish32 ~spwish32.spl~
+END
+COPY_EXISTING ~%spwi812%~ ~override~  // Abi-Dalzim's Horrid Wilting
+              ~%spwish32%~ ~override~ // Abi-Dalzim's Horrid Wilting
   READ_LONG 0x34 level
   LPF ADD_SPELL_EFFECT
   INT_VAR
@@ -236,7 +307,8 @@ IF_EXISTS
 
 
 // Spell-induced transformation: Death Spell (auto-slays Maggot Golem)
-ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
+ACTION_IF (NOT GAME_IS_IWDEE AND NOT SPELL_REV) BEGIN
+  // Note: SpellRev does not affect non-summoned creatures anymore
   COPY ~%MOD_FOLDER%/spells/a7!kill.spl~ ~override~
 
   COPY_EXISTING ~spwi605.spl~ ~override~  // Death Spell
@@ -267,10 +339,21 @@ END ELSE BEGIN
   COPY ~%MOD_FOLDER%/spells/bg2ee/a7!slow.spl~ ~override~
 END
 
-COPY_EXISTING ~spwi503.spl~  ~override~   // Cone of Cold
-              ~spcryo01.spl~ ~override~   // Cone of Cold
-              ~spin833.spl~  ~override~   // Silver Dragon Cone of Cold
-              ~spwi404.spl~  ~override~   // Ice Storm
+ACTION_IF (SPELL_REV) BEGIN
+  OUTER_TEXT_SPRINT spwi503 ~spwi503d.spl~
+  OUTER_TEXT_SPRINT spcryo01 ~a7!dummy.spl~ // Currently buggy (v4beta14)
+  OUTER_TEXT_SPRINT spin833 ~spin833.spl~
+  OUTER_TEXT_SPRINT spwi404 ~spwi404d.spl~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT spwi503 ~spwi503.spl~
+  OUTER_TEXT_SPRINT spcryo01 ~spcryo01.spl~
+  OUTER_TEXT_SPRINT spin833 ~spin833.spl~
+  OUTER_TEXT_SPRINT spwi404 ~spwi404.spl~
+END
+COPY_EXISTING ~%spwi503%~  ~override~   // Cone of Cold
+              ~%spcryo01%~ ~override~   // Cone of Cold
+              ~%spin833%~  ~override~   // Silver Dragon Cone of Cold
+              ~%spwi404%~  ~override~   // Ice Storm
   READ_LONG 0x34 level
   LPF ADD_SPELL_EFFECT
   INT_VAR
@@ -317,7 +400,12 @@ ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
       resource      = "A7!BURN"
     END
 
-  COPY_EXISTING ~sppr707.spl~ ~override~  // Sunray
+  ACTION_IF (SPELL_REV) BEGIN
+    OUTER_TEXT_SPRINT sppr707 ~sppr707d.spl~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT sppr707 ~sppr707.spl~
+  END
+  COPY_EXISTING ~%sppr707%~ ~override~  // Sunray
     READ_LONG 0x34 level
     LPF ADD_SPELL_EFFECT
     INT_VAR
@@ -365,13 +453,30 @@ COPY ~%MOD_FOLDER%/spells//a7!fatk.spl~ ~override~
 
 COPY ~%MOD_FOLDER%/spells//a7!fatk.eff~ ~override~
 
-COPY_EXISTING ~spwi810.spl~ ~override~  // Incendiary Cloud
-              ~spwi911.spl~ ~override~  // Meteor Swarm
-              ~spwish24.spl~ ~override~ // Meteor Swarm
-              ~spwi922.spl~ ~override~  // Dragon's Breath
-              ~spwi925.spl~ ~override~  // Comet
-              ~sppr705.spl~ ~override~  // Fire Storm
-              ~sppr738.spl~ ~override~  // Heavenly Inferno (IWDEE)
+ACTION_IF (SPELL_REV) BEGIN
+  OUTER_TEXT_SPRINT spwi810 ~spwi810d.spl~
+  OUTER_TEXT_SPRINT spwi911 ~spwi911d.spl~
+  OUTER_TEXT_SPRINT spwish24 ~a7!dummy.spl~ // Currently buggy (v4beta14)
+  OUTER_TEXT_SPRINT spwi922 ~spwi922d.spl~
+  OUTER_TEXT_SPRINT spwi925 ~a7!dummy.spl~  // Does not do fire damage
+  OUTER_TEXT_SPRINT sppr705 ~sppr705f.spl~
+  OUTER_TEXT_SPRINT sppr738 ~sppr738.spl~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT spwi810 ~spwi810.spl~
+  OUTER_TEXT_SPRINT spwi911 ~spwi911.spl~
+  OUTER_TEXT_SPRINT spwish24 ~spwish24.spl~
+  OUTER_TEXT_SPRINT spwi922 ~spwi922.spl~
+  OUTER_TEXT_SPRINT spwi925 ~spwi925.spl~
+  OUTER_TEXT_SPRINT sppr705 ~sppr705.spl~
+  OUTER_TEXT_SPRINT sppr738 ~sppr738.spl~
+END
+COPY_EXISTING ~%spwi810%~ ~override~  // Incendiary Cloud
+              ~%spwi911%~ ~override~  // Meteor Swarm
+              ~%spwish24%~ ~override~ // Meteor Swarm
+              ~%spwi922%~ ~override~  // Dragon's Breath
+              ~%spwi925%~ ~override~  // Comet
+              ~%sppr705%~ ~override~  // Fire Storm
+              ~%sppr738%~ ~override~  // Heavenly Inferno (IWDEE)
   READ_LONG 0x34 level
   LPF ADD_SPELL_EFFECT
   INT_VAR
