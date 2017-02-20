@@ -1,16 +1,16 @@
 // -*- coding: utf-8 -*- 
 // Doll Golem related strings (index 14000..14999)
 
-@14000 = ~Forbidden Manual of Golem Building (Vol. 1)~
-@14001 = ~Doll Golem~
+@14000 = ~Grimoire interdit de Fabrication de Golem (Vol. 1)~
+@14001 = ~Golem poupée~
 
 // *** Book content ***
-@14100 = ~About Doll Golems
+@14100 = ~Des Golems poupée
 
-This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble a doll golem, how to animate it and make it follow the creator's commands to the letter. Several illustrations suggest that forbidden necromantic rituals play an integral part to animate the construct.
+Ce livre étonnant contient de nombreuses réflexions sur les problèmes théoriques et pratiques concernant la fabrication et le contrôle des golems. Il détaille longuement les matériaux nécessaires pour créer un golem poupée, explique comment l'animer et lui faire suivre à la lettre les ordres de son créateur. Plusieurs illustrations suggèrent que des rituels nécromantiques interdits font partie intégrante du processus d'animation du golem.
 
-Experienced necromancers may be interested in tomes like this.
+Ce genre d'ouvrage pourrait intéresser des nécromanciens expérimentés.
 
-STATISTICS:
+PARAMETRES :
 
-Weight: 1~
+Poids : 1~

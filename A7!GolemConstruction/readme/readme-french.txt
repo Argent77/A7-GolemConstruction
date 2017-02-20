@@ -35,12 +35,11 @@ Installation
 
 Il s'agit d'un mod WeiDU, donc très facile à installer. Il suffit de décompresser l'archive 
 téléchargée dans votre répertoire de jeu, d'exécuter "setup-A7!GolemConstruction.exe" et de 
-suivre les instructions. Il est fortement recommandé d'installer le mod avant de commencer 
-la campagne "Siege of Dragonspear" (BG:EE) ou de commencer une nouvelle partie (BG2:EE et 
-IWD:EE).
+suivre les instructions. Il est fortement recommandé de commencer une nouvelle partie après 
+avoir installé ce mod.
 
-Important : BG2:EE doit être doté du patch v2.0 ou supérieur pour que l'installation fonctionne.
-Important : IWD:EE doit être doté du patch v1.4 ou supérieur pour que l'installation fonctionne.
+Important : BG:EE et BG2:EE doivent être dotés du patch v2.0 ou supérieur pour que l'installation fonctionne.
+            IWD:EE doit être doté du patch v1.4 ou supérieur pour que l'installation fonctionne.
 
 
 Composants
@@ -64,8 +63,8 @@ Types de golems dont on peut apprendre le processus de fabrication :
 - Golems d'adamantine en versions mineure, normale, majeure et parfaite (non disponible dans IWD:EE).
 
 Il existerait un autre recueil mystérieux de six volumes qui traiterait de la fabrication de 
-types de golems plus exotiques.
-You might also commission golems in the BG:EE part of the game if you can find the right tomes.
+types de golems plus exotiques. Vous pouvez aussi passer commande de golems dans la partie BG:EE 
+si vous trouvez les grimoires adéquats.
 
 Chaque golem nécessite des matériaux spécifiques pour façonner son enveloppe physique, ainsi 
 que des composants supplémentaires pour le doter de capacités spéciales selon sa version. 
@@ -130,7 +129,8 @@ Il est difficile de toucher les golems en raison de leur immunité aux armes mag
 et de leur résistance importante à certains types de dégâts, et ceci même dans les dernières parties 
 du jeu.
 Ce composant atténue la puissance des golems fabriqués en réduisant leurs immunités innées aux armes
-magiques ainsi que leur résistance à la magie, aux éléments et aux dégâts physiques.
+magiques (généralement d'un niveau, parfois deux) ainsi que leurs diverses résistances à la magie, 
+aux éléments et aux dégâts physiques.
 
 
 Détails

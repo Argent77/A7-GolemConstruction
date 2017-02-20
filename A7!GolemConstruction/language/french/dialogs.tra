@@ -8,11 +8,11 @@
 @40003 = ~vingt-quatre~
 @40004 = ~trente-six~
 @40005 = ~quarante-huit~
-@40006 = ~What the hell is going on?! To oblivion with you!~
+@40006 = ~Que diable se passe-t-il ?! Allez moisir dans les Limbes ~
 @40007 = ~::Ha ha::~
 @40008 = ~::Ho ho::~
-@40009 = ~::Hee hee::~
-@40010 = ~Laughing uncontrollably~
+@40009 = ~::Hé hé::~
+@40010 = ~Sous l'emprise d'un rire incontrôlable~
 
 
 // *** Golem Construction dialog ***
@@ -136,7 +136,7 @@
 
 // *** Drow Merchant Nym ***
 @44000 = ~Vendui - mes plus chaleureuses salutations, honorables clients. Je suis Nym le marchand.~ [a7!nym01]
-@44001 = ~Vendui - mes salutations, darthiir. Je suis Nym le marchand.~[A7!nym02]
+@44001 = ~Vendui - mes salutations, darthiir. Je suis Nym le marchand.~ [a7!nym02]
 @44002 = ~Je vais rester encore un peu ici, alors n'hésitez pas à revenir nous voir, moi et mes marchandises, quand vous voudrez, honorables clients. Aluvé.~ [a7!nym03]
 @44003 = ~Je vous souhaite à nouveau la bienvenue, honorables clients.~ [a7!nym04]
 @44004 = ~Je vous renouvelle mes salutations, darthiir.~ [a7!nym05]
@@ -198,6 +198,59 @@
 @45511 = ~Allez, monsieur Jermien ! Quel mal pouvons-nous faire à essayer nous-mêmes ? Je vous promets d'être très prudente. S'il vous plaît, soyez sympa !~
 
 
+// *** The necromancer Arkion ***
+@46000 = ~J'ai découvert par hasard un étrange grimoire qui traite de la fabrication d'une espèce bizarre de golems. Comme il me paraît plutôt macabre, j'ai pensé qu'il pourrait vous intéresser.~
+@46001 = ~J'aimerais passer commande d'un golem poupée. Êtes-vous à la hauteur ?~
+@46002 = ~Certainement, confrère. Au revoir.~
+@46003 = ~Je ne crois pas. Au revoir.~
+@46004 = ~Revenez plus tard. Une tâche pareille prend du temps.~
+@46005 = ~Ah, vous voilà de retour. Admirez cette beauté. C'est un vrai chef-d'oeuvre, et il vous appartient. Otez-le de ma vue avant que je ne change d'avis.~
+@46006 = ~Faites-moi voir ! Hmm, oui... intéressante lecture. Vous avez bien fait de me l'apporter. J'ai hâte de la mettre en pratique.~
+@46007 = ~Cela signifie-t-il que vous pouvez construire des golems pour moi ?~
+@46008 = ~Pas si vite. D'abord, il me faut les matériaux appropriés. Et je veux être rétribué pour mes services.~
+@46009 = ~J'ai besoin d'un cadavre frais et d'une potion d'antidote maudite pour construire le corps du golem. Mes honoraires s'élèvent à 2 000 pièces d'or. Ça vous intéresse toujours ?~
+@46010 = ~Oui, ça m'intéresse.~
+@46011 = ~Je n'ai pas assez d'argent pour l'instant. Peut-être plus tard.~
+@46012 = ~Je n'ai pas de cadavre frais. Peut-être plus tard.~
+@46013 = ~Je n'ai pas de potion d'antidote maudite. Peut-être plus tard.~
+@46014 = ~Ca ne m'intéresse pas. Au revoir.~
+@46015 = ~Bien sûr. Disposez-vous d'un cadavre frais, d'une potion d'antidote maudite et de 2 000 pièces d'or ?~
+@46016 = ~Oui, les voici.~
+@46017 = ~Ah oui, celui-ci est mûr à point. Posez tout sur la table, là-bas.~
+@46018 = ~Je pense que la fabrication prendra environ une journée. Revenez demain.~
+
+
+// *** The necromancer Nemphre ***
+@46500 = ~Ce minable d'Arkion pense-t-il qu'il peut me vaincre à l'aide de ces créatures ni faites ni à faire ? Il ne sera jamais mon égal aussi longtemps que je vivrai.~
+@46501 = ~Et vous êtes vraiment stupide d'avoir fait si facilement confiance à ses expériences.~
+@46502 = ~Hmpf. Je ne traite pas avec des sous-fifres. Va-t'en.~
+@46503 = ~Je vous ai dit de revenir plus tard. Ne me dérangez pas pendant que je travaille !~
+@46504 = ~Ah, vous voici. Je vous attendais. J'espère que vous êtes en vie et en bonne santé ?~
+@46505 = ~La poupée d'os est terminée. Enfin presque. Il ne manque plus qu'une étincelle de vie pour la touche finale. Ne bougez-pas. Ça ne sera pas très douloureux.~
+@46506 = ~Qu'est-ce que vous...~
+@46507 = ~Vous voilà. Votre poupée d'os est terminée. Vous connaissez la suite. Veuillez rester immobile un instant.~
+@46508 = ~Et bien, votre résistance est impressionnante, vraiment.~
+@46509 = ~Que m'avez-vous fait ?!~
+@46510 = ~Ne vous avais-je pas dit qu'il me fallait un peu de votre force vitale ? Mais ne vous en faites pas, vous régénérerez avec le temps. Une bonne nuit de repos devrait suffire.~
+@46511 = ~Maintenant, prenez votre poupée d'os et partez.~
+@46512 = ~Ah, l'imbécile est de retour. Que veut-il cette fois ?~ ~Ah, l'imbécile est de retour. Que veut-elle cette fois ?~
+@46513 = ~Que diriez-vous de faire affaire ? J'ai trouvé par hasard un étrange grimoire qui détaille de façon plutôt macabre la fabrication d'une espèce bizarre de golems. J'ai pensé qu'il pourrait vous intéresser...~
+@46514 = ~J'aimerais vous passer commande d'une poupée d'os.~
+@46515 = ~Je ne veux rien. Au revoir.~
+@46516 = ~Donnez-le-moi ! Hmm ... c'est intéressant en effet. Je suppose que vous en voulez un pour vous ?~
+@46517 = ~Oui. Pouvez-vous le créer ?~
+@46518 = ~Bien sûr. Mais la question est : pouvez-me me fournir tout ce dont j'aurai besoin ?~
+@46519 = ~Il me faut un squelette entier pour construire le corps du golem. Sans oublier le moyen de l'animer. Mais nous verrons cela plus tard. Et ce ne sera pas gratuit. Il vous en coûtera 2 000 pièces d'or, à régler d'avance. C'est à prendre ou à laisser. Et ne me faites surtout pas perdre mon temps.~
+@46520 = ~Ca me va. Voici ce que vous demandez.~
+@46521 = ~Je n'ai pas assez d'argent pour l'instant. Peut-être plus tard.~
+@46522 = ~Je n'ai pas les ossements. Peut-être plus tard.~
+@46523 = ~Ca ne m'intéresse pas vraiment. Au revoir.~
+@46524 = ~Certainement. Avez-vous un squelette entier et 2 000 pièces d'or ?~
+@46525 = ~Oui, les voici.~
+@46526 = ~Tout semble en ordre. La fabrication prendra une journée. Revenez demain en vie et en bonne santé. Vous ne le regretterez pas.~
+@46527 = ~Alors vous ne me servez à rien. Ne revenez que lorsque vous aurez réuni tout ce dont j'ai besoin~
+
+
 // *** Journal entries ***
 @49000 = ~Atelier de Fabrication de Golems~
 
@@ -233,10 +286,10 @@ La maison de Jermien à Imnesvale semble être bien équipée. Je devrais pouvoi
 
 Les ruines de Kanaglym qui sont accessibles à partir de la rivière souterraine semblent être bien équipées pour mener des expériences magiques. Je devrais pouvoir y fabriquer des golems.~
 
-@49009 = ~Golem Construction Workshop
+@49009 = ~Atelier de Fabrication de Golems
 
-The necromancer Arkion was interested in my tome about constructing doll golems. I can probably commission my very own Doll Golem if I need one. Arkion can be found in his home in Baldur's Gate, south of the Elfsong Tavern.~
+Le nécromancien Arkion s'est montré intéressé par mon grimoire de fabrication de golems poupée et l'a récupéré. En cas de besoin, je devrais pouvoir lui passer commande de ce type de golem. Il se trouve dans sa maison de la Porte de Baldur, au sud de la Taverne du Chant de l'Elfe.~
 
-@49010 = ~Golem Construction Workshop
+@49010 = ~Atelier de Fabrication de Golems
 
-The necromancer Nemphre was interested in my tome about constructing bone dolls. I can probably commission my very own Bone Doll if I need one. Nemphre can be found in her home in Baldur's Gate, east of the Blade and Stars Inn.~
+La nécromancienne Nemphré s'est montrée intéressée par mon grimoire de fabrication de poupées d'os et l'a récupéré. En cas de besoin, je devrais pouvoir lui passer commande de ce type de golem. Elle se trouve dans sa maison de la Porte de Baldur, à l'est de l'Auberge de la Lame et des Étoiles.~
