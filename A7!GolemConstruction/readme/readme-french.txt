@@ -1,7 +1,7 @@
 Golem Construction for Spellcasters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version :         3.1
+Version :         4.0
 Auteur :          Argent77
 
 Téléchargement :  https://github.com/Argent77/A7-GolemConstruction/releases/latest
@@ -164,8 +164,8 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
-3.2
-- Added two new golem types that can be commissioned during the BG1 part of the game
+4.0
+- Added two new golem types which can be commissioned during the BG1 part of the game
 - Added mod support for pure BG:EE installations (without SoD)
 - Added "Spell Revisions" compatibility
 - Fixed a compatibility issue with SCS

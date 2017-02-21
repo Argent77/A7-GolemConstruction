@@ -1,6 +1,6 @@
 BACKUP ~A7!GolemConstruction/backup~
 AUTHOR ~Argent77 at Spellhold Studios~
-VERSION ~3.1~
+VERSION ~4.0~
 
 ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
@@ -166,7 +166,7 @@ BEGIN @30 // Fighter Stronghold golems may continue to serve you
 
 BEGIN @35 // Make golems vulnerable to specific spell effects
   REQUIRE_COMPONENT ~setup-A7!GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
-  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @107  // This component requires BG:Sod, BG2:EE or IWD:EE to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @107  // This component requires BG:SoD, BG2:EE or IWD:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 35
 
