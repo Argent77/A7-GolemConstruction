@@ -774,7 +774,7 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // Doll Golem manual
   COPY ~%MOD_FOLDER%/items/a7!tomdg.itm~ ~override~
     SAY NAME1 @100001 // Ancient Manual
-    SAY NAME2 @14001  // Forbidden Manual of Golem Building (Vol. 1)
+    SAY NAME2 @14000  // Forbidden Manual of Golem Building (Vol. 1)
     SAY UNIDENTIFIED_DESC @100028 // This tome appears to be written in a strange arcane code or language...
     SAY IDENTIFIED_DESC @14100 // This amazing tome contains theoretical musings on the construction and control of golems.
 END
@@ -783,7 +783,7 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // Bone Doll manual
   COPY ~%MOD_FOLDER%/items/a7!tombd.itm~ ~override~
     SAY NAME1 @100001 // Ancient Manual
-    SAY NAME2 @15001  // Forbidden Manual of Golem Building (Vol. 2)
+    SAY NAME2 @15000  // Forbidden Manual of Golem Building (Vol. 2)
     SAY UNIDENTIFIED_DESC @100028 // This tome appears to be written in a strange arcane code or language...
     SAY IDENTIFIED_DESC @15100 // This amazing tome contains theoretical musings on the construction and control of golems.
 END
