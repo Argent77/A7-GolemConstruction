@@ -900,15 +900,15 @@ pour vous.
   - Armes perforantes : 25
   - Projectiles : 25
 - Ne peut être touché que par des armes magiques.
-- Spécial : Chaque attaque réussi a une chance de provoquer un rire incontrôlable chez la cible si elle rate son JS contre 
+- Spécial : Chaque attaque réussie a une chance de provoquer un rire incontrôlable chez la cible si elle rate son JS contre 
   les sorts (avec un bonus de +2). La victime devient incapable de faire quoi que ce soit d'autre. Déclenché le round suivant 
   le JS raté, ce rire provoque des spasmes musculaires si douloureux qu'il inflige 1d4 points de dégâts supplémentaires 
   cumulables à chaque round (1d4 lors du premier, 2d4 lors du second, etc.). La victime doit réussir un JS contre les sorts 
-  (avec un bonus de +2) à chaque round pour mettre fin au rire. Sinon, le rire ne s'arrête de rire qu'au bout d'un tour ou 
-  s'il est annulé par une Dissipation de la magie. La Résistance à la magie de la cible peut aussi protéger des effets. Les 
+  (avec un bonus de +2) à chaque round pour mettre fin au rire. Sinon, le rire ne s'arrête qu'au bout d'un tour ou s'il est 
+  annulé par une Dissipation de la magie. La Résistance à la magie de la cible peut aussi protéger des effets. Les 
   morts-vivants et les créatures artificielles ne sont pas affectées. Une fois le rire dissipé, la victime reste fatiguée 
   pendant une durée égale à la moitié du temps qu'elle a été sous l'emprise du rire, pendant laquelle elle souffre d'une 
-  pénalité de -1 à la CA, son TAC0 et à tous ses JS.
+  pénalité de -1 à la CA, à son TAC0 et à tous ses JS.
 - Ce golem peut être fabriqué par le nécromancien Arkion (contre honoraires) qui réside à la Porte de Baldur, au sud de la 
   Taverne du Chant de l'Elfe.
 
