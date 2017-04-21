@@ -1,0 +1,12 @@
+// *** Tweaks: Identify All Items ***
+
+ACTION_FOR_EACH item IN ~a7!glad1~ ~a7!glad2~ ~a7!glmi~ ~a7!tom01~ ~a7!tom02~ 
+                        ~a7!tom03~ ~a7!tom04~ ~a7!tom05~ ~a7!tom07~ ~a7!tom08~ 
+                        ~a7!tom09~ ~a7!tom0a~ ~a7!tom0b~ ~a7!tom0c~ ~a7!tom0d~ 
+                        ~a7!tombd~ ~a7!tomdg~ ~a7!tomm4~ BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%item%.itm~) BEGIN
+    COPY_EXISTING ~%item%.itm~ ~override~
+      WRITE_SHORT 0x42 0
+    BUT_ONLY
+  END
+END

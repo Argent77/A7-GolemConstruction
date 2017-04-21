@@ -126,6 +126,10 @@ da sie über viele Immunitäten und hohe Resistenzen verfügen. Diese Komponente
 Widerstandsfähigkeit von konstruierten Golems, in dem sie Waffenimmunitäten absenkt (i.d.R. um eine 
 Stufe, manchmal um zwei) und diverse magische, elementare unt physische Resistenzen vermindert.
 
+2.8. Alle Gegenstände identifizieren (für alle unterstützten Spiele)
+Diese Komponente identifiziert alle von dieser Mod installierten Gegenstände. Dazu gehören die Leitfäden 
+der Golemkonstruktion als auch einige magische Artefakte zur Konstruktion von perfekten Golems.
+
 
 Einzelheiten
 ~~~~~~~~~~~~
@@ -155,6 +159,10 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+4.1
+- Added new Tweaks component "Identify all items"
+- Fixed incorrect names of BG1 golem manuals
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game

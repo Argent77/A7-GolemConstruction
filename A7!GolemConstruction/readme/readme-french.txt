@@ -132,6 +132,10 @@ Ce composant atténue la puissance des golems fabriqués en réduisant leurs imm
 magiques (généralement d'un niveau, parfois deux) ainsi que leurs diverses résistances à la magie, 
 aux éléments et aux dégâts physiques.
 
+2.8. Identifier tous les objets (pour tous les jeux supportés).
+Ce composant identifie tous les objets installés par ce mod, ce qui inclue les Grimoires de fabrication
+de golem ainsi que les composants spéciaux nécessaires à la fabrication de golems parfaits.
+
 
 Détails
 ~~~~~~~
@@ -163,6 +167,10 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+4.1
+- Added new Tweaks component "Identify all items"
+- Fixed incorrect names of BG1 golem manuals
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game

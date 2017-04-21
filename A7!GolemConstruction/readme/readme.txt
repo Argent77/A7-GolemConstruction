@@ -122,6 +122,10 @@ and high resistances, even in later parts of the game. This component nerfs the 
 constructed golems by reducing their weapon enchantment immunities (usually by one level, sometimes 
 by two) as well as by lowering various magical, elemental and physical resistances.
 
+2.8. Identify all items (for all supported games)
+This component will identify all items that are installed by this mod, which includes Golem 
+Building Manuals as well as a number of special ingredients for building perfect golem variants.
+
 
 Details
 ~~~~~~~
@@ -152,6 +156,10 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+4.1
+- Added new Tweaks component "Identify all items"
+- Fixed incorrect names of BG1 golem manuals
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game

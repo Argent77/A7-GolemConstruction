@@ -133,6 +133,12 @@ o jeden poziom, czasem o dwa), jak również obniżając ich odporności przeciw
 fizycznym i żywiołom.
 
 
+2.8 Identyfikuj wszystkie przedmioty (dla wszystkich wspieranych gier)
+Komponent ten powoduje identyfikację wszystkich przedmiotów zainstalowanych przez tę modyfikację, 
+wliczając w to Księgi budowy golemów oraz specjalne składniki niezbędne do budowy perfekcyjnych 
+wariantów golemów.
+
+
 Szczegóły
 ~~~~~~~~~
 
@@ -162,6 +168,10 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+4.1
+- Added new Tweaks component "Identify all items"
+- Fixed incorrect names of BG1 golem manuals
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game
