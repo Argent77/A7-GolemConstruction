@@ -1,6 +1,7 @@
 // *** de'Arnise Keep - Clay Golem ***
 
 IF
+  !HasItem("a7!tom03", "Container2")
   PartyHasItem("a7!tom03")
   Allegiance(Myself, NEUTRAL)
 THEN
