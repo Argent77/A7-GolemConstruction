@@ -2,6 +2,8 @@
 
 ADD_STATE_TRIGGER ~scjerlia~ 0 ~Global("A7!GolemAbility", "GLOBAL", 0)~
 
+ADD_STATE_TRIGGER ~scjerlia~ 23 ~Global("SculptorDone","GLOBAL",0)~ 36 38 UNLESS ~"SculptorDone"~
+
 APPEND ~scjerlia~
 
   IF WEIGHT #4 ~Global("A7!GolemAbility", "GLOBAL", 1) Global("A7!Intro", "MYAREA", 0)~ jerlia.intro.1
