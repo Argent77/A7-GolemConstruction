@@ -4,6 +4,7 @@ IF
   Clicked([ANYONE])
   Range(LastTrigger, 5)
   !Gender(LastTrigger, SUMMONED)
+  !InParty(LastTrigger)
   OR(3)
     Race(LastTrigger, GOLEM)
     General(LastTrigger, UNDEAD)
@@ -30,6 +31,16 @@ IF
   !Race(LastTrigger, GOLEM)
   !General(LastTrigger, UNDEAD)
   !Race(LastTrigger, MYCONID)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1EnterMaze", "MYAREA", 3)
+    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", LastTrigger))
+END
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 5)
+  InParty(LastTrigger)
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1EnterMaze", "MYAREA", 3)

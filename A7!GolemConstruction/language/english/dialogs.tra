@@ -253,7 +253,7 @@
 
 // *** Quest-related ***
 @47000 = ~(The lock of Nyalee's hair starts to emit a faint glow when you approach the central area of the temple.)~
-@47001 = ~(Put the hair on the ground.)~
+@47001 = ~(Put the hair down on the ground.)~
 @47002 = ~(Ignore the glow.)~
 @47003 = ~(As soon as the hair touches the ground it burns to ashes in a bright flash. Soon after you hear a faint rumble from the depths below the temple.)~
 @47004 = ~(This creature should withstand the poisonous clouds of the maze.)~
