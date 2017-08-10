@@ -1,0 +1,12 @@
+// *** Quest: A Hidden Door ***
+
+ACTION_IF (GAME_IS_BG2EE || GAME_IS_EET) BEGIN
+  // Patching AR5202
+  INCLUDE ~%MOD_FOLDER%/lib/quest1_ar5202.tph~
+
+  // Installing maze area
+  INCLUDE ~%MOD_FOLDER%/lib/quest1_a77!01.tph~
+
+  // Installing helping areas
+  INCLUDE ~%MOD_FOLDER%/lib/quest1_a77!02.tph~
+END

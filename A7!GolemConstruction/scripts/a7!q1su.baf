@@ -1,0 +1,14 @@
+// *** Quest 1: Summoned helper creature script ***
+
+IF
+  Global("init", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 0)
+    SetGlobal("A7!Q1MapInit", "MYAREA", 0)
+    RemoveAreaFlag(NOSAVE)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("a7!q1ct1")
+END

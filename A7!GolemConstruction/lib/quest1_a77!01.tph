@@ -1,0 +1,63 @@
+// *** Quest 1: Map A77!01 ***
+
+// installing map
+COPY ~%MOD_FOLDER%/areas/a77!01/a77!01.are~ ~override~
+  READ_LONG 0xc4 ofsAutomap
+  READ_LONG 0xc8 numAutomap
+  FOR (idx = 0; idx < numAutomap; ++idx) BEGIN
+    SET ofs = ofsAutomap + (idx * 0x34)
+    PATCH_IF (idx = 0) BEGIN
+      SAY (ofs + 4) @100030   // To the temple
+    END ELSE PATCH_IF (idx = 1) BEGIN
+      SAY (ofs + 4) @100039   // Ancient statue
+    END
+  END
+
+COPY ~%MOD_FOLDER%/areas/a77!01/a77!01.wed~ ~override~
+     ~%MOD_FOLDER%/areas/a77!01/a77!01.tis~ ~override~
+     ~%MOD_FOLDER%/areas/a77!01/a77!01.mos~ ~override~
+     ~%MOD_FOLDER%/areas/a77!01/a77!01ht.bmp~ ~override~
+     ~%MOD_FOLDER%/areas/a77!01/a77!01lm.bmp~ ~override~
+     ~%MOD_FOLDER%/areas/a77!01/a77!01sr.bmp~ ~override~
+     ~%MOD_FOLDER%/areas/a77!01/a7!mzcl.wav~ ~override~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/areas/a77!01~ ~a7!01.+\.pvrz~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+COMPILE ~%MOD_FOLDER%/scripts/a77!01.baf~
+        ~%MOD_FOLDER%/scripts/a7!t5202.baf~
+        ~%MOD_FOLDER%/scripts/a7!mzp1.baf~
+        ~%MOD_FOLDER%/scripts/a7!mzp2.baf~
+        ~%MOD_FOLDER%/scripts/a7!mzcre.baf~
+        ~%MOD_FOLDER%/scripts/a7!mzcr2.baf~
+        ~%MOD_FOLDER%/scripts/a7!mzcl.baf~
+        ~%MOD_FOLDER%/scripts/a7!mzst.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct25.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct26.baf~
+        ~%MOD_FOLDER%/scripts/a7!q1su.baf~
+        ~%MOD_FOLDER%/scripts/a7!q1ct1.baf~
+        ~%MOD_FOLDER%/scripts/a7!q1ct2.baf~
+
+COPY_EXISTING ~spunholy.vvc~ ~override/a7!chal.vvc~
+  WRITE_ASCII 0x78 ~EFF_P70~ (8)
+
+// cloud spell
+ADD_PROJECTILE ~%MOD_FOLDER%/spells/a7!mzcl.pro~
+COPY ~%MOD_FOLDER%/spells/a7!mzcl.spl~ ~override~
+  READ_LONG 0x64 ofsAbil
+  READ_SHORT 0x68 numAbil
+  FOR (idx = 0; idx < numAbil; ++idx) BEGIN
+    WRITE_SHORT (ofsAbil + (idx * 0x28) + 0x26) ~%a7!mzcl%~  // update projectile
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!mzcl.bam~ ~override~
+
+// summoned helper creature
+COPY ~%MOD_FOLDER%/spells/a7!q1ad.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!q1rm.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!q1ef.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!q1su.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!q1co.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!q1su.eff~ ~override~
+     ~%MOD_FOLDER%/creatures/a7!q1su.cre~ ~override~

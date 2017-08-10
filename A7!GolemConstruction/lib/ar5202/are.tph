@@ -1,0 +1,106 @@
+// *** Quest 1: Patch functions for AR5202.ARE ***
+
+DEFINE_PATCH_FUNCTION ADD_ARE_AR5202_DOOR
+BEGIN
+  // adding area transition
+  LPF fj_are_structure
+  INT_VAR
+    fj_type       = 2   // travel region
+    fj_box_left   = 894
+    fj_box_top    = 990
+    fj_box_right  = 969
+    fj_box_bottom = 1055
+    fj_cursor_idx = 28
+    fj_flags      = (1 << 2) | (1 << 8) | (1 << 9)  // [party required, disabled, NPC cannot pass]
+    fj_loc_x      = 930
+    fj_loc_y      = 1022
+    fj_vertex_0   = 942 + (1055 << 16)
+    fj_vertex_1   = 969 + (1030 << 16)
+    fj_vertex_2   = 921 + (990 << 16)
+    fj_vertex_3   = 894 + (1018 << 16)
+  STR_VAR
+    fj_structure_type   = "region"
+    fj_name             = "A7_TO_MAZE_1"
+    fj_destination_area = "A77!01"
+    fj_destination_name = "A7_FR_5202"
+  END
+
+  // adding scripted area transition
+  LPF fj_are_structure
+  INT_VAR
+    fj_type       = 1   // info region
+    fj_box_left   = 894
+    fj_box_top    = 990
+    fj_box_right  = 969
+    fj_box_bottom = 1055
+    fj_cursor_idx = 28
+    fj_flags      = (1 << 8) | (1 << 10)  // [disabled, use activation point]
+    fj_loc_x      = 930
+    fj_loc_y      = 1022
+    fj_alt_x      = 977
+    fj_alt_y      = 990
+    fj_vertex_0   = 942 + (1055 << 16)
+    fj_vertex_1   = 969 + (1030 << 16)
+    fj_vertex_2   = 921 + (990 << 16)
+    fj_vertex_3   = 894 + (1018 << 16)
+  STR_VAR
+    fj_structure_type = "region"
+    fj_name           = "A7_TO_MAZE_2"
+    fj_reg_script     = "A7!MAZE"
+  END
+
+  LPF fj_are_structure
+  INT_VAR
+    fj_type       = 0   // trap region
+    fj_box_left   = 749
+    fj_box_top    = 876
+    fj_box_right  = 1247
+    fj_box_bottom = 1263
+    fj_cursor_idx = 0
+    fj_flags      = (1 << 1)  // [trap resets]
+    fj_loc_x      = 991
+    fj_loc_y      = 1091
+    fj_alt_x      = 991
+    fj_alt_y      = 1091
+    fj_vertex_0   = 776 + (1166 << 16)
+    fj_vertex_1   = 1247 + (1263 << 16)
+    fj_vertex_2   = 1022 + (876 << 16)
+    fj_vertex_3   = 749 + (1019 << 16)
+  STR_VAR
+    fj_structure_type = "region"
+    fj_name           = "A7_TRAPDOOR"
+    fj_reg_script     = "A7!TD1"
+  END
+
+  // adding plot trigger
+  LPF fj_are_structure
+  INT_VAR
+    fj_type       = 0   // trap region
+    fj_box_left   = 1188
+    fj_box_top    = 999
+    fj_box_right  = 1190
+    fj_box_bottom = 1001
+    fj_cursor_idx = 0
+    fj_flags      = (1 << 1)  // [trap resets]
+    fj_loc_x      = 991
+    fj_loc_y      = 1091
+    fj_vertex_0   = 1188 + (999 << 16)
+    fj_vertex_1   = 1190 + (999 << 16)
+    fj_vertex_2   = 1188 + (1001 << 16)
+  STR_VAR
+    fj_structure_type = "region"
+    fj_name           = "A7_ITEMTRANSFORM"
+    fj_reg_script     = "A7!MZITM"
+  END
+
+  // Temple entrance
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x        = 1188
+    fj_loc_y        = 999
+    fj_orientation  = 14  // SE
+  STR_VAR
+    fj_structure_type = "entrance"
+    fj_name           = "A7_FR_MAZE"
+  END
+END

@@ -1,0 +1,16 @@
+// *** Quest 1: Transport creature back to temple map when heavily damaged ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    ActionOverride(LastSummonerOf(Myself), SetSequence(SEQ_DIE))
+    Wait(1)
+    FadeToColor([45.0], 0)
+    Wait(3)
+    ApplySpellRES("a7!q1rm", LastSummonerOf(Myself))
+    ActionOverride(LastSummonerOf(Myself), LeaveAreaLUAPanic("AR5202", "", [1112.978], NW)
+    ActionOverride(LastSummonerOf(Myself), LeaveAreaLUA("AR5202", "", [1112.978], NW)
+    StartCutScene("a7!q1ct2")
+END

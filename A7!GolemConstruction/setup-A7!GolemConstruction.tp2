@@ -117,6 +117,7 @@ BEGIN @0  // Golem Construction ability for spellcasters
   INCLUDE ~%MOD_FOLDER%/lib/containers.tph~
   INCLUDE ~%MOD_FOLDER%/lib/distribute.tph~
   INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/quest1.tph~
 
 
 BEGIN @10 // Replace original Golem Manual

@@ -1,0 +1,27 @@
+// *** Quest 1: Open hidden trapdoor and collect all ground items of the map at a specific location (continued) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewPoint([1007.982], INSTANT)
+    OpenDoor("A7!MAZE")
+    TriggerActivation("A7_TO_MAZE_1", TRUE)
+    ActionOverride(Player2, JumpToPoint([1182.916]))
+    ActionOverride(Player2, Face(W))
+    ActionOverride(Player3, JumpToPoint([1150.1080]))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, JumpToPoint([1062.1118]))
+    ActionOverride(Player4, Face(N))
+    ActionOverride(Player5, JumpToPoint([962.1118]))
+    ActionOverride(Player5, Face(NNE))
+    ActionOverride(Player6, JumpToPoint([870.1080]))
+    ActionOverride(Player6, Face(NEE))
+    ScreenShake([5.5], 15)
+    FadeFromColor([45.0], 0)
+    Wait(3)
+    MoveViewObject(Myself, INSTANT)
+    ActionOverride("CUTSPY", DestroySelf())
+    EndCutSceneMode()
+END

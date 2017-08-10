@@ -1,0 +1,21 @@
+// *** Quest 1: Transport creature back to temple map when heavily damaged (continued) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    FadeFromColor([30.0], 0)
+    Wait(1)
+    DisplayStringNoNameHead(LastSummonerOf(Myself), @100040)  // The heavy damage dealt to the creature causes it to cease to function...
+    ActionOverride(LastSummonerOf(Myself), SetSequence(SEQ_AWAKE))
+    Wait(1)
+    ActionOverride(Player1, MakeUnselectable(0))
+    ActionOverride(Player2, MakeUnselectable(0))
+    ActionOverride(Player3, MakeUnselectable(0))
+    ActionOverride(Player4, MakeUnselectable(0))
+    ActionOverride(Player5, MakeUnselectable(0))
+    ActionOverride(Player6, MakeUnselectable(0))
+    DestroySelf()
+    EndCutSceneMode()
+END

@@ -1,0 +1,61 @@
+// *** Quest 1: Map AR5202 ***
+
+// updating TIS with extra tiles
+INCLUDE ~%MOD_FOLDER%/lib/ar5202/tis.tph~
+COPY_EXISTING ~ar5202.tis~ ~override~
+  LPF ADD_TIS_TILES
+  STR_VAR
+    area_code = ~ar5202~
+    tis_v1    = EVAL ~%MOD_FOLDER%/areas/ar5202/v1/ar5202.tis~
+    tis_v2    = EVAL ~%MOD_FOLDER%/areas/ar5202/v2/ar5202.tis~
+    pvrz      = EVAL ~%MOD_FOLDER%/areas/ar5202/v2/a5202xx.pvrz~
+  RET
+    idxExtraTiles
+    numExtraTiles
+  END
+BUT_ONLY
+
+// updating ARE
+INCLUDE ~%MOD_FOLDER%/lib/ar5202/door_generator.tph~
+INCLUDE ~%MOD_FOLDER%/lib/ar5202/are.tph~
+COPY_EXISTING ~ar5202.are~ ~override~
+  LPF ADD_ARE_AR5202_DOOR END
+
+// updating WED
+INCLUDE ~%MOD_FOLDER%/lib/ar5202/wed.tph~
+COPY_EXISTING ~ar5202.wed~ ~override~
+  LPF ADD_WED_AR5202_DOOR
+  INT_VAR
+    idxExtraTiles = idxExtraTiles
+    numExtraTiles = numExtraTiles
+  END
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/sounds/a7!mztd.wav~ ~override~
+
+ACTION_IF (NOT FILE_EXISTS_IN_GAME ~ar5202.bcs~) BEGIN
+<<<<<<<< .../inlined/ar5202.baf
+>>>>>>>>
+  COMPILE ~.../inlined/ar5202.baf~
+END
+
+EXTEND_TOP ~ar5202.bcs~ ~%MOD_FOLDER%/scripts/ar5202_top.baf~
+
+COMPILE ~%MOD_FOLDER%/scripts/a7!ct20.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct21.baf~
+        ~%MOD_FOLDER%/scripts/a7!ct22.baf~
+        ~%MOD_FOLDER%/scripts/a7!td1.baf~
+        ~%MOD_FOLDER%/scripts/a7!maze.baf~
+        ~%MOD_FOLDER%/scripts/a7!mzitm.baf~
+
+COMPILE ~%MOD_FOLDER%/dialogs/ar5202_trapdoor.d~
+
+// Lock of Nyalee's Hair
+COPY ~%MOD_FOLDER%/items/a7!misc1.itm~ ~override~
+  SAY NAME1 @30200
+  SAY NAME2 @30200
+  SAY IDENTIFIED_DESC @30201
+
+// add hair to Nyalee's inventory
+COPY_EXISTING ~hgnya01.cre~ ~override~
+  ADD_CRE_ITEM ~a7!misc1~ #0 #0 #0 ~unstealable~ ~inv1 inv2 inv3 inv4 inv5 inv6 inv7 inv8 inv9 inv10 inv11 inv12 inv13 inv14 inv15 inv16~

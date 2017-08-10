@@ -160,6 +160,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
+4.2
+- Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)
+
 4.1
 - Added new Tweaks component "Identify all items"
 - Fixed incorrect names of BG1 golem manuals

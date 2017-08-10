@@ -1,0 +1,10 @@
+// *** Quest 1: Global override script for creatures in the maze ***
+
+IF
+  Global("A7!Q1StatueChalice", "GLOBAL", 1)
+  Global("A7!Q1Destroyed", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1Destroyed", "LOCALS", 1)
+    Kill(Myself)
+END

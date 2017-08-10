@@ -251,6 +251,18 @@
 @46527 = ~Dann habe ich Euch nichts weiter zu sagen. Kommt erst wieder, wenn Ihr alles bei Euch habt.~
 
 
+// *** Quest-related ***
+@47000 = ~(Nyalees Haarlocke fängt an, leicht zu leuchten, als Ihr Euch dem Zentrum des Tempels nähert.)~
+@47001 = ~(Legt das Haar auf den Boden.)~
+@47002 = ~(Ignoriert das Leuchten.)~
+@47003 = ~(Sobald das Haar den Boden berührt, verbrennt es in einem hellen Blitz zu Asche. Einen Augenblick später hört Ihr ein schwaches rumpeln aus den Tiefen unterhalb des Tempels.)~
+@47004 = ~(Diese Kreatur sollte den Giftwolken des Labyrinths widerstehen.)~
+@47005 = ~(Lebewesen können dort unten nicht überleben. Ihr wärt gut beraten, Euch vom Labyrinth fernzuhalten.)~
+@47006 = ~(Das Labyrinth nicht betreten.)~
+@47007 = ~(Ihr werdet die Kontrolle über Eure herbeigerufenen Kreaturen verlieren, wenn sie das Labyrinth betreten.)~
+@47008 = ~(Das Labyrinth betreten.)~
+
+
 // *** Journal entries ***
 @49000 = ~Werkstatt für den Golembau~
 
@@ -293,3 +305,23 @@ Der Nekromant Arkion hat sich sehr für meinen Leitfaden des Golembaus interessi
 @49010 = ~Werkstatt für den Golembau
 
 Die Nekromantin Nemphre hat sich sehr für meinen Leitfaden des Golembaus interessiert. Ich kann wahrscheinlich bei ihr meine ganz eigenen Knochenpuppen in Auftrag geben. Ich kann Nemphre in ihrer Unterkunft in Baldurs Gate, östlich des Gasthauses „Zur Funkelnden Klinge“, finden.~
+
+@49011 = ~Eine verborgene Tür
+
+Mit Nyalees Haarlocke in meinem Besitz, konnte ich eine verborgene Treppe zu einem Untergrundkomplex des Tempels zum Vorschein bringen.~
+
+@49012 = ~Eine verborgene Tür
+
+Der Untergrundkomplex war voller Giftgas, welches mich auf der Stelle außer Gefecht setzte. Als ich wieder aufwachte, fand ich mich am Eingang zum Labyrinth in der Tempelanlage wieder. Vielleicht wäre es besser, nur Kreaturen hinunterzuschicken, die gegenüber diesen Gaswolken unempfindlich sind.~
+
+@49013 = ~Eine verborgene Tür
+
+Nachdem die zwei Wächterkreaturen besiegt wurden, konnte ich den rotgoldenen Kelch aus den Händen der Statue befreien. Jetzt muss er nur noch sicher zurück an die Oberfläche gebracht werden.~
+
+@49014 = ~Eine verborgene Tür
+
+Als der Kelch die Oberfläche erreichte, explodierte er in einem Ausbruch von grellem Licht und verwandelte sich in eine Flasche mit einer unwirklich aussehenden Substanz. Was sie auch immer beinhaltet, muss ein Vermögen wert sein.~
+
+@49015 = ~Eine verborgene Tür
+
+Die Zerstörung der Kreatur im Labyrinth hatte zur Folge, dass der Kelch in unzählige Scherben zersprang. Der Kelch ist nun für immer verloren.~

@@ -1,0 +1,14 @@
+// *** Quest 1: Open hidden trapdoor and collect all ground items of the map at a specific location (continued) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    CopyGroundPilesTo("AR5202", [794.1085])
+    SmallWait(5)
+    LeaveAreaLUAPanic("AR5202", "", [1198.1004], NWW)
+    LeaveAreaLUA("AR5202", "", [1198.1004], NWW)
+    MultiPlayerSync()
+    StartCutScene("a7!ct22")
+END

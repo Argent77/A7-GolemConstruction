@@ -1,0 +1,17 @@
+// *** Quest 1: Transforms artifact and places it into party inventory ***
+
+IF
+  Global("A7!Q1PartyDisabled", "GLOBAL", 0)
+  Global("A7!Q1StatueChalice", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1StatueChalice", "GLOBAL", 2)
+    TriggerActivation("A7_ITEMTRANSFORM", FALSE)
+    GiveItemCreate("a7!glad1", Player1, 0, 0, 0)
+    AddexperienceParty(16000)
+    DisplayString(Myself, @100037)  // As you return to the surface the chalice transforms into a bottle containing some otherworldly substance.
+    AddJournalEntry(@49014, QUEST_DONE) // When the chalice reached the surface it exploded in a burst of light...
+    EraseJournalEntry(@49011)
+    EraseJournalEntry(@49012)
+    EraseJournalEntry(@49013)
+END

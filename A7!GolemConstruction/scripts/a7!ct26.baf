@@ -1,0 +1,24 @@
+// *** Quest 1: Party falls prey to poisonous clouds in maze area (continued) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FadeFromColor([45.0], 0)
+    Wait(1)
+    DisplayStringHead(Myself, @100032)  // You awake back in the temple...
+    SetSequence(SEQ_AWAKE)
+    SmallWait(3)
+    ActionOverride(Player2, SetSequence(SEQ_AWAKE))
+    ActionOverride(Player3, SetSequence(SEQ_AWAKE))
+    SmallWait(7)
+    ActionOverride(Player4, SetSequence(SEQ_AWAKE))
+    SmallWait(5)
+    ActionOverride(Player5, SetSequence(SEQ_AWAKE))
+    SmallWait(10)
+    ActionOverride(Player6, SetSequence(SEQ_AWAKE))
+    Wait(2)
+    AddJournalEntry(@49012, QUEST)  // The underground complex was full of poisonous gas...
+    EndCutSceneMode()
+END

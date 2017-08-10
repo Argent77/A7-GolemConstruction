@@ -1,0 +1,42 @@
+// *** Quest 1: Maze Statue ***
+
+// TODO: Clicked() doesn't work yet for non-party members
+IF
+  Clicked([GOODCUTOFF])
+  !Range(LastTrigger, 10)
+THEN
+  RESPONSE #100
+    DisplayString(Myself, @100033)  // You are too far away to examine the statue.
+END
+
+IF
+  Clicked([GOODCUTOFF])
+  OR(2)
+    !Dead("a7!guardian_1") // Demon Knight
+    !Dead("a7!guardian_2") // Bone Fiend
+THEN
+  RESPONSE #100
+    DisplayString(Myself, @100034)  // The statue is made of solid stone. It holds a golden chalice in both hands. No amount of strength allows you to wrest the chalice from its firm grasp.
+END
+
+IF
+  Clicked([GOODCUTOFF])
+  Dead("a7!guardian_1") // Demon Knight
+  Dead("a7!guardian_2") // Bone Fiend
+  Global("A7!Q1StatueChalice", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1StatueChalice", "GLOBAL", 1)
+    ClearAllActions()
+    CreateVisualEffectObject("a7!chal", LastTrigger)
+    DisplayString(Myself, @100035)  // The statue is made of solid stone. It holds a golden chalice in both hands. With both guardians dead you can effortlessly take the chalice into your possession.
+    AddJournalEntry(@49013, QUEST) // The creature was able to wrest a red-golden chalice from...
+END
+
+IF
+  Clicked([GOODCUTOFF])
+  GlobalGT("A7!Q1StatueChalice", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    DisplayString(Myself, @100036)  // The statue looks rather unremarkable without the chalice in its hands.
+END

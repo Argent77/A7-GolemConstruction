@@ -251,6 +251,18 @@
 @46527 = ~Alors vous ne me servez à rien. Ne revenez que lorsque vous aurez réuni tout ce dont j'ai besoin.~
 
 
+// *** Quest-related ***
+@47000 = ~(The lock of Nyalee's hair starts to emit a faint glow when you approach the central area of the temple.)~
+@47001 = ~(Put the hair on the ground.)~
+@47002 = ~(Ignore the glow.)~
+@47003 = ~(As soon as the hair touches the ground it burns to ashes in a bright flash. Soon after you hear a faint rumble from the depths below the temple.)~
+@47004 = ~(This creature should withstand the poisonous clouds of the maze.)~
+@47005 = ~(Living beings can't hope to survive down there. You would be well advised to stay clear of the maze.)~
+@47006 = ~(Don't enter the maze.)~
+@47007 = ~(You will lose control over summoned creatures as soon as they enter the maze.)~
+@47008 = ~(Enter the maze.)~
+
+
 // *** Journal entries ***
 @49000 = ~Atelier de Fabrication de Golems~
 
@@ -293,3 +305,23 @@ Le nécromancien Arkion s'est montré intéressé par mon grimoire de fabricatio
 @49010 = ~Atelier de Fabrication de Golems
 
 La nécromancienne Nemphré s'est montrée intéressée par mon grimoire de fabrication de poupées d'os et l'a récupéré. En cas de besoin, je devrais pouvoir lui passer commande de ce type de golem. Elle se trouve dans sa maison de la Porte de Baldur, à l'est de l'Auberge de la Lame et des Étoiles.~
+
+@49011 = ~A hidden door
+
+Having Nyalee's Hair in my possession allowed me to reveal a hidden staircase to an underground complex of the temple.~
+
+@49012 = ~A hidden door
+
+The underground complex was full of poisonous gas that immediately put me out of commission. When I awoke I found myself back at the temple. Maybe sending in a creature that is impervious to the gas clouds has a greater chance of success.~
+
+@49013 = ~A hidden door
+
+After defeating two guardians I was able to wrest a red-golden chalice from the hands of a statue. Now it needs to be returned safely to the party.~
+
+@49014 = ~A hidden door
+
+When the chalice reached the surface it exploded in a burst of light and transformed itself into a bottle containing an otherworldly substance. Whatever it is must be worth a fortune.~
+
+@49015 = ~A hidden door
+
+The destruction of your creature in the maze caused the chalice to burst into a cloud of tiny fragments. The chalice is forever lost to me.~

@@ -1,0 +1,21 @@
+// *** Quest 1: Open hidden trapdoor and collect all ground items of the map at a specific location ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    CreateCreature("CUTSPY", [1007.982], 0)
+    MoveViewPoint([1007.982], INSTANT)
+    ScreenShake([10.10], 60)
+    PlaySound("a7!mztd")
+    FadeToColor([60.0], 0)
+    Wait(8)
+    TriggerActivation("A7_TRAPDOOR", FALSE)
+    CopyGroundPilesTo("A77!02", [90.90])
+    DestroyGroundPiles()
+    LeaveAreaLUAPanic("A77!02", "", [410.352], S)
+    LeaveAreaLUA("A77!02", "", [410.352], S)
+    MultiPlayerSync()
+    StartCutScene("a7!ct21")
+END

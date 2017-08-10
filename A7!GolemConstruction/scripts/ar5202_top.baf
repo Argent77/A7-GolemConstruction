@@ -1,0 +1,25 @@
+// *** Quest 1: Area script AR5202 additions (top) ***
+
+IF
+  Global("A7!Q1MazeEntered", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1MazeEntered", "GLOBAL", 2)
+    TriggerActivation("A7_TO_MAZE_1", FALSE)
+    TriggerActivation("A7_TO_MAZE_2", TRUE)
+    Continue()
+END
+
+IF
+  Global("A7!Q1PartyDisabled", "GLOBAL", 3)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 0)
+    ActionOverride(Player1, MakeUnselectable(0))
+    ActionOverride(Player2, MakeUnselectable(0))
+    ActionOverride(Player3, MakeUnselectable(0))
+    ActionOverride(Player4, MakeUnselectable(0))
+    ActionOverride(Player5, MakeUnselectable(0))
+    ActionOverride(Player6, MakeUnselectable(0))
+    Continue()
+END

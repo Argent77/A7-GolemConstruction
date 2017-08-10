@@ -1,0 +1,70 @@
+// *** Quest 1: Patch functions for AR5202.TIS ***
+
+DEFINE_PATCH_FUNCTION ADD_TIS_TILES
+STR_VAR
+  area_code = ~~  // e.g. AR5202
+  tis_v1    = ~~  // full path to patch TISv1 file
+  tis_v2    = ~~  // full path to patch TISv2 file
+  pvrz      = ~~  // full path to PVRZ file with tiles to add
+RET
+  idxExtraTiles
+  numExtraTiles
+BEGIN
+  SET idxExtraTiles = 0
+  SET numExtraTiles = 0
+  SET SOURCE_TIS_SIZE = SOURCE_SIZE
+  READ_LONG 0x0c blockSize
+  PATCH_IF (blockSize == 0x0c && 
+            NOT ~%area_code%~ STR_EQ ~~ &&
+            FILE_EXISTS ~%tis_v2%~ && 
+            FILE_EXISTS ~%pvrz%~) BEGIN  // TIS+PVRZ
+
+    INNER_PATCH_SAVE area_code ~%area_code%~ BEGIN DELETE_BYTES 1 1 END
+
+    // determine next free PVRZ index
+    SET pageIdx = 0
+    TEXT_SPRINT page ~00~
+    WHILE (FILE_EXISTS_IN_GAME ~a5202%page%.pvrz~) BEGIN
+      SET pageIdx += 1
+      PATCH_IF (pageIdx < 10) BEGIN
+        TEXT_SPRINT page ~0%pageIdx%~
+      END ELSE BEGIN
+        TEXT_SPRINT page ~%pageIdx%~
+      END
+    END
+
+    // install PVRZ and determine PVRZ page
+    INNER_ACTION BEGIN
+      COPY ~%pvrz%~ ~override/%area_code%%page%.pvrz~
+      COPY - ~%tis_v2%~ ~%tis_v2%~
+        SET tisSize = SOURCE_SIZE - 0x18
+        READ_LONG 0x08 numExtraTiles
+        READ_ASCII 0x18 tisData (tisSize)
+    END
+
+    // append new tiles to TIS
+    INSERT_BYTES SOURCE_TIS_SIZE tisSize
+    WRITE_ASCIIE SOURCE_TIS_SIZE ~%tisData%~
+    FOR (idx = 0; idx < numExtraTiles; idx += 1) BEGIN
+      SET ofs = SOURCE_TIS_SIZE + (idx * 12)
+      WRITE_LONG ofs pageIdx
+    END
+
+  END ELSE PATCH_IF (FILE_EXISTS ~%tis_v1%~) BEGIN  // legacy TIS
+    // load extra tiles
+    INNER_ACTION BEGIN
+      COPY - ~%tis_v1%~ ~%tis_v1%~
+        SET tisSize = SOURCE_SIZE - 0x18
+        READ_LONG 0x08 numExtraTiles
+        READ_ASCII 0x18 tisData (tisSize)
+    END
+
+    // append TIS with extra tiles
+    INSERT_BYTES SOURCE_TIS_SIZE tisSize
+    WRITE_ASCIIE SOURCE_TIS_SIZE ~%tisData%~
+  END
+
+  // updating final tile size
+  READ_LONG 0x08 idxExtraTiles
+  WRITE_LONG 0x08 (idxExtraTiles + numExtraTiles)
+END

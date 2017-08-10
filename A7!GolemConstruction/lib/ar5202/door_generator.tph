@@ -1,0 +1,61 @@
+// *** Quest 1: Patches door structure into AR5205.ARE ***
+
+// static script data
+OUTER_TEXT_SPRINT are_door_func ~// auto-generated function: create door structure
+LPF fj_are_structure
+INT_VAR
+  fj_flags              = BIT9    // [can be looked through]
+  fj_open_box_left      = "-1"
+  fj_open_box_top       = "-1"
+  fj_open_box_right     = 0
+  fj_open_box_bottom    = 0
+  fj_closed_box_left    = "-1"
+  fj_closed_box_top     = "-1"
+  fj_closed_box_right   = 0
+  fj_closed_box_bottom  = 0
+  fj_cursor_idx         = 30
+  fj_trap_loc_x         = 938
+  fj_trap_loc_y         = 1020
+  fj_open_loc_x         = 938
+  fj_open_loc_y         = 1020
+  fj_closed_loc_x       = 938
+  fj_closed_loc_y       = 1020
+~
+
+// adding dynamic script data
+OUTER_PATCH_SAVE impeded_cells ~~ BEGIN
+  APPEND_FILE ~%MOD_FOLDER%/areas/ar5202/impeded_cells_open.dat~
+END
+
+OUTER_SET strLen = STRING_LENGTH ~%impeded_cells%~
+OUTER_SET numEntries = strLen / 4
+OUTER_PATCH ~%impeded_cells%~ BEGIN
+  FOR (idx = 0; idx < numEntries; idx += 1) BEGIN
+    SET ofs = idx * 4
+    READ_SHORT ofs x
+    READ_SHORT (ofs+2) y
+    TEXT_SPRINT are_door_func ~%are_door_func%  fj_cell_open_vert_%idx% = %x% + (%y% << 16)%WNL%~
+  END
+END
+
+// continuing static script data
+OUTER_TEXT_SPRINT are_door_func ~%are_door_func%
+STR_VAR
+  fj_structure_type = "door"
+  fj_name           = "A7!MAZE"
+  fj_door_wed_id    = "A7!MAZE"
+  fj_travel_trigger = ""
+END
+~
+
+// generating include file
+<<<<<<<< .../are_door_generated.tph
+>>>>>>>>
+COPY - ~.../are_door_generated.tph~ ~.../are_door_generated.tph~
+  INSERT_BYTES 0 (STRING_LENGTH ~%are_door_func%~)
+  WRITE_ASCIIE 0 ~%are_door_func%~
+
+
+// applying include file
+COPY_EXISTING ~ar5202.are~ ~override~
+  PATCH_REINCLUDE ~.../are_door_generated.tph~

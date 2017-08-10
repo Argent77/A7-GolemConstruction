@@ -1,0 +1,137 @@
+// *** Quest 1: Patch functions for AR5202.WED ***
+
+DEFINE_PATCH_FUNCTION UPDATE_WED_OFFSETS
+INT_VAR
+  offset = 0    // adjust offsets > "offset"
+  adjust = 0    // value to add
+  exclude = 0   // offset excluded from adjustment
+BEGIN
+  PATCH_IF (adjust != 0) BEGIN
+    READ_LONG 0x08 numOverlays
+    READ_LONG 0x0c numDoors
+    READ_LONG 0x10 ofsOverlays
+    READ_LONG 0x18 ofsDoors
+
+    // updating overlay offsets
+    FOR (idx = 0; idx < numOverlays; idx += 1) BEGIN
+      SET ofs = ofsOverlays + (idx * 0x18)
+      READ_LONG (ofs + 0x10) value
+      PATCH_IF (value >= offset && (ofs+0x10) != exclude) BEGIN
+        WRITE_LONG (ofs + 0x10) (value + adjust)
+      END
+      READ_LONG (ofs + 0x14) value
+      PATCH_IF (value >= offset && (ofs+0x14) != exclude) BEGIN
+        WRITE_LONG (ofs + 0x14) (value + adjust)
+      END
+    END
+
+    // updating door offsets
+    FOR (idx = 0; idx < numDoors; idx += 1) BEGIN
+      SET ofs = ofsDoors + (idx * 0x1a)
+      READ_LONG (ofs + 0x12) value
+      PATCH_IF (value >= offset && (ofs+0x12) != exclude) BEGIN
+        WRITE_LONG (ofs + 0x12) (value + adjust)
+      END
+      READ_LONG (ofs + 0x16) value
+      PATCH_IF (value >= offset && (ofs+0x16) != exclude) BEGIN
+        WRITE_LONG (ofs + 0x16) (value + adjust)
+      END
+    END
+
+    // updating main offsets
+    READ_LONG 0x14 ofsSecondHeader
+    SET ofsP = ofsSecondHeader + 0x04
+    SET ofsV = ofsSecondHeader + 0x08
+    SET ofsWG = ofsSecondHeader + 0x0c
+    SET ofsPILT = ofsSecondHeader + 0x10
+    PATCH_FOR_EACH ofs IN ~16~ ~20~ ~24~ ~28~ ~%ofsP%~ ~%ofsV%~ ~%ofsWG%~ ~%ofsPILT%~ BEGIN
+      READ_LONG ofs value
+      PATCH_IF (value >= offset && ofs != exclude) BEGIN
+        WRITE_LONG ofs (value + adjust)
+      END
+    END
+  END
+END
+
+
+DEFINE_PATCH_FUNCTION ADD_WED_AR5202_DOOR
+INT_VAR
+  idxExtraTiles = 0
+  numExtraTiles = 0
+BEGIN
+  // patching extra tiles
+  PATCH_DEFINE_ARRAY wedTileIndices BEGIN 534 535 536 537 573 574 575 576 577 578 613 614 615 616 617 618 653 654 655 656 657 695 696 END
+  READ_LONG 0x10 ofsOverlays
+  READ_LONG (ofsOverlays + 0x10) ofsTilemap
+  READ_LONG (ofsOverlays + 0x14) ofsTileIndices
+  SET idxTile = idxExtraTiles
+  PATCH_PHP_EACH wedTileIndices AS _ => idxMap BEGIN
+    // patching tile map and tile index lookup: replace primary tile indices with secondary tiles, use primary tiles as alternate tile indices
+    SET ofs1 = ofsTilemap + (idxMap * 0x0a)
+    READ_SHORT ofs1 idxLookup
+    SET ofs2 = ofsTileIndices + (idxLookup * 2)
+    READ_SHORT ofs2 priTile
+    WRITE_SHORT ofs2 idxTile
+    WRITE_SHORT (ofs1+4) priTile
+    SET idxTile += 1
+  END
+
+  // inserting new door
+  SET sizeDoor = 0x1a
+  READ_LONG 0x0c numDoors
+  READ_LONG 0x18 ofsDoors
+  LPF UPDATE_WED_OFFSETS INT_VAR offset = ofsDoors adjust = sizeDoor exclude = 0x18 END
+  SET sizeTilemapIndices = numExtraTiles * 2
+  READ_LONG 0x1c ofsTilemapIndices
+  LPF UPDATE_WED_OFFSETS INT_VAR offset = ofsTilemapIndices adjust = sizeTilemapIndices exclude = 0x1c END
+
+  READ_LONG 0x18 ofsDoors
+  READ_LONG 0x14 ofsSecondHeader
+  READ_LONG 0x1c ofsTilemapIndices
+  READ_LONG ofsSecondHeader numWallPoly
+  READ_LONG (ofsSecondHeader+4) ofsWallPoly
+
+  // calculating tilemap lookup start index and polygon offsets
+  SET numTilemapLookup = 0
+  SET ofsPolyOpen = ofsWallPoly + (numWallPoly*0x12)
+  SET ofsPolyClose = ofsPolyOpen
+  FOR (idx = 0; idx < numDoors; idx += 1) BEGIN
+    SET ofs = ofsDoors + (idx * sizeDoor)
+    // Tilemap lookup index
+    READ_SHORT (ofs+0x04) v
+    PATCH_IF (v > numTilemapLookup) BEGIN
+      SET numTilemapLookup = v
+    END
+    // Polygons open offset
+    READ_LONG (ofs+0x12) v
+    PATCH_IF (v >= ofsPolyOpen) BEGIN
+      READ_SHORT (ofs+0x0e) v2
+      SET ofsPolyOpen = v + (v2*0x12) // offset behind open polygons block
+    END
+    // Polygons closed offset
+    READ_LONG (ofs+0x16) v
+    PATCH_IF (v >= ofsPolyClose) BEGIN
+      READ_SHORT (ofs+0x10) v2
+      SET ofsPolyClose = v + (v2*0x12) // offset behind closed polygons block
+    END
+  END
+
+  // adding door structure
+  SET ofsNewDoor = ofsDoors + (numDoors*sizeDoor)
+  INSERT_BYTES ofsNewDoor sizeDoor
+  WRITE_ASCII ofsNewDoor ~A7!MAZE~ #8  // Name
+  WRITE_SHORT (ofsNewDoor+0x08) 1  // Is door?
+  WRITE_SHORT (ofsNewDoor+0x0a) numTilemapLookup // Tilemap lookup index
+  WRITE_SHORT (ofsNewDoor+0x0c) numExtraTiles  // # tilemap indices
+  WRITE_LONG (ofsNewDoor+0x12) ofsPolyOpen  // Polygons open offset
+  WRITE_LONG (ofsNewDoor+0x16) ofsPolyClose  // Polygons closed offset
+  WRITE_LONG 0x0c (numDoors+1)
+
+  // adding tilemap indices
+  SET ofs = ofsTilemapIndices + (numTilemapLookup * 2)
+  INSERT_BYTES ofs sizeTilemapIndices
+  PATCH_PHP_EACH wedTileIndices AS _ => idxMap BEGIN
+    WRITE_SHORT ofs idxMap
+    SET ofs += 2
+  END
+END

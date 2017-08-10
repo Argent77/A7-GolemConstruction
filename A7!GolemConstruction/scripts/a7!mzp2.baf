@@ -1,0 +1,9 @@
+// *** Quest 1: Maze Portal to main area ***
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 5)
+THEN
+  RESPONSE #100
+    ActionOverride(LastTrigger, LeaveAreaLUA("A77!01", "", [1833.1530], S))
+END

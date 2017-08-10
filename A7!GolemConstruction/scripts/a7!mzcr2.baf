@@ -1,0 +1,11 @@
+// *** Quest 1: Special override script for Devil Shade in the maze ***
+
+IF
+  Global("A7!Q1StatueChalice", "GLOBAL", 1)
+  Global("A7!Q1Destroyed", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1Destroyed", "LOCALS", 1)
+    SetGlobal("MoreShadows", "LOCALS", 1)
+    Kill(Myself)
+END

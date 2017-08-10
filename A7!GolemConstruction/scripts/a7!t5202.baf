@@ -1,0 +1,15 @@
+// *** Quest 1: Travel trigger from maze to temple map ***
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 5)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 2)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 3)
+    SetGlobal("A7!Q1MapInit", "MYAREA", 0)
+    RemoveAreaFlag(NOSAVE)
+    ApplySpellRES("a7!q1rm", LastTrigger)
+    ActionOverride(LastTrigger, LeaveAreaLUAPanic("AR5202", "", [1188.999], SE))
+    ActionOverride(LastTrigger, LeaveAreaLUA("AR5202", "", [1188.999], SE))
+END

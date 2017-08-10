@@ -1,0 +1,40 @@
+// *** Quest 1: Maze cloud script ***
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    ForceSpellRES("a7!mzcl", Myself)
+    Continue()
+END
+
+IF
+  OR(6)
+    IsOverMe(Player1)
+    IsOverMe(Player2)
+    IsOverMe(Player3)
+    IsOverMe(Player4)
+    IsOverMe(Player5)
+    IsOverMe(Player6)
+  Global("A7!Q1MazeEntered", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1MazeEntered", "GLOBAL", 1)
+    Continue()
+END
+
+IF
+  OR(6)
+    IsOverMe(Player1)
+    IsOverMe(Player2)
+    IsOverMe(Player3)
+    IsOverMe(Player4)
+    IsOverMe(Player5)
+    IsOverMe(Player6)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    MoveViewObject([PC], INSTANT)
+    StartCutScene("a7!ct25")
+END

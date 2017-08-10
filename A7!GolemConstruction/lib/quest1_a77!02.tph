@@ -1,0 +1,22 @@
+// *** Quest 1: Map A77!02 ***
+
+// Copying songs from AR5202...
+COPY_EXISTING - ~ar5202.are~ ~override~
+  READ_LONG 0xbc ofs
+  FOR (idx = 0; idx < 5; ++idx) BEGIN
+    SET $songs(~%idx%~) = LONG_AT ofs
+    SET ofs += 4
+  END
+// ...to A77!02
+COPY ~%MOD_FOLDER%/areas/a77!02/a77!02.are~ ~override~
+  READ_LONG 0xbc ofs
+  FOR (idx = 0; idx < 5; ++idx) BEGIN
+    WRITE_LONG ofs $songs(~%idx%~)
+    SET ofs += 4
+  END
+
+COPY ~%MOD_FOLDER%/areas/a77!02/a77!02.wed~ ~override~
+     ~%MOD_FOLDER%/areas/a77!02/a77!02.tis~ ~override~
+     ~%MOD_FOLDER%/areas/a77!02/a77!02ht.bmp~ ~override~
+     ~%MOD_FOLDER%/areas/a77!02/a77!02lm.bmp~ ~override~
+     ~%MOD_FOLDER%/areas/a77!02/a77!02sr.bmp~ ~override~

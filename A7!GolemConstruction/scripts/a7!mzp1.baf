@@ -1,0 +1,9 @@
+// *** Quest 1: Maze Portal to hidden room ***
+
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 5)
+THEN
+  RESPONSE #100
+    ActionOverride(LastTrigger, LeaveAreaLUA("A77!01", "", [3450.2450], S))
+END

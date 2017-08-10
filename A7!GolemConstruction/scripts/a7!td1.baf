@@ -1,0 +1,115 @@
+// *** Quest 1: Trapdoor proximity trigger ***
+
+IF
+  IsOverMe(Player1)
+  HasItem("a7!misc1", Player1)
+  Global("A7!Q1HairDetected", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
+    ActionOverride(Player1, StartDialogOverride("a7!td1", Player1))
+END
+
+IF
+  IsOverMe(Player2)
+  HasItem("a7!misc1", Player2)
+  Global("A7!Q1HairDetected", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
+    ActionOverride(Player2, StartDialogOverride("a7!td1", Player2))
+END
+
+IF
+  IsOverMe(Player3)
+  HasItem("a7!misc1", Player3)
+  Global("A7!Q1HairDetected", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
+    ActionOverride(Player3, StartDialogOverride("a7!td1", Player3))
+END
+
+IF
+  IsOverMe(Player4)
+  HasItem("a7!misc1", Player4)
+  Global("A7!Q1HairDetected", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
+    ActionOverride(Player4, StartDialogOverride("a7!td1", Player4))
+END
+
+IF
+  IsOverMe(Player5)
+  HasItem("a7!misc1", Player5)
+  Global("A7!Q1HairDetected", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
+    ActionOverride(Player5, StartDialogOverride("a7!td1", Player5))
+END
+
+IF
+  IsOverMe(Player6)
+  HasItem("a7!misc1", Player6)
+  Global("A7!Q1HairDetected", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
+    ActionOverride(Player6, StartDialogOverride("a7!td1", Player6))
+END
+
+IF
+  !IsOverMe(Player1)
+  HasItem("a7!misc1", Player1)
+  Global("A7!Q1HairDetected", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 0)
+END
+
+IF
+  !IsOverMe(Player2)
+  HasItem("a7!misc1", Player2)
+  Global("A7!Q1HairDetected", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 0)
+END
+
+IF
+  !IsOverMe(Player3)
+  HasItem("a7!misc1", Player3)
+  Global("A7!Q1HairDetected", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 0)
+END
+
+IF
+  !IsOverMe(Player4)
+  HasItem("a7!misc1", Player4)
+  Global("A7!Q1HairDetected", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 0)
+END
+
+IF
+  !IsOverMe(Player5)
+  HasItem("a7!misc1", Player5)
+  Global("A7!Q1HairDetected", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 0)
+END
+
+IF
+  !IsOverMe(Player6)
+  HasItem("a7!misc1", Player6)
+  Global("A7!Q1HairDetected", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1HairDetected", "MYAREA", 0)
+END
