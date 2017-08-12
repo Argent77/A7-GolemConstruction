@@ -8,14 +8,7 @@ THEN
     DisplayStringHead(Myself, @100031)  // The poisonous gas enters your nose...
     Wait(3)
     SetSequence(SEQ_DIE)
-    SmallWait(5)
-    ActionOverride(Player3, SetSequence(SEQ_DIE))
-    SmallWait(10)
-    ActionOverride(Player2, SetSequence(SEQ_DIE))
-    ActionOverride(Player5, SetSequence(SEQ_DIE))
-    SmallWait(5)
-    ActionOverride(Player4, SetSequence(SEQ_DIE))
-    ActionOverride(Player6, SetSequence(SEQ_DIE))
+    SmallWait(20)
     Wait(2)
     FadeToColor([45.0], 0)
     Wait(3)
@@ -27,5 +20,65 @@ THEN
     ActionOverride(Player5, LeaveAreaLUA("AR5202", "", [962.1118], NNE))
     ActionOverride(Player6, LeaveAreaLUA("AR5202", "", [870.1080], NEE))
     MultiPlayerSync()
-    StartCutScene("a7!ct26")
+    StartCutSceneEx("a7!ct26", TRUE)
+END
+
+IF
+  !Race(Player2, GOLEM)
+  !Race(Player2, MYCONID)
+  !General(Player2, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    Wait(3)
+    SmallWait(15)
+    SetSequence(SEQ_DIE)
+END
+
+IF
+  !Race(Player3, GOLEM)
+  !Race(Player3, MYCONID)
+  !General(Player3, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    Wait(3)
+    SmallWait(5)
+    SetSequence(SEQ_DIE)
+END
+
+IF
+  !Race(Player4, GOLEM)
+  !Race(Player4, MYCONID)
+  !General(Player4, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    Wait(3)
+    SmallWait(20)
+    SetSequence(SEQ_DIE)
+END
+
+IF
+  !Race(Player5, GOLEM)
+  !Race(Player5, MYCONID)
+  !General(Player5, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    Wait(3)
+    SmallWait(15)
+    SetSequence(SEQ_DIE)
+END
+
+IF
+  !Race(Player6, GOLEM)
+  !Race(Player6, MYCONID)
+  !General(Player6, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    Wait(3)
+    SmallWait(20)
+    SetSequence(SEQ_DIE)
 END

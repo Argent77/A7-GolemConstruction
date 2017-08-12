@@ -16,6 +16,7 @@ IF
     IsOverMe(Player4)
     IsOverMe(Player5)
     IsOverMe(Player6)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 0)
   Global("A7!Q1MazeEntered", "GLOBAL", 0)
 THEN
   RESPONSE #100
@@ -31,10 +32,11 @@ IF
     IsOverMe(Player4)
     IsOverMe(Player5)
     IsOverMe(Player6)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 0)
 THEN
   RESPONSE #100
     ClearAllActions()
     StartCutSceneMode()
     MoveViewObject([PC], INSTANT)
-    StartCutScene("a7!ct25")
+    StartCutSceneEx("a7!ct25", TRUE)
 END

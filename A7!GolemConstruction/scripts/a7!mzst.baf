@@ -1,6 +1,5 @@
 // *** Quest 1: Maze Statue ***
 
-// TODO: Clicked() doesn't work yet for non-party members
 IF
   Clicked([GOODCUTOFF])
   !Range(LastTrigger, 10)

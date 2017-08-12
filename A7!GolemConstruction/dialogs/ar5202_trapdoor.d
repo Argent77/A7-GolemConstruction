@@ -18,9 +18,52 @@ END
 // Non-living creature attempts to enter the maze
 IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
   SAY @47004 /* (This creature should withstand the poisonous clouds of the maze.) */
-  ++ @47008 /* (Enter the maze.) */
+  + ~InPartySlot(Myself, 0)~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 1)
+        ApplySpellRES("a7!q1ad", Myself)
+        LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
+        LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
+  + ~InPartySlot(Myself, 1)~ + @47008 /* (Enter the maze.) */
+    DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
+        SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 2)
+        ApplySpellRES("a7!q1ad", Myself)
+        LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
+        LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
+  + ~InPartySlot(Myself, 2)~ + @47008 /* (Enter the maze.) */
+    DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
+        SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 3)
+        ApplySpellRES("a7!q1ad", Myself)
+        LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
+        LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
+  + ~InPartySlot(Myself, 3)~ + @47008 /* (Enter the maze.) */
+    DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
+        SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 4)
+        ApplySpellRES("a7!q1ad", Myself)
+        LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
+        LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
+  + ~InPartySlot(Myself, 4)~ + @47008 /* (Enter the maze.) */
+    DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
+        SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 5)
+        ApplySpellRES("a7!q1ad", Myself)
+        LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
+        LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
+  + ~InPartySlot(Myself, 5)~ + @47008 /* (Enter the maze.) */
+    DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
+        SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 6)
+        ApplySpellRES("a7!q1ad", Myself)
+        LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
+        LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
+  + ~!InParty(Myself)~ + @47008 /* (Enter the maze.) */
+    DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
+        SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 0)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
         LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT

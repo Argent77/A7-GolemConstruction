@@ -9,16 +9,69 @@ THEN
     Wait(1)
     DisplayStringHead(Myself, @100032)  // You awake back in the temple...
     SetSequence(SEQ_AWAKE)
-    SmallWait(3)
-    ActionOverride(Player2, SetSequence(SEQ_AWAKE))
-    ActionOverride(Player3, SetSequence(SEQ_AWAKE))
-    SmallWait(7)
-    ActionOverride(Player4, SetSequence(SEQ_AWAKE))
-    SmallWait(5)
-    ActionOverride(Player5, SetSequence(SEQ_AWAKE))
-    SmallWait(10)
-    ActionOverride(Player6, SetSequence(SEQ_AWAKE))
+    SmallWait(25)
     Wait(2)
     AddJournalEntry(@49012, QUEST)  // The underground complex was full of poisonous gas...
     EndCutSceneMode()
 END
+
+IF
+  !Race(Player2, GOLEM)
+  !Race(Player2, MYCONID)
+  !General(Player2, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player2)
+    Wait(1)
+    SmallWait(3)
+    SetSequence(SEQ_AWAKE)
+END
+
+IF
+  !Race(Player3, GOLEM)
+  !Race(Player3, MYCONID)
+  !General(Player3, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player3)
+    Wait(1)
+    SmallWait(3)
+    SetSequence(SEQ_AWAKE)
+END
+
+IF
+  !Race(Player4, GOLEM)
+  !Race(Player4, MYCONID)
+  !General(Player4, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player4)
+    Wait(1)
+    SmallWait(10)
+    SetSequence(SEQ_AWAKE)
+END
+
+IF
+  !Race(Player5, GOLEM)
+  !Race(Player5, MYCONID)
+  !General(Player5, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player5)
+    Wait(1)
+    SmallWait(15)
+    SetSequence(SEQ_AWAKE)
+END
+
+IF
+  !Race(Player6, GOLEM)
+  !Race(Player6, MYCONID)
+  !General(Player6, UNDEAD)
+THEN
+  RESPONSE #100
+    CutSceneId(Player6)
+    Wait(1)
+    SmallWait(25)
+    SetSequence(SEQ_AWAKE)
+END
+

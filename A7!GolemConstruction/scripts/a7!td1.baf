@@ -7,7 +7,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
-    ActionOverride(Player1, StartDialogOverride("a7!td1", Player1))
+    ActionOverride(Player1, StartDialogOverride("a7!td1", Myself))
 END
 
 IF
@@ -17,7 +17,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
-    ActionOverride(Player2, StartDialogOverride("a7!td1", Player2))
+    ActionOverride(Player2, StartDialogOverride("a7!td1", Myself))
 END
 
 IF
@@ -27,7 +27,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
-    ActionOverride(Player3, StartDialogOverride("a7!td1", Player3))
+    ActionOverride(Player3, StartDialogOverride("a7!td1", Myself))
 END
 
 IF
@@ -37,7 +37,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
-    ActionOverride(Player4, StartDialogOverride("a7!td1", Player4))
+    ActionOverride(Player4, StartDialogOverride("a7!td1", Myself))
 END
 
 IF
@@ -47,7 +47,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
-    ActionOverride(Player5, StartDialogOverride("a7!td1", Player5))
+    ActionOverride(Player5, StartDialogOverride("a7!td1", Myself))
 END
 
 IF
@@ -57,7 +57,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1HairDetected", "MYAREA", 1)
-    ActionOverride(Player6, StartDialogOverride("a7!td1", Player6))
+    ActionOverride(Player6, StartDialogOverride("a7!td1", Myself))
 END
 
 IF

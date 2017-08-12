@@ -1,10 +1,10 @@
 // *** Quest 1: Trapdoor selective travel trigger ***
 
+// Golems, Undead and Myconids
 IF
   Clicked([ANYONE])
   Range(LastTrigger, 5)
   !Gender(LastTrigger, SUMMONED)
-  !InParty(LastTrigger)
   OR(3)
     Race(LastTrigger, GOLEM)
     General(LastTrigger, UNDEAD)
@@ -12,7 +12,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1EnterMaze", "MYAREA", 1)
-    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", LastTrigger))
+    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", Myself))
 END
 
 IF
@@ -22,7 +22,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1EnterMaze", "MYAREA", 2)
-    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", LastTrigger))
+    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", Myself))
 END
 
 IF
@@ -34,15 +34,5 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1EnterMaze", "MYAREA", 3)
-    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", LastTrigger))
-END
-
-IF
-  Clicked([ANYONE])
-  Range(LastTrigger, 5)
-  InParty(LastTrigger)
-THEN
-  RESPONSE #100
-    SetGlobal("A7!Q1EnterMaze", "MYAREA", 3)
-    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", LastTrigger))
+    ActionOverride(LastTrigger, StartDialogOverride("a7!td1", Myself))
 END

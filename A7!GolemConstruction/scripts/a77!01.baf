@@ -7,6 +7,62 @@ THEN
   RESPONSE #100
     SetGlobal("A7!Q1MapInit", "MYAREA", 1)
     AddAreaFlag(NOSAVE)
+    Continue()
+END
+
+// Don't make party member who entered the maze unselectable
+IF
+  !Global("A7!Q1EnterMazePC", "GLOBAL", 1)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1, MakeUnselectable(999999))
+    Continue()
+END
+
+IF
+  !Global("A7!Q1EnterMazePC", "GLOBAL", 2)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2, MakeUnselectable(999999))
+    Continue()
+END
+
+IF
+  !Global("A7!Q1EnterMazePC", "GLOBAL", 3)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3, MakeUnselectable(999999))
+    Continue()
+END
+
+IF
+  !Global("A7!Q1EnterMazePC", "GLOBAL", 4)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4, MakeUnselectable(999999))
+    Continue()
+END
+
+IF
+  !Global("A7!Q1EnterMazePC", "GLOBAL", 5)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5, MakeUnselectable(999999))
+    Continue()
+END
+
+IF
+  !Global("A7!Q1EnterMazePC", "GLOBAL", 6)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6, MakeUnselectable(999999))
+    Continue()
 END
 
 IF
@@ -14,10 +70,5 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 2)
-    ActionOverride(Player1, MakeUnselectable(999999))
-    ActionOverride(Player2, MakeUnselectable(999999))
-    ActionOverride(Player3, MakeUnselectable(999999))
-    ActionOverride(Player4, MakeUnselectable(999999))
-    ActionOverride(Player5, MakeUnselectable(999999))
-    ActionOverride(Player6, MakeUnselectable(999999))
+    SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 0)
 END
