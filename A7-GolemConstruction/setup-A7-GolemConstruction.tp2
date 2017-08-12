@@ -1,0 +1,190 @@
+BACKUP ~A7-GolemConstruction/backup~
+AUTHOR ~Argent77 at Spellhold Studios~
+VERSION ~4.0~
+
+ALWAYS
+  INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+END
+
+README ~A7-GolemConstruction/readme/readme-%LANGUAGE%.txt~ ~A7-GolemConstruction/readme/readme.txt~
+
+LANGUAGE ~English~
+         ~english~
+         ~A7-GolemConstruction/language/english/setup.tra~
+         ~A7-GolemConstruction/language/english/tome01.tra~
+         ~A7-GolemConstruction/language/english/tome02.tra~
+         ~A7-GolemConstruction/language/english/tome03.tra~
+         ~A7-GolemConstruction/language/english/tome04.tra~
+         ~A7-GolemConstruction/language/english/tome05.tra~
+         ~A7-GolemConstruction/language/english/tome06.tra~
+         ~A7-GolemConstruction/language/english/tome07.tra~
+         ~A7-GolemConstruction/language/english/tome08.tra~
+         ~A7-GolemConstruction/language/english/tome09.tra~
+         ~A7-GolemConstruction/language/english/tome0a.tra~
+         ~A7-GolemConstruction/language/english/tome0b.tra~
+         ~A7-GolemConstruction/language/english/tome0c.tra~
+         ~A7-GolemConstruction/language/english/tome0d.tra~
+         ~A7-GolemConstruction/language/english/tomebd.tra~
+         ~A7-GolemConstruction/language/english/tomedg.tra~
+         ~A7-GolemConstruction/language/english/spells.tra~
+         ~A7-GolemConstruction/language/english/items.tra~
+         ~A7-GolemConstruction/language/english/dialogs.tra~
+         ~A7-GolemConstruction/language/english/misc.tra~
+         ~A7-GolemConstruction/language/english/iwdee.tra~
+LANGUAGE ~Francais (traduction: Gwendolyne)~
+         ~french~
+         ~A7-GolemConstruction/language/french/setup.tra~
+         ~A7-GolemConstruction/language/french/tome01.tra~
+         ~A7-GolemConstruction/language/french/tome02.tra~
+         ~A7-GolemConstruction/language/french/tome03.tra~
+         ~A7-GolemConstruction/language/french/tome04.tra~
+         ~A7-GolemConstruction/language/french/tome05.tra~
+         ~A7-GolemConstruction/language/french/tome06.tra~
+         ~A7-GolemConstruction/language/french/tome07.tra~
+         ~A7-GolemConstruction/language/french/tome08.tra~
+         ~A7-GolemConstruction/language/french/tome09.tra~
+         ~A7-GolemConstruction/language/french/tome0a.tra~
+         ~A7-GolemConstruction/language/french/tome0b.tra~
+         ~A7-GolemConstruction/language/french/tome0c.tra~
+         ~A7-GolemConstruction/language/french/tome0d.tra~
+         ~A7-GolemConstruction/language/french/tomebd.tra~
+         ~A7-GolemConstruction/language/french/tomedg.tra~
+         ~A7-GolemConstruction/language/french/spells.tra~
+         ~A7-GolemConstruction/language/french/items.tra~
+         ~A7-GolemConstruction/language/french/dialogs.tra~
+         ~A7-GolemConstruction/language/french/misc.tra~
+         ~A7-GolemConstruction/language/french/iwdee.tra~
+LANGUAGE ~Deutsch~
+         ~german~
+         ~A7-GolemConstruction/language/german/setup.tra~
+         ~A7-GolemConstruction/language/german/tome01.tra~
+         ~A7-GolemConstruction/language/german/tome02.tra~
+         ~A7-GolemConstruction/language/german/tome03.tra~
+         ~A7-GolemConstruction/language/german/tome04.tra~
+         ~A7-GolemConstruction/language/german/tome05.tra~
+         ~A7-GolemConstruction/language/german/tome06.tra~
+         ~A7-GolemConstruction/language/german/tome07.tra~
+         ~A7-GolemConstruction/language/german/tome08.tra~
+         ~A7-GolemConstruction/language/german/tome09.tra~
+         ~A7-GolemConstruction/language/german/tome0a.tra~
+         ~A7-GolemConstruction/language/german/tome0b.tra~
+         ~A7-GolemConstruction/language/german/tome0c.tra~
+         ~A7-GolemConstruction/language/german/tome0d.tra~
+         ~A7-GolemConstruction/language/german/tomebd.tra~
+         ~A7-GolemConstruction/language/german/tomedg.tra~
+         ~A7-GolemConstruction/language/german/spells.tra~
+         ~A7-GolemConstruction/language/german/items.tra~
+         ~A7-GolemConstruction/language/german/dialogs.tra~
+         ~A7-GolemConstruction/language/german/misc.tra~
+         ~A7-GolemConstruction/language/german/iwdee.tra~
+LANGUAGE ~Polski (tlumaczenie: Cahir)~
+         ~polish~
+         ~A7-GolemConstruction/language/polish/setup.tra~
+         ~A7-GolemConstruction/language/polish/tome01.tra~
+         ~A7-GolemConstruction/language/polish/tome02.tra~
+         ~A7-GolemConstruction/language/polish/tome03.tra~
+         ~A7-GolemConstruction/language/polish/tome04.tra~
+         ~A7-GolemConstruction/language/polish/tome05.tra~
+         ~A7-GolemConstruction/language/polish/tome06.tra~
+         ~A7-GolemConstruction/language/polish/tome07.tra~
+         ~A7-GolemConstruction/language/polish/tome08.tra~
+         ~A7-GolemConstruction/language/polish/tome09.tra~
+         ~A7-GolemConstruction/language/polish/tome0a.tra~
+         ~A7-GolemConstruction/language/polish/tome0b.tra~
+         ~A7-GolemConstruction/language/polish/tome0c.tra~
+         ~A7-GolemConstruction/language/polish/tome0d.tra~
+         ~A7-GolemConstruction/language/polish/tomebd.tra~
+         ~A7-GolemConstruction/language/polish/tomedg.tra~
+         ~A7-GolemConstruction/language/polish/spells.tra~
+         ~A7-GolemConstruction/language/polish/items.tra~
+         ~A7-GolemConstruction/language/polish/dialogs.tra~
+         ~A7-GolemConstruction/language/polish/misc.tra~
+         ~A7-GolemConstruction/language/polish/iwdee.tra~
+
+
+BEGIN @0  // Golem Construction ability for spellcasters
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @100   // This component requires BG:EE, BG2:EE or IWD:EE to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~ AND FILE_EXISTS ~engine.lua~) OR 
+                    (GAME_IS ~iwdee~ AND FILE_EXISTS_IN_GAME ~clearwhr.2da~) @103    // This component requires game patch >= v2.0 (BG:SoD and BG2:EE) or >= v1.4 (IWD:EE).
+  DESIGNATED 0
+
+  INCLUDE ~%MOD_FOLDER%/lib/generic.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/spells.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/items.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/creatures.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/tomes.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/containers.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/distribute.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/quest1.tph~
+
+
+BEGIN @10 // Replace original Golem Manual
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 10
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_replace_manual.tph~
+
+
+BEGIN @15 // Improve enemy spellcaster AI
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 15
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_improved_scripts.tph~
+
+
+BEGIN @20 // Golems for enemy spellcasters
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD or BG2:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 20
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_mage_golems.tph~
+
+
+BEGIN @25 // Greater variety of enemy golem types
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD or BG2:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 25
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_variety.tph~
+
+
+BEGIN @30 // Fighter Stronghold golems may continue to serve you
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 30
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_stronghold_golems.tph~
+
+
+BEGIN @35 // Make golems vulnerable to specific spell effects
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @107  // This component requires BG:SoD, BG2:EE or IWD:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 35
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_vulnerable.tph~
+
+
+BEGIN @40 // Reduce weapon immunities and resistances for constructed golems
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD or BG2:EE to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 40
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_reduce_immunities.tph~
+
+BEGIN @45 // Identify All Items
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 45
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_identify_all_items.tph~
