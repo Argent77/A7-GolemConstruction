@@ -33,7 +33,7 @@ Installation
 ~~~~~~~~~~~~
 
 Dies ist eine WeiDU Mod. Das bedeutet, sie ist sehr einfach zu installieren. Entpackt die 
-heruntergeladene Zipdatei in das Spieleverzeichnis und startet "setup-A7!GolemConstruction.exe". 
+heruntergeladene Zipdatei in das Spieleverzeichnis und startet "setup-A7-GolemConstruction.exe". 
 Folgt den Anweisungen des Programms und die Mod ist startbereit. Ihr solltet ein neues Spiel 
 starten, um nichts zu verpassen.
 
@@ -160,10 +160,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
-4.2
+5.0
+- Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems
 - Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)
-
-4.1
 - Added new Tweaks component "Identify all items"
 - Fixed incorrect names of BG1 golem manuals
 
