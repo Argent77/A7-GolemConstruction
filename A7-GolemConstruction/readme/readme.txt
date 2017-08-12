@@ -161,7 +161,10 @@ History
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems
 - Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)
 - Added new Tweaks component "Identify all items"
+- Worked around a game bug in the dialog of Ore Merchant Jerlia
+- Fixed a condition when de'Arnise golems should turn hostile
 - Fixed incorrect names of BG1 golem manuals
+- Fixed spelling in French translation
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game
