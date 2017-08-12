@@ -649,7 +649,7 @@ Perfect Adamantite Golem:
 - Ingredients:
   - Eight bars of adamantine
   - One drop of blood from a Solar or Fallen Solar
-  - 064,000 XP drained from the caster
+  - 64,000 XP drained from the caster
 - Stats:
   - STR: 25
   - HP: 150
