@@ -279,8 +279,8 @@ COPY ~%MOD_FOLDER%/spells/a7!clst.spl~ ~override~
   END
 
 ACTION_IF (SPELL_REV) BEGIN
-  OUTER_TEXT_SPRINT spwi812 ~spwi812d.spl~
-  OUTER_TEXT_SPRINT spwish32 ~a7!dummy.spl~ // Currently buggy (v4beta14)
+  OUTER_TEXT_SPRINT spwi812 ~spwi812.spl~
+  OUTER_TEXT_SPRINT spwish32 ~spwish32.spl~
 END ELSE BEGIN
   OUTER_TEXT_SPRINT spwi812 ~spwi812.spl~
   OUTER_TEXT_SPRINT spwish32 ~spwish32.spl~
@@ -340,10 +340,10 @@ END ELSE BEGIN
 END
 
 ACTION_IF (SPELL_REV) BEGIN
-  OUTER_TEXT_SPRINT spwi503 ~spwi503d.spl~
-  OUTER_TEXT_SPRINT spcryo01 ~a7!dummy.spl~ // Currently buggy (v4beta14)
+  OUTER_TEXT_SPRINT spwi503 ~spwi503.spl~
+  OUTER_TEXT_SPRINT spcryo01 ~spcryo01.spl~
   OUTER_TEXT_SPRINT spin833 ~spin833.spl~
-  OUTER_TEXT_SPRINT spwi404 ~spwi404d.spl~
+  OUTER_TEXT_SPRINT spwi404 ~spwi404.spl~
 END ELSE BEGIN
   OUTER_TEXT_SPRINT spwi503 ~spwi503.spl~
   OUTER_TEXT_SPRINT spcryo01 ~spcryo01.spl~
@@ -401,7 +401,7 @@ ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
     END
 
   ACTION_IF (SPELL_REV) BEGIN
-    OUTER_TEXT_SPRINT sppr707 ~sppr707d.spl~
+    OUTER_TEXT_SPRINT sppr707 ~sppr707.spl~
   END ELSE BEGIN
     OUTER_TEXT_SPRINT sppr707 ~sppr707.spl~
   END
@@ -456,7 +456,7 @@ COPY ~%MOD_FOLDER%/spells//a7!fatk.eff~ ~override~
 ACTION_IF (SPELL_REV) BEGIN
   OUTER_TEXT_SPRINT spwi810 ~spwi810d.spl~
   OUTER_TEXT_SPRINT spwi911 ~spwi911d.spl~
-  OUTER_TEXT_SPRINT spwish24 ~a7!dummy.spl~ // Currently buggy (v4beta14)
+  OUTER_TEXT_SPRINT spwish24 ~spwish24.spl~
   OUTER_TEXT_SPRINT spwi922 ~spwi922d.spl~
   OUTER_TEXT_SPRINT spwi925 ~a7!dummy.spl~  // Does not do fire damage
   OUTER_TEXT_SPRINT sppr705 ~sppr705f.spl~
