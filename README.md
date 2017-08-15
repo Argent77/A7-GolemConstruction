@@ -59,6 +59,13 @@ This component modifies a number of spells so that they can affect specific gole
 #### 2.7. Reduce weapon immunities and resistances for constructed golems (for BG:SoD, BG2:EE and EET)
 A great number of enemies have trouble hitting or damaging golems because of their numerous immunities and high resistances, even in later parts of the game. This component nerfs the power of constructed golems by reducing their weapon enchantment immunities as well as by lowering various magical, elemental and physical resistances.
 
+#### 2.8. Identify all items (for all supported games)
+This component will identify all items that are installed by this mod, which includes Golem Building Manuals as well as a number of special ingredients for building perfect golem variants.
+
+#### 2.9. Add "Teleport" ability to golems (for all supported games)
+This component adds the "Teleport" ability to all of your golem followers. It allows golems to jump to a party member in visual range instantly, but can only be used when no enemies are in sight.
+Teleport is mainly thought as a means to get them out of narrow passageways, since several golem variants require more space to move around freely than regular party members. This ability was part of the main component in earlier mod releases.
+
 
 ## Copyright Notice
 The mod "Golem Construction for Spellcasters" is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
