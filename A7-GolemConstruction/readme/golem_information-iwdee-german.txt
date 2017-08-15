@@ -651,6 +651,8 @@ Jeder Golem hat zusätzlich die folgenden Fähigkeiten:
 2. Teleportation:  Mit dieser Fähigkeit kann sich der Golem einem ausgewählten Gruppenmitglied teleportieren, falls er 
                    irgendwo steckenbleibt. Das kann bei größeren Golems in engen Gassen passieren. Diese Fähigkeit 
                    funktioniert nur, wenn keine Feinde in Sichtweite sind.
+                   Hinweis: Diese Fähigkeit ist nur verfügbar, wenn die Unterkomponente "Golemfaehigkeit 'Teleportation' 
+                            hinzufuegen" installiert wurde.
 
 Den Golems kann man auch einfache Befehle geben. Niedere Varianten der Fleisch-, Ton- und Steingolems können den 
 folgenden Befehlen folgen:

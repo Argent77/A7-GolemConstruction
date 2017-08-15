@@ -286,8 +286,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
   IF_EXISTS
@@ -302,8 +300,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
   IF_EXISTS
@@ -319,8 +315,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
   IF_EXISTS
@@ -335,8 +329,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_flesh END
   IF_EXISTS
@@ -352,8 +344,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
     SET count = GAME_IS_IWDEE ? 2 : 3
     ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (3)
@@ -372,8 +362,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in02~ #0 ~innate~   // Stinking Cloud
     SET count = GAME_IS_IWDEE ? 3 : 5
     ADD_MEMORIZED_SPELL ~a7!in02~ #0 ~innate~ (count)
@@ -395,8 +383,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
   IF_EXISTS
@@ -410,8 +396,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_clay END
   IF_EXISTS
@@ -426,8 +410,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
     SET count = GAME_IS_IWDEE ? 1 : 2
     ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
@@ -444,8 +426,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
     SET count = GAME_IS_IWDEE ? 1 : 2
     ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
@@ -463,8 +443,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
     SET count = GAME_IS_IWDEE ? 3 : 5
     ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
@@ -482,8 +460,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in03~ #0 ~innate~   // Golem Haste
     SET count = GAME_IS_IWDEE ? 4 : 8
     ADD_MEMORIZED_SPELL ~a7!in03~ #0 ~innate~ (count)
@@ -505,8 +481,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
   IF_EXISTS
@@ -520,8 +494,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_stone END
   IF_EXISTS
@@ -536,8 +508,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
     SET count = GAME_IS_IWDEE ? 1 : 2
     ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
@@ -554,8 +524,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
     SET count = GAME_IS_IWDEE ? 1 : 2
     ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
@@ -573,8 +541,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
     SET count = GAME_IS_IWDEE ? 3 : 5
     ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
@@ -592,8 +558,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in04~ #0 ~innate~   // Golem Slow
     SET count = GAME_IS_IWDEE ? 4 : 8
     ADD_MEMORIZED_SPELL ~a7!in04~ #0 ~innate~ (count)
@@ -616,8 +580,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
   IF_EXISTS
@@ -632,8 +594,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_iron END
   IF_EXISTS
@@ -648,8 +608,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
     SET count = GAME_IS_IWDEE ? 2 : 3
     ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
@@ -666,8 +624,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
     SET count = GAME_IS_IWDEE ? 2 : 3
     ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
@@ -685,8 +641,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
     SET count = GAME_IS_IWDEE ? 3 : 6
     ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
@@ -704,8 +658,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in05~ #0 ~innate~   // Gas Cloud
     SET count = GAME_IS_IWDEE ? 4 : 9
     ADD_MEMORIZED_SPELL ~a7!in05~ #0 ~innate~ (count)
@@ -728,8 +680,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
   IF_EXISTS
@@ -744,8 +694,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_mithral END
   IF_EXISTS
@@ -760,8 +708,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     PATCH_IF (NOT GAME_IS_IWDEE) BEGIN
       ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
       ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
@@ -779,8 +725,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     PATCH_IF (NOT GAME_IS_IWDEE) BEGIN
       ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
       ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~
@@ -799,8 +743,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
     SET count = GAME_IS_IWDEE ? 1 : 2
     ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (count)
@@ -818,8 +760,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
     SET count = GAME_IS_IWDEE ? 2 : 4
     ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (count)
@@ -842,8 +782,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
   IF_EXISTS
@@ -858,8 +796,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_lesser END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
   IF_EXISTS
@@ -874,8 +810,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
     ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
@@ -891,8 +825,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
     ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
@@ -909,8 +841,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
     ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (5)
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_greater END
@@ -927,8 +857,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
     ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (8)
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_perfect END
@@ -950,8 +878,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_maggot END
   IF_EXISTS
 
@@ -972,8 +898,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in13~ #0 ~innate~   // Hideous Laughter
     SET count = GAME_IS_IWDEE ? 2 : 4
     ADD_MEMORIZED_SPELL ~a7!in13~ #0 ~innate~ (count)
@@ -995,8 +919,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in09~ #0 ~innate~   // Mind Blast
     ADD_MEMORIZED_SPELL ~a7!in09~ #0 ~innate~ (4)
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_brain END
@@ -1016,8 +938,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in10~ #0 ~innate~   // Scolding Steam
     SET count = GAME_IS_IWDEE ? 2 : 4
     ADD_MEMORIZED_SPELL ~a7!in10~ #0 ~innate~ (count)
@@ -1042,8 +962,6 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in11~ #0 ~innate~   // Wild Magic Flare
     ADD_MEMORIZED_SPELL ~a7!in11~ #0 ~innate~ (3)
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_magic END
@@ -1087,8 +1005,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     ADD_KNOWN_SPELL ~a7!in14~ #0 ~innate~   // Ruby Ray of Reversal
     SET count = GAME_IS_IWDEE ? 2 : 3
     ADD_MEMORIZED_SPELL ~a7!in14~ #0 ~innate~ (count)
@@ -1110,8 +1026,6 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_doll END
   IF_EXISTS
 
@@ -1141,8 +1055,6 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
     WRITE_BYTE 0x274 specific_golem
     ADD_KNOWN_SPELL ~a7!in01~ #0 ~innate~   // Dismiss Golem
     ADD_MEMORIZED_SPELL ~a7!in01~ #0 ~innate~
-    ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
-    ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_bone_doll END
   IF_EXISTS
 

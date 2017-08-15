@@ -130,6 +130,14 @@ Stufe, manchmal um zwei) und diverse magische, elementare unt physische Resisten
 Diese Komponente identifiziert alle von dieser Mod installierten Gegenstände. Dazu gehören die Leitfäden 
 der Golemkonstruktion als auch einige magische Artefakte zur Konstruktion von perfekten Golems.
 
+2.9 Golemfaehigkeit "Teleportation" hinzufuegen (für alle unterstützten Spiele)
+Diese Komponente fügt allen konstruierten Golems die Fähigkeit "Teleportation" hinzu. Sie erlaubt 
+es den Golems, direkt zu einem Gruppenmitglied in Sichtweite zu springen. Sie kann aber nur benutzt 
+werden, wenn keine Gegner zu sehen sind.
+Teleportation ist hauptsächlich dazu gedacht, Golems aus engen Durchgängen zu befreien, da viele 
+Golemvarianten auf Grund ihrer Größe mehr Platz benötigen, um sich frei zu bewegen. Diese Fähigkeit 
+war in früheren Modversionen Teil der Hauptkomponente.
+
 
 Einzelheiten
 ~~~~~~~~~~~~
@@ -164,10 +172,11 @@ History
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems
 - Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)
 - Added new Tweaks component "Identify all items"
+- Added new Tweaks component "Add Teleport ability to golems"
 - Worked around a game bug in the dialog of Ore Merchant Jerlia
 - Fixed a condition when de'Arnise golems should turn hostile
 - Fixed incorrect names of BG1 golem manuals
-- Fixed spelling in French translation
+- Fixed spellings in French translation
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game

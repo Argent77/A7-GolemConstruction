@@ -9,7 +9,7 @@ Les Golems sont fabriqués avec la capacité "Fabriquer un Golem" que l'on apprend
 de fabrication de golem. Elle ouvre un bref dialogue qui vous permet de choisir le type et la version du 
 golem que vous souhaitez construire. La durée de création de l'enveloppe physique du golem est variable et 
 peut prendre plusieurs heures, voire plusieurs jours. Une fois terminée, le golem reçoit un dernier enchantement. 
-Il y a 4 pourcents de chance qu'il se libère et se retourne contre vous pendant 1d4 rounds avant qu'il ne 
+Il y a 4 pour-cent de chance qu'il se libère et se retourne contre vous pendant 1d4 rounds avant qu'il ne 
 finisse par se soumettre à votre volonté. Une fois le golem achevé, vous serez pendant plusieurs rounds trop  
 épuisé pour lancer des sorts ou vous battre correctement.
 
@@ -662,6 +662,8 @@ Chaque golem dispose par défaut des capacités suivantes :
 2. Téléportation : Le golem se téléporte près d'un membre du groupe situé dans son champ de vision. Utile pour les 
                    golems de taille géante qui peuvent se trouver bloqués par des passages trop étroits pour qu'ils 
                    les empruntent. Elle ne peut être utilisée avec succès que si aucun ennemi n'est en vue.
+                   Note : Cette capacité est ajoutée par le composant de Modifications "Ajouter la capacité Téléportation 
+                          aux golems".
 
 Vous pouvez aussi donner des ordres simples à vos golems. Les modèles mineurs de golems de chair, d'argile et de pierre 
 peuvent obéir aux ordres suivants :

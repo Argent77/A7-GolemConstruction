@@ -11,6 +11,7 @@
 @35 = ~Golemy staja sie podatne na okreslone efekty czarow~
 @40 = ~Redukuj niewrazliwosci na bron i odpornosci dla konstruowanych golemow~
 @45 = ~Identyfikuj wszystkie przedmioty~
+@50 = ~Add "Teleport" ability to golems~
 
 @100 = ~Ten komponent wymaga uprzedniego zainstalowania BG:EE, BG2:EE lub IWD:EE~
 @101 = ~Ten komponent wymaga uprzedniego zainstalowania glownego komponentu.~

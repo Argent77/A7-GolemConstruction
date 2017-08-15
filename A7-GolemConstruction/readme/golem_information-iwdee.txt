@@ -639,6 +639,7 @@ Each golem has the following abilities by default:
 2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with 
              big circle sizes so they won't get stuck in narrow pathways. It can only be used while no enemies are 
              around.
+             Note: This ability is added by the Tweaks component "Add "Teleport" ability to golems".
 
 You can also give your golems simple commands. Lesser variants of flesh, clay and stone golems may follow the following 
 orders:

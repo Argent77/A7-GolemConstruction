@@ -182,9 +182,18 @@ BEGIN @40 // Reduce weapon immunities and resistances for constructed golems
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_reduce_immunities.tph~
 
+
 BEGIN @45 // Identify All Items
   REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 45
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_identify_all_items.tph~
+
+
+BEGIN @50 // Add "Teleport" ability
+  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  GROUP @1  // Tweaks
+  DESIGNATED 50
+
+  INCLUDE ~%MOD_FOLDER%/lib/tweaks_add_teleport.tph~

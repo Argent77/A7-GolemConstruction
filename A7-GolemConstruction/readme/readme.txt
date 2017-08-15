@@ -126,6 +126,13 @@ by two) as well as by lowering various magical, elemental and physical resistanc
 This component will identify all items that are installed by this mod, which includes Golem 
 Building Manuals as well as a number of special ingredients for building perfect golem variants.
 
+2.9 Add "Teleport" ability to golems (for all supported games)
+This component adds the "Teleport" ability to all of your golem followers. It allows golems to 
+jump to a party member in visual range instantly, but can only be used when no enemies are in sight.
+Teleport is mainly thought as a means to get them out of narrow passageways, since several golem 
+variants require more space to move around freely than regular party members. This ability was 
+part of the main component in earlier mod releases.
+
 
 Details
 ~~~~~~~
@@ -161,10 +168,11 @@ History
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems
 - Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)
 - Added new Tweaks component "Identify all items"
+- Added new Tweaks component "Add Teleport ability to golems"
 - Worked around a game bug in the dialog of Ore Merchant Jerlia
 - Fixed a condition when de'Arnise golems should turn hostile
 - Fixed incorrect names of BG1 golem manuals
-- Fixed spelling in French translation
+- Fixed spellings in French translation
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game

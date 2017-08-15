@@ -125,17 +125,10 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
 END
 
 
-// Teleport
-COPY ~%MOD_FOLDER%/spells/a7!in08.spl~ ~override~
-  SAY NAME1 @20070  // Teleport
-  SAY UNIDENTIFIED_DESC @20071  // ...
-
+// Teleport (shared resources)
 COPY ~%MOD_FOLDER%/spells/a7!dmndr.bam~ ~override~
      ~%MOD_FOLDER%/spells/a7!dmndr.vvc~ ~override~
      ~%MOD_FOLDER%/spells/a7!dmndr.wav~ ~override~
-     ~%MOD_FOLDER%/spells/a7!in08b.bam~ ~override~
-     ~%MOD_FOLDER%/spells/a7!in08a.eff~ ~override~
-     ~%MOD_FOLDER%/spells/a7!in08a.spl~ ~override~
 
 
 ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN

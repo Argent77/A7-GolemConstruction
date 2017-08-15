@@ -11,6 +11,7 @@
 @35 = ~Rendre les golems vulnerables aux effets de certains sorts~
 @40 = ~Reduire les resistances et l'immunite aux armes des golems fabriques~
 @45 = ~Identifier tous les objets~
+@50 = ~Ajouter la capacite "Teleportation" aux golems~
 
 @100 = ~Ce composant necessite l'installation de BG:EE, BG2:EE ou d'IWD:EE.~
 @101 = ~Ce composant requiert l'installation prealable du composant principal.~

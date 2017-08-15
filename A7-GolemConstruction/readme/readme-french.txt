@@ -136,6 +136,14 @@ aux éléments et aux dégâts physiques.
 Ce composant identifie tous les objets installés par ce mod, ce qui inclue les Grimoires de fabrication
 de golem ainsi que les composants spéciaux nécessaires à la fabrication de golems parfaits.
 
+2.9 Ajouter la capacité "Téléportation" aux golems (pour tous les jeux pris en charge).
+Ce composant dote tous vos golems serviteurs de la capacité "Téléportation". Elle leur permet de
+"sauter" instantanément à côté d'un membre du groupe se trouvant dans son champ de vision, mais
+uniquement lorsqu'aucun ennemi n'est en vue.
+La Téléportation a été essentiellement conçue comme un moyen de franchir des passages étroits, puisque
+plusieurs types de golem ont besoin de plus d'espace pour se déplacer que les membres du groupe. Cette
+capacité était intégrée dans le composant principal dans les versions antérieures du mod.
+
 
 Détails
 ~~~~~~~
@@ -172,10 +180,11 @@ History
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems
 - Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)
 - Added new Tweaks component "Identify all items"
+- Added new Tweaks component "Add Teleport ability to golems"
 - Worked around a game bug in the dialog of Ore Merchant Jerlia
 - Fixed a condition when de'Arnise golems should turn hostile
 - Fixed incorrect names of BG1 golem manuals
-- Fixed spelling in French translation
+- Fixed spellings in French translation
 
 4.0
 - Added two new golem types which can be commissioned during the BG1 part of the game
