@@ -1,7 +1,7 @@
 Golem Construction for Spellcasters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version :         4.0
+Version :         5.0
 Auteur :          Argent77
 
 Téléchargement :  https://github.com/Argent77/A7-GolemConstruction/releases/latest

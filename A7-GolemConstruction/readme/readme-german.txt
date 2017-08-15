@@ -1,7 +1,7 @@
 "Golems erschaffen" für Magier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    4.0
+Version:    5.0
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
