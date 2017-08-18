@@ -122,7 +122,7 @@ and high resistances, even in later parts of the game. This component nerfs the 
 constructed golems by reducing their weapon enchantment immunities (usually by one level, sometimes 
 by two) as well as by lowering various magical, elemental and physical resistances.
 
-2.8. Identify all items (for all supported games)
+2.8. Identify all mod items (for all supported games)
 This component will identify all items that are installed by this mod, which includes Golem 
 Building Manuals as well as a number of special ingredients for building perfect golem variants.
 
@@ -163,6 +163,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.1
+- Improved component name "Identify all mod items"
 
 5.0
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems

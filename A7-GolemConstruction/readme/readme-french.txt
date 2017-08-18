@@ -132,7 +132,7 @@ Ce composant atténue la puissance des golems fabriqués en réduisant leurs imm
 magiques (généralement d'un niveau, parfois deux) ainsi que leurs diverses résistances à la magie, 
 aux éléments et aux dégâts physiques.
 
-2.8. Identifier tous les objets (pour tous les jeux supportés).
+2.8. Identifier tous les objets du module (pour tous les jeux supportés).
 Ce composant identifie tous les objets installés par ce mod, ce qui inclue les Grimoires de fabrication
 de golem ainsi que les composants spéciaux nécessaires à la fabrication de golems parfaits.
 
@@ -175,6 +175,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.1
+- Improved component name "Identify all mod items"
 
 5.0
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems

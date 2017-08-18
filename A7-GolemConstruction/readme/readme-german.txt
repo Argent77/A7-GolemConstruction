@@ -126,7 +126,7 @@ da sie über viele Immunitäten und hohe Resistenzen verfügen. Diese Komponente
 Widerstandsfähigkeit von konstruierten Golems, in dem sie Waffenimmunitäten absenkt (i.d.R. um eine 
 Stufe, manchmal um zwei) und diverse magische, elementare unt physische Resistenzen vermindert.
 
-2.8. Alle Gegenstände identifizieren (für alle unterstützten Spiele)
+2.8. Alle Mod-Gegenstände identifizieren (für alle unterstützten Spiele)
 Diese Komponente identifiziert alle von dieser Mod installierten Gegenstände. Dazu gehören die Leitfäden 
 der Golemkonstruktion als auch einige magische Artefakte zur Konstruktion von perfekten Golems.
 
@@ -167,6 +167,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.1
+- Improved component name "Identify all mod items"
 
 5.0
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems
