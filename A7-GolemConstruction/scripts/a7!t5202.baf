@@ -1,5 +1,18 @@
 // *** Quest 1: Travel trigger from maze to temple map ***
 
+// Re-apply "Dismiss" ability to golem
+IF
+  Clicked([ANYONE])
+  Range(LastTrigger, 5)
+  Global("A7!Q1PartyDisabled", "GLOBAL", 2)
+  Global("A7!Q1DismissCheck", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
+    ActionOverride(LastTrigger, AddSpecialAbility("a7!in01"))
+    Continue()
+END
+
 IF
   Clicked([ANYONE])
   Range(LastTrigger, 5)

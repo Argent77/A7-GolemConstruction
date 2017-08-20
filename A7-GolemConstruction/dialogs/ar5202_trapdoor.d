@@ -21,6 +21,7 @@ IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
   + ~InPartySlot(Myself, 0)~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 1)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
@@ -28,6 +29,7 @@ IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
   + ~InPartySlot(Myself, 1)~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 2)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
@@ -35,6 +37,7 @@ IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
   + ~InPartySlot(Myself, 2)~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 3)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
@@ -42,6 +45,7 @@ IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
   + ~InPartySlot(Myself, 3)~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 4)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
@@ -49,6 +53,7 @@ IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
   + ~InPartySlot(Myself, 4)~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 5)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
@@ -56,13 +61,24 @@ IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
   + ~InPartySlot(Myself, 5)~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 6)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
         LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
-  + ~!InParty(Myself)~ + @47008 /* (Enter the maze.) */
+  + ~!InParty(Myself) HaveSpellRES("a7!in01")~ + @47008 /* (Enter the maze.) */
     DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 1)
+        SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 0)
+        RemoveSpellRES("a7!in01")
+        ApplySpellRES("a7!q1ad", Myself)
+        LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
+        LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
+  + ~!InParty(Myself) !HaveSpellRES("a7!in01")~ + @47008 /* (Enter the maze.) */
+    DO ~SetGlobal("A7!Q1EnterMaze", "MYAREA", 0)
+        SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
+        SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 0)
         ApplySpellRES("a7!q1ad", Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)

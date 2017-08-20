@@ -1,5 +1,25 @@
 // *** Quest 1: Summoned helper creature script ***
 
+// Required to be called first or AddSpecialAbility() in next block isn't applied
+IF
+  Global("init", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    Continue()
+END
+
+// Re-apply "Dismiss" ability to golem
+IF
+  Global("init", "LOCALS", 0)
+  Global("A7!Q1DismissCheck", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!Q1DismissCheck", "GLOBAL", 0)
+    ActionOverride(LastSummonerOf(Myself), AddSpecialAbility("a7!in01"))
+    Continue()
+END
+
 IF
   Global("init", "LOCALS", 0)
 THEN
@@ -8,7 +28,6 @@ THEN
     SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 0)
     SetGlobal("A7!Q1MapInit", "MYAREA", 0)
     RemoveAreaFlag(NOSAVE)
-    ClearAllActions()
     StartCutSceneMode()
     StartCutScene("a7!q1ct1")
 END
