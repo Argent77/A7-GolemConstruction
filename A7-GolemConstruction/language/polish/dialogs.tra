@@ -296,15 +296,15 @@
 
 
 // *** Quest-related ***
-@47000 = ~(The lock of Nyalee's hair starts to emit a faint glow when you approach the central area of the temple.)~
-@47001 = ~(Put the hair on the ground.)~
-@47002 = ~(Ignore the glow.)~
-@47003 = ~(As soon as the hair touches the ground it burns to ashes in a bright flash. Soon after you hear a faint rumble from the depths below the temple.)~
-@47004 = ~(This creature should withstand the poisonous clouds of the maze.)~
-@47005 = ~(Living beings can't hope to survive down there. You would be well advised to stay clear of the maze.)~
-@47006 = ~(Don't enter the maze.)~
-@47007 = ~(You will lose control over summoned creatures as soon as they enter the maze.)~
-@47008 = ~(Enter the maze.)~
+@47000 = ~(Gdy zbliżasz się do centralnej części świątyni, kosmyk włosów Nyalee zaczyna lśnić delikatną poświatą).~
+@47001 = ~(Odłóż kosmyk włosów na ziemię).~
+@47002 = ~(Zignoruj poświatę).~
+@47003 = ~(Z chwilą dotknięcia ziemi kosmyk spala się na popiół w jaskrawym błysku. Zaraz po tym z otchłani pod świątynią dobiega cię ciche dudnienie).~
+@47004 = ~(Istota ta powinna być w stanie przetrwać pobyt w trujących chmurach labiryntu).~
+@47005 = ~(Żywe stworzenia nie mają szans na przeżycie w tym miejscu. Najlepiej, jeśli będziesz się trzymać z dala od labiryntu).~
+@47006 = ~(Nie wchodź do labiryntu).~
+@47007 = ~(Gdy tylko przyzwane przez ciebie istoty wejdą do labiryntu, natychmiast utracisz nad nimi kontrolę).~
+@47008 = ~(Wejdź do labiryntu).~
 
 
 // *** Journal entries ***
@@ -389,22 +389,22 @@ Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budo
 
 Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budowy kościanych lalek. Prawdopodobnie będę dzięki temu mogła składać u niej zamówienia na budowę mojej własnej kościanej lalki. Nemphre można spotkać w jej domu we Wrotach Baldura, na wschód od gospody Ostrze i Gwiazdy.~
 
-@49011 = ~A hidden door
+@49011 = ~Ukryte drzwi
 
-Having Nyalee's Hair in my possession allowed me to reveal a hidden staircase to an underground complex of the temple.~
+Dzięki kosmykowi włosów Nyalee udało mi się odkryć ukryte schody prowadzące do podziemnego kompleksu pod świątynią.~
 
-@49012 = ~A hidden door
+@49012 = ~Ukryte drzwi
 
-The underground complex was full of poisonous gas that immediately put me out of commission. When I awoke I found myself back at the temple. Maybe sending in a creature that is impervious to the gas clouds has a greater chance of success.~
+Podziemny kompleks wypełniony był trującym gazem, który sprawił, że straciłem przytomność. Gdy się obudziłem, znalazłem się z powrotem w świątyni. Być może wysłanie tam istoty niewrażliwej na działanie trujących oparów miałoby większe szanse powodzenia.~~Ukryte drzwi~
 
-@49013 = ~A hidden door
+@49013 = ~Ukryte drzwi
 
-After defeating two guardians I was able to wrest a red-golden chalice from the hands of a statue. Now it needs to be returned safely to the party.~
+Po pokonaniu dwóch strażników udało mi się wyszarpać z dłoni posągu czerwonozłoty kielich. Teraz trzeba go tylko bezpiecznie zanieść drużynie.~
 
-@49014 = ~A hidden door
+@49014 = ~Ukryte drzwi
 
-When the chalice reached the surface it exploded in a burst of light and transformed itself into a bottle containing an otherworldly substance. Whatever it is must be worth a fortune.~
+Z chwilą, gdy kielich dotknął ziemi, eksplodował jaskrawym światłem, zmieniając się w butelkę zawierającą substancję niepochodzącą z tego świata. Cokolwiek to jest, musi być warte majątek.~
 
-@49015 = ~A hidden door
+@49015 = ~Ukryte drzwi
 
-The destruction of your creature in the maze caused the chalice to burst into a cloud of tiny fragments. The chalice is forever lost to me.~
+Poważne obrażenia sprawiły, że istota upuściła kielich, który rozprysnął się na tysiące maleńkich kawałków. Wygląda na to, że kielich przepadł na dobre.~

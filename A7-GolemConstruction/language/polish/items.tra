@@ -159,9 +159,9 @@ PARAMETRY:
 
 Waga: 0~
 
-@30200 = ~Lock of Nyalee's Hair~
-@30201 = ~This lock of hair comes from the head of Nyalee, the former guardian of the temple in the Forest of Mir. The hair looks ordinary and doesn't appear to contain any magical properties.
+@30200 = ~Kosmyk włosów Nyalee~
+@30201 = ~Ten kosmyk włosów pochodzi z głowy Nyalee, niegdysiejszej strażniczki świątyni w lesie Mir. Wygląda zwyczajnie i nie posiada żadnych magicznych właściwości.
 
-STATISTICS:
+PARAMETRY:
 
-Weight: 1~
+Waga: 1~

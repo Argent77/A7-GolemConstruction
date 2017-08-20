@@ -641,7 +641,7 @@ Każdy golem dysponuje domyślnie następującymi zdolnościami:
 2. Teleportacja: Golem teleportuje się w pobliże wybranego członka drużyny, znajdującego się w zasięgu wzroku. Zdolność ta
    może być konieczna dla golemów o dużym rozmiarze, aby nie blokowały się w wąskich przejściach. Można jej użyć tylko, 
    jeśli w pobliżu nie ma żadnych wrogów.
-   Note: This ability is added by the Tweaks component "Add "Teleport" ability to golems".
+   Uwaga: Zdolność ta jest dodana przez komponent „Dodaj zdolność golemów o nazwie Teleportacja”.
 
 Możesz również wydawać swoim golemom proste polecenia. Pomniejsze warianty golemów z ciała, glinianych i kamiennych, a także 
 golemy larwalne mogą wykonywać następujące polecenia:

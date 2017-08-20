@@ -138,12 +138,13 @@ Komponent ten powoduje identyfikację wszystkich przedmiotów zainstalowanych pr
 wliczając w to Księgi budowy golemów oraz specjalne składniki niezbędne do budowy perfekcyjnych 
 wariantów golemów.
 
-2.9 Add "Teleport" ability to golems (for all supported games)
-This component adds the "Teleport" ability to all of your golem followers. It allows golems to 
-instantly jump to a party member in visual range, but can only be used when no enemies are in sight.
-Teleport is mainly thought as a means to get them out of narrow passageways since several golem 
-variants require more space to move around freely than regular party members. This ability was 
-added by the main component in earlier mod releases.
+2.9 Dodaj zdolność golemów o nazwie „Teleportacja” (dla wszystkich wspieranych gier)
+Komponent ten dodaje wszystkim sojuszniczym golemom zdolność specjalną o nazwie „Teleportacja”. 
+Pozwala ona na natychmiastowe pojawienie się golema u boku członka drużyny znajdującego się w 
+zasięgu wzroku. Może jednak zostać użyta tylko wówczas, gdy w pobliżu nie ma żadnych wrogów. 
+Zdolność Teleportacji ma za zadanie głównie ułatwić golemom wydostawanie się z wąskich przejść, 
+gdyż niektóre ich warianty wymagają więcej przestrzeni do ruchu niż pozostali członkowie drużyny. 
+We wcześniejszych wersjach modyfikacji zdolność ta była częścią głównego komponentu.
 
 
 Szczegóły
