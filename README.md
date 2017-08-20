@@ -59,7 +59,7 @@ This component modifies a number of spells so that they can affect specific gole
 #### 2.7. Reduce weapon immunities and resistances for constructed golems (for BG:SoD, BG2:EE and EET)
 A great number of enemies have trouble hitting or damaging golems because of their numerous immunities and high resistances, even in later parts of the game. This component nerfs the power of constructed golems by reducing their weapon enchantment immunities as well as by lowering various magical, elemental and physical resistances.
 
-#### 2.8. Identify all items (for all supported games)
+#### 2.8. Identify all mod items (for all supported games)
 This component will identify all items that are installed by this mod, which includes Golem Building Manuals as well as a number of special ingredients for building perfect golem variants.
 
 #### 2.9. Add "Teleport" ability to golems (for all supported games)

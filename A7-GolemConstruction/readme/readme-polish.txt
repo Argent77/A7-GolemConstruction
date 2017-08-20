@@ -178,7 +178,9 @@ History
 ~~~~~~~
 
 5.1
+- Added Polish translation for artifact quest
 - Improved component name "Identify all mod items"
+- Fixed a potential loophole in the artifact quest that could result in forcing the player to reload
 
 5.0
 - Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems
