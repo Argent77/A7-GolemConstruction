@@ -133,7 +133,7 @@ o jeden poziom, czasem o dwa), jak również obniżając ich odporności przeciw
 fizycznym i żywiołom.
 
 
-2.8 Identyfikuj wszystkie przedmioty (dla wszystkich wspieranych gier)
+2.8 Identyfikuj wszystkie przedmioty dodane przez modyfikacje (dla wszystkich wspieranych gier)
 Komponent ten powoduje identyfikację wszystkich przedmiotów zainstalowanych przez tę modyfikację, 
 wliczając w to Księgi budowy golemów oraz specjalne składniki niezbędne do budowy perfekcyjnych 
 wariantów golemów.
