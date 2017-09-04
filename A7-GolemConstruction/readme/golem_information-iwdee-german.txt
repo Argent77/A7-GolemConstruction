@@ -133,9 +133,9 @@ Perfekter Fleischgolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei reguläre Golems des selben Typs.
 
 
-2. Tongolems
+2. Lehmgolems
 
-Niederer Tongolem:
+Niederer Lehmgolem:
 - Min. Stufe: 7 (-1 für Wandler, +1 für Barden)
 - Zutaten:
   - Ein Tonblock
@@ -157,7 +157,7 @@ Niederer Tongolem:
 - Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
   greift er dann die nächste Kreatur in Sichtweite an.
 
-Tongolem:
+Lehmgolem:
 - Min. Stufe: 10 (-2 für Wandler, +2 für Barden)
 - Zutaten:
   - Zwei Tonblöcke
@@ -183,7 +183,7 @@ Tongolem:
 - Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
   greift er dann die nächste Kreatur in Sichtweite an.
 
-Höherer Tongolem:
+Höherer Lehmgolem:
 - Min. Stufe: 13 (-2 für Wandler, +3 für Barden)
 - Zutaten:
   - Vier Tonblöcke
@@ -212,7 +212,7 @@ Höherer Tongolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 - Zerteilt sich bei Zerstörung mit 25-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
-Perfekter Tongolem:
+Perfekter Lehmgolem:
 - Min. Stufe: 15 (-2 für Wandler, +4 für Barden)
 - Zutaten:
   - Vier Tonblöcke
@@ -685,10 +685,10 @@ installiert wurde:
   Verwandelt Steingolems in Fleischgolems der gleichen Variante, wenn sie ihren Rettungswurf gegen Versteinerung/
   Verwandlung nicht bestehen.
 - Abi-Dalzims abscheuliche Austrocknung:
-  Dieser Zauber entzieht allen Tongolems im betroffenen Gebiet jegliches Wasser und verwandelt sie dadurch in Stein-
+  Dieser Zauber entzieht allen Lehmgolems im betroffenen Gebiet jegliches Wasser und verwandelt sie dadurch in Stein-
   golems, wenn sie ihren Rettungswurf -2 gegen Zauber nicht bestehen.
 - Kältekegel und Eissturm:
-  Betroffene Tongolems werden für fünf Runden verlangsamt, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen.
+  Betroffene Lehmgolems werden für fünf Runden verlangsamt, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen.
 - Hochstufige Zauber mit Feuereffekten:
   Diese Zauber erhitzen Eisengolems so weit, dass sie für fünf Runden mit ihren Angriffen Feuerschaden verursachen.
   Es ist kein Rettungswurf erforderlich.

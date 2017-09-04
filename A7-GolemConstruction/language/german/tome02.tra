@@ -2,16 +2,16 @@
 // Clay Golem related strings (index 2000..2999)
 
 @2000 = ~Leitfaden der Golemkonstruktion (Band 2)~
-@2001 = ~Niederer Tongolem~
-@2002 = ~Tongolem~
-@2003 = ~Höherer Tongolem~
-@2004 = ~Perfekter Tongolem~
-@2005 = ~Hat gelernt, Tongolems zu erschaffen.~
+@2001 = ~Niederer Lehmgolem~
+@2002 = ~Lehmgolem~
+@2003 = ~Höherer Lehmgolem~
+@2004 = ~Perfekter Lehmgolem~
+@2005 = ~Hat gelernt, Lehmgolems zu erschaffen.~
 
 // *** Book content ***
-@2100 = ~Zweite Lektion: Tongolems
+@2100 = ~Zweite Lektion: Lehmgolems
 
-In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Tongolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Lehmgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
 
 Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
 
@@ -23,24 +23,24 @@ Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des B
 
 Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
 
-Niederer Tongolem:
+Niederer Lehmgolem:
 Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
 Zutaten:
 - Ein Tonblock
 
-Tongolem:
+Lehmgolem:
 Min. Stufe: 14 (-2 für Wandler, +3 für Barden)
 Zutaten:
 - Zwei Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Höherer Tongolem:
+Höherer Lehmgolem:
 Min. Stufe: 18 (-2 für Wandler, +4 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Perfekter Tongolem:
+Perfekter Lehmgolem:
 Min. Stufe: 20 (-2 für Wandler, +6 für Barden)
 Zutaten:
 - Vier Tonblöcke
@@ -53,33 +53,33 @@ Mindestintelligenz: 16
 
 Gewicht: 10~
 
-@2101 = ~Zweite Lektion: Tongolems
+@2101 = ~Zweite Lektion: Lehmgolems
 
-In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Tongolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Lehmgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
 
 Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
 
 
 Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
 
-Niederer Tongolem:
+Niederer Lehmgolem:
 Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
 Zutaten:
 - Ein Tonblock
 
-Tongolem:
+Lehmgolem:
 Min. Stufe: 14 (-2 für Wandler, +3 für Barden)
 Zutaten:
 - Zwei Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Höherer Tongolem:
+Höherer Lehmgolem:
 Min. Stufe: 18 (-2 für Wandler, +4 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Perfekter Tongolem:
+Perfekter Lehmgolem:
 Min. Stufe: 20 (-2 für Wandler, +6 für Barden)
 Zutaten:
 - Vier Tonblöcke
@@ -94,9 +94,9 @@ Gewicht: 1~
 
 
 // *** Book content (IWDEE) ***
-@2110 = ~Zweite Lektion: Tongolems
+@2110 = ~Zweite Lektion: Lehmgolems
 
-In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Tongolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Lehmgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
 
 Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in fünf Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
 
@@ -108,24 +108,24 @@ Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des B
 
 Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
 
-Niederer Tongolem:
+Niederer Lehmgolem:
 Min. Stufe: 7 (-1 für Wandler, +1 für Barden)
 Zutaten:
 - Ein Tonblock
 
-Tongolem:
+Lehmgolem:
 Min. Stufe: 10 (-2 für Wandler, +2 für Barden)
 Zutaten:
 - Zwei Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Höherer Tongolem:
+Höherer Lehmgolem:
 Min. Stufe: 13 (-2 für Wandler, +3 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Perfekter Tongolem:
+Perfekter Lehmgolem:
 Min. Stufe: 15 (-2 für Wandler, +4 für Barden)
 Zutaten:
 - Vier Tonblöcke
@@ -138,33 +138,33 @@ Mindestintelligenz: 16
 
 Gewicht: 10~
 
-@2111 = ~Zweite Lektion: Tongolems
+@2111 = ~Zweite Lektion: Lehmgolems
 
-In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Tongolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
+In diesem Leitfaden findet man theoretische Ausführungen, wie man Golems konstruieren und kontrollieren kann. Außerdem wird erklärt, welches Ausgangsmaterial benötigt wird, um Lehmgolems zusammenzubauen, zum Leben zu erwecken und bedingungslos allen Befehlen seines Schöpfers zu folgen. Er beschreibt auch die Ausrüstung, die zwingend notwendig ist, um den Golemkörper zu formen. Diese Voraussetzung reduziert die möglichen Orte auf einige wenige, wo man Golems konstruieren kann.
 
 Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in fünf Bänden daherkommt. Er erwähnt außerdem sehr flüchtig, dass noch eine weitere Sammlung existiert, die sich mit der Konstruktion von exotischeren Golemtypen befasst.
 
 
 Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
 
-Niederer Tongolem:
+Niederer Lehmgolem:
 Min. Stufe: 7 (-1 für Wandler, +1 für Barden)
 Zutaten:
 - Ein Tonblock
 
-Tongolem:
+Lehmgolem:
 Min. Stufe: 10 (-2 für Wandler, +2 für Barden)
 Zutaten:
 - Zwei Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Höherer Tongolem:
+Höherer Lehmgolem:
 Min. Stufe: 13 (-2 für Wandler, +3 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"
 
-Perfekter Tongolem:
+Perfekter Lehmgolem:
 Min. Stufe: 15 (-2 für Wandler, +4 für Barden)
 Zutaten:
 - Vier Tonblöcke

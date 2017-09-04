@@ -54,7 +54,7 @@ wurde, verwandelt sich der Leitfaden in ein reguläres Buch.
 
 Die Leitfäden der Golemkonstruktion lehren euch die folgenden Golemtypen:
 - Fleischgolems in niederer, regulärer, höherer und perfekter Variante.
-- Tongolems in niederer, regulärer, höherer und perfekter Variante.
+- Lehmgolems in niederer, regulärer, höherer und perfekter Variante.
 - Steingolems in niederer, regulärer, höherer und perfekter Variante.
 - Eisengolems in niederer, regulärer, höherer und perfekter Variante.
 - Mithrilgolems in niederer, regulärer, höherer und perfekter Variante.
@@ -111,7 +111,7 @@ Geheimtür im Obergeschoss des Schlosses aufzunehmen, wenn ihr das Schloss auf W
   überleben.
 * Mit 33% Wahrscheinlichkeit findet ihr einen Steingolem vor, wenn ein oder mehrere Steingolems 
   überleben.
-* Mit 33% Wahrscheinlichkeit findet ihr einen Tongolem vor, wenn der Tongolem überlebt.
+* Mit 33% Wahrscheinlichkeit findet ihr einen Lehmgolem vor, wenn der Lehmgolem überlebt.
 * Mit 15% Wahrscheinlichkeit findet ihr einen Eisengolem vor, wenn der Eisengolem überlebt.
 
 2.6. Mache Golems anfällig für bestimmte Zauber (für BG:SoD, BG2:EE, EET und IWD:EE)

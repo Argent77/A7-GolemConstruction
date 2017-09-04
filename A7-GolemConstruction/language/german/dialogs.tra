@@ -18,7 +18,7 @@
 // *** Golem Construction dialog ***
 @41000 = ~Golemtyp auswählen:~
 @41001 = ~Fleischgolem~
-@41002 = ~Tongolem~
+@41002 = ~Lehmgolem~
 @41003 = ~Steingolem~
 @41004 = ~Eisengolem~
 @41005 = ~Mithrilgolem~
@@ -34,10 +34,10 @@
 @41015 = ~Perfekter Fleischgolem~
 @41016 = ~Konstruktion abbrechen~
 @41017 = ~Golemvariante auswählen:~
-@41018 = ~Niederer Tongolem~
-@41019 = ~Tongolem~
-@41020 = ~Höherer Tongolem~
-@41021 = ~Perfekter Tongolem~
+@41018 = ~Niederer Lehmgolem~
+@41019 = ~Lehmgolem~
+@41020 = ~Höherer Lehmgolem~
+@41021 = ~Perfekter Lehmgolem~
 @41022 = ~Niederer Steingolem~
 @41023 = ~Steingolem~
 @41024 = ~Höherer Steingolem~
