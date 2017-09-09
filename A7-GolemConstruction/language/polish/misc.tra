@@ -29,7 +29,7 @@ Waga: 10~
 @100019 = ~Mało czytelne notatki~
 @100020 = ~Pergamin ten jest niczym więcej jak zbiorem pośpiesznie nabazgranych notatek. Wiele fragmentów wyblakło wraz z upływem czasu i odczytanie ich jest już niemożliwe.
 
-„...budowy golemów. Niezbędne materiały łatwo dostać, ale... (tekst nieczytelny)... niemożliwe bez odpowiedniego wyposażenia. Skarbnica Nieśmierci może się nadawać, ale wciąż znajduje się pod kontrolą... (tekst nieczytelny)... poszukać innych lokalizacji”.~
+"...budowy golemów. Niezbędne materiały łatwo dostać, ale... (tekst nieczytelny)... niemożliwe bez odpowiedniego wyposażenia. Siedziba Króla Cieni, w pobliżu Przeprawy Nadbrzeżnym Traktem, może się nadawać, ale wciąż znajduje się pod kontrolą... (tekst nieczytelny)... poszukać innych lokalizacji".~
 @100021 = ~Wygląda na to, że na tym obszarze znajduje się już wyposażenie, które można wykorzystać do budowy golemów. Będziesz go prawdopodobnie mógł użyć do skonstruowania własnego golema.~
           ~Wygląda na to, że na tym obszarze znajduje się już wyposażenie, które można wykorzystać do budowy golemów. Będziesz go prawdopodobnie mogła użyć do skonstruowania własnego golema.~
 @100022 = ~Ten pergamin zawiera kilka mało czytelnych notatek dotyczących magicznych eksperymentów i procedur. Jeden z fragmentów przykuwa twój wzrok, dotyczy bowiem budowy i konserwacji golemów.
@@ -43,9 +43,9 @@ Pozostała część pergaminu zawiera opis skomplikowanych procedur, które nie 
 @100026 = ~Kuźnia, którą w tym miejscu wybudowano, wygląda na solidną. Prawdopodobnie będzie jej można używać do budowy golemów.~
 @100027 = ~Na tym pergaminie nabazgrolono kilka notatek, które miały być prawdopodobnie dopisane do jakiegoś dziennika lub pamiętnika.
 
-„Brat Ignasius przyniósł niedawno ciekawą księgę. Wygląda na to, że zawiera ona informacje na temat budowy golemów. Nasi mędrcy z przyjemnością ją przestudiują.
+"Brat Ignasius przyniósł niedawno ciekawą księgę. Wygląda na to, że zawiera ona informacje na temat budowy golemów. Nasi mędrcy z przyjemnością ją przestudiują.
 
-Niestety sami nie posiadamy narzędzi wymaganych do budowy golemów. Gdybyśmy tylko zdołali znaleźć jakiegoś maga z dobrze wyposażonym laboratorium. Tak się nieszczęśliwie składa, że jedynym znanym nam miejscem, które mogłoby być odpowiednie, jest posterunek Odciętej Dłoni, w którym znajduje się podobno osławione astrolabium. Obawiam się jednak, że żaden z żyjących tu mnichów nie ma w sobie wystarczająco dużo siły, by wyruszyć w to mroczne miejsce, a co dopiero odzyskać potrzebny sprzęt…”~
+Niestety sami nie posiadamy narzędzi wymaganych do budowy golemów. Gdybyśmy tylko zdołali znaleźć jakiegoś maga z dobrze wyposażonym laboratorium. Tak się nieszczęśliwie składa, że jedynym znanym nam miejscem, które mogłoby być odpowiednie, jest posterunek Odciętej Dłoni, w którym znajduje się podobno osławione astrolabium. Obawiam się jednak, że żaden z żyjących tu mnichów nie ma w sobie wystarczająco dużo siły, by wyruszyć w to mroczne miejsce, a co dopiero odzyskać potrzebny sprzęt…"~
 @100028 = ~Wygląda na to, że księga ta została napisana w jakimś tajemnym języku lub też przy jej spisywaniu użyto nieznanego ci kodu. Litery zmieniają kształt w chwili, w której się na nich koncentrujesz. Sądząc po ilustracjach, które umieszczono na stronicach księgi, zgadujesz, że traktuje ona o budowie konstruktów niewiadomego typu.
 
 PARAMETRY:

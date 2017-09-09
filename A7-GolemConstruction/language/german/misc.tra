@@ -29,7 +29,7 @@ Gewicht: 10~
 @100019 = ~Gekritzelte Notizen~
 @100020 = ~Dieses Pergament beinhaltet nur eine Sammlung hastig aufgeschriebener Notizen. Viele Abschnitte sind bereits verblasst und lassen sich nicht mehr deuten.
 
-"...Konstruktion von Golems. Die benötigten Zutaten sind leicht zu beschaffen, aber ...(unlesbar)... unmöglich, ohne die richtige Ausrüstung. Die Lagerstätte der Untoten könnte geeignet sein, aber sie wird noch immer vom ...(unlesbar)... muss ich wohl nach anderen Orten suchen."~
+"...Konstruktion von Golems. Die benötigten Zutaten sind leicht zu beschaffen, aber ...(unlesbar)... unmöglich, ohne die richtige Ausrüstung. Der Außenposten des Schattenkönigs nahe der Küstenwegsquerung könnte geeignet sein. Aber er wird noch immer vom ...(unlesbar)... muss ich wohl nach anderen Orten suchen."~
 @100021 = ~Dieses Areal scheint bereits die richtige Ausrüstung zum Bau von Golems installiert zu haben. Ihr könnt hier wahrscheinlich Golems erschaffen.~
 @100022 = ~Dieses Pergament beinhaltet einige dahingekritzelte Notizen über magische Prozeduren und Experimente. Ein Absatz fällt Euch sofort ins Auge, da es sich auf den Bau und die Instandhaltung von Golems bezieht.
 
@@ -52,7 +52,7 @@ EIGENSCHAFTEN:
 Gewicht: 1~
 @100029 = ~Golemdiener~
 @100030 = ~Zurück zum Tempel~
-@100031 = ~Das giftige Gas dringt in Eure Nase, Augen und alle anderen Körperöffnungen Eures Körpers ein. Euer Kopf fängt an sich zu drehen, und Ihr fühlt einen immer stärker werdenden Schmerz in Eurem ganzen Körper. Dann verliert Ihr glücklicherweise Euer Bewusstsein...~
+@100031 = ~Das giftige Gas dringt in Eure Nase, Augen und alle anderen Körperöffnungen ein. Euer Kopf fängt an sich zu drehen, und Ihr fühlt einen immer stärker werdenden Schmerz in Eurem ganzen Körper. Dann verliert Ihr glücklicherweise Euer Bewusstsein...~
 @100032 = ~Als Ihr aufwacht, befindet Ihr Euch wieder am Eingang zum Labyrinth in der Tempelanlage. Ihr könnt Euch nicht erinnern, wie Ihr hierher gelangt seid.~
 @100033 = ~Ihr seid zu weit entfernt, um die Statue zu untersuchen.~
 @100034 = ~Die Statue besteht aus massivem Gestein. Sie hält mit beiden Händen einen goldenen Kelch. Ihr schafft es nicht, den Kelch aus der festen Umklammerung zu befreien.~
