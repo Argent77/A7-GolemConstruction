@@ -1,0 +1,16 @@
+// *** SoA: Temple of Lathander ***
+
+// Enable workshop for clay golems only
+IF
+  Global("PlayerHasStronghold", "GLOBAL", 1)
+  Global("JoinLathander", "GLOBAL", 1)
+  NextTriggerObject(Player1)
+  Global("A7!TomeGolemClay", "LOCALS", 1)
+  Global("A7!TempleWorkshopLathander", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!TempleWorkshopLathander", "GLOBAL", 1)
+    DisplayString(Player1, @100041) // The temple appears to contain a fine selection of tools and equipment. You can probably use it to construct clay golems.
+    AddJournalEntry(@49017, QUEST)  // Golem Construction Workshop
+    Continue()
+END

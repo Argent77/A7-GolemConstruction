@@ -1012,6 +1012,9 @@ Schatten von Amn:
   Vorbesitzer gekümmert hat).
 - Jermiens Heim:
   Es ist möglich, den Verhüllten Magier in Imnestal zu überreden, sein Heim zum Golembau zur Verfügung zu stellen.
+- Tempel in Athkatla:
+  Alle drei verfügbare Tempel in Athkatlas Tempelbezirk können zum Erschaffen von Lehmgolems genutzt werden, wenn der 
+  Protagonist ein Kleriker ist und einen Tempel als klasseneigene Festung ausgewählt hat.
 
 Wachende Festung:
 - Zweite Ebene:

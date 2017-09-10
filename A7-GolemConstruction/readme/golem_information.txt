@@ -989,6 +989,9 @@ Shadows of Amn:
 - Jermien's Home:
   You may be able to convince Jermien to use his home in Imnesvale for building your own golems if the protagonist is 
   a spellcaster or Imoen is present.
+- Cleric stronghold:
+  Either of the three available temples in Athkatla's Temple District can be used to build clay golems if the 
+  protagonist is a cleric and chooses the respective temple of their faith as their stronghold.
 
 Watcher's Keep:
 - Second Level:

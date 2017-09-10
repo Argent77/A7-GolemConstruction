@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Temple of Lathander) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([1530.740]))
+    ActionOverride(Player2, JumpToPoint([1588.740]))
+    ActionOverride(Player3, JumpToPoint([1512.804]))
+    ActionOverride(Player4, JumpToPoint([1565.804]))
+    ActionOverride(Player5, JumpToPoint([1644.740]))
+    ActionOverride(Player6, JumpToPoint([1620.804]))
+    ActionOverride(Player1, Face(NW))
+    ActionOverride(Player2, Face(NW))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, Face(NW))
+    ActionOverride(Player5, Face(NW))
+    ActionOverride(Player6, Face(NW))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([1530.740],INSTANT)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

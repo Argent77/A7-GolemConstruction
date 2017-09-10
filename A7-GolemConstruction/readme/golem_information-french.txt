@@ -1012,6 +1012,9 @@ Shadows of Amn :
 - La maison de Jermien :
   Vous pouvez peut-être le convaincre d'utiliser sa maison d'Imnesvale pour créer vos propres golems si le protagoniste
   est un lanceur de sorts ou si Imoen est présente.
+- Quartier Général des prêtres :
+  Chacun des trois temples du quartier des temples d'Athkatla peut être utilisé pour fabriquer des golems d'argile si le
+  protagoniste est un prêtre et s'il a choisi le temple correspondant à sa foi comme quartier général.
 
 La Tour de Garde :
 - Deuxième étage :

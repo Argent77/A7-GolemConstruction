@@ -71,13 +71,15 @@ que des composants supplémentaires pour le doter de capacités spéciales selon
 Créer des golems parfaits est une prouesse en soi et nécessite des artefacts puissants et 
 uniques pour finaliser leur enchantement.
 
-La fabrication de golems prend du temps et doit être entreprise dans des lieux disposant du 
-matériel adéquat. Dans l'extension Siege of Dragonspear, tentez votre chance dans le Bazar 
-des Sorcelleries diverses de la Porte de Baldur, le repaire des morts-vivants sous le site de 
-fouilles des Nains et les ruines de Kanaglym. Dans Shadows of Amn, la Sphère Planaire et la 
-maison de Jermien à Imnesvale peuvent convenir. Vous pouvez aussi utiliser la Bibliothèque 
-des magiciens élémentaristes du deuxième étage de la Tour de Garde. Dans l'extension Trône 
-de Bhaal, votre Antichambre peut s'y prêter, à condition d'y installer le matériel nécessaire.
+La fabrication de golems prend du temps et doit être entreprise dans des lieux disposant du
+matériel adéquat. Dans l'extension Siege of Dragonspear, tentez votre chance dans le Bazar
+des Sorcelleries diverses de la Porte de Baldur, le repaire des morts-vivants sous le site
+de fouilles des Nains et les ruines de Kanaglym. Dans Shadows of Amn, la Sphère Planaire et
+la maison de Jermien à Imnesvale peuvent convenir. Les prêtres peuvent fabriquer des golems
+d'argile dans les temples d'Athkatla s'ils en choisissent un comme quartier général. Vous pouvez
+aussi utiliser la Bibliothèque des magiciens élémentaristes du deuxième étage de la Tour de
+Garde. Dans l'extension Trône de Bhaal, votre Antichambre peut s'y prêter, à condition d'y
+installer le matériel nécessaire.
 Les Golems peuvent obéir à des ordres simples. Pour ce faire, il suffit de leur parler (si 
 nécessaire en utilisant le bouton Dialogue ou en appuyant sur la touche F1).
 Dans IWD:EE, vous pouvez essayer le troisième niveau de l'Oeil du Dragon, l'étude de Larrel
@@ -175,6 +177,11 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.2
+- Made clay golem construction available to clerics
+- Added cleric-specific workshops to their respective temple strongholds
+- Several spelling fixes and improvements
 
 5.1
 - Added Polish translation for artifact quest

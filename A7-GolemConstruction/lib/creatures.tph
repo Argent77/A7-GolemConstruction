@@ -1169,6 +1169,9 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
           ~%MOD_FOLDER%/scripts/a7!ct14.baf~
           ~%MOD_FOLDER%/scripts/a7!ct15.baf~
           ~%MOD_FOLDER%/scripts/a7!ct16.baf~
+          ~%MOD_FOLDER%/scripts/a7!ct17.baf~
+          ~%MOD_FOLDER%/scripts/a7!ct18.baf~
+          ~%MOD_FOLDER%/scripts/a7!ct19.baf~
           ~%MOD_FOLDER%/scripts/a7!glad1.baf~
           ~%MOD_FOLDER%/scripts/a7!glad2.baf~
           ~%MOD_FOLDER%/scripts/a7!glad3.baf~

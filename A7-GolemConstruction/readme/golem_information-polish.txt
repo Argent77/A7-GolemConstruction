@@ -1002,6 +1002,9 @@ Cienie Amn:
 - Dom Jermiena:
   Istnieje możliwość przekonania Jermiena, by ten użyczył swego domu w Imnesvale do budowania własnych golemów, jeśli postać 
   główna potrafi rzucać czary lub w drużynie znajduje się Imoen.
+- Twierdza kapłana:
+  Każda z trzech świątyń w Dzielnicy Świątynnej Athkatli może być wykorzystana do budowy glinianych golemów, jeśli postać 
+  główna jest kapłanem i wybierze jedną z nich na swoją twierdzę.
 
 Twierdza Strażnika:
 - Drugi poziom:

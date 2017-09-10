@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Temple of Helm) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([222.194]))
+    ActionOverride(Player2, JumpToPoint([282.178]))
+    ActionOverride(Player3, JumpToPoint([196.252]))
+    ActionOverride(Player4, JumpToPoint([263.235]))
+    ActionOverride(Player5, JumpToPoint([322.246]))
+    ActionOverride(Player6, JumpToPoint([265.292]))
+    ActionOverride(Player1, Face(NW))
+    ActionOverride(Player2, Face(NW))
+    ActionOverride(Player3, Face(NW))
+    ActionOverride(Player4, Face(NW))
+    ActionOverride(Player5, Face(NW))
+    ActionOverride(Player6, Face(NW))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([222.194],INSTANT)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

@@ -72,9 +72,11 @@ Verzauberungsprozess.
 Die Konstruktion des Golemkörpers dauert einige Zeit und kann nur an bestimmten Orten mit der 
 richtigen Ausrüstung praktiziert werden. In Siege of Dragonspear könnt ihr es in „Allerlei Zauberei“ 
 in Baldurs Gate, der Ausgrabungsstelle der Zwerge und in den Ruinen von Kanaglym versichen. In 
-Schatten von Amn gibt es die Sphäre der Ebenen und Jermiens Heim in Imnestal. Ihr könnt es auch in 
-der Bibliothek der Elementarmagier in der zweiten Ebene der Wachenden Festung versuchen. In Thron 
-des Bhaal könnte das Einsprengsel genutzt werden, wenn ihr die richtige Ausrüstung installiert.
+Schatten von Amn gibt es die Sphäre der Ebenen und Jermiens Heim in Imnestal. Kleriker können die 
+Tempel in Athkatla nutzen, um Lehmgolem zu erschaffen, wenn sie als klasseneigene Festung ausgewählt 
+wurden. Ihr könnt es auch in der Bibliothek der Elementarmagier in der zweiten Ebene der Wachenden 
+Festung versuchen. In Thron des Bhaal könnte das Einsprengsel genutzt werden, wenn ihr die richtige 
+Ausrüstung installiert.
 In IWD:EE kann man es auf der dritten Ebene des Drachenauges, in Larrels Arbeitszimmer der 
 Abgetrennten Hand, in Bandoths Turm von Dorntief, in Malavons Palast in Unter-Dorntief, in 
 Tiernons Schmiede in den Finsterfrostbergen oder im Arbeitszimmer im Obergeschoss von Schloss 
@@ -167,6 +169,11 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.2
+- Made clay golem construction available to clerics
+- Added cleric-specific workshops to their respective temple strongholds
+- Several spelling fixes and improvements
 
 5.1
 - Added Polish translation for artifact quest

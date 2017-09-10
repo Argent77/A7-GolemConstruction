@@ -74,10 +74,11 @@ procesie zaklinania.
 Budowa golemów wymaga czasu i musi się odbywać w miejscach posiadających odpowiednie wyposażenie. 
 W kampanii Siege of Dragonspear można do tego celu wykorzystać Czarodziejskie Rozmaitości, 
 Skarbnicę Niewiedzy pod Krasnoludzkimi wykopaliskami oraz ruiny Kanaglymu, do których można się 
-dostać z obszaru Podziemnej rzeki. W kampanii Cienie Amn odpowiednimi miejscami mogą być Kula 
-sfer i dom Jermiena w Imnesvale. Biblioteka czarodzieja na drugim piętrze Twierdzy Strażnika też 
-wydaje się odpowiednim wyborem. W Tronie Bhaala można skorzystać ze Sfery kieszeniowej, pod 
-warunkiem zainstalowania w niej odpowiedniej aparatury.
+dostać z obszaru Podziemnej rzeki. W kampanii Cienie Amn odpowiednimi miejscami mogą być Kula sfer 
+i dom Jermiena w Imnesvale. Biblioteka czarodzieja na drugim piętrze Twierdzy Strażnika też wydaje 
+się odpowiednim wyborem. Kapłani mogą również wykorzystać świątynie w Athkatli do budowy glinianych 
+golemów, jeśli wybiorą którąś z nich na swoją twierdzę. W Tronie Bhaala można skorzystać ze Sfery 
+kieszeniowej, pod warunkiem zainstalowania w niej odpowiedniej aparatury.
 W IWDE:EE można spróbować szczęścia na trzecim poziomie Smoczego Oka, w gabinecie Larella w 
 Odciętej Dłoni, wieży Bandotha w Głębi Dorna, kuźni Tiernona w górach Ponurego Mrozu (Serce Zimy) 
 lub gabinecie na górnym piętrze Zamku Maluradek (TotLM).
@@ -176,6 +177,11 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.2
+- Made clay golem construction available to clerics
+- Added cleric-specific workshops to their respective temple strongholds
+- Several spelling fixes and improvements
 
 5.1
 - Added Polish translation for artifact quest

@@ -254,6 +254,11 @@ END
     END
   BUT_ONLY
 
+  // Use Temple Strongholds as golem workshop
+  EXTEND_TOP ~ar0901.bcs~ ~%MOD_FOLDER%/scripts/ar0901_top.baf~
+  EXTEND_TOP ~ar0902.bcs~ ~%MOD_FOLDER%/scripts/ar0902_top.baf~
+  EXTEND_TOP ~ar0904.bcs~ ~%MOD_FOLDER%/scripts/ar0904_top.baf~
+
   // Use Watcher's Keep - Second Level as golem workshop
   EXTEND_TOP ~ar3016.bcs~ ~%MOD_FOLDER%/scripts/ar3016_top.baf~
 

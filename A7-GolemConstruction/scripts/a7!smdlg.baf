@@ -104,6 +104,48 @@ THEN
     StartDialogueNoSet(LastSummonerOf(Myself))
 END
 
+// Checking location: Temple of Helm
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  InPartySlot(LastSummonerOf(Myself), 0)  // Protagonist only
+  Global("A7!TempleWorkshopHelm", "GLOBAL", 1)
+  AreaCheck("AR0901")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initHelm", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Temple of Lathander
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  InPartySlot(LastSummonerOf(Myself), 0)  // Protagonist only
+  Global("A7!TempleWorkshopLathander", "GLOBAL", 1)
+  AreaCheck("AR0902")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initLathander", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
+// Checking location: Temple of Talos
+IF
+  Global("init", "LOCALS", 0)
+  Detect(LastSummonerOf(Myself))
+  InPartySlot(LastSummonerOf(Myself), 0)  // Protagonist only
+  Global("A7!TempleWorkshopTalos", "GLOBAL", 1)
+  AreaCheck("AR0904")
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    SetGlobal("initTalos", "LOCALS", 1)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END
+
 // Checking location: Wild Magic Area
 IF
   Global("init", "LOCALS", 0)

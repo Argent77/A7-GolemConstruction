@@ -1,0 +1,30 @@
+// *** Golem construction cutscene (Location: Temple of Talos) ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    // CutSceneId("a7!smdlg")
+    CutSceneId(Myself)
+    ClearAllActions()
+    FadeToColor([15.0],0)
+    Wait(1)
+    ActionOverride(Player1, JumpToPoint([1524.441]))
+    ActionOverride(Player2, JumpToPoint([1588.480]))
+    ActionOverride(Player3, JumpToPoint([1462.465]))
+    ActionOverride(Player4, JumpToPoint([1520.504]))
+    ActionOverride(Player5, JumpToPoint([1445.534]))
+    ActionOverride(Player6, JumpToPoint([1522.574]))
+    ActionOverride(Player1, Face(N))
+    ActionOverride(Player2, Face(N))
+    ActionOverride(Player3, Face(N))
+    ActionOverride(Player4, Face(N))
+    ActionOverride(Player5, Face(N))
+    ActionOverride(Player6, Face(N))
+    JumpToObject(LastSummonerOf(Myself))
+    Face(SE)
+    MoveViewPoint([1524.441],INSTANT)
+    FadeFromColor([30.0],0)
+    Wait(2)
+    StartDialogueNoSet(LastSummonerOf(Myself))
+END

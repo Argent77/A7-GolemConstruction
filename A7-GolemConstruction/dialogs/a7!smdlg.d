@@ -12,6 +12,9 @@ IF ~Global("stage", "LOCALS", 0)~ Golem.Prepare
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initJermien", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct12")~ EXIT
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initWK", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct14")~ EXIT
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initPlane", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct15")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initHelm", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct17")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initLathander", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct18")~ EXIT
+  IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initTalos", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct19")~ EXIT
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("initMagic", "LOCALS", 1)~ DO ~SetGlobal("stage", "LOCALS", 3) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
   IF ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%) Global("A7!Debug", "GLOBAL", 1)~ DO ~SetGlobal("stage", "LOCALS", 1) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
   IF ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)~ DO ~SetGlobal("stage", "LOCALS", -2) SetTokenGlobal("A7!GolemCount", "GLOBAL", "A7GLCNT") StartCutSceneMode() StartCutScene("a7!ct00")~ EXIT
@@ -20,15 +23,23 @@ END
 
 IF ~Global("stage", "LOCALS", 1)~ Golem.Type
   SAY @41000  /* Select golem type: */
-  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemFlesh", "LOCALS", 1)~ + @41001 /* Flesh Golem */ + Golem.Type.Flesh
+  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemFlesh", "LOCALS", 1)
+     !AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")~ + @41001 /* Flesh Golem */ + Golem.Type.Flesh
   + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemClay", "LOCALS", 1)~ + @41002 /* Clay Golem */ + Golem.Type.Clay
-  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemStone", "LOCALS", 1)~ + @41003 /* Stone Golem */ + Golem.Type.Stone
-  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIron", "LOCALS", 1)~ + @41004 /* Iron Golem */ + Golem.Type.Iron
-  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMithral", "LOCALS", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral
-  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMithral", "LOCALS", 1)~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral.Denied
-  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite
-  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite.Denied
-  + ~OR(7)
+  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemStone", "LOCALS", 1)
+     !AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")~ + @41003 /* Stone Golem */ + Golem.Type.Stone
+  + ~NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemIron", "LOCALS", 1)
+     !AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")~ + @41004 /* Iron Golem */ + Golem.Type.Iron
+  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMithral", "LOCALS", 1)
+     !AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral
+  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMithral", "LOCALS", 1)
+     !AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")~ + @41005 /* Mithral Golem */ + Golem.Type.Mithral.Denied
+  + ~Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)
+     !AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite
+  + ~!Global("A7!TomeGolemIron", "GLOBAL", 1) NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemAdamantite", "LOCALS", 1)
+     !AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")~ + @41006 /* Adamantite Golem */ + Golem.Type.Adamantite.Denied
+  + ~!AreaCheck("AR0901") !AreaCheck("AR0902") !AreaCheck("AR0904")
+     OR(7)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemMaggot", "LOCALS", 1)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBone", "LOCALS", 1)
        NextTriggerObject(LastTalkedToBy) Global("A7!TomeGolemBrain", "LOCALS", 1)
@@ -351,9 +362,13 @@ IF ~~ Golem.Type.Clay
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 10)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 10)
+     PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 12)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
   + ~!Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) CheckStatGT(LastTalkedToBy, 0, USE_ANY_ITEM) ClassLevelGT(LastTalkedToBy, ROGUE, 12)
+     PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
+  + ~Class(LastTalkedToBy, CLERIC_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, PRIEST, 10) ClassLevelGT(LastTalkedToBy, ROGUE, 12)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, WIZARD, 10) ClassLevelGT(LastTalkedToBy, ROGUE, 12)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
@@ -364,11 +379,15 @@ IF ~~ Golem.Type.Clay
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 13)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 13)
+     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 16)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~!Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) CheckStatGT(LastTalkedToBy, 0, USE_ANY_ITEM) ClassLevelGT(LastTalkedToBy, ROGUE, 16)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, WIZARD, 13) ClassLevelGT(LastTalkedToBy, ROGUE, 16)
+     NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
+  + ~Class(LastTalkedToBy, CLERIC_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, PRIEST, 13) ClassLevelGT(LastTalkedToBy, ROGUE, 16)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, WIZARD, 11) ClassLevelGT(LastTalkedToBy, ROGUE, 16)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
@@ -377,11 +396,15 @@ IF ~~ Golem.Type.Clay
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 17)
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 21)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~!Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) CheckStatGT(LastTalkedToBy, 0, USE_ANY_ITEM) ClassLevelGT(LastTalkedToBy, ROGUE, 21)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, WIZARD, 17) ClassLevelGT(LastTalkedToBy, ROGUE, 21)
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
+  + ~Class(LastTalkedToBy, CLERIC_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, PRIEST, 17) ClassLevelGT(LastTalkedToBy, ROGUE, 21)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, WIZARD, 15) ClassLevelGT(LastTalkedToBy, ROGUE, 21)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
@@ -390,11 +413,15 @@ IF ~~ Golem.Type.Clay
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 19)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 19)
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 25)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~!Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) CheckStatGT(LastTalkedToBy, 0, USE_ANY_ITEM) ClassLevelGT(LastTalkedToBy, ROGUE, 25)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, WIZARD, 19) ClassLevelGT(LastTalkedToBy, ROGUE, 25)
+     NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
+  + ~Class(LastTalkedToBy, CLERIC_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, PRIEST, 19) ClassLevelGT(LastTalkedToBy, ROGUE, 25)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) Class(LastTalkedToBy, THIEF_ALL) OR(2) ClassLevelGT(LastTalkedToBy, WIZARD, 17) ClassLevelGT(LastTalkedToBy, ROGUE, 25)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect

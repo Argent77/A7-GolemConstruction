@@ -70,8 +70,9 @@ by itself and requires certain unique artifacts of power for the enchantment pro
 The construction of golems takes time and has to be done in places with the right equipment. 
 In Siege of Dragonspear you can try Sorcerous Sundries, the Repository of Undeath beneath the 
 Dwarven Dig Site and the ruins of Kanaglym which are accessible from the Underground River. 
-In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesvale may be suitable. The 
-Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 
+In Shadows of Amn the Planar Sphere and Jermien's Home in Imnesvale may be suitable. Clerics may 
+also use the temples in Athkatla to build clay golems if they choose one of them as their stronghold.
+The Wizard's Library on the second floor of Watcher's Keep can be used as well. In Throne of Bhaal 
 your Pocket Plane may work, after installing some equipment.
 In IWD:EE you can try the third level of Dragon's Eye, Larrel's Study of the Severed Hand, 
 Bandoth's Tower in Dorn's Deep, Malavon's Home in Lower Dorn's Deep, Tiernon's Forge in the 
@@ -163,6 +164,11 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.2
+- Made clay golem construction available to clerics
+- Added cleric-specific workshops to their respective temple strongholds
+- Several spelling fixes and improvements
 
 5.1
 - Added Polish translation for artifact quest
