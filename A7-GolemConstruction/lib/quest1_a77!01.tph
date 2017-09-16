@@ -19,6 +19,7 @@ COPY ~%MOD_FOLDER%/areas/a77!01/a77!01.wed~ ~override~
      ~%MOD_FOLDER%/areas/a77!01/a77!01ht.bmp~ ~override~
      ~%MOD_FOLDER%/areas/a77!01/a77!01lm.bmp~ ~override~
      ~%MOD_FOLDER%/areas/a77!01/a77!01sr.bmp~ ~override~
+     ~%MOD_FOLDER%/areas/a77!01/a7!am01.wav~ ~override~
      ~%MOD_FOLDER%/areas/a77!01/a7!mzcl.wav~ ~override~
 
 ACTION_BASH_FOR ~%MOD_FOLDER%/areas/a77!01~ ~a7!01.+\.pvrz~ BEGIN
