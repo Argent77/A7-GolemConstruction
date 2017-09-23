@@ -181,6 +181,8 @@ History
 5.2
 - Made clay golem construction available to clerics
 - Added cleric-specific workshops to their respective temple strongholds
+- Fixed missing ambient sound on quest-related map
+- Corrected Nym's default combat script
 - Several spelling fixes and improvements
 
 5.1
