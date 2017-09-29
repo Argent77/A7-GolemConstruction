@@ -7,6 +7,7 @@ OUTER_SET GAME_IS_BG2EE = (GAME_IS ~bg2ee~) ? 1 : 0
 OUTER_SET GAME_IS_IWDEE = (GAME_IS ~iwdee~) ? 1 : 0
 OUTER_SET GAME_IS_EET = (GAME_IS ~eet~) ? 1 : 0
 OUTER_SET GAME_IS_EET_IWD = (GAME_IS ~eet~ AND FILE_EXISTS_IN_GAME ~id1000.are~) ? 1 : 0
+OUTER_SET SPELL_REV = (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) ? 1 : 0
 
 
 /**
@@ -958,5 +959,45 @@ BEGIN
       parameter2  = 328 // Opcode: Set Spell State
       resist_dispel = 2
     END
+  END
+END
+
+
+/**
+ * Returns column and row index of the 2DA entry that matches the specified search text of the given 2da file.
+ */
+DEFINE_PATCH_FUNCTION GET_2DA_ENTRY_OF
+INT_VAR
+  row_match = "-1"  // neg. value indicates to search all rows
+  col_match = "-1"  // neg. value indicates to search all columns
+STR_VAR
+  file          = ~~  // the 2da filename
+  entry_match   = ~~  // search text
+RET
+  row col
+BEGIN
+  SET row = "-1"
+  SET col = "-1"
+  INNER_ACTION BEGIN
+    COPY_EXISTING - ~%file%~ ~override~
+      COUNT_2DA_COLS numCols
+      COUNT_2DA_ROWS numCols numRows
+      SET rowOffset = (numCols = 1 || numCols = 2) ? 1 : 0  // to compensate for 2DA headers
+      SET rowMin = (row_match < 0) ? 0 : row_match
+      SET rowMax = (row_match < 0) ? (numRows - 1) : row_match
+      SET colMin = (col_match < 0) ? 0 : col_match
+      SET colMax = (col_match < 0) ? (numCols - 1) : col_match
+      FOR (curRow = rowMin + rowOffset; curRow <= rowMax; ++curRow) BEGIN
+        FOR (curCol = colMin; curCol <= colMax; ++curCol) BEGIN
+          READ_2DA_ENTRY curRow curCol numCols value
+          PATCH_IF (~%entry_match%~ STR_EQ ~%value%~) BEGIN
+            SET row = curRow - rowOffset
+            SET col = curCol
+            SET curRow = rowMax + 1
+            SET curCol = colMax + 1
+          END
+        END
+      END
+    IF_EXISTS
   END
 END

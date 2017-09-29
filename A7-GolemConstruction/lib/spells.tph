@@ -47,6 +47,38 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   COPY ~%resName%~ ~override~
     SAY NAME1 @20020  // Golem Haste
     SAY UNIDENTIFIED_DESC @20021  // ...
+    PATCH_IF (SPELL_REV) BEGIN
+      // Adding custom secondary type
+      LPF GET_2DA_ENTRY_OF
+      INT_VAR col_match = 0
+      STR_VAR
+        file = ~msectype.2da~
+        entry_match = ~k1#Haste~
+      RET row col
+      END
+      PATCH_IF (row >= 0) BEGIN
+        WRITE_BYTE 0x27 row
+      END
+
+      // Ability dispels slow effect
+      LPF GET_2DA_ENTRY_OF
+      INT_VAR col_match = 0
+      STR_VAR
+        file = ~msectype.2da~
+        entry_match = ~k1#Slow~
+      RET row col
+      END
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = 221  // Remove spell type protections
+        power = 3
+        target = 2    // preset target
+        parameter1 = 9
+        parameter2 = row
+        timing = 1
+        insert_point = 1
+      END
+    END
 
   COPY ~%MOD_FOLDER%/spells/a7!in03b.bam~ ~override~
 END
@@ -62,6 +94,38 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   COPY ~%resName%~ ~override~
     SAY NAME1 @20030  // Golem Slow
     SAY UNIDENTIFIED_DESC @20031  // ...
+    PATCH_IF (SPELL_REV) BEGIN
+      // Adding custom secondary type
+      LPF GET_2DA_ENTRY_OF
+      INT_VAR col_match = 0
+      STR_VAR
+        file = ~msectype.2da~
+        entry_match = ~k1#Slow~
+      RET row col
+      END
+      PATCH_IF (row >= 0) BEGIN
+        WRITE_BYTE 0x27 row
+      END
+
+      // Ability dispels haste effect
+      LPF GET_2DA_ENTRY_OF
+      INT_VAR col_match = 0
+      STR_VAR
+        file = ~msectype.2da~
+        entry_match = ~k1#Haste~
+      RET row col
+      END
+      LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = 221  // Remove spell type protections
+        power = 3
+        target = 2    // preset target
+        parameter1 = 9
+        parameter2 = row
+        timing = 1
+        insert_point = 0
+      END
+    END
 
   COPY ~%MOD_FOLDER%/spells/a7!in04b.bam~ ~override~
 END

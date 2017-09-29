@@ -1,7 +1,5 @@
 // *** Tweaks: Make golems vulnerable to specific spell effects ***
 
-OUTER_SET SPELL_REV = (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) ? 1 : 0
-
 OUTER_SET splstate_lesser = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_LESSER~)
 OUTER_SET splstate_flesh = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_FLESH~)
 OUTER_SET splstate_clay = IDS_OF_SYMBOL (~splstate~ ~A7!GOLEM_CLAY~)
