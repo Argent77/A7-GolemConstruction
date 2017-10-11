@@ -478,6 +478,7 @@ IF
   Global("A7!Init", "LOCALS", 1)
   See(NearestEnemyOf(Myself))
   Race(LastSeenBy(Myself), GOLEM)
+  !CheckSpellState(LastSeenBy(Myself), A7!GOLEM_CLAY)
   ClassLevelGT(Myself, WIZARD, 17)
   Global("A7!CombatHLA2", "LOCALS", 0)
 THEN
