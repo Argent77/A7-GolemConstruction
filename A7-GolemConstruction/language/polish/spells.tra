@@ -173,7 +173,7 @@ Rzut obronny: specjalny
 
 Zdolność ta pozwala golemowi błyskawic na przeniesienie się w wybrane miejsce, znajdujące się w zasięgu 16 metrów od niego. Nie musi ono znajdować się na linii jego wzroku. Golem zmienia się w potężną błyskawicę, która dociera do wybranego miejsca niemal natychmiast. Tak szybka podróż powoduje wytworzenie fali uderzeniowej, która odrzuca wszystkie istoty znajdujące się w zasięgu 2,5 metra od miejsca docelowego, zadając im 1k6 obrażeń od elektryczności. Duże istoty, takie jak smoki czy olbrzymy nie zostaną odrzucone przez falę uderzeniową. Będący efektem podróży grzmot może również spowodować trwającą 1k4 rund głuchotę u każdej istoty znajdującej się w zasięgu, jeśli ta nie wykona rzutu obronnego przeciw zionięciom.
 
-Ze względu na to, że zdolność ta jest wynikiem takiej, a nie innej natury golema, nie musi on czekać, aż jego aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności.~
+Ze względu na to, iż zdolność ta jest częścią natury golema, może on natychmiast i bez żadnych opóźnień wykonać kolejną czynność.~
 
 @20160 = ~Wypędzenie ducha z golema~
 @20161 = ~Wypędzenie ducha z golema
