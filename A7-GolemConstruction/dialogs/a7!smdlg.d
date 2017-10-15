@@ -232,7 +232,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 1)~ Golem.Type
   SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl1", Myself)) DestroySelf()~ EXIT
-  IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl1", Myself)) DestroySelf()~ EXIT
+  IF ~Global("GolemType", "LOCALS", 2)~ DO ~SetGlobalTimer("A7!MentalBattleTimer", "GLOBAL", 12) ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl1", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 3)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smst1", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 4)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smir1", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 5)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smmi1", Myself)) DestroySelf()~ EXIT
@@ -243,7 +243,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 2)~ Golem.Type
   SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl2", Myself)) DestroySelf()~ EXIT
-  IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl2", Myself)) DestroySelf()~ EXIT
+  IF ~Global("GolemType", "LOCALS", 2)~ DO ~SetGlobalTimer("A7!MentalBattleTimer", "GLOBAL", 12) ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl2", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 3)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smst2", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 4)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smir2", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 5)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smmi2", Myself)) DestroySelf()~ EXIT
@@ -254,7 +254,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 3)~ Golem.Type
   SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl3", Myself)) DestroySelf()~ EXIT
-  IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl3", Myself)) DestroySelf()~ EXIT
+  IF ~Global("GolemType", "LOCALS", 2)~ DO ~SetGlobalTimer("A7!MentalBattleTimer", "GLOBAL", 12) ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl3", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 3)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smst3", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 4)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smir3", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 5)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smmi3", Myself)) DestroySelf()~ EXIT
@@ -265,7 +265,7 @@ IF ~Global("stage", "LOCALS", 2) Global("GolemVariant", "LOCALS", 4)~ Golem.Type
   SAY @41008 /* After <A7_HOURS> hours of hard work the physical shell of the golem is ready for the final enchantment... */
   IF ~True()~ DO ~DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 1)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smfl4", Myself)) DestroySelf()~ EXIT
-  IF ~Global("GolemType", "LOCALS", 2)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl4", Myself)) DestroySelf()~ EXIT
+  IF ~Global("GolemType", "LOCALS", 2)~ DO ~SetGlobalTimer("A7!MentalBattleTimer", "GLOBAL", 12) ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smcl4", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 3)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smst4", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 4)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smir4", Myself)) DestroySelf()~ EXIT
   IF ~Global("GolemType", "LOCALS", 5)~ DO ~ActionOverride(LastTalkedToBy, ForceSpellRES("a7!smmi4", Myself)) DestroySelf()~ EXIT

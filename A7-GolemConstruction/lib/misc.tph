@@ -259,6 +259,16 @@ END
   EXTEND_TOP ~ar0902.bcs~ ~%MOD_FOLDER%/scripts/ar0902_top.baf~
   EXTEND_TOP ~ar0904.bcs~ ~%MOD_FOLDER%/scripts/ar0904_top.baf~
 
+  // Cleric stronghold quests should not interfere with golem construction
+  COPY_EXISTING ~ar0901.bcs~ ~override~
+                ~ar0902.bcs~ ~override~
+                ~ar0904.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~^\(.*("Clglin01Return","GLOBAL")\)~ ~\1 !GlobalTimerNotExpired("A7!MentalBattleTimer", "GLOBAL")~
+      REPLACE_TEXTUALLY ~^\(.*("Cltiva01Return","GLOBAL")\)~ ~\1 !GlobalTimerNotExpired("A7!MentalBattleTimer", "GLOBAL")~
+    END
+  BUT_ONLY
+
   // Use Watcher's Keep - Second Level as golem workshop
   EXTEND_TOP ~ar3016.bcs~ ~%MOD_FOLDER%/scripts/ar3016_top.baf~
 
