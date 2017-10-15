@@ -24,24 +24,24 @@ Platziert das Buch in ein Feld für einsatzbereite Gegenstände. Die Magie des B
 Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
 
 Niederer Lehmgolem:
-Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
+Min. Stufe: 11 (-2 für Wandler, -1 für Kleriker, +2 für Barden)
 Zutaten:
 - Ein Tonblock
 
 Lehmgolem:
-Min. Stufe: 14 (-2 für Wandler, +3 für Barden)
+Min. Stufe: 14 (-2 für Wandler, +1 für Kleriker, +3 für Barden)
 Zutaten:
 - Zwei Tonblöcke
 - Eine Schriftrolle "Hast"
 
 Höherer Lehmgolem:
-Min. Stufe: 18 (-2 für Wandler, +4 für Barden)
+Min. Stufe: 18 (-2 für Wandler, +3 für Kleriker, +4 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"
 
 Perfekter Lehmgolem:
-Min. Stufe: 20 (-2 für Wandler, +6 für Barden)
+Min. Stufe: 20 (-2 für Wandler, +4 für Kleriker, +6 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"
@@ -63,24 +63,24 @@ Dieser Leitfaden scheint Teil einer größeren Sammlung zu sein, die in sechs B�
 Die Magie dieses Buches erlaubt Euch folgende Golems zu erschaffen:
 
 Niederer Lehmgolem:
-Min. Stufe: 11 (-2 für Wandler, +2 für Barden)
+Min. Stufe: 11 (-2 für Wandler, -1 für Kleriker, +2 für Barden)
 Zutaten:
 - Ein Tonblock
 
 Lehmgolem:
-Min. Stufe: 14 (-2 für Wandler, +3 für Barden)
+Min. Stufe: 14 (-2 für Wandler, +1 für Kleriker, +3 für Barden)
 Zutaten:
 - Zwei Tonblöcke
 - Eine Schriftrolle "Hast"
 
 Höherer Lehmgolem:
-Min. Stufe: 18 (-2 für Wandler, +4 für Barden)
+Min. Stufe: 18 (-2 für Wandler, +3 für Kleriker, +4 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"
 
 Perfekter Lehmgolem:
-Min. Stufe: 20 (-2 für Wandler, +6 für Barden)
+Min. Stufe: 20 (-2 für Wandler, +4 für Kleriker, +6 für Barden)
 Zutaten:
 - Vier Tonblöcke
 - Eine Schriftrolle "Hast"

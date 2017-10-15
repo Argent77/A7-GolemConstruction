@@ -24,24 +24,24 @@ Właściwości ładunków:
 Pozwala użytkownikowi na budowę następujących golemów:
 
 Pomniejszy gliniany golem:
-Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów)
+Minimalny poziom: 11 (-2 dla mistrzów przemian, -1 dla kapłanów, +2 dla bardów)
 Składniki:
 - Jeden blok gliniany
 
 Gliniany golem:
-Minimalny poziom: 14 (-2 dla mistrzów przemian, +3 dla bardów)
+Minimalny poziom: 14 (-2 dla mistrzów przemian, +1 dla kapłanów, +3 dla bardów)
 Składniki:
 - Dwa bloki gliniane
 - Jeden zwój z czarem Przyspieszenie ruchów
 
 Większy gliniany golem:
-Minimalny poziom: 18 (-2 dla mistrzów przemian, +4 dla bardów)
+Minimalny poziom: 18 (-2 dla mistrzów przemian, +3 dla kapłanów, +4 dla bardów)
 Składniki:
 - Cztery bloki gliniane
 - Jeden zwój z czarem Przyspieszenie ruchów
 
 Idealny gliniany golem:
-Minimalny poziom: 20 (-2 dla mistrzów przemian, +6 dla bardów)
+Minimalny poziom: 20 (-2 dla mistrzów przemian, +4 dla kapłanów, +6 dla bardów)
 Składniki:
 - Cztery bloki gliniane
 - Jeden zwój z czarem Przyspieszenie ruchów
@@ -63,24 +63,24 @@ Z tego, co możesz wywnioskować, księga ta stanowi część sześciotomowej ko
 Pozwala użytkownikowi na budowę następujących golemów:
 
 Pomniejszy gliniany golem:
-Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów)
+Minimalny poziom: 11 (-2 dla mistrzów przemian, -1 dla kapłanów, +2 dla bardów)
 Składniki:
 - Jeden blok gliniany
 
 Gliniany golem:
-Minimalny poziom: 14 (-2 dla mistrzów przemian, +3 dla bardów)
+Minimalny poziom: 14 (-2 dla mistrzów przemian, +1 dla kapłanów, +3 dla bardów)
 Składniki:
 - Dwa bloki gliniane
 - Jeden zwój z czarem Przyspieszenie ruchów
 
 Większy gliniany golem:
-Minimalny poziom: 18 (-2 dla mistrzów przemian, +4 dla bardów)
+Minimalny poziom: 18 (-2 dla mistrzów przemian, +3 dla kapłanów, +4 dla bardów)
 Składniki:
 - Cztery bloki gliniane
 - Jeden zwój z czarem Przyspieszenie ruchów
 
 Idealny gliniany golem:
-Minimalny poziom: 20 (-2 dla mistrzów przemian, +6 dla bardów)
+Minimalny poziom: 20 (-2 dla mistrzów przemian, +4 dla kapłanów, +6 dla bardów)
 Składniki:
 - Cztery bloki gliniane
 - Jeden zwój z czarem Przyspieszenie ruchów

@@ -135,7 +135,7 @@ Perfect Flesh Golem:
 2. Clay Golems
 
 Lesser Clay Golem:
-- Min. level: 11 (-2 for Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 11 (-2 for Transmuters, -1 for Clerics, +2 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - One block of clay
 - Stats:
@@ -157,7 +157,7 @@ Lesser Clay Golem:
   in sight.
 
 Clay Golem:
-- Min. level: 14 (-2 for Transmuters, +3 for Bards and Thieves with "Use Any Item")
+- Min. level: 14 (-2 for Transmuters, +1 for Clerics, +3 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Two blocks of clay
   - One scroll of Haste
@@ -184,7 +184,7 @@ Clay Golem:
   in sight.
 
 Greater Clay Golem:
-- Min. level: 18 (-2 for Transmuters, +4 for Bards and Thieves with "Use Any Item")
+- Min. level: 18 (-2 for Transmuters, +3 for Clerics, +4 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four block of clay
   - One scroll of Haste
@@ -213,7 +213,7 @@ Greater Clay Golem:
 - 50% chance to split into two lesser golems of same type on death.
 
 Perfect Clay Golem:
-- Min. level: 20 (-2 for Transmuters, +6 for Bards and Thieves with "Use Any Item")
+- Min. level: 20 (-2 for Transmuters, +4 for Clerics, +6 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Four block of clay
   - One scroll of Haste

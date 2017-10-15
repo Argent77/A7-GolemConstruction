@@ -139,7 +139,7 @@ Perfekter Fleischgolem:
 2. Lehmgolems
 
 Niederer Lehmgolem:
-- Min. Stufe: 11 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Min. Stufe: 11 (-2 für Wandler, -1 für Kleriker, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Ein Tonblock
 - Eigenschaften:
@@ -161,7 +161,7 @@ Niederer Lehmgolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Lehmgolem:
-- Min. Stufe: 14 (-2 für Wandler, +3 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Min. Stufe: 14 (-2 für Wandler, +1 für Kleriker, +3 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Zwei Tonblöcke
   - Eine Schriftrolle "Hast"
@@ -188,7 +188,7 @@ Lehmgolem:
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Höherer Lehmgolem:
-- Min. Stufe: 18 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Min. Stufe: 18 (-2 für Wandler, +3 für Kleriker, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Tonblöcke
   - Eine Schriftrolle "Hast"
@@ -217,7 +217,7 @@ Höherer Lehmgolem:
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
 Perfekter Lehmgolem:
-- Min. Stufe: 20 (-2 für Wandler, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Min. Stufe: 20 (-2 für Wandler, +4 für Kleriker, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
 - Zutaten:
   - Vier Tonblöcke
   - Eine Schriftrolle "Hast"

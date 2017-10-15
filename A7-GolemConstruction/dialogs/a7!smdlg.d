@@ -362,7 +362,7 @@ IF ~~ Golem.Type.Clay
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 10)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
-  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 10)
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 9)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 12)
      PartyHasItem("a7!clay")~ + @41018 /* Lesser Clay Golem */ + Golem.Type.Clay.Lesser
@@ -379,7 +379,7 @@ IF ~~ Golem.Type.Clay
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 13)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
-  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 13)
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 14)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 16)
      NumItemsPartyGT("a7!clay", 1) PartyHasItem("scrl1h")~ + @41019 /* Clay Golem */ + Golem.Type.Clay.Regular
@@ -396,7 +396,7 @@ IF ~~ Golem.Type.Clay
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 17)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
-  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 17)
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 20)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 21)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h")~ + @41020 /* Greater Clay Golem */ + Golem.Type.Clay.Greater
@@ -413,7 +413,7 @@ IF ~~ Golem.Type.Clay
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_TRANSMUTER) Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, WIZARD, 19)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
-  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 19)
+  + ~Class(LastTalkedToBy, CLERIC_ALL) !Class(LastTalkedToBy, MAGE_ALL) !Class(LastTalkedToBy, THIEF_ALL) ClassLevelGT(LastTalkedToBy, PRIEST, 23)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect
   + ~Class(LastTalkedToBy, BARD_ALL) LevelGT(LastTalkedToBy, 25)
      NumItemsPartyGT("a7!clay", 3) PartyHasItem("scrl1h") PartyHasItem("a7!glcl")~ + @41021 /* Perfect Clay Golem */ + Golem.Type.Clay.Perfect

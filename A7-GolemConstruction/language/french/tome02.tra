@@ -24,24 +24,24 @@ Utilisation : Placez-le dans un emplacement d'objet rapide
 Permet de fabriquer les golems suivants :
 
 Golem d'argile mineur :
-Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Niveau requis : 11 (-2 pour les Transmutateurs, -1 pour les Prêtres, +2 pour les Bardes)
 Composants nécessaires :
 - Un bloc d'argile
 
 Golem d'argile :
-Niveau requis : 14 (-2 pour les Transmutateurs, +3 pour les Bardes)
+Niveau requis : 14 (-2 pour les Transmutateurs, +1 pour les Prêtres, +3 pour les Bardes)
 Composants nécessaires :
 - Deux blocs d'argile
 - Un parchemin de Hâte
 
 Golem d'argile majeur :
-Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Niveau requis : 18 (-2 pour les Transmutateurs, +3 pour les Prêtres, +4 pour les Bardes)
 Composants nécessaires :
 - Quatre blocs d'argile
 - Un parchemin de Hâte
 
 Golem d'argile parfait :
-Niveau requis : 20 (-2 pour les Transmutateurs, +6 pour les Bardes)
+Niveau requis : 20 (-2 pour les Transmutateurs, +4 pour les Prêtres, +6 pour les Bardes)
 Composants nécessaires :
 - Quatre blocs d'argile
 - Un parchemin de Hâte
@@ -63,24 +63,24 @@ De ce que vous pouvez déduire de votre lecture, cet ouvrage fait partie d'un re
 Permet de fabriquer les golems suivants :
 
 Golem d'argile mineur :
-Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes)
+Niveau requis : 11 (-2 pour les Transmutateurs, -1 pour les Prêtres, +2 pour les Bardes)
 Composants nécessaires :
 - Un bloc d'argile
 
 Golem d'argile :
-Niveau requis : 14 (-2 pour les Transmutateurs, +3 pour les Bardes)
+Niveau requis : 14 (-2 pour les Transmutateurs, +1 pour les Prêtres, +3 pour les Bardes)
 Composants nécessaires :
 - Deux blocs d'argile
 - Un parchemin de Hâte
 
 Golem d'argile majeur :
-Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes)
+Niveau requis : 18 (-2 pour les Transmutateurs, +3 pour les Prêtres, +4 pour les Bardes)
 Composants nécessaires :
 - Quatre blocs d'argile
 - Un parchemin de Hâte
 
 Golem d'argile parfait :
-Niveau requis : 20 (-2 pour les Transmutateurs, +6 pour les Bardes)
+Niveau requis : 20 (-2 pour les Transmutateurs, +4 pour les Prêtres, +6 pour les Bardes)
 Composants nécessaires :
 - Quatre blocs d'argile
 - Un parchemin de Hâte

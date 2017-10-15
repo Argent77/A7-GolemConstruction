@@ -136,7 +136,7 @@ Idealny golem z ciała:
 2. Gliniane golemy
 
 Pomniejszy gliniany golem:
-- Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
+- Minimalny poziom: 11 (-2 dla mistrzów przemian, -1 dla kapłanów, +2 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Jeden blok gliniany
 - Statystyki:
@@ -158,7 +158,7 @@ Pomniejszy gliniany golem:
   się w zasięgu jego wzroku.
 
 Gliniany golem:
-- Minimalny poziom: 14 (-2 dla mistrzów przemian, +3 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
+- Minimalny poziom: 14 (-2 dla mistrzów przemian, +1 dla kapłanów, +3 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Dwa bloki gliniane
   - Jeden zwój z czarem Przyspieszenie ruchów
@@ -185,7 +185,7 @@ Gliniany golem:
   się w zasięgu jego wzroku.
 
 Większy gliniany golem:
-- Minimalny poziom: 18 (-2 dla mistrzów przemian, +4 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
+- Minimalny poziom: 18 (-2 dla mistrzów przemian, +3 dla kapłanów, +4 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery bloki gliniane
   - Jeden zwój z czarem Przyspieszenie ruchów
@@ -214,7 +214,7 @@ Większy gliniany golem:
 - Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
 
 Idealny gliniany golem:
-- Minimalny poziom: 20 (-2 dla mistrzów przemian, +6 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
+- Minimalny poziom: 20 (-2 dla mistrzów przemian, +4 dla kapłanów, +6 dla bardów i złodziei ze zdolnością „Użycie dowolnego przedmiotu”)
 - Składniki:
   - Cztery bloki gliniane
   - Jeden zwój z czarem Przyspieszenie ruchów
