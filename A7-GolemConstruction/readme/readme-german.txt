@@ -1,7 +1,7 @@
 "Golems erschaffen" für Magier
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    5.2
+Version:    5.3
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
@@ -169,6 +169,13 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.3
+- Adjusted cleric level requirements for building clay golems
+- Cleric Stronghold quests don't interfere with golem construction anymore
+- Made golem slow and haste more compatible with Spell Revisions
+- Improved combat scripts: enemy mages should not use Energy Blades against clay golems
+- Several textual fixes
 
 5.2
 - Made clay golem construction available to clerics
