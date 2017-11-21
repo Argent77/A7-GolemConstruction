@@ -138,8 +138,17 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   COPY_EXISTING ~golada01.cre~ ~override~
                 ~gordeckb.cre~ ~override~
                 ~golkill2.cre~ ~override~
+    ADD_KNOWN_SPELL ~a7!in06~ #0 ~innate~   // Trample
+    ADD_MEMORIZED_SPELL ~a7!in06~ #0 ~innate~ (2)
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_normal END
     LPF APPLY_SPELL_STATE INT_VAR splstate = splstate_golem_adamantite END
+    PATCH_FOR_EACH offset IN 0x248 0x250 0x258 0x260 0x268 BEGIN
+      READ_ASCII offset script (8) NULL
+      PATCH_IF (~%script%~ STR_EQ ~GOLIRO01~) BEGIN
+        // Replace Gas Cloud by Trample
+        WRITE_ASCII offset ~A7!GXAD2~ (8)
+      END
+    END
   BUT_ONLY
 
   // Updating Bone Golems
