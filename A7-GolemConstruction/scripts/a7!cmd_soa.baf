@@ -14,7 +14,7 @@ THEN
     DisplayStringHead(Myself, @100018)  // Golem has been disabled.
     PlaySound("EFF_M07")
     RemoveFamiliar()
-    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    ChangeEnemyAlly(Myself, NEUTRAL)
 END
 
 IF
@@ -27,6 +27,7 @@ THEN
     SetGlobal("spellhold", "LOCALS", 1)
     DisplayStringHead(Myself, @100018)  // Golem has been disabled.
     PlaySound("EFF_M07")
+    ChangeEnemyAlly(Myself, NEUTRAL)
 END
 
 IF

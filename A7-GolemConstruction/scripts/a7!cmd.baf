@@ -34,6 +34,7 @@ IF
   OR(2)
     Global("Command", "LOCALS", 2)
     Global("Command", "LOCALS", 3)
+  !AreaCheck("AR1515")
   !Allegiance(Myself, GOODBUTBLUE)
 THEN
   RESPONSE #100
