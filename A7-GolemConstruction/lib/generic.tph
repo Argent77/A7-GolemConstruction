@@ -42,6 +42,9 @@ END
 // (max. number - 1) of available golems following you
 OUTER_SET max_golem_count = 2
 
+// This is just a precaution. The action does not exist in pure BG1EE, but is not needed for that game either.
+APPEND ~action.ids~ ~384 AddXPWorthOnce(O:Object*,I:ClearStat*BOOLEAN)~ UNLESS ~AddXPWorthOnce~
+
 // probably not needed
 APPEND ~gtimes.ids~ ~6 ONE_ROUND~ UNLESS ~ONE_ROUND~
 APPEND ~gtimes.ids~ ~12 TWO_ROUNDS~ UNLESS ~TWO_ROUNDS~
