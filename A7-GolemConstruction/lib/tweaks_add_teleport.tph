@@ -54,6 +54,13 @@ COPY_EXISTING ~a7!glfl1.cre~ ~override~
               ~a7!glru.cre~ ~override~
               ~a7!gldo.cre~ ~override~
               ~a7!glbd.cre~ ~override~
+  ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
+  ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
+BUT_ONLY IF_EXISTS
+
+ACTION_IF (GAME_IS_IWDEE) BEGIN
+  COPY_EXISTING ~a7!gmir2.cre~ ~override~
     ADD_KNOWN_SPELL ~a7!in08~ #0 ~innate~   // Teleport
     ADD_MEMORIZED_SPELL ~a7!in08~ #0 ~innate~
-BUT_ONLY IF_EXISTS
+  BUT_ONLY IF_EXISTS
+END
