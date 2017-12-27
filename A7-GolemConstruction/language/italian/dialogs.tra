@@ -1,0 +1,345 @@
+// -*- coding: utf-8 -*- 
+// Dialogs and misc. strings (index 40000..49999)
+
+// *** Misc. strings ***
+@40000 = ~Eccoti di nuovo. Un po' di mithral per te.~
+@40001 = ~Lo abbiamo trovato tra le scorte segrete di Coldhearth. È prezioso nelle mani giuste. Non c'è bisogno di ringraziarmi, <CHARNAME>. Te lo sei guadagnato, stanne certo.~ ~Lo abbiamo trovato tra le scorte segrete di Coldhearth. È prezioso nelle mani giuste. Non c'è bisogno di ringraziarmi, <CHARNAME>. Te lo sei guadagnato, stanne certa.~
+@40002 = ~dodici~
+@40003 = ~ventiquattro~
+@40004 = ~trentasei~
+@40005 = ~quarantotto~
+@40006 = ~Che diamine sta succedendo?! Va' al diavolo!~
+@40007 = ~::Ha ha::~
+@40008 = ~::Ho ho::~
+@40009 = ~::Hee hee::~
+@40010 = ~Ride in maniera incontrollabile~
+
+
+// *** Golem Construction dialog ***
+@41000 = ~Seleziona il tipo di golem:~
+@41001 = ~Golem di Carne~
+@41002 = ~Golem di Argilla~
+@41003 = ~Golem di Pietra~
+@41004 = ~Golem di Ferro~
+@41005 = ~Golem di Mithral~
+@41006 = ~Golem di Adamantio~
+@41007 = ~Golem Esotico~
+@41008 = ~Dopo <A7_HOURS> ore di duro lavoro, il rivestimento fisico del golem è pronto per l'ultimo incantamento...~
+@41009 = ~Ti prepari per il compito prima di...~
+@41010 = ~... ma non sei in grado di svolgerlo in questo luogo.~
+@41011 = ~Seleziona la variante del golem:~
+@41012 = ~Golem di Carne Minore~
+@41013 = ~Golem di Carne~
+@41014 = ~Golem di Carne Maggiore~
+@41015 = ~Golem di Carne Perfetto~
+@41016 = ~Annulla la costruzione~
+@41017 = ~Seleziona la variante del golem:~
+@41018 = ~Golem di Argilla Minore~
+@41019 = ~Golem di Argilla~
+@41020 = ~Golem di Argilla Maggiore~
+@41021 = ~Golem di Argilla Perfetto~
+@41022 = ~Golem di Pietra Minore~
+@41023 = ~Golem di Pietra~
+@41024 = ~Golem di Pietra Maggiore~
+@41025 = ~Golem di Pietra Perfetto~
+@41026 = ~Golem di Ferro Minore~
+@41027 = ~Golem di Ferro~
+@41028 = ~Golem di Ferro Maggiore~
+@41029 = ~Golem di Ferro Perfetto~
+@41030 = ~Golem di Mithral Minore~
+@41031 = ~Golem di Mithral~
+@41032 = ~Golem di Mithral Maggiore~
+@41033 = ~Golem di Mithral Perfetto~
+@41034 = ~Golem di Adamantio Minore~
+@41035 = ~Golem di Adamantio~
+@41036 = ~Golem di Adamantio Maggiore~
+@41037 = ~Golem di Adamantio Perfetto~
+@41038 = ~Golem d'Ossa~
+@41039 = ~Golem Cerebrale~
+@41040 = ~Golem di Ghiaccio~
+@41041 = ~Golem Magico~
+@41042 = ~Golem di Fulmini~
+@41043 = ~Inizi con la costruzione del corpo del golem...~
+@41044 = ~Golem di Larve~
+@41045 = ~I golem magici possono essere costruiti solo in quelle zone dove è presente la magia selvaggia.~
+@41046 = ~Non puoi costruire i Golem di Mithral senza aver appreso i rudimenti della costruzione dei Golem di Ferro.~
+@41047 = ~Non puoi costruire i Golem Adamantini senza aver appreso i rudimenti della costruzione dei Golem di Ferro.~
+@41048 = ~Seleziona un tipo differente di golem~
+@41049 = ~Golem di Rubino~
+@41050 = ~Non puoi avere altri golem che ti seguono.~
+@41051 = ~Lista dei tipi di golem disponibili~
+@41052 = ~I seguenti tipi di golem sono stati appresi da <GABBER>:~
+@41053 = ~Fix: Resettare il contatore del golem (golem attivi: <A7GLCNT>)~
+@41054 = ~Il reset del contatore è ancora in corso. Si prega di riprovare più tardi.~
+
+
+// *** Wish Djinni dialog ***
+@41500 = ~Vorrei che il mio golem di ferro venga trasformato in un golem adamantino.~
+@41501 = ~Vorrei che un singolo pezzo di ferro in mio possesso venga trasformato in adamantio.~
+@41502 = ~Fatto, padrone. Tutto il ferro in tuo possesso è stato trasformato in un singolo pezzo di adamantio.~
+@41503 = ~Fatto, padrone. Una barra di ferro in tuo possesso è stata trasformata in un singolo pezzo di adamantio.~
+@41504 = ~Trasforma tutto il tuo ferro in un singolo pezzo di adamantio.~ 
+@41505 = ~Trasforma un singolo pezzo di ferro in adamantio.~
+@41506 = ~Vorrei che il mio ferro venga trasformato in mithral.~
+@41507 = ~Vorrei che un singolo pezzo del mio ferro venga trasformato in mithral.~
+@41508 = ~Fatto, padrone. Tutto il tuo ferro è stato trasformato in un singolo pezzo di mithral.~
+@41509 = ~Fatto, padrone. Una barra di ferro in tuo possesso è stata trasformata in un singolo pezzo di mithral.~
+@41510 = ~Trasforma tutto il tuo ferro in un singolo pezzo di mithral.~
+@41511 = ~Trasforma un singolo pezzo di ferro in mithral.~
+
+
+// *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
+@42000 = ~Posso prendere in affitto per un po' il piano di sopra per costruire golem?~
+@42001 = ~Golem, dici? Caspita, ti aspetta proprio un bel lavoraccio.~
+@42002 = ~Hmm, potrei affittartelo in cambio di una piccola somma di denaro. Che ne dici di 500 monete d'oro? Mi assicurerò personalmente che tu non venga disturbato.~ ~Hmm, potrei affittartelo in cambio di una piccola somma di denaro. Che ne dici di 500 monete d'oro? Mi assicurerò personalmente che tu non venga disturbata.~
+@42003 = ~È un prezzo troppo alto. Che ne dici di 250?~
+@42004 = ~Affare fatto!~
+@42005 = ~Non ho abbastanza denaro.~
+@42006 = ~Ho cambiato idea. Non voglio prenderlo in affitto per adesso.~
+@42007 = ~Come preferisci. Chiamami se hai bisogno di ulteriore assistenza.~
+@42008 = ~Potrei abbassare il prezzo a 400 monete d'oro, ma questa è la mia ultima offerta.~
+@42009 = ~È dura negoziare con te, ma non mi lamenterò. È stato un piacere fare affari con te.~
+@42010 = ~Va bene. È stato un piacere fare affari con te.~
+
+
+// *** ToB - Lazarus Librarus ***
+@42500 = ~Hai dell'equipaggiamento in vendita che può essere usato per costruire golem?~
+@42501 = ~Hmm... Roba del genere è difficile da reperire, visto che è poco richiesta.~
+@42502 = ~Ti è andata bene però. Quando ero giovane, mi sono cimentato nell'arte della costruzione dei golem, anche se non sono riuscito ad ottenere risultati concreti. Insomma, preferisco la teoria alla pratica.~
+@42503 = ~L'equipaggiamento è ancora in mio possesso. Potrei separarmene per il giusto prezzo. Che ne dici di 10.000 monete d'oro?~
+@42504 = ~È troppo costoso. Non puoi abbassare un po' il prezzo?~
+@42505 = ~D'accordo, va bene. Ecco il tuo oro.~
+@42506 = ~Al momento non posso permettermelo.~
+@42507 = ~Non sono interessato.~ ~Non sono interessata.~
+@42508 = ~Temo di no. Ho impiegato anni ed investito un sacco di energie per recuperare tutte le parti necessarie. Non posso vendertelo a meno.~
+@42509 = ~Capisco. Ecco le tue 10.000 monete d'oro.~
+@42510 = ~Probabilmente posso fare un'eccezione, visto che mi hai aiutato a recuperare il libro degli incantesimi. Che ne dici di 6.000 monete d'oro? Non troverai un prezzo migliore.~
+@42511 = ~Va bene. Ecco le tue 6.000 monete d'oro.~
+@42512 = ~Forse un'altra volta.~
+@42513 = ~Grazie. Non te ne pentirai. Gli attrezzi sono ancora in ottime condizioni.~
+@42514 = ~Probabilmente posso fare un’eccezione, visto che mi hai aiutato a recuperare il libro degli incantesimi a Saradush. Che ne dici di 6.000 monete d'oro? Non troverai un prezzo migliore.~
+
+
+// *** WK - Cambion Aesgareth ***
+@43000 = ~Eccellente. Ho accesso al Marchio Spettrale, una pergamena di Desiderio e un tomo della conoscenza, tutti oggetti di grande valore. E c'è persino la gemma. A che cosa vorresti giocare?~
+@43001 = ~Eccellente. Ho accesso al Marchio Spettrale, una pergamena di Desiderio e un tomo della conoscenza, tutti oggetti di grande valore. E naturalmente abbiamo la gemma. A che cosa vorresti giocare?~
+@43002 = ~Giocherò per il tomo della conoscenza.~
+@43003 = ~Desideri il tomo della conoscenza ed eccolo qui. Se vorrai giocare nuovamente, coglierei l'occasione per guadagnare la mia libertà, amico.~ ~Desideri il tomo della conoscenza ed eccolo qui. Se vorrai giocare nuovamente, coglierei l'occasione per guadagnare la mia libertà, amica.~
+
+
+// *** Pocket Plane - Cespenar ***
+@43500 = ~Huh? Cosa abbiamo qui? Una rivista sconcia? Oh... solo il manuale di costruzione dei golem.~
+@43501 = ~Ti occorrono tutte le pagine per un lavoro di rilegatura. Ritorna quando avrai trovato la seconda parte.~
+@43502 = ~Hai tutte le pagine, quindi rimetterò in sesto il libro. Ma mi servono 5.000 monete d'oro per un lavoro di rilegatura. Ti interessa?~
+@43503 = ~VA BENE, Cespenar continua a cercare.~
+
+
+// *** Drow Merchant Nym ***
+@44000 = ~Vendui' - il mio più caldo benvenuto, onorato cliente. Io sono Nym, un mercante.~ [a7!nym01]
+@44001 = ~Vendui' - benvenuto, darthiir. Io sono Nym, un mercante.~ [a7!nym02]
+@44002 = ~Mi fermerò qui ancora per un po', quindi sentiti libero di ritornare e di dare un'occhiata alla mia merce quando vuoi. Aluve.~ ~Mi fermerò qui ancora per un po', quindi sentiti libera di ritornare e di dare un'occhiata alla mia merce quando vuoi. Aluve.~ [a7!nym03]
+@44003 = ~Il mio più caldo benvenuto, onorato cliente.~ ~Il mio più caldo benvenuta, onorata cliente.~[a7!nym04]
+@44004 = ~Benvenuto, darthiir.~ ~Benvenuta, darthiir.~ [a7!nym05]
+@44005 = ~Ti può forse interessare la mia merce?~
+@44006 = ~Cos'hai da offrire?~
+@44007 = ~Muori, feccia drow!~
+@44008 = ~Ho una grande scelta di oggetti di alta qualità in vendita per garantire il successo dell'avventuriero. Se sei disposto a pagare un po' di più, posso persino mostrarti alcuni dei miei artefatti esotici.~
+@44009 = ~Sfortunatamente, la tua vittoria sugli abitanti di questo insediamento mi ha privato di una buona fonte che riforniva le mie scorte. Proverò comunque a cercare altre fonti per soddisfare i bisogni di clienti come te ben disposti a pagare.~
+@44010 = ~Sì, mostrami la tua merce.~
+@44011 = ~Mi piacerebbe dare un'occhiata ai tuoi articoli esotici.~
+@44012 = ~Al momento non sono interessato. Addio, Nym.~ ~Al momento non sono interessata. Addio, Nym.~
+@44013 = ~Il tuo arrivo è accompagnato da buone notizie. Sono riuscito a rimpiazzare un po' dei miei beni. Sfortunatamente, occorre uno sforzo considerevolmente alto per trovare una fonte conveniente da queste parti. Non mi rimane altra scelta se non quella di passarti alcune delle mie spese, onorato cliente.~ ~Il tuo arrivo è accompagnato da buone notizie. Sono riuscito a rimpiazzare un po' dei miei beni. Sfortunatamente, occorre uno sforzo considerevolmente alto per trovare una fonte conveniente da queste parti. Non mi rimane altra scelta se non quella di passarti alcune delle mie spese, onorata cliente.~
+@44014 = ~Sono riuscito a rimpiazzare un po' dei miei articoli. Sfortunatamente, non mi rimane altra scelta se non quella di alzare nuovamente i prezzi, onorato cliente.~ ~Sono riuscito a rimpiazzare un po' dei miei articoli. Sfortunatamente, non mi rimane altra scelta se non quella di alzare nuovamente i prezzi, onorata cliente.~
+@44015 = ~Sono riuscito nuovamente a rimpiazzare qualcuno dei miei articoli. Non temere, onorato cliente. Posso offrirteli senza un ulteriore aumento dei prezzi.~ ~Sono riuscito nuovamente a rimpiazzare qualcuno dei miei articoli. Non temere, onorata cliente. Posso offrirteli senza un ulteriore aumento dei prezzi.~
+@44016 = ~Prego, guarda pure. Non te ne pentirai.~
+
+
+// *** Jerlia the Ore Merchant ***
+@44500 = ~Sto cercando alcuni tipi di materiale con cui costruire golem.~
+@44501 = ~Ah, il costruttore di golem ritorna. Ti occorre dell'altro minerale?~
+@44502 = ~Sì, mi piacerebbe dare nuovamente un'occhiata ai tuoi articoli.~
+@44503 = ~Al momento no. Magari più tardi.~
+@44504 = ~Mi stai prendendo in giro, vero? Beh, di solito ne vendo grandi quantità alla volta, ma nel tuo caso potrei fare un'eccezione. Cosa ti occorre?~
+@44505 = ~Sono interessato all'argilla oppure alla pietra.~ ~Sono interessata all'argilla oppure alla pietra.~
+@44506 = ~Hai qualcosa di speciale in vendita? Magari del ferro o persino del mithral?~
+@44507 = ~Posso offrirti una grande varietà di minerali e di mattoni. Al giusto prezzo, puoi anche acquistare alcuni dei materiali più rari. Sentiti libero di dare un'occhiata e non vergognarti a prendere ciò che ti serve.~ ~Posso offrirti una grande varietà di minerali e di mattoni. Al giusto prezzo, puoi anche acquistare alcuni dei materiali più rari. Sentiti libera di dare un'occhiata e non vergognarti a prendere ciò che ti serve.~ 
+@44508 = ~È sempre un piacere.~
+@44509 = ~Tempismo perfetto. Ho appena rifornito il mio negozio con merce nuova ed esotica proveniente da una fonte piuttosto peculiare.~
+
+
+// *** Golem dialogs ***
+@45000 = ~Il golem ti ignora completamente.~
+@45001 = ~Il golem attende i tuoi ordini.~
+@45002 = ~Seguimi!~
+@45003 = ~Seguimi e proteggimi!~
+@45004 = ~Sta' di guardia!~
+@45005 = ~Sta' di guardia e presidia la zona!~
+@45006 = ~Autodistruggiti!~
+@45007 = ~Non importa.~
+@45008 = ~Questa azione non può essere annullata. Confermi di voler procedere?~
+@45009 = ~Sì!~
+@45010 = ~No.~
+@45011 = ~Il golem è stato reso inattivo dalla magia protettiva di questo luogo.~
+@45012 = ~Non puoi avere altri golem al tuo seguito.~
+
+
+// *** Jermien of Imnesvale ***
+@45500 = ~Prima che tu vada, puoi insegnarmi come costruire dei golem juggernaut? Mi piacerebbe provare a realizzarne uno per conto mio.~
+@45501 = ~Addio, Jermien.~
+@45502 = ~Non hai visto che la mia stoltezza è quasi costata la mia vita e quella di mia figlia? La miglior cosa da fare sarebbe distruggere tutti i miei appunti sull'argomento.~
+@45503 = ~Non preoccuparti. Sono abbastanza potente da affrontare qualunque esito possibile.~
+@45504 = ~Ho studiato le arti arcane sotto la guida di un mago esperto a Candlekeep. Ti garantisco che ne avrò grande cura.~
+@45505 = ~Con questo atteggiamento, non credo che tu possa farcela dove io ho fallito. Non sarò responsabile di un'altra catastrofe. I miei appunti devono essere distrutti.~
+@45506 = ~Devo ammettere che le tue parole contengono del vero. Molto bene, ti affiderò il mio personale tomo della costruzione dei golem. Studialo bene e non ripetere i miei errori.~
+@45507 = ~Se vuoi, puoi anche usare il mio equipaggiamento. Di certo, non mi servirà per un po'.~
+@45508 = ~Ora è tempo di andare. Addio.~
+@45509 = ~Prima che tu vada, puoi insegnarmi come costruire dei golem juggernaut? Mi piacerebbe provare a realizzarne uno per conto mio.~
+@45510 = ~Hmm. Probabilmente posso fare un'eccezione, visto che sei riuscito a sbarazzarti del mio esperimento fallito così facilmente. Molto bene, ti affiderò il mio personale tomo della costruzione dei golem. Studialo bene e non ripetere i miei errori.~ ~Hmm. Probabilmente posso fare un'eccezione, visto che sei riuscita a sbarazzarti del mio esperimento fallito così facilmente. Molto bene, ti affiderò il mio personale tomo della costruzione dei golem. Studialo bene e non ripetere i miei errori.~
+@45511 = ~Andiamo, Signor J! Cosa può andare storto se ci proviamo? Prometto di fare grande attenzione. Per favore, per favore!~
+
+
+// *** The necromancer Arkion ***
+@46000 = ~Mi sono imbattuto in un curioso tomo che parla della costruzione di un qualche tipo bizzarro di golem. La cosa sembra piuttosto macabra, così ho pensato che potrebbe interessarti.~
+@46001 = ~Vorrei commissionarti la costruzione di una bambola golem. Ti ritieni all'altezza del compito?~
+@46002 = ~Certamente, cugino. Addio.~
+@46003 = ~Non penso proprio. Addio.~
+@46004 = ~Ritorna più tardi. Un lavoro come questo richiede tempo.~
+@46005 = ~Ah, sei tornato. Guarda qui. È un vero capolavoro ed è tuo. Fallo sparire dalla mia vista, prima che cambi idea.~ ~Ah, sei tornata. Guarda qui. È un vero capolavoro ed è tuo. Fallo sparire dalla mia vista, prima che cambi idea.~
+@46006 = ~Fammi vedere! Hmm, sì... Lettura interessante. Hai fatto bene a portarmelo. Non vedo l'ora di provare.~
+@46007 = ~Significa che puoi costruire dei golem per me?~
+@46008 = ~Non così in fretta, mio oscuro cugino. Per prima cosa, ho bisogno dei giusti materiali. E mi piacerebbe essere pagato.~ ~Non così in fretta, mia oscura cugina. Per prima cosa, ho bisogno dei giusti materiali. E mi piacerebbe essere pagato.~
+@46009 = ~Mi serve un cadavere fresco e un antidoto maledetto per il corpo del golem. Il mio prezzo è di 2000 monete d'oro. Sei ancora interessato?~ ~Mi serve un cadavere fresco e un antidoto maledetto per il corpo del golem. Il mio prezzo è di 2000 monete d'oro. Sei ancora interessata?~
+@46010 = ~Sì, sono interessato.~ ~Sì, sono interessata.~
+@46011 = ~Non ho abbastanza denaro al momento. Forse più tardi.~
+@46012 = ~Non ho un cadavere fresco. Forse più tardi.~
+@46013 = ~Non ho un antidoto maledetto. Forse più tardi.~
+@46014 = ~Non sono interessato. Addio.~ ~Non sono interessata. Addio.~
+@46015 = ~Certamente. Hai un cadavere fresco, un antidoto maledetto e le 2000 monete d'oro?~
+@46016 = ~Sì, ecco tutto.~
+@46017 = ~Ah, perfetto. Metti tutto laggiù su quel tavolo.~
+@46018 = ~Credo che per la costruzione ci vorrà all'incirca un giorno. Ritorna domani.~
+
+
+// *** The necromancer Nemphre ***
+@46500 = ~Il povero Arkion pensa di sconfiggermi con patetici tentativi come questo? Non mi eguaglierà mai fintantoché sarò in vita.~
+@46501 = ~E tu sei davvero un folle se ti fidi così ciecamente del suo lavoro.~ ~E tu sei davvero una folle se ti fidi così ciecamente del suo lavoro.~
+@46502 = ~Hmpf. Non tratto con i servi. Vattene.~
+@46503 = ~Ti ho detto di ritornare più tardi. Ora lasciami al mio lavoro!~
+@46504 = ~Ah, eccoti qui. Ti aspettavo. Spero che tu sia ancora tra i vivi.~
+@46505 = ~La bambola d'ossa è completata. Quasi. Necessita solo di una scintilla di vita come tocco finale. Ora sta' fermo. Non farà molto male.~ ~La bambola d'ossa è completata. Quasi. Necessita solo di una scintilla di vita come tocco finale. Ora sta' ferma. Non farà molto male.~
+@46506 = ~Che stai...~
+@46507 = ~Ecco qui. La tua bambola d'ossa è completa. Sai cosa viene dopo. Per favore, sta' fermo un attimo.~ ~Ecco qui. La tua bambola d'ossa è completa. Sai cosa viene dopo. Per favore, sta' ferma un attimo.~
+@46508 = ~Hmm. Sei certamente forte, mio buon uomo.~ ~Hmm. Sei certamente forte, mia buona donna.~
+@46509 = ~Che cosa mi hai fatto?!~
+@46510 = ~Non ti avevo detto che mi sarebbe servita un po' della tua forza vitale? Non pensarci troppo. Ti riprenderai col tempo. Una buona notte di riposo dovrebbe essere sufficiente.~
+@46511 = ~Ora prendi la tua bambola d'ossa e vattene.~
+@46512 = ~Ah, lo sciocco ritorna. Cosa vuole questa volta?~ ~Ah, la sciocca ritorna. Cosa vuole questa volta?~
+@46513 = ~Che ne dici di un patto? Mi sono imbattuto in un curioso tomo con macabri dettagli per la costruzione di un qualche strano tipo di golem. Ho ritenuto che la cosa avrebbe potuto interessarti.~ ~Che ne dici di un patto? Mi sono imbattuta in un curioso tomo con macabri dettagli per la costruzione di un qualche strano tipo di golem. Ho ritenuto che la cosa avrebbe potuto interessarti.~
+@46514 = ~Vorrei commissionare la costruzione di una bambola d'ossa.~
+@46515 = ~Non voglio niente. Addio.~
+@46516 = ~Dammelo! Hmm... Questo è davvero interessante. Suppongo che tu ne voglia una?~
+@46517 = ~Sì. Puoi farlo?~
+@46518 = ~Naturalmente, ma tu sei in grado di venire incontro alle mie richieste?~
+@46519 = ~Mi occorre un set completo di ossa per il corpo del golem. Inoltre, mi servono dei mezzi per animarlo. Ma su questo ci torneremo dopo. Non lo farò gratuitamente. Pagami 2000 monete d'oro immediatamente oppure non farmi perdere altro tempo.~
+@46520 = ~Certamente, ecco qui.~
+@46521 = ~Non ho abbastanza denaro al momento. Forse più tardi.~
+@46522 = ~Non ho il set di ossa. Forse più tardi.~
+@46523 = ~Non mi interessa. Addio.~
+@46524 = ~Certamente. Hai il set di ossa e le 2000 monete d'oro?~
+@46525 = ~Sì, ecco qui.~
+@46526 = ~Sembra che tutto sia in ordine. Per la costruzione ci vorrà un giorno. Ritorna domani in salute e in forza. Non te ne pentirai.~
+@46527 = ~Allora non mi sei più di alcuna utilità. Ritorna solo quando avrai tutto ciò che mi occorre.~
+
+
+// *** Quest-related ***
+@47000 = ~(La ciocca di capelli di Nyalee inizia ad emettere un debole bagliore non appena ti avvicini all'area centrale del tempio).~
+@47001 = ~(Appoggi i capelli per terra).~
+@47002 = ~(Ignori il bagliore).~
+@47003 = ~(Non appena i capelli toccano il terreno, prendono fuoco. Subito dopo, senti un debole mormorio proveniente dalle profondità sotto il tempio).~
+@47004 = ~(Questa creatura dovrebbe resistere ai vapori velenosi del labirinto).~
+@47005 = ~(I vivi non possono sperare di sopravvivere laggiù. Faresti meglio a stare alla larga dal labirinto).~
+@47006 = ~(Non entri nel labirinto).~
+@47007 = ~(Perderai il controllo sulle creature evocate non appena entrerai nel labirinto).~
+@47008 = ~(Entri nel labirinto).~
+
+
+// *** Journal entries ***
+@49000 = ~Laboratorio per la Costruzione di Golem~
+
+@49001 = ~Laboratorio per la Costruzione di Golem
+
+Sono riuscito a prendere in affitto il secondo piano de Le Chincaglierie Magiche a Baldur's Gate. Dovrei essere in grado di costruire dei golem in quel posto.~ ~Laboratorio per la Costruzione di Golem
+
+Sono riuscita a prendere in affitto il secondo piano de Le Chincaglierie Magiche a Baldur's Gate. Dovrei essere in grado di costruire dei golem in quel posto.~
+
+@49002 = ~Laboratorio per la Costruzione di Golem
+
+Il laboratorio nel complesso sotterraneo situato sotto il punto di scavo nanico sembra ben equipaggiato per condurre esperimenti magici. Dovrei essere in grado di costruire dei golem in quel posto.~
+
+@49003 = ~Laboratorio per la Costruzione di Golem
+
+La Sfera Planare è stata realizzata per costruire golem. Dovrei essere in grado di costruire dei golem nell'area principale di quel luogo.~
+
+@49004 = ~Laboratorio per la Costruzione di Golem
+
+La Libreria del Mago situata al secondo livello della Fortezza dell'Osservatore sembra ben provvista. Dovrei essere in grado di costruire dei golem in quel posto.~
+
+@49005 = ~Laboratorio per la Costruzione di Golem
+
+Con l'equipaggiamento acquistato da Lazarus Librarus, dovrei essere in grado di costruire dei golem nel mio Piano Extradimensionale.~
+
+@49006 = ~Laboratorio per la Costruzione di Golem
+
+Ho incontrato un mercante drow che può farmi avere una vasta quantità di materiali per costruire golem. Mi ha anche promesso che reintegrerà le sue scorte una volta ogni tanto.~
+
+@49007 = ~Laboratorio per la Costruzione di Golem
+
+La casa di Jermien a Imnesvale sembra essere ben fornita. Dovrei essere in grado di costruire dei golem in quel posto.~
+
+@49008 = ~Laboratorio per la Costruzione di Golem
+
+Le Rovine di Kanaglym che sono accessibili passando dal Fiume Sotterraneo sembrano essere ben equipaggiate per condurre esperimenti magici. Dovrei essere in grado di costruire dei golem in quel posto.~
+
+@49009 = ~Laboratorio per la Costruzione di Golem
+
+Il necromante Arkion era interessato al mio tomo riguardante la costruzione di bambole golem. Probabilmente posso commissionare la mia Bambola Golem personale se mai ne avessi bisogno. Arkion può essere trovato nella sua casa a Baldur's Gate, situata a sud della Taverna del Canto Elfico.~
+
+@49010 = ~Laboratorio per la Costruzione di Golem
+
+La necromante Nemphre era interessata al mio tomo riguardante la costruzione di bambole golem. Probabilmente posso commissionare la mia Bambola Golem personale se mai ne avessi bisogno. Nemphre può essere trovata nella sua casa a Baldur's Gate, situata ad est della Locanda Spada e Stelle.~
+
+@49011 = ~Una porta nascosta
+
+I capelli di Nyalee in mio possesso mi hanno permesso di trovare una scala nascosta che conduce ad un complesso sotterraneo del tempio.~
+
+@49012 = ~Una porta nascosta
+
+Il complesso sotterraneo era pieno di gas velenoso che mi ha messo immediatamente fuori uso. Quando ho ripreso i sensi, mi sono ritrovato al tempio. Forse potrei avere maggiori possibilità di successo se mandassi avanti una creatura che è immune al gas velenoso.~ ~Una porta nascosta
+
+Il complesso sotterraneo era pieno di gas velenoso che mi ha messo immediatamente fuori uso. Quando ho ripreso i sensi, mi sono ritrovata al tempio. Forse potrei avere maggiori possibilità di successo se mandassi avanti una creatura che è immune al gas velenoso.~
+
+@49013 = ~Una porta nascosta
+
+Dopo aver sconfitto i due guardiani, sono riuscito a strappare un calice rosso-dorato dalle mani di una statua. Ora deve essere riportato al sicuro dal gruppo.~ ~Una porta nascosta
+
+Dopo aver sconfitto i due guardiani, sono riuscita a strappare un calice rosso-dorato dalle mani di una statua. Ora deve essere riportato al sicuro dal gruppo.~
+
+@49014 = ~Una porta nascosta
+
+Non appena il calice ha raggiunto la superficie, è esploso in un lampo di luce e si è trasformato in una bottiglia contenente una sostanza ultraterrena. Qualunque cosa sia, deve valere una fortuna.~
+
+@49015 = ~Una porta nascosta
+
+La distruzione della tua creatura nel labirinto ha causato l'esplosione del calice in una nuvola di minuscoli frammenti. Il calice è perso per sempre.~
+
+@49016 = ~Laboratorio per la Costruzione di Golem
+
+Il Tempio di Helm mi ha dato un alloggio nelle loro sacre sale. Dovrei essere in grado di costruire dei golem d'argilla in quel posto.~
+
+@49017 = ~Laboratorio per la Costruzione di Golem
+
+Il Tempio di Lathander mi ha fornito una stanza nelle loro sacre sale. Dovrei essere in grado di costruire dei golem d'argilla in quel posto.~
+
+@49018 = ~Laboratorio per la Costruzione di Golem
+
+Il Tempio di Talos mi ha concesso uno spazio nelle loro sacre sale. Dovrei essere in grado di costruire dei golem d'argilla in quel posto.~

@@ -1,0 +1,167 @@
+// -*- coding: utf-8 -*- 
+// Item-related strings (index 30000..39999)
+
+@30000 = ~Parti del Corpo~
+@30001 = ~Questa è una raccolta di varie parti del corpo di umanoidi. Sono magicamente protette dal naturale processo di decomposizione.
+
+STATISTICHE:
+
+Peso: 10~
+
+@30010 = ~Blocco d'Argilla~
+@30011 = ~Questo è un blocco di argilla di alta qualità. Tipicamente, è utilizzato da artisti o da maghi per creare costrutti mediamente potenti.
+
+STATISTICHE:
+
+Peso: 15~
+
+@30020 = ~Blocco di Pietra~
+@30021 = ~Questo solido blocco di pietra è composto da granito di alta qualità misto a piccole quantità di vari minerali che conferiscono al blocco un colore leggermente verdastro. È molto ricercato da artisti o da maghi per realizzare costrutti magici.
+
+STATISTICHE:
+
+Peso: 25~
+
+@30030 = ~Lingotto di Ferro~
+@30031 = ~Questo lingotto di ferro è di una qualità talmente alta da renderla perfetta per realizzare armi incantate o costrutti magici.
+
+STATISTICHE:
+
+Peso: 20~
+
+@30040 = ~Minerale Adamantino~
+@30041 = ~È molto raro vedere dell'adamantio nella sua forma grezza ed ancora più raro possedere una così grande quantità di puro minerale adamantino. L'adamantio può essere usato per realizzare oggetti di straordinaria qualità o potenti costrutti magici.
+
+STATISTICHE:
+
+Peso: 20~
+
+@30050 = ~Pila di Ossa~
+@30051 = ~Questa è un'ampia collezione di ossa umane. Le ossa sono un ingrediente comune usato da alchimisti, necromanti o alteratori per i loro esperimenti.
+
+STATISTICHE:
+
+Peso: 5~
+
+@30060 = ~Tessuto di Cervello~
+@30061 = ~Questa molle materia cerebrale sembra essere protetta magicamente dal naturale processo di decomposizione. Viene utilizzata dagli illithid per creare golem cerebrali.
+
+STATISTICHE:
+
+Peso: 3~
+
+@30070 = ~Scheggia di Ghiaccio Magico~
+@30071 = ~Questa scheggia di ghiaccio trasparente è insolitamente pesante ed altamente resistente sia al danno fisico sia alle temperature elevate. Può essere usata per creare artefatti incantati dal grande potere o costrutti magici.
+
+STATISTICHE:
+
+Peso: 15~
+
+@30080 = ~Frammento di Pietra di Magia Selvaggia~
+@30081 = ~Questo frammento di pietra apparentemente semplice è stato esposto alla magia selvaggia per decenni o secoli. Nel corso del tempo, ha assorbito una tale quantità di magia selvaggia da renderne quasi impossibile la lavorazione - nel migliore dei casi, si otterrebbero risultati del tutto imprevedibili. Nondimeno, è molto ricercato dai maghi per le sue eccezionali proprietà.
+
+STATISTICHE:
+
+Peso: 5~
+
+@30090 = ~Corpo Infestato dai Vermi~
+@30091 = ~Questo corpo si trova già in uno stadio avanzato di decomposizione ed è ricoperto da una miriade di insetti e larve. L'olezzo che emana è insopportabile.
+
+STATISTICHE:
+
+Peso: 10~
+
+@30100 = ~Pezzo di Mithral~
+@30101 = ~Il mithral è un metallo raro e prezioso che può essere estratto dalle catene montuose situate in certe zone di Faerûn e nel Sottosuolo. Per produrre puro mithral, il minerale deve essere sottoposto ad un complesso processo di fusione con puro fuoco magico. Il mithral è leggero e solido e può essere usato per realizzare oggetti incantati di alta qualità.
+
+STATISTICHE:
+
+Peso: 15~
+
+@30110 = ~Ingranaggio~
+@30111 = ~Questo ingranaggio è parte dell'equipaggiamento per costruire golem.
+
+STATISTICHE:
+
+Peso: 25~
+
+
+@30120 = ~Gemma Eliotropio Scura~
+@30121 = ~L'eliotropio è una varietà di quarzo color grigio-verdastro scuro screziato con impurità di cristallo rosso. Il 90% dell'eliotropio dei Reami proviene dalle Montagne Galena nella Damara, in particolare da una miniera nel Passo Pietra di Sangue.
+
+Questa particolare gemma è stata incantata al fine di contenere una grande quantità di energia magica.
+
+STATISTICHE:
+
+Peso: 1~
+
+@30130 = ~Polvere Incantata di Corallo~
+@30131 = ~Questa polvere è stata prodotta da un raro corallo che può essere trovato solamente in alcune zone del Mare Splendente a sud del Calimshan. La purezza di questa polvere è incredibile e ovviamente possiede un qualche tipo di incantamento.
+
+STATISTICHE:
+
+Peso: 1~
+
+@30140 = ~Sangue di Mimic~
+@30141 = ~Il sangue di Mimic viene spesso usato per creare golem.
+
+STATISTICHE:
+
+Peso: 1~
+
+@30150 = ~Trucioli di Ferro Freddo~
+@30151 = ~Il ferro freddo viene forgiato ad una temperatura più bassa del normale ferro o acciaio, in modo tale da poter preservare le sue speciali proprietà. La qualità di questi trucioli sembra essere particolarmente alta, il che li rende adatti per assemblare costrutti magici incantati.
+
+STATISTICHE:
+
+Peso: 2~
+
+@30160 = ~Sfera Nera Splendente~
+@30161 = ~Sfera di Ossidiana Spettrale~
+@30162 = ~Questa sfera scura e simile ad un cristallo è insolitamente pesante ed emette una luce bianca soprannaturale.
+
+STATISTICHE:
+
+Peso: 5~
+@30163 = ~L'ossidiana, conosciuta anche come vetro vulcanico, è ben nota per essere utilizzata al fine di creare pietre ioun o simili costrutti magici. Questa particolare sfera di ossidiana sembra possedere grandi poteri magici e probabilmente è originaria di uno dei piani eterei.
+
+STATISTICHE:
+
+Peso: 5~
+
+@30170 = ~Fiala Misteriosa~
+@30171 = ~Sangue di Solar~
+@30172 = ~Sangue di Solar Decaduto~
+@30173 = ~Questa fiala di liquido rosso si agita leggermente tra le tue mani.
+
+STATISTICHE:
+
+Peso: 1~
+@30174 = ~I Solar sono i più potenti tra gli angeli. Spesso fanno le veci di un essere divino.
+
+Questa fiala sembra contenere una goccia di sangue di uno della loro specie. Si vocifera che possa avere abbastanza potere magico da alterare la realtà stessa se usata da maghi esperti.
+
+STATISTICHE:
+
+Peso: 1~
+@30175 = ~I Solar Decaduti sono la controparte malvagia dei Solar, i quali a loro volta sono i più potenti tra gli angeli. Spesso i Solar Decaduti servono divinità malvagie o potenti creature provenienti dagli Abissi.
+
+Questa fiala sembra contenere una goccia di sangue di uno della loro specie. Si vocifera che possa avere abbastanza potere magico da alterare la realtà stessa se usata da maghi esperti.
+
+STATISTICHE:
+
+Peso: 1~
+
+@30180 = ~Rubino~
+@30181 = ~Un rubino è una gemma dal colore rosa-rosso sangue. Il suo aspetto fiammeggiante l'ha resa una pietra preziosa ricercata dai nobili. Gli alchimisti e gli incantatori danno valore a questa gemma per il suo potenziale magico latente.
+
+STATISTICHE:
+
+Peso: 0~
+
+@30200 = ~Ciocca di capelli di Nyalee~
+@30201 = ~Questa ciocca di capelli proviene dalla testa di Nyalee, l'ex guardiana del tempio nella Foresta di Mir. Sembrano dei comuni capelli senza alcuna proprietà magica.
+
+STATISTICHE:
+
+Peso: 1~

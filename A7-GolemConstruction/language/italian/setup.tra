@@ -1,0 +1,23 @@
+// -*- coding: us-ascii -*- 
+// Setup (index 0..999)
+
+@0 = ~Abilità Costruisci Golem per Incantatori~
+@1 = ~Aggiustamenti~
+@10 = ~Sostituisci il Manuale del Golem originale~
+@15 = ~Migliora l'IA degli incantatori nemici~
+@20 = ~Golem in aiuto degli incantatori nemici~
+@25 = ~Gamma più ampia di golem nemici~
+@30 = ~I golem presenti nell'Avamposto del Guerriero possono continuare a servirti~
+@35 = ~Rendi i golem vulnerabili a specifici effetti degli incantesimi~
+@40 = ~Riduci le immunità alle armi e le resistenze dei golem costruiti~
+@45 = ~Identifica tutti gli oggetti della mod~
+@50 = ~Aggiungi l'abilità "Teletrasporto" ai golem~
+
+@100 = ~Questa componente richiede che BG:EE, BG2:EE o IWD:EE siano installati.~
+@101 = ~Questa componente richiede che la componente principale sia installata.~
+@102 = ~Non è stato trovato alcuno slot libero per l'animazione della creatura.~
+@103 = ~Questa componente richiede una versione del gioco >= v2.0 (SoD e BG2:EE) o >= v1.4 (IWD:EE).~
+@104 = ~Questa componente richiede che BG2:EE sia installato.~
+@105 = ~Questa componente richiede che BG2:EE o IWD:EE siano installati.~
+@106 = ~Questa componente richiede che SoD o BG2:EE siano installati.~
+@107 = ~Questa componente richiede che SoD, BG2:EE o IWD:EE siano installati.~

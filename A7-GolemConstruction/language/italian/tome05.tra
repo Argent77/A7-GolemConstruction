@@ -1,0 +1,192 @@
+// -*- coding: utf-8 -*- 
+// Mithral Golem related strings (index 5000..5999)
+
+@5000 = ~Manuale di Costruzione dei Golem (Vol. 5)~
+@5001 = ~Golem di Mithral~
+@5002 = ~Golem di Mithral Minore~
+@5003 = ~Golem di Mithral Maggiore~
+@5004 = ~Golem di Mithral Perfetto~
+@5005 = ~Ha imparato a costruire i golem di mithral.~
+
+// *** Book content ***
+@5100 = ~Quinta lezione: Golem di Mithral
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di mithral, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+La costruzione dei golem di mithral sembra basarsi molto sugli stessi principi base per la costruzione dei golem di ferro. Il manuale spiega dettagliatamente le varie tecniche e abilità necessarie per la costruzione dei golem di mithral, inframezzate da riferimenti a passaggi presi dal Volume 4 di questa serie di tomi.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Mithral Minore:
+Livello Minimo: 18 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Un pezzo di mithral
+- 4000 PE risucchiati al personaggio
+
+Golem di Mithral:
+Livello Minimo: 22 (-2 per gli alteratori, +6 per i bardi)
+Ingredienti:
+- Due pezzi di mithral
+- 8000 PE risucchiati al personaggio
+
+Golem di Mithral Maggiore:
+Livello Minimo: 27 (-2 per gli alteratori, +8 per i bardi)
+Ingredienti:
+- Quattro pezzi di mithral
+- 16000 PE risucchiati al personaggio
+
+Golem di Mithral Perfetto:
+Livello Minimo: 30 (-2 per gli alteratori, +10 per i bardi)
+Ingredienti:
+- Quattro pezzi di mithral
+- Una sfera di ossidiana spettrale
+- 32000 PE risucchiati al personaggio
+
+Note dell'autore: il mithral è difficile da reperire e quindi molto costoso. Tuttavia, è possibile trasmutare il ferro in mithral tramite un uso oculato e ponderato dell'incantesimo Desiderio o Desiderio Limitato.
+
+Richiede:
+Intelligenza 18
+
+Peso: 10~
+
+@5101 = ~Quinta lezione: Golem di Mithral
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di mithral, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+La costruzione dei golem di mithral sembra basarsi molto sugli stessi principi base per la costruzione dei golem di ferro. Il manuale spiega dettagliatamente le varie tecniche e abilità necessarie per la costruzione dei golem di mithral, inframezzate da riferimenti a passaggi presi dal Volume 4 di questa serie di tomi.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Mithral Minore:
+Livello Minimo: 18 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Un pezzo di mithral
+- 4000 PE risucchiati al personaggio
+
+Golem di Mithral:
+Livello Minimo: 22 (-2 per gli alteratori, +6 per i bardi)
+Ingredienti:
+- Due pezzi di mithral
+- 8000 PE risucchiati al personaggio
+
+Golem di Mithral Maggiore:
+Livello Minimo: 27 (-2 per gli alteratori, +8 per i bardi)
+Ingredienti:
+- Quattro pezzi di mithral
+- 16000 PE risucchiati al personaggio
+
+Golem di Mithral Perfetto:
+Livello Minimo: 30 (-2 per gli alteratori, +10 per i bardi)
+Ingredienti:
+- Quattro pezzi di mithral
+- Una sfera di ossidiana spettrale
+- 32000 PE risucchiati al personaggio
+
+Note dell'autore: il mithral è difficile da reperire e quindi molto costoso. Tuttavia, è possibile trasmutare il ferro in mithral tramite un uso oculato e ponderato dell'incantesimo Desiderio o Desiderio Limitato.
+
+Richiede:
+Intelligenza 18
+
+Peso: 1~
+
+
+// *** Book content (IWDEE) ***
+@5110 = ~Quinta lezione: Golem di Mithral
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di mithral, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+La costruzione dei golem di mithral sembra basarsi molto sugli stessi principi base per la costruzione dei golem di ferro. Il manuale spiega dettagliatamente le varie tecniche e abilità necessarie per la costruzione dei golem di mithral, inframezzate da riferimenti a passaggi presi dal Volume 4 di questa serie di tomi.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Mithral Minore:
+Livello Minimo: 13 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Un pezzo di mithral
+- 4000 PE risucchiati al personaggio
+
+Golem di Mithral:
+Livello Minimo: 17 (-2 per gli alteratori, +5 per i bardi)
+Ingredienti:
+- Due pezzi di mithral
+- 8000 PE risucchiati al personaggio
+
+Golem di Mithral Maggiore:
+Livello Minimo: 21 (-2 per gli alteratori)
+Ingredienti:
+- Quattro pezzi di mithral
+- 16000 PE risucchiati al personaggio
+
+Golem di Mithral Perfetto:
+Livello Minimo: 23 (-2 per gli alteratori)
+Ingredienti:
+- Quattro pezzi di mithral
+- Una sfera di ossidiana spettrale
+- 32000 PE risucchiati al personaggio
+
+Note dell'autore: il mithral è difficile da reperire e quindi molto costoso. Tuttavia, è possibile trasmutare il ferro in mithral tramite un uso oculato e ponderato dell'incantesimo Desiderio.
+
+Richiede:
+Intelligenza 18
+
+Peso: 10~
+
+@5111 = ~Quinta lezione: Golem di Mithral
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di mithral, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+La costruzione dei golem di mithral sembra basarsi molto sugli stessi principi base per la costruzione dei golem di ferro. Il manuale spiega dettagliatamente le varie tecniche e abilità necessarie per la costruzione dei golem di mithral, inframezzate da riferimenti a passaggi presi dal Volume 4 di questa serie di tomi.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Mithral Minore:
+Livello Minimo: 13 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Un pezzo di mithral
+- 4000 PE risucchiati al personaggio
+
+Golem di Mithral:
+Livello Minimo: 17 (-2 per gli alteratori, +5 per i bardi)
+Ingredienti:
+- Due pezzi di mithral
+- 8000 PE risucchiati al personaggio
+
+Golem di Mithral Maggiore:
+Livello Minimo: 21 (-2 per gli alteratori)
+Ingredienti:
+- Quattro pezzi di mithral
+- 16000 PE risucchiati al personaggio
+
+Golem di Mithral Perfetto:
+Livello Minimo: 23 (-2 per gli alteratori)
+Ingredienti:
+- Quattro pezzi di mithral
+- Una sfera di ossidiana spettrale
+- 32000 PE risucchiati al personaggio
+
+Note dell'autore: il mithral è difficile da reperire e quindi molto costoso. Tuttavia, è possibile trasmutare il ferro in mithral tramite un uso oculato e ponderato dell'incantesimo Desiderio.
+
+Richiede:
+Intelligenza 18
+
+Peso: 1~

@@ -1,0 +1,16 @@
+// -*- coding: utf-8 -*- 
+// Doll Golem related strings (index 14000..14999)
+
+@14000 = ~Manuale Proibito di Costruzione dei Golem (Vol. 1)~
+@14001 = ~Bambola Golem~
+
+// *** Book content ***
+@14100 = ~Sulle Bambole Golem
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali neccessari per assemblare una bambola golem, come animarla e come fare in modo che segua alla lettera le direttive del suo creatore. Diverse illustrazioni suggeriscono che riti necromantici proibiti siano una parte fondamentale per l'animazione del costrutto.
+
+Tomi del genere potrebbero suscitare l'interesse di necromanti con esperienza.
+
+STATISTICHE:
+
+Peso: 1~

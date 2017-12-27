@@ -1,0 +1,60 @@
+// -*- coding: utf-8 -*- 
+// Maggot Golem related strings (index 7000..7999)
+
+@7000 = ~Manuale Segreto di Costruzione dei Golem (Vol. 1)~
+@7001 = ~Golem di Larve~
+@7002 = ~Ha imparato a costruire i golem di larve.~
+@7003 = ~La materia del golem è stata completamente consumata dalle larve e perde consistenza...~
+@7004 = ~La materia del golem è stata completamente consumata dalle larve. La crescente brama degli insetti in cerca di ulteriore cibo fa in modo che tu perda il controllo sul corpo fatiscente del golem...~
+
+// *** Book content ***
+@7100 = ~Sui Golem di Larve
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di larve, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Larve:
+Livello Minimo: 10 (-2 per i necromanti e gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due carcasse infestate da larve
+
+Esiste una possibilità del 15% che il personaggio contragga una malattia dal golem infestato dalle larve durante il processo di creazione.
+
+Esiste una possibilità dell'1% che il golem di larve cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 15
+
+Peso: 10~
+
+@7101 = ~Sui Golem di Larve
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di larve, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Larve:
+Livello Minimo: 10 (-2 per i necromanti e gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due carcasse infestate da larve
+
+Esiste una possibilità del 15% che il personaggio contragga una malattia dal golem infestato dalle larve durante il processo di creazione.
+
+Esiste una possibilità dell'1% che il golem di larve cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 15
+
+Peso: 1~
+

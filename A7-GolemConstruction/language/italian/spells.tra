@@ -1,0 +1,217 @@
+// -*- coding: utf-8 -*- 
+// Spell-related strings (index 20000..29999)
+
+@20000 = ~Congedare Golem~
+@20001 = ~Congedare Golem
+
+Raggio d'azione: 0
+Durata: Istantanea
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Questa abilità dà istruzioni al golem per disattivarsi. La magia che animava il golem si dissipa e lo spirito che risiedeva al suo interno ritornerà al suo piano nativo. Senza più nessuna magia rimasta, il corpo ora senza vita si disintegrerà velocemente e diverrà polvere.~
+@20002 = ~Bandito~
+
+@20010 = ~Nube Maleodorante~
+@20011 = ~Nube Maleodorante
+
+Raggio d'azione: 0
+Durata: 3/2 round
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: Neg.
+
+Il gigantesco numero di parti del corpo in decomposizione consente al golem di creare una massa fluttuante di vapori nauseabondi centrata su se stesso. Chiunque venga a trovarsi all'interno della nube deve effettuare con successo un tiro-salvezza contro Veleno con un bonus pari a +2 per non barcollare e perdere i sensi per 1d2 round. Coloro che effettuano con successo il tiro-salvezza possono abbandonare la nube senza subire ulteriori effetti negativi, mentre coloro che rimangono nella nube devono continuare ad effettuare con successo il tiro-salvezza ogni round. L'incantesimo Dissolvi Magie rimuoverà gli effetti della nausea da una creatura che ne è affetta, ma se questa rimane nella nube, allora sarà nuovamente soggetta ai suoi effetti.~
+
+@20020 = ~Velocità del Golem~
+@20021 = ~Velocità del Golem
+
+Raggio d'azione: 0
+Durata: 3 round
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Questa abilità permette al lanciatore di raddoppiare il suo Fattore-movimento, guadagnare un bonus di iniziativa pari a -2 e ricevere un attacco addizionale per round. Questa abilità non è cumulabile con se stessa o con altre magie simili. Si tenga presente che Velocità del Golem nega gli effetti dell'incantesimo Lentezza.~
+
+@20030 = ~Lentezza del Golem~
+@20031 = ~Lentezza del Golem
+
+Raggio d'azione: 0
+Durata: 8 round
+Area d'effetto: Raggio di 9 metri
+Tiro-salvezza: Neg.
+
+L'abilità Lentezza fa sì che le creature si muovano e attacchino a metà della loro velocità. Nega l'incantesimo Velocità, ma non ha effetto sulle creature velocizzate o rallentate magicamente. Le creature rallentate subiscono una penalità alla Classe Armatura e agli attacchi pari a -4. Alle creature è concesso un tiro-salvezza contro Incantesimi con penalità pari a -4 per evitare gli effetti.~
+
+@20040 = ~Nube di Gas~
+@20041 = ~Nube di Gas
+
+Raggio d'azione: 0
+Durata: 3/2 round
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: Speciale
+
+Questa abilità genera una nube fluttuante di vapori spaventosi e giallastri centrata sul lanciatore. Qualunque creatura venga colta all'interno della nube deve effettuare con successo un tiro-salvezza contro Veleno con una penalità pari a -2 ogni round per non essere avvelenata. L'effetto del veleno dura tre round e causa un punto di danno al secondo.~
+
+@20050 = ~Calpestare~
+@20051 = ~Calpestare
+
+Raggio d'azione: 0
+Durata: Istantanea
+Area d'effetto: 1 creatura
+Tiro-salvezza: Speciale
+
+Poiché un golem è gigantesco e pesantissimo, può letteralmente travolgere gli avversari che sono più piccoli di lui. L'abilità Calpestare causa 8d10+30 punti di danno contundente e stordisce il bersaglio per un round. Un tiro-salvezza contro Morte effettuato con successo con una penalità pari a -4 può ridurre il danno subito e impedire l'effetto di stordimento. Creature enormi, come i draghi o i giganti, non sono soggette a questa abilità.~
+@20052 = ~Calpestato~
+@20053 = ~Troppo grande per essere calpestato~
+
+@20060 = ~Catena di Fulmini~
+@20061 = ~Catena di Fulmini
+
+Raggio d'azione: 15 metri
+Durata: Istantanea
+Area d'effetto: Speciale
+Tiro-salvezza: 1/2 
+
+Questa abilità consente al golem di scagliare archi di energia elettrica dalle punte delle sue dita. Questi archi luminosi di fulmini colpiscono tutti i nemici vicino al golem, bruciandoli con danni da elettricità. I fulmini causano 6d6 punti di danno. Se il bersaglio dei fulmini effettua con successo un tiro-salvezza contro Incantesimi, subirà solo la metà dei danni.~
+
+
+@20070 = ~Teletrasporto~
+@20071 = ~Teletrasporto
+
+Raggio d'azione: 15 metri
+Durata: Istantanea
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+A volte, i golem di grossa stazza potrebbero imbattersi in ingressi che sono troppo stretti per poter essere varcati camminando. Questa abilità consente di superare questo tipo di accessi teletrasportando il golem vicino ad un membro del gruppo precedentemente selezionato. Può essere utilizzata con successo solo quando non ci sono nemici in vista e il bersaglio è nella visuale del golem.~
+
+
+@20080 = ~Esplosione Mentale~
+@20081 = ~Esplosione Mentale
+
+Raggio d'azione: 0
+Durata: Istantanea
+Area d'effetto: Raggio di 9 metri
+Tiro-salvezza: Speciale
+
+La potente massa cerebrale del golem gli consente di rilasciare una forza distruttiva di energia mentale su tutti i suoi nemici in un raggio di 9 metri centrata su se stesso. Le creature colpite dal colpo devono effettuare con successo un tiro-salvezza contro Incantesimi per non subire 2d8 punti di danno non letale ed essere stordite per 2d4 round. Coloro che sono riusciti ad effettuare con successo il tiro-salvezza subiranno solo la metà dei danni ed eviteranno del tutto l’effetto dello stordimento.
+
+Le creature non pensanti, come i non morti, golem o miconidi, sono immuni all’effetto.~
+
+
+@20090 = ~Vapore Bollente~
+@20091 = ~Vapore Bollente
+
+Raggio d'azione: 0
+Durata: Istantanea
+Area d'effetto: Raggio di 9 metri
+Tiro-salvezza: Speciale
+
+I golem di ghiaccio sono in grado di emettere ondate di vapore ghiacciato per ferire le creature nelle loro vicinanze. L'ondata è centrata intorno al golem e colpisce chiunque si trovi all'interno di un raggio di 9 metri che non sia immune al danno da freddo. Le creature colpite dal getto di vapore subiranno 3d10 punti di danno da freddo e saranno stordite per un round. Un tiro-salvezza contro Soffio effettuato con successo dimezzerà i danni subiti e impedirà l'effetto di stordimento.~
+
+
+@20100 = ~Vampata di Magia Selvaggia~
+@20101 = ~Vampata di Magia Selvaggia
+
+Raggio d'azione: 12 metri
+Durata: Istantanea
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+I golem magici possono rilasciare una vampata di energia magica su una singola creatura. Questa energia infligge 3d10 punti di danno magico al bersaglio e sprigiona un effetto casuale di magia selvaggia. L'effetto può essere tanto distruttivo quanto puramente benefico per il bersaglio e possibilmente per tutti coloro che si trovano nelle vicinanze. La Resistenza alla Magia può impedire sia i danni sia l'effetto da magia selvaggia.~
+
+
+@20110 = ~Costruire Golem~
+@20111 = ~Costruire Golem
+
+Questa abilità consente al lanciatore di costruire un golem di qualunque tipo a patto che prima ne abbia studiato dettagliatamente le caratteristiche. Il processo di costruzione richiede certi materiali che dipendono dal tipo e dalla variante di golem. I tipi più potenti o più esotici possono anche risucchiare la Costituzione del personaggio.
+
+La costruzione del rivestimento fisico del golem necessita di altissima concentrazione per un lungo periodo di tempo durante il quale il lanciatore non dovrebbe essere interrotto per alcun motivo. Uno spirito di origine elementale viene usato per dare vita al corpo. Poiché lo spirito non ha intenzione di collaborare, il personaggio deve ingaggiare una battaglia mentale della durata di un round per assumerne il controllo. Esiste una possibilità pari al 4% che lo spirito si liberi e che si rivolti contro il lanciatore per una durata di 1d4 round prima che questi possa riguadagnarne il controllo.
+
+Il processo di lancio indebolisce molto sia la mente sia il corpo. Per i successivi cinque round, il personaggio non sarà in grado di lanciare incantesimi e soffrirà una penalità pari a -2 alla Classe Armatura, ai tiri-salvezza, ai tiri per colpire e ai tiri per il danno.
+
+A differenza delle creature evocate, i golem possono rimanere al servizio del loro padrone per un tempo virtualmente illimitato. Sono immuni al controllo mentale e alla magia e obbediranno sempre alla lettera agli ordini del loro padrone.~
+
+@20120 = ~Riparare Golem~
+@20121 = ~Riparare Golem
+
+Questa abilità consente al personaggio di riparare i golem danneggiati. L'intero processo include principalmente la riparazione o la sostituzione di parti del corpo danneggiate e dura due round. Durante questo lasso di tempo, sia il personaggio sia il golem non potranno essere utilizzati. Per i golem gravemente danneggiati, dovresti ripetere il processo di riparazione più volte se vuoi rimediare all'intero danno.
+
+Il processo di riparazione rimuoverà anche le penalità che potrebbero venire applicate ai golem gravemente danneggiati.~
+
+@20130 = ~Risata Spaventosa~
+@20131 = ~Risata Spaventosa
+
+Raggio d'azione: 0
+Durata: Istantanea
+Area d'effetto: Raggio di 9 metri
+Tiro-salvezza: Speciale
+
+La risata spaventosa di un golem d'ossa può innescare due diversi effetti in tutti gli avversari che la sentono. Il bersaglio deve effettuare con successo un tiro-salvezza contro Incantesimi con una penalità pari a -2 per non fuggire in preda al panico per 2d6 round. Il bersaglio deve anche effettuare con successo un tiro-salvezza contro Morte per non rimanere paralizzato dalla paura.
+
+Le creature non pensanti, come i non morti, golem o miconidi, sono immuni all'effetto.~
+
+@20140 = ~Raggio Rubino dell'Inversione~
+@20141 = ~Raggio Rubino dell'Inversione
+
+Raggio d'azione: 12 metri
+Durata: Istantanea
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Raggio Rubino dell'Inversione dissolve un incantesimo di protezione di qualsiasi livello che influenza la creatura bersaglio. Gli incantesimi influenzati da questa magia sono: Respingi Incantesimo Minore, Globo Minore di Invulnerabilità, Immunità agli Incantesimi, Globo di Invulnerabilità, Defletti Incantesimo Minore, Respingi Incantesimi, Defletti Incantesimo, Scudo Anti-incantesimi e Invulnerabilità agli Incantesimi. Raggio Rubino dell'Inversione rimuoverà sempre l'incantesimo di protezione di livello più alto sul bersaglio; se un personaggio ha due protezioni dello stesso livello, la scelta è casuale. La Resistenza alla Magia della vittima, se presente, non viene applicata a questo incantesimo.~
+
+@20150 = ~Viaggio Fulmineo~
+@20151 = ~Viaggio Fulmineo
+
+Raggio d'azione: 12 metri
+Durata: Istantanea
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Speciale
+
+Questa abilità concede al golem di fulmini la possibilità di teletrasportarsi in un punto qualunque all'interno di un raggio di 12 metri. Non è necessario che il golem veda il punto scelto. Il golem si trasforma in un potente fulmine in grado di raggiungere la destinazione scelta praticamente in un istante.
+Il viaggio ad alta velocità genera un'onda d'urto che esploderà e causerà 1d6 punti di danno da elettricità a tutte le creature che si trovano all'interno di un raggio di 2,5 metri dalla destinazione scelta. Le creature grandi come i draghi o i giganti non verranno spazzate via dall'onda d'urto. Il frastuono che segue il fulmine può anche causare sordità a tutte quelle creature che si trovano nel raggio d'azione per 1d4 round, se queste non effettueranno con successo un tiro-salvezza contro Soffio.
+
+Poiché questa abilità fa parte della natura del golem, questi potrà utilizzare un'altra abilità subito dopo senza dover aspettare il solito ritardo, come se fosse sotto gli effetti dell'incantesimo Alacrità Potenziata, ma solamente per l'abilità successiva.~
+
+@20160 = ~Congedare Spirito del Golem~
+@20161 = ~Congedare Spirito del Golem
+(Scongiurazione/Evocazione)
+
+Livello: 6
+Raggio d'azione: Visuale del lanciatore
+Durata: Permanente
+Tempo di lancio: 9
+Area d'effetto: 1 creatura
+Tiro-salvezza: Neg.
+
+Questo incantesimo tenta di separare lo spirito elementale dal corpo del golem al quale è legato. Se il bersaglio non effettua con successo un tiro-salvezza contro Incantesimo, verrà distrutto all'istante. In caso contrario, il bersaglio subisce 2d6 punti di danno e ha una possibilità pari al 25% di cadere in uno stato di berserk per cinque round. Le varianti di golem perfette non sono soggette. La Resistenza alla Magia del bersaglio, se presente, non viene applicata con questo incantesimo.~
+
+
+// Misc. strings
+@21000 = ~Impegnato in un combattimento mentale~
+@21001 = ~Non puoi costruire golem se ci sono nemici nelle vicinanze.~
+@21002 = ~La costruzione del golem ti lascia senza fiato e in preda alla disattenzione. Per i prossimi cinque round, non sarai in grado di lanciare incantesimi e risulterai meno efficace nel combattimento fisico.~
+@21003 = ~Ha perso 4.000 Punti Esperienza~
+@21004 = ~Ha perso 8.000 Punti Esperienza~
+@21005 = ~Ha perso 16.000 Punti Esperienza~
+@21006 = ~Ha perso 32.000 Punti Esperienza~
+@21007 = ~Ha perso 64.000 Punti Esperienza~
+@21010 = ~Riparazione del golem in corso...~
+@21011 = ~Il bersaglio non è un golem costruito.~
+@21012 = ~Il golem è danneggiato: Rallentato~
+@21013 = ~Il golem è danneggiato: Penalità all'attacco e alla difesa~
+@21014 = ~Il golem è danneggiato: Lo spirito diventa irrequieto~
+@21015 = ~Il golem è danneggiato: Malfunzionamento del corpo~
+@21016 = ~Il golem è danneggiato: Malfunzionamento dei sensori~
+@21017 = ~Panico~
+@21018 = ~Paralizzato~
+@21019 = ~Protezioni Magiche Rimosse~
+@21020 = ~Scudo di Fulmini~
+@21021 = ~Trasformato in un Golem di Pietra~
+@21022 = ~Trasformato in un Golem di Carne~
+@21023 = ~Disidratato in un Golem di Pietra~
+@21024 = ~Consumato dalla luce del sole~
+@21025 = ~Surriscaldato~
+@21026 = ~Scoperta una pergamena: Congedare Spirito del Golem~
+@21027 = ~Stordito~

@@ -151,6 +151,8 @@ Writing, coding and testing: Argent77
 
 Polish translation: Cahir
 French translation: Gwendolyne
+Italian translation: Luke93 & Elia Danelli (translation), Aedan & improbabile (proofreading), 
+                     rede9 (additional help)
 
 Doll golem and bone doll creature animations ported from Diablo II by Blizzard Entertainment.
 

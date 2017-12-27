@@ -78,6 +78,29 @@ LANGUAGE ~Deutsch~
          ~A7-GolemConstruction/language/german/dialogs.tra~
          ~A7-GolemConstruction/language/german/misc.tra~
          ~A7-GolemConstruction/language/german/iwdee.tra~
+LANGUAGE ~Italiano (Traduzione: Luke93 & Elia Danelli)~
+         ~italian~
+         ~A7-GolemConstruction/language/italian/setup.tra~
+         ~A7-GolemConstruction/language/italian/tome01.tra~
+         ~A7-GolemConstruction/language/italian/tome02.tra~
+         ~A7-GolemConstruction/language/italian/tome03.tra~
+         ~A7-GolemConstruction/language/italian/tome04.tra~
+         ~A7-GolemConstruction/language/italian/tome05.tra~
+         ~A7-GolemConstruction/language/italian/tome06.tra~
+         ~A7-GolemConstruction/language/italian/tome07.tra~
+         ~A7-GolemConstruction/language/italian/tome08.tra~
+         ~A7-GolemConstruction/language/italian/tome09.tra~
+         ~A7-GolemConstruction/language/italian/tome0a.tra~
+         ~A7-GolemConstruction/language/italian/tome0b.tra~
+         ~A7-GolemConstruction/language/italian/tome0c.tra~
+         ~A7-GolemConstruction/language/italian/tome0d.tra~
+         ~A7-GolemConstruction/language/italian/tomebd.tra~
+         ~A7-GolemConstruction/language/italian/tomedg.tra~
+         ~A7-GolemConstruction/language/italian/spells.tra~
+         ~A7-GolemConstruction/language/italian/items.tra~
+         ~A7-GolemConstruction/language/italian/dialogs.tra~
+         ~A7-GolemConstruction/language/italian/misc.tra~
+         ~A7-GolemConstruction/language/italian/iwdee.tra~
 LANGUAGE ~Polski (tlumaczenie: Cahir)~
          ~polish~
          ~A7-GolemConstruction/language/polish/setup.tra~

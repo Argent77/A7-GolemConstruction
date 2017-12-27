@@ -1,0 +1,103 @@
+// -*- coding: utf-8 -*- 
+// Adamantite Golem related strings (index 6000..6999)
+
+@6000 = ~Manuale di Costruzione dei Golem (Vol. 6)~
+@6001 = ~Golem di Adamantio Minore~
+@6002 = ~Golem di Adamantio~
+@6003 = ~Golem di Adamantio Maggiore~
+@6004 = ~Golem di Adamantio Perfetto~
+@6005 = ~Ha imparato a costruire i golem di adamantio.~
+@6006 = ~Pagine Tratte da un Manuale di Costruzione dei Golem~
+@6007 = ~Questo insieme di pagine sembra essere stato strappato da un lavoro più grande. Sebbene incompleto, pare elencare nel dettaglio i processi per la creazione di golem potentissimi.~
+
+// *** Book content ***
+@6100 = ~Sesta lezione: Golem di Adamantio
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di adamantio, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+La costruzione dei golem di adamantio sembra basarsi molto sugli stessi principi base per la costruzione dei golem di ferro. Il manuale spiega dettagliatamente le varie tecniche e abilità necessarie per la costruzione dei golem di adamantio, inframezzate da riferimenti a passaggi presi dal Volume 4 di questa serie di tomi.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Adamantio Minore:
+Livello Minimo: 21 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Due blocchi di minerale adamantino
+- 8000 PE risucchiati al personaggio
+
+Golem di Adamantio:
+Livello Minimo: 25 (-2 per gli alteratori, +6 per i bardi)
+Ingredienti:
+- Quattro blocchi di minerale adamantino
+- 16000 PE risucchiati al personaggio
+
+Golem di Adamantio Maggiore:
+Livello Minimo: 30 (-2 per gli alteratori, +8 per i bardi)
+Ingredienti:
+- Otto blocchi di minerale adamantino
+- 32000 PE risucchiati al personaggio
+
+Golem di Adamantio Perfetto:
+Livello Minimo: 33 (-2 per gli alteratori, +10 per i bardi)
+Ingredienti:
+- Otto blocchi di minerale adamantino
+- Una goccia di sangue di un Solar o di un Solar Caduto
+- 64000 PE risucchiati al personaggio
+
+L'adamantio non si trova in natura. Deve essere trasformato dal ferro tramite un uso oculato dell'incantesimo Desiderio o Desiderio Limitato (-Nota dell'autore: da confermare-). Solo individui molto potenti sono in grado di compiere una simile impresa, ragion per cui i prezzi dell'adamantio sono esorbitanti.
+
+Richiede:
+Intelligenza 18
+
+Peso: 10~
+
+@6101 = ~Sesta lezione: Golem di Adamantio
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di adamantio, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+La costruzione dei golem di adamantio sembra basarsi molto sugli stessi principi base per la costruzione dei golem di ferro. Il manuale spiega dettagliatamente le varie tecniche e abilità necessarie per la costruzione dei golem di adamantio, inframezzate da riferimenti a passaggi presi dal Volume 4 di questa serie di tomi.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Adamantio Minore:
+Livello Minimo: 21 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Due blocchi di minerale adamantino
+- 8000 PE risucchiati al personaggio
+
+Golem di Adamantio:
+Livello Minimo: 25 (-2 per gli alteratori, +6 per i bardi)
+Ingredienti:
+- Quattro blocchi di minerale adamantino
+- 16000 PE risucchiati al personaggio
+
+Golem di Adamantio Maggiore:
+Livello Minimo: 30 (-2 per gli alteratori, +8 per i bardi)
+Ingredienti:
+- Otto blocchi di minerale adamantino
+- 32000 PE risucchiati al personaggio
+
+Golem di Adamantio Perfetto:
+Livello Minimo: 33 (-2 per gli alteratori, +10 per i bardi)
+Ingredienti:
+- Otto blocchi di minerale adamantino
+- Una goccia di sangue di un Solar o di un Solar Caduto
+- 64000 PE risucchiati al personaggio
+
+L'adamantio non si trova in natura. Deve essere trasformato dal ferro tramite un uso oculato dell'incantesimo Desiderio o Desiderio Limitato (-Nota dell'autore: da confermare-). Solo individui molto potenti sono in grado di compiere una simile impresa, ragion per cui i prezzi dell'adamantio sono esorbitanti.
+
+Richiede:
+Intelligenza 18
+
+Peso: 1~
+

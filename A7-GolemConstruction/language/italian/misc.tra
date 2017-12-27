@@ -1,0 +1,65 @@
+// -*- coding: utf-8 -*- 
+// Misc. strings (index 100000..109999)
+
+@100000 = ~Manuale~
+@100001 = ~Antico Manuale~
+
+@100002 = ~A giudicare dai simboli incomprensibili scritti sulla copertina, è chiaro che questo libro è intriso di proprietà magiche di qualche tipo. Tuttavia, finché non tenterai di leggerlo o di identificarlo, la sua precisa natura resterà sconosciuta.
+
+STATISTICHE:
+
+Peso: 10~
+
+@100003 = ~Abilità speciale ottenuta: Costruire Golem~
+@100004 = ~Abilità speciale ottenuta: Riparare Golem~
+@100005 = ~Non appena raccogli il tomo, due golem prendono vita e ti attaccano.~
+@100006 = ~Il laboratorio presente su questo livello sembra ben fornito. Probabilmente puoi usarlo per costruire dei golem.~
+@100007 = ~Il laboratorio presente in quest'area sembra ben fornito. Probabilmente puoi usarlo per costruire dei golem.~
+@100008 = ~Il laboratorio presente su questo livello sembra ben fornito. Probabilmente puoi usarlo per costruire dei golem.~
+@100009 = ~L'equipaggiamento acquistato da Lazarus Librarus ti consente di costruire dei golem in questo posto.~
+@100010 = ~È possibile osservare un piccolo numero di pezzi di materia solida non identificabile galleggiare in una sostanza gelatinosa e leggermente fosforescente. Raccogli un campione per ulteriori verifiche.~
+@100011 = ~Negozio di Nym~
+@100012 = ~Merce Esotica di Nym~
+@100013 = ~Nym~
+@100014 = ~Mercante Elfo Scuro~
+@100015 = ~Sei troppo distante per riuscire a dare un'occhiata.~
+@100016 = ~Una gelida aura circonda questo strano marchingegno. Guardando meglio, riesci a distinguere un oggetto cristallino debolmente luminoso in uno dei suoi tubi.~
+@100017 = ~Subisci alcuni danni da freddo nel tentativo di recuperare il cristallo dallo strano marchingegno.~
+@100018 = ~Il golem è stato disattivato.~
+@100019 = ~Appunti Scarabocchiati~
+@100020 = ~Questa pergamena non è nient'altro che una raccolta di note scarabocchiate in tutta fretta. Molti passaggi sono sbiaditi col passare del tempo e non sono più decifrabili.
+
+"... costruzione dei golem. I materiali necessari sono facili da recuperare, ma ...(illeggibile)... impossibile senza il giusto macchinario. L'avamposto del Re delle Ombre lungo la Strada della Costa potrebbe andare bene, ma è ancora sotto il controllo di ...(illeggibile)... per cercare posti alternativi".~
+@100021 = ~Sembra che in quest'area sia già installato il macchinario per costruire i golem. Probabilmente puoi utilizzarlo per realizzare tu stesso dei golem.~ ~Sembra che in quest'area sia già installato il macchinario per costruire i golem. Probabilmente puoi utilizzarlo per realizzare tu stessa dei golem.~
+@100022 = ~Questa pergamena contiene alcune note scarabocchiate riguardanti procedure magiche ed esperimenti. Un passaggio attira la tua attenzione perché tratta la costruzione e la manutenzione dei golem.
+
+L'equipaggiamento acquistato da Ribald è grossolano, ma funzionante. Per il momento, dovrebbe essere sufficiente a mantenere i miei servitori golem in condizioni accettabili. Se così non dovesse essere, posso sempre recuperare dell’equipaggiamento da quella sfera nei Bassifondi. Le informazioni provenienti dalle mie fonti suggeriscono che contiene macchinari avanzati di ogni tipo.
+
+Il resto della pergamena contiene informazioni riguardanti procedure magiche complesse di scarso interesse per te.~
+@100023 = ~I famigli e i seguaci non possono entrare nelle aree senza i membri del gruppo.~
+@100024 = ~I famigli e i seguaci non possono entrare nei negozi.~
+@100025 = ~I famigli e i seguaci non possono raccogliere oggetti.~
+@100026 = ~La fucina di questo posto sembra di ottima qualità. Probabilmente puoi usarla per costruire dei golem.~
+@100027 = ~Questa pergamena contiene alcune note scarabocchiate che probabilmente dovevano essere aggiunte a un diario di qualche tipo.
+
+"Fratello Ignasius ha portato un curioso tomo l'altro giorno. Sembra riguardare la costruzione di golem. I nostri saggi saranno felici di studiarlo.
+
+Sfortunatamente, non abbiamo gli strumenti richiesti per poter costruire noi stessi dei golem. Se solo potessimo trovare un mago con un laboratorio ben fornito... Ma ahimè, l'unico luogo che ci viene in mente è l'avamposto elfico abbandonato della Mano Mozzata che dovrebbe ospitare il leggendario Astrolabio. Temo che nessuno dei nostri monaci abbia la forza o il coraggio di visitare quell'oscuro posto, figuriamoci recuperare il macchinario richiesto..."~
+@100028 = ~Questo tomo sembra essere scritto in una strana lingua o codice. Le lettere del testo cambiano la loro forma non appena tenti di concentrarti su di esse. A giudicare dalle illustrazioni che si trovano sulle pagine, ritieni che riguardi la realizzazione di costrutti magici di qualche tipo.
+
+STATISTICHE:
+
+Peso: 1~
+@100029 = ~Servitore Golem~
+@100030 = ~Al Tempio~
+@100031 = ~Il gas velenoso entra nelle tue narici, negli occhi e in ogni altro orifizio del tuo corpo. Ti inizia a girare la testa e senti un dolore sempre più acuto in tutto il corpo. Poi, in modo pietoso, perdi i sensi...~
+@100032 = ~Ti risvegli al tempio, vicino alle scale. Non ricordi come ci sei arrivato.~ ~Ti risvegli al tempio, vicino alle scale. Non ricordi come ci sei arrivata.~
+@100033 = ~Sei troppo distante per esaminare la statua.~
+@100034 = ~La statua è realizzata con solida pietra. Tiene un calice dorato con entrambe le mani. È impossibile strappare il calice dalle sue mani, indipendentemente da quanta forza tu possa metterci.~
+@100035 = ~La statua è realizzata con solida pietra. Tiene un calice dorato con entrambe le mani. Poiché entrambi i guardiani sono morti, puoi prendere il calice senza particolari sforzi.~
+@100036 = ~La statua appare piuttosto insignificante senza il calice tra le sue mani.~
+@100037 = ~Non appena ritorni in superficie, il calice si trasforma in una bottiglia contenente una sostanza sovrannaturale.~
+@100038 = ~Non appena la creatura smette di funzionare, rilascia il calice dalla sua stretta, il quale esplode in una miriade di frammenti piccolissimi una volta toccato il terreno.~
+@100039 = ~Antica Statua~
+@100040 = ~L'ingente danno fa sì che la creatura smetta di funzionare, solo per risvegliarsi nel tempio un po' di tempo dopo.~
+@100041 = ~Il tempio contiene una pregiata selezione di strumenti e di equipaggiamento. Dovrebbero essere sufficienti per costruire golem d'argilla in questo posto.~

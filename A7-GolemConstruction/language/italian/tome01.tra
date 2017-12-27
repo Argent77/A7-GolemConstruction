@@ -1,0 +1,176 @@
+// -*- coding: utf-8 -*- 
+// Flesh Golem related strings (index 1000..1999)
+
+@1000 = ~Manuale di Costruzione dei Golem (Vol. 1)~
+@1001 = ~Golem di Carne Minore~
+@1002 = ~Golem di Carne~
+@1003 = ~Golem di Carne Maggiore~
+@1004 = ~Golem di Carne Perfetto~
+@1005 = ~Ha imparato a costruire i golem di carne.~
+
+// *** Book content ***
+@1100 = ~Prima lezione: Golem di Carne
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di carne, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Carne Minore:
+Livello Minimo: 8 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Un set completo di parti del corpo
+
+Golem di Carne:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due set completi di parti del corpo
+
+Golem di Carne Maggiore:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+
+Golem di Carne Perfetto:
+Livello Minimo: 16 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+- Una gemma di Eliotropio Scuro
+
+Esiste una possibilità dell'1% che il golem di carne cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 15
+
+Peso: 10~
+
+@1101 = ~Prima lezione: Golem di Carne
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di carne, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Carne Minore:
+Livello Minimo: 8 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Un set completo di parti del corpo
+
+Golem di Carne:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due set completi di parti del corpo
+
+Golem di Carne Maggiore:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+
+Golem di Carne Perfetto:
+Livello Minimo: 16 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+- Una gemma di Eliotropio Scuro
+
+Esiste una possibilità dell'1% che il golem di carne cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 15
+
+Peso: 1~
+
+
+// *** Book content (IWDEE) ***
+@1110 = ~Prima lezione: Golem di Carne
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di carne, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Carne Minore:
+Livello Minimo: 8 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Un set completo di parti del corpo
+
+Golem di Carne:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due set completi di parti del corpo
+
+Golem di Carne Maggiore:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+
+Golem di Carne Perfetto:
+Livello Minimo: 16 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+- Una gemma di Eliotropio Scuro
+
+Esiste una possibilità dell'1% che il golem di carne cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 15
+
+Peso: 10~
+
+@1111 = ~Prima lezione: Golem di Carne
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di carne, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Carne Minore:
+Livello Minimo: 8 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Un set completo di parti del corpo
+
+Golem di Carne:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due set completi di parti del corpo
+
+Golem di Carne Maggiore:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+
+Golem di Carne Perfetto:
+Livello Minimo: 16 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro set completi di parti del corpo
+- Una pergamena di Nube Maleodorante
+- Una gemma di Eliotropio Scuro
+
+Esiste una possibilità dell'1% che il golem di carne cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 15
+
+Peso: 1~

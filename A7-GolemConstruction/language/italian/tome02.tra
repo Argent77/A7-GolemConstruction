@@ -1,0 +1,180 @@
+// -*- coding: utf-8 -*- 
+// Clay Golem related strings (index 2000..2999)
+
+@2000 = ~Manuale di Costruzione dei Golem (Vol. 2)~
+@2001 = ~Golem d'Argilla Minore~
+@2002 = ~Golem d'Argilla~
+@2003 = ~Golem d'Argilla Maggiore~
+@2004 = ~Golem d'Argilla Perfetto~
+@2005 = ~Ha imparato a costruire i golem d'argilla.~
+
+// *** Book content ***
+@2100 = ~Seconda lezione: Golem d'Argilla
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'argilla, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Argilla Minore:
+Livello Minimo: 11 (-2 per gli alteratori, -1 per i chierici, +2 per i bardi)
+Ingredienti:
+- Un blocco d'argilla
+
+Golem d'Argilla:
+Livello Minimo: 14 (-2 per gli alteratori, +1 per i chierici, +3 per i bardi)
+Ingredienti:
+- Due blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Maggiore:
+Livello Minimo: 18 (-2 per gli alteratori, +3 per i chierici, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Perfetto:
+Livello Minimo: 20 (-2 per gli alteratori, +4 per i chierici, +6 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+- Una borsa di Polvere Incantata di Corallo
+
+Esiste una possibilità dell'1% che il golem d'argilla cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 10~
+
+@2101 = ~Seconda lezione: Golem d'Argilla
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'argilla, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Argilla Minore:
+Livello Minimo: 11 (-2 per gli alteratori, -1 per i chierici, +2 per i bardi)
+Ingredienti:
+- Un blocco d'argilla
+
+Golem d'Argilla:
+Livello Minimo: 14 (-2 per gli alteratori, +1 per i chierici, +3 per i bardi)
+Ingredienti:
+- Due blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Maggiore:
+Livello Minimo: 18 (-2 per gli alteratori, +3 per i chierici, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Perfetto:
+Livello Minimo: 20 (-2 per gli alteratori, +4 per i chierici, +6 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+- Una borsa di Polvere Incantata di Corallo
+
+Esiste una possibilità dell'1% che il golem d'argilla cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 1~
+
+
+// *** Book content (IWDEE) ***
+@2110 = ~Seconda lezione: Golem d'Argilla
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'argilla, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Argilla Minore:
+Livello Minimo: 7 (-1 per gli alteratori, +1 per i bardi)
+Ingredienti:
+- Un blocco d'argilla
+
+Golem d'Argilla:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Maggiore:
+Livello Minimo: 13 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Perfetto:
+Livello Minimo: 15 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+- Una borsa di Polvere Incantata di Corallo
+
+Esiste una possibilità dell'1% che il golem d'argilla cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 10~
+
+@2111 = ~Seconda lezione: Golem d'Argilla
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'argilla, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Argilla Minore:
+Livello Minimo: 7 (-1 per gli alteratori, +1 per i bardi)
+Ingredienti:
+- Un blocco d'argilla
+
+Golem d'Argilla:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Maggiore:
+Livello Minimo: 13 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+
+Golem d'Argilla Perfetto:
+Livello Minimo: 15 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi d'argilla
+- Una pergamena di Velocità
+- Una borsa di Polvere Incantata di Corallo
+
+Esiste una possibilità dell'1% che il golem d'argilla cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 1~

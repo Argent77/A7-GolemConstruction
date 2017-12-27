@@ -1,0 +1,102 @@
+// -*- coding: utf-8 -*- 
+// Ruby Golem related strings (index 13000..13999)
+
+@13000 = ~Manuale Segreto di Costruzione dei Golem (Vol. 7)~
+@13001 = ~Golem di Rubino~
+@13002 = ~Ha imparato a costruire i golem di rubino.~
+@13010 = ~Manuale Segreto di Costruzione dei Golem (Vol. 4)~
+
+// *** Book content ***
+@13100 = ~Sui Golem di Rubino
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di rubino, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Rubino:
+Livello Minimo: 18 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro rubini
+- Due agata di fuoco
+- Una pergamena di Raggio Rubino dell'Inversione
+
+Richiede:
+Intelligenza 17
+
+Peso: 10~
+
+@13101 = ~Sui Golem di Rubino
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di rubino, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Rubino:
+Livello Minimo: 18 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro rubini
+- Due agata di fuoco
+- Una pergamena di Raggio Rubino dell'Inversione
+
+Richiede:
+Intelligenza 17
+
+Peso: 10~
+
+
+// *** Book content (IWDEE) ***
+@13110 = ~Sui Golem di Rubino
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di rubino, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di tre volumi. Questo quarto volume è stato aggiunto in una fase successiva da uno stregone drow di grande potere. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Rubino:
+Livello Minimo: 16 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro rubini
+- Due agata di fuoco
+- Una pergamena di Raggio Rubino dell'Inversione
+
+Richiede:
+Intelligenza 17
+
+Peso: 10~
+
+@13111 = ~Sui Golem di Rubino
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di rubino, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di tre volumi. Questo quarto volume è stato aggiunto in una fase successiva da uno stregone drow di grande potere. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Rubino:
+Livello Minimo: 16 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro rubini
+- Due agata di fuoco
+- Una pergamena di Raggio Rubino dell'Inversione
+
+Richiede:
+Intelligenza 17
+
+Peso: 1~

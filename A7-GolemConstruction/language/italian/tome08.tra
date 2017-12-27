@@ -1,0 +1,114 @@
+// -*- coding: utf-8 -*- 
+// Bone Golem related strings (index 8000..8999)
+
+@8000 = ~Manuale Segreto di Costruzione dei Golem (Vol. 2)~
+@8001 = ~Golem d'Ossa~
+@8002 = ~Ha imparato a costruire i golem d'ossa.~
+@8010 = ~Manuale Segreto di Costruzione dei Golem (Vol. 1)~
+
+// *** Book content ***
+@8100 = ~Sui Golem d'Ossa
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'ossa, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Ossa:
+Livello Minimo: 16 (-2 per i necromanti e gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro pile d'ossa
+- Una pergamena di Animare Morti
+
+Esiste una possibilità del 50% che il processo di creazione prosciughi un livello al lanciatore e un addizionale 10% di prosciugare un altro livello.
+
+Richiede:
+Intelligenza 16
+
+Peso: 10~
+
+@8101 = ~Sui Golem d'Ossa
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'ossa, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Ossa:
+Livello Minimo: 16 (-2 per necromanti e alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro pile d'ossa
+- Una pergamena di Animare Morti
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Ossa:
+Livello Minimo: 16 (-2 per i necromanti e gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro pile d'ossa
+- Una pergamena di Animare Morti
+
+Esiste una possibilità del 50% che il processo di creazione prosciughi un livello al lanciatore e un addizionale 10% di prosciugare un altro livello.
+
+Richiede:
+Intelligenza 16
+
+Peso: 1~
+
+
+// *** Book content (IWDEE) ***
+@8110 = ~Sui Golem d'Ossa
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'ossa, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Ossa:
+Livello Minimo: 12 (-2 per i necromanti e gli alteratori, +2 per i bardi)
+Ingredienti:
+- Quattro pile d'ossa
+- Una pergamena di Animare Morti
+
+Esiste una possibilità del 50% che il processo di creazione prosciughi 3 punti di Forza o di Costituzione al lanciatore per 5 turni, potendo anche ucciderlo se una di queste caratteristiche scende a 0.
+
+Richiede:
+Intelligenza 16
+
+Peso: 10~
+
+@8111 = ~Sui Golem d'Ossa
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem d'ossa, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem d'Ossa:
+Livello Minimo: 12 (-2 per i necromanti e gli alteratori, +2 per i bardi)
+Ingredienti:
+- Quattro pile d'ossa
+- Una pergamena di Animare Morti
+
+Esiste una possibilità del 50% che il processo di creazione prosciughi 3 punti di Forza o di Costituzione al lanciatore per 5 turni, potendo anche ucciderlo se una di queste caratteristiche scende a 0.
+
+Richiede:
+Intelligenza 16
+
+Peso: 1~

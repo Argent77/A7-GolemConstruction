@@ -1,0 +1,16 @@
+// -*- coding: utf-8 -*- 
+// Bone Doll related strings (index 15000..14999)
+
+@15000 = ~Manuale Proibito di Costruzione dei Golem (Vol. 2)~
+@15001 = ~Bambola d'Ossa~
+
+// *** Book content ***
+@15100 = ~Sulle Bambole d'Ossa
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali neccessari per assemblare una bambola d'ossa, come animarla e come fare in modo che segua alla lettera le direttive del suo creatore. Diverse illustrazioni suggeriscono che riti necromantici proibiti siano una parte fondamentale per l'animazione del costrutto.
+
+Tomi del genere potrebbero suscitare l'interesse di necromanti con esperienza.
+
+STATISTICHE:
+
+Peso: 1~

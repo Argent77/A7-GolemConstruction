@@ -1,0 +1,63 @@
+// -*- coding: utf-8 -*- 
+// Magic Golem related strings (index 11000..11999)
+
+@11000 = ~Manuale Segreto di Costruzione dei Golem (Vol. 5)~
+@11001 = ~Golem di Magia~
+@11002 = ~Ha imparato a costruire i golem magici.~
+@11003 = ~Neutralizzato da magia morta~
+
+// *** Book content ***
+@11100 = ~Sui Golem Magici
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem magico, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem Magico:
+Livello Minimo: 19 (-2 per i maghi selvaggi e gli alteratori, +4 per i bardi)
+Ingredienti:
+- Un frammento di pietra di magia selvaggia
+- Una pergamena di Protezione dalle Armi Magiche, Manto o Manto Potenziato
+- Una pergamena di Protezione dalla Magia
+
+A causa della speciale natura dei golem magici, possono essere costruiti solo in zone di magia selvaggia.
+
+Nota dell'autore: Varie fonti sembrano discutere sul fatto che i golem magici possano essere allergici alle zone di magia morta.
+
+Richiede:
+Intelligenza 18
+
+Peso: 10~
+
+@11101 = ~Sui Golem Magici
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem magico, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem Magico:
+Livello Minimo: 19 (-2 per i maghi selvaggi e gli alteratori, +4 per i bardi)
+Ingredienti:
+- Un frammento di pietra di magia selvaggia
+- Una pergamena di Protezione dalle Armi Magiche, Manto o Manto Potenziato
+- Una pergamena di Protezione dalla Magia
+
+A causa della speciale natura dei golem magici, possono essere costruiti solo in zone di magia selvaggia.
+
+Nota dell'autore: Varie fonti sembrano discutere sul fatto che i golem magici possano essere allergici alle zone di magia morta.
+
+Richiede:
+Intelligenza 18
+
+Peso: 10~
+

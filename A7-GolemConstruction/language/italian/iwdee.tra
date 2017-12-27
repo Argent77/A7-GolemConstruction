@@ -1,0 +1,92 @@
+// -*- coding: utf-8 -*- 
+// Misc. strings (index 120000..149999)
+
+// *** Misc. strings ***
+@120000 = ~Subisci un po' di danno da fuoco a causa del calore bruciante proveniente dalla fornace.~
+@120001 = ~Questo studio sembra ben fornito. Probabilmente può essere usato per costruire golem - dopo aver messo in sicurezza questo piano per lo svolgimento di una simile attività.~
+@120002 = ~Questo studio sembra ben fornito. Probabilmente può essere usato per costruire golem.~
+@120003 = ~Dopo aver messo in sicurezza questo piano del castello, lo studio può essere utilizzato per costruire golem.~
+
+
+// *** Dialog: Gelarith of the Severed Hand ***
+@121000 = ~L'Astrolabio sembra essere tecnologia molto avanzata. Posso utilizzarlo per costruire golem in questo posto?~
+@121001 = ~Devo andare. Addio.~
+@121002 = ~Golem, dici? Hmm. Abbiamo costruito l'Astrolabio principalmente per fare ricerche sullo spazio e sul tempo. Non ti servirebbe a molto per l'attività che hai suggerito.~
+@121003 = ~In ogni caso, ci sono degli utensili là sul tavolo che sono stati usati per la costruzione e la manutenzione dell'Astrolabio e altri marchingegni. Puoi utilizzarli per costruire i tuoi golem. Ma non toccare nessun altro strumento presente in questa stanza.~
+@121004 = ~Ricevuto. Grazie.~
+
+
+// *** Dialog: Bandoth of Lower Dorn's Deep ***
+@122000 = ~Il tuo laboratorio è ben equipaggiato. Ti dispiace se costruiamo golem in questo posto?~
+@122001 = ~Fa' quello che ti pare in questo posto.~
+@122002 = ~Sei fuori di testa? Hai già messo a dura prova la mia pazienza per troppo tempo. Perché dovrei tollerare ulteriormente la tua presenza?~
+@122003 = ~Se ti pagassi, cambieresti idea?~
+@122004 = ~Che ne dici questo? Permettimi di usare questo laboratorio o ti ritroverai con un coltello piantato nella schiena prima che questa conversazione finisca.~
+@122005 = ~Che ne dici di questo? Permettimi di usare questo laboratorio o questa palla di fuoco ti spazzerà via immediatamente.~
+@122006 = ~Che ne dici di questo? Permettimi di usare questo laboratorio o ti taglierò la testa senza pensarci due volte.~
+@122007 = ~Al momento non riesco a farmi venire in mente una buona ragione.~
+@122008 = ~Hah! Nessuna cifra potrebbe farmi cambiare idea su di te. Ciò non significa che io non possa provare a sopportare la tua presenza ancora per un po'.~
+@122009 = ~Dammi 4000 monete d'oro e puoi costruire tutti i golem che ti pare. Basta che tu non mi infastidisca con futili conversazioni. Siamo d'accordo?~
+@122010 = ~D'accordo.~
+@122011 = ~Mi rifiuto. È troppo costoso per me.~
+@122012 = ~Dammi 2000 monete d’oro e puoi costruire tutti i golem che ti pare. Accetti?~
+@122013 = ~Beh, direi che ci siamo. Ora va' per la tua strada. Ho già sprecato abbastanza tempo con te.~
+@122014 = ~Osi minacciarmi in casa mia? Dovrei buttarti fuori a calci all'istante per una simile insolenza.~
+@122015 = ~Dal momento che non voglio perdere la mia vita per faccende così banali, farò un'eccezione e verrò incontro alle tue richieste. Fa' ciò che devi, ma non aspettarti altre opere di carità da parte mia.~
+@122016 = ~Allora smettila di infastidirmi.~
+
+
+// *** Dialog: Tiernon of Gloomfrost ***
+@123000 = ~La tua fucina è notevole. Posso usarla per costruire golem in questo posto?~
+@123001 = ~Non ho potuto fare a meno di notare la tua notevole fucina. Prima che vada, mi permetteresti di usarla per costruire golem in questo posto?~
+@123002 = ~Capisco. La tua fucina è notevole, Tiernon. Posso usarla per costruire golem in questo posto?~
+@123003 = ~Se lo dici tu. Ho notato la tua notevole fucina. Posso usarla per costruire golem in questo posto?~
+@123004 = ~Non ho potuto fare a meno di notare la tua notevole fucina. Prima che tu vada a riposare, mi permetteresti di usarla per costruire golem in questo posto?~
+@123005 = ~Eh? La fucina è come una parte di me. Ma puoi utilizzarla, se insisti così tanto. Basta che tu non la distrugga a furia di martellate, viste le tue scadenti abilità da fabbro.~
+@123006 = ~Grazie, Tiernon.~
+
+
+// *** Journal entries ***
+@140000 = ~Laboratorio per la Costruzione del Golem
+
+Il laboratorio di Presio situato nelle caverne dell'Occhio del Drago sembra essere ben equipaggiato per poter condurre esperimenti magici di ogni tipo. Dovrei essere in grado di costruire golem in questo posto.~
+
+@140001 = ~Laboratorio per la Costruzione del Golem
+
+Gelarith della Mano Mozzata mi ha dato il permesso di usare i suoi utensili per costruire golem al piano più alto della torre dopo che lo avrò aiutato a riparare l'Astrolabio.~
+
+@140002 = ~Laboratorio per la Costruzione del Golem
+
+Il mago Bandoth mi ha permesso di usare il suo laboratorio per costruire golem dietro una generosa offerta di denaro. Posso accedere al suo laboratorio dall'entrata principale per le Profondità di Dorn.~
+
+@140003 = ~Laboratorio per la Costruzione del Golem
+
+Ho convinto il mago Bandoth che per lui sarebbe un bene se mi lasciasse usare il suo laboratorio per costruire golem. Posso accedere al suo laboratorio dall'entrata principale per le Profondità di Dorn.~
+
+@140004 = ~Laboratorio per la Costruzione del Golem
+
+Mi sono appropriato del laboratorio del mago Bandoth, luogo che sembra perfetto per costruire golem. Posso accedere al laboratorio dall'entrata principale per le Profondità di Dorn.~ ~Laboratorio per la Costruzione del Golem
+
+Mi sono appropriata del laboratorio del mago Bandoth, luogo che sembra perfetto per costruire golem. Posso accedere al laboratorio dall'entrata principale per le Profondità di Dorn.~
+
+@140005 = ~Laboratorio per la Costruzione del Golem
+
+Lo studio del folle mago Malavon è ben attrezzato per costruire golem. Dovrei essere in grado di costruire golem in questo posto.~
+
+@140006 = ~Laboratorio per la Costruzione del Golem
+
+Il fabbro nano Tiernon mi ha deliziosamente permesso di usare la sua fucina. Dovrei essere in grado di costruire golem nel suo laboratorio situato nelle Montagne di Mestogelo.~
+
+@140007 = ~Laboratorio per la Costruzione del Golem
+
+La fucina dell'appena defunto fabbro nano Tiernon dovrebbe consentirmi di costruire golem nel suo laboratorio situato nelle Montagne di Mestogelo.~
+
+@140008 = ~Laboratorio per la Costruzione del Golem
+
+Lo studio nel Castello di Maluradek è ben attrezzato per poter condurre esperimenti magici. Potrei essere in grado di costruire golem in questo posto dopo che mi sarò assicurato di non essere disturbato dalle creature ostili che vagano per il piano superiore del castello.~ ~Laboratorio per la Costruzione del Golem
+
+Lo studio nel Castello di Maluradek è ben attrezzato per poter condurre esperimenti magici. Potrei essere in grado di costruire golem in questo posto dopo che mi sarò assicurata di non essere disturbata dalle creature ostili che vagano per il piano superiore del castello.~
+
+@140009 = ~Laboratorio per la Costruzione del Golem
+
+Lo studio al piano superiore del Castello di Maluradek sembra essere ben attrezzato per poter condurre esperimenti magici. Dovrei essere in grado di costruire golem in questo posto.~

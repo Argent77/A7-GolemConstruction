@@ -1,0 +1,102 @@
+// -*- coding: utf-8 -*- 
+// Ice Golem related strings (index 10000..10999)
+
+@10000 = ~Manuale Segreto di Costruzione dei Golem (Vol. 4)~
+@10001 = ~Golem di Ghiaccio~
+@10002 = ~Ha imparato a costruire i golem di ghiaccio.~
+@10010 = ~Manuale Segreto di Costruzione dei Golem (Vol. 2)~
+
+// *** Book content ***
+@10100 = ~Sui Golem di Ghiaccio
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di ghiaccio, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Ghiaccio:
+Livello Minimo: 19 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Una scheggia di ghiaccio magico
+- Una pergamena di Cono di Freddo
+- Una pergamena di Protezione dal Freddo
+
+Richiede:
+Intelligenza 17
+
+Peso: 10~
+
+@10101 = ~Sui Golem di Ghiaccio
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di ghiaccio, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Ghiaccio:
+Livello Minimo: 19 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Una scheggia di ghiaccio magico
+- Una pergamena di Cono di Freddo
+- Una pergamena di Protezione dal Freddo
+
+Richiede:
+Intelligenza 17
+
+Peso: 1~
+
+
+// *** Book content (IWDEE) ***
+@10110 = ~Sui Golem di Ghiaccio
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di ghiaccio, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di tre volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Ghiaccio:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Una scheggia di ghiaccio magico
+- Una pergamena di Cono di Freddo
+- Una pergamena di Protezione dal Freddo
+
+Richiede:
+Intelligenza 17
+
+Peso: 10~
+
+@10111 = ~Sui Golem di Ghiaccio
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di ghiaccio, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di tre volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem più tradizionali.
+
+Permette al personaggio di costruire il seguente golem:
+
+Golem di Ghiaccio:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Una scheggia di ghiaccio magico
+- Una pergamena di Cono di Freddo
+- Una pergamena di Protezione dal Freddo
+
+Richiede:
+Intelligenza 17
+
+Peso: 1~

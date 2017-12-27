@@ -1,0 +1,180 @@
+// -*- coding: utf-8 -*- 
+// Stone Golem related strings (index 3000..3999)
+
+@3000 = ~Manuale di Costruzione dei Golem (Vol. 3)~
+@3001 = ~Golem di Pietra Minore~
+@3002 = ~Golem di Pietra~
+@3003 = ~Golem di Pietra Maggiore~
+@3004 = ~Golem di Pietra Perfetto~
+@3005 = ~Ha imparato a costruire i golem di pietra.~
+
+// *** Book content ***
+@3100 = ~Terza lezione: Golem di Pietra
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di pietra, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Pietra Minore:
+Livello Minimo: 11 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Un blocco di pietra
+
+Golem di Pietra:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Due blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Maggiore:
+Livello Minimo: 18 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Perfetto:
+Livello Minimo: 20 (-2 per gli alteratori, +6 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+- Una fiala di sangue di mimic
+
+Esiste una possibilità dell'1% che il golem di pietra cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 10~
+
+@3101 = ~Terza lezione: Golem di Pietra
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di pietra, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di sei volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Pietra Minore:
+Livello Minimo: 11 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Un blocco di pietra
+
+Golem di Pietra:
+Livello Minimo: 14 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Due blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Maggiore:
+Livello Minimo: 18 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Perfetto:
+Livello Minimo: 20 (-2 per gli alteratori, +6 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+- Una fiala di sangue di mimic
+
+Esiste una possibilità dell'1% che il golem di pietra cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 1~
+
+
+// *** Book content (IWDEE) ***
+@3110 = ~Terza lezione: Golem di Pietra
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di pietra, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Aggiunge una nuova abilità che permette al personaggio di costruire i propri golem
+  Uso: Posizionalo in uno slot degli oggetti rapidi e usalo
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Pietra Minore:
+Livello Minimo: 7 (-1 per gli alteratori, +1 per i bardi)
+Ingredienti:
+- Un blocco di pietra
+
+Golem di Pietra:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Maggiore:
+Livello Minimo: 13 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Perfetto:
+Livello Minimo: 15 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+- Una fiala di sangue di mimic
+
+Esiste una possibilità dell'1% che il golem di pietra cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 10~
+
+@3111 = ~Terza lezione: Golem di Pietra
+
+Questo incredibile tomo contiene speculazioni teoriche sulla costruzione e sul controllo dei golem. Approfondisce con dovizia di dettagli i materiali necessari per assemblare un golem di pietra, come animarlo e come fare in modo che segua alla lettera le direttive del suo creatore. Descrive anche l'equipaggiamento richiesto per dare forma al corpo del golem con successo. Questo requisito restringe i luoghi adatti a iniziare il processo di creazione a pochi posti in tutta Faerûn.
+
+Dalle informazioni che riesci a raccogliere, questo libro è parte di una collana di cinque volumi. Contiene anche parecchi riferimenti a vari manuali per la costruzione di golem non tradizionali.
+
+Permette al personaggio di costruire i seguenti golem:
+
+Golem di Pietra Minore:
+Livello Minimo: 7 (-1 per gli alteratori, +1 per i bardi)
+Ingredienti:
+- Un blocco di pietra
+
+Golem di Pietra:
+Livello Minimo: 10 (-2 per gli alteratori, +2 per i bardi)
+Ingredienti:
+- Due blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Maggiore:
+Livello Minimo: 13 (-2 per gli alteratori, +3 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+
+Golem di Pietra Perfetto:
+Livello Minimo: 15 (-2 per gli alteratori, +4 per i bardi)
+Ingredienti:
+- Quattro blocchi di pietra
+- Una pergamena di Lentezza
+- Una fiala di sangue di mimic
+
+Esiste una possibilità dell'1% che il golem di pietra cada in stato berserk durante il combattimento per 1d6 round e attacchi la creatura più vicina nella sua visuale.
+
+Richiede:
+Intelligenza 16
+
+Peso: 1~
