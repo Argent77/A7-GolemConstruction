@@ -686,7 +686,7 @@ as well, but is harder to come by.
 Golems described in these tomes are unique, and therefore not available as lesser, greater or perfect variants.
 
 1. Maggot Golem
-- Min. level: 10 (-2 for Conjurerers and Transmuters, +2 for Bards and Thieves with "Use Any Item")
+- Min. level: 10 (-2 for Conjurers and Transmuters, +2 for Bards and Thieves with "Use Any Item")
 - Ingredients:
   - Two maggot-infested bodies
 - Stats:
@@ -940,7 +940,7 @@ More advanced golems may also follow the following orders:
 - Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns 
                                     to its guarded position.)
 
-You should always take good care of your golems as they may start to malfunction when badly hurt. These penalties can 
+You should always take good care of your golems as they may start to malfunction when badly damaged. These penalties can 
 be removed by the "Repair Golem" ability.
 
 

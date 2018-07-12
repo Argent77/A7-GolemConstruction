@@ -654,7 +654,7 @@ More advanced golems may also follow the following orders:
 - Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns 
                                     to its guarded position.)
 
-You should always take good care of your golems as they may start to malfunction when badly hurt. These penalties can 
+You should always take good care of your golems as they may start to malfunction when badly damaged. These penalties can 
 be removed by the "Repair Golem" ability.
 
 
