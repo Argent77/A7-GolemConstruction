@@ -5,7 +5,8 @@ Version:    5.3
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
-Discussion: http://www.shsforums.net/topic/58696-mod-golem-construction-for-spellcasters/
+            http://www.shsforums.net/files/file/1219-golem-construction-for-spellcasters/
+Discussion: http://www.shsforums.net/forum/652-golem-construction-ee/
             https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters
 
 
@@ -179,6 +180,16 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+5.4
+- Added Italian translation (thanks to Luke93, Elia Danelli, Aedan, improbabile and rede9)
+- Added teleport ability to Malavon's golems in IWD:EE
+- Made golems immune to imprisonment to work around a game issue
+- Vanilla Adamantite Golems should also use Trample ability
+- Fixed disabled golems in Spellhold being a target for hostile creatures
+- Fixed clay golem conditions for clerics in construction dialog
+- Fixed a minor compatibility issue in BG:EE without SoD.
+- Various minor bugfixes and textual fixes
 
 5.3
 - Adjusted cleric level requirements for building clay golems

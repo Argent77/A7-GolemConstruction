@@ -7,7 +7,10 @@ ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 END
 
-README ~A7-GolemConstruction/readme/readme-%LANGUAGE%.txt~ ~A7-GolemConstruction/readme/readme.txt~
+README ~A7-GolemConstruction/readme/readme-%LANGUAGE%.html~
+       ~A7-GolemConstruction/readme/readme-%LANGUAGE%.txt~
+       ~A7-GolemConstruction/readme/readme.html~
+       ~A7-GolemConstruction/readme/readme.txt~
 
 LANGUAGE ~English~
          ~english~
