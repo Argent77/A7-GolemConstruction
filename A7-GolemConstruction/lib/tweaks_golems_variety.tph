@@ -11,7 +11,7 @@ ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
         WRITE_ASCII (offset + 0x80) ~A7!GXST2~ #8 // CRE resource
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 END
 
 ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
@@ -55,7 +55,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Lesser_Stone_Golem"
       fj_cre_resref     = "A7!GXST1"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Cowled Wizard in Docks District
   COPY_EXISTING ~ar0316.are~ ~override~
@@ -81,7 +81,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Lesser_Stone_Golem"
       fj_cre_resref     = "A7!GXST1"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Firkraag's dungeon
   COPY_EXISTING ~ar1202.are~ ~override~
@@ -125,7 +125,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Lesser_Stone_Golem"
       fj_cre_resref     = "A7!GXST1"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Planar Sphere, Spellhold Maze, Suldanessalar Home
   COPY_EXISTING ~ar0411.are~ ~override~
@@ -139,7 +139,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         WRITE_ASCII (offset + 0x80) ~A7!GXCL2~ #8 // CRE resource
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Spellhold, WK Level 1
   COPY_EXISTING ~ar1514.are~ ~override~
@@ -156,7 +156,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         END
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Suldanessalar Temple
   COPY_EXISTING ~ar2803.are~ ~override~
@@ -174,7 +174,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         END
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Suldanessalar Home
   COPY_EXISTING ~ar2802.are~ ~override~
@@ -187,7 +187,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         END
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // WK Level 4
   COPY_EXISTING ~ar3017.are~ ~override~
@@ -200,7 +200,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         END
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Dungeon (Hexxat Quest)
   COPY_EXISTING ~oh7300.are~ ~override~
@@ -222,7 +222,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         END
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Ust Natha, Egg Chamber of Temple
   COPY_EXISTING ~ar2201.are~ ~override~
@@ -258,7 +258,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         END
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Shadow Temple in Umar Hills, Sahuagin City
   COPY_EXISTING ~ar1401.are~ ~override~
@@ -270,7 +270,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         WRITE_ASCII (offset + 0x80) ~A7!GXBO~ #8 // CRE resource
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
 
   // General golem spawning script
@@ -332,7 +332,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         REPLACE_TEXTUALLY ~CreateCreature("golada01",.+)~ ~CreateCreature("a7!gxmi2",[-1.-1],S) CreateCreature("a7!gxad1",[-1.-1],S)~
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Trap in Fire Giant Temple
   COPY_EXISTING ~yssumm4.bcs~ ~override~
@@ -366,7 +366,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         REPLACE_TEXTUALLY ~"GOLCLA01"~ ~"A7!GXST3"~
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Suldanessalar Home
   COPY_EXISTING ~ar2802.bcs~ ~override~
@@ -374,14 +374,14 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       REPLACE_TEXTUALLY ~ActionOverride("golsto01",DestroySelf())~ ~ActionOverride("a7!gxst2",DestroySelf())~
       REPLACE_TEXTUALLY ~ActionOverride("golcla01",DestroySelf())~ ~ActionOverride("a7!gxcl2",DestroySelf())~
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Trap in Amkethran crypt
   COPY_EXISTING ~trtables.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
       REPLACE_TEXTUALLY ~"golice01"~ ~"a7!gxic"~
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~c6rakraj.bcs~ ~override~
                 ~c6goljug.bcs~ ~override~
@@ -392,26 +392,26 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
         REPLACE_TEXTUALLY ~"goljug01"~ ~"a7!gxst3"~
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~obsmodtp.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
       REPLACE_TEXTUALLY ~"golsto01"~ ~"a7!gxst2"~
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~spwndead.bcs~ ~override~
                 ~tanhigh.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
       REPLACE_TEXTUALLY ~"icbone01"~ ~"a7!gxbo"~
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~udmaster.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
       REPLACE_TEXTUALLY ~"udgolem"~ ~"a7!gxbr"~
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
 
   // Golems spawned by Wish
@@ -487,5 +487,5 @@ REPLACE_STATE_TRIGGER ~suelf2~ 4 ~Global("ElvenAvatar","GLOBAL",0) Dead("a7!gxcl
         END
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 END

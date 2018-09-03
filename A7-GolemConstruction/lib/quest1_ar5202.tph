@@ -13,13 +13,14 @@ COPY_EXISTING ~ar5202.tis~ ~override~
     idxExtraTiles
     numExtraTiles
   END
-BUT_ONLY
+BUT_ONLY IF_EXISTS
 
 // updating ARE
 INCLUDE ~%MOD_FOLDER%/lib/ar5202/door_generator.tph~
 INCLUDE ~%MOD_FOLDER%/lib/ar5202/are.tph~
 COPY_EXISTING ~ar5202.are~ ~override~
   LPF ADD_ARE_AR5202_DOOR END
+BUT_ONLY IF_EXISTS
 
 // updating WED
 INCLUDE ~%MOD_FOLDER%/lib/ar5202/wed.tph~
@@ -29,7 +30,7 @@ COPY_EXISTING ~ar5202.wed~ ~override~
     idxExtraTiles = idxExtraTiles
     numExtraTiles = numExtraTiles
   END
-BUT_ONLY
+BUT_ONLY IF_EXISTS
 
 COPY ~%MOD_FOLDER%/sounds/a7!mztd.wav~ ~override~
 
@@ -59,3 +60,4 @@ COPY ~%MOD_FOLDER%/items/a7!misc1.itm~ ~override~
 // add hair to Nyalee's inventory
 COPY_EXISTING ~hgnya01.cre~ ~override~
   ADD_CRE_ITEM ~a7!misc1~ #0 #0 #0 ~unstealable~ ~inv1 inv2 inv3 inv4 inv5 inv6 inv7 inv8 inv9 inv10 inv11 inv12 inv13 inv14 inv15 inv16~
+BUT_ONLY IF_EXISTS

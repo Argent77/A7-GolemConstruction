@@ -285,6 +285,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
       STR_VAR
         resource = "A7!IN13B"
       END
+    BUT_ONLY IF_EXISTS
 
     COPY_EXISTING ~spwi210.spl~ ~override~  // Resist Fear
       LPF ADD_SPELL_EFFECT
@@ -297,6 +298,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
       STR_VAR
         resource = "A7!IN13B"
       END
+    BUT_ONLY IF_EXISTS
 
     COPY_EXISTING ~spcl115.spl~ ~override~  // The Tale of Curran Strongheart - Immunity to Fear
       LPF ADD_SPELL_EFFECT
@@ -309,6 +311,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
       STR_VAR
         resource = "A7!IN13B"
       END
+    BUT_ONLY IF_EXISTS
   END ELSE BEGIN
     COPY_EXISTING ~sppr108.spl~ ~override~  // Remove Fear
                   ~spwi210.spl~ ~override~  // Resist Fear
@@ -322,6 +325,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
       STR_VAR
         resource = "A7!IN13B"
       END
+    BUT_ONLY IF_EXISTS
   END
 
   COPY ~%MOD_FOLDER%/spells/a7!in13b.bam~ ~override~
@@ -718,6 +722,7 @@ END
 ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   COPY_EXISTING ~pskullt.pro~ ~override/a7!bskul.pro~
     WRITE_ASCII 0x104 ~A7!BSKUL~ #8
+  BUT_ONLY IF_EXISTS
 
   ADD_PROJECTILE ~override/a7!bskul.pro~
 

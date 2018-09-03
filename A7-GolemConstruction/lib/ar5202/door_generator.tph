@@ -59,3 +59,4 @@ COPY - ~.../are_door_generated.tph~ ~.../are_door_generated.tph~
 // applying include file
 COPY_EXISTING ~ar5202.are~ ~override~
   PATCH_REINCLUDE ~.../are_door_generated.tph~
+BUT_ONLY IF_EXISTS

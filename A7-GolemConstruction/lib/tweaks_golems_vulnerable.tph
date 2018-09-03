@@ -126,7 +126,7 @@ ACTION_IF (SPELL_REV) BEGIN
     STR_VAR
       resource      = "A7!FLST"
     END
-  IF_EXISTS
+  BUT_ONLY IF_EXISTS
 END ELSE BEGIN
   COPY_EXISTING ~spwi604.spl~ ~override~  // Flesh to Stone
     READ_LONG 0x34 level
@@ -144,7 +144,7 @@ END ELSE BEGIN
     STR_VAR
       resource      = "A7!FLST"
     END
-  IF_EXISTS
+  BUT_ONLY IF_EXISTS
 END
 
 ACTION_IF (NOT SPELL_REV) BEGIN
@@ -184,7 +184,7 @@ ACTION_IF (NOT SPELL_REV) BEGIN
     STR_VAR
       resource      = "A7!FLST"
     END
-  IF_EXISTS
+  BUT_ONLY IF_EXISTS
 END
 
 // Spell-induced transformation: "Stone to Flesh" (Stone Golem -> Flesh Golem)
@@ -229,7 +229,7 @@ COPY_EXISTING ~spwi625.spl~ ~override~  // Stone to Flesh
   STR_VAR
     resource      = "A7!STFL"
   END
-IF_EXISTS
+BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~scrlpet.itm~ ~override~  // Stone to Flesh Scroll
               ~scrlpet2.itm~ ~override~ // Stone to Flesh Scroll (IWDEE)
@@ -247,7 +247,7 @@ COPY_EXISTING ~scrlpet.itm~ ~override~  // Stone to Flesh Scroll
   STR_VAR
     resource      = "A7!STFL"
   END
-IF_EXISTS
+BUT_ONLY IF_EXISTS
 
 
 // Spell-induced transformation: "Abi-Dalzim's Horrid Wilting" (Clay Golem -> Stone Golem)
@@ -301,7 +301,7 @@ COPY_EXISTING ~%spwi812%~ ~override~  // Abi-Dalzim's Horrid Wilting
   STR_VAR
     resource      = "A7!CLST"
   END
-IF_EXISTS
+BUT_ONLY IF_EXISTS
 
 
 // Spell-induced transformation: Death Spell (auto-slays Maggot Golem)
@@ -324,7 +324,7 @@ ACTION_IF (NOT GAME_IS_IWDEE AND NOT SPELL_REV) BEGIN
     STR_VAR
       resource      = "A7!KILL"
     END
-  IF_EXISTS
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -367,7 +367,7 @@ COPY_EXISTING ~%spwi503%~  ~override~   // Cone of Cold
   STR_VAR
     resource      = "A7!SLOW"
   END
-IF_EXISTS
+BUT_ONLY IF_EXISTS
 
 
 // Specific spell effect: Sunray (reduces physical resistance of Adamantite Golems)
@@ -419,7 +419,7 @@ ACTION_IF (NOT GAME_IS_IWDEE) BEGIN
     STR_VAR
       resource      = "A7!BURN"
     END
-  IF_EXISTS
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -489,4 +489,4 @@ COPY_EXISTING ~%spwi810%~ ~override~  // Incendiary Cloud
   STR_VAR
     resource      = "A7!FATK"
   END
-IF_EXISTS
+BUT_ONLY IF_EXISTS

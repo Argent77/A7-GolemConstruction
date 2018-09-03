@@ -235,6 +235,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
         fj_structure_type = "itm"
         fj_name           = "a7!tom04"
       END
+    BUT_ONLY IF_EXISTS
   END
 
   ACTION_IF (GAME_IS_IWDEE) BEGIN
@@ -285,12 +286,13 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
           REPLACE_TEXTUALLY ~PartyHasItem("cdmgolem")~ ~OR(2) PartyHasItem("a7!tomm4") PartyHasItem("a7!tomy4")~
         END
       END
-    BUT_ONLY
+    BUT_ONLY IF_EXISTS
 
     // Fallback solution: Add to Malavon's inventory
     ACTION_IF (NOT replaced) BEGIN
       COPY_EXISTING ~malavon.cre~ ~override~
         ADD_CRE_ITEM ~a7!tomm4~ (0) (0) (0) ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+      BUT_ONLY IF_EXISTS
     END
   END
 END
@@ -822,6 +824,7 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_SOD) BEGIN
           probability1 = 24
           probability2 = 0
         END
+      BUT_ONLY IF_EXISTS
     END
   END
 END

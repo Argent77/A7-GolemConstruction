@@ -34,7 +34,7 @@ END
       fj_cre_resref     = EVAL "%golemRes%"
       fj_bcs_override   = "A7!B5300"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
 
   // Shadow Druid Ferrusk
@@ -77,7 +77,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Golem"
       fj_cre_resref     = EVAL "%golemRes%"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Hideout in Bridge District
   COPY_EXISTING ~ar0530.are~ ~override~
@@ -100,7 +100,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Golem"
       fj_cre_resref     = EVAL "%golemRes%"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Mindflayer Hideout in Sewers
   COPY_EXISTING ~ar0711.are~ ~override~
@@ -115,7 +115,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Brain_Golem"
       fj_cre_resref     = "A7!GXBR"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Guarded Compound in Temple District
   COPY_EXISTING ~ar0907.are~ ~override~
@@ -150,7 +150,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Golem"
       fj_cre_resref     = EVAL "%golemRes%"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Cowled Wizard on Pirate Isle
 <<<<<<<< .../inlined/a7!1605.baf
@@ -186,7 +186,7 @@ END
       fj_cre_resref     = EVAL "%golemRes%"
       fj_bcs_override   = "A7!1605"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Wilderness Area
   COPY_EXISTING ~ar1800.are~ ~override~
@@ -221,7 +221,7 @@ END
       fj_name           = "A7!Golem"
       fj_cre_resref     = EVAL "%golemRes%"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Druid Grove exterior
 <<<<<<<< .../inlined/a7!1900.baf
@@ -246,7 +246,7 @@ END
       fj_cre_resref     = "A7!GXMG"
       fj_bcs_override   = "A7!1900"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Ust Natha - Jae'llat
   COPY_EXISTING ~ar2209.are~ ~override~
@@ -281,7 +281,7 @@ END
       fj_name           = "A7!Golem"
       fj_cre_resref     = EVAL "%golemRes%"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Mindflayer Lair in WK Level 4
   COPY_EXISTING ~ar3021.are~ ~override~
@@ -296,7 +296,7 @@ END
       fj_name           = "A7!Brain_Golem"
       fj_cre_resref     = "A7!GXBR"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Saradush - Gromnir
 <<<<<<<< .../inlined/a7!5002.baf
@@ -333,7 +333,7 @@ END
       fj_cre_resref     = "A7!GXST4"
       fj_bcs_override   = "A7!5002"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Saradush Sewers
   COPY_EXISTING ~ar5013.are~ ~override~
@@ -368,7 +368,7 @@ END
       fj_name           = "A7!Golem1"
       fj_cre_resref     = EVAL "%golemRes%"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Abazigal's Lair
   COPY_EXISTING ~ar6005.are~ ~override~
@@ -394,7 +394,7 @@ END
       fj_name           = "A7!Golem2"
       fj_cre_resref     = "A7!GXIC"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Vicross' HQ (Neera's Quest)
 <<<<<<<< .../inlined/a7!O6500.baf
@@ -431,7 +431,7 @@ END
       fj_cre_resref     = "A7!GXRU"
       fj_bcs_override   = "A7!O6500"
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
 
   // Athkatla random encounters
@@ -456,7 +456,7 @@ END
           REPLACE_TEXTUALLY ~\(CreateCreature("REBAND04",.+)\)~ ~\1 CreateCreatureObject("A7!GXCL1","REBAND04",10,0,0)~
         END
       END
-    BUT_ONLY
+    BUT_ONLY IF_EXISTS
   END
 
   // Random encounter with disguised rakshasa
@@ -480,7 +480,7 @@ END
           REPLACE_TEXTUALLY ~\(ChangeEnemyAlly(Myself,EVILBUTGREEN)\)~ ~\1 CreateCreatureObjectEffect("A7!GXIR1","SPFLESHS",Myself) ActionOverride("A7!GXIR1",Wait(1))~
         END
       END
-    BUT_ONLY
+    BUT_ONLY IF_EXISTS
   END
 
   // Irenicus at Tree of Life

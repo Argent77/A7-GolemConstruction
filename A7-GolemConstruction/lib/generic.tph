@@ -64,6 +64,7 @@ ACTION_IF (GAME_IS_BG2EE) BEGIN
   COPY_EXISTING - ~varimprt.2da~ ~override~
     COUNT_2DA_COLS numCols
     COUNT_2DA_ROWS numCols numRows
+  IF_EXISTS
 
   ACTION_DEFINE_ARRAY vars BEGIN
     ~A7!TOMEGOLEM~ 

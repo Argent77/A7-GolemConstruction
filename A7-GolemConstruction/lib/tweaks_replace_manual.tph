@@ -4,22 +4,22 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Removing Golem Manual
   COPY_EXISTING ~ar3001.are~ ~override~
     LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome01" END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Removing Clay Golem Page
   COPY_EXISTING ~ar3017.are~ ~override~
     LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome02a" END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Removing Stone Golem Page
   COPY_EXISTING ~ar5204.are~ ~override~
     LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome03a" END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Removing Juggernaut Golem Page
   COPY_EXISTING ~ar6003.are~ ~override~
     LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "tome04a" END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Adding new items
   LAF DISTRIBUTE_ITEMS STR_VAR table = EVAL ~%MOD_FOLDER%/tables/replace_tome.2da~ END

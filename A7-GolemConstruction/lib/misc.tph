@@ -25,7 +25,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~enginest.2da~) BEGIN
         SET row = numRows
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -44,7 +44,7 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
       TEXT_SPRINT script ~NEMPHR~
       WRITE_ASCIIE SCRIPT_OVERRIDE ~%script%~ #8
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   <<<<<<<<  .../inlined/a7!golem/%script%.baf
   IF
@@ -71,7 +71,7 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
       TEXT_SPRINT script ~%SOURCE_RES%~
       WRITE_ASCIIE AREA_SCRIPT ~%script%~ #8
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
   ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
     <<<<<<<< .../scripts/%script%.baf
     >>>>>>>>
@@ -86,7 +86,7 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
       TEXT_SPRINT script ~%SOURCE_RES%~
       WRITE_ASCIIE AREA_SCRIPT ~%script%~ #8
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
   ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
     <<<<<<<< .../scripts/%script%.baf
     >>>>>>>>
@@ -141,6 +141,7 @@ ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
       fj_name           = "A7!EnemyCheck2"
       fj_reg_script     = "a7!bd12b"
     END
+  BUT_ONLY IF_EXISTS
 
   // Use Ruins of Kanaglym as golem building workshop
   EXTEND_TOP ~bd5300.bcs~ ~%MOD_FOLDER%/scripts/bd5300_workshop.baf~
@@ -202,6 +203,7 @@ ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
       fj_name           = "A7!EnemyCheck3"
       fj_reg_script     = "a7!bd53c"
     END
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -252,7 +254,7 @@ END
       INNER_ACTION BEGIN COMPILE ~%MOD_FOLDER%/scripts/ar1103.baf~ END
       WRITE_ASCII AREA_SCRIPT ~AR1103~ #8
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Use Temple Strongholds as golem workshop
   EXTEND_TOP ~ar0901.bcs~ ~%MOD_FOLDER%/scripts/ar0901_top.baf~
@@ -267,7 +269,7 @@ END
       REPLACE_TEXTUALLY ~^\(.*("Clglin01Return","GLOBAL")\)~ ~\1 !GlobalTimerNotExpired("A7!MentalBattleTimer", "GLOBAL")~
       REPLACE_TEXTUALLY ~^\(.*("Cltiva01Return","GLOBAL")\)~ ~\1 !GlobalTimerNotExpired("A7!MentalBattleTimer", "GLOBAL")~
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Use Watcher's Keep - Second Level as golem workshop
   EXTEND_TOP ~ar3016.bcs~ ~%MOD_FOLDER%/scripts/ar3016_top.baf~
@@ -377,6 +379,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_name           = "A7!EnemyCheck5"
       fj_reg_script     = "a7!ar40e"
     END
+  BUT_ONLY IF_EXISTS
 
   // Use Severed Hand, Larrel's Study as golem building workshop
   COMPILE ~%MOD_FOLDER%/dialogs/iwdee/dgelarit.d~
@@ -464,6 +467,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_name           = "A7!EnemyCheck4"
       fj_reg_script     = "a7!ar80d"
     END
+  BUT_ONLY IF_EXISTS
 
   // Use Gloomfrost, Tiernon's Forge as golem building workshop
   COMPILE ~%MOD_FOLDER%/dialogs/iwdee/dtiernon.d~
@@ -505,6 +509,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_structure_type = "region"
       fj_name           = "A7!Helper"
     END
+  BUT_ONLY IF_EXISTS
 
 
   // Make Malavon's golems available to the player
@@ -518,6 +523,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
     WRITE_ASCII 0x268 "" #8 // Default script
     WRITE_ASCII 0x2cc "" #8 // Dialog
     LPF DELETE_CRE_EFFECT INT_VAR opcode_to_delete = 268 END  // remove "Clear fog of war" effect
+  BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~ar8010.are~ ~override~
     PATCH_FOR_EACH name IN "Iron Golem 1" "Iron Golem 2" BEGIN
@@ -527,13 +533,13 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
         WRITE_ASCII (offset + 0x80) "A7!GMIR2" #8   // CRE resource
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~cdmalgol.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
       REPLACE_TEXTUALLY ~^[ %TAB%]*\(Global("CDLocalVar0","LOCALS",0)\)~ ~\1 False()~
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
   EXTEND_TOP ~cdmalgol.bcs~ ~%MOD_FOLDER%/scripts/iwdee/cdmalgol_top.baf~
 
 

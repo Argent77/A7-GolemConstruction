@@ -26,6 +26,7 @@ ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Container1"
     END
+  BUT_ONLY IF_EXISTS
 
   // Cave below Dragonsiege Castle
   COPY_EXISTING ~bd5100.are~ ~override~
@@ -54,6 +55,7 @@ ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Container01"
     END
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -98,6 +100,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Body1"
     END
+  BUT_ONLY IF_EXISTS
 
   // Chest in Cowled Wizard home
   COPY_EXISTING ~ar0315.are~ ~override~
@@ -132,6 +135,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Container1"
       fj_trap_script    = "CTLB"    // lightning bolt trap
     END
+  BUT_ONLY IF_EXISTS
 
   // Cache near the Amaunator statue
   COPY_EXISTING ~ar1400.are~ ~override~
@@ -158,6 +162,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Container1"
     END
+  BUT_ONLY IF_EXISTS
 
   // Cave in Imnesville
   COPY_EXISTING ~ar1106.are~ ~override~
@@ -174,6 +179,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Pile1"
     END
+  BUT_ONLY IF_EXISTS
 
   // de'Arnise basement
   COPY_EXISTING ~ar1301.are~ ~override~
@@ -190,6 +196,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Pile1"
     END
+  BUT_ONLY IF_EXISTS
 
   // WK: Wizard's Library, ice room
   COPY_EXISTING ~ar3016.are~ ~override~
@@ -206,6 +213,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Pile1"
     END
+  BUT_ONLY IF_EXISTS
 
   // Abazigal's Chamber
   COPY_EXISTING ~ar6005.are~ ~override~
@@ -298,6 +306,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Container4"
     END
+  BUT_ONLY IF_EXISTS
 
   // WK: Wild magic area
   COPY_EXISTING ~ar3005.are~ ~override~
@@ -363,6 +372,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Crate03"
     END
+  BUT_ONLY IF_EXISTS
 
   // WK: Wild magic area
   COPY_EXISTING ~ar3009.are~ ~override~
@@ -411,6 +421,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Crate02"
     END
+  BUT_ONLY IF_EXISTS
 
   // Shelf in Vicross' Headquarter (Neera's ToB Quest)
   COPY_EXISTING ~oh6500.are~ ~override~
@@ -438,6 +449,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
       fj_name           = "A7!Shelf1"
       fj_trap_script    = "CTFB"    // fire ball trap
     END
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -464,6 +476,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Shelf1"
     END
+  BUT_ONLY IF_EXISTS
 
 
   // Labyrinth in Dorn's Deep
@@ -513,6 +526,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Container2"
     END
+  BUT_ONLY IF_EXISTS
 
 
   // Dorn's Deep - Bandoth's Tower
@@ -543,6 +557,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_name           = "A7!Furnace1"
       fj_trap_script    = "A7!TRAP1"
     END
+  BUT_ONLY IF_EXISTS
 
 
   // Ore cart with container in Lower Dorn's Deep Entrance
@@ -571,6 +586,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Container1"
     END
+  BUT_ONLY IF_EXISTS
 
 
   // Ore carts with containers in Lower Dorn's Deep Mines
@@ -658,6 +674,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Container4"
     END
+  BUT_ONLY IF_EXISTS
 
 
   // Container in throne of Fallen Temple area
@@ -687,6 +704,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_name           = "A7!Container1"
       fj_trap_script    = "GNT2014"   // disease and damage
     END
+  BUT_ONLY IF_EXISTS
 
   // Container in destroyed Idol of Fallen Temple area
   COPY_EXISTING ~ar8012.are~ ~override~
@@ -715,6 +733,7 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_name           = "A7!Altar1"
       fj_trap_script    = "GNT2619"
     END
+  BUT_ONLY IF_EXISTS
 
   // Lonelywood: stone piles
   COPY_EXISTING ~ar9100.are~ ~override~
@@ -768,4 +787,5 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
       fj_structure_type = "container"
       fj_name           = "A7!Ground2"
     END
+  BUT_ONLY IF_EXISTS
 END

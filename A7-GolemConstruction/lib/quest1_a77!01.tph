@@ -42,6 +42,7 @@ COMPILE ~%MOD_FOLDER%/scripts/a77!01.baf~
 
 COPY_EXISTING ~spunholy.vvc~ ~override/a7!chal.vvc~
   WRITE_ASCII 0x78 ~EFF_P70~ (8)
+BUT_ONLY IF_EXISTS
 
 // cloud spell
 ADD_PROJECTILE ~%MOD_FOLDER%/spells/a7!mzcl.pro~

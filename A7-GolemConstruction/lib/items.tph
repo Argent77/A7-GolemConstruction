@@ -214,6 +214,7 @@ ACTION_IF (GAME_IS_SOD OR GAME_IS_EET) BEGIN
         SET idx = numTriggers
       END
     END
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -275,6 +276,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
           SET idx = numTriggers
         END
       END
+    BUT_ONLY IF_EXISTS
   END
 END
 
@@ -338,6 +340,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
         SET found -= 1
       END
     END
+  BUT_ONLY IF_EXISTS
 END
 
 
@@ -619,7 +622,7 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
         TEXT_SPRINT script ~A7!DEMO2~
         WRITE_ASCIIE SCRIPT_OVERRIDE ~%script%~ #8
       END
-    BUT_ONLY
+    BUT_ONLY IF_EXISTS
 
     // getting dying conditions
     OUTER_TEXT_SPRINT condition ~~
@@ -633,6 +636,7 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
             END
             ~\0~
         END
+      BUT_ONLY IF_EXISTS
     END
     ACTION_IF (~%condition%~ STRING_EQUAL ~~) BEGIN
       // using default condition as fallback solution

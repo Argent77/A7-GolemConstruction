@@ -4,7 +4,7 @@ ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
   // Fixing stronghold golems
   COPY_EXISTING ~kpgol02.cre~ ~override~
     WRITE_ASCII DEATHVAR ~kpgol02~ #32
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
 
   // Flesh Golem existence check
 <<<<<<<< .../inlined/a7!glkp1.baf
@@ -166,5 +166,6 @@ END
       fj_cre_resref     = "A7!GLIR2"
       fj_bcs_override   = "A7!GLKP4"
     END
+  BUT_ONLY IF_EXISTS
 
 END
