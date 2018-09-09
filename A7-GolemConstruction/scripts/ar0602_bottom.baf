@@ -6,6 +6,7 @@ IF
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
+    SetGlobal("A7!GolemAbility", "GLOBAL", 1)
     ActionOverride(Player1, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player1, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player1, RemoveSpellRES("a7!glr"))
@@ -19,6 +20,7 @@ IF
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
+    SetGlobal("A7!GolemAbility", "GLOBAL", 1)
     ActionOverride(Player2, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player2, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player2, RemoveSpellRES("a7!glr"))
@@ -32,6 +34,7 @@ IF
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
+    SetGlobal("A7!GolemAbility", "GLOBAL", 1)
     ActionOverride(Player3, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player3, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player3, RemoveSpellRES("a7!glr"))
@@ -45,6 +48,7 @@ IF
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
+    SetGlobal("A7!GolemAbility", "GLOBAL", 1)
     ActionOverride(Player4, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player4, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player4, RemoveSpellRES("a7!glr"))
@@ -58,6 +62,7 @@ IF
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
+    SetGlobal("A7!GolemAbility", "GLOBAL", 1)
     ActionOverride(Player5, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player5, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player5, RemoveSpellRES("a7!glr"))
@@ -71,6 +76,7 @@ IF
   Global("A7!GolemAbility", "LOCALS", 1)
 THEN
   RESPONSE #100
+    SetGlobal("A7!GolemAbility", "GLOBAL", 1)
     ActionOverride(Player6, RemoveSpellRES("a7!smgl"))
     ActionOverride(Player6, AddSpecialAbility("a7!smgl"))
     ActionOverride(Player6, RemoveSpellRES("a7!glr"))
