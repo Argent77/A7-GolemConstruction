@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>MOD: Golem Construction for Spellcasters</title>
+    <meta name="description" content="A mod for BG:EE, BG2:EE, EET and IWD:EE that allows spellcasters to build their own golems." />
+    <meta name="keywords" content="bgee, sod, bg2ee, eet, iwdee, mod, golems" />
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        cursor: default;
+        text-align: center;
+        color: #000;
+        background-image: linear-gradient(#ccc7ba, #e8e6e1);
+        /*background-color: #ccc7ba;*/
+      }
+
+      #wrap {
+        border: 2px solid #66451f;
+        background: #e8e8e0;
+
+        text-align: left;
+        margin: 20px auto;
+        width: 80%;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        font-size: 12px;
+        color: #222;
+      }
+
+      #header {
+        text-align: center;
+        background: #e8e8e0;
+        border-bottom: 2px solid #66451f;
+        padding: 5px 0 13px 0;
+        margin: 0 auto;
+      }
+
+      #header .about {
+        margin: 7px 0 0 0;
+        padding: 0;
+        /*font-style: italic;*/
+        font-size: 120%;
+        color: #222;
+      }
+
+      #header .menu {
+        font-weight: bold;
+        margin: 0;
+      }
+
+      #header .menu a:link,
+      #header .menu a:visited {
+        color: #222;
+      }
+
+      #maindiv {
+        margin: 10px auto 0px auto;
+      }
+
+      #maindiv .content {
+        background-color: #e8e8e0;
+        padding: 0 0 25px 0;
+        position: relative;
+        display: block;
+      }
+
+      h2 {
+        display: block;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        text-align: left;
+        text-indent: 30px;
+        padding: 0px;
+        margin: 0;
+        font-size: 160%;
+      }
+
+      #maindiv p {
+        font-size: 100%;
+        font-style: normal;
+        line-height: 150%;
+        padding: 0px;
+        margin: 10px auto;
+        width: 90%;
+        display: block;
+      }
+
+      #maindiv p.boxed {
+        border-style: inset;
+        border-width: 1px;
+        border-color: #66451f;
+        margin-top: 32px;
+        padding: 6px;
+      }
+
+      #maindiv address a:link,
+      #maindiv address a:visited {
+        margin-right: 5px;
+      }
+
+      #maindiv address {
+        font-size: 95%;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        color: #bbb;
+        padding: 3px 0px 3px;
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: block;
+        text-align: right;
+      }
+
+      #maindiv .important {
+        font-size: 95%;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        text-align: left;
+        background-color: #f5f5f0;
+        border: solid 2px #888;
+        padding: 10px;
+        margin: 20px auto;
+        width: 80%;
+        line-height: 160%;
+      }
+
+      #maindiv .important::before {
+        display: none;
+      }
+
+      #maindiv .important p {
+        font-size: 100%;
+        text-indent: 0px;
+        margin: 5px 0 10px 0;
+      }
+
+      #maindiv ul {
+        margin: -10px 0 0 40px;
+        *margin-left: 65px;
+      }
+
+      #maindiv ol {
+        margin: -10px 0 0 35px;
+        *margin-left: 70px;
+      }
+
+      #maindiv .important ul {
+        margin: -10px 0 0 15px;
+      }
+
+      #maindiv .important ol {
+        margin: -10px 0 0 20px;
+      }
+
+      #maindiv ul li {
+        list-style-type: square;
+        line-height: 150%;
+      }
+
+      #maindiv ol li {
+        line-height: 150%;
+      }
+
+      #portrait {
+        float: left;
+        margin: 10px 10px 0px 30px;
+      }
+
+      .t1 {
+        font-weight: bold;
+        width: 26%;
+        text-align: right;
+        clear: right;
+        float: left;
+        *float: none;
+        *margin-left: 65px;
+        line-height: 22px;
+      }
+
+      .t2 {
+        text-align: left;
+        width: 73%;
+        float: right;
+        *float: none;
+        line-height: 22px;
+      }
+
+      .t3 {
+        font-weight: bold;
+        width: 25px;
+        float: left;
+        clear: left;
+      }
+
+      .code {
+        font-family: monospace;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 1px 2px 0px 2px;
+      }
+
+      hr {
+        margin: 10px 0 10px 0;
+        padding: 0;
+        height: 1px;
+        border: 0;
+        color: #aaa;
+        background-color: #aaa;
+      }
+
+      hr.floatfix {
+        clear: both;
+        color: #e8e8e6;
+        background-color: #e8e8e6;
+        *margin: 0;
+        *padding: 0;
+      }
+
+      h1 {
+        font-size: 250%;
+        color: #222;
+        padding: 5px 0 5px 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      h3,
+      h4,
+      h5 {
+        margin: 10px 40px 10px 40px;
+        padding: 0;
+      }
+
+      h3 {
+        font-size: 125%;
+        font-style: italic;
+      }
+
+      h4 {
+        font-size: 125%;
+      }
+
+      h5 {
+        font-size: 100%;
+      }
+
+      h6 {
+        width: 100%;
+        margin: 10px 0 15px 0;
+        text-align: left;
+        text-indent: 30px;
+        font-size: 100%;
+        font-style: italic;
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      a:link,
+      a:visited {
+        color: #804000;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: #222;
+        border-bottom: 1px solid black;
+      }
+
+      hr.divider {
+        background-color: #66451f;
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div><a name="top" id="top"></a></div>
+    <div id="wrap">
+      <div id="header">
+        <h1>Fabrication de golems pour lanceurs de sorts</h1>
+        <em>Un mod pour BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) et IWD:EE qui permet aux lanceurs de sorts de fabriquer leurs propres golems.</em>
+        <hr />
+        <p class="about"><strong>Auteur : Argent77</strong></p>
+        <p class="about">
+          <a href="http://www.shsforums.net/files/file/1219-golem-construction-for-spellcasters/">Téléchargement (SHS)</a> &#8226;
+          <a href="https://github.com/Argent77/A7-GolemConstruction/releases/latest">Téléchargement (GitHub)</a> &#8226;
+          <a href="http://www.shsforums.net/forum/652-golem-construction-ee/">Discussion (SHS)</a> &#8226;
+          <a href="https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters">Discussion (Beamdog)</a> &#8226;
+          <a href="https://github.com/Argent77/A7-GolemConstruction">Projet</a> &#8226;
+          Version : 5.4
+        </p>
+        <hr />
+        <p class="menu">
+          <a href="#overview">Présentation</a> &middot;
+          <a href="#installation">Installation</a> &middot;
+          <a href="#component">Composants</a> &middot;
+          <a href="#credits">Crédits</a> &middot;
+          <a href="#version">Historique des versions</a>
+        </p>
+      </div>
+      <div id="maindiv">
+
+        <!-- ================== O V E R V I E W ================== -->
+        <a name="overview" id="overview"></a>
+        <div class="content">
+          <h2>Présentation</h2>
+          <p>Un mod pour BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) et IWD:EE qui permet aux lanceurs de sorts de fabriquer leurs propres golems.</p>
+          <p>Partout dans le jeu, vous rencontrez de nombreux golems de types divers et variés. Ils sont puissants, résistants et indéfectiblement loyaux à leur maître. Malheureusement, ils vous sont la plupart du temps hostiles.</p>
+          <p>Ce mod s'efforce de modifier cela. Il éparpille à travers tout Féérune plusieurs grimoires renfermant les secrets de la science de fabrication des golems. Les lire vous permettra de fabriquer vos propres golems, à condition d'être suffisamment expérimenté et de posséder tous les matériaux nécessaires. Seuls les personnages versés dans les arts des arcanes peuvent comprendre ces théories complexes.</p>
+          <p>La durée de vie des golems est théoriquement illimitée (à quelques exceptions), du moins jusqu'à leur destruction physique. Ils peuvent voyager avec le groupe à travers tous les royaumes et suivent à la lettre les ordres de leur maître.</p>
+          <hr class="floatfix" />
+          <p>Si vous avez des questions, consultez le <a href="http://www.shsforums.net/forum/652-golem-construction-ee/">forum de SHS</a> ou le <a href="https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters">forum de Beamdog</a>,. Vous pouvez télécharger la dernière version de ce mod sur le site de <a href="http://www.shsforums.net/files/file/1219-golem-construction-for-spellcasters/">SHS</a> ou sur <a href="https://github.com/Argent77/A7-GolemConstruction/releases/latest">GitHub</a>.</p>
+          <address>
+            <a href="#top">HAUT DE PAGE</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== I N S T A L L A T I O N ================== -->
+        <a name="installation" id="installation"></a>
+        <div class="content">
+          <h2>Installation</h2>
+          <p>Il s'agit d'un mod WeiDU, donc très facile à installer. Il suffit de décompresser l'archive téléchargée dans votre répertoire de jeu, d'exécuter <em>&quot;setup-A7-GolemConstruction.exe&quot;</em> (Windows) ou <em>&quot;setup-A7-GolemConstruction.command&quot;</em> (macOS), et de suivre les instructions. Il est fortement recommandé de commencer une nouvelle partie après avoir installé ce mod.</p>
+          <p>Pur le désinstaller, relancez <em>&quot;setup-A7-GolemConstruction.exe&quot;</em> ou <em>&quot;setup-A7-GolemConstruction.command&quot;</em> et suivez les instructions à l'écran.</p>
+          <p><strong>Important :</strong> Pour que l'installation fonctionne, BG:EE et BG2:EE doivent être dotés du patch v2.0 ou supérieur, et IWD:EE du patch v1.4 ou supérieur.</p>
+          <address>
+            <a href="#top">HAUT DE PAGE</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== C O M P O N E N T S ================== -->
+        <a name="component" id="component"></a>
+        <div class="content">
+          <h2>Composants</h2>
+          <hr class="floatfix" />
+          <ol style="margin-right: 50px">
+            <li><strong>Capacité de Fabrication de Golem pour lanceurs de sorts</strong> <em>(pour BG:EE, BG2:EE, EET et IWD:EE)</em><br />C'est le composant principal du mod. Il installe plusieurs manuels de fabrication de golem à travers tout Féérune. Le « Grimoire de Fabrication de Golem » est un recueil de six volumes renfermant les secrets de fabrication de différents types de golems. Chaque volume recèle une charge de puissante magie qui octroie au lecteur les capacités « Fabriquer un Golem » et « Réparer un Golem ». Après utilisation, la magie disparaît mais l'ouvrage conserve certaines informations sur la fabrication d'un type de golem spécifique.<br /><br />
+            Types de golems dont on peut apprendre le processus de fabrication :<br /><br />
+            <ul style="margin-left: 0px">
+              <li>Golems de chair en versions mineure, normale, majeure et parfaite.</li>
+              <li>Golems d'argile en versions mineure, normale, majeure et parfaite.</li>
+              <li>Golems de pierre en versions mineure, normale, majeure et parfaite.</li>
+              <li>Golems de fer en versions mineure, normale, majeure et parfaite.</li>
+              <li>Golems de mithril en versions mineure, normale, majeure et parfaite.</li>
+              <li>Golems d'adamantine en versions mineure, normale, majeure et parfaite <em>(non disponibles dans IWD:EE)</em>.</li>
+            </ul>
+            <br />
+			Il existerait un autre recueil mystérieux de six volumes qui traiterait de la fabrication de types de golems plus exotiques. Vous pouvez aussi passer commande de golems dans la partie BG:EE si vous trouvez les grimoires adéquats.<br /><br />
+            Chaque golem nécessite des matériaux spécifiques pour façonner son enveloppe physique, ainsi que des composants supplémentaires pour le doter de capacités spéciales selon sa version. Créer des golems parfaits est une prouesse en soi et nécessite des artefacts puissants et uniques pour finaliser leur enchantement.<br /><br />
+            La fabrication de golems prend du temps et doit être entreprise dans des lieux disposant du matériel adéquat. Dans l'extension Siege of Dragonspear, tentez votre chance dans le Bazar des Sorcelleries diverses de la Porte de Baldur, le repaire des morts-vivants sous le site de fouilles des Nains et les ruines de Kanaglym. Dans Les Ombres d'Amn, la Sphère Planaire et la maison de Jermien à Imnesvale peuvent convenir. Les prêtres peuvent fabriquer des golems d'argile dans les temples d'Athkatla s'ils en choisissent un comme quartier général. Vous pouvez aussi utiliser la Bibliothèque des magiciens élémentaristes du deuxième étage de la Tour de Garde. Dans l'extension Trône de Bhaal, votre Antichambre peut s'y prêter, à condition d'y installer le matériel nécessaire.<br />Dans IWD:EE, vous pouvez essayer le troisième niveau de l'Œil du Dragon, l'étude de Larrel dans la Main Tranchée, la Tour de Bandoth à Profondorn, la maison de Malavon dans le Bas Profondorn, la forge de Tiernon dans le glacier Morneglace (HoW) ou le bureau du second étage de la Forteresse de Maluradek (TotLM).<br /><br />
+            Les Golems peuvent obéir à des ordres simples. Pour ce faire, il suffit de leur parler (si nécessaire en utilisant le bouton Dialogue ou en appuyant sur la touche F1).<br /><br /></li>
+            <li><strong>Remplacer le Grimoire des golems original</strong> <em>(seulement pour BG2:EE et EET)</em><br />Ce composant supprime le Grimoire des golems du jeu et toutes les pages qui le complètent puisqu'ils deviennent complètement obsolètes. Il est remplacé par des objets mentionnés par les manuels de Fabrication de golems installés par ce mod.<br /><br /></li>
+            <li><strong>Améliorer l'IA des lanceurs de sorts ennemis</strong> <em>(seulement pour BG2:EE et EET)</em><br />Ce composant améliore l'IA de base des magiciens et des prêtres, de façon à ce qu'ils essaient d'employer des mesures beaucoup plus efficaces contre les golems. Ils resteront toujours limités à la liste de leurs sorts mémorisés, à une exception. Les lanceurs de sorts de haut niveau auront accès à une capacité de haut niveau choisie au hasard.<br /><br /></li>
+            <li><strong>Des golems pour les lanceurs de sorts ennemis</strong> <em>(for BG:SoD, BG2:EE and EET)</em><br />Ce composant ajoute un ou plusieurs serviteurs golems à certains magiciens ennemis pour les aider à « survivre un peu plus longtemps ». Les types et les versions des golems sont déterminés de manière aléatoire à l'installation.<br /><br /></li>
+            <li><strong>Une plus grande diversité de types de golems ennemis</strong> <em>(pour BG:SoD, BG2:EE et EET)</em><br />Ce composant diversifie le type de golems ennemis que vous pouvez rencontrer dans le jeu. Son installation peut rendre certaines rencontres bien plus dangereuses. Les golems utiliseront aussi leurs capacités spéciales de manière plus efficace.<br /><br /></li>
+            <li><strong>Les golems de la Forteresse du guerrier ont une chance de vous servir</strong> <em>(seulement pour BG2:EE et EET)</em><br />Ce composant introduit la possibilité qu'un golem de la chapelle, ou plus, ayant survécu à la libération du château, vous serve si vous acceptez de devenir le seigneur du Château de'Arnise. Vous les trouverez dans la chapelle du premier étage, derrière les portes secrètes.<br /><br />
+            <ul style="margin-left: 0px">
+              <li>50 % de chance pour un golem de chair si au moins l'un d'eux survit.</li>
+              <li>33 % de chance pour un golem de pierre si au moins l'un d'eux survit.</li>
+              <li>33 % de chance pour le golem d'argile s'il survit.</li>
+              <li>15 % de chance pour le golem de fer s'il survit.</li>
+            </ul><br /></li>
+            <li><strong>Rendre les golems vulnérables aux effets de certains sorts</strong> <em>(pour BG:SoD, BG2:EE, EET et IWD:EE)</em><br />Ce composant modifie un certain nombre de sorts afin qu'ils puissent affecter des types de golems spécifiques d'une manière différente et parfois inattendue. Certains sorts peuvent causer des effets nocifs spéciaux alors que d'autres améliorent ou même changent la nature des golems. Consultez le fichier « golem_information-french.txt » pour en savoir plus.<br /><br /></li>
+            <li><strong>Réduire les résistances et l'immunité aux armes des golems fabriqués</strong> <em>(pour BG:SoD, BG2:EE et EET)</em><br />Il est difficile de toucher les golems en raison de leur immunité aux armes magiques au bonus élevé et de leur résistance importante à certains types de dégâts, et ceci même dans les dernières parties  du jeu. Ce composant atténue la puissance des golems fabriqués en réduisant leurs immunités innées aux armes magiques (généralement d'un niveau, parfois deux) ainsi que leurs diverses résistances à la magie, aux éléments et aux dégâts physiques.<br /><br /></li>
+            <li><strong>Identifier tous les objets du module</strong> <em>(pour tous les jeux supportés)</em><br />Ce composant identifie tous les objets installés par ce mod, ce qui inclue les Grimoires de fabrication de golem ainsi que les composants spéciaux nécessaires à la fabrication de golems parfaits.<br /><br /></li>
+            <li><strong>Ajouter la capacité « Téléportation » aux golems</strong> <em>(pour tous les jeux supportés)</em><br />Ce composant dote tous vos golems serviteurs de la capacité « Téléportation ». Elle leur permet de « sauter » instantanément à côté d'un membre du groupe se trouvant dans son champ de vision, mais uniquement lorsqu'aucun ennemi n'est en vue. La téléportation a été essentiellement conçue comme un moyen de franchir des passages étroits, puisque plusieurs types de golem ont besoin de plus d'espace pour se déplacer que les membres du groupe. Cette capacité était intégrée dans le composant principal dans les versions antérieures du mod.<br /><br /></li>
+          </ol>
+          <h4>Détails</h4>
+          <p>Consultez le fichier « golem_information-french.txt » dans le répertoire « readme ». Il fournit des informations sur le niveau minimum requis et les matériaux nécessaires pour créer chaque type de golem, ainsi qu'un détail des caractéristiques, compétences et capacités de chaque golem. Par ailleurs, vous trouverez des informations spécifiques pour IWD:EE dans le fichier « golem_information-iwdee-french.txt ».</p>
+          <address>
+            <a href="#top">HAUT DE PAGE</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== C R E D I T S ================== -->
+        <a name="credits" id="credits"></a>
+        <div class="content">
+          <h2>Crédits</h2>
+          <p><strong>Writing, coding &amp; testing:</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
+          <p><strong>Polish translation:</strong> Cahir</p>
+          <p><strong>French translation:</strong> Gwendolyne</p>
+          <p><strong>Italian translation:</strong> Luke93 & Elia Danelli (translation), Aedan & improbabile (proofreading), rede9 (additional help)</p>
+          <p>Doll golem and bone doll creature animations ported from Diablo II by Blizzard Entertainment.</p>
+          <hr class="floatfix" />
+          <h5>Copyright :</h5>
+          <div class="important">
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Le mod « Fabrication de golems pour lanceurs de sorts » est publié sous licence <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+          <address>
+            <a href="#top">HAUT DE PAGE</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== V E R S I O N   H I S T O R Y ================== -->
+        <a name="version" id="version"></a>
+        <div class="content">
+          <h2>Historique des versions</h2>
+          <h6>Version 5.4:</h6>
+          <ul>
+            <li>Added Italian translation (thanks to Luke93, Elia Danelli, Aedan, improbabile and rede9)</li>
+            <li>Added teleport ability to Malavon's golems in IWD:EE</li>
+            <li>Made golems immune to imprisonment to work around a game issue</li>
+            <li>Vanilla Adamantite Golems should also use Trample ability</li>
+            <li>Fixed disabled golems in Spellhold being a target for hostile creatures</li>
+            <li>Fixed clay golem conditions for clerics in construction dialog</li>
+            <li>Fixed a minor compatibility issue in BG:EE without SoD.</li>
+            <li>Various minor bugfixes and textual fixes</li>
+          </ul>
+          <h6>Version 5.3:</h6>
+          <ul>
+            <li>Adjusted cleric level requirements for building clay golems</li>
+            <li>Cleric Stronghold quests don't interfere with golem construction anymore</li>
+            <li>Made golem slow and haste more compatible with Spell Revisions</li>
+            <li>Improved combat scripts: enemy mages should not use Energy Blades against clay golems</li>
+            <li>Several textual fixes</li>
+          </ul>
+          <h6>Version 5.2:</h6>
+          <ul>
+            <li>Made clay golem construction available to clerics</li>
+            <li>Added cleric-specific workshops to their respective temple strongholds</li>
+            <li>Fixed missing ambient sound on quest-related map</li>
+            <li>Corrected Nym's default combat script</li>
+            <li>Several spelling fixes and improvements</li>
+          </ul>
+          <h6>Version 5.1:</h6>
+          <ul>
+            <li>Added Polish translation for artifact quest</li>
+            <li>Improved component name "Identify all mod items"</li>
+            <li>Fixed a potential loophole in the artifact quest that could result in forcing the player to reload</li>
+          </ul>
+          <h6>Version 5.0:</h6>
+          <ul>
+            <li>Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems</li>
+            <li>Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)</li>
+            <li>Added new Tweaks component "Identify all items"</li>
+            <li>Added new Tweaks component "Add Teleport ability to golems"</li>
+            <li>Worked around a game bug in the dialog of Ore Merchant Jerlia</li>
+            <li>Fixed a condition when de'Arnise golems should turn hostile</li>
+            <li>Fixed incorrect names of BG1 golem manuals</li>
+            <li>Fixed spellings in French translation</li>
+          </ul>
+          <h6>Version 4.0:</h6>
+          <ul>
+            <li>Added two new golem types which can be commissioned during the BG1 part of the game</li>
+            <li>Added mod support for pure BG:EE installations (without SoD)</li>
+            <li>Added "Spell Revisions" compatibility</li>
+            <li>Fixed a compatibility issue with SCS</li>
+            <li>Several minor fixes and improvements</li>
+          </ul>
+          <h6>Version 3.1:</h6>
+          <ul>
+            <li>Fixed incorrect path to IWDEE-specific lines of text from English to the selected language</li>
+          </ul>
+          <h6>Version 3.0:</h6>
+          <ul>
+            <li>Added content for IWD:EE</li>
+            <li>Added new Tweaks component "Make golems vulnerable to specific spell effects"</li>
+            <li>Added new Tweaks component "Reduce weapon immunities and resistances for constructed golems"</li>
+            <li>Added new spell "Banish Golem Spirit"</li>
+            <li>Added German voice files for Nym</li>
+            <li>Added script fixer to construction dialog in case of problems with max. number of golem followers</li>
+            <li>Fixed stats and attributes of several golem types and variants</li>
+          </ul>
+          <h6>Version 2.4:</h6>
+          <ul>
+            <li>Added French translation (big thanks to Gwendolyne)</li>
+            <li>Added new creature animations for Flesh Golems</li>
+            <li>Added option of listing learned golem types to construction dialog</li>
+            <li>Added customized ground icons for a number of items</li>
+            <li>Worked around an issue of not having a weapon equipped after being released from Imprisonment</li>
+            <li>Fixed a bug which removed yellow tint from enemy brain golems after death</li>
+            <li>Traified two remaining dialog lines</li>
+            <li>More fixes and minor improvements</li>
+          </ul>
+          <h6>Version 2.3:</h6>
+          <ul>
+            <li>Improved creature animation for Brain Golems</li>
+            <li>Rebalanced level requirements for building golems and level adjustments for bards and thieves</li>
+            <li>Fixed duplicate reply options in golem construction dialog when used by mage/thief dual or multiclasses</li>
+            <li>Improved level checks for constructing golems which provides better support for mage/thief class combinations</li>
+            <li>Fixed incorrect mage level check for perfect adamantite golems</li>
+          </ul>
+          <h6>Version 2.2:</h6>
+          <ul>
+            <li>Added German translation
+            <li>Added Polish translation (big thanks to Cahir)</li>
+            <li>Thieves with UAI can also build golems (using Bard level requirements)</li>
+            <li>Rebalanced golem building requirements</li>
+            <li>Minor adjustments of golem stats</li>
+            <li>Improved overall EET compatibility</li>
+            <li>Improved basic golem AI</li>
+            <li>Adapted previously hardcoded strings regarding familiars not allowed to execute specific actions</li>
+            <li>Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA</li>
+            <li>Fixed a bug regarding random treasures found in containers which sometimes contained unremovable items</li>
+            <li>Fixed an issue which didn't properly keep track of the number of active golems</li>
+            <li>Fixed the golem removal script at the end of the SoD plot which had serious side effects in later campaigns in EET</li>
+            <li>Fixed accidental removal of a plot item in WK if "Replace original Golem Manual" tweak have been installed</li>
+            <li>Fixed enemy golem behavior if "Golems for enemy spellcasters" or "Greater variety of enemy golem types" tweaks have been installed</li>
+            <li>Several textual fixes and updates</li>
+          </ul>
+          <h6>Version 2.1:</h6>
+          <ul>
+            <li>Removed Dragonspear Castle golems from "Greater variety of enemy golem types" tweak because of scripting issues</li>
+            <li>Made item import in SoA more compatible</li>
+            <li>Minor textual fixes</li>
+          </ul>
+          <h6>Version 2.0:</h6>
+          <ul>
+            <li>Added several tweak components</li>
+            <li>Fixed missing immunities for adamantite golems</li>
+            <li>Made mod fully EET-aware</li>
+          </ul>
+          <h6>Version 1.0:</h6>
+          <ul>
+            <li>Initial release</li>
+          </ul>
+          <address>
+            <a href="#top">HAUT DE PAGE</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
