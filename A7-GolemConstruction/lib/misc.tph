@@ -529,6 +529,8 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
     PATCH_FOR_EACH name IN "Iron Golem 1" "Iron Golem 2" BEGIN
       LPF ARE_INDEX_OF_ACTOR STR_VAR name = EVAL "%name%" RET index offset END
       PATCH_IF (index >= 0) BEGIN
+        WRITE_ASCII offset ~Iron_Golem~ #32       // New script name
+        WRITE_LONG (offset + 0x28) (THIS | BIT3)  // Flag: Override script name
         WRITE_LONG (offset + 0x30) (IDS_OF_SYMBOL(~animate~ ~GOLEM_IRON_IWD~))
         WRITE_ASCII (offset + 0x80) "A7!GMIR2" #8   // CRE resource
       END
