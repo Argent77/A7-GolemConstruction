@@ -839,7 +839,7 @@ BEGIN
     // checking for existing color effects
     READ_BYTE 0x33 version
     READ_LONG 0x2c4 ofsEffects
-    READ_SHORT 0x2c8 numEffects
+    READ_LONG 0x2c8 numEffects
     SET sizeEffect = (version = 1) ? 0x108 : 0x30
     SET match = 0
     FOR (idx = 0; idx < numEffects; idx += 1) BEGIN
