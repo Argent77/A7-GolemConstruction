@@ -18,6 +18,8 @@ INT_VAR
   value     = 0   // the decimal number
   minDigits = 1   // min. number of digits in return value (not counting sign)
   prefix    = 0   // whether to return number with "0x" prefix
+  signed    = 1   // whether number is treated as a signed number
+  upperCase = 0   // whether to represent alphabetic digits in upper case
 RET
   hexNumber       // returned as string without prefix
 BEGIN
@@ -26,11 +28,11 @@ BEGIN
   OUTER_TEXT_SPRINT hexNumber ~~
   ACTION_DEFINE_ARRAY digit BEGIN ~0~ ~1~ ~2~ ~3~ ~4~ ~5~ ~6~ ~7~ ~8~ ~9~ ~a~ ~b~ ~c~ ~d~ ~e~ ~f~ END
 
-  ACTION_IF (value < 0) BEGIN
-    OUTER_SET signed = 1
+  ACTION_IF (signed && value < 0) BEGIN
+    OUTER_SET isSigned = 1
     OUTER_SET value = 0 - value
   END ELSE BEGIN
-    OUTER_SET signed = 0
+    OUTER_SET isSigned = 0
   END
 
   OUTER_WHILE (value != 0) BEGIN
@@ -44,11 +46,15 @@ BEGIN
     OUTER_TEXT_SPRINT hexNumber ~0%hexNumber%~
   END
 
+  ACTION_IF (upperCase) BEGIN
+    ACTION_TO_UPPER ~hexNumber~
+  END
+
   ACTION_IF (prefix) BEGIN
     OUTER_TEXT_SPRINT hexNumber ~0x%hexNumber%~
   END
 
-  ACTION_IF (signed) BEGIN
+  ACTION_IF (isSigned) BEGIN
     OUTER_TEXT_SPRINT hexNumber ~-%hexNumber%~
   END
 END
@@ -58,11 +64,13 @@ INT_VAR
   value     = 0
   minDigits = 1
   prefix    = 0
+  signed    = 1
+  upperCase = 0
 RET
   hexNumber
 BEGIN
   INNER_ACTION BEGIN
-    LAF TO_HEX_NUMBER INT_VAR value = value minDigits = minDigits prefix = prefix RET hexNumber END
+    LAF TO_HEX_NUMBER INT_VAR value minDigits prefix signed upperCase RET hexNumber END
   END
 END
 
