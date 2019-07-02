@@ -21,3 +21,4 @@
 @105 = ~Questa componente richiede che BG2:EE o IWD:EE siano installati.~
 @106 = ~Questa componente richiede che SoD o BG2:EE siano installati.~
 @107 = ~Questa componente richiede che SoD, BG2:EE o IWD:EE siano installati.~
+@108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".~

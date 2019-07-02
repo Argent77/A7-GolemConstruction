@@ -12,6 +12,13 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
 END
 
 
+// Turn on/off Explore Area effect of golems
+COPY ~%MOD_FOLDER%/spells/a7!vis1.spl~ ~override~
+  SAY NAME1 ~Sight On~
+COPY ~%MOD_FOLDER%/spells/a7!vis2.spl~ ~override~
+  SAY NAME1 ~Sight Off~
+
+
 // Dismiss Golem
 COPY ~%MOD_FOLDER%/spells/a7!in01.spl~ ~override~
   SAY NAME1 @20000  // Dismiss Golem

@@ -11,6 +11,7 @@ THEN
     MakeGlobal()
     ChangeEnemyAlly(Myself, FAMILIAR)
     AddFamiliar()
+    ApplySpellRES("a7!vis1", Myself)
     Continue()
 END
 
@@ -23,6 +24,7 @@ THEN
     SetGlobal("init", "LOCALS", 2)
     MakeGlobal()
     ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    ApplySpellRES("a7!vis2", Myself)
     SetGlobal("Command", "LOCALS", 2)
     SaveObjectLocation("LOCALS", "Location", Myself)
     Face(S)

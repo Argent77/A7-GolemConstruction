@@ -198,6 +198,11 @@
 @45511 = ~Geben Sie sich einen Ruck! Was kann schon groß passieren? Ich verspreche Ihnen, besonders vorsichtig zu sein.~
 
 
+// *** Ribald Barterman ***
+@45600 = ~Ich habe gehört, dass Ihr Gerätschaften zum Bau von Golems im Angebot habt. Könnt Ihr mir welche verkaufen?~
+@45601 = ~Ich fürchte, Ihr kommt dafür etwas zu spät. Ich habe mein letztes Stück erst vor wenigen Wochen verkauft. Diese Art Ausrüstung ist sehr schwer zu beschaffen, da es keine große Nachfrage gibt.~
+
+
 // *** The necromancer Arkion ***
 @46000 = ~Ich bin auf ein sonderbares Buch gestoßen, das sich anscheinend mit der Erschaffung seltsamer Konstrukte befasst. Es hört sich ziemlich grausig an, daher dachte ich, Euch könnte es interessieren.~
 @46001 = ~Ich möchte gern einen Puppengolem in Auftrag geben. Seid Ihr dazu in der Lage?~

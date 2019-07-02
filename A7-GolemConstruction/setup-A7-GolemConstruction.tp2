@@ -231,6 +231,7 @@ BEGIN @0  // Golem Construction ability for spellcasters
 
 
 BEGIN @10 // Replace original Golem Manual
+  FORBID_COMPONENT ~setup-rr.tp2~ 8 @108  // This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".
   REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE to be installed.
   GROUP @1  // Tweaks

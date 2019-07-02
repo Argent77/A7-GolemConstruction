@@ -198,6 +198,11 @@
 @45511 = ~C'mon Mr. J! What harm can be done when we try it out ourselves? I promise to be extra careful. Pretty please!~
 
 
+// *** Ribald Barterman ***
+@45600 = ~I've heard that you're dealing with equipment for golem construction. Do you have any for sale?~
+@45601 = ~I'm afraid you're a bit late. I sold my last piece just a few weeks ago. That kind of equipment is very hard to come by as there isn't much demand for it.~
+
+
 // *** The necromancer Arkion ***
 @46000 = ~I came across a curious tome that deals with the construction of some weird kind of golems. It sounds rather grisly, so I thought you might be interested.~
 @46001 = ~I'd like to commission the construction of a doll golem. Are you up to the task?~

@@ -38,6 +38,7 @@ IF
 THEN
   RESPONSE #100
     ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    ApplySpellRES("a7!vis2", Myself)
 END
 
 

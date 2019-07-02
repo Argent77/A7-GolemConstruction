@@ -15,6 +15,7 @@ THEN
     PlaySound("EFF_M07")
     RemoveFamiliar()
     ChangeEnemyAlly(Myself, NEUTRAL)
+    ApplySpellRES("a7!vis2", Myself)
 END
 
 IF
@@ -28,6 +29,7 @@ THEN
     DisplayStringHead(Myself, @100018)  // Golem has been disabled.
     PlaySound("EFF_M07")
     ChangeEnemyAlly(Myself, NEUTRAL)
+    ApplySpellRES("a7!vis2", Myself)
 END
 
 IF

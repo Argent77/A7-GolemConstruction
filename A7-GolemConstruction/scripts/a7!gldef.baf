@@ -14,6 +14,7 @@ THEN
     MakeGlobal()
     ChangeEnemyAlly(Myself, FAMILIAR)
     AddFamiliar()
+    ApplySpellRES("a7!vis1", Myself)
     SetGlobal("init", "LOCALS", 2)
   RESPONSE #1
     FaceObject(LastSummonerOf(Myself))
@@ -58,6 +59,7 @@ THEN
     MakeGlobal()
     ChangeEnemyAlly(Myself, FAMILIAR)
     AddFamiliar()
+    ApplySpellRES("a7!vis1", Myself)
     IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
     SetGlobal("init", "LOCALS", 2)
 END

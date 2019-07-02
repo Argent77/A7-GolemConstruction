@@ -13,7 +13,7 @@ IF ~Allegiance(LastTalkedToBy, PC) OR(2) Global("MasterOverride", "LOCALS", 1) N
       DO ~SetGlobal("Command", "LOCALS", 0)~ EXIT
   + ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 0) !Allegiance(Myself, FAMILIAR)~ + @45002 /* Follow me! */
-      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("CountActive", "LOCALS", 1) SetGlobal("Command", "LOCALS", 0) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar()~ EXIT
+      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("CountActive", "LOCALS", 1) SetGlobal("Command", "LOCALS", 0) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar() ApplySpellRES("a7!vis1", Myself)~ EXIT
   + ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 0) !Allegiance(Myself, FAMILIAR)~ + @45002 /* Follow me! */ + Golem.Limit.Reached
 
@@ -21,19 +21,19 @@ IF ~Allegiance(LastTalkedToBy, PC) OR(2) Global("MasterOverride", "LOCALS", 1) N
       DO ~SetGlobal("Command", "LOCALS", 1)~ EXIT
   + ~!GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 1) !Allegiance(Myself, FAMILIAR)~ + @45003 /* Follow and protect me! */
-      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("CountActive", "LOCALS", 1) SetGlobal("Command", "LOCALS", 1) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar()~ EXIT
+      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", 1) SetGlobal("CountActive", "LOCALS", 1) SetGlobal("Command", "LOCALS", 1) ChangeEnemyAlly(Myself, FAMILIAR) AddFamiliar() ApplySpellRES("a7!vis1", Myself)~ EXIT
   + ~GlobalGT("A7!GolemCount", "GLOBAL", %max_golem_count%)
      !Global("Command", "LOCALS", 1) !Allegiance(Myself, FAMILIAR)~ + @45003 /* Follow and protect me! */ + Golem.Limit.Reached
 
   + ~!Global("Command", "LOCALS", 2) !Allegiance(Myself, FAMILIAR)~ + @45004 /* Stand guard! */
       DO ~SetGlobal("Command", "LOCALS", 2) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
   + ~!Global("Command", "LOCALS", 2) Allegiance(Myself, FAMILIAR)~ + @45004 /* Stand guard! */
-      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", -1) SetGlobal("Command", "LOCALS", 2) RemoveFamiliar() ChangeEnemyAlly(Myself, GOODBUTBLUE) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
+      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", -1) SetGlobal("Command", "LOCALS", 2) RemoveFamiliar() ChangeEnemyAlly(Myself, GOODBUTBLUE) ApplySpellRES("a7!vis2", Myself) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
 
   + ~!Global("Command", "LOCALS", 3) !Allegiance(Myself, FAMILIAR)~ + @45005 /* Stand guard and defend the area! */
       DO ~SetGlobal("Command", "LOCALS", 3) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
   + ~!Global("Command", "LOCALS", 3) Allegiance(Myself, FAMILIAR)~ + @45005 /* Stand guard and defend the area! */
-      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", -1) SetGlobal("Command", "LOCALS", 3) RemoveFamiliar() ChangeEnemyAlly(Myself, GOODBUTBLUE) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
+      DO ~IncrementGlobal("A7!GolemCount", "GLOBAL", -1) SetGlobal("Command", "LOCALS", 3) RemoveFamiliar() ChangeEnemyAlly(Myself, GOODBUTBLUE) ApplySpellRES("a7!vis2", Myself) SaveObjectLocation("LOCALS", "Location", Myself) Face(S)~ EXIT
 
   ++ @45006 /* Destroy yourself! */ + Golem.3
   ++ @45007 /* Nevermind. */ EXIT

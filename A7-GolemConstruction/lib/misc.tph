@@ -239,6 +239,9 @@ END
       END
     END
 
+  // Follow up scribbled notes in Chateau Irenicus
+  COMPILE ~%MOD_FOLDER%/dialogs/ribald.d~
+
   // Use Planar Sphere as golem building workshop
   EXTEND_BOTTOM ~ar0411.bcs~ ~%MOD_FOLDER%/scripts/ar0411_bottom.baf~
 
@@ -513,8 +516,6 @@ ACTION_IF (GAME_IS_IWDEE) BEGIN
 
 
   // Make Malavon's golems available to the player
-  COPY ~%MOD_FOLDER%/spells/iwdee/a7!cfw.spl~ ~override~
-
   COPY_EXISTING ~a7!glir2.cre~ ~override/a7!gmir2.cre~
     WRITE_ASCII 0x248 "" #8 // Override script
     WRITE_ASCII 0x250 "" #8 // Class script

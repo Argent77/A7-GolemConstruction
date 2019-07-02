@@ -21,6 +21,7 @@
 @105 = ~Ce composant necessite l'installation de BG2:EE ou d'IWD:EE..~
 @106 = ~Ce composant necessite l'installation de BG:SoD ou de BG2:EE.~
 @107 = ~Ce composant necessite l'installation de BG:SoD, BG2:EE ou d'IWD:EE.~
+@108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment"~
 
 
 // WeiDU prompts

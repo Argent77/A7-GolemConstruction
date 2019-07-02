@@ -8,6 +8,7 @@ THEN
     FaceObject(LastSummonerOf(Myself))
     MakeGlobal()
     ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    ApplySpellRES("a7!vis2", Myself)
     SetGlobal("Command", "LOCALS", 2)
     SetGlobal("init", "LOCALS", 2)
 END

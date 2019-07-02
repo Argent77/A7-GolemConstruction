@@ -17,7 +17,7 @@ THEN
     ChangeAIScript("A7!GLIR2", CLASS)
     ChangeAIScript("A7!GLDEF", OVERRIDE)
     SaveObjectLocation("LOCALS", "Location", Myself)
-    ApplySpellRES("a7!cfw", Myself)   // Apply "Clear Fog of War" effect
+    ApplySpellRES("a7!vis2", Myself)
     SetGlobal("CDLocalVar0", "LOCALS", 1)
     SetInterrupt(TRUE)
 END
@@ -43,7 +43,7 @@ THEN
     ChangeAIScript("A7!GLIR2", CLASS)
     ChangeAIScript("A7!GLDEF", OVERRIDE)
     AttackReevaluate("simulacrum", 6)
-    ApplySpellRES("a7!cfw", Myself)   // Apply "Clear Fog of War" effect
+    ApplySpellRES("a7!vis1", Myself)
     SetGlobal("CDLocalVar0", "LOCALS", 1)
     SetInterrupt(TRUE)
 END
@@ -67,7 +67,7 @@ THEN
     ChangeAIScript("A7!GLDEF", OVERRIDE)
     SaveObjectLocation("LOCALS", "Location", Myself)
     AttackReevaluate("simulacrum", 6)
-    ApplySpellRES("a7!cfw", Myself)   // Apply "Clear Fog of War" effect
+    ApplySpellRES("a7!vis2", Myself)
     SetGlobal("CDLocalVar0", "LOCALS", 1)
     SetInterrupt(TRUE)
 END
