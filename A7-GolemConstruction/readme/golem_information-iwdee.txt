@@ -658,6 +658,41 @@ You should always take good care of your golems as they may start to malfunction
 be removed by the "Repair Golem" ability.
 
 
+Upgrading golems
+================
+
+Conventional golems may gain combat experience for each opponent they have killed. If their experience reaches a certain
+threshold they can be upgraded to the next higher rank by any spellcaster who is knowledgeable in constructing golems
+of that type. The more powerful a golem variant the more experience is required to advance to the next rank.
+Perfect golem variants can't be advanced any further.
+Lesser Flesh Golems:    50 kills or more to advance to regular Flesh Golems
+Regular Flesh Golems:   100 kills or more to advance to greater Flesh Golems
+Greater Flesh Golems:   200 kills or more to advance to perfect Flesh Golems
+
+Lesser Clay Golems:     75 kills or more to advance to regular Clay Golems
+Regular Clay Golems:    150 kills or more to advance to greater Clay Golems
+Greater Clay Golems:    300 kills or more to advance to perfect Clay Golems
+
+Lesser Stone Golems:    75 kills or more to advance to regular Stone Golems
+Regular Stone Golems:   150 kills or more to advance to greater Stone Golems
+Greater Stone Golems:   300 kills or more to advance to perfect Stone Golems
+
+Lesser Iron Golems:     100 kills or more to advance to regular Iron Golems
+Regular Iron Golems:    200 kills or more to advance to greater Iron Golems
+Greater Iron Golems:    400 kills or more to advance to perfect Iron Golems
+
+Lesser Mithral Golems:  150 kills or more to advance to regular Mithral Golems
+Regular Mithral Golems: 300 kills or more to advance to greater Mithral Golems
+Greater Mithral Golems: 600 kills or more to advance to perfect Mithral Golems
+
+To perform an upgrade you'll need the required materials. The amount of materials consists of the difference between
+the new and old golem variant. There are no physical penalties applied to the caster for upgrading mithral golems.
+Talk to the golems to find out their number of kills or to initiate the upgrade process.
+
+It is also possible to upgrade golems by a wish or limited wish spell if the caster is wise enough to choose the right
+wording.
+
+
 Spells that are affecting golems in some way
 ============================================
 

@@ -1072,6 +1072,371 @@ ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
 END
 
 
+// Golem upgrade feature
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!pr.spl~ ~override~
+    SAY NAME1 @21028  // Upgrade
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 177  // Use EFF
+        parameter1 = specific_golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!dex.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 177  // Use EFF
+        parameter1 = specific_golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prcas.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prcas.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!upgr.eff~ ~override~
+
+  COPY ~%MOD_FOLDER%/spells/a7!prfl.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prflx.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!deflx.eff~ ~override~
+    WRITE_LONG 0x1c splstate_golem_flesh
+  COPY ~%MOD_FOLDER%/spells/a7!prcl.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prclx.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!declx.eff~ ~override~
+    WRITE_LONG 0x1c splstate_golem_clay
+  COPY ~%MOD_FOLDER%/spells/a7!prst.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prstx.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!destx.eff~ ~override~
+    WRITE_LONG 0x1c splstate_golem_stone
+  COPY ~%MOD_FOLDER%/spells/a7!prir.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prirx.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!deirx.eff~ ~override~
+    WRITE_LONG 0x1c splstate_golem_iron
+  COPY ~%MOD_FOLDER%/spells/a7!prmi.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prmix.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!demix.eff~ ~override~
+    WRITE_LONG 0x1c splstate_golem_mithral
+  COPY ~%MOD_FOLDER%/spells/a7!prad.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!pradx.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!deadx.eff~ ~override~
+    WRITE_LONG 0x1c splstate_golem_adamantite
+
+  COPY ~%MOD_FOLDER%/spells/a7!prfl.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prcl.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prst.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prir.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prmi.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prad.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prflx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prclx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prstx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prirx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!prmix.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!pradx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!deflx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!declx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!destx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!deirx.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!demix.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!deadx.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT_EX
+      INT_VAR
+        enable_match_parameter1 = 1
+        enable_update_parameter1 = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter1 = 1
+        parameter1 = splstate_golem_lesser
+    END
+    LPF ALTER_SPELL_EFFECT_EX
+      INT_VAR
+        enable_match_parameter1 = 1
+        enable_update_parameter1 = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter1 = 2
+        parameter1 = splstate_golem_normal
+    END
+    LPF ALTER_SPELL_EFFECT_EX
+      INT_VAR
+        enable_match_parameter1 = 1
+        enable_update_parameter1 = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter1 = 3
+        parameter1 = splstate_golem_greater
+    END
+    LPF ALTER_SPELL_EFFECT_EX
+      INT_VAR
+        enable_match_parameter1 = 1
+        enable_update_parameter1 = 1
+        match_opcode = 326  // Apply effects list
+        match_parameter1 = 4
+        parameter1 = splstate_golem_perfect
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!prfl1.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21029)  // Upgraded to Flesh Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prfl2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21030)  // Upgraded to Greater Flesh Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prfl3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21031)  // Upgraded to Perfect Flesh Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!prcl1.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21032)  // Upgraded to Clay Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prcl2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21033)  // Upgraded to Greater Clay Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prcl3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21034)  // Upgraded to Perfect Clay Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!prst1.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21035)  // Upgraded to Stone Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prst2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21036)  // Upgraded to Greater Stone Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prst3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21037)  // Upgraded to Perfect Stone Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!prir1.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21038)  // Upgraded to Iron Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prir2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21039)  // Upgraded to Greater Iron Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prir3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21040)  // Upgraded to Perfect Iron Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!prmi1.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21041)  // Upgraded to Mithral Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prmi2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21042)  // Upgraded to Greater Mithral Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prmi3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21043)  // Upgraded to Perfect Mithral Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!prad1.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21044)  // Upgraded to Adamantite Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prad2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21045)  // Upgraded to Greater Adamantite Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!prad3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21046)  // Upgraded to Perfect Adamantite Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!defl1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!decl1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!dest1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!deir1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!demi1.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!dead1.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21047)  // Reset experience
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!defl2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21048)  // Downgraded to Lesser Flesh Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!defl3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21049)  // Downgraded to Flesh Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!defl4.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21050)  // Downgraded to Greater Flesh Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!decl2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21051)  // Downgraded to Lesser Clay Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!decl3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21052)  // Downgraded to Clay Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!decl4.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21053)  // Downgraded to Greater Clay Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!dest2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21054)  // Downgraded to Lesser Stone Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!dest3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21055)  // Downgraded to Stone Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!dest4.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21056)  // Downgraded to Greater Stone Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!deir2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21057)  // Downgraded to Lesser Iron Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!deir3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21058)  // Downgraded to Iron Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!deir4.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21059)  // Downgraded to Greater Iron Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!demi2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21060)  // Downgraded to Lesser Mithral Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!demi3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21061)  // Downgraded to Mithral Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!demi4.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21062)  // Downgraded to Greater Mithral Golem
+    END
+
+  COPY ~%MOD_FOLDER%/spells/a7!dead2.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21063)  // Downgraded to Lesser Adamantite Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!dead3.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21064)  // Downgraded to Adamantite Golem
+    END
+  COPY ~%MOD_FOLDER%/spells/a7!dead4.spl~ ~override~
+    LPF ALTER_SPELL_EFFECT
+      INT_VAR
+        match_opcode = 139  // Display string
+        parameter1 = RESOLVE_STR_REF(@21065)  // Downgraded to Greater Adamantite Golem
+    END
+
+  COMPILE ~%MOD_FOLDER%/scripts/a7!ct90.baf~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~wish.dlg~) BEGIN
+    COMPILE ~%MOD_FOLDER%/dialogs/limited_wish_upgrade.d~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~wish25.dlg~) BEGIN
+    COMPILE ~%MOD_FOLDER%/dialogs/wish_upgrade.d~
+  END
+
+  // Helper creature needed to remove materials for upgrade process from party
+  COPY ~%MOD_FOLDER%/creatures/a7!mark.cre~ ~override/a7!upgr.cre~
+    WRITE_ASCII DEATHVAR ~a7!upgr~
+
+  // Wish djinni should detect invisible golems
+  COPY_EXISTING ~wish01.cre~ ~override~
+                ~wish02.cre~ ~override~
+    LPF CRE_EFFECT_EXISTS INT_VAR opcode = 193 RET result END
+    PATCH_IF (NOT result) BEGIN
+      LPF ADD_CRE_EFFECT
+      INT_VAR
+        opcode = 193    // Invisibility detection
+        target = 1      // Self
+        parameter2 = 1  // stat value
+        timing = 1      // permanent until death
+      END
+    END
+  IF_EXISTS
+END
+
+
+// Misc. stuff
 ACTION_IF (GAME_IS_IWDEE) BEGIN
   COPY ~%MOD_FOLDER%/items/iwdee/a7!fam.itm~ ~override~
 END ELSE ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD) BEGIN

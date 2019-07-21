@@ -80,13 +80,19 @@
 @41503 = ~Dann sollt Ihr das haben. Ein Eisenbarren aus Eurem Besitz wurde in einen Adamantitbarren verwandelt.~
 @41504 = ~Euer gesamtes Eisen wird in einen Adamantitbarren verwandelt.~
 @41505 = ~Ein Eisenbarren aus Eurem Besitz wird in einen Adamantitbarren verwandelt.~
-@41506 = ~Ich wüsche mir, dass mein Eisen in Mithril verwandelt wird.~
-@41507 = ~Ich wüsche mir, dass ein Eisenbarren aus meinem Besitz in Mithril verwandelt wird.~
+@41506 = ~Ich wünsche mir, dass mein Eisen in Mithril verwandelt wird.~
+@41507 = ~Ich wünsche mir, dass ein Eisenbarren aus meinem Besitz in Mithril verwandelt wird.~
 @41508 = ~Dann sollt Ihr das haben. Euer gesamtes Eisen wurde in einen Mithrilbrocken verwandelt.~
 @41509 = ~Dann sollt Ihr das haben. Ein Eisenbarren aus Eurem Besitz wurde in einen Mithrilbrocken verwandelt.~
 @41510 = ~Euer gesamtes Eisen wird in einen Mithrilbrocken verwandelt.~
 @41511 = ~Ein Eisenbarren aus Eurem Besitz wird in einen Mithrilbrocken verwandelt.~
-
+@41512 = ~Ich wünsche mir, dass sich mein Golem verbessert.~
+@41513 = ~Ich wünsche mir, dass Geist und Körper meines Golems verbessert werden.~
+@41514 = ~Gewährt. Die Erfahrung Eures Golems wird zurückgesetzt, damit er die Möglichkeit bekommt, sich erneut zu verbessern.~
+@41515 = ~Ich habe nicht die Macht, Euren Golem weiter zu verbessern. Ihr müsst einen anderen Wunsch äußern.~
+@41516 = ~Gewährt. Ich werde Euren Golem in einen höheren Daseinszustand versetzen.~
+@41517 = ~Einen Eurer Golems herabstufen.~
+@41518 = ~Einen Eurer Golems heraufstufen.~
 
 // *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
 @42000 = ~Könnte ich das obere Geschoss nutzen, um Golems zu bauen?~
@@ -181,6 +187,10 @@
 @45010 = ~Nein.~
 @45011 = ~Der Golem wurde durch die Schutzzauber dieses Ortes deaktiviert.~
 @45012 = ~Euch können keine weiteren Golems auf einmal folgen.~
+@45013 = ~Anzahl getöteter Gegner anzeigen.~
+@45014 = ~Golem heraufstufen.~
+@45015 = ~Anzahl getöteter Gegner: <A7_GOLEMKILLS>~
+@45016 = ~Ihr bereitet den Golem für das Heraufstufen vor...~
 
 
 // *** Jermien of Imnesvale ***

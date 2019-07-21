@@ -32,6 +32,8 @@ The construction of golems takes time and has to be done in places with the righ
 
 In IWD:EE you can try the third level of Dragon's Eye, Larrel's Study of the Severed Hand, Bandoth's Tower in Dorn's Deep, Malavon's Home in Lower Dorn's Deep or Tiernon's Forge in the Gloomfrost Mountains (HoW).
 
+Conventional golems may gain combat experience for each opponent they have killed. With enough experience accumulated they can be upgraded to a higher rank.
+
 ### 2. Tweaks
 
 #### 2.1. Replace original Golem Manual (for BG2:EE and EET only)

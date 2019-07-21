@@ -672,6 +672,42 @@ Gebt immer gut auf eure Golems acht. Wenn sie zu schwer beschädigt sind, könne
 Diese Fehlfunktionen können aber zusammen mit dem Schaden mit der Fähigkeit "Golem reparieren" beseitigt werden.
 
 
+Golems verbessern
+=================
+
+Herkömmliche Golems können für jeden Gegner, den sie getötet haben, Kampferfahrung sammeln. Wenn sie einen bestimmten
+Erfahrungsreichtum angesammelt haben, dann können sie von Zauberkundigen mit Kenntnissen im Bau des entsprechenden
+Golemtyps in den nächsthöheren Rang heraufgestuft werden. Je mächtiger eine Golemvariante ist, umso mehr Erfahrung wird
+benötigt, um in den nächsthöheren Rang aufzusteigen. Perfekte Golemvarianten können nicht weiter verbessert werden.
+Niederer Fleischgolem: 50 oder mehr getötete Gegner, um zum Fleischgolem aufzusteigen
+Normaler Fleischgolem: 100 oder mehr getötete Gegner, um zum höheren Fleischgolem aufzusteigen
+Höherer Fleischgolem:  200 oder mehr getötete Gegner, um zum perfekten Fleischgolem aufzusteigen
+
+Niederer Lehmgolem:    75 oder mehr getötete Gegner, um zum Lehmgolem aufzusteigen
+Normaler Lehmgolem:    150 oder mehr getötete Gegner, um zum höheren Lehmgolem aufzusteigen
+Höherer Lehmgolem:     300 oder mehr getötete Gegner, um zum perfekten Lehmgolem aufzusteigen
+
+Niederer Steingolem:   75 oder mehr getötete Gegner, um zum Steingolem aufzusteigen
+Normaler Steingolem:   150 oder mehr getötete Gegner, um zum höheren Steingolem aufzusteigen
+Höherer Steingolem:    300 oder mehr getötete Gegner, um zum perfekten Steingolem aufzusteigen
+
+Niederer Eisengolem:   100 oder mehr getötete Gegner, um zum Eisengolem aufzusteigen
+Normaler Eisengolem:   200 oder mehr getötete Gegner, um zum höheren Eisengolem aufzusteigen
+Höherer Eisengolem:    400 oder mehr getötete Gegner, um zum perfekten Eisengolem aufzusteigen
+
+Niederer Mithrilgolem: 150 oder mehr getötete Gegner, um zum Mithrilgolem aufzusteigen
+Normaler Mithrilgolem: 300 oder mehr getötete Gegner, um zum höheren Mithrilgolem aufzusteigen
+Höherer Mithrilgolem:  600 oder mehr getötete Gegner, um zum perfekten Mithrilgolem aufzusteigen
+
+Für das Heraufstufen eines Golems werden entsprechende Zutaten benötigt. Die Menge der Zutaten beschränkt sich auf den
+Unterschied zwischen der alten und neuen Golemvariante. Es müssen keine Erfahrungspunkte zum Heraufstufen eines
+Mithrilgolems geopfert werden. Sprecht mit den Golems, um die Anzahl der getöteten Gegner herauszufinden oder um das
+Heraufstufen einzuleiten.
+
+Es ist auch möglich, einen Golem mit Hilfe eines Wunsches oder begrenzten Wunsches zu verbessern, sofern der Anwender
+weise genug ist, den Wunsch richtig zu formulieren.
+
+
 Zaubersprüche, die spezielle Auswirkungen auf Golems haben
 ==========================================================
 

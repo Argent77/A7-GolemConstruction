@@ -83,6 +83,10 @@ Abgetrennten Hand, in Bandoths Turm von Dorntief, in Malavons Palast in Unter-Do
 Tiernons Schmiede in den Finsterfrostbergen oder im Arbeitszimmer im Obergeschoss von Schloss 
 Maluradek (TotLM) versuchen.
 
+Herkömmliche Golems sammeln mit jedem getöteten Gegner Kampferfahrung. Mit genügend Erfahrung können
+sie dann in einen höheren Golemrang heraufgestuft werden. Mehr dazu kann man im Abschnitt "Golems
+verbessern" der Datei "golem_information-german.txt" nachlesen.
+
 Golems folgen einfachen Befehlen. Redet mit dem Golem, um neue Befehle zu geben. Man kann das Reden 
 mit der Reden-Schaltfläche (oder F1) erzwingen.
 

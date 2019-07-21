@@ -344,6 +344,13 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
 END
 
 
+// Kill-tracking effect
+ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  COPY ~%MOD_FOLDER%/spells/a7!wpkl.spl~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpkl.eff~ ~override~
+       ~%MOD_FOLDER%/spells/a7!wpkl2.eff~ ~override~
+END
+
 // Flesh Golem items
 ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   COPY ~%MOD_FOLDER%/items/a7!eqfl.itm~ ~override~

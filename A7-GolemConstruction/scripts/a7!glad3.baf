@@ -44,3 +44,12 @@ THEN
     ChangeSpecifics(Myself, A7!GOLEM)
     ChangeGender(Myself, NIETHER)
 END
+
+IF
+  Global("A7!Promote", "LOCALS", 0)
+  GlobalGT("A7!KillCount", "LOCALS", 999)
+THEN
+RESPONSE #100
+  SetGlobal("A7!Promote", "LOCALS", 1)
+  Continue()
+END

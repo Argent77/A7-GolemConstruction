@@ -714,8 +714,13 @@ COPY ~%MOD_FOLDER%/spells/a7!dmg2.spl~ ~override~
 // Wish expansion
 ACTION_IF (GAME_IS_IWDEE) BEGIN
   COMPILE ~%MOD_FOLDER%/dialogs/iwdee/wishes.d~
-END ELSE ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
-  COMPILE ~%MOD_FOLDER%/dialogs/wishes.d~
+END ELSE ACTION_IF (NOT GAME_IS_BGEE) BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~wish.dlg~) BEGIN
+    COMPILE ~%MOD_FOLDER%/dialogs/limited_wish_items.d~
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~wish25.dlg~) BEGIN
+    COMPILE ~%MOD_FOLDER%/dialogs/wish_items.d~
+  END
 END
 
 

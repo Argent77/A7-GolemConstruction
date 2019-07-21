@@ -86,6 +86,13 @@
 @41509 = ~It is done, master. One iron bar in your possession has been turned into a single piece of mithral.~
 @41510 = ~Turn all your iron into a single piece of mithral.~
 @41511 = ~Turn a single piece of iron into mithral.~
+@41512 = ~I wish for my golem to improve.~
+@41513 = ~I wish for my golem to improve in mind and body.~
+@41514 = ~Granted. Your golem's experience will be reset, so that it gets the chance to improve again.~
+@41515 = ~I do not have the power to enhance your golem any further. You will have to choose another wish.~
+@41516 = ~Granted. I will promote your golem to a higher state of being.~
+@41517 = ~Demote one of your golems.~
+@41518 = ~Promote one of your golems.~
 
 
 // *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
@@ -181,6 +188,10 @@
 @45010 = ~No.~
 @45011 = ~The golem has been rendered inactive by the protective magics of this place.~
 @45012 = ~You cannot have any more golems following you.~
+@45013 = ~Show number of killed opponents.~
+@45014 = ~Upgrade golem.~
+@45015 = ~Opponents killed by this creature: <A7_GOLEMKILLS>~
+@45016 = ~You prepare the golem for the upgrade process...~
 
 
 // *** Jermien of Imnesvale ***

@@ -4,6 +4,7 @@
 // There is a 4% chance of the golem to turn hostile for 1d4 rounds
 IF
   Global("init", "LOCALS", 0)
+  Global("A7!GolemUpgradeMode", "GLOBAL", 0)
 THEN
   RESPONSE #96
     IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
@@ -62,6 +63,53 @@ THEN
     ApplySpellRES("a7!vis1", Myself)
     IncrementGlobal("A7!GolemCount", "GLOBAL", 1)
     SetGlobal("init", "LOCALS", 2)
+END
+
+// No mind battle if golem is created by an upgrade operation
+IF
+  Global("init", "LOCALS", 0)
+  Global("A7!GolemUpgradeMode", "GLOBAL", 1)
+  Switch("A7!GolemUpgradeCommand", "GLOBAL")
+THEN
+  RESPONSE #0
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, FAMILIAR)
+    AddFamiliar()
+    ApplySpellRES("a7!vis1", Myself)
+    SetGlobal("Command", "LOCALS", 0)
+    Continue()
+  RESPONSE #1
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, FAMILIAR)
+    AddFamiliar()
+    ApplySpellRES("a7!vis1", Myself)
+    SetGlobal("Command", "LOCALS", 1)
+    Continue()
+  RESPONSE #2
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    Face(S)
+    SetGlobal("Command", "LOCALS", 2)
+    Continue()
+  RESPONSE #3
+    MakeGlobal()
+    ChangeEnemyAlly(Myself, GOODBUTBLUE)
+    SaveObjectLocation("LOCALS", "Location", Myself)
+    Face(S)
+    SetGlobal("Command", "LOCALS", 3)
+    Continue()
+END
+
+IF
+  Global("init", "LOCALS", 0)
+  Global("A7!GolemUpgradeMode", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7!GolemUpgradeMode", "GLOBAL", 0)
+    SetGlobal("A7!GolemUpgradeCommand", "GLOBAL", 0)
+    SetGlobal("init", "LOCALS", 2)
+    Continue()
 END
 
 // Dismiss Golem has been triggered

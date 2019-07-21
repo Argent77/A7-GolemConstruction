@@ -1,0 +1,230 @@
+// *** Golem upgrade cutscene ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(LastTalkedToBy)
+    ForceSpellRES("A7!PR", LastTalkedToBy(Myself))
+    Wait(12)
+    SetGlobal("A7!UpgradeCost", "GLOBAL", 0)
+    ActionOverride("a7!upgr", DestroySelf())
+    EndCutSceneMode()
+END
+
+// Dummy block: seems to be necessary or global isn't properly evaluated (game bug?)
+/*
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 0)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+END
+*/
+
+// Lesser Flesh Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!body",1)
+    DestroyItem("a7!body")
+END
+
+// Flesh Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 2)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!body",2)
+    DestroyItem("a7!body")
+    DestroyItem("a7!body")
+    TakePartyItemNum("scrl97",1)
+    DestroyItem("scrl97")
+END
+
+// Greater Flesh Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 3)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!glfl",1)
+    DestroyItem("a7!glfl")
+END
+
+// Lesser Clay Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 11)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!clay",1)
+    DestroyItem("a7!clay")
+    TakePartyItemNum("scrl1h",1)
+    DestroyItem("scrl1h")
+END
+
+// Clay Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 12)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!clay",2)
+    DestroyItem("a7!clay")
+    DestroyItem("a7!clay")
+END
+
+// Greater Clay Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 13)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!glcl",1)
+    DestroyItem("a7!glcl")
+END
+
+// Lesser Stone Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 21)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!ston",1)
+    DestroyItem("a7!ston")
+    TakePartyItemNum("scrl1o",1)
+    DestroyItem("scrl1o")
+END
+
+// Stone Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 22)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!ston",2)
+    DestroyItem("a7!ston")
+    DestroyItem("a7!ston")
+END
+
+// Greater Stone Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 23)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!glst",1)
+    DestroyItem("a7!glst")
+END
+
+// Lesser Iron Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 31)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!iron",1)
+    DestroyItem("a7!iron")
+    TakePartyItemNum("scrl2e",1)
+    DestroyItem("scrl2e")
+END
+
+// Iron Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 32)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!iron",2)
+    DestroyItem("a7!iron")
+    DestroyItem("a7!iron")
+END
+
+// Greater Iron Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 33)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!glir",1)
+    DestroyItem("a7!glir")
+END
+
+// Lesser Mithral Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 41)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!mith",1)
+    DestroyItem("a7!mith")
+END
+
+// Mithral Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 42)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!mith",2)
+    DestroyItem("a7!mith")
+    DestroyItem("a7!mith")
+END
+
+// Greater Mithral Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 43)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!glmi",1)
+    DestroyItem("a7!glmi")
+END
+
+// Lesser Adamantite Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 51)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!adam",2)
+    DestroyItem("a7!adam")
+    DestroyItem("a7!adam")
+END
+
+// Adamantite Golem
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 52)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!adam",4)
+    DestroyItem("a7!adam")
+    DestroyItem("a7!adam")
+    DestroyItem("a7!adam")
+    DestroyItem("a7!adam")
+END
+
+// Greater Adamantite Golem (1)
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 53)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!glad1",1)
+    DestroyItem("a7!glad1")
+END
+
+// Greater Adamantite Golem (2)
+IF
+  Global("A7!UpgradeCost", "GLOBAL", 54)
+THEN
+  RESPONSE #100
+    CutSceneId("a7!upgr")
+    TakePartyItemNum("a7!glad2",1)
+    DestroyItem("a7!glad2")
+END

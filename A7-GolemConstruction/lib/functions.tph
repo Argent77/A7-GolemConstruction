@@ -398,6 +398,182 @@ END
 
 
 /**
+ * Determine whether the specified spell effect exists in the current creature.
+ * RET result   Number of spell effects matching the given search parameters.
+ */
+DEFINE_PATCH_FUNCTION CRE_EFFECT_EXISTS
+INT_VAR
+  opcode = "-1"
+RET
+  result
+BEGIN
+  SET result = 0
+  READ_ASCII 0 sig (8) NULL
+  PATCH_IF (~%sig%~ STR_EQ ~CRE V1.0~) BEGIN
+    READ_BYTE 0x33 fx_version
+    SET fx_size = fx_version = 0 ? 0x30 : 0x108
+    READ_LONG 0x2c4 ofs_fx
+    READ_LONG 0x2c8 num_fx
+    FOR (idx = 0; idx < num_fx; ++idx) BEGIN
+      SET ofs = ofs_fx + (idx * fx_size)
+      PATCH_IF (fx_version) BEGIN
+        READ_LONG (ofs + 8) value
+      END ELSE BEGIN
+        READ_SHORT ofs value
+      END
+      PATCH_IF (value = opcode) BEGIN
+        SET result += 1
+      END
+    END
+  END
+END
+
+
+/**
+ * An enhanced version of ALTER_SPELL_EFFECT, which allows to match any available effect parameters.
+ */
+DEFINE_PATCH_FUNCTION ALTER_SPELL_EFFECT_EX
+INT_VAR
+  check_globals           = 0
+  check_headers           = 1
+  header                  = 0
+  header_type             = "-1"
+  enable_match_parameter1 = 0   // whether match_parameter1 is used for a match
+  enable_match_parameter2 = 0   // whether match_parameter2 is used for a match
+  enable_match_special    = 0   // whether match_special is used for a match
+  enable_match_resource   = 0   // whether match_resource is used for a match
+  enable_update_parameter1  = 0 // whether parameter1 value should be written to the matching effect
+  enable_update_parameter2  = 0 // whether parameter2 value should be written to the matching effect
+  enable_update_special   = 0   // whether special value should be written to the matching effect
+  enable_update_resource  = 0   // whether resource value should be written to the matching effect
+  // effect fields to check (negative: do not check)
+  match_opcode            = "-1"
+  match_target            = "-1"
+  match_power             = "-1"
+  match_parameter1        = 0   // checked if enable_match_parameter1 != 0
+  match_parameter2        = 0   // checked if enable_match_parameter2 != 0
+  match_timing            = "-1"
+  match_resist_dispel     = "-1"
+  match_duration          = "-1"
+  match_probability1      = "-1"
+  match_probability2      = "-1"
+  match_dicenumber        = "-1"
+  match_dicesize          = "-1"
+  match_savingthrow       = "-1"
+  match_savebonus         = "-11" // < -10: do not check
+  match_special           = 0   // checked if enable_match_special != 0
+  // effect fields to update (-1: do not update)
+  opcode                  = "-1"
+  target                  = "-1"
+  power                   = "-1"
+  parameter1              = 0   // used if enable_update_parameter1 != 0
+  parameter2              = 0   // used if enable_update_parameter2 != 0
+  timing                  = "-1"
+  resist_dispel           = "-1"
+  duration                = "-1"
+  duration_high           = "-1"  // used if duration_high is != -1 and old duration > 5, otherwise duration is used instead
+  probability1            = "-1"
+  probability2            = "-1"
+  dicenumber              = "-1"
+  dicesize                = "-1"
+  savingthrow             = "-1"
+  savebonus               = "-11" // < -10: do not update
+  special                 = 0   // used if enable_update_special != 0
+STR_VAR
+  match_resource          = ~~  // checked if enable_match_resource != 0
+  resource                = ~~  // used if enable_update_resource != 0
+BEGIN
+  READ_ASCII 0 sig (8) NULL
+  PATCH_IF (~%sig%~ STR_EQ ~SPL V1  ~) BEGIN
+    READ_LONG 0x64 ofs_abil
+    READ_SHORT 0x68 num_abil
+    READ_LONG 0x6a ofs_fx
+    SET effects = 0
+
+    // retrieving list of global effects offsets
+    PATCH_IF (check_globals) BEGIN
+      READ_SHORT 0x6e idx_gfx
+      READ_SHORT 0x70 num_gfx
+      FOR (idx = 0; idx < num_gfx; ++idx) BEGIN
+        SET $effects(~%effects%~) = ofs_fx + (idx_gfx + idx) * 0x30
+        SET effects+= 1
+      END
+    END
+
+    // retrieving list of ability effects offsets
+    PATCH_IF (check_headers) BEGIN
+      PATCH_IF (header != 0) BEGIN
+        PATCH_IF (header > 0 && header <= num_abil) BEGIN
+          SET header -= 1
+          SET num_abil = 1
+        END ELSE BEGIN
+          SET num_abil = 0
+        END
+      END
+      FOR (idx1 = header; idx1 < header + num_abil; ++idx1) BEGIN
+        SET ofs1 = ofs_abil + (idx1 * 0x28)
+        PATCH_IF (header_type < 0 || header_type = BYTE_AT ofs1) BEGIN
+          READ_SHORT (ofs1 + 0x1e) num_afx
+          READ_SHORT (ofs1 + 0x20) idx_afx
+          FOR (idx2 = 0; idx2 < num_afx; ++idx2) BEGIN
+            SET $effects(~%effects%~) = ofs_fx + (idx_afx + idx2) * 0x30
+            SET effects += 1
+          END
+        END
+      END
+    END
+
+    // altering effects
+    FOR (idx = 0; idx < effects; ++idx) BEGIN
+      SET ofs = $effects(~%idx%~)
+      SET match = 1
+      SET match = match && (NOT enable_match_parameter1 || match_parameter1 = LONG_AT (ofs + 0x04))
+      SET match = match && (NOT enable_match_parameter2 || match_parameter2 = LONG_AT (ofs + 0x08))
+      SET match = match && (NOT enable_match_special || match_special = LONG_AT (ofs + 0x2c))
+      SET match = match && (match_opcode < 0 || match_opcode = SHORT_AT ofs)
+      SET match = match && (match_target < 0 || match_target = BYTE_AT (ofs + 0x02))
+      SET match = match && (match_power < 0 || match_power = BYTE_AT (ofs + 0x03))
+      SET match = match && (match_timing < 0 || match_timing = BYTE_AT (ofs + 0x0c))
+      SET match = match && (match_resist_dispel < 0 || match_resist_dispel = BYTE_AT (ofs + 0x0d))
+      SET match = match && (match_duration < 0 || match_duration = LONG_AT (ofs + 0x0e))
+      SET match = match && (match_probability1 < 0 || match_probability1 = BYTE_AT (ofs + 0x12))
+      SET match = match && (match_probability2 < 0 || match_probability2 = BYTE_AT (ofs + 0x13))
+      SET match = match && (match_dicenumber < 0 || match_dicenumber = LONG_AT (ofs + 0x1c))
+      SET match = match && (match_dicesize < 0 || match_dicesize = LONG_AT (ofs + 0x20))
+      SET match = match && (match_savingthrow < 0 || match_savingthrow = LONG_AT (ofs + 0x24))
+      SET match = match && (match_savebonus < "-10" || match_savebonus = LONG_AT (ofs + 0x28))
+      PATCH_IF (match && enable_match_resource) BEGIN
+        READ_ASCII (ofs + 0x14) res (8) NULL
+        SET match = ~%match_resource%~ STR_EQ ~%res%~
+      END
+      PATCH_IF (match) BEGIN
+        WRITE_SHORT (ofs) (opcode >= 0) ? opcode : THIS
+        WRITE_BYTE (ofs + 0x02) (target >= 0) ? target : THIS
+        WRITE_BYTE (ofs + 0x03) (power >= 0) ? power : THIS
+        WRITE_LONG (ofs + 0x04) enable_update_parameter1 ? parameter1 : THIS
+        WRITE_LONG (ofs + 0x08) enable_update_parameter2 ? parameter2 : THIS
+        WRITE_BYTE (ofs + 0x0c) (timing >= 0) ? timing : THIS
+        WRITE_BYTE (ofs + 0x0d) (resist_dispel >= 0) ? resist_dispel : THIS
+        PATCH_IF (duration_high >= 0 && LONG_AT (ofs + 0x0e) > 5) BEGIN
+          WRITE_LONG (ofs + 0x0e) duration_high
+        END ELSE BEGIN
+          WRITE_LONG (ofs + 0x0e) (duration >= 0) ? duration : THIS
+        END
+        WRITE_BYTE (ofs + 0x12) (probability1 >= 0) ? probability1 : THIS
+        WRITE_BYTE (ofs + 0x13) (probability2 >= 0) ? probability2 : THIS
+        PATCH_IF (enable_update_resource) BEGIN WRITE_ASCIIE (ofs + 0x14) ~%resource%~ (8) END
+        WRITE_LONG (ofs + 0x1c) (dicenumber >= 0) ? dicenumber : THIS
+        WRITE_LONG (ofs + 0x20) (dicesize >= 0) ? dicesize : THIS
+        WRITE_LONG (ofs + 0x24) (savingthrow >= 0) ? savingthrow : THIS
+        WRITE_LONG (ofs + 0x28) (savebonus >= "-10") ? savebonus : THIS
+        WRITE_LONG (ofs + 0x2c) enable_update_special ? special : THIS
+      END
+    END
+  END
+END
+
+
+/**
  * Creates a spell which contains all externalized wild surge effects.
  * STR_VAR resName    Name of the resulting spell (without extension).
  * STR_VAR resDefault Name of the default spell when no externalized resource is available or spell is cast successfully.
