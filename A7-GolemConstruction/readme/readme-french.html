@@ -5,277 +5,7 @@
     <title>MOD: Golem Construction for Spellcasters</title>
     <meta name="description" content="A mod for BG:EE, BG2:EE, EET and IWD:EE that allows spellcasters to build their own golems." />
     <meta name="keywords" content="bgee, sod, bg2ee, eet, iwdee, mod, golems" />
-    <style type="text/css">
-      body {
-        margin: 0;
-        padding: 0;
-        cursor: default;
-        text-align: center;
-        color: #000;
-        background-image: linear-gradient(#ccc7ba, #e8e6e1);
-        /*background-color: #ccc7ba;*/
-      }
-
-      #wrap {
-        border: 2px solid #66451f;
-        background: #e8e8e0;
-
-        text-align: left;
-        margin: 20px auto;
-        width: 80%;
-        font-family: Verdana, Tahoma, Arial, sans-serif;
-        font-size: 12px;
-        color: #222;
-      }
-
-      #header {
-        text-align: center;
-        background: #e8e8e0;
-        border-bottom: 2px solid #66451f;
-        padding: 5px 0 13px 0;
-        margin: 0 auto;
-      }
-
-      #header .about {
-        margin: 7px 0 0 0;
-        padding: 0;
-        /*font-style: italic;*/
-        font-size: 120%;
-        color: #222;
-      }
-
-      #header .menu {
-        font-weight: bold;
-        margin: 0;
-      }
-
-      #header .menu a:link,
-      #header .menu a:visited {
-        color: #222;
-      }
-
-      #maindiv {
-        margin: 10px auto 0px auto;
-      }
-
-      #maindiv .content {
-        background-color: #e8e8e0;
-        padding: 0 0 25px 0;
-        position: relative;
-        display: block;
-      }
-
-      h2 {
-        display: block;
-        font-family: Verdana, Tahoma, Arial, sans-serif;
-        text-align: left;
-        text-indent: 30px;
-        padding: 0px;
-        margin: 0;
-        font-size: 160%;
-      }
-
-      #maindiv p {
-        font-size: 100%;
-        font-style: normal;
-        line-height: 150%;
-        padding: 0px;
-        margin: 10px auto;
-        width: 90%;
-        display: block;
-      }
-
-      #maindiv p.boxed {
-        border-style: inset;
-        border-width: 1px;
-        border-color: #66451f;
-        margin-top: 32px;
-        padding: 6px;
-      }
-
-      #maindiv address a:link,
-      #maindiv address a:visited {
-        margin-right: 5px;
-      }
-
-      #maindiv address {
-        font-size: 95%;
-        font-style: normal;
-        font-weight: bold;
-        text-decoration: none;
-        color: #bbb;
-        padding: 3px 0px 3px;
-        margin: 0px;
-        width: 100%;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        display: block;
-        text-align: right;
-      }
-
-      #maindiv .important {
-        font-size: 95%;
-        font-family: Verdana, Tahoma, Arial, sans-serif;
-        text-align: left;
-        background-color: #f5f5f0;
-        border: solid 2px #888;
-        padding: 10px;
-        margin: 20px auto;
-        width: 80%;
-        line-height: 160%;
-      }
-
-      #maindiv .important::before {
-        display: none;
-      }
-
-      #maindiv .important p {
-        font-size: 100%;
-        text-indent: 0px;
-        margin: 5px 0 10px 0;
-      }
-
-      #maindiv ul {
-        margin: -10px 0 0 40px;
-        *margin-left: 65px;
-      }
-
-      #maindiv ol {
-        margin: -10px 0 0 35px;
-        *margin-left: 70px;
-      }
-
-      #maindiv .important ul {
-        margin: -10px 0 0 15px;
-      }
-
-      #maindiv .important ol {
-        margin: -10px 0 0 20px;
-      }
-
-      #maindiv ul li {
-        list-style-type: square;
-        line-height: 150%;
-      }
-
-      #maindiv ol li {
-        line-height: 150%;
-      }
-
-      #portrait {
-        float: left;
-        margin: 10px 10px 0px 30px;
-      }
-
-      .t1 {
-        font-weight: bold;
-        width: 26%;
-        text-align: right;
-        clear: right;
-        float: left;
-        *float: none;
-        *margin-left: 65px;
-        line-height: 22px;
-      }
-
-      .t2 {
-        text-align: left;
-        width: 73%;
-        float: right;
-        *float: none;
-        line-height: 22px;
-      }
-
-      .t3 {
-        font-weight: bold;
-        width: 25px;
-        float: left;
-        clear: left;
-      }
-
-      .code {
-        font-family: monospace;
-        border-width: 1px;
-        border-color: black;
-        border-style: solid;
-        padding: 1px 2px 0px 2px;
-      }
-
-      hr {
-        margin: 10px 0 10px 0;
-        padding: 0;
-        height: 1px;
-        border: 0;
-        color: #aaa;
-        background-color: #aaa;
-      }
-
-      hr.floatfix {
-        clear: both;
-        color: #e8e8e6;
-        background-color: #e8e8e6;
-        *margin: 0;
-        *padding: 0;
-      }
-
-      h1 {
-        font-size: 250%;
-        color: #222;
-        padding: 5px 0 5px 0;
-        margin: 0;
-        width: 100%;
-      }
-
-      h3,
-      h4,
-      h5 {
-        margin: 10px 40px 10px 40px;
-        padding: 0;
-      }
-
-      h3 {
-        font-size: 125%;
-        font-style: italic;
-      }
-
-      h4 {
-        font-size: 125%;
-      }
-
-      h5 {
-        font-size: 100%;
-      }
-
-      h6 {
-        width: 100%;
-        margin: 10px 0 15px 0;
-        text-align: left;
-        text-indent: 30px;
-        font-size: 100%;
-        font-style: italic;
-        padding-top: 1px;
-        padding-bottom: 1px;
-      }
-
-      a:link,
-      a:visited {
-        color: #804000;
-        font-weight: bold;
-        text-decoration: none;
-      }
-
-      a:hover,
-      a:active {
-        color: #222;
-        border-bottom: 1px solid black;
-      }
-
-      hr.divider {
-        background-color: #66451f;
-        margin-top: 0px;
-      }
-    </style>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -341,10 +71,10 @@
         <div class="content">
           <h2>Composants</h2>
           <hr class="floatfix" />
-          <ol style="margin-right: 50px">
+          <ol style="margin-right: 3rem">
             <li><strong>Capacité de Fabrication de Golem pour lanceurs de sorts</strong> <em>(pour BG:EE, BG2:EE, EET et IWD:EE)</em><br />C'est le composant principal du mod. Il installe plusieurs manuels de fabrication de golem à travers tout Féérune. Le « Grimoire de Fabrication de Golem » est un recueil de six volumes renfermant les secrets de fabrication de différents types de golems. Chaque volume recèle une charge de puissante magie qui octroie au lecteur les capacités « Fabriquer un Golem » et « Réparer un Golem ». Après utilisation, la magie disparaît mais l'ouvrage conserve certaines informations sur la fabrication d'un type de golem spécifique.<br /><br />
             Types de golems dont on peut apprendre le processus de fabrication :<br /><br />
-            <ul style="margin-left: 0px">
+            <ul style="margin-left: 0">
               <li>Golems de chair en versions mineure, normale, majeure et parfaite.</li>
               <li>Golems d'argile en versions mineure, normale, majeure et parfaite.</li>
               <li>Golems de pierre en versions mineure, normale, majeure et parfaite.</li>
@@ -362,7 +92,7 @@
             <li><strong>Des golems pour les lanceurs de sorts ennemis</strong> <em>(for BG:SoD, BG2:EE and EET)</em><br />Ce composant ajoute un ou plusieurs serviteurs golems à certains magiciens ennemis pour les aider à « survivre un peu plus longtemps ». Les types et les versions des golems sont déterminés de manière aléatoire à l'installation.<br /><br /></li>
             <li><strong>Une plus grande diversité de types de golems ennemis</strong> <em>(pour BG:SoD, BG2:EE et EET)</em><br />Ce composant diversifie le type de golems ennemis que vous pouvez rencontrer dans le jeu. Son installation peut rendre certaines rencontres bien plus dangereuses. Les golems utiliseront aussi leurs capacités spéciales de manière plus efficace.<br /><br /></li>
             <li><strong>Les golems de la Forteresse du guerrier ont une chance de vous servir</strong> <em>(seulement pour BG2:EE et EET)</em><br />Ce composant introduit la possibilité qu'un golem de la chapelle, ou plus, ayant survécu à la libération du château, vous serve si vous acceptez de devenir le seigneur du Château de'Arnise. Vous les trouverez dans la chapelle du premier étage, derrière les portes secrètes.<br /><br />
-            <ul style="margin-left: 0px">
+            <ul style="margin-left: 0">
               <li>50 % de chance pour un golem de chair si au moins l'un d'eux survit.</li>
               <li>33 % de chance pour un golem de pierre si au moins l'un d'eux survit.</li>
               <li>33 % de chance pour le golem d'argile s'il survit.</li>
@@ -394,7 +124,7 @@
           <hr class="floatfix" />
           <h5>Copyright :</h5>
           <div class="important">
-            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Le mod « Fabrication de golems pour lanceurs de sorts » est publié sous licence <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+            <a rel="license" id="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Le mod « Fabrication de golems pour lanceurs de sorts » est publié sous licence <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
           </div>
           <address>
             <a href="#top">HAUT DE PAGE</a>
