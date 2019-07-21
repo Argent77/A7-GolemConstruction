@@ -8,14 +8,6 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
 END
 
 
-// Fix: IWD:EE contains corrupted Clay Golem BAMs in v1.4.0
-ACTION_IF (GAME_IS_IWDEE) BEGIN
-  ACTION_BASH_FOR ~%MOD_FOLDER%/creatures/anim/golem_clay~ ~^.+\.bam$~ BEGIN
-    COPY ~%BASH_FOR_FILESPEC%~ ~override~
-  END
-END
-
-
 // PST Flesh Golem animation
 ACTION_IF (NOT GAME_IS_BGEE) BEGIN
   LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END

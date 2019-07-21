@@ -38,8 +38,7 @@ heruntergeladene Zipdatei in das Spieleverzeichnis und startet "setup-A7-GolemCo
 Folgt den Anweisungen des Programms und die Mod ist startbereit. Ihr solltet ein neues Spiel 
 starten, um nichts zu verpassen.
 
-Wichtig: Die Mod benötigt mindestens Spielversion 2.0 für BG:EE und BG2:EE, oder Spielversion 1.4 
-         für IWD:EE.
+Wichtig: Die Mod benötigt mindestens Spielversion 2.0 für alle unterstützten Spiele.
 
 
 Komponenten

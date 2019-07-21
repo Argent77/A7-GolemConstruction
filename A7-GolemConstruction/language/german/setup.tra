@@ -13,14 +13,13 @@
 @45 = ~Alle Mod-Gegenstaende identifizieren~
 @50 = ~Golemfaehigkeit "Teleportation" hinzufuegen~
 
-@100 = ~Diese Komponente benoetigt BG:EE, BG2:EE oder IWD:EE.~
+@100 = ~Diese Komponente benoetigt BG:EE, BG2:EE, EET oder IWD:EE.~
 @101 = ~Diese Option benoetigt die Hauptkomponente der Mod.~
 @102 = ~Es wurde kein freier Eintrag fuer Monsteranimationen gefunden.~
-@103 = ~Diese Komponente benoetigt Spielversion >= v2.0 (BG:SoD und BG2:EE) oder >= v1.4 (IWD:EE).~
-@104 = ~Diese Komponente benoetigt BG2:EE.~
-@105 = ~Diese Komponente benoetigt BG2:EE oder IWD:EE.~
-@106 = ~Diese Komponente benoetigt BG:SoD oder BG2:EE.~
-@107 = ~Diese Komponente benoetigt BG:SoD oder BG2:EE.~
+@103 = ~Diese Komponente benoetigt Spielversion 2.0 oder hoeher.~
+@104 = ~Diese Komponente benoetigt BG2:EE oder EET.~
+@106 = ~Diese Komponente benoetigt BG:SoD, BG2:EE oder EET.~
+@107 = ~Diese Komponente benoetigt BG:SoD, BG2:EE, EET oder IWD:EE.~
 @108 = ~Diese Komponente ist nicht kompatibel mit Rogue Rebalancings "Aufruestbare Ausruestung".~
 
 

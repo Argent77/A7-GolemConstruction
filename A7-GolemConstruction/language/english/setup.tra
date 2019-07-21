@@ -13,12 +13,11 @@
 @45 = ~Identify all mod items~
 @50 = ~Add "Teleport" ability to golems~
 
-@100 = ~This component requires BG:EE, BG2:EE or IWD:EE to be installed.~
+@100 = ~This component requires BG:EE, BG2:EE, EET or IWD:EE to be installed.~
 @101 = ~This component requires the main component to be installed.~
 @102 = ~No free creature animation slot found.~
-@103 = ~This component requires game patch >= v2.0 (SoD and BG2:EE) or >= v1.4 (IWD:EE).~
-@104 = ~This component requires BG2:EE to be installed.~
-@105 = ~This component requires BG2:EE or IWD:EE to be installed.~
-@106 = ~This component requires SoD or BG2:EE to be installed.~
-@107 = ~This component requires SoD, BG2:EE or IWD:EE to be installed.~
+@103 = ~This component requires game patch v2.0 or higher.~
+@104 = ~This component requires BG2:EE or EET to be installed.~
+@106 = ~This component requires SoD, BG2:EE or EET to be installed.~
+@107 = ~This component requires SoD, BG2:EE, EET or IWD:EE to be installed.~
 @108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".~

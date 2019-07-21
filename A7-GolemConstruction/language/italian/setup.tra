@@ -18,7 +18,6 @@
 @102 = ~Non è stato trovato alcuno slot libero per l'animazione della creatura.~
 @103 = ~Questa componente richiede una versione del gioco >= v2.0 (SoD e BG2:EE) o >= v1.4 (IWD:EE).~
 @104 = ~Questa componente richiede che BG2:EE sia installato.~
-@105 = ~Questa componente richiede che BG2:EE o IWD:EE siano installati.~
 @106 = ~Questa componente richiede che SoD o BG2:EE siano installati.~
 @107 = ~Questa componente richiede che SoD, BG2:EE o IWD:EE siano installati.~
 @108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".~
