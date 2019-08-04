@@ -13,11 +13,11 @@
 @45 = ~Identifica tutti gli oggetti della mod~
 @50 = ~Aggiungi l'abilità "Teletrasporto" ai golem~
 
-@100 = ~Questa componente richiede che BG:EE, BG2:EE o IWD:EE siano installati.~
+@100 = ~Questa componente richiede BG:EE, BG2:EE, EET o IWD:EE per essere installata.~
 @101 = ~Questa componente richiede che la componente principale sia installata.~
 @102 = ~Non è stato trovato alcuno slot libero per l'animazione della creatura.~
-@103 = ~Questa componente richiede una versione del gioco >= v2.0 (SoD e BG2:EE) o >= v1.4 (IWD:EE).~
-@104 = ~Questa componente richiede che BG2:EE sia installato.~
-@106 = ~Questa componente richiede che SoD o BG2:EE siano installati.~
-@107 = ~Questa componente richiede che SoD, BG2:EE o IWD:EE siano installati.~
-@108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".~
+@103 = ~Questa componente richiede che il gioco sia aggiornato alla versione 2.0 o maggiore.~
+@104 = ~Questa componente richiede BG2:EE o EET per essere installata.~
+@106 = ~Questa componente richiede SoD, BG2:EE o EET per essere installata.~
+@107 = ~Questa componente richiede SoD, BG2:EE, EET o IWD:EE per essere installata.~
+@108 = ~Questa componente è in conflitto con l'opzione "Equipaggiamento Migliorabile" della mod Rogue Rebalancing.~

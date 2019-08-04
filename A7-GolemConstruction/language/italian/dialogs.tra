@@ -86,6 +86,13 @@
 @41509 = ~Fatto, padrone. Una barra di ferro in tuo possesso è stata trasformata in un singolo pezzo di mithral.~
 @41510 = ~Trasforma tutto il tuo ferro in un singolo pezzo di mithral.~
 @41511 = ~Trasforma un singolo pezzo di ferro in mithral.~
+@41512 = ~Desidero che il mio golem migliori.~
+@41513 = ~Desidero che il mio golem migliori nel corpo e nella mente.~
+@41514 = ~Concesso. L'esperienza del tuo golem verrà resettata, così che abbia la possibilità di migliorare nuovamente.~
+@41515 = ~Non ho il potere per migliorare ulteriormente il tuo golem. Dovrai scegliere un altro desiderio.~
+@41516 = ~Concesso. Potenzierò il tuo golem ad uno stadio superiore.~
+@41517 = ~Declassa uno dei tuoi golem.~
+@41518 = ~Promuovi uno dei tuoi golem.~
 
 
 // *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
@@ -181,6 +188,10 @@
 @45010 = ~No.~
 @45011 = ~Il golem è stato reso inattivo dalla magia protettiva di questo luogo.~
 @45012 = ~Non puoi avere altri golem al tuo seguito.~
+@45013 = ~Mostra il numero di avversari uccisi.~
+@45014 = ~Aggiorna il golem.~
+@45015 = ~Avversari uccisi da questa creatura: <A7_GOLEMKILLS>~
+@45016 = ~Prepari il golem per il processo di aggiornamento...~
 
 
 // *** Jermien of Imnesvale ***
@@ -196,6 +207,11 @@
 @45509 = ~Prima che tu vada, puoi insegnarmi come costruire dei golem juggernaut? Mi piacerebbe provare a realizzarne uno per conto mio.~
 @45510 = ~Hmm. Probabilmente posso fare un'eccezione, visto che sei riuscito a sbarazzarti del mio esperimento fallito così facilmente. Molto bene, ti affiderò il mio personale tomo della costruzione dei golem. Studialo bene e non ripetere i miei errori.~ ~Hmm. Probabilmente posso fare un'eccezione, visto che sei riuscita a sbarazzarti del mio esperimento fallito così facilmente. Molto bene, ti affiderò il mio personale tomo della costruzione dei golem. Studialo bene e non ripetere i miei errori.~
 @45511 = ~Andiamo, Signor J! Cosa può andare storto se ci proviamo? Prometto di fare grande attenzione. Per favore, per favore!~
+
+
+// *** Ribald Barterman ***
+@45600 = ~Ho sentito che tratti equipaggiamento per la costruzione di golem. Hai qualche articolo in vendita?~
+@45601 = ~Temo che tu sia arrivato tardi. Ho venduto il mio ultimo articolo proprio alcune decadi fa. Quel tipo di equipaggiamento è difficile da trovare, visto che non ha grande richiesta.~ ~Temo che tu sia arrivata tardi. Ho venduto il mio ultimo articolo proprio alcune decadi fa. Quel tipo di equipaggiamento è difficile da trovare, visto che non ha grande richiesta.~
 
 
 // *** The necromancer Arkion ***
