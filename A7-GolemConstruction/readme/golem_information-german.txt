@@ -5,40 +5,40 @@
 Einleitung
 ==========
 
-Golems können mit der Spezialfähigkeit "Golem erschaffen" konstruiert werden, die man aus den diversen Leitfäden der 
-Golemkonstruktion erlernen kann. Ein Menü in Dialogform leitet den Anwender durch die Auswahlmöglichkeiten bis zum 
-gewünschten Golemtyp. Der Bau des Golemkörpers kann einige Stunden bis Tage dauern, auf dem der eigentliche 
-Verzauberungsprozess folgt. Für jeden Golemtyp gibt es eine vierprozentige Wahrscheinlichkeit, dass der Golem für 
-1W4 Runden außer Kontrolle gerät und versucht, seinen Schöpfer anzugreifen. Nach der Prozedur ist der Anwender für 
+Golems können mit der Spezialfähigkeit "Golem erschaffen" konstruiert werden, die man aus den diversen Leitfäden der
+Golemkonstruktion erlernen kann. Ein Menü in Dialogform leitet den Anwender durch die Auswahlmöglichkeiten bis zum
+gewünschten Golemtyp. Der Bau des Golemkörpers kann einige Stunden bis Tage dauern, auf dem der eigentliche
+Verzauberungsprozess folgt. Für jeden Golemtyp gibt es eine vierprozentige Wahrscheinlichkeit, dass der Golem für
+1W4 Runden außer Kontrolle gerät und versucht, seinen Schöpfer anzugreifen. Nach der Prozedur ist der Anwender für
 mehrere Runden zu erschöpft, um zu zaubern oder ordentlich zu kämpfen.
 
-Da der Golembau eine bestimmte Ausrüstung benötigt, kann man damit nur in bestimmten Orten beginnen. Einige Orte 
-werden durch Hinweise im Spiel angedeutet, andere kann man durch Zufall oder Nachdenken ausfindig machen. Wenn ein Ort 
-bereit zum Golembau ist, gibt es einen Tagebucheintrag und eine kurze Meldung in der Konsole. Weitere Einzelheiten 
+Da der Golembau eine bestimmte Ausrüstung benötigt, kann man damit nur in bestimmten Orten beginnen. Einige Orte
+werden durch Hinweise im Spiel angedeutet, andere kann man durch Zufall oder Nachdenken ausfindig machen. Wenn ein Ort
+bereit zum Golembau ist, gibt es einen Tagebucheintrag und eine kurze Meldung in der Konsole. Weitere Einzelheiten
 gibt es weiter unten in diesem Dokument.
 
-Die Fähigkeit "Golem erschaffen" erschöpft sich nie, und muss daher nicht durch Rasten aufgefrischt werden. Trotzdem 
+Die Fähigkeit "Golem erschaffen" erschöpft sich nie, und muss daher nicht durch Rasten aufgefrischt werden. Trotzdem
 ist Rasten nützlich, da der Bau eines Golems viele Stunden oder Tage in Anspruch nimmt.
 
-Leitfäden der Golemkonstruktion bringen euch auch die Fähigkeit "Golem reparieren" bei. Man kann sie einmal pro Rast 
-an jedem Ort anwenden, um Golems zu reparieren, solange kein Gegner in der Nähe ist. Die Reparatur dauert zwei Runden. 
-In dieser Zeit sind sowohl der Golem als auch der Anwender nicht ansprechbar. Man benötigt möglicherweise mehrere 
+Leitfäden der Golemkonstruktion bringen euch auch die Fähigkeit "Golem reparieren" bei. Man kann sie einmal pro Rast
+an jedem Ort anwenden, um Golems zu reparieren, solange kein Gegner in der Nähe ist. Die Reparatur dauert zwei Runden.
+In dieser Zeit sind sowohl der Golem als auch der Anwender nicht ansprechbar. Man benötigt möglicherweise mehrere
 Versuche, um schwerbeschädigte Golems vollständig zu reparieren.
 
 
 Herkömmliche Golems
 ===================
 
-Herkömmliche Golemtypen werden durch den "Leitfaden der Golemkonstruktion" beschrieben, der in sechs Bänden daherkommt. 
-Die meisten Bände selbst sind nicht schwer zu finden. Einige können bei Händlern erworben werden, während andere in 
+Herkömmliche Golemtypen werden durch den "Leitfaden der Golemkonstruktion" beschrieben, der in sechs Bänden daherkommt.
+Die meisten Bände selbst sind nicht schwer zu finden. Einige können bei Händlern erworben werden, während andere in
 Verließen gefunden oder im Besitz von Monstern sind.
 
-Für den Golembau benötigte Materialien kann man ebenfalls auf verschiedene Weise erlangen. Gewöhnliche Zutaten kann 
-man oftmals bei Händlern kaufen oder Beute von besiegten Monstern rauben. Speziellere Zutaten muss man manchmal länger 
+Für den Golembau benötigte Materialien kann man ebenfalls auf verschiedene Weise erlangen. Gewöhnliche Zutaten kann
+man oftmals bei Händlern kaufen oder Beute von besiegten Monstern rauben. Speziellere Zutaten muss man manchmal länger
 suchen.
 
-Herkömmliche Golems kann man in niederen, regulären, höheren und perfekten Varianten erschaffen. Jede Variante benötigt 
-ihre ganz speziellen Zutaten. Die perfekte Variante benötigt zusätzlich bestimmte Artefakte der Macht, die es nur in 
+Herkömmliche Golems kann man in niederen, regulären, höheren und perfekten Varianten erschaffen. Jede Variante benötigt
+ihre ganz speziellen Zutaten. Die perfekte Variante benötigt zusätzlich bestimmte Artefakte der Macht, die es nur in
 limitierter Stückzahl gibt.
 
 
@@ -60,7 +60,7 @@ Niederer Fleischgolem:
   - Kälte: 75
   - Magische Kälte: 75
   - Elektrizität: 75
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Fleischgolem:
@@ -82,7 +82,7 @@ Fleischgolem:
   - Stich: 25
   - Geschoss: 25
 - Immun gegen nichtmagische Waffen
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Höherer Fleischgolem:
@@ -106,7 +106,7 @@ Höherer Fleischgolem:
   - Geschoss: 75
 - Immun gegen nichtmagische Waffen
 - Kann "Stinkende Wolke" auf sich zaubern
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
@@ -157,7 +157,7 @@ Niederer Lehmgolem:
   - Klinge: 75
   - Stich: 75
   - Geschoss: 75
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Lehmgolem:
@@ -184,7 +184,7 @@ Lehmgolem:
   - Geschoss: 100
 - Immun gegen nichtmagische Waffen
 - Kann "Hast" auf sich zaubern
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Höherer Lehmgolem:
@@ -212,7 +212,7 @@ Höherer Lehmgolem:
   - Geschoss: 100
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
 - Kann "Hast" auf sich zaubern
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
@@ -263,7 +263,7 @@ Niederer Steingolem:
 - Widerstand:
   - Magie: 75
 - Immun gegen nichtmagische Waffen
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Steingolem:
@@ -282,7 +282,7 @@ Steingolem:
   - Magie: 90
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
 - Kann "Verlangsamen" auf Feinde in 9 m Radius um sich selbst zaubern
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 
 Höherer Steingolem:
@@ -303,7 +303,7 @@ Höherer Steingolem:
   - Säure: 50
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
 - Kann "Verlangsamen" auf Feinde in 9 m Radius um sich selbst zaubern
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
@@ -496,7 +496,7 @@ Mithrilgolem:
   - Geschoss: 50
 - Regeneration: 1 TP pro Phase
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
-- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and 
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 
 Höherer Mithrilgolem:
@@ -525,7 +525,7 @@ Höherer Mithrilgolem:
   - Geschoss: 75
 - Regeneration: 1 TP alle drei Runden
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
-- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and 
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
@@ -556,7 +556,7 @@ Perfekter Mithrilgolem:
   - Geschoss: 85
 - Regeneration: 1 TP pro Runde
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +3 oder weniger
-- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and 
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 - Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
 
@@ -615,7 +615,7 @@ Adamantitgolem:
   - Geschoss: 90
 - Regeneration: 1 TP pro Phase
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
-- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and 
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 
 Höherer Adamantitgolem:
@@ -644,7 +644,7 @@ Höherer Adamantitgolem:
   - Geschoss: 95
 - Regeneration: 1 TP alle drei Runden
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +3 oder weniger
-- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and 
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 - Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
 
@@ -675,7 +675,7 @@ Perfekter Adamantitgolem:
   - Geschoss: 99
 - Regeneration: 1 TP pro Runde
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +3 oder weniger
-- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and 
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
   und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
 - Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
 
@@ -684,10 +684,10 @@ Perfekter Adamantitgolem:
 Exotische Golems
 ================
 
-Exotische Golemtypen werden im "Geheimen Leitfaden der Golemkonstruktion" beschrieben, die wohl ebenfalls in sechs 
+Exotische Golemtypen werden im "Geheimen Leitfaden der Golemkonstruktion" beschrieben, die wohl ebenfalls in sechs
 Bänden daherkommt, aber schwerer zu erwerben ist.
 
-Golems, die in diesen Bänden beschrieben werden, sind einzigartig. Sie können nicht in niederen, höheren oder perfekten 
+Golems, die in diesen Bänden beschrieben werden, sind einzigartig. Sie können nicht in niederen, höheren oder perfekten
 Varianten erschaffen werden.
 
 1. Madengolem
@@ -711,17 +711,17 @@ Varianten erschaffen werden.
   - Stich: 100
   - Geschoss: 100
 - Regeneration: 1 TP pro Runde
-- Mit fünfzehnprozentiger Wahrscheinlichkeit kann sich der Erschaffer während der Konstruktion des Golemkörpers mit 
+- Mit fünfzehnprozentiger Wahrscheinlichkeit kann sich der Erschaffer während der Konstruktion des Golemkörpers mit
   einer Krankheit anstecken. Diese Krankheit hält fünf Phasen an und richtet 2 TP Schaden pro Runde an.
-- Spezialangriff "Bedecken": Zusätzlich zu 2W6 Wuchtschaden, wird das Opfer für eine Runde festgehalten und erleidet 
-  1 TP pro Sekunde Stichschaden durch die Insekten, die seinen Körper bedecken, wenn ein Rettungswurf gg. Zauber versagt. 
-  Jede weitere Runde muss das Opfer einen weiteren Rettungswurf +4 gg. Zauber durchführen. Bei einem erfolgreichen 
-  Rettungswurf kann sich das Opfer aus der Insektenwolke befreien. Ansonsten wird es für eine weitere Runde festgehalten 
+- Spezialangriff "Bedecken": Zusätzlich zu 2W6 Wuchtschaden, wird das Opfer für eine Runde festgehalten und erleidet
+  1 TP pro Sekunde Stichschaden durch die Insekten, die seinen Körper bedecken, wenn ein Rettungswurf gg. Zauber versagt.
+  Jede weitere Runde muss das Opfer einen weiteren Rettungswurf +4 gg. Zauber durchführen. Bei einem erfolgreichen
+  Rettungswurf kann sich das Opfer aus der Insektenwolke befreien. Ansonsten wird es für eine weitere Runde festgehalten
   und erleidet Schaden. Der Effekt kann durch Magiewiderstand blockiert und mit "Magie Bannen" entfernt werden.
-- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden 
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
   greift er dann die nächste Kreatur in Sichtweite an.
-- Die Lebensspanne dieses Golems beträgt nur 1W4+6 Tage. Am Ende seiner Lebenspanne verliert der Erschaffer mit einer 
-  50-prozentigen Wahrscheinlichkeit die Kontrolle über den Golem, der dann für 1W6 Runden Amok läuft, bevor er endgültig 
+- Die Lebensspanne dieses Golems beträgt nur 1W4+6 Tage. Am Ende seiner Lebenspanne verliert der Erschaffer mit einer
+  50-prozentigen Wahrscheinlichkeit die Kontrolle über den Golem, der dann für 1W6 Runden Amok läuft, bevor er endgültig
   in sich zusammenfällt.
 
 2. Knochengolem
@@ -729,7 +729,7 @@ Varianten erschaffen werden.
 - Zutaten:
   - Vier Knochenhaufen
   - Eine Schriftrolle "Tote beleben"
-  - In 50 Prozent aller Fälle verliert der Erschaffer während der Golemkonstruktion eine Charakterstufe. In zehn Prozent 
+  - In 50 Prozent aller Fälle verliert der Erschaffer während der Golemkonstruktion eine Charakterstufe. In zehn Prozent
     aller Fälle verliert er zusätzlich eine zweite Stufe.
 - Eigenschaften:
   - Stärke: 21
@@ -750,8 +750,8 @@ Varianten erschaffen werden.
   - Stich: 50
   - Geschoss: 50
 - Immun gegen nichtmagische Waffen
-- Kann "Abscheuliches Gelächter" auf Feinde in 9 m Radius um sich selbst anwenden: Die Opfer müssen einen erfolgreichen 
-  Rettungswurf -2 gegen Zauber würfeln oder verfallen für 2W6 Runden in Panik. Die Opfer müssen außerdem einen 
+- Kann "Abscheuliches Gelächter" auf Feinde in 9 m Radius um sich selbst anwenden: Die Opfer müssen einen erfolgreichen
+  Rettungswurf -2 gegen Zauber würfeln oder verfallen für 2W6 Runden in Panik. Die Opfer müssen außerdem einen
   erfolgreichen Rettungswurf gegen Tod würfeln oder verfallen stattdessen für den gleichen Zeitraum in eine Furchtstarre.
 
 3. Gehirngolem
@@ -778,8 +778,8 @@ Varianten erschaffen werden.
   - Geschoss: 50
 - Regeneration: 1 TP pro Phase
 - Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
-- Kann "Mentale Druckwelle" auf Feinde in 9 m Radius um sich selbst zaubern: Sie richtet 2W8 nicht tödlichen Schaden 
-  an und betäubt die Opfer für 2W4 Runden. Ein erfolgreicher Rettungswurf gg. Zauber halbiert den Schaden und wendet 
+- Kann "Mentale Druckwelle" auf Feinde in 9 m Radius um sich selbst zaubern: Sie richtet 2W8 nicht tödlichen Schaden
+  an und betäubt die Opfer für 2W4 Runden. Ein erfolgreicher Rettungswurf gg. Zauber halbiert den Schaden und wendet
   den Betäubungseffekt ab. Untote, Golems und Mykonide sind nicht betroffen.
 
 4. Eisgolem
@@ -806,8 +806,8 @@ Varianten erschaffen werden.
   - Stich: 20
   - Geschoss: 20
 - Immun gegen nichtmagische Waffen
-- Kann "Kochenden Dampf" auf alle Wesen in 9 m Radius im sich selbst zaubern: Er richtet 3W10 Kälteschaden an und 
-  lähmt das Opfer für eine Runde. Ein erfolgreicher Rettungswurf gg. Odemwaffen halbiert den Schaden und verhindert 
+- Kann "Kochenden Dampf" auf alle Wesen in 9 m Radius im sich selbst zaubern: Er richtet 3W10 Kälteschaden an und
+  lähmt das Opfer für eine Runde. Ein erfolgreicher Rettungswurf gg. Odemwaffen halbiert den Schaden und verhindert
   die Lähmung.
 
 5. Magiegolem
@@ -833,12 +833,12 @@ Varianten erschaffen werden.
   - Säure: 100
 - Immun gegen alle magischen Waffen und Zauber
 - Der Golem muss in Bereichen unbändiger Magie erschaffen werden
-- Jeder erfolgreiche Fernangriff löscht eine Ladung von geladenen Gegenständen und entfernt ein vorbereiteten 
+- Jeder erfolgreiche Fernangriff löscht eine Ladung von geladenen Gegenständen und entfernt ein vorbereiteten
   Zauberspruch.
-- Kann "Unbändige Fackel" auf ein Wesen zaubern: Der Zauber richtet 3W10 Magieschaden an und löst einen zufälligen 
+- Kann "Unbändige Fackel" auf ein Wesen zaubern: Der Zauber richtet 3W10 Magieschaden an und löst einen zufälligen
   magischen Effekt beim Opfer aus. Der Effekt kann verheerend oder nützlich sein.
-- Kann sich in magielosen Zonen auflösen, der mit 50 Prozent Wahrscheinlichkeit eine letzte magische Explosion 
-  vorangeht, die 2W6 Magieschaden auf alle Wesen im Umkreis von 9 m Radius anrichtet (Rettungswurf gg. Zauber für 
+- Kann sich in magielosen Zonen auflösen, der mit 50 Prozent Wahrscheinlichkeit eine letzte magische Explosion
+  vorangeht, die 2W6 Magieschaden auf alle Wesen im Umkreis von 9 m Radius anrichtet (Rettungswurf gg. Zauber für
   halbierten Schaden).
 
 6. Blitzgolem
@@ -863,20 +863,20 @@ Varianten erschaffen werden.
 - Bewegt sich mit erhöhter Geschwindigkeit
 - Dauerhafter Blitzschild: Angreifer erleiden 1W8+2 elektrischen Schaden, wenn sie angreifen
 - Kann "Kettenblitz" auf Feinde in der Umgebung zaubern
-- Kann die Fähigkeit "Blitzreise" anwenden: Sie erlaubt den Blitzgolem, sich sofort zu einem beliebigen Punkt in 
-  Reichweite zu teleportieren. Der Golem verwandelt sich dafür in einen mächtigen Blitz und erreicht seinen Zielort 
-  praktisch sofort. Die hohe Geschwindigkeit und ausstrahlende Energie erzeugen eine Schockwelle am Zielort, der 
-  alle Feinde in 2,5 m Radius vom Golem wegstößt und 1W6 elektrischen Schaden verursacht. Große Wesen, wie Drachen 
-  oder Riesen, werden nicht weggestoßen. Der folgende Donnerschlag kann zusätzlich Taubheit auslösen, wenn der 
-  Rettungswurf gg. Odemwaffen misslingt. Der Golem muss nicht warten, um die gleicher oder eine andere Fähigkeit zu 
+- Kann die Fähigkeit "Blitzreise" anwenden: Sie erlaubt den Blitzgolem, sich sofort zu einem beliebigen Punkt in
+  Reichweite zu teleportieren. Der Golem verwandelt sich dafür in einen mächtigen Blitz und erreicht seinen Zielort
+  praktisch sofort. Die hohe Geschwindigkeit und ausstrahlende Energie erzeugen eine Schockwelle am Zielort, der
+  alle Feinde in 2,5 m Radius vom Golem wegstößt und 1W6 elektrischen Schaden verursacht. Große Wesen, wie Drachen
+  oder Riesen, werden nicht weggestoßen. Der folgende Donnerschlag kann zusätzlich Taubheit auslösen, wenn der
+  Rettungswurf gg. Odemwaffen misslingt. Der Golem muss nicht warten, um die gleicher oder eine andere Fähigkeit zu
   wirken. Diese Fähigkeit ersetzt "Teleportation".
 
 
 Golems in BG1:EE
 ================
 
-Diese Golemarten werden im "Verbotenen Leitfaden der Golemkonstruktion" beschrieben und können irgendwo während eures 
-Abenteuers im BG1-Teil des Spiels entdeckt werden. Ihr müsst außerdem einen fähigen Magier finden, der sie für euch 
+Diese Golemarten werden im "Verbotenen Leitfaden der Golemkonstruktion" beschrieben und können irgendwo während eures
+Abenteuers im BG1-Teil des Spiels entdeckt werden. Ihr müsst außerdem einen fähigen Magier finden, der sie für euch
 erschaffen kann. Mehr dazu weiter unten.
 
 1. Puppengolem
@@ -898,15 +898,15 @@ erschaffen kann. Mehr dazu weiter unten.
   - Stich: 25
   - Geschoss: 25
 - Immun gegen nichtmagische Waffen
-- Jeder Angriff kann das Opfer mit einem unkontrollierbaren Gelächter infizieren, falls der Rettungswurf gg. Zauber +2 
-  misslingt. Das Opfer ist dann nicht mehr in der Lage, irgendwelche Aktionen auszuführen. In jeder weiteren Runde 
-  richten Muskelkrämpfe, die durch das Gelächter ausgelöst werden, +1W4 Schaden pro Runde an. Das Opfer kann jede 
-  Runde einen weiteren Rettungswurf gg. Zauber +2 würfeln, um diesen Anfall zu überwinden. Anderenfalls endet er 
-  nach einer Phase oder einem erfolgreichen 'Magie bannen' Zauber. Magiewiderstand kann diesen Effekt aufhalten. 
-  Untote und Konstrukte sind nicht betroffen. Wenn der Anfall überwunden wurde, ist das Opfer für die Hälfte der Runden 
-  erschöpft, den es im Lachanfall verbracht hat. Die Erschöpfung schlägt sich durch einen -1 Malus auf RK, ETW0 
+- Jeder Angriff kann das Opfer mit einem unkontrollierbaren Gelächter infizieren, falls der Rettungswurf gg. Zauber +2
+  misslingt. Das Opfer ist dann nicht mehr in der Lage, irgendwelche Aktionen auszuführen. In jeder weiteren Runde
+  richten Muskelkrämpfe, die durch das Gelächter ausgelöst werden, +1W4 Schaden pro Runde an. Das Opfer kann jede
+  Runde einen weiteren Rettungswurf gg. Zauber +2 würfeln, um diesen Anfall zu überwinden. Anderenfalls endet er
+  nach einer Phase oder einem erfolgreichen 'Magie bannen' Zauber. Magiewiderstand kann diesen Effekt aufhalten.
+  Untote und Konstrukte sind nicht betroffen. Wenn der Anfall überwunden wurde, ist das Opfer für die Hälfte der Runden
+  erschöpft, den es im Lachanfall verbracht hat. Die Erschöpfung schlägt sich durch einen -1 Malus auf RK, ETW0
   und alle Rettungswürfe nieder.
-- Der Nekromant Arkion wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Er lebt in Baldurs Gate, 
+- Der Nekromant Arkion wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Er lebt in Baldurs Gate,
   südlich der Taverne „Elfgesang“.
 
 2. Knochenpuppe
@@ -930,36 +930,36 @@ erschaffen kann. Mehr dazu weiter unten.
   - Stich: 50
   - Geschoss: 50
 - Immun gegen nichtmagische Waffen
-- Knochenpuppen explodieren wenn sie zerstört werden und richten bei allen Geschöpfen in 4 m Radius 2W6 Stichschaden 
+- Knochenpuppen explodieren wenn sie zerstört werden und richten bei allen Geschöpfen in 4 m Radius 2W6 Stichschaden
   und 1W6 Wuchtschaden an.
-- Die Nekromantin Nemphre wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Sie lebt in Baldurs Gate, 
+- Die Nekromantin Nemphre wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Sie lebt in Baldurs Gate,
   östlich des Gasthauses „Zur Funkelnden Klinge“.
 
 
 Jeder Golem hat zusätzlich die folgenden Fähigkeiten:
-1. Golem aufgeben: Diese Fähigkeit weist den Golem an, sich selbst zu deaktivieren. Die Aktion kann nicht rückgängig 
+1. Golem aufgeben: Diese Fähigkeit weist den Golem an, sich selbst zu deaktivieren. Die Aktion kann nicht rückgängig
                    gemacht werden.
-2. Teleportation:  Mit dieser Fähigkeit kann sich der Golem einem ausgewählten Gruppenmitglied teleportieren, falls er 
-                   irgendwo steckenbleibt. Das kann bei größeren Golems in engen Gassen passieren. Diese Fähigkeit 
+2. Teleportation:  Mit dieser Fähigkeit kann sich der Golem einem ausgewählten Gruppenmitglied teleportieren, falls er
+                   irgendwo steckenbleibt. Das kann bei größeren Golems in engen Gassen passieren. Diese Fähigkeit
                    funktioniert nur, wenn keine Feinde in Sichtweite sind.
-                   Hinweis: Diese Fähigkeit ist nur verfügbar, wenn die Unterkomponente "Golemfaehigkeit 'Teleportation' 
+                   Hinweis: Diese Fähigkeit ist nur verfügbar, wenn die Unterkomponente "Golemfaehigkeit 'Teleportation'
                             hinzufuegen" installiert wurde.
 
-Den Golems kann man auch einfache Befehle geben. Niedere Varianten der Fleisch-, Ton- und Steingolems, als auch den 
+Den Golems kann man auch einfache Befehle geben. Niedere Varianten der Fleisch-, Ton- und Steingolems, als auch den
 Madengolems können den folgenden Befehlen folgen:
-- Folge mir! (Der Golem kann vom Spieler kontrolliert werden, aber handelt nicht aus eigenem Antrieb. Das ist die 
+- Folge mir! (Der Golem kann vom Spieler kontrolliert werden, aber handelt nicht aus eigenem Antrieb. Das ist die
               Standardaktion eines jeden Golems.)
 - Halte Wache! (Der Golem wird neutral und bewegt sich nicht von seinem gegenwärtigen Standpunkt weg.)
-- Zerstöre dich selbst! (Löst die Zerstörung des Golems aus. Dieser Befehl entspricht der Fähigkeit "Golem aufgeben" 
+- Zerstöre dich selbst! (Löst die Zerstörung des Golems aus. Dieser Befehl entspricht der Fähigkeit "Golem aufgeben"
                          eines jeden Golems, kann aber zusätzlich bei Wache haltenden Golems angewendet werden.)
 
 Mächtigere Golems können zusätzlich den folgenden Befehlen gehorchen:
-- Folge mir und beschütze mich! (Der Golem kann vom Spieler kontrolliert werden und greift eigenständig feindliche Wesen 
+- Folge mir und beschütze mich! (Der Golem kann vom Spieler kontrolliert werden und greift eigenständig feindliche Wesen
                                  an oder Feinde, die Gruppenmitglieder angreifen.)
-- Halte Wache und verteidige das Gebiet! (Der Golem wird neutral und greift eigenständig jeden Feind in Sichtweite an. 
+- Halte Wache und verteidige das Gebiet! (Der Golem wird neutral und greift eigenständig jeden Feind in Sichtweite an.
                                           Danach kehrt er wieder zu seiner bewachten Position zurück.)
 
-Gebt immer gut auf eure Golems acht. Wenn sie zu schwer beschädigt sind, können sie zusätzliche Fehlfunktionen aufweisen. 
+Gebt immer gut auf eure Golems acht. Wenn sie zu schwer beschädigt sind, können sie zusätzliche Fehlfunktionen aufweisen.
 Diese Fehlfunktionen können aber zusammen mit dem Schaden mit der Fähigkeit "Golem reparieren" beseitigt werden.
 
 
@@ -1007,7 +1007,7 @@ Zaubersprüche, die spezielle Auswirkungen auf Golems haben
 ==========================================================
 
 Golems sind nicht lebende Konstrukte und können daher auf ungewöhnliche Weise von Zaubersprüchen beeinflusst werden.
-Die folgenden Effekte können auftreten, wenn die Modkomponente "Mache Golems anfällig für bestimmte Zauber" 
+Die folgenden Effekte können auftreten, wenn die Modkomponente "Mache Golems anfällig für bestimmte Zauber"
 installiert wurde:
 - Fleisch zu Stein:
   Verwandelt Fleischgolems in Steingolems der gleichen Variante, wenn sie ihren Rettungswurf gegen Versteinerung/
@@ -1023,13 +1023,13 @@ installiert wurde:
 - Kältekegel und Eissturm:
   Betroffene Lehmgolems werden für fünf Runden verlangsamt, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen.
 - Sonnenstrahl:
-  Dieser Zauber greift die Adamantitlegierung von Adamantitgolems an, wodurch sich ihre physischen Resistenzen permanent 
-  verschlechtern, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen. Die Fähigkeit "Golem reparieren" kann diesen 
+  Dieser Zauber greift die Adamantitlegierung von Adamantitgolems an, wodurch sich ihre physischen Resistenzen permanent
+  verschlechtern, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen. Die Fähigkeit "Golem reparieren" kann diesen
   Zustand beheben.
 - Hochstufige Zauber mit Feuereffekten:
   Diese Zauber erhitzen Eisengolems so weit, dass sie für fünf Runden mit ihren Angriffen Feuerschaden verursachen.
   Es ist kein Rettungswurf erforderlich.
-  Die folgenden Zauber können diesen Effekt hervorrufen: Meteorschwarm, Drachenodem, Komet, Flammende Wolke und 
+  Die folgenden Zauber können diesen Effekt hervorrufen: Meteorschwarm, Drachenodem, Komet, Flammende Wolke und
   Feuersturm.
 
 
@@ -1040,28 +1040,28 @@ Siege of Dragonspear:
 - Allerlei Zauberei:
   Das Obergeschoss kann man vom Besitzer des Ladens mieten.
 - Lagerstätte der Untoten:
-  Dieses Verließ befindet sich unterhalb der Ausgrabungsstätte der Zwerge. Das Gebiet muss zuerst gesichert werden, 
+  Dieses Verließ befindet sich unterhalb der Ausgrabungsstätte der Zwerge. Das Gebiet muss zuerst gesichert werden,
   bevor man dort Golems konstruieren kann.
 - Ruinen von Kanaglym:
-  Die Ruinen kann man über den Unterirdischen Fluss unterhalb Schloss Dragonspear erreichen. Wenn das Gebiet von 
+  Die Ruinen kann man über den Unterirdischen Fluss unterhalb Schloss Dragonspear erreichen. Wenn das Gebiet von
   Gegnern gesäubert wurde, kann man es zum konstruieren von Golems benutzen.
 
 Schatten von Amn:
 - Sphäre der Ebenen:
-  Das große Eingangshalle der Sphäre ist geeignet zum Erschaffen von Golems (natürlich erst, nachdem man sich um den 
+  Das große Eingangshalle der Sphäre ist geeignet zum Erschaffen von Golems (natürlich erst, nachdem man sich um den
   Vorbesitzer gekümmert hat).
 - Jermiens Heim:
   Es ist möglich, den Verhüllten Magier in Imnestal zu überreden, sein Heim zum Golembau zur Verfügung zu stellen.
 - Tempel in Athkatla:
-  Alle drei verfügbare Tempel in Athkatlas Tempelbezirk können zum Erschaffen von Lehmgolems genutzt werden, wenn der 
+  Alle drei verfügbare Tempel in Athkatlas Tempelbezirk können zum Erschaffen von Lehmgolems genutzt werden, wenn der
   Protagonist ein Kleriker ist und einen Tempel als klasseneigene Festung ausgewählt hat.
 
 Wachende Festung:
 - Zweite Ebene:
-  Die Bibliothek der Elementarmagier ist gut ausgestattet. Vorher müssen aber erst alle Verteidigungsmechanismen 
+  Die Bibliothek der Elementarmagier ist gut ausgestattet. Vorher müssen aber erst alle Verteidigungsmechanismen
   ausgeschaltet werden (was auch den Dämon im Käfig beinhaltet).
 
 Thron des Bhaal:
 - Das Einsprengsel:
-  Dieser Ort ist sicher genug, um Golems zu erschaffen. Lazarus Librarus könnte euch mit der notwendigen Ausrüstung 
+  Dieser Ort ist sicher genug, um Golems zu erschaffen. Lazarus Librarus könnte euch mit der notwendigen Ausrüstung
   behilflich sein (für den richtigen Preis).

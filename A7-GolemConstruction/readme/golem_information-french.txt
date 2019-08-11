@@ -5,41 +5,41 @@
 Introduction
 ============
 
-Les Golems sont fabriqués avec la capacité "Fabriquer un Golem" que l'on apprend en lisant divers grimoires 
-de fabrication de golem. Elle ouvre un bref dialogue qui vous permet de choisir le type et la version du 
-golem que vous souhaitez construire. La durée de création de l'enveloppe physique du golem est variable et 
-peut prendre plusieurs heures, voire plusieurs jours. Une fois terminée, le golem reçoit un dernier enchantement. 
-Il y a 4 pour-cent de chance qu'il se libère et se retourne contre vous pendant 1d4 rounds avant qu'il ne 
-finisse par se soumettre à votre volonté. Une fois le golem achevé, vous serez pendant plusieurs rounds trop  
+Les Golems sont fabriqués avec la capacité "Fabriquer un Golem" que l'on apprend en lisant divers grimoires
+de fabrication de golem. Elle ouvre un bref dialogue qui vous permet de choisir le type et la version du
+golem que vous souhaitez construire. La durée de création de l'enveloppe physique du golem est variable et
+peut prendre plusieurs heures, voire plusieurs jours. Une fois terminée, le golem reçoit un dernier enchantement.
+Il y a 4 pour-cent de chance qu'il se libère et se retourne contre vous pendant 1d4 rounds avant qu'il ne
+finisse par se soumettre à votre volonté. Une fois le golem achevé, vous serez pendant plusieurs rounds trop
 épuisé pour lancer des sorts ou vous battre correctement.
 
-En raison du matériel requis pour réussir à fabriquer le corps d'un golem, il n'existe qu'un nombre restreint 
-de sites dans lesquels vous pouvez vraiment créer des golems. Ce sont généralement des places fortes (abandonnées) 
+En raison du matériel requis pour réussir à fabriquer le corps d'un golem, il n'existe qu'un nombre restreint
+de sites dans lesquels vous pouvez vraiment créer des golems. Ce sont généralement des places fortes (abandonnées)
 de mages puissants.
 Vous trouverez plus de détails sur ce sujet à la fin de ce document.
 
-Vous pouvez utiliser la capacité "Fabriquer un Golem" autant de fois que vous le souhaitez sans avoir besoin 
+Vous pouvez utiliser la capacité "Fabriquer un Golem" autant de fois que vous le souhaitez sans avoir besoin
 de vous reposer entre chaque (bien que ce soit fortement recommandé).
 
-La lecture des grimoires de fabrication de golem vous permettra également d'apprendre la capacité "Réparer un Golem". 
-Elle peut être utilisée une fois par jour et n'importe où, mais ne fonctionne pas en présence d'ennemis. Le processus 
-de réparation dure environ deux rounds. Plusieurs tentatives peuvent être nécessaires pour réparer complètement les 
+La lecture des grimoires de fabrication de golem vous permettra également d'apprendre la capacité "Réparer un Golem".
+Elle peut être utilisée une fois par jour et n'importe où, mais ne fonctionne pas en présence d'ennemis. Le processus
+de réparation dure environ deux rounds. Plusieurs tentatives peuvent être nécessaires pour réparer complètement les
 golems sévèrement endommagés.
 
 
 Les Golems traditionnels
 ========================
 
-Les types de golems traditionnels sont décrits dans le "Grimoire de Fabrication de Golem", recueil en six 
-volumes. Il n'est pas très difficile de se procurer ces tomes. Certains peuvent être achetés auprès de marchands, 
+Les types de golems traditionnels sont décrits dans le "Grimoire de Fabrication de Golem", recueil en six
+volumes. Il n'est pas très difficile de se procurer ces tomes. Certains peuvent être achetés auprès de marchands,
 d'autres sont cachés dans certains donjons ou en possession de certaines créatures.
 
-Les matériaux nécessaires à la fabrication de golems peuvent aussi être obtenus de diverses manières. Les composants 
-les plus élémentaires peuvent être achetés dans des boutiques, récupérés sur des créatures ou trouvés à divers 
+Les matériaux nécessaires à la fabrication de golems peuvent aussi être obtenus de diverses manières. Les composants
+les plus élémentaires peuvent être achetés dans des boutiques, récupérés sur des créatures ou trouvés à divers
 endroits, alors que les matériaux les plus onéreux et les plus exotiques sont disponibles par d'autres moyens.
 
-Les types de golems conventionnels peuvent être créés en version mineure, normale, majeure et parfaite, chacune 
-nécessitant ses propres matériaux. Le modèle parfait nécessite aussi un artefact puissant et spécifique qu'on ne 
+Les types de golems conventionnels peuvent être créés en version mineure, normale, majeure et parfaite, chacune
+nécessitant ses propres matériaux. Le modèle parfait nécessite aussi un artefact puissant et spécifique qu'on ne
 trouve qu'en nombre limité.
 
 
@@ -61,7 +61,7 @@ Golem de chair mineur :
   - Froid : 75
   - Froid magique : 75
   - Électricité : 75
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
 Golem de chair :
@@ -83,7 +83,7 @@ Golem de chair :
   - Armes perforantes : 25
   - Projectiles : 25
 - Ne peut être touché que par des armes magiques.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
 Golem de chair majeur :
@@ -107,7 +107,7 @@ Golem de chair majeur :
   - Projectiles : 75
 - Ne peut être touché que par des armes magiques.
 - Peut lancer Nuage puant sur lui-même.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 - A 50 % de chance de se séparer en deux golems de chair mineurs lorsqu'il meurt.
 
@@ -158,7 +158,7 @@ Golem d'argile mineur :
   - Armes tranchantes : 75
   - Armes perforantes : 75
   - Projectiles : 75
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
 Golem d'argile :
@@ -185,7 +185,7 @@ Golem d'argile :
   - Projectiles : 100
 - Ne peut être touché que par des armes magiques.
 - Peut lancer Hâte sur lui-même.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
 Golem d'argile majeur :
@@ -213,7 +213,7 @@ Golem d'argile majeur :
   - Projectiles : 100
 - Ne peut être touché que par des armes +2 ou supérieures.
 - Peut lancer Hâte sur lui-même.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 - A 50 % de chance de se séparer en deux golems d'argile mineurs lorsqu'il meurt.
 
@@ -264,7 +264,7 @@ Golem de pierre mineur :
 - Résistances :
   - Magie : 75
 - Ne peut être touché que par des armes magiques.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
 Golem de pierre :
@@ -283,7 +283,7 @@ Golem de pierre :
   - Magie : 90
 - Ne peut être touché que par des armes +2 ou supérieures.
 - Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
 Golem de pierre majeur :
@@ -304,7 +304,7 @@ Golem de pierre majeur :
   - Acide : 50
 - Ne peut être touché que par des armes +2 ou supérieures.
 - Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 - A 50 % de chance de se séparer en deux golems de pierre mineurs lorsqu'il meurt.
 
@@ -497,8 +497,8 @@ Golem de mithril :
   - Projectiles : 50
 - Régénère au rythme de 1 PV par tour.
 - Ne peut être touché que par des armes +3 ou supérieures.
-- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
-  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
   contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
 
 Golem de mithril majeur :
@@ -527,8 +527,8 @@ Golem de mithril majeur :
   - Projectiles : 75
 - Régénère au rythme de 1 PV tous les trois rounds.
 - Ne peut être touché que par des armes +3 ou supérieures.
-- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
-  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
   contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
 - A 50 % de chance de se séparer en deux golems de mithril mineurs lorsqu'il meurt.
 
@@ -559,8 +559,8 @@ Golem de mithril parfait :
   - Projectiles : 85
 - Régénère au rythme de 1 PV par round.
 - Ne peut être touché que par des armes +4 ou supérieures.
-- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
-  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
   contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
 - Se sépare toujours en deux golems de mithril lorsqu'il meurt.
 
@@ -619,8 +619,8 @@ Golem d'adamantine :
   - Projectiles : 90
 - Régénère au rythme de 1 PV par tour.
 - Ne peut être touché que par des armes +3 ou supérieures.
-- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
-  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
   contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
 
 Golem d'adamantine majeur :
@@ -649,8 +649,8 @@ Golem d'adamantine majeur :
   - Projectiles : 95
 - Régénère au rythme de 1 PV tous les trois rounds.
 - Ne peut être touché que par des armes +4 ou supérieures.
-- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
-  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
   contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
 - A 50 % de chance de se séparer en deux golems d'adamantine mineurs lorsqu'il meurt.
 
@@ -681,8 +681,8 @@ Golem d'adamantine parfait :
   - Projectiles : 99
 - Régénère au rythme de 1 PV par round.
 - Ne peut être touché que par des armes +4 ou supérieures.
-- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite : 
-  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS 
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
   contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
 - Se sépare toujours en deux golems d'adamantine lorsqu'il meurt.
 
@@ -691,10 +691,10 @@ Golem d'adamantine parfait :
 Golems exotiques
 ================
 
-Les types de golems exotiques sont décrits dans le "Grimoire secret de Fabrication de Golem", un recueil qui se 
+Les types de golems exotiques sont décrits dans le "Grimoire secret de Fabrication de Golem", un recueil qui se
 composerait de six volumes et est très difficile à se procurer.
 
-Les golems décrits dans ces volumes sont uniques et ne sont par conséquent pas disponibles en versions mineure, 
+Les golems décrits dans ces volumes sont uniques et ne sont par conséquent pas disponibles en versions mineure,
 normale, majeure et parfaite.
 
 1. Golem de vers
@@ -718,15 +718,15 @@ normale, majeure et parfaite.
   - Armes perforantes : 100
   - Projectiles : 100
 - Régénère au rythme de 1 PV par round.
-- En manipulant le corps infesté de larves du golem pendant sa fabrication, son créateur a 15 % de chance 
+- En manipulant le corps infesté de larves du golem pendant sa fabrication, son créateur a 15 % de chance
   d'attraper une maladie qui le ralentit et lui inflige 2 points de dégâts par round pendant 5 tours.
-- Attaque spéciale "Étreinte étouffante" : la victime subit 2d6 points de dégâts contondants, est paralysée pendant un 
-  round et subit 1 point de dégât perforant par seconde si elle rate son JS contre les sorts. Chaque round suivant, elle 
-  doit réussir un JS contre les sorts avec un bonus de 4 pour pouvoir se libérer et échapper aux dégâts supplémentaires. 
+- Attaque spéciale "Étreinte étouffante" : la victime subit 2d6 points de dégâts contondants, est paralysée pendant un
+  round et subit 1 point de dégât perforant par seconde si elle rate son JS contre les sorts. Chaque round suivant, elle
+  doit réussir un JS contre les sorts avec un bonus de 4 pour pouvoir se libérer et échapper aux dégâts supplémentaires.
   Ces effets peuvent être annulés par une Dissipation de la magie ou bloqués par la résistance à la magie.
-- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de vers 
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de vers
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
-- Sa durée de vie ne dépasse pas 1d4+6 jours (temps interne au jeu). À l'expiration de ce délai, le golem a 50 % de chance 
+- Sa durée de vie ne dépasse pas 1d4+6 jours (temps interne au jeu). À l'expiration de ce délai, le golem a 50 % de chance
   de céder à une folie meurtrière pendant 1d6 rounds avant de se désintégrer.
 
 2. Golem d'os
@@ -754,8 +754,8 @@ normale, majeure et parfaite.
   - Armes perforantes : 50
   - Projectiles : 50
 - Ne peut être touché que par des armes magiques.
-- Peut lancer "Rire affreux" qui affecte ses ennemis dans un rayon de 9 mètres : Ceux qui ratent leur JS contre les sorts 
-  erreront sous l'effet de la panique pendant 2d6 rounds. De plus, un autre jet de sauvegarde réussi contre la mort leur 
+- Peut lancer "Rire affreux" qui affecte ses ennemis dans un rayon de 9 mètres : Ceux qui ratent leur JS contre les sorts
+  erreront sous l'effet de la panique pendant 2d6 rounds. De plus, un autre jet de sauvegarde réussi contre la mort leur
   évitera d'être paralysés par la peur à la place.
 
 3. Golem cerveau
@@ -782,8 +782,8 @@ normale, majeure et parfaite.
   - Projectiles : 50
 - Régénère au rythme de 1 PV par tour.
 - Ne peut être touché que par des armes +2 ou supérieures.
-- Peut lancer Décharge mentale qui étourdit pendant 2d4 rounds tous ses adversaires dans un rayon de 9 mètres, 
-  et leur inflige 2d8 points de dégâts non-létaux (JS contre les sorts pour éviter l'étourdissement et ne subir 
+- Peut lancer Décharge mentale qui étourdit pendant 2d4 rounds tous ses adversaires dans un rayon de 9 mètres,
+  et leur inflige 2d8 points de dégâts non-létaux (JS contre les sorts pour éviter l'étourdissement et ne subir
   que la moitié des dégâts). La Décharge mentale n'affecte pas les morts-vivants, les golems et les myconides.
 
 4. Golem de glace
@@ -810,7 +810,7 @@ normale, majeure et parfaite.
   - Armes perforantes : 20
   - Projectiles : 20
 - Ne peut être touché que par des armes magiques.
-- Peut lancer Vapeur glaçante qui inflige 3d10 points de dégâts de froid dans la zone d'effet 
+- Peut lancer Vapeur glaçante qui inflige 3d10 points de dégâts de froid dans la zone d'effet
   (un JS contre les souffles les annule).
 
 5. Golem magique
@@ -837,10 +837,10 @@ normale, majeure et parfaite.
 - Immunisé aux sorts et aux armes enchantées.
 - Doit être fabriqué dans une zone de magie entropique.
 - Chaque attaque à distance réussie draine une charge des objets possédés et un sort profane mémorisé.
-- Peut lancer Poussée entropique qui inflige 3d10 points de dégâts magiques et déclenche un hiatus entropique 
+- Peut lancer Poussée entropique qui inflige 3d10 points de dégâts magiques et déclenche un hiatus entropique
   sur la cible.
-- Se désintègre automatiquement dans les zones de magie morte avec 50 % de chance de générer une explosion 
-  d'énergie magique infligeant 2d6 points de dégâts magiques à quiconque se trouve dans un rayon de 9 mètres 
+- Se désintègre automatiquement dans les zones de magie morte avec 50 % de chance de générer une explosion
+  d'énergie magique infligeant 2d6 points de dégâts magiques à quiconque se trouve dans un rayon de 9 mètres
   (un jet de sauvegarde contre les sorts réussi permet d'en éviter la moitié).
 
 6. Golem de foudre
@@ -865,11 +865,11 @@ normale, majeure et parfaite.
 - Se déplace à une vitesse supérieure.
 - Bouclier électrique permanent : tout adversaire touchant le golem subit 1d8 +2 points de dégâts électriques.
 - Peut lancer Chaîne d'éclairs sur ses ennemis proches.
-- Peut lancer "Déplacement éclair" qui lui permet de se transporter presque instantanément à n'importe quel endroit 
-  dans son champ visuel en se transformant en un puissant éclair. Son déplacement à grande vitesse génère une onde 
-  de choc qui renverse et inflige 1d6 points de dégâts électriques à toutes les créatures présentes dans un rayon de 
-  3 mètres autour de son lieu de destination. Le coup de tonnerre qui en résulte les rend également sourdes pendant 
-  1d4 tours si elles ratent un jet de sauvegarde contre les souffles. Puisque cette capacité fait partie intégrante 
+- Peut lancer "Déplacement éclair" qui lui permet de se transporter presque instantanément à n'importe quel endroit
+  dans son champ visuel en se transformant en un puissant éclair. Son déplacement à grande vitesse génère une onde
+  de choc qui renverse et inflige 1d6 points de dégâts électriques à toutes les créatures présentes dans un rayon de
+  3 mètres autour de son lieu de destination. Le coup de tonnerre qui en résulte les rend également sourdes pendant
+  1d4 tours si elles ratent un jet de sauvegarde contre les souffles. Puisque cette capacité fait partie intégrante
   de la nature du golem, ce dernier n'a pas besoin d'attendre avant de l'utiliser à nouveau, ni ou une autre.
   Cette capacité remplace "Téléportation".
 
@@ -877,8 +877,8 @@ normale, majeure et parfaite.
 Les Golems dont on peut passer commande dans BG:EE
 ==================================================
 
-Ces types de golems sont décrits dans le "Grimoire interdit de Fabrication de Golem" que vous trouverez quelque 
-part pendant votre périple dans BG1. Il vous faudra trouver un magicien expérimenté qui puisse les construire 
+Ces types de golems sont décrits dans le "Grimoire interdit de Fabrication de Golem" que vous trouverez quelque
+part pendant votre périple dans BG1. Il vous faudra trouver un magicien expérimenté qui puisse les construire
 pour vous.
 
 1. Golem poupée
@@ -900,16 +900,16 @@ pour vous.
   - Armes perforantes : 25
   - Projectiles : 25
 - Ne peut être touché que par des armes magiques.
-- Spécial : Chaque attaque réussie a une chance de provoquer un rire incontrôlable chez la cible si elle rate son JS contre 
-  les sorts (avec un bonus de +2). La victime devient incapable de faire quoi que ce soit d'autre. Déclenché le round suivant 
-  le JS raté, ce rire provoque des spasmes musculaires si douloureux qu'il inflige 1d4 points de dégâts supplémentaires 
-  cumulables à chaque round (1d4 lors du premier, 2d4 lors du second, etc.). La victime doit réussir un JS contre les sorts 
-  (avec un bonus de +2) à chaque round pour mettre fin au rire. Sinon, le rire ne s'arrête qu'au bout d'un tour ou s'il est 
-  annulé par une Dissipation de la magie. La Résistance à la magie de la cible peut aussi protéger des effets. Les 
-  morts-vivants et les créatures artificielles ne sont pas affectées. Une fois le rire dissipé, la victime reste fatiguée 
-  pendant une durée égale à la moitié du temps qu'elle a été sous l'emprise du rire, pendant laquelle elle souffre d'une 
+- Spécial : Chaque attaque réussie a une chance de provoquer un rire incontrôlable chez la cible si elle rate son JS contre
+  les sorts (avec un bonus de +2). La victime devient incapable de faire quoi que ce soit d'autre. Déclenché le round suivant
+  le JS raté, ce rire provoque des spasmes musculaires si douloureux qu'il inflige 1d4 points de dégâts supplémentaires
+  cumulables à chaque round (1d4 lors du premier, 2d4 lors du second, etc.). La victime doit réussir un JS contre les sorts
+  (avec un bonus de +2) à chaque round pour mettre fin au rire. Sinon, le rire ne s'arrête qu'au bout d'un tour ou s'il est
+  annulé par une Dissipation de la magie. La Résistance à la magie de la cible peut aussi protéger des effets. Les
+  morts-vivants et les créatures artificielles ne sont pas affectées. Une fois le rire dissipé, la victime reste fatiguée
+  pendant une durée égale à la moitié du temps qu'elle a été sous l'emprise du rire, pendant laquelle elle souffre d'une
   pénalité de -1 à la CA, à son TAC0 et à tous ses JS.
-- Ce golem peut être fabriqué par le nécromancien Arkion (contre honoraires) qui réside à la Porte de Baldur, au sud de la 
+- Ce golem peut être fabriqué par le nécromancien Arkion (contre honoraires) qui réside à la Porte de Baldur, au sud de la
   Taverne du Chant de l'Elfe.
 
 2. Poupée d'os
@@ -933,34 +933,34 @@ pour vous.
   - Armes perforantes : 50
   - Projectiles : 50
 - Ne peut être touché que par des armes magiques.
-- Spécial : Lorsqu'elle meurt, la poupée d'os explose en infligeant 2d6 points de dégâts perforants et 1d6 points de dégâts 
+- Spécial : Lorsqu'elle meurt, la poupée d'os explose en infligeant 2d6 points de dégâts perforants et 1d6 points de dégâts
   contondants à quiconque se trouve dans un rayon de 3 mètres.
-- Ce golem peut être fabriqué par la nécromancienne Nemphré (contre honoraires) qui réside à la Porte de Baldur, à l'est de 
+- Ce golem peut être fabriqué par la nécromancienne Nemphré (contre honoraires) qui réside à la Porte de Baldur, à l'est de
   l'Auberge de la Lame et des Étoiles.
 
 
 Chaque golem dispose par défaut des capacités suivantes :
 1. Renvoi        : L'activer provoque la désintégration du golem. Elle est irréversible.
-2. Téléportation : Le golem se téléporte près d'un membre du groupe situé dans son champ de vision. Utile pour les 
-                   golems de taille géante qui peuvent se trouver bloqués par des passages trop étroits pour qu'ils 
+2. Téléportation : Le golem se téléporte près d'un membre du groupe situé dans son champ de vision. Utile pour les
+                   golems de taille géante qui peuvent se trouver bloqués par des passages trop étroits pour qu'ils
                    les empruntent. Elle ne peut être utilisée avec succès que si aucun ennemi n'est en vue.
-                   Note : Cette capacité est ajoutée par le composant de Modifications "Ajouter la capacité Téléportation 
+                   Note : Cette capacité est ajoutée par le composant de Modifications "Ajouter la capacité Téléportation
                           aux golems".
 
-Vous pouvez aussi donner des ordres simples à vos golems. Les modèles mineurs de golems de chair, d'argile et de pierre, 
+Vous pouvez aussi donner des ordres simples à vos golems. Les modèles mineurs de golems de chair, d'argile et de pierre,
 ainsi que les golems de vers peuvent obéir aux ordres suivants :
 - Suis-moi ! (Le golem devient contrôlable mais n'agit pas par lui-même. C'est son état par défaut lorsqu'il est activé.)
 - Monte la garde ! (Le golem redevient neutre et ne s'éloigne pas de sa position.)
-- Détruis-toi ! (Oblige le golem à se désintégrer. Cette commande est identique à la capacité "Renvoi", mais peut aussi 
+- Détruis-toi ! (Oblige le golem à se désintégrer. Cette commande est identique à la capacité "Renvoi", mais peut aussi
                  être activée lorsque le golem monte la garde.)
 
 Les golems plus évolués peuvent aussi répondre aux ordres suivants :
-- Suis-moi et protège-moi ! (Le golem devient contrôlable et attaquera à vue toute créature hostile ou tout ennemi qui 
+- Suis-moi et protège-moi ! (Le golem devient contrôlable et attaquera à vue toute créature hostile ou tout ennemi qui
                              s'en prendra aux membres du groupe.)
-- Monte la garde et défends les lieux ! (Le golem devient neutre et attaque toute créature hostile qu'il voit. Il retourne 
+- Monte la garde et défends les lieux ! (Le golem devient neutre et attaque toute créature hostile qu'il voit. Il retourne
                                          toujours à la position qu'il garde.)
 
-Vous devriez prendre grand soin de vos golems car ils peuvent souffrir de défaillances lorsqu'ils sont lourdement endommagés. 
+Vous devriez prendre grand soin de vos golems car ils peuvent souffrir de défaillances lorsqu'ils sont lourdement endommagés.
 La capacité "Réparer un Golem" permet de les remettre en état.
 
 
@@ -1040,15 +1040,15 @@ Siege of Dragonspear :
 - Bazar des Sorcelleries :
   Vous pouvez louer l'étage supérieur au propriétaire de l'échoppe.
 - Repaire des morts-vivants :
-  Ce donjon se trouve sous le site de fouilles des Nains. Vous devez d'abord sécuriser la zone en éliminant son résident 
+  Ce donjon se trouve sous le site de fouilles des Nains. Vous devez d'abord sécuriser la zone en éliminant son résident
   et ses minions morts-vivants.
 - Les Ruines de Kanaglym :
-  Les ruines sont accessibles à partir de la Rivière souterraine sous le Château de Dragonspear. Vous devez d'abord 
+  Les ruines sont accessibles à partir de la Rivière souterraine sous le Château de Dragonspear. Vous devez d'abord
   sécuriser la zone en éliminant tous les ennemis.
 
 Les Ombres d'Amn :
 - La Sphère Planaire :
-  Le premier niveau de la Sphère peut convenir à la création de golems (après s'être débarrassé de son précédent 
+  Le premier niveau de la Sphère peut convenir à la création de golems (après s'être débarrassé de son précédent
   propriétaire, bien sûr).
 - La maison de Jermien :
   Vous pouvez peut-être le convaincre d'utiliser sa maison d'Imnesvale pour créer vos propres golems si le protagoniste
@@ -1059,10 +1059,10 @@ Les Ombres d'Amn :
 
 La Tour de Garde :
 - Deuxième étage :
-  La Bibliothèque des magiciens est bien équipée, mais vous devrez au préalable désactiver tous ses mécanismes défensifs 
+  La Bibliothèque des magiciens est bien équipée, mais vous devrez au préalable désactiver tous ses mécanismes défensifs
   (ce qui inclue la créature qui garde le portail de téléportation pour le niveau suivant).
 
 Trône de Bhaal :
 - Antichambre :
-  Ce lieu est suffisamment sécurisé pour y mener toutes sortes d'expériences magiques. Lazarus Librarus peut vous fournir 
+  Ce lieu est suffisamment sécurisé pour y mener toutes sortes d'expériences magiques. Lazarus Librarus peut vous fournir
   le matériel requis pour l'équiper à un prix raisonnable.

@@ -6,35 +6,35 @@ Introduction
 ============
 
 Golems can be constructed with the "Construct Golem" ability which you can learn from the various golem building manuals.
-A short dialog allows you to select the desired golem type and variant to build. The construction of the physical 
-body takes several hours up to several days, followed by the enchantment process. There is a 4 percent chance that 
-the golem may break free and turn on the caster for 1d4 rounds before it finally submits to your will. After the 
+A short dialog allows you to select the desired golem type and variant to build. The construction of the physical
+body takes several hours up to several days, followed by the enchantment process. There is a 4 percent chance that
+the golem may break free and turn on the caster for 1d4 rounds before it finally submits to your will. After the
 construction process finished the caster will be too tired to cast spells or fight properly for several rounds.
 
-Because of the equipment required to successfully construct the golem's body you are limited to a few selected locations 
+Because of the equipment required to successfully construct the golem's body you are limited to a few selected locations
 where you can actually build a golem. Promising locations are usually (abandoned) strongholds of powerful mages.
 More details can be found at the end of this document.
 
-The "Construct Golem" ability can be used as many times as needed without the need to rest in between (although it is 
+The "Construct Golem" ability can be used as many times as needed without the need to rest in between (although it is
 strongly recommended).
 
-Golem manuals will also teach you the "Repair Golem" ability. It can be used once per day in any location, but does 
-not work while enemies are around. The repair process takes about two rounds. Heavily damaged golems may require several 
+Golem manuals will also teach you the "Repair Golem" ability. It can be used once per day in any location, but does
+not work while enemies are around. The repair process takes about two rounds. Heavily damaged golems may require several
 attempts to restore them to full health.
 
 
 Conventional Golems
 ===================
 
-Conventional golem types are described in the "Manual of Golem Building" which comes in six volumes. The tomes 
-themselves are not terribly difficult to obtain. Some can be purchased from merchants while others may be hidden 
+Conventional golem types are described in the "Manual of Golem Building" which comes in six volumes. The tomes
+themselves are not terribly difficult to obtain. Some can be purchased from merchants while others may be hidden
 in some dungeon or guarded by creatures.
 
-The materials required to build golems are also obtainable from various sources. More common ingredients can be bought 
-from merchants, looted from creatures or found in various locations, while the more expensive or exotic materials are 
+The materials required to build golems are also obtainable from various sources. More common ingredients can be bought
+from merchants, looted from creatures or found in various locations, while the more expensive or exotic materials are
 available by other means.
 
-Conventional golem types can be build in lesser, regular, greater and perfect variants. Each variant requires its own 
+Conventional golem types can be build in lesser, regular, greater and perfect variants. Each variant requires its own
 materials. The perfect variant will also require a specific artifact of power which is only available in limited numbers.
 
 
@@ -56,7 +56,7 @@ Lesser Flesh Golem:
   - Cold: 75
   - Magic Cold: 75
   - Electricity: 75
-- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 
 Flesh Golem:
@@ -78,7 +78,7 @@ Flesh Golem:
   - Piercing: 25
   - Missile: 25
 - Immune to non-magical weapons
-- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 
 Greater Flesh Golem:
@@ -102,7 +102,7 @@ Greater Flesh Golem:
   - Missile: 75
 - Immune to non-magical weapons
 - May cast Stinking Cloud on self
-- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 - 50% chance to split into two lesser golems of same type on death.
 
@@ -153,7 +153,7 @@ Lesser Clay Golem:
   - Slashing: 75
   - Piercing: 75
   - Missile: 75
-- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 
 Clay Golem:
@@ -180,7 +180,7 @@ Clay Golem:
   - Missile: 100
 - Immune to non-magical weapons
 - May cast Haste on self
-- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 
 Greater Clay Golem:
@@ -208,7 +208,7 @@ Greater Clay Golem:
   - Missile: 100
 - Immune to non-magical and +1 weapons
 - May cast Haste on self
-- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 - 50% chance to split into two lesser golems of same type on death.
 
@@ -259,7 +259,7 @@ Lesser Stone Golem:
 - Resistances:
   - Magic: 75
 - Immune to non-magical weapons
-- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 
 Stone Golem:
@@ -278,7 +278,7 @@ Stone Golem:
   - Magic: 90
 - Immune to non-magical and +1 weapons
 - May cast Slow on opponents in 30 feet radius of golem
-- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 
 Greater Stone Golem:
@@ -299,7 +299,7 @@ Greater Stone Golem:
   - Acid: 50
 - Immune to non-magical and +1 weapons
 - May cast Slow on opponents in 30 feet radius of golem
-- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
 - 50% chance to split into two lesser golems of same type on death.
 
@@ -492,7 +492,7 @@ Mithral Golem:
   - Missile: 50
 - Regenerates 1 HP per turn
 - Immune to non-magical, +1 and +2 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
 
 Greater Mithral Golem:
@@ -521,7 +521,7 @@ Greater Mithral Golem:
   - Missile: 75
 - Regenerates 1 HP per three rounds
 - Immune to non-magical, +1 and +2 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
 - 50% chance to split into two lesser golems of same type on death.
 
@@ -552,7 +552,7 @@ Perfect Mithral Golem:
   - Missile: 85
 - Regenerates 1 HP per round
 - Immune to non-magical, +1, +2 and +3 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
 - Always splits into two regular golems of same type on death.
 
@@ -611,7 +611,7 @@ Adamantite Golem:
   - Missile: 90
 - Regenerates 1 HP per turn
 - Immune to non-magical, +1 and +2 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
 
 Greater Adamantite Golem:
@@ -640,7 +640,7 @@ Greater Adamantite Golem:
   - Missile: 95
 - Regenerates 1 HP per three rounds
 - Immune to non-magical, +1, +2 and +3 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
 - 50% chance to split into two lesser golems of same type on death.
 
@@ -671,7 +671,7 @@ Perfect Adamantite Golem:
   - Missile: 99
 - Regenerates 1 HP per round
 - Immune to non-magical, +1, +2 and +3 weapons
-- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target 
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
   for one round (save vs. death at -4 penalty for half damage and avoid stun)
 - Always splits into two regular golems of same type on death.
 
@@ -680,7 +680,7 @@ Perfect Adamantite Golem:
 Exotic Golems
 =============
 
-Exotic golem types are described in the "Secret Manual of Golem Building" which is supposed to come in six volumes 
+Exotic golem types are described in the "Secret Manual of Golem Building" which is supposed to come in six volumes
 as well, but is harder to come by.
 
 Golems described in these tomes are unique, and therefore not available as lesser, greater or perfect variants.
@@ -706,15 +706,15 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Piercing: 100
   - Missile: 100
 - Regenerates 1 HP per round
-- There is a 15% chance that the caster catches a disease from the maggot-infested golem body during creation which 
+- There is a 15% chance that the caster catches a disease from the maggot-infested golem body during creation which
   slows the caster and does 2 HP damage per round for 5 turns.
-- Special attack "Smothering": In addition to 2d6 crushing damage the target is held for one round and suffers 1 HP/sec 
-  piercing damage on a failed save vs. spell. After each round the target must make a save vs. spell with a +4 bonus 
-  to break free or is held and damaged for another round. The effect can be removed with dispel magic or blocked by 
+- Special attack "Smothering": In addition to 2d6 crushing damage the target is held for one round and suffers 1 HP/sec
+  piercing damage on a failed save vs. spell. After each round the target must make a save vs. spell with a +4 bonus
+  to break free or is held and damaged for another round. The effect can be removed with dispel magic or blocked by
   magic resistance.
-- There is a 1% chance that a maggot golem may go berserk during combat for 1d6 rounds and attack the nearest creature 
+- There is a 1% chance that a maggot golem may go berserk during combat for 1d6 rounds and attack the nearest creature
   in sight.
-- Lasts only 1d4+6 days in-game time. When the duration ends there is a 50% chance to run amok for 1d6 rounds before it 
+- Lasts only 1d4+6 days in-game time. When the duration ends there is a 50% chance to run amok for 1d6 rounds before it
   disintegrates.
 
 2. Bone Golem
@@ -722,7 +722,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Ingredients:
   - Four piles of bones
   - One scroll of Animate Dead
-  - 50% chance that the construction process drains one level from the caster, and 10% chance that the construction 
+  - 50% chance that the construction process drains one level from the caster, and 10% chance that the construction
     process drains two levels from the caster.
 - Stats:
   - STR: 21
@@ -743,7 +743,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Piercing: 50
   - Missile: 50
 - Immune to non-magical weapons
-- May cast "Hideous Laughter" which affects enemies within 30 ft. range: Victims that fail their save vs. spell will 
+- May cast "Hideous Laughter" which affects enemies within 30 ft. range: Victims that fail their save vs. spell will
   run around in fear for 2d6 rounds. If they also fail their save vs. death, they will by paralyzed with fear instead.
 
 3. Brain Golem
@@ -770,8 +770,8 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Missile: 50
 - Regenerates 1 HP per turn
 - Immune to non-magical and +1 weapons
-- May cast Mental Blast which stuns all opponents in 30 feet radius, centered on itself for 2d4 rounds and does 
-  2d8 nonlethal damage (save vs. spell for half damage and avoid stun effect). Does not affect undead, golems 
+- May cast Mental Blast which stuns all opponents in 30 feet radius, centered on itself for 2d4 rounds and does
+  2d8 nonlethal damage (save vs. spell for half damage and avoid stun effect). Does not affect undead, golems
   and myconids.
 
 4. Ice Golem
@@ -825,7 +825,7 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Must be constructed in wild magic areas
 - Each successful ranged attack drains one charge from charged items and a single memorized wizard spell
 - May cast Wild Magic Flare which does 3d10 magic damage and triggers a wild surge effect on the target
-- Disintegrates in dead magic zones with a 50% chance of doing a final magic blast which does 2d6 magic damage to 
+- Disintegrates in dead magic zones with a 50% chance of doing a final magic blast which does 2d6 magic damage to
   everyone in 30 feet radius (save vs. spell for half damage).
 
 6. Lightning Golem
@@ -850,19 +850,19 @@ Golems described in these tomes are unique, and therefore not available as lesse
 - Moves at increased speed
 - Permanent lightning shield: Attackers suffer 1d8+2 electrical damage on each successful hit
 - May cast Chain Lightning on nearby enemies
-- May cast "Lightning Travel" which allows the golem to travel to any point within visual range by transforming into 
-  a powerful bolt of lightning and travelling to the target at light speed. The high speed transportation generates 
-  a shockwave that will blow away and cause 1d6 lightning damage to all creatures within 8 feet radius of the target 
-  location. The resulting thunderclap may also cause deafness to any creature in range for 1d4 rounds if they fail 
-  their Saving Throw vs. Breath. The golem also does not have to wait for its aura to be cleansed before using the 
+- May cast "Lightning Travel" which allows the golem to travel to any point within visual range by transforming into
+  a powerful bolt of lightning and travelling to the target at light speed. The high speed transportation generates
+  a shockwave that will blow away and cause 1d6 lightning damage to all creatures within 8 feet radius of the target
+  location. The resulting thunderclap may also cause deafness to any creature in range for 1d4 rounds if they fail
+  their Saving Throw vs. Breath. The golem also does not have to wait for its aura to be cleansed before using the
   same or another ability again. This ability replaces "Teleport".
 
 
 Golems that can be commissioned in BG:EE
 ========================================
 
-These types of golems are described in the "Forbidden Manual of Golem Building" which can be found somewhere during 
-your adventures in the BG1 part of the game. You have to find an experienced mage who may be able to construct them 
+These types of golems are described in the "Forbidden Manual of Golem Building" which can be found somewhere during
+your adventures in the BG1 part of the game. You have to find an experienced mage who may be able to construct them
 for you. More about it below.
 
 1. Doll Golem
@@ -884,12 +884,12 @@ for you. More about it below.
   - Piercing: 25
   - Missile: 25
 - Immune to non-magical weapons
-- Special: Each attack has a chance to apply an uncontrollable laughter to the target if it fails a save vs. spell 
-  with a +2 bonus. The victim becomes unable to perform any other actions. Starting with the second round, each 
-  successive round causes +1d4 damage compared to the previous round, which is caused by the muscle spasms imposed by 
-  the laughter. The victim is allowed to make a save vs. spell with a +2 bonus after every round to end the laughter. 
-  Otherwise it ends after one turn or when removed by a Dispel Magic. Magic resistance can prevent the effect 
-  altogether. Undead and constructs are not affected. After the effect ended the victim is fatigued for half the time 
+- Special: Each attack has a chance to apply an uncontrollable laughter to the target if it fails a save vs. spell
+  with a +2 bonus. The victim becomes unable to perform any other actions. Starting with the second round, each
+  successive round causes +1d4 damage compared to the previous round, which is caused by the muscle spasms imposed by
+  the laughter. The victim is allowed to make a save vs. spell with a +2 bonus after every round to end the laughter.
+  Otherwise it ends after one turn or when removed by a Dispel Magic. Magic resistance can prevent the effect
+  altogether. Undead and constructs are not affected. After the effect ended the victim is fatigued for half the time
   it was under the effect of laughter, which includes a -1 penalty to AC, THAC0 and all saving throws.
 - This golem can be built by the necromancer Arkion (for a fee) who lives in Baldur's Gate, south of the Elfsong Tavern.
 
@@ -914,33 +914,33 @@ for you. More about it below.
   - Piercing: 50
   - Missile: 50
 - Immune to non-magical weapons
-- Special: The bone doll explodes when it dies which causes 2d6 piercing damage and 1d6 crushing damage to everyone 
+- Special: The bone doll explodes when it dies which causes 2d6 piercing damage and 1d6 crushing damage to everyone
   in 10 feet radius.
-- This golem can be built by the necromancer Nemphre (for a fee) who lives in Baldur's Gate, east of the Blade and 
+- This golem can be built by the necromancer Nemphre (for a fee) who lives in Baldur's Gate, east of the Blade and
   Stars Inn.
 
 
 Each golem has the following abilities by default:
 1. Dismiss:  Activating this ability will cause the golem to disintegrate. The process is irreversible.
-2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with 
-             big circle sizes so they won't get stuck in narrow pathways. It can only be used while no enemies are 
+2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with
+             big circle sizes so they won't get stuck in narrow pathways. It can only be used while no enemies are
              around.
              Note: This ability is added by the Tweaks component "Add "Teleport" ability to golems".
 
-You can also give your golems simple commands. Lesser variants of flesh, clay and stone golems, as well as maggot golems 
+You can also give your golems simple commands. Lesser variants of flesh, clay and stone golems, as well as maggot golems
 may follow the following orders:
 - Follow me! (The golem becomes controllable, but does not act on its own. This is the default action after activation.)
 - Stand guard! (The golem turns neutral and does not budge from its current position.)
-- Destroy yourself! (Causes the golem to disintegrate. This command is the same as the "Dismiss" ability, but can also 
+- Destroy yourself! (Causes the golem to disintegrate. This command is the same as the "Dismiss" ability, but can also
                      be issued when the golem is on guard duty.)
 
 More advanced golems may also follow the following orders:
-- Follow and protect me! (The golem becomes controllable and will attack any hostile creature in sight, or enemies that 
+- Follow and protect me! (The golem becomes controllable and will attack any hostile creature in sight, or enemies that
                           are attacking party members.)
-- Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns 
+- Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns
                                     to its guarded position.)
 
-You should always take good care of your golems as they may start to malfunction when badly damaged. These penalties can 
+You should always take good care of your golems as they may start to malfunction when badly damaged. These penalties can
 be removed by the "Repair Golem" ability.
 
 
@@ -986,26 +986,26 @@ wording.
 Spells that are affecting golems in some way
 ============================================
 
-Since golems are non-living constructs they may be affected differently by certain spells. The following effects can 
+Since golems are non-living constructs they may be affected differently by certain spells. The following effects can
 be triggered when the Tweaks component "Make golems vulnerable to specific spell effects" has been installed:
 - Flesh to Stone:
   Turns Flesh Golems into Stone Golems of the same variant if they fail their Saving Throw vs. Petrify/Polymorph.
 - Stone to Flesh:
   Turns Stone Golems into Flesh Golems of the same variant if they fail their Saving Throw vs. Petrify/Polymorph.
 - Abi-Dalzim's Horrid Wilting:
-  This spell dehydrates all Clay Golems in the area of effect and turns them into Stone Golems if they fail their 
+  This spell dehydrates all Clay Golems in the area of effect and turns them into Stone Golems if they fail their
   Saving Throw vs. Spell at -2 penalty.
 - Death Spell:
   Kills Maggot Golems automatically (no save allowed).
 - Cone of Cold and Ice Storm:
   Clay Golems hit by this spell are slowed for five rounds if they fail their Saving Throw vs. Spell.
 - Sunray:
-  Causes the adamantine alloy of Adamantite Golems to deteriorate which reduces physical resistances permanently 
+  Causes the adamantine alloy of Adamantite Golems to deteriorate which reduces physical resistances permanently
   if they fail their Saving Throw vs. Spell. The "Repair Golem" ability can remove this effect.
 - High-level fire-based spells:
-  These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage 
+  These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage
   in addition to physical damage.
-  The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud and Fire 
+  The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud and Fire
   Storm.
 
 
@@ -1016,28 +1016,28 @@ Siege of Dragonspear:
 - Sorcerous Sundries:
   You may rent the second floor from the proprietor of the shop.
 - Repository of Undeath:
-  This dungeon can be found beneath the Dwarven Dig Site. You have to make the area safe first by destroying the 
+  This dungeon can be found beneath the Dwarven Dig Site. You have to make the area safe first by destroying the
   undead minions and dealing with the current resident.
 - Ruins of Kanaglym:
-  The ruins are accessible from the Underground River area. You have to make the area safe first by destroying all 
+  The ruins are accessible from the Underground River area. You have to make the area safe first by destroying all
   enemies and dealing with Kherriun.
 
 Shadows of Amn:
 - Planar Sphere:
   The opening area of the Sphere may be suitable for golem building (after dealing with the former owner, of course).
 - Jermien's Home:
-  You may be able to convince Jermien to use his home in Imnesvale for building your own golems if the protagonist is 
+  You may be able to convince Jermien to use his home in Imnesvale for building your own golems if the protagonist is
   a spellcaster or Imoen is present.
 - Cleric stronghold:
-  Either of the three available temples in Athkatla's Temple District can be used to build clay golems if the 
+  Either of the three available temples in Athkatla's Temple District can be used to build clay golems if the
   protagonist is a cleric and chooses the respective temple of their faith as their stronghold.
 
 Watcher's Keep:
 - Second Level:
-  The Wizard's Library is well equipped, but you must disable all defense mechanisms first (which includes the creature 
+  The Wizard's Library is well equipped, but you must disable all defense mechanisms first (which includes the creature
   that guards the teleporter to the next level).
 
 Throne of Bhaal:
 - The Pocket Plane:
-  This place looks safe enough for all kinds of magical experiments. Lazarus Librarus may provide the required 
+  This place looks safe enough for all kinds of magical experiments. Lazarus Librarus may provide the required
   equipment for a fair price.
