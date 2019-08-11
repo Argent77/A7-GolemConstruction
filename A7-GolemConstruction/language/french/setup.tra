@@ -13,14 +13,14 @@
 @45 = ~Identifier tous les objets du module~
 @50 = ~Ajouter la capacite "Teleportation" aux golems~
 
-@100 = ~Ce composant necessite l'installation de BG:EE, BG2:EE ou d'IWD:EE.~
+@100 = ~Ce composant necessite l'installation de BG:EE, BG2:EE, EET ou IWD:EE.~
 @101 = ~Ce composant requiert l'installation prealable du composant principal.~
 @102 = ~Aucun emplacement (slot) d'animation n'est disponible.~
-@103 = ~Ce composant necessite un jeu beneficiant du patch >= v2.0 (BG:SoD et BG2:EE) ou >= v1.4 (IWD:EE).~
-@104 = ~Ce composant necessite l'installation de BG2:EE.~
-@106 = ~Ce composant necessite l'installation de BG:SoD ou de BG2:EE.~
-@107 = ~Ce composant necessite l'installation de BG:SoD, BG2:EE ou d'IWD:EE.~
-@108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment"~
+@103 = ~Ce composant necessite un jeu beneficiant du patch v2.0 ou ulterieur.~
+@104 = ~Ce composant necessite l'installation de BG2:EE ou d'EET.~
+@106 = ~Ce composant necessite l'installation de SoD, BG2:EE ou EET.~
+@107 = ~Ce composant necessite l'installation de SoD, BG2:EE, EET ou IWD:EE.~
+@108 = ~Ce composant entre en conflit avec le composant "Equipement ameliorable" de Rogue Rebalancing~
 
 
 // WeiDU prompts

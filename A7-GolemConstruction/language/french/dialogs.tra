@@ -86,6 +86,13 @@
 @41509 = ~C'est fait, Maître. Un de vos lingots de fer a été transformée en un bloc de mithril.~
 @41510 = ~Transformer tout votre fer en un seul bloc de mithril.~
 @41511 = ~Transformer un de vos lingots de fer en mithril.~
+@41512 = ~Je voudrais que mon golem s'améliore.~
+@41513 = ~Je voudrais que l'esprit et le corps de mon golem s'améliorent.~
+@41514 = ~Accordé. Le niveau d'expérience de votre golem va être réinitialisé, de sorte qu'il ait l'opportunité de s'améliorer de nouveau.~
+@41515 = ~Je n'ai pas le pouvoir d'améliorer encore votre golem. Vous devrez choisir un autre souhait.~
+@41516 = ~Accordé. Je vais promouvoir votre golem à un état d'être supérieur.~
+@41517 = ~Rétrograder l'un de vos golems.~
+@41518 = ~Promouvoir l'un de vos golems.~
 
 
 // *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
@@ -181,6 +188,10 @@
 @45010 = ~Non.~
 @45011 = ~La magie qui protège ce lieu a désactivé votre golem.~
 @45012 = ~Vous ne pouvez avoir davantage de serviteurs golems.~
+@45013 = ~Montre-moi combien d'adversaires tu as tués.~
+@45014 = ~Améliorer le golem.~
+@45015 = ~Nombre d'adversaires tués par cette créature : <A7_GOLEMKILLS>~
+@45016 = ~Vous préparez le golem pour le processus de mise à niveau...~
 
 
 // *** Jermien of Imnesvale ***
@@ -196,6 +207,11 @@
 @45509 = ~Avant de partir, pourriez-vous s'il vous plaît nous apprendre à fabriquer des golems géants ? Nous voudrions bien essayer.~
 @45510 = ~Hum. Puisque vous avez réussi à "gérer" si facilement les effets de mon expérience ratée, je pourrais probablement faire une exception. C'est entendu, je vais vous confier mon propre manuel de fabrication de golem. Étudiez-le bien et ne répétez pas mes erreurs.~
 @45511 = ~Allez, monsieur Jermien ! Quel mal pouvons-nous faire à essayer nous-mêmes ? Je vous promets d'être très prudente. S'il vous plaît, soyez sympa !~
+
+
+// *** Ribald Barterman ***
+@45600 = ~On m'a dit que tu faisais commerce de matériel pour fabriquer des golems. En as-tu à vendre ?~
+@45601 = ~J'ai bien peur que tu n'arrives trop tard. J'ai vendu le dernier article il y a tout juste deux semaines. Ce genre de marchandise est très difficile à trouver car il n'y a pas beaucoup de demande.~
 
 
 // *** The necromancer Arkion ***

@@ -27,7 +27,7 @@ de réparation dure environ deux rounds. Plusieurs tentatives peuvent être néc
 golems sévèrement endommagés.
 
 
-Les Golems Traditionnels
+Les Golems traditionnels
 ========================
 
 Les types de golems traditionnels sont décrits dans le "Grimoire de Fabrication de Golem", recueil en six 
@@ -60,7 +60,7 @@ Golem de chair mineur :
   - Magie : 75
   - Froid : 75
   - Froid magique : 75
-  - Electricité : 75
+  - Électricité : 75
 - Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair 
   devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
 
@@ -79,7 +79,7 @@ Golem de chair :
   - Magie : 90
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Armes perforantes : 25
   - Projectiles : 25
 - Ne peut être touché que par des armes magiques.
@@ -102,7 +102,7 @@ Golem de chair majeur :
   - Magie : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 125
+  - Électricité : 125
   - Armes perforantes : 75
   - Projectiles : 75
 - Ne peut être touché que par des armes magiques.
@@ -128,7 +128,7 @@ Golem de chair parfait :
   - Magie : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 125
+  - Électricité : 125
   - Armes perforantes : 100
   - Projectiles : 100
 - Régénère au rythme de 1 PV par tour.
@@ -154,7 +154,7 @@ Golem d'argile mineur :
   - Magie : 75
   - Froid : 75
   - Froid magique : 75
-  - Electricité : 100
+  - Électricité : 100
   - Armes tranchantes : 75
   - Armes perforantes : 75
   - Projectiles : 75
@@ -179,7 +179,7 @@ Golem d'argile :
   - Feu magique : 50
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Armes tranchantes : 100
   - Armes perforantes : 100
   - Projectiles : 100
@@ -206,7 +206,7 @@ Golem d'argile majeur :
   - Feu magique : 50
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 75
   - Armes tranchantes : 100
   - Armes perforantes : 100
@@ -236,7 +236,7 @@ Golem d'argile parfait :
   - Feu magique : 50
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 100
   - Armes contondantes : 33
@@ -300,7 +300,7 @@ Golem de pierre majeur :
   - Jets de sauvegarde : 4/6/5/4/7
 - Résistances :
   - Magie : 100
-  - Electricité : 50
+  - Électricité : 50
   - Acide : 50
 - Ne peut être touché que par des armes +2 ou supérieures.
 - Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
@@ -327,7 +327,7 @@ Golem de pierre parfait :
   - Feu magique : 50
   - Froid : 50
   - Froid magique : 50
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
 - Régénère au rythme de 1 PV par tour.
 - Ne peut être touché que par des armes +3 ou supérieures.
@@ -354,7 +354,7 @@ Golem de fer mineur :
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 50
 - Ne peut être touché que par des armes +2 ou supérieures.
 
@@ -376,7 +376,7 @@ Golem de fer :
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 75
   - Armes tranchantes : 20
   - Armes perforantes : 20
@@ -402,7 +402,7 @@ Golem de fer majeur :
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 50
   - Armes contondantes : 25
@@ -432,7 +432,7 @@ Golem de fer parfait :
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 75
   - Armes contondantes : 25
@@ -464,7 +464,7 @@ Golem de mithril mineur :
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 20
   - Armes perforantes : 20
@@ -489,7 +489,7 @@ Golem de mithril :
   - Feu magique : 125
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 50
   - Armes contondantes : 33
@@ -519,7 +519,7 @@ Golem de mithril majeur :
   - Feu magique : 125
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 75
   - Armes contondantes : 50
@@ -551,7 +551,7 @@ Golem de mithril parfait :
   - Feu magique : 125
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 85
   - Armes contondantes : 75
@@ -585,7 +585,7 @@ Golem d'adamantine mineur :
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 75
   - Armes contondantes : 75
@@ -611,7 +611,7 @@ Golem d'adamantine :
   - Feu magique : 125
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 90
   - Armes contondantes : 90
@@ -641,7 +641,7 @@ Golem d'adamantine majeur :
   - Feu magique : 125
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 95
   - Armes contondantes : 95
@@ -673,7 +673,7 @@ Golem d'adamantine parfait :
   - Feu magique : 125
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 99
   - Armes contondantes : 99
@@ -748,7 +748,7 @@ normale, majeure et parfaite.
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 50
   - Armes perforantes : 50
@@ -776,7 +776,7 @@ normale, majeure et parfaite.
   - Feu magique : 50
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Armes tranchantes : 50
   - Armes perforantes : 50
   - Projectiles : 50
@@ -803,7 +803,7 @@ normale, majeure et parfaite.
   - Magie : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
   - Armes tranchantes : 20
   - Armes contondantes : 20
@@ -832,7 +832,7 @@ normale, majeure et parfaite.
   - Feu magique : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Acide : 100
 - Immunisé aux sorts et aux armes enchantées.
 - Doit être fabriqué dans une zone de magie entropique.
@@ -859,7 +859,7 @@ normale, majeure et parfaite.
   - Magie : 100
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 125
+  - Électricité : 125
   - Acide : 100
 - Ne peut être touché que par des armes +3 ou supérieures.
 - Se déplace à une vitesse supérieure.
@@ -896,7 +896,7 @@ pour vous.
   - Magie : 50
   - Froid : 80
   - Froid magique : 80
-  - Electricité : 50
+  - Électricité : 50
   - Armes perforantes : 25
   - Projectiles : 25
 - Ne peut être touché que par des armes magiques.
@@ -929,7 +929,7 @@ pour vous.
   - Feu magique : 20
   - Froid : 100
   - Froid magique : 100
-  - Electricité : 100
+  - Électricité : 100
   - Armes perforantes : 50
   - Projectiles : 50
 - Ne peut être touché que par des armes magiques.
@@ -962,6 +962,47 @@ Les golems plus évolués peuvent aussi répondre aux ordres suivants :
 
 Vous devriez prendre grand soin de vos golems car ils peuvent souffrir de défaillances lorsqu'ils sont lourdement endommagés. 
 La capacité "Réparer un Golem" permet de les remettre en état.
+
+
+Améliorer les golems
+====================
+
+Les golems traditionnels peuvent gagner de l'expérience pour chaque adversaire qu'ils tuent. Si leur expérience atteint
+un certain seuil, ils peuvent être améliorés au rang immédiatement supérieur par n’importe quel lanceur de sorts expert
+en fabrication de golems de ce type. Plus la version du golem est puissante, plus l'expérience nécessaire pour passer au
+rang suivant est importante. Les golems parfaits ne peuvent pas être améliorés.
+
+Golem de chair mineur :     Au moins 50 créatures tuées sont nécessaires pour devenir un Golem de chair normal.
+Golem de chair normal :     Au moins 100 créatures tuées sont nécessaires pour devenir un Golem de chair majeur.
+Golem de chair majeur :     Au moins 200 créatures tuées sont nécessaires pour devenir un Golem de chair parfait.
+
+Golem d'argile mineur :     Au moins 75 créatures tuées sont nécessaires pour devenir un Golem d'argile normal.
+Golem d'argile normal :     Au moins 150 créatures tuées sont nécessaires pour devenir un Golem d'argile majeur.
+Golem d'argile majeur :     Au moins 300 créatures tuées sont nécessaires pour devenir un Golem d'argile parfait.
+
+Golem de pierre mineur :    Au moins 75 créatures tuées sont nécessaires pour devenir un Golem de pierre normal.
+Golem de pierre normal :    Au moins 150 créatures tuées sont nécessaires pour devenir un Golem de pierre majeur.
+Golem de pierre majeur :    Au moins 300  créatures tuées sont nécessaires pour devenir un Golem de pierre parfait.
+
+Golem de fer mineur :       Au moins 100 créatures tuées sont nécessaires pour devenir un Golem de fer normal.
+Golem de fer normal :       Au moins 200 créatures tuées sont nécessaires pour devenir un Golem de fer majeur.
+Golem de fer majeur :       Au moins 400 créatures tuées sont nécessaires pour devenir un Golem de fer parfait.
+
+Golem de mithril mineur :   Au moins 150 créatures tuées sont nécessaires pour devenir un Golem de mithril normal.
+Golem de mithril normal :   Au moins 300 créatures tuées sont nécessaires pour devenir un Golem de mithril majeur.
+Golem de mithril majeur :   Au moins 600 créatures tuées sont nécessaires pour devenir un Golem de mithril parfait.
+
+Golem d'adamantine mineur : Au moins 250 créatures tuées sont nécessaires pour devenir un Golem d'adamantine normal.
+Golem d'adamantine normal : Au moins 500 créatures tuées sont nécessaires pour devenir un Golem d'adamantine majeur.
+Golem d'adamantine majeur : Au moins 1000 créatures tuées sont nécessaires pour devenir un Golem d'adamantine parfait.
+
+Pour effectuer une mise à niveau, vous aurez besoin des matériaux requis. La quantité de matériaux est déterminée par la
+différence entre la nouvelle et l'ancienne version du golem. Aucune pénalité physique n’est appliquée au lanceur de sorts
+pour l’amélioration des golems de mithril et d'adamantite. Il suffit de parler aux golems pour connaître leur nombre de
+victimes ou pour lancer le processus de mise à niveau.
+
+Il est aussi possible d'améliorer un golem à l'aide d'un sort de Souhait ou de Souhait limité à condition d'être assez sage
+pour énoncer la bonne formulation de so souhait.
 
 
 Les sorts qui affectent les golems de manière spécifique
@@ -1005,7 +1046,7 @@ Siege of Dragonspear :
   Les ruines sont accessibles à partir de la Rivière souterraine sous le Château de Dragonspear. Vous devez d'abord 
   sécuriser la zone en éliminant tous les ennemis.
 
-Shadows of Amn :
+Les Ombres d'Amn :
 - La Sphère Planaire :
   Le premier niveau de la Sphère peut convenir à la création de golems (après s'être débarrassé de son précédent 
   propriétaire, bien sûr).
