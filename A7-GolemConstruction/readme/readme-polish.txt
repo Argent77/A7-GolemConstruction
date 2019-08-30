@@ -174,12 +174,24 @@ Doll golem and bone doll creature animations ported from Diablo II by Blizzard E
 Copyright Notice
 ~~~~~~~~~~~~~~~~
 
-The mod "Golem Construction for Spellcasters" is licensed under the "Creative Commons Attribution-
+"Golem Construction for Spellcasters" is licensed under the "Creative Commons Attribution-
 ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa/4.0/).
 
 
 History
 ~~~~~~~
+
+6.0
+- Added option to upgrade golems when they gained experience.
+- Added option to upgrade golems via Wish spell.
+- Added proper conclusion to scribbled notes about golem building in Chateau Irenicus.
+- Added support for pure SoD installations on mobile devices.
+- Removed "Clear Fog of War" effect from golems in 'Guard' mode.
+- Removed IWD:EE v1.4 support.
+- Minor fix in Bone Golem combat script.
+- IWDEE: Fixed Malavon not appearing after simulacrum died.
+- BG2EE: Fixed golem ability detection for imported characters.
+- Various minor fixes and optimizations.
 
 5.4
 - Added Italian translation (thanks to Luke93, Elia Danelli, Aedan, improbabile and rede9)

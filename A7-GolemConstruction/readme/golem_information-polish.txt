@@ -955,6 +955,46 @@ Nie zapominaj dbać o swoje golemy, gdyż mogą one zacząć funkcjonować niepr
 te mogą zostać jednak usunięte za pomocą zdolności „Naprawienie golema”.
 
 
+Ulepszanie golemów
+==================
+
+Zwyczajne golemy mogą zyskiwać doświadczenie bojowe za każdego zabitego przeciwnika. Gdy doświadczenie osiągnie pewien
+poziom, mogą one zostać ulepszone do kolejnej rangi przez dowolnego użytkownika magii znającego się na budowie golemów
+tego rodzaju. Im potężniejszy golem, tym więcej doświadczenia potrzeba do awansu do kolejnej rangi.
+Idealne golemy nie mogą dalej awansować.
+Pomniejsze golemy z ciała:      do awansowania do zwyczajnego golema z ciała wymagane jest zabicie 50 lub więcej stworzeń
+Zwyczajne golemy z ciała:       do awansowania do większego golema z ciała wymagane jest zabicie 100 lub więcej stworzeń
+Większe golemy z ciała:         do awansowania do idealnego golema z ciała wymagane jest zabicie 200 lub więcej stworzeń
+
+Pomniejsze gliniane golemy:     do awansowania do zwyczajnego glinianego golema wymagane jest zabicie 75 lub więcej stworzeń
+Zwyczajne gliniane golemy:      do awansowania do większego glinianego golema wymagane jest zabicie 150 lub więcej stworzeń
+Większe gliniane golemy:        do awansowania do idealnego glinianego golema wymagane jest zabicie 300 lub więcej stworzeń
+
+Pomniejsze kamienne golemy:     do awansowania do zwyczajnego kamiennego golema wymagane jest zabicie 75 lub więcej stworzeń
+Zwyczajne kamienne golemy:      do awansowania do większego kamiennego golema wymagane jest zabicie 150 lub więcej stworzeń
+Większe kamienne golemy:        do awansowania do idealnego kamiennego golema wymagane jest zabicie 300 lub więcej stworzeń
+
+Pomniejsze żelazne golemy:      do awansowania do zwyczajnego żelaznego golema wymagane jest zabicie 100 lub więcej stworzeń
+Zwyczajne żelazne golemy:       do awansowania do większego żelaznego golema wymagane jest zabicie 200 lub więcej stworzeń
+Większe żelazne golemy:         do awansowania do idealnego żelaznego golema wymagane jest zabicie 400 lub więcej stworzeń
+
+Pomniejsze mithrilowe golemy:   do awansowania do zwyczajnego mithrilowego golema wymagane jest zabicie 150 lub więcej stworzeń
+Zwyczajne mithrilowe golemy:    do awansowania do większego mithrilowego golema wymagane jest zabicie 300 lub więcej stworzeń
+Większe mithrilowe golemy:      do awansowania do idealnego mithrilowego golema wymagane jest zabicie 600 lub więcej stworzeń
+
+Pomniejsze adamantytowe golemy: do awansowania do zwyczajnego adamantytowego golema wymagane jest zabicie 250 lub więcej stworzeń
+Zwyczajne adamantytowe golemy:  do awansowania do większego adamantytowego golema wymagane jest zabicie 500 ub więcej stworzeń
+Większe adamantytowe golemy:    do awansowania do idealnego adamantytowego golema wymagane jest zabicie 1000 ub więcej stworzeń
+
+Do ulepszenia golema niezbędne jest posiadanie wymaganych materiałów. Ilość niezbędnych materiałów jest różnicą pomiędzy
+ilością materiałów wymaganą do zbudowania nowego i starego wariantu golema. Za ulepszenie mithrilowego i adamantytowego golema
+rzucający zaklęcie nie otrzymuje żadnych fizycznych kar. Aby poznać ilość stworzeń zabitych przez golema lub rozpocząć proces
+jego ulepszenia wystarczy z nim porozmawiać.
+
+Możliwe jest także ulepszenie golema za pomocą zaklęcia Życzenie lub Ograniczone życzenie pod warunkiem, że czarujący jest
+wystarczająco mądry by właściwie je sformułować.
+
+
 Czary, które wpływają w jakiś sposób na golemy
 ==============================================
 

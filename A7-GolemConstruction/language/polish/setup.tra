@@ -13,11 +13,11 @@
 @45 = ~Identyfikuj wszystkie przedmioty dodane przez modyfikacje~
 @50 = ~Dodaj zdolnosc golemow o nazwie "Teleportacja"~
 
-@100 = ~Ten komponent wymaga uprzedniego zainstalowania BG:EE, BG2:EE lub IWD:EE~
+@100 = ~Ten komponent wymaga uprzedniego zainstalowania BG:EE, BG2:EE, EET lub IWD:EE.~
 @101 = ~Ten komponent wymaga uprzedniego zainstalowania glownego komponentu.~
 @102 = ~Nie znaleziono wolnej pozycji na animacje postaci.~
-@103 = ~Ten komponent wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej, w przypadku BG:SoD i BG2:EE, albo do wersji 1.4 lub wyzszej, w przypadku IWD:EE.~
-@104 = ~Ten komponent wymaga uprzedniego zainstalowania BG2:EE.~
-@106 = ~Ten komponent wymaga uprzedniego zainstalowania BG:SoD lub BG2:EE.~
-@107 = ~Ten komponent wymaga uprzedniego zainstalowania BG:SoD, BG2:EE lub IWD:EE~
-@108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".~
+@103 = ~Ten komponent wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej.~
+@104 = ~Ten komponent wymaga uprzedniego zainstalowania BG2:EE lub EET.~
+@106 = ~Ten komponent wymaga uprzedniego zainstalowania BG:SoD, BG2:EE lub EET.~
+@107 = ~Ten komponent wymaga uprzedniego zainstalowania BG:SoD, BG2:EE, EET lub IWD:EE.~
+@108 = ~Ten komponent stoi w sprzecznosci z komponentem modyfikacji Rogue Rebalancing o nazwie "Upgradeable Equipment".~

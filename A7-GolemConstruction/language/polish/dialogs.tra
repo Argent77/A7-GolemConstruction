@@ -91,6 +91,13 @@
          ~Wedle życzenia mistrzyni. Jeden żelazny pręt będący w twoim posiadaniu został zmieniony w jeden kawałek mithrilu.~
 @41510 = ~Zmień całe posiadane przez siebie żelazo w jeden kawałek mithrilu.~
 @41511 = ~Zmień jeden kawałek żelaza w mithril.~
+@41512 = ~Chcę, żeby mój golem został ulepszony.~
+@41513 = ~Chcę, żeby mój golem został ulepszony mentalnie i fizycznie.~
+@41514 = ~Zrobione. Poziom doświadczenia twojego golema zostanie zresetowany, tak by miał on szansę na ponowny rozwój.~
+@41515 = ~Nie jestem w stanie jeszcze bardziej ulepszyć twojego golema. Wybierz inne życzenie.~
+@41516 = ~Zrobione. Awansuję twojego golema do potężniejszej postaci.~
+@41517 = ~Zdegraduj jednego ze swoich golemów.~
+@41518 = ~Awansuj jednego ze swoich golemów.~
 
 
 // *** Halbazzer Drin - Proprietor of Sorcerous Sundries ***
@@ -207,6 +214,10 @@
 @45010 = ~Nie.~
 @45011 = ~Golem został zdezaktywowany przez magię ochronną strzegącą tego miejsca.~
 @45012 = ~Nie możesz kontrolować większej ilości golemów.~
+@45013 = ~Pokaż liczbę zabitych przeciwników.~
+@45014 = ~Ulepsz golema.~
+@45015 = ~Przeciwnicy zabici przez tę istotę: <A7_GOLEMKILLS>.~
+@45016 = ~Przygotowujesz golema do procesu ulepszenia...~
 
 
 // *** Jermien of Imnesvale ***
@@ -225,6 +236,11 @@
 @45509 = ~Zanim odejdziesz, czy mógłbyś nauczyć nas budowy golemów molochów? Chcielibyśmy spróbować tego sami.~
 @45510 = ~Hmm. Ponieważ tak łatwo poradziliście sobie z moim nieudanym eksperymentem, myślę, że mógłbym zrobić dla was wyjątek. No dobrze, dam wam swoją prywatną księgę budowy golemów. Przestudiujcie ją uważnie i nie popełnijcie moich błędów.~
 @45511 = ~Proszę, Panie J! Co takiego może się stać, jeśli wypróbujemy tego sami? Obiecuję być wyjątkowo ostrożna. Bardzo proszę!~
+
+
+// *** Ribald Barterman ***
+@45600 = ~Podobno zajmujesz się sprzedażą aparatury do budowy golemów. Masz może takową na zbyciu?~
+@45601 = ~Obawiam się, że się spóźniłeś. Sprzedałem ostatnią sztukę nie dalej jak kilka tygodni temu. Trudno zdobyć taki sprzęt, gdyż popyt nań jest niewielki.~~Obawiam się, że się spóźniłaś. Sprzedałem ostatnią sztukę nie dalej jak kilka tygodni temu. Trudno zdobyć taki sprzęt, gdyż popyt nań jest niewielki.~
 
 
 // *** The necromancer Arkion ***
