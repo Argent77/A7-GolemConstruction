@@ -1,6 +1,6 @@
 BACKUP ~A7-GolemConstruction/backup~
 SUPPORT ~http://www.shsforums.net/forum/652-golem-construction-ee/~
-VERSION ~5.4~
+VERSION ~6.0~
 
 ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
