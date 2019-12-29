@@ -211,6 +211,50 @@ LANGUAGE ~Polski (tlumaczenie: Cahir)~
          ~A7-GolemConstruction/language/polish/dialogs.tra~
          ~A7-GolemConstruction/language/polish/misc.tra~
          ~A7-GolemConstruction/language/polish/iwdee.tra~
+LANGUAGE ~Russian (Translation: Arkie)~
+         ~russian~
+         ~A7-GolemConstruction/language/english/setup.tra~
+         ~A7-GolemConstruction/language/english/tome01.tra~
+         ~A7-GolemConstruction/language/english/tome02.tra~
+         ~A7-GolemConstruction/language/english/tome03.tra~
+         ~A7-GolemConstruction/language/english/tome04.tra~
+         ~A7-GolemConstruction/language/english/tome05.tra~
+         ~A7-GolemConstruction/language/english/tome06.tra~
+         ~A7-GolemConstruction/language/english/tome07.tra~
+         ~A7-GolemConstruction/language/english/tome08.tra~
+         ~A7-GolemConstruction/language/english/tome09.tra~
+         ~A7-GolemConstruction/language/english/tome0a.tra~
+         ~A7-GolemConstruction/language/english/tome0b.tra~
+         ~A7-GolemConstruction/language/english/tome0c.tra~
+         ~A7-GolemConstruction/language/english/tome0d.tra~
+         ~A7-GolemConstruction/language/english/tomebd.tra~
+         ~A7-GolemConstruction/language/english/tomedg.tra~
+         ~A7-GolemConstruction/language/english/spells.tra~
+         ~A7-GolemConstruction/language/english/items.tra~
+         ~A7-GolemConstruction/language/english/dialogs.tra~
+         ~A7-GolemConstruction/language/english/misc.tra~
+         ~A7-GolemConstruction/language/english/iwdee.tra~
+         ~A7-GolemConstruction/language/russian/setup.tra~
+         ~A7-GolemConstruction/language/russian/tome01.tra~
+         ~A7-GolemConstruction/language/russian/tome02.tra~
+         ~A7-GolemConstruction/language/russian/tome03.tra~
+         ~A7-GolemConstruction/language/russian/tome04.tra~
+         ~A7-GolemConstruction/language/russian/tome05.tra~
+         ~A7-GolemConstruction/language/russian/tome06.tra~
+         ~A7-GolemConstruction/language/russian/tome07.tra~
+         ~A7-GolemConstruction/language/russian/tome08.tra~
+         ~A7-GolemConstruction/language/russian/tome09.tra~
+         ~A7-GolemConstruction/language/russian/tome0a.tra~
+         ~A7-GolemConstruction/language/russian/tome0b.tra~
+         ~A7-GolemConstruction/language/russian/tome0c.tra~
+         ~A7-GolemConstruction/language/russian/tome0d.tra~
+         ~A7-GolemConstruction/language/russian/tomebd.tra~
+         ~A7-GolemConstruction/language/russian/tomedg.tra~
+         ~A7-GolemConstruction/language/russian/spells.tra~
+         ~A7-GolemConstruction/language/russian/items.tra~
+         ~A7-GolemConstruction/language/russian/dialogs.tra~
+         ~A7-GolemConstruction/language/russian/misc.tra~
+         ~A7-GolemConstruction/language/russian/iwdee.tra~
 
 
 BEGIN @0  // Golem Construction ability for spellcasters

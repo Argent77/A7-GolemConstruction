@@ -1,0 +1,23 @@
+// -*- coding: us-ascii -*- 
+// Setup (index 0..999)
+
+@0 = ~Golem Construction Ability for Spellcasters~
+@1 = ~Tweaks~
+@10 = ~Replace original Golem Manual~
+@15 = ~Improve enemy spellcaster AI~
+@20 = ~Golems for enemy spellcasters~
+@25 = ~Greater variety of enemy golem types~
+@30 = ~Fighter Stronghold golems may continue to serve you~
+@35 = ~Make golems vulnerable to specific spell effects~
+@40 = ~Reduce weapon immunities and resistances for constructed golems~
+@45 = ~Identify all mod items~
+@50 = ~Add "Teleport" ability to golems~
+
+@100 = ~This component requires BG:EE, BG2:EE, EET or IWD:EE to be installed.~
+@101 = ~This component requires the main component to be installed.~
+@102 = ~No free creature animation slot found.~
+@103 = ~This component requires game patch v2.0 or higher.~
+@104 = ~This component requires BG2:EE or EET to be installed.~
+@106 = ~This component requires SoD, BG2:EE or EET to be installed.~
+@107 = ~This component requires SoD, BG2:EE, EET or IWD:EE to be installed.~
+@108 = ~This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".~

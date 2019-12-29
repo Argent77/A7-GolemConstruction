@@ -181,6 +181,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
+6.1
+- Added Russian translation (thanks to Arkie).
+
 6.0
 - Added option to upgrade golems when they gained experience.
 - Added option to upgrade golems via Wish spell.

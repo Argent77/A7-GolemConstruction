@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD: Golem Construction for Spellcasters</title>
+    <meta name="description" content="A mod for BG:EE, BG2:EE, EET and IWD:EE that allows spellcasters to build their own golems." />
+    <meta name="keywords" content="bgee, sod, bg2ee, eet, iwdee, mod, golems" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div><a name="top" id="top"></a></div>
+    <div id="language">
+      <ul>
+        <li><a href="readme.html">English</a></li>
+        <li title="French"><a href="readme-french.html">Francais</a></li>
+        <li title="German"><a href="readme-german.html">Deutsch</a></li>
+        <li title="Russian">Русский</li>
+      </ul>
+    </div>
+
+    <header>
+      <h1 class="title">Golem Construction for Spellcasters</h1>
+      <div class="subtitle">Модификация для BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) и IWD:EE, которая позволяет заклинателям создавать своих собственных големов.</div>
+      <hr />
+      <p class="about"><strong>Автор: Argent77</strong></p>
+      <ul id="globalnav" class="about">
+        <li><strong>Скачать</strong> (<a href="http://www.shsforums.net/files/file/1219-golem-construction-for-spellcasters/">SHS</a>)</li>
+        <li><strong>Скачать</strong> (<a href="https://github.com/Argent77/A7-GolemConstruction/releases/latest">GitHub</a>)</li>
+        <li><strong>Обсуждение</strong> (<a href="http://www.shsforums.net/forum/652-golem-construction-ee/">SHS</a>)</li>
+        <li><strong>Обсуждение</strong> (<a href="https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters">Beamdog</a>)</li>
+        <li><a href="https://github.com/Argent77/A7-GolemConstruction">Проект на Github</a></li>
+        <li>Версия: 6.0</li>
+      </ul>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#overview">Обзор</a></li>
+          <li><a href="#installation">Установка</a></li>
+          <li><a href="#components">Компоненты</a></li>
+          <li><a href="#credits">Авторы</a></li>
+          <li><a href="#changelog">История изменений</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================== O V E R V I E W ================== -->
+      <section id="overview">
+        <h2>Обзор</h2>
+        <p>Модификация для BG:EE, BG2:EE, EET и IWD:EE, которая позволяет заклинателям создавать своих собственных големов.</p>
+        <p>В процессе игры вы можете повстречать множество големов самых разных видов. Они сильны, крепки и безоговорочно верны своему хозяину. К сожалению, большинство из них настроены к вам враждебно.</p>
+        <p>Данная модификация пытается это изменить. По всему Фаэруну теперь разбросаны книги, содержащие тайные знания о том, как создавать големов. После их прочтения вы сможете самостоятельно создать голема, если ваш уровень достаточно высок, а все необходимые материалы находятся у вас в инвентаре. Разобраться в сложных теориях, на которых основано ремесло создания големов, под силу только тем, кто владеет магическим искусством.</p>
+        <p>Големы существуют неограниченное время (есть исключения), или пока не будут уничтожены. Они могут путешествовать с группой в любую точку мира и будут безоговорочно выполнять команды своего хозяина.</p>
+        <hr class="spacer" />
+        <p>Посетите <a href="http://www.shsforums.net/forum/652-golem-construction-ee/">SHS Forums</a> или <a href="https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters">Beamdog Forums</a>, если у вас возникнут вопросы. Вы можете скачать последнюю версию по следующим ссылкам: <a href="http://www.shsforums.net/files/file/1219-golem-construction-for-spellcasters/">Spellhold Studios</a> и <a href="https://github.com/Argent77/A7-GolemConstruction/releases/latest">GitHub</a>.</p>
+        <div class="back">
+          <a class="novisit" href="#top">НАВЕРХ</a>
+        </div>
+      </section>
+
+      <!-- ================== I N S T A L L A T I O N ================== -->
+      <section id="installation">
+        <h2>Установка</h2>
+        <p>Это WeiDU модификация, поэтому ее установка очень проста. Распакуйте zip-архив в папку с игрой и запустите или <em>"setup-A7-GolemConstruction.exe"</em> (Windows), или <em>"setup-A7-GolemConstruction.command"</em> (macOS). Следуйте указаниям, и модификация будет успешно установлена. Настоятельно рекомендуется после установки модификации начать новую игру.</p>
+        <p>Чтобы удалить модификацию, снова запустите <em>"setup-A7-GolemConstruction.exe"</em> или <em>"setup-A7-GolemConstruction.command"</em> и следуйте указаниям.</p>
+        <p><strong>Важно:</strong> Игра, на которую производится установка, должна иметь версию v2.0 или выше для корректной работы модификации.</p>
+        <hr class="doublespacer" />
+        <h3>Совместимость</h3>
+        <p>Scales of Balance: компонент "IWO - IWDEE Item Tweaks" (на момент версии 5.19) несовместим с IWD:EE версией модификации. Пропустите этот компонент или установите его перед этой модификацией.</p>
+        <div class="back">
+          <a class="novisit" href="#top">НАВЕРХ</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P O N E N T S ================== -->
+      <section id="components">
+        <h2>Компоненты модификации</h2>
+        <ol class="gappedlist">
+          <li>
+            <p><strong>Способность "Создание голема" для заклинателей</strong> <em>(для BG:EE, BG2:EE, EET и IWD:EE)</em></p>
+            <p>Основной компонент модификации. Он добавляет руководства по созданию големов по всему Фаэруну. "Руководство по созданию големов" - это сборник из шести томов, содержащий знания о создании различных видов големов. Каждый том содержит один мощный заряд магии, который обучает владельца способностям "Создание голема" и "Починка голема". После того, как заряд книги был израсходован, ее можно продолжать использовать в качестве источника знаний об определенном виде големов.</p>
+            <p>Виды големов, созданию которых можно обучиться, прочитав Руководство по созданию големов:</p>
+            <ul>
+              <li>Големы из плоти в малом, обычном, большом и идеальном вариантах</li>
+              <li>Глиняные големы в малом, обычном, большом и идеальном вариантах.</li>
+              <li>Каменные големы в малом, обычном, большом и идеальном вариантах.</li>
+              <li>Железные големы в малом, обычном, большом и идеальном вариантах.</li>
+              <li>Мифриловые големы в малом, обычном, большом и идеальном вариантах.</li>
+              <li>Адамантиновые големы в малом, обычном, большом и идеальном вариантах <em>(не в IWD:EE)</em>.</li>
+            </ul>
+            <p>Ходят слухи, что существует другой, тайный сборник, в котором содержатся знания о создании более экзотических видов големов. Также вы можете заказать создание големов в BG:EE, если найдете подходящие тома.</p>
+            <p>Для создания физической оболочки голема требуются определенные материалы, а иногда и дополнительные ингредиенты для реализации определенных ключевых особенностей. Создание идеального голема - непростая задача сама по себе, и она дополнительно требует могущественных уникальных артефактов для процесса зачарования.</p>
+            <p>Создание голема требует времени, и должно проходить в правильно оборудованных местах. В Siege of Dragonspear это Колдовские Припасы, Хранилище Нежити под Дварфийскими Раскопками и руины Канаглима, в которые можно попасть из Подземной Реки. В Shadows of Amn можно попробовать Планарную сферу и дом Джермиена в Имнесвейле. Священники могут создавать глиняных големов в том храме Аткатлы, который они выберут своим оплотом. Также можно проверить Библиотеку Волшебника на втором этаже Башни Дозорного. В Throne of Bhaal вы можете работать в своем Карманном плане, если установите некоторое оборудование.</p>
+            <p>В IWD:EE подходящими местами могут оказаться третий уровень Глаза Дракона, кабинет Ларрела в Отрубленной Руке, башна Бандона в Пещерах Дорна, дом Малавона в Нижних Пещерах Дорна, кузница Тиернона в Леднике Мрака (HoW) или кабинет на верхнем этаже замка Малурадек(TotLM).</p>
+            <p>Традиционные големы получают опыт за каждого убитого противника. Набрав достаточно опыта, они могут быть улучшены до следующего уровня. Больше информации вы можете найти в файле "golem_information-russian.txt" в разделе <em>Улучшение големов</em>.</p>
+            <p>Големы могут исполнять простые команды. Для указания новой команды просто поговорите с големом (возможно, вам придется использовать кнопку "Говорить" или нажать клавишу F1).</p>
+          </li>
+          <li>
+            <p><strong>Заменить оригинальную Книгу големов</strong> <em>(только для BG2:EE и EET)</em></p>
+            <p>Этот компонент удаляет оригинальную Книгу големов и все дополнительные страницы из игры за ненадобностью. Вместо них вы найдете Руководства по созданию големов из этой модификации.</p>
+          </li>
+          <li>
+            <p><strong>Улучшенный искусственный интеллект врагов-заклинателей</strong> <em>(только для BG2:EE и EET)</em></p>
+            <p>Этот компонент улучшает ИИ магов и священников, и они будут использовать более эффективные средства в битвах против големов. Они все еще ограничены своим набором запомненных заклинаний, кроме одного исключения. Могущественные заклинатели получат доступ к одной случайной высокоуровневой способности.</p>
+          </li>
+          <li>
+            <p><strong>Големы для враждебных заклинателей</strong> <em>(для BG:SoD, BG2:EE и EET)</em></p>
+            <p>Этот компонент добавляет одного или нескольких големов в услужение вражеским магам, встречающимся на протяжении игры. Виды и варианты големов выбираются случайно во время установки.</p>
+          </li>
+          <li>
+            <p><strong>Большее разнообразие враждебных големов</strong> <em>(для BG:SoD, BG2:EE и EET)</em></p>
+            <p>Этот компонент добавляет разнообразия в ряды големов, которые вы встречаете во время прохождения. Некоторые сражения могут стать сложнее. Дополнительно, големы будут использовать свои особые способности более эффективно.</p>
+          </li>
+          <li>
+            <p><strong>Големы из оплота воина будут продолжать служить вам</strong> <em>(только для BG2:EE и EET)</em></p>
+            <p>Этот компонент добавляет шанс того, что выжившие големы из часовни будут служить вам, если вы получите замок Де'Арнис в свое владение. Вы найдете их на том же месте в часовне, за потайными дверями.</p>
+            <ul>
+              <li>Вы получите голема из плоти с шансом 50%, если выжил хотя бы один голем из плоти.</li>
+              <li>Вы получите каменного голема с шансом 33%, если выжил хотя бы один каменный голем.</li>
+              <li>Вы получите глиняного голема с шансом 33%, если он выжил.</li>
+              <li>Вы получите железного голема с шансом 15%, если он выжил.</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Големы восприимчивы к некоторым магическим эффектам</strong> <em>(для BG:SoD, BG2:EE, EET и IWD:EE)</em></p>
+            <p>Этот компонент изменяет некоторые заклинания, чтобы применение их к големам приводило к другому, иногда неожиданному, результату. Одни заклинания будут накладывать особые вредные эффекты, а другие - улучшать или даже изменять големов. Больше информации об этих эффектах вы найдете в файле "golem_information-russian.txt".</p>
+          </li>
+          <li>
+            <p><strong>Ослабить неуязвимости и сопротивления созданных големов</strong> <em>(for BG:SoD, BG2:EE and EET)</em></p>
+            <p>Большинство врагов не смогут повредить ваших големов из-за их неуязвимости к оружию и высоким значениям сопротивлений даже в поздних главах игры. Этот компонент ослабляет созданных вами големов путем уменьшения значений неуязвимости к оружию (в основном на один уровень, иногда на два) и понижения значений сопротивления к магии, элементам и физическому урону.</p>
+          </li>
+          <li>
+            <p><strong>Опознать все предметы модификации</strong> <em>(для всех поддерживаемых игр)</em></p>
+            <p>Этот компонент опознает все предметы, добавленные модификацией. Это касается Руководств по созданию големов и особых ингредиенты для создания идеальных вариантов големов.</p>
+          </li>
+          <li>
+            <p><strong>Добавить големам способность "Телепорт"</strong> <em>(для всех поддерживаемых игр)</em></p>
+            <p>Этот компонент добавляет всем вашим големам способность "Телепорт". С помощью нее големы могут мгновенно перемещаться к членам группы в зоне видимости, если рядом нет противников. "Телепорт" предназначен для перемещения големов через узкие места и проходы, так как некоторые големы по размерам больше чем обычные члены группы. Ранее эта способность была включена в основной компонент мода.</p>
+          </li>
+        </ol>
+        <h3>Подробности</h3>
+        <p>Взгляните на файл "golem_information-russian.txt" в папке "readme". В этом файле предоставлена информация о минимальном уровне заклинателя и требуемых  материалах для создания каждого вида големов, а также характеристики, навыки и способности каждого голема. Информация для IWD:EE версии модификации находится в файле "golem_information-iwdee-russian.txt".</p>
+        <div class="back">
+          <a class="novisit" href="#top">НАВЕРХ</a>
+        </div>
+      </section>
+
+      <!-- ================== C R E D I T S ================== -->
+      <section id="credits">
+        <h2>Авторы</h2>
+        <p><strong>Текст, код, тестирование:</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
+        <p><strong>Польский перевод:</strong> Cahir</p>
+        <p><strong>Французский перевод:</strong> Gwendolyne</p>
+        <p><strong>Итальянский перевод:</strong> Luke93 & Elia Danelli (translation), Aedan & improbabile (proofreading), rede9 (additional help)</p>
+        <p><strong>Русский перевод:</strong> Arkie</p>
+        <p>Анимации кукольного голема и костяной куклы портированы из игры Diablo II за авторством Blizzard Entertainment.</p>
+        <hr class="spacer" />
+        <h5>Copyright Notice:</h5>
+        <div class="important">
+          <div>
+            <a rel="license" id="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            </a>
+          </div>
+          <p>"Golem Construction for Spellcasters" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
+        <div class="back">
+          <a class="novisit" href="#top">НАВЕРХ</a>
+        </div>
+      </section>
+
+      <!-- ================== V E R S I O N   H I S T O R Y ================== -->
+      <section id="changelog">
+        <h2>История изменений</h2>
+        <h6>Version 6.1</h6>
+        <ul>
+          <li>Added Russian translation (thanks to Arkie).</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 6.0</h6>
+        <ul>
+          <li>Added option to upgrade golems when they gained experience.</li>
+          <li>Added option to upgrade golems via Wish spell.</li>
+          <li>Added proper conclusion to scribbled notes about golem building in Chateau Irenicus.</li>
+          <li>Added support for pure SoD installations on mobile devices.</li>
+          <li>Removed "Clear Fog of War" effect from golems in 'Guard' mode.</li>
+          <li>Removed IWD:EE v1.4 support.</li>
+          <li>Minor fix in Bone Golem combat script.</li>
+          <li>IWDEE: Fixed Malavon not appearing after simulacrum died.</li>
+          <li>BG2EE: Fixed golem ability detection for imported characters.</li>
+          <li>Various minor fixes and optimizations.</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 5.4</h6>
+        <ul>
+          <li>Added Italian translation (thanks to Luke93, Elia Danelli, Aedan, improbabile and rede9)</li>
+          <li>Added teleport ability to Malavon's golems in IWD:EE</li>
+          <li>Made golems immune to imprisonment to work around a game issue</li>
+          <li>Vanilla Adamantite Golems should also use Trample ability</li>
+          <li>Fixed disabled golems in Spellhold being a target for hostile creatures</li>
+          <li>Fixed clay golem conditions for clerics in construction dialog</li>
+          <li>Fixed a minor compatibility issue in BG:EE without SoD.</li>
+          <li>Various minor bugfixes and textual fixes</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 5.3</h6>
+        <ul>
+          <li>Adjusted cleric level requirements for building clay golems</li>
+          <li>Cleric Stronghold quests don't interfere with golem construction anymore</li>
+          <li>Made golem slow and haste more compatible with Spell Revisions</li>
+          <li>Improved combat scripts: enemy mages should not use Energy Blades against clay golems</li>
+          <li>Several textual fixes</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 5.2</h6>
+        <ul>
+          <li>Made clay golem construction available to clerics</li>
+          <li>Added cleric-specific workshops to their respective temple strongholds</li>
+          <li>Fixed missing ambient sound on quest-related map</li>
+          <li>Corrected Nym's default combat script</li>
+          <li>Several spelling fixes and improvements</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 5.1</h6>
+        <ul>
+          <li>Added Polish translation for artifact quest</li>
+          <li>Improved component name "Identify all mod items"</li>
+          <li>Fixed a potential loophole in the artifact quest that could result in forcing the player to reload</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 5.0</h6>
+        <ul>
+          <li>Renamed setup file and mod folder to conform to naming conventions on Unix-like operating systems</li>
+          <li>Added new quest to retrieve a golem-specific artifact (BG2:EE/EET)</li>
+          <li>Added new Tweaks component "Identify all items"</li>
+          <li>Added new Tweaks component "Add Teleport ability to golems"</li>
+          <li>Worked around a game bug in the dialog of Ore Merchant Jerlia</li>
+          <li>Fixed a condition when de'Arnise golems should turn hostile</li>
+          <li>Fixed incorrect names of BG1 golem manuals</li>
+          <li>Fixed spellings in French translation</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 4.0</h6>
+        <ul>
+          <li>Added two new golem types which can be commissioned during the BG1 part of the game</li>
+          <li>Added mod support for pure BG:EE installations (without SoD)</li>
+          <li>Added "Spell Revisions" compatibility</li>
+          <li>Fixed a compatibility issue with SCS</li>
+          <li>Several minor fixes and improvements</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 3.1</h6>
+        <ul>
+          <li>Fixed incorrect path to IWDEE-specific lines of text from English to the selected language</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 3.0</h6>
+        <ul>
+          <li>Added content for IWD:EE</li>
+          <li>Added new Tweaks component "Make golems vulnerable to specific spell effects"</li>
+          <li>Added new Tweaks component "Reduce weapon immunities and resistances for constructed golems"</li>
+          <li>Added new spell "Banish Golem Spirit"</li>
+          <li>Added German voice files for Nym</li>
+          <li>Added script fixer to construction dialog in case of problems with max. number of golem followers</li>
+          <li>Fixed stats and attributes of several golem types and variants</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.4</h6>
+        <ul>
+          <li>Added French translation (big thanks to Gwendolyne)</li>
+          <li>Added new creature animations for Flesh Golems</li>
+          <li>Added option of listing learned golem types to construction dialog</li>
+          <li>Added customized ground icons for a number of items</li>
+          <li>Worked around an issue of not having a weapon equipped after being released from Imprisonment</li>
+          <li>Fixed a bug which removed yellow tint from enemy brain golems after death</li>
+          <li>Traified two remaining dialog lines</li>
+          <li>More fixes and minor improvements</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.3</h6>
+        <ul>
+          <li>Improved creature animation for Brain Golems</li>
+          <li>Rebalanced level requirements for building golems and level adjustments for bards and thieves</li>
+          <li>Fixed duplicate reply options in golem construction dialog when used by mage/thief dual or multiclasses</li>
+          <li>Improved level checks for constructing golems which provides better support for mage/thief class combinations</li>
+          <li>Fixed incorrect mage level check for perfect adamantite golems</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.2</h6>
+        <ul>
+          <li>Added German translation
+          <li>Added Polish translation (big thanks to Cahir)</li>
+          <li>Thieves with UAI can also build golems (using Bard level requirements)</li>
+          <li>Rebalanced golem building requirements</li>
+          <li>Minor adjustments of golem stats</li>
+          <li>Improved overall EET compatibility</li>
+          <li>Improved basic golem AI</li>
+          <li>Adapted previously hardcoded strings regarding familiars not allowed to execute specific actions</li>
+          <li>Fixed a bug that gave you duplicate golem-related abilities when continuing an EET game in SoA</li>
+          <li>Fixed a bug regarding random treasures found in containers which sometimes contained unremovable items</li>
+          <li>Fixed an issue which didn't properly keep track of the number of active golems</li>
+          <li>Fixed the golem removal script at the end of the SoD plot which had serious side effects in later campaigns in EET</li>
+          <li>Fixed accidental removal of a plot item in WK if "Replace original Golem Manual" tweak have been installed</li>
+          <li>Fixed enemy golem behavior if "Golems for enemy spellcasters" or "Greater variety of enemy golem types" tweaks have been installed</li>
+          <li>Several textual fixes and updates</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Removed Dragonspear Castle golems from "Greater variety of enemy golem types" tweak because of scripting issues</li>
+          <li>Made item import in SoA more compatible</li>
+          <li>Minor textual fixes</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.0</h6>
+        <ul>
+          <li>Added several tweak components</li>
+          <li>Fixed missing immunities for adamantite golems</li>
+          <li>Made mod fully EET-aware</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.0</h6>
+        <ul>
+          <li>Initial release</li>
+        </ul>
+        <div class="back">
+          <a class="novisit" href="#top">НАВЕРХ</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
