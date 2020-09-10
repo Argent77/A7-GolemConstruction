@@ -2118,6 +2118,26 @@ END
 
 // Ore Merchant Jerlia
 ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
+  // Test if "Bye" response for SCJERLIA.DLG state 37 exist or add it if necessary
+  OUTER_SET jerlia_trans_exists = 0
+  COPY_EXISTING ~scjerlia.dlg~ ~override~
+    SET ofs = (LONG_AT 0xc) + 37 * 16
+    READ_LONG (ofs + 4) idx
+    READ_LONG (ofs + 8) num
+    FOR (i = 0; i < num; ++i) BEGIN
+      SET ofs = (LONG_AT 0x14) + (idx + i) * 32
+      READ_LONG ofs flags
+      PATCH_IF (flags & BIT0 && (LONG_AT (ofs + 0x1c) = 2 || flags & BIT3)) BEGIN
+        SET jerlia_trans_exists = 1
+        SET i = num
+      END
+    END
+  BUT_ONLY IF_EXISTS
+
+  ACTION_IF (NOT jerlia_trans_exists) BEGIN
+    COMPILE ~%MOD_FOLDER%/dialogs/scjerlia_bye_response.d~
+  END
+
   COMPILE ~%MOD_FOLDER%/dialogs/scjerlia.d~
   COMPILE ~%MOD_FOLDER%/scripts/a7!jerl.baf~ EVAL
 
