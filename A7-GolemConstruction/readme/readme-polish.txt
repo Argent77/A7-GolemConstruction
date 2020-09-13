@@ -1,7 +1,7 @@
 Golem Construction for Spellcasters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    6.1
+Version:    6.2
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-GolemConstruction/releases/latest
@@ -180,6 +180,9 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 
 History
 ~~~~~~~
+
+6.2
+- Fixed compatibility issue with Hidden Adventure's component "Jerlia's Ore Shop" (Beta6 or later).
 
 6.1
 - Added Russian translation (thanks to Arkie).
