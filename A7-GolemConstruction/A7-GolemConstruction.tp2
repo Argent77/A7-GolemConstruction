@@ -275,7 +275,7 @@ BEGIN @0  // Golem Construction ability for spellcasters
 
 BEGIN @10 // Replace original Golem Manual
   FORBID_COMPONENT ~setup-rr.tp2~ 8 @108  // This component conflicts with Rogue Rebalancing's "Upgradeable Equipment".
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 10
@@ -284,7 +284,7 @@ BEGIN @10 // Replace original Golem Manual
 
 
 BEGIN @15 // Improve enemy spellcaster AI
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 15
@@ -293,7 +293,7 @@ BEGIN @15 // Improve enemy spellcaster AI
 
 
 BEGIN @20 // Golems for enemy spellcasters
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD, BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 20
@@ -302,7 +302,7 @@ BEGIN @20 // Golems for enemy spellcasters
 
 
 BEGIN @25 // Greater variety of enemy golem types
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD, BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 25
@@ -311,7 +311,7 @@ BEGIN @25 // Greater variety of enemy golem types
 
 
 BEGIN @30 // Fighter Stronghold golems may continue to serve you
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 30
@@ -320,7 +320,7 @@ BEGIN @30 // Fighter Stronghold golems may continue to serve you
 
 
 BEGIN @35 // Make golems vulnerable to specific spell effects
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @107  // This component requires BG:SoD, BG2:EE, EET or IWD:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 35
@@ -329,7 +329,7 @@ BEGIN @35 // Make golems vulnerable to specific spell effects
 
 
 BEGIN @40 // Reduce weapon immunities and resistances for constructed golems
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD, BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 40
@@ -338,7 +338,7 @@ BEGIN @40 // Reduce weapon immunities and resistances for constructed golems
 
 
 BEGIN @45 // Identify All Items
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 45
 
@@ -346,7 +346,7 @@ BEGIN @45 // Identify All Items
 
 
 BEGIN @50 // Add "Teleport" ability
-  REQUIRE_COMPONENT ~setup-A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
+  REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 50
 
