@@ -1,8 +1,13 @@
-BACKUP ~A7-GolemConstruction/backup~
+BACKUP ~weidu_external/backup/A7-GolemConstruction~
 SUPPORT ~http://www.shsforums.net/forum/652-golem-construction-ee/~
 VERSION ~6.2~
 
 ALWAYS
+  // required because of non-standard BACKUP path
+  OUTER_TEXT_SPRINT MOD_FOLDER ~A7-GolemConstruction~
+  // root folder for mutable data
+  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
+
   INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
   INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 END
