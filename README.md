@@ -7,11 +7,10 @@
 # Golem Construction for Spellcasters
 *A mod for BG:EE, BG2:EE, EET and IWD:EE that allows spellcasters to build their own golems.*
 
-**Author:** Argent77
+[![Website](https://img.shields.io/static/v1?label=Website&message=Golem%20Construction&color=ccc7ba&labelColor=eee&style=flat)](https://argent77.github.io/A7-GolemConstruction/index.html)
 
-**Website:** https://argent77.github.io/A7-GolemConstruction/index.html
-
-**Discussion:** [Beamdog Forums](https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters) or [Spellhold Studios Forums](http://www.shsforums.net/forum/652-golem-construction-ee/)
+[![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=flat)](https://forums.beamdog.com/discussion/60602)
+[![SHS Forums](https://img.shields.io/static/v1?label=Discussion&message=SHS%20Forums&color=951514&labelColor=eee&style=flat)](http://www.shsforums.net/forum/652-golem-construction-ee/)
 
 ## Overview
 You can encounter a great number of golems of various types throughout the game. They are strong, resistant, and utterly loyal to their master. Unfortunately they are mostly hostile towards you.
