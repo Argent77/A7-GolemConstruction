@@ -831,7 +831,8 @@ Varianten erschaffen werden.
   - Magische Kälte: 100
   - Elektrizität: 100
   - Säure: 100
-- Immun gegen alle magischen Waffen und Zauber
+- Immun gegen magische Waffen mit einem Bonus von +4 oder weniger
+- Immun gegen Zauber der Stufe 8 oder niedriger
 - Der Golem muss in Bereichen unbändiger Magie erschaffen werden
 - Jeder erfolgreiche Fernangriff löscht eine Ladung von geladenen Gegenständen und entfernt ein vorbereiteten
   Zauberspruch.

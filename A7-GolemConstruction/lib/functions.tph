@@ -1187,3 +1187,108 @@ BEGIN
     BUT_ONLY IF_EXISTS
   END
 END
+
+
+/**
+ * Deletes all equipping effects matching the specified parameters from an item.
+ * Returns the number of removed effects.
+ */
+DEFINE_PATCH_FUNCTION DELETE_ITEM_EQEFFECT_EX
+INT_VAR
+  opcode = "-2"
+  target = "-2"
+  power = "-2"
+  parameter1 = 0x7ffffffe // special: -2 can be a legitimate value
+  parameter2 = 0x7ffffffe // special: -2 can be a legitimate value
+  timing = "-2"
+  resist_dispel = "-2"
+  duration = "-2"
+  probability1 = "-2"
+  probability2 = "-2"
+  dicenumber = "-2"
+  dicesize = "-2"
+  savingthrow = "-2"
+  savebonus = "-2"
+  special = "-2"
+STR_VAR
+  resource = "IGNOREDMATCH"
+RET
+  result
+BEGIN
+  SET result = 0
+  READ_ASCII 0 sig (8)
+  PATCH_IF (~%sig%~ STR_EQ ~ITM V1  ~) BEGIN
+    READ_LONG 0x6a ofs_effects
+    READ_SHORT 0x6e idx_effects
+    READ_SHORT 0x70 num_effects
+    PATCH_IF (num_effects > 0 && idx_effects < num_effects) BEGIN
+      FOR (idx = num_effects - 1; idx >= idx_effects; --idx) BEGIN
+        SET filters = 0
+        SET match = 1
+        SET ofs = ofs_effects + (idx * 0x30)
+
+        SET filters += (opcode != "-2")
+        SET match &= (opcode = "-2") || ((SHORT_AT (ofs + 0x00)) = opcode)
+
+        SET filters += (target != "-2")
+        SET match &= (target = "-2") || ((BYTE_AT (ofs + 0x02)) = target)
+
+        SET filters += (power != "-2")
+        SET match &= (power = "-2") || ((BYTE_AT (ofs + 0x03)) = power)
+
+        SET filters += (parameter1 != 0x7ffffffe)
+        SET match &= (parameter1 = 0x7ffffffe) || ((LONG_AT (ofs + 0x04)) = parameter1)
+
+        SET filters += (parameter2 != 0x7ffffffe)
+        SET match &= (parameter2 = 0x7ffffffe) || ((LONG_AT (ofs + 0x08)) = parameter2)
+
+        SET filters += (timing != "-2")
+        SET match &= (timing = "-2") || ((BYTE_AT (ofs + 0x0c)) = timing)
+
+        SET filters += (resist_dispel != "-2")
+        SET match &= (resist_dispel = "-2") || ((BYTE_AT (ofs + 0x0d)) = resist_dispel)
+
+        SET filters += (duration != "-2")
+        SET match &= (duration = "-2") || ((LONG_AT (ofs + 0x0e)) = duration)
+
+        SET filters += (probability1 != "-2")
+        SET match &= (probability1 = "-2") || ((BYTE_AT (ofs + 0x12)) = probability1)
+
+        SET filters += (probability2 != "-2")
+        SET match &= (probability2 = "-2") || ((BYTE_AT (ofs + 0x13)) = probability2)
+
+        SET filters += (dicenumber != "-2")
+        SET match &= (dicenumber = "-2") || ((LONG_AT (ofs + 0x1c)) = dicenumber)
+
+        SET filters += (dicesize != "-2")
+        SET match &= (dicesize = "-2") || ((LONG_AT (ofs + 0x20)) = dicesize)
+
+        SET filters += (savingthrow != "-2")
+        SET match &= (savingthrow = "-2") || ((LONG_AT (ofs + 0x24)) = savingthrow)
+
+        SET filters += (savebonus != "-2")
+        SET match &= (savebonus = "-2") || ((LONG_AT (ofs + 0x28)) = savebonus)
+
+        SET filters += (special != "-2")
+        SET match &= (special = "-2") || ((LONG_AT (ofs + 0x2c)) = special)
+
+        PATCH_IF (NOT ~%resource%~ STR_EQ ~IGNOREDMATCH~) BEGIN
+          SET filters += 1
+          READ_ASCII (ofs + 0x14) resref (8) NULL
+          SET match &= (~%resref%~ STR_EQ ~%resource%~)
+        END
+
+        PATCH_IF (filters > 0 && match != 0) BEGIN
+          // match found
+          SET result += 1
+          DELETE_BYTES ofs 0x30
+          SET num_effects -= 1
+        END
+      END
+
+      PATCH_IF (result > 0) BEGIN
+        WRITE_SHORT 0x70 num_effects
+      END
+    END
+  END
+END

@@ -821,7 +821,8 @@ Golems described in these tomes are unique, and therefore not available as lesse
   - Magic Cold: 100
   - Electricity: 100
   - Acid: 100
-- Immune to all magical weapons and spells
+- Immune to +1, +2, +3 and +4 weapons
+- Immune to spells of level 8 and lower
 - Must be constructed in wild magic areas
 - Each successful ranged attack drains one charge from charged items and a single memorized wizard spell
 - May cast Wild Magic Flare which does 3d10 magic damage and triggers a wild surge effect on the target

@@ -1,5 +1,7 @@
 // *** Tweaks: Reduced weapon immunities for constructed golems ***
 
+INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+
 // Remove weapon immunities
 ACTION_FOR_EACH cre IN ~a7!glfl2.cre~ ~a7!gsfl2.cre~ ~a7!glfl3.cre~ ~a7!glcl2.cre~ 
                        ~a7!gscl2.cre~ ~a7!glst1.cre~ ~a7!gsst1.cre~ ~a7!glst2.cre~ 
@@ -403,6 +405,35 @@ COPY_EXISTING ~a7!glma.cre~ ~override~
   WRITE_BYTE OFS_CRUSH    0
   WRITE_BYTE OFS_PIERCE   0
   WRITE_BYTE OFS_MISSILE  0
+BUT_ONLY IF_EXISTS
+
+// Reduce magic golem immunities (weapon +4 -> +3, spell level 9 -> 7)
+COPY_EXISTING ~a7!eqma.itm~ ~override~
+  LPF DELETE_ITEM_EQEFFECT_EX
+    INT_VAR
+      opcode = 120    // Immunity to weapons
+      parameter1 = 4  // Enchantment level
+      parameter2 = 0  // Enchanted weapons
+  END
+  LPF DELETE_ITEM_EQEFFECT_EX
+    INT_VAR
+      opcode = 102    // Immunity to spell level
+      parameter1 = 8  // Spell level
+  END
+  LPF DELETE_ITEM_EQEFFECT_EX
+    INT_VAR
+      opcode = 102    // Immunity to spell level
+      parameter1 = 7  // Spell level
+  END
+  PATCH_FOR_EACH resource IN ~SPWI712~ ~SPPR725D~ ~SPPR719~ ~SPPR718~ ~SPPR706~ ~SPPR705~
+                             ~SPWI817~ ~SPWI816~ ~SPWI811~ ~SPWI810~ ~SPWISH32~ BEGIN
+    LPF DELETE_ITEM_EQEFFECT_EX
+      INT_VAR
+        opcode = 206    // Protection from spell
+      STR_VAR
+        resource
+    END
+  END
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~a7!gllt.cre~ ~override~
