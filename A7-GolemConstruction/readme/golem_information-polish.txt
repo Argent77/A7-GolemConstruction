@@ -830,7 +830,8 @@ Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją o
   - Magiczne zimno: 100
   - Elektryczność: 100
   - Kwas: 100
-- Niewrażliwość na działanie magicznych broni i czarów
+– Niewrażliwość na bronie o umagicznieniu +1, +2, +3 i +4
+– Niewrażliwość na czary do 8. poziomu włącznie
 - Musi zostać zbudowany wewnątrz strefy dzikiej magii
 - Każdy udany atak dystansowy wysysa jeden ładunek z naładowanych przedmiotów oraz jeden zapamiętany czar maga
 - Może rzucić czar Błysk dzikiej magii, który zadaje celowi 3k10 obrażeń od magii i może wywołać falę dzikiej energii

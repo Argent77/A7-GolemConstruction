@@ -181,6 +181,10 @@ ShareAlike 4.0 International License" (http://creativecommons.org/licenses/by-sa
 History
 ~~~~~~~
 
+6.3
+- Added Project Infinity support.
+- Adjusted immunities of Magic Golems.
+
 6.2
 - Fixed compatibility issue with Hidden Adventure's component "Jerlia's Ore Shop" (Beta6 or later).
 

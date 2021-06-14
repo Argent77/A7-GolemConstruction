@@ -11,7 +11,7 @@ golem que vous souhaitez construire. La durée de création de l'enveloppe physi
 peut prendre plusieurs heures, voire plusieurs jours. Une fois terminée, le golem reçoit un dernier enchantement.
 Il y a 4 pour-cent de chance qu'il se libère et se retourne contre vous pendant 1d4 rounds avant qu'il ne
 finisse par se soumettre à votre volonté. Une fois le golem achevé, vous serez pendant plusieurs rounds trop
-épuisé pour lancer des sorts ou vous battre correctement.
+épuisé.e pour lancer des sorts ou vous battre correctement.
 
 En raison du matériel requis pour réussir à fabriquer le corps d'un golem, il n'existe qu'un nombre restreint
 de sites dans lesquels vous pouvez vraiment créer des golems. Ce sont généralement des places fortes (abandonnées)
@@ -834,7 +834,8 @@ normale, majeure et parfaite.
   - Froid magique : 100
   - Électricité : 100
   - Acide : 100
-- Immunisé aux sorts et aux armes enchantées.
+- Immunisé aux armes +1, +2, +3 et +4.
+- Immunisé aux sorts de niveaux 8 et inférieurs.
 - Doit être fabriqué dans une zone de magie entropique.
 - Chaque attaque à distance réussie draine une charge des objets possédés et un sort profane mémorisé.
 - Peut lancer Poussée entropique qui inflige 3d10 points de dégâts magiques et déclenche un hiatus entropique
