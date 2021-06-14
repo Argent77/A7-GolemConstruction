@@ -266,6 +266,7 @@ BEGIN @0  // Golem Construction ability for spellcasters
   REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @100   // This component requires BG:EE, BG2:EE, EET or IWD:EE to be installed.
   REQUIRE_PREDICATE (FILE_EXISTS ~engine.lua~ AND FILE_EXISTS_IN_GAME ~ui.menu~) @103 // This component requires game patch v2.0 or higher.
   DESIGNATED 0
+  LABEL ~A7-GOLEMCONSTRUCTION-MAIN~
 
   INCLUDE ~%MOD_FOLDER%/lib/generic.tph~
   INCLUDE ~%MOD_FOLDER%/lib/spells.tph~
@@ -284,6 +285,7 @@ BEGIN @10 // Replace original Golem Manual
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 10
+  LABEL ~A7-GOLEMCONSTRUCTION-REPLACE_MANUAL~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_replace_manual.tph~
 
@@ -293,6 +295,7 @@ BEGIN @15 // Improve enemy spellcaster AI
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 15
+  LABEL ~A7-GOLEMCONSTRUCTION-IMPROVE_ENEMY_AI~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_improved_scripts.tph~
 
@@ -302,6 +305,7 @@ BEGIN @20 // Golems for enemy spellcasters
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD, BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 20
+  LABEL ~A7-GOLEMCONSTRUCTION-GOLEMS_FOR_ENEMIES~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_mage_golems.tph~
 
@@ -311,6 +315,7 @@ BEGIN @25 // Greater variety of enemy golem types
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD, BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 25
+  LABEL ~A7-GOLEMCONSTRUCTION-ENEMY_GREATER_VARIETY~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_variety.tph~
 
@@ -320,6 +325,7 @@ BEGIN @30 // Fighter Stronghold golems may continue to serve you
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @104  // This component requires BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 30
+  LABEL ~A7-GOLEMCONSTRUCTION-GOLEMS_FIGHTER_STRONGHOLD~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_stronghold_golems.tph~
 
@@ -329,6 +335,7 @@ BEGIN @35 // Make golems vulnerable to specific spell effects
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet iwdee~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @107  // This component requires BG:SoD, BG2:EE, EET or IWD:EE to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 35
+  LABEL ~A7-GOLEMCONSTRUCTION-MAKE_VULNERABLE_TO_SPELLS~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_golems_vulnerable.tph~
 
@@ -338,6 +345,7 @@ BEGIN @40 // Reduce weapon immunities and resistances for constructed golems
   REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ OR (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~)) @106  // This component requires BG:SoD, BG2:EE or EET to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 40
+  LABEL ~A7-GOLEMCONSTRUCTION-REDUCE_IMMUNITIES~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_reduce_immunities.tph~
 
@@ -346,6 +354,7 @@ BEGIN @45 // Identify All Items
   REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 45
+  LABEL ~A7-GOLEMCONSTRUCTION-IDENTIFY_ITEMS~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_identify_all_items.tph~
 
@@ -354,5 +363,6 @@ BEGIN @50 // Add "Teleport" ability
   REQUIRE_COMPONENT ~A7-GolemConstruction.tp2~ 0 @101 // This component requires the main component to be installed.
   GROUP @1  // Tweaks
   DESIGNATED 50
+  LABEL ~A7-GOLEMCONSTRUCTION-ADD_TELEPORT_ABILITY~
 
   INCLUDE ~%MOD_FOLDER%/lib/tweaks_add_teleport.tph~
