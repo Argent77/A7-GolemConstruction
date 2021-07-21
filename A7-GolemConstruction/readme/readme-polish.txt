@@ -42,6 +42,12 @@ Ważne: Aby możliwa była instalacja tej modyfikacji, zarówno BG:EE jak i BG2:
        zaktualizowane do wersji 2.0 lub wyższej. Z kolei IWD:EE musi być zaktualizowana do
        wersji 1.4 lub wyższej.
 
+Informacja dla osób grających w Siege of Dragonspear (SoD):
+GOG i Steam instalują „Siege of Dragonspear” w sposób, który nie pozwala na bezpośrednie
+modowanie gry. Aby można było instalować jakiekolwiek modyfikacje oparte na WeiDU, niezbędne
+jest zainstalowanie w folderze SoD modyfikacji o nazwie „DLC Merger”.
+Można ją pobrać stąd: https://github.com/Argent77/A7-DlcMerger/releases/latest
+
 
 Komponenty
 ~~~~~~~~~~
