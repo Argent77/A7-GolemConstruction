@@ -3,3 +3,4 @@ STORE       HIGHHEDG                *                         POTN32    3     0 
 STORE+      STO1115                 *                         POTN32    2     0       0
 CONTAINER   %PREFIX_AREA_BG1%0511   Container*10              A7!TOMBD  0     0       0
 CONTAINER   %PREFIX_AREA_BG1%3601   Container*1               A7!TOMDG  0     0       0
+CONTAINER   %PREFIX_AREA_BG1%0514   Container*36              A7!RUBY   1     0       0
