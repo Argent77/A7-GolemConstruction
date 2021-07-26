@@ -14,8 +14,8 @@ APPEND ~thalan~
   END
 
   IF ~~ thalan.2
-    SAY @47504 /* Not so fast. The construction of golems is very complex and costly. This particular type of golems also appears to leech on the life force of the builder. That is more than I'm willing to suffer. */
-    = @47505 /* You might have more luck with practicing necromancers. I know of a pair of ne'er-do-wells in Baldur's Gate, Arkion and Nemphre, who brought me nothing but trouble in the past. I'm positive that you can find a way to convince them one way or another to accept the task. */
+    SAY @47504 /* Not so fast. The construction of golems is a very complex and costly task. This particular type of golems also seems to draw on the life force of the maker. That is more than I'm willing to suffer. */
+    = @47505 /* You might have more luck with practicing necromancers. I happen to know a pair of ne'er-do-wells in Baldur's Gate, Arkion and Nemphre, who brought me nothing but trouble in the past. I'm positive that you can find a way to convince them one way or another to accept the task. */
     IF ~~ DO ~SetGlobal("A7!GolemCommissionHint","LOCALS",1)~ UNSOLVED_JOURNAL @49019 EXIT
   END
 END
