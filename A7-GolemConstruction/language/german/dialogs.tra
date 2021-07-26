@@ -277,6 +277,14 @@
 @47007 = ~(Ihr werdet die Kontrolle über Eure herbeigerufenen Kreaturen verlieren, wenn sie das Labyrinth betreten.)~
 @47008 = ~(Das Labyrinth betreten.)~
 
+// *** Thalantyr of the High Hedge ***
+@47500 = ~Ich bin auf ein Buch gestoßen, das sich mit der Erschaffung seltsamer Konstrukte befasst. Könnt Ihr mir eines dieser Exemplare herstellen?~
+@47501 = ~Ihr verlangt nicht viel von mir, oder? Zeigt mir mal, was Ihr habt.~
+@47502 = ~Hmm. Das Buch scheint auf jeden Fall echt zu sein.~
+@47503 = ~Also könnt Ihr mir einen Golem erschaffen?~
+@47504 = ~Nicht so schnell. Das Erschaffen von Golems ist sehr aufwändig und kostspielig. Dieser spezielle Typ scheint außerdem die Lebenskraft des Schöpfers anzuzapfen. Das ist deutlich mehr, als ich zu erleiden bereit bin.~
+@47505 = ~Vielleicht habt Ihr mehr Glück bei praktizierenden Nekromanten. Ich kenne da ein Paar von Taugenichtsen in Baldurs Gate, Arkion und Nemphre, die mir in der Vergangenheit nichts als Ärger eingebracht haben. Ich bin mir sicher, dass Ihr sie davon überzeugen könnt, sich dieser Herausforderung anzunehmen.~
+
 
 // *** Journal entries ***
 @49000 = ~Werkstatt für den Golembau~
@@ -352,3 +360,7 @@ Der Tempel des Lathander hat mir einen Raum in seinen heiligen Hallen zur Verfü
 @49018 = ~Werkstatt für den Golembau
 
 Der Tempel des Talos hat mir einen eigenen Platz in seinen heiligen Hallen zugewiesen. Dort sollte ich in der Lage sein, Lehmgolems zu erschaffen.~
+
+@49019 = ~Werkstatt für den Golembau
+
+Nach Ansicht des Magiers Thalantyr könnten die Nekromanten Arkion oder Nemphre daran interessiert sein, Golems für mich herzustellen. Ich kann sie höchstwahrscheinlich irgendwo in Baldurs Gate finden.~

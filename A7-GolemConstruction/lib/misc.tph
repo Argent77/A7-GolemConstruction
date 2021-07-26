@@ -31,7 +31,8 @@ END
 
 ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // For constructing (bone) doll golems
-  COMPILE ~%MOD_FOLDER%/dialogs/arkion.d~
+  COMPILE ~%MOD_FOLDER%/dialogs/thalan.d~
+          ~%MOD_FOLDER%/dialogs/arkion.d~
           ~%MOD_FOLDER%/dialogs/nemphr.d~
           ~%MOD_FOLDER%/scripts/a7!ctdg1.baf~
           ~%MOD_FOLDER%/scripts/a7!ctdg2.baf~

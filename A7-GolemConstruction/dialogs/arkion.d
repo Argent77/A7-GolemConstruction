@@ -4,7 +4,7 @@
 ADD_STATE_TRIGGER ~arkion~ 6 ~!Global("HelpArkion", "GLOBAL", 0) Global("A7!GolemBuildState", "LOCALS", 0) !GlobalTimerNotExpired("A7!GolemBuildTimer", "LOCALS")~
 ADD_TRANS_TRIGGER ~arkion~ 6 ~False()~
 EXTEND_BOTTOM ~arkion~ 6 
-  + ~PartyHasItemIdentified("a7!tomdg") Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46000 /* I came across a curious tome that deals with the construction of some weird kind of golems. It sounds rather grisly, so I thought you might be interested. */ DO ~SetGlobal("A7!GolemBuild", "MYAREA", 1) SetGlobal("A7!GolemBuildIntro", "LOCALS", 1) TakePartyItemNum("a7!tomdg", 1) AddexperienceParty(2000)~ + arkion.order.intro.1
+  + ~PartyHasItemIdentified("a7!tomdg") Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46000 /* I came across a curious tome that deals with the construction of some weird kind of golems. It sounds rather grisly, so I thought you might be interested. */ DO ~SetGlobal("A7!GolemCommission","GLOBAL",1) SetGlobal("A7!GolemBuild", "MYAREA", 1) SetGlobal("A7!GolemBuildIntro", "LOCALS", 1) TakePartyItemNum("a7!tomdg", 1) AddexperienceParty(2000)~ + arkion.order.intro.1
   + ~!Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46001 /* I'd like to commission the construction of a doll golem. Are you up to the task? */ + arkion.order.1
   + ~Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER)~ + @46002 /* Certainly, cousin. Goodbye. */ EXIT
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER)~ + @46003 /* I don't think so. Goodbye. */ EXIT

@@ -278,6 +278,14 @@
 @47007 = ~(You will lose control over summoned creatures as soon as they enter the maze.)~
 @47008 = ~(Enter the maze.)~
 
+// *** Thalantyr of the High Hedge ***
+@47500 = ~I stumbled upon a book that deals with the construction of some weird kind of golems. Can you build one for me?~
+@47501 = ~You don't ask for much, do you? Let me see what you have.~
+@47502 = ~Hmm, the book appears to be genuine.~
+@47503 = ~So are you able to construct a golem for me?~
+@47504 = ~Not so fast. The construction of golems is very complex and costly. This particular type of golems also appears to leech on the life force of the builder. That is more than I'm willing to suffer.~
+@47505 = ~You might have more luck with practicing necromancers. I know of a pair of ne'er-do-wells in Baldur's Gate, Arkion and Nemphre, who brought me nothing but trouble in the past. I'm positive that you can find a way to convince them one way or another to accept the task.~
+
 
 // *** Journal entries ***
 @49000 = ~Golem Construction Workshop~
@@ -353,3 +361,7 @@ The Temple of Lathander has provided me a room in their holy halls. I should be 
 @49018 = ~Golem Construction Workshop
 
 The Temple of Talos has given me space of my own in their holy halls. I should be able to build clay golems in this place.~
+
+@49019 = ~Golem Construction Workshop
+
+According to the mage Thalantyr the necromancers Arkion or Nemphre might be interested in constructing golems for me. I can most likely find them somewhere in Baldur's Gate.~

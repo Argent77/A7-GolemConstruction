@@ -62,7 +62,7 @@ END
 
 IF ~GlobalGT("HelpNemphre", "GLOBAL", 1) !Alignment(Player1, MASK_GOOD) ReputationLT(Player1, 16) OR(2) PartyHasItemIdentified("a7!tombd") !Global("A7!GolemBuildIntro", "LOCALS", 0)~ nemphr.intro
   SAY @46512 /* Ah, the fool returns. What does it want this time? */
-  + ~PartyHasItemIdentified("a7!tombd") Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46513 /* How about a deal? I came across a curious tome that deals with the grisly details of constructing some weird kind of golems. I thought you might be interested? */ DO ~SetGlobal("A7!GolemBuild", "MYAREA", 1) SetGlobal("A7!GolemBuildIntro", "LOCALS", 1) TakePartyItemNum("a7!tombd", 1) AddexperienceParty(2000)~ + nemphr.order.intro.1
+  + ~PartyHasItemIdentified("a7!tombd") Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46513 /* How about a deal? I came across a curious tome that deals with the grisly details of constructing some weird kind of golems. I thought you might be interested? */ DO ~SetGlobal("A7!GolemCommission","GLOBAL",1) SetGlobal("A7!GolemBuild", "MYAREA", 1) SetGlobal("A7!GolemBuildIntro", "LOCALS", 1) TakePartyItemNum("a7!tombd", 1) AddexperienceParty(2000)~ + nemphr.order.intro.1
   + ~!Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46514 /* I'd like to commission the construction of a bone doll. */ + nemphr.order.1
   ++ @46515 /* I don't want anything. Goodbye. */ EXIT
 END
