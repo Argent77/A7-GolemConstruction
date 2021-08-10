@@ -613,69 +613,78 @@ END
 
 
 // "Repair Golem" ability
-ACTION_IF (NOT GAME_IS_BGEE) BEGIN
-  COPY ~%MOD_FOLDER%/spells/a7!glr.spl~ ~override~
+COPY ~%MOD_FOLDER%/spells/a7!glr.spl~ ~override~
+  SAY NAME1 @20120  // Repair Golem
+  SAY UNIDENTIFIED_DESC @20121  // Repair Golem description
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 177      // Use EFF file
+    target = 2        // Preset target
+    parameter1 = specific_golem
+    parameter2 = 6    // SPECIFIC.IDS
+    timing = 1        // Instant/Permanent until death
+    resist_dispel = 0
+  STR_VAR
+    resource = EVAL "a7!glr1a"
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 177      // Use EFF file
+    target = 2        // Preset target
+    parameter1 = specific_golem
+    parameter2 = 6    // SPECIFIC.IDS
+    timing = 1        // Instant/Permanent until death
+    resist_dispel = 0
+  STR_VAR
+    resource = EVAL "a7!glr1b"
+  END
+  LPF ADD_SPELL_EFFECT
+  INT_VAR
+    opcode = 326      // Apply effects list
+    target = 2        // Preset target
+    parameter1 = specific_golem
+    parameter2 = splprot_not_specific  // SPECIFIC != param1 (as defined in generic.tph)
+    timing = 1        // Instant/Permanent until death
+    resist_dispel = 0
+  STR_VAR
+    resource = EVAL "a7!glr2"
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!glr1b.spl~ ~override~
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@21010)  // Repairing golem...
+  END
+  PATCH_IF (GAME_IS_IWDEE) BEGIN
+    LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode = 142  // Display portrait icon
+      parameter2 = 87
+    END
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!glr2.spl~ ~override~
+  LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode = 139  // Display String
+    parameter1 = RESOLVE_STR_REF(@21011)  // Target is not a constructed golem.
+  END
+
+COPY ~%MOD_FOLDER%/spells/a7!glr1a.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glr1b.eff~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glr1a.spl~ ~override~
+     ~%MOD_FOLDER%/spells/a7!glrb.bam~ ~override~
+
+ACTION_IF (GAME_INCLUDES ~bg1~) BEGIN
+  // Scroll for Arkion and Nemphre
+  COPY ~%MOD_FOLDER%/spells/a7!scgr1.itm~ ~override~
     SAY NAME1 @20120  // Repair Golem
-    SAY UNIDENTIFIED_DESC @20121  // Repair Golem description
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode = 177      // Use EFF file
-      target = 2        // Preset target
-      parameter1 = specific_golem
-      parameter2 = 6    // SPECIFIC.IDS
-      timing = 1        // Instant/Permanent until death
-      resist_dispel = 0
-    STR_VAR
-      resource = EVAL "a7!glr1a"
-    END
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode = 177      // Use EFF file
-      target = 2        // Preset target
-      parameter1 = specific_golem
-      parameter2 = 6    // SPECIFIC.IDS
-      timing = 1        // Instant/Permanent until death
-      resist_dispel = 0
-    STR_VAR
-      resource = EVAL "a7!glr1b"
-    END
-    LPF ADD_SPELL_EFFECT
-    INT_VAR
-      opcode = 326      // Apply effects list
-      target = 2        // Preset target
-      parameter1 = specific_golem
-      parameter2 = splprot_not_specific  // SPECIFIC != param1 (as defined in generic.tph)
-      timing = 1        // Instant/Permanent until death
-      resist_dispel = 0
-    STR_VAR
-      resource = EVAL "a7!glr2"
-    END
+    SAY NAME2 @20120  // Repair Golem
+    SAY UNIDENTIFIED_DESC @20122  // Repair Golem description
+    SAY IDENTIFIED_DESC @20122  // Repair Golem description
 
-  COPY ~%MOD_FOLDER%/spells/a7!glr1b.spl~ ~override~
-    LPF ALTER_SPELL_EFFECT
-    INT_VAR
-      match_opcode = 139  // Display String
-      parameter1 = RESOLVE_STR_REF(@21010)  // Repairing golem...
-    END
-    PATCH_IF (GAME_IS_IWDEE) BEGIN
-      LPF ALTER_SPELL_EFFECT
-      INT_VAR
-        match_opcode = 142  // Display portrait icon
-        parameter2 = 87
-      END
-    END
-
-  COPY ~%MOD_FOLDER%/spells/a7!glr2.spl~ ~override~
-    LPF ALTER_SPELL_EFFECT
-    INT_VAR
-      match_opcode = 139  // Display String
-      parameter1 = RESOLVE_STR_REF(@21011)  // Target is not a constructed golem.
-    END
-
-  COPY ~%MOD_FOLDER%/spells/a7!glr1a.eff~ ~override~
-       ~%MOD_FOLDER%/spells/a7!glr1b.eff~ ~override~
-       ~%MOD_FOLDER%/spells/a7!glr1a.spl~ ~override~
-       ~%MOD_FOLDER%/spells/a7!glrb.bam~ ~override~
+  COPY ~%MOD_FOLDER%/spells/a7!glra.bam~ ~override~
 END
 
 

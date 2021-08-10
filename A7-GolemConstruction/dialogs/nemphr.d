@@ -51,7 +51,7 @@ END
 
 IF ~GlobalGT("HelpNemphre", "GLOBAL", 1) Global("A7!GolemBuildState", "LOCALS", 2) GlobalTimerExpired("A7!GolemBuildTimer", "LOCALS") !Global("A7!GolemLifeForce", "LOCALS", 0)~ nemphr.finished.2
   SAY @46511 /* Now take your bone doll and go. */
-  IF ~~ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 0)~ EXIT
+  IF ~~ DO ~SetGlobal("A7!DollGolemCreated","LOCALS",1) SetGlobal("A7!GolemBuildState", "LOCALS", 0)~ EXIT
 END
 
 // Refuse work if you are good or heroic
@@ -64,6 +64,8 @@ IF ~GlobalGT("HelpNemphre", "GLOBAL", 1) !Alignment(Player1, MASK_GOOD) Reputati
   SAY @46512 /* Ah, the fool returns. What does it want this time? */
   + ~PartyHasItemIdentified("a7!tombd") Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46513 /* How about a deal? I came across a curious tome that deals with the grisly details of constructing some weird kind of golems. I thought you might be interested? */ DO ~SetGlobal("A7!GolemCommission","GLOBAL",1) SetGlobal("A7!GolemBuild", "MYAREA", 1) SetGlobal("A7!GolemBuildIntro", "LOCALS", 1) TakePartyItemNum("a7!tombd", 1) AddexperienceParty(2000)~ + nemphr.order.intro.1
   + ~!Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46514 /* I'd like to commission the construction of a bone doll. */ + nemphr.order.1
+  + ~Global("A7!GolemRepairIntro","LOCALS",0) Global("A7!DollGolemCreated","LOCALS",1)~ + @46528 /* I'd like to have my bone doll repaired. Can you do it? */ DO ~SetGlobal("A7!GolemRepairIntro","LOCALS",1)~ + nemphr.repair.intro.1
+  + ~!Global("A7!GolemRepairIntro","LOCALS",0) Global("A7!DollGolemCreated","LOCALS",1)~ + @46529 /* I'd like to purchase another "Repair Golem" scroll. */ + nemphr.repair.1
   ++ @46515 /* I don't want anything. Goodbye. */ EXIT
 END
 
@@ -97,6 +99,33 @@ END
 IF ~~ nemphr.order.refused
   SAY @46527 /* Then you are of no further use to me. Return only when you have everything I need. */
   IF ~~ EXIT
+END
+
+IF ~~ nemphr.repair.intro.1
+  SAY @46530 /* Why do you bother? You can always commission another golem to replace the broken one. */
+  = @46531 /* But if you really insist then I can probably help you. It's a simple enough task to create a spell that can repair your golems. For the price of 250 gold I can sell you a copy. Agreed? */
+  + ~PartyGoldLT(250)~ + @46011 /* I don't have enough money right now. Perhaps later. */ EXIT
+  + ~PartyGoldGT(249) !Global("A7!GolemRepairIntro","LOCALS",2)~ + @46533 /* Here you go. */ + nemphr.repair.intro.accepted.1
+  + ~PartyGoldGT(249) Global("A7!GolemRepairIntro","LOCALS",2)~ + @46533 /* Here you go. */ + nemphr.repair.accepted.1
+  ++ @46014 /* I'm not interested. Goodbye. */ EXIT
+END
+
+IF ~~ nemphr.repair.1
+  SAY @46532 /* Certainly. Just pay me the 250 gold and the scroll is yours. */
+  + ~PartyGoldLT(250)~ + @46011 /* I don't have enough money right now. Perhaps later. */ EXIT
+  + ~PartyGoldGT(249) !Global("A7!GolemRepairIntro","LOCALS",2)~ + @46533 /* Here you go. */ + nemphr.repair.intro.accepted.1
+  + ~PartyGoldGT(249) Global("A7!GolemRepairIntro","LOCALS",2)~ + @46533 /* Here you go. */ + nemphr.repair.accepted.1
+  ++ @46014 /* I'm not interested. Goodbye. */ EXIT
+END
+
+IF ~~ nemphr.repair.intro.accepted.1
+  SAY @46534 /* That's good enough. Here, take this scroll. Just read it aloud in front of your golem, and the spell will take care of the details. */
+  IF ~~ DO ~SetGlobal("A7!GolemRepairIntro","LOCALS",2) SetGlobal("A7!GolemRepairActive","LOCALS",1) TakePartyGold(250) GiveItemCreate("a7!scgr1",LastTalkedToBy,1,0,0)~ EXIT
+END
+
+IF ~~ nemphr.repair.accepted.1
+  SAY @46535 /* That's good enough. Take this scroll and leave. */
+  IF ~~ DO ~SetGlobal("A7!GolemRepairActive","LOCALS",1) TakePartyGold(250) GiveItemCreate("a7!scgr1",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 END

@@ -6,6 +6,8 @@ ADD_TRANS_TRIGGER ~arkion~ 6 ~False()~
 EXTEND_BOTTOM ~arkion~ 6 
   + ~PartyHasItemIdentified("a7!tomdg") Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46000 /* I came across a curious tome that deals with the construction of some weird kind of golems. It sounds rather grisly, so I thought you might be interested. */ DO ~SetGlobal("A7!GolemCommission","GLOBAL",1) SetGlobal("A7!GolemBuild", "MYAREA", 1) SetGlobal("A7!GolemBuildIntro", "LOCALS", 1) TakePartyItemNum("a7!tomdg", 1) AddexperienceParty(2000)~ + arkion.order.intro.1
   + ~!Global("A7!GolemBuildIntro", "LOCALS", 0)~ + @46001 /* I'd like to commission the construction of a doll golem. Are you up to the task? */ + arkion.order.1
+  + ~Global("A7!GolemRepairIntro","LOCALS",0) Global("A7!DollGolemCreated","LOCALS",1)~ + @46019 /* I'd like to have my doll golem repaired. Can you do it? */ DO ~SetGlobal("A7!GolemRepairIntro","LOCALS",1)~ + arkion.repair.intro.1
+  + ~!Global("A7!GolemRepairIntro","LOCALS",0) Global("A7!DollGolemCreated","LOCALS",1)~ + @46020 /* I'd like to purchase another "Repair Golem" scroll. */ + arkion.repair.1
   + ~Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER)~ + @46002 /* Certainly, cousin. Goodbye. */ EXIT
   + ~!Kit(LastTalkedToBy, MAGESCHOOL_NECROMANCER)~ + @46003 /* I don't think so. Goodbye. */ EXIT
 END
@@ -21,7 +23,7 @@ END
 // Golem is ready and can be picked up
 IF ~!Global("HelpArkion", "GLOBAL", 0) Global("A7!GolemBuildState", "LOCALS", 1) GlobalTimerExpired("A7!GolemBuildTimer", "LOCALS")~ arkion.finished
   SAY @46005 /* Ah, you return. Look at this beauty. It's a true masterpiece, and it's yours. Just take it out of sight before I change my mind. */
-  IF ~~ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 0) ForceSpellRES("a7!smdg", Myself)~ EXIT
+  IF ~~ DO ~SetGlobal("A7!DollGolemCreated","LOCALS",1) SetGlobal("A7!GolemBuildState","LOCALS",0) ForceSpellRES("a7!smdg",Myself)~ EXIT
 END
 
 IF ~~ arkion.order.intro.1
@@ -59,6 +61,33 @@ END
 IF ~~ arkion.order.accepted.2
   SAY @46018 /* I reckon that construction will take about a day. Come back tomorrow. */
   IF ~~ DO ~SetGlobal("A7!GolemBuildState", "LOCALS", 1) SetGlobalTimer("A7!GolemBuildTimer", "LOCALS", ONE_DAY)~ EXIT
+END
+
+IF ~~ arkion.repair.intro.1
+  SAY @46021 /* I have better things to do than repair your broken golems. */
+  = @46022 /* But that doesn't mean I can't help you. I have devised a spell recently that allows me to keep my own servant in a working state. I could sell you a copy for 250 gold. What do you say? */
+  + ~PartyGoldLT(250)~ + @46011 /* I don't have enough money right now. Perhaps later. */ EXIT
+  + ~PartyGoldGT(249) !Global("A7!GolemRepairIntro","LOCALS",2)~ + @46024 /* Here you go. */ + arkion.repair.intro.accepted.1
+  + ~PartyGoldGT(249) Global("A7!GolemRepairIntro","LOCALS",2)~ + @46024 /* Here you go. */ + arkion.repair.accepted.1
+  ++ @46014 /* I'm not interested. Goodbye. */ EXIT
+END
+
+IF ~~ arkion.repair.1
+  SAY @46023 /* Certainly. Just pay me the 250 gold and the scroll is yours. */
+  + ~PartyGoldLT(250)~ + @46011 /* I don't have enough money right now. Perhaps later. */ EXIT
+  + ~PartyGoldGT(249) !Global("A7!GolemRepairIntro","LOCALS",2)~ + @46024 /* Here you go. */ + arkion.repair.intro.accepted.1
+  + ~PartyGoldGT(249) Global("A7!GolemRepairIntro","LOCALS",2)~ + @46024 /* Here you go. */ + arkion.repair.accepted.1
+  ++ @46014 /* I'm not interested. Goodbye. */ EXIT
+END
+
+IF ~~ arkion.repair.intro.accepted.1
+  SAY @46025 /* Very good. This is the scroll. Just read it aloud in front of your golem to activate the enchantment. You can read, can't you? */
+  IF ~~ DO ~SetGlobal("A7!GolemRepairIntro","LOCALS",2) SetGlobal("A7!GolemRepairActive","LOCALS",1) TakePartyGold(250) GiveItemCreate("a7!scgr1",LastTalkedToBy,1,0,0)~ EXIT
+END
+
+IF ~~ arkion.repair.accepted.1
+  SAY @46026 /* Very good. This is the scroll. Now go. */
+  IF ~~ DO ~SetGlobal("A7!GolemRepairActive","LOCALS",1) TakePartyGold(250) GiveItemCreate("a7!scgr1",LastTalkedToBy,1,0,0)~ EXIT
 END
 
 END

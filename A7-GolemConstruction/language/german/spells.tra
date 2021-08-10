@@ -139,6 +139,18 @@ Golems können eine beliebig lange Zeit existieren und ihrem Meister dienen. Sie
 Mit dieser Fähigkeit kann der Anwender einen beschädigten Golems reparieren. Der Prozess beinhaltet vor Allem das Ausbessern des beschädigten Golemkörpers und dauert zwei Runden an. In dieser Zeit sind sowohl Golem als auch Magier nicht ansprechbar. Schwer beschädigte Golems müssen gegebenenfalls mehrmals repariert werden, um den gesamten Schaden auszubessern.
 
 Die Reparatur behebt auch negative Effekte, die durch schweren Schaden verursacht werden können.~
+@20122 = ~Golem reparieren
+
+Mit dieser Fähigkeit kann der Anwender einen beschädigten Golems reparieren. Der Prozess beinhaltet vor Allem das Ausbessern des beschädigten Golemkörpers und dauert zwei Runden an. In dieser Zeit sind sowohl Golem als auch Anwender nicht ansprechbar. Schwer beschädigte Golems müssen gegebenenfalls mehrmals repariert werden, um den gesamten Schaden auszubessern. Die Reparatur behebt auch negative Effekte, die durch schweren Schaden verursacht werden können.
+
+EIGENSCHAFTEN:
+
+Repariert das Ziel (nur Golems)
+ Reichweite: Berührung
+ Dauer: Permanent
+ Bereich: 1 Wesen
+
+Mindestintelligenz: 9~
 
 @20130 = ~Abscheuliches Gelächter~
 @20131 = ~Abscheuliches Gelächter

@@ -234,6 +234,14 @@
 @46016 = ~Yes, here they are.~
 @46017 = ~Ah, that one looks juicy. Put everything over there on the table.~
 @46018 = ~I reckon that construction will take about a day. Come back tomorrow.~
+@46019 = ~I'd like to have my doll golem repaired. Can you do it?~
+@46020 = ~I'd like to purchase another "Repair Golem" scroll.~
+@46021 = ~I have better things to do than repair your broken golems.~
+@46022 = ~But that doesn't mean I can't help you. I have devised a spell recently that allows me to keep my own servant in a working state. I could sell you a copy for 250 gold. What do you say?~
+@46023 = ~Certainly. Just pay me the 250 gold and the scroll is yours.~
+@46024 = ~Here you go.~
+@46025 = ~Very good. This is the scroll. Just read it aloud in front of your golem to activate the enchantment. You can read, can't you?~
+@46026 = ~Very good. This is the scroll. Now go.~
 
 
 // *** The necromancer Nemphre ***
@@ -265,6 +273,14 @@
 @46525 = ~Yes, here it is.~
 @46526 = ~It looks like everything is in order. Construction will take a day. Come back alive and well tomorrow. You won't regret it.~
 @46527 = ~Then you are of no further use to me. Return only when you have everything I need.~
+@46528 = ~I'd like to have my bone doll repaired. Can you do it?~
+@46529 = ~I'd like to purchase another "Repair Golem" scroll.~
+@46530 = ~Why do you bother? You can always commission another golem to replace the broken one.~
+@46531 = ~But if you really insist then I can probably help you. It's a simple enough task to create a spell that can repair your golems. For the price of 250 gold I can sell you a copy. Agreed?~
+@46532 = ~Certainly. Just pay me the 250 gold and the scroll is yours.~
+@46533 = ~Here you go.~
+@46534 = ~That's good enough. Here, take this scroll. Just read it aloud in front of your golem, and the spell will take care of the details.~
+@46535 = ~That's good enough. Take this scroll and leave.~
 
 
 // *** Quest-related ***

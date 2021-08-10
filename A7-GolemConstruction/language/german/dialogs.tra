@@ -233,6 +233,14 @@
 @46016 = ~Ja. Hier ist alles.~
 @46017 = ~Ah, der sieht ja noch richtig saftig aus. Legt alles dort hinten auf den Tisch.~
 @46018 = ~Ich denke, dass der Bau nicht länger als einen Tag dauern wird. Kommt morgen wieder.~
+@46019 = ~Ich möchte gerne diesen Puppengolem reparieren lassen. Könnt Ihr das machen?~
+@46020 = ~Ich möchte gerne eine Schriftrolle „Golem reparieren” erwerben.~
+@46021 = ~Ich habe Besseres zu tun, als Eure defekten Golems zu reparieren.~
+@46022 = ~Das heißt aber nicht, dass ich Euch nicht doch helfen kann. Ich habe mir erst kürzlich einen Zauber ausgedacht, der es mir ermöglicht, meine eigenen Golems funktionsfähig zu halten. Für den Preis von 250 Goldmünzen könnte ich Euch ein Exemplar verkaufen. Was sagt Ihr dazu?~
+@46023 = ~Aber sicher doch. Zahlt mir einfach die 250 Goldmünzen und die Schriftrolle gehört Euch.~
+@46024 = ~Hier ist Euer Gold.~
+@46025 = ~Sehr schön. Und hier ist die Schriftrolle. Ihr müsst sie lediglich vor Eurem Golem laut vorlesen, um die Verzauberung zu aktivieren. Ihr könnt doch lesen, oder?~
+@46026 = ~Sehr schön. Und hier ist die Schriftrolle. So, das war's.~
 
 
 // *** The necromancer Nemphre ***
@@ -264,6 +272,14 @@
 @46525 = ~Ja. Hier ist alles.~
 @46526 = ~Es scheint alles da zu sein. Die Konstruktion wird wohl einen Tag in Anspruch nehmen. Kommt morgen gesund und munter zurück. Ihr werdet es nicht bereuen.~
 @46527 = ~Dann habe ich Euch nichts weiter zu sagen. Kommt erst wieder, wenn Ihr alles bei Euch habt.~
+@46528 = ~Ich möchte gerne diese Knochenpuppe reparieren lassen. Könnt Ihr das machen?~
+@46529 = ~Ich möchte gerne eine Schriftrolle „Golem reparieren” erwerben.~
+@46530 = ~Warum macht Ihr Euch überhaupt die Mühe? Ihr könnt jederzeit einen neuen Golem erwerben, der den alten ersetzt.~
+@46531 = ~Aber falls Ihr wirklich darauf besteht, dann kann ich Euch wohl helfen. Es ist für mich eine recht einfache Sache, einen Zauber zu entwickeln, der Eure Golems reparieren kann. Für 250 Goldmünzen könnte ich Euch ein Exemplar verkaufen. Seid Ihr einverstanden?~
+@46532 = ~Aber sicher doch. Zahlt mir einfach die 250 Goldmünzen und die Schriftrolle gehört Euch.~
+@46533 = ~Hier ist Euer Gold.~
+@46534 = ~Das ist ausreichend. Hier habt Ihr Eure Schriftrolle. Ihr müsst sie lediglich vor Eurem Golem laut vorlesen, und der Zauber übernimmt dann den Rest.~
+@46535 = ~Das ist ausreichend. Nehmt Eure Schriftrolle und geht.~
 
 
 // *** Quest-related ***
