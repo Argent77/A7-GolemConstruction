@@ -226,6 +226,14 @@ END
   // Druid Grove exterior
 <<<<<<<< .../inlined/a7!1900.baf
 IF
+  Dead("cefald01")
+  Global("trevil01Job","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
   !Allegiance("tdr10a", ENEMY)
 THEN
   RESPONSE #100
