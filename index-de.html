@@ -31,7 +31,7 @@
         <li><strong>Diskussion</strong> (<a href="http://www.shsforums.net/forum/652-golem-construction-ee/">SHS</a>)</li>
         <li><strong>Diskussion</strong> (<a href="https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-GolemConstruction">Projekt</a></li>
-        <li>Version: 6.2</li>
+        <li>Version: 6.3</li>
       </ul>
       <hr />
       <nav>
@@ -49,7 +49,7 @@
       <!-- ================== O V E R V I E W ================== -->
       <section id="overview">
         <h2>Übersicht</h2>
-        <p>Eine Mod für BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) und IWD:EE, die es deinen Magiern erlaubt, eigene Golems zu erschaffen.</p>
+        <p>Eine Mod für BG:EE, BG2:EE, <abbr class="desc" title="Enhanced Edition Trilogy">EET</abbr> und IWD:EE, die es deinen Magiern erlaubt, eigene Golems zu erschaffen.</p>
         <p>Im Spiel gibt es eine Menge Golems, die eurer Gruppe über den Weg laufen. Sie sind mächtig, resistent und äußerst loyal gegenüber ihren Schöpfern. Leider sind sie euch häufig feindlich gesonnen.</p>
         <p>Diese Mod versucht diesen Umstand zu ändern. Sie verteilt eine große Anzahl Bücher über ganz Faerûn mit dem Wissen, wie man Golems konstruiert. Eure Magier können diese Bücher studieren, um selbst Golems zu erschaffen, sofern sie erfahren genug sind und alle benötigten Zutaten beisammen haben.</p>
         <p>Golem können praktisch eine unbegrenzte Zeit lang existieren - oder bis sie zerstört wurden. Sie können mit eurer Gruppe durch die ganze Welt reisen und folgen den Befehlen ihres Schöpfers bedingungslos.</p>
@@ -66,9 +66,14 @@
         <p>Dies ist eine WeiDU Mod. Das bedeutet, sie ist sehr einfach zu installieren. Entpackt die heruntergeladene Zipdatei in das Spieleverzeichnis und startet entweder „setup-A7-GolemConstruction.exe” (Windows) oder „setup-A7-GolemConstruction.command” (macOS). Folgt den Anweisungen des Programms und die Mod ist startbereit. Ihr solltet ein neues Spiel starten, um nichts zu verpassen.</p>
           <p>Um die Mod zu deinstallieren, startet „setupsetup-A7-GolemConstruction.exe” oder „setup-A7-GolemConstruction.command” erneut und folgt den Anweisungen.</p>
           <p><strong>Wichtig:</strong> Die Mod benötigt mindestens Spielversion 2.0 für alle unterstützten Spiele.</p>
+        <hr class="spacer" />
+        <h3>Hinweis zu „Belagerung von Drachenspeer” (<abbr class="desc" title="Siege of Dragonspear">SoD</abbr>)</h3>
+        <p>Sowohl GOG als auch Steam installieren die „Belagerung von Drachenspeer”-Erweiterung in einem Format, welches nicht ohne Weiteres modifiziert werden kann. Ihr müsst zuerst eine Mod namens <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> in Eurem SoD-Spiel installieren, bevor diese oder weitere WeiDU-basierte Mods installiert werden können.</p>
         <hr class="doublespacer" />
         <h3>Kompatibilität</h3>
         <p>In IWD:EE muss die Komponente "IWO - IWDEE Item Tweaks" von Scales of Balance (ab Version 5.19) vor dieser Mod installiert werden, um korrekt zu funktionieren.</p>
+        <p>Die Komponente "Wiederherstellung von zufälligen Begegnungen" von Almateria's Restoration Project sollte vor der Komponente "Golems für feindliche Magier" dieser Mod installiert werden, um Installationsprobleme zu vermeiden.</p>
+        <p>Die von der Komponente "Verbesserte feindliche Magier-KI" vorgenommenen Änderungen werden im Spiel nicht berücksichtigt, falls KI-bezogene Komponenten von Sword Coast Stratagems (SCS) installiert werden. In dem Fall kann man diese Komponente weglassen.</p>
         <div class="back">
           <a class="novisit" href="#top">ZURÜCK ZUM ANFANG</a>
         </div>
@@ -94,7 +99,7 @@
             <p>Jeder Golem benötigt bestimmte Materialien zur Konstruktion des Körpers, and manchmal weitere Komponenten für Spezialfähigkeiten und Schlüsselmerkmale. Perfekte Golemvarianten zu erschaffen ist ein echte Meisterleistung und benötigt zusätzlich bestimmte magische Artefakte für den Verzauberungsprozess.</p>
             <p>Die Konstruktion des Golemkörpers dauert einige Zeit und kann nur an bestimmten Orten mit der richtigen Ausrüstung praktiziert werden. In Siege of Dragonspear könnt ihr es in „Allerlei Zauberei“ in Baldurs Gate, der Ausgrabungsstelle der Zwerge und in den Ruinen von Kanaglym versichen. In Schatten von Amn gibt es die Sphäre der Ebenen und Jermiens Heim in Imnestal. Kleriker können die Tempel in Athkatla nutzen, um Lehmgolem zu erschaffen, wenn sie als klasseneigene Festung ausgewählt wurden. Ihr könnt es auch in der Bibliothek der Elementarmagier in der zweiten Ebene der Wachenden Festung versuchen. In Thron des Bhaal könnte das Einsprengsel genutzt werden, wenn ihr die richtige Ausrüstung installiert.</p>
             <p>In IWD:EE kann man es auf der dritten Ebene des Drachenauges, in Larrels Arbeitszimmer der Abgetrennten Hand, in Bandoths Turm von Dorntief, in Malavons Palast in Unter-Dorntief, in Tiernons Schmiede in den Finsterfrostbergen oder im Arbeitszimmer im Obergeschoss von Schloss Maluradek (TotLM) versuchen.</p>
-            <p>Herkömmliche Golems sammeln mit jedem getöteten Gegner Kampferfahrung. Mit genügend Erfahrung können sie dann in einen höheren Golemrang heraufgestuft werden. Mehr dazu kann man im Abschnitt „Golems verbessern” der Datei „golem_information-german.txt” nachlesen.</p>
+            <p>Herkömmliche Golems sammeln mit jedem getöteten Gegner Kampferfahrung. Mit genügend Erfahrung können sie dann in einen höheren Golemrang heraufgestuft werden. Mehr dazu kann man im Abschnitt „Golems verbessern” der Datei „<a href="golem_information-german.txt">golem_information-german.txt</a>” nachlesen.</p>
             <p>Golems folgen einfachen Befehlen. Redet mit dem Golem, um neue Befehle zu geben. Man kann das Reden mit der Reden-Schaltfläche (oder F1) erzwingen.</p>
           </li>
           <li>
@@ -125,7 +130,7 @@
           </li>
           <li>
             <p><strong>Golems anfällig für bestimmte Zauber machen</strong> <em>(für BG:SoD, BG2:EE, EET und IWD:EE)</em></p>
-            <p>Diese Komponente erweitert einige Zaubersprüche, so dass sie Golems auf eine andere, und manchmal unerwartete Weise beeinflussen. Einige Zauber können sich schädlich auswirken, während andere einen positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informationen dazu in „golem_information-german.txt”.</p>
+            <p>Diese Komponente erweitert einige Zaubersprüche, so dass sie Golems auf eine andere, und manchmal unerwartete Weise beeinflussen. Einige Zauber können sich schädlich auswirken, während andere einen positiven Einfluss haben oder sogar die Golemnatur verändern. Mehr Informationen dazu in „<a href="golem_information-german.txt">golem_information-german.txt</a>”.</p>
           </li>
           <li>
             <p><strong>Vermindere Waffenimmunitäten und Resistenzen bei erschaffenen Golems</strong> <em>(für BG:SoD, BG2:EE und EET)</em></p>
@@ -141,7 +146,7 @@
           </li>
         </ol>
         <h3>Einzelheiten</h3>
-        <p>Die Textdatei „golem_information-german.txt” im Readme-Ordner listet Einzelheiten zu den Golemeigenschaften, Voraussetzungen zur Konstruktion und vieles mehr auf. Informationen zur IWD:EE-Variante der Mod gibt es in „golem_information-iwdee-german.txt”.</p>
+        <p>Die Textdatei „<a href="golem_information-german.txt">golem_information-german.txt</a>” im Readme-Ordner listet Einzelheiten zu den Golemeigenschaften, Voraussetzungen zur Konstruktion und vieles mehr auf. Informationen zur IWD:EE-Variante der Mod gibt es in „<a href="golem_information-iwdee-german.txt">golem_information-iwdee-german.txt</a>”.</p>
         <div class="back">
           <a class="novisit" href="#top">ZURÜCK ZUM ANFANG</a>
         </div>
@@ -174,6 +179,20 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Versionshistorie</h2>
+        <h6>Version 6.3</h6>
+        <ul>
+          <li>Arkion and Nemphre provide repair options for golems.</li>
+          <li>Added more hints about commissioning golems in BG1.</li>
+          <li>Added ruby gem to container in a BG1 area.</li>
+          <li>Improved Thalantyr's dialog.</li>
+          <li>Adjusted immunities of Magic Golems.</li>
+          <li>Fixed giant golems being blocked by the entrance to the hidden maze in Nyalee's Grove.</li>
+          <li>Fixed enemy Maggot Golem scripting in the BG2 Druid Grove quest.</li>
+          <li>Updated mod order information in the PI mod.ini file.</li>
+          <li>Added Project Infinity support.</li>
+          <li>Textual fixes.</li>
+        </ul>
+        <hr class="spacer" />
         <h6>Version 6.2</h6>
         <ul>
           <li>Fixed compatibility issue with Hidden Adventure's component "Jerlia's Ore Shop" (Beta 6 or later).</li>

@@ -1,0 +1,743 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ Szczegółowe informacje o możliwych rodzajach golemów (IWD:EE) ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Wprowadzenie
+============
+
+Golemy buduje się przy pomocy zdolności „Budowanie golema”, której można nauczyć się, studiując różne podręczniki budowania
+golemów. Krótki dialog umożliwia ci wybranie rodzaju i wariantu golema, którego chcesz zbudować. Skonstruowanie fizycznego
+ciała zajmuje od kilku godzin do kilku dni, po których następuje proces rzucania zaklęć. Istnieje 4% szans, że golem uwolni
+się i zwróci na 1k4 rund przeciw rzucającemu zaklęcia, zanim ostatecznie podda się jego woli. Po ukończeniu budowy, rzucający
+czar będzie zbyt zmęczony, by móc używać zaklęć lub walczyć przez kilka kolejnych rund.
+
+Ze względu na konieczność korzystania z niezbędnej aparatury jesteś ograniczony do kilku wybranych lokacji, na których możesz
+zbudować golema. Obiecującymi miejscami są z reguły (opuszczone) twierdze potężnych magów. Więcej szczegółów na ten temat
+znajduje się na końcu dokumentu.
+
+Zdolność „Budowanie golema” może być używana tyle razy ile to konieczne bez konieczności odpoczynku pomiędzy kolejnymi
+użyciami (aczkolwiek jest to zalecane).
+
+Podręczniki budowy golemów nauczają również zdolności „Naprawianie golema”. Można jej użyć raz dziennie w dowolnej lokacji,
+jednak nie gdy w pobliżu są wrogowie. Proces naprawy zajmuje dwie rundy. Mocno uszkodzone golemy mogą wymagać więcej użyć,
+aby dojść do pełni sprawności.
+
+
+Konwencjonalne golemy
+=====================
+
+Rodzaje konwencjonalnych golemów opisane są w „Podręczniku budowy golemów”, który ma sześć tomów. Same księgi nie są zbyt trudne
+do zdobycia. Niektóre można kupić u kupców, inne mogą być ukryte w jakimś lochu i strzeżone przez rozmaite istoty.
+
+Materiały do budowy golemów również można uzyskać z różnych źródeł. Pospolitsze składniki można kupić u kupców, znaleźć przy
+ciałach zabitych istot lub w różnych lokacjach, podczas gdy droższe i bardziej egzotyczne materiały można zdobyć w inny sposób.
+
+Konwencjonalne golemy można budować w kilku wariantach: pomniejszym, zwykłym, większym i idealnym. Każdy z nich wymaga różnych
+materiałów. Wariant idealny wymaga również konkretnego artefaktu, który występuje w ograniczonej ilości.
+
+
+1. Golemy z ciała
+
+Pomniejszy golem z ciała:
+- Minimalny poziom: 5 (-1 dla mistrzów przemian, +1 dla bardów)
+- Składniki:
+  - Jeden komplet części ciała
+- Statystyki:
+  - S: 13
+  - PŻ: 30
+  - KP: 6
+  - TraK0: 12
+  - Ataki na rundę: 1
+  - Rzuty obronne (śmierć/różdżki/polimorfia/zionięcia/czary): 12/13/12/13/13
+- Odporności:
+  - Magia: 50
+  - Zimno: 50
+  - Magiczne zimno: 50
+  - Elektryczność: 50
+- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+
+Golem z ciała:
+- Minimalny poziom: 7 (-1 dla mistrzów przemian, +1 dla bardów)
+- Składniki:
+  - Dwa komplety części ciała
+- Statystyki:
+  - S: 14
+  - PŻ: 40
+  - KP: 4
+  - TraK0: 9
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 10/11/10/11/11
+- Odporności:
+  - Magia: 75
+  - Zimno: 80
+  - Magiczne zimno: 80
+  - Elektryczność: 80
+- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+
+Większy golem z ciała:
+- Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+- Składniki:
+  - Cztery komplety części ciała
+  - Jeden zwój z czarem Śmierdząca chmura
+- Statystyki:
+  - S: 16
+  - PŻ: 55
+  - KP: 2
+  - TraK0: 6
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 8/9/8/9/9
+- Odporności:
+  - Magia: 95
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kłute: 50
+  - Pociski: 50
+- Niewrażliwość na niemagiczne bronie
+- Może rzucić na siebie czar Śmierdząca chmura
+- Istnieje 1% szans, że golem z ciała wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+- Istnieje 25% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+Idealny golem z ciała:
+- Minimalny poziom: 12 (-2 dla mistrzów przemian, +2 dla bardów)
+- Składniki:
+  - Cztery komplety części ciała
+  - Jeden zwój z czarem Śmierdząca chmura
+  - Jeden krwawnik
+- Statystyki:
+  - S: 17
+  - PŻ: 65
+  - KP: 0
+  - TraK0: 5
+  - Ataki na rundę: 2
+  - Rzuty obronne: 7/8/7/8/8
+- Odporności:
+  - Magia: 100
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 125
+  - Kłute: 85
+  - Pociski: 85
+- Regeneracja punktów życia: 1/turę
+- Niewrażliwość na bronie niemagiczne
+- Może rzucić na siebie czar Śmierdząca chmura
+- Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+
+2. Gliniane golemy
+
+Pomniejszy gliniany golem:
+- Minimalny poziom: 7 (-1 dla mistrzów przemian, +1 dla bardów)
+- Składniki:
+  - Jeden blok gliniany
+- Statystyki:
+  - S: 13
+  - PŻ: 40
+  - KP: 5
+  - TraK0: 10
+  - Ataki na rundę: 1
+  - Rzuty obronne: 9/11/10/10/12
+- Odporności:
+  - Magia: 65
+  - Zimno: 50
+  - Magiczne zimno: 50
+  - Elektryczność: 75
+  - Sieczne: 50
+  - Kłute: 50
+  - Pociski: 50
+- Istnieje 1% szans, że gliniany golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+
+Gliniany golem:
+- Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+- Składniki:
+  - Dwa bloki gliniane
+  - Jeden zwój z czarem Przyspieszenie ruchów
+- Statystyki:
+  - S: 15
+  - PŻ: 45
+  - KP: 3
+  - TraK0: 8
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 7/9/8/8/10
+- Odporności:
+  - Magia: 90
+  - Ogień: 25
+  - Magiczny ogień: 25
+  - Zimno: 75
+  - Magiczne zimno: 75
+  - Elektryczność: 100
+  - Sieczne: 90
+  - Kłute: 90
+  - Pociski: 90
+- Może rzucić na siebie czar Przyspieszenie ruchów
+- Istnieje 1% szans, że gliniany golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+
+Większy gliniany golem:
+- Minimalny poziom: 13 (-2 dla mistrzów przemian, +3 dla bardów)
+- Składniki:
+  - Cztery bloki gliniane
+  - Jeden zwój z czarem Przyspieszenie ruchów
+- Statystyki:
+  - S: 17
+  - PŻ: 60
+  - KP: 1
+  - TraK0: 5
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 5/7/6/6/8
+- Odporności:
+  - Magia: 100
+  - Ogień: 50
+  - Magiczny ogień: 50
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 50
+  - Sieczne: 99
+  - Kłute: 99
+  - Pociski: 99
+- Niewrażliwość na bronie niemagiczne
+- Może rzucić na siebie czar Przyspieszenie ruchów
+- Istnieje 1% szans, że gliniany golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku
+- Istnieje 25% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+Idealny gliniany golem:
+- Minimalny poziom: 15 (-2 dla mistrzów przemian, +4 dla bardów)
+- Składniki:
+  - Cztery bloki gliniane
+  - Jeden zwój z czarem Przyspieszenie ruchów
+  - Jeden worek z zaczarowanym sproszkowanym koralem
+- Statystyki:
+  - S: 18
+  - PŻ: 75
+  - KP: -1
+  - TraK0: 3
+  - Ataki na rundę: 2
+  - Rzuty obronne: 4/6/5/5/7
+- Odporności:
+  - Magia: 100
+  - Ogień: 50
+  - Magiczny ogień: 50
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 75
+  - Sieczne: 100
+  - Obuchowe: 20
+  - Kłute: 100
+  - Pociski: 100
+- Regeneracja punktów życia: 1/turę
+- Niewrażliwość na bronie niemagiczne
+- Może rzucić na siebie czar Przyspieszenie ruchów
+- Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+
+3. Kamienne golemy
+
+Pomniejszy kamienny golem:
+- Minimalny poziom: 7 (-1 dla mistrzów przemian, +1 dla bardów)
+- Składniki:
+  - Jeden blok kamienny
+- Statystyki:
+  - S: 13
+  - PŻ: 40
+  - KP: 4
+  - TraK0: 9
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 7/9/8/7/10
+- Odporności:
+  - Magia: 75
+- Istnieje 1% szans, że kamienny golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+
+Kamienny golem:
+- Minimalny poziom: 10 (-2 dla mistrzów przemian, +2 dla bardów)
+- Składniki:
+  - Dwa bloki kamienne
+  - Jeden zwój z czarem Spowolnienie ruchów
+- Statystyki:
+  - S: 15
+  - PŻ: 50
+  - KP: 2
+  - TraK0: 7
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 5/7/6/5/8
+- Odporności:
+  - Magia: 90
+- Niewrażliwość na bronie niemagiczne
+- Może rzucić czar Spowolnienie ruchów na wrogów znajdujących się w promieniu 10 metrów od golema
+- Istnieje 1% szans, że kamienny golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+
+Większy kamienny golem:
+- Minimalny poziom: 13 (-2 dla mistrzów przemian, +3 dla bardów)
+- Składniki:
+  - Cztery bloki kamienne
+  - Jeden zwój z czarem Spowolnienie ruchów
+- Statystyki:
+  - S: 17
+  - PŻ: 75
+  - KP: 0
+  - TraK0: 4
+  - Ataki na rundę: 2
+  - Rzuty obronne: 4/6/5/4/7
+- Odporności:
+  - Magia: 100
+  - Elektryczność: 50
+  - Kwas: 50
+- Niewrażliwość na bronie niemagiczne
+- Może rzucić czar Spowolnienie ruchów na wrogów znajdujących się w promieniu 10 metrów od golema
+- Istnieje 1% szans, że kamienny golem wpadnie podczas walki w trwający 1k6 rund szał, atakując najbliższą istotę znajdującą
+  się w zasięgu jego wzroku.
+- Istnieje 25% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+Idealny kamienny golem:
+- Minimalny poziom: 15 (-2 dla mistrzów przemian, +4 dla bardów)
+- Składniki:
+  - Cztery bloki kamienne
+  - Jeden zwój z czarem Spowolnienie ruchów
+  - Jedna fiolka z krwią mimika
+- Statystyki:
+  - S: 18
+  - PŻ: 90
+  - KP: -2
+  - TraK0: 2
+  - Ataki na rundę: 2
+  - Rzuty obronne: 3/5/4/3/6
+- Odporności:
+  - Magia: 100
+  - Ogień: 50
+  - Magiczny ogień: 50
+  - Zimno: 50
+  - Magiczne zimno: 50
+  - Elektryczność: 75
+  - Kwas: 75
+- Regeneracja punktów życia: 1/turę
+- Niewrażliwość na bronie niemagiczne i o umagicznieniu +1
+- Może rzucić czar Spowolnienie ruchów na siebie, którego efekty oddziałują na pobliskich wrogów
+- Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+
+4. Żelazne golemy
+
+Pomniejszy żelazny golem:
+- Minimalny poziom: 11 (-2 dla mistrzów przemian, +2 dla bardów)
+- Składniki:
+  - Jeden pręt żelazny
+- Statystyki:
+  - S: 14
+  - PŻ: 50
+  - KP: 5
+  - TraK0: 6
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 5/7/6/6/8
+- Odporności:
+  - Magia: 75
+  - Ogień: 100
+  - Magiczny ogień: 100
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 50
+- Niewrażliwość na bronie niemagiczne.
+
+Żelazny golem:
+- Minimalny poziom: 14 (-2 dla mistrzów przemian, +4 dla bardów)
+- Składniki:
+  - Dwa pręty żelazne
+  - Jeden zwój z czarem Zabójcza chmura
+- Statystyki:
+  - S: 16
+  - PŻ: 80
+  - KP: 3
+  - TraK0: 3
+  - Ataki na rundę: 2
+  - Rzuty obronne: 3/5/4/4/6
+- Odporności:
+  - Magia: 90
+  - Ogień: 100
+  - Magiczny ogień: 100
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 75
+- Niewrażliwość na bronie niemagiczne
+- Może rzucić na siebie czar Gazowa chmura.
+
+Większy żelazny golem:
+- Minimalny poziom: 17 (-2 dla mistrzów przemian, +5 dla bardów)
+- Składniki:
+  - Cztery pręty żelazne
+  - Jeden zwój z czarem Zabójcza chmura
+- Statystyki:
+  - S: 18
+  - PŻ: 100
+  - KP: 0
+  - TraK0: 1
+  - Ataki na rundę: 2
+  - Rzuty obronne: 1/3/2/2/4
+- Odporności:
+  - Magia: 100
+  - Ogień: 100
+  - Magiczny ogień: 100
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 100
+  - Sieczne: 20
+  - Kłute: 20
+  - Pociski: 20
+- Regeneracja punktów życia: 1/turę
+- Niewrażliwość na bronie niemagiczne i o umagicznieniu +1
+- Może rzucić na siebie czar Gazowa chmura
+- Istnieje 25% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+Idealny żelazny golem:
+- Minimalny poziom: 19 (-2 dla mistrzów przemian)
+- Składniki:
+  - Cztery pręty żelazne
+  - Jeden zwój z czarem Zabójcza chmura
+  - Żetony z zimnego żelaza
+- Statystyki:
+  - S: 19
+  - PŻ: 120
+  - KP: -2
+  - TraK0: -1
+  - Ataki na rundę: 5/2
+  - Rzuty obronne: 0/2/1/1/3
+- Odporności:
+  - Magia: 100
+  - Ogień: 100
+  - Magiczny ogień: 100
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 100
+  - Sieczne: 50
+  - Obuchowe: 20
+  - Kłute: 50
+  - Pociski: 50
+- Regeneracja punktów życia: 1/3 rundy
+- Niewrażliwość na bronie niemagiczne i o umagicznieniu +1
+- Może rzucić na siebie czar Gazowa chmura
+- Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+
+5. Mithrilowe golemy
+
+Pomniejszy mithrilowy golem:
+- Minimalny poziom: 13 (-2 dla mistrzów przemian, +3 dla bardów)
+- Składniki:
+  - Jeden kawałek mithrilu
+  - Rzucający czar traci 4000 PD
+- Statystyki:
+  - S: 16
+  - PŻ: 60
+  - KP: 2
+  - TraK0: 4
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 6/8/7/7/9
+- Odporności:
+  - Magia: 90
+  - Ogień: 100
+  - Magiczny ogień: 100
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 100
+- Niewrażliwość na bronie niemagiczne.
+
+Mithrilowy golem:
+- Minimalny poziom: 17 (-2 dla mistrzów przemian, +5 dla bardów)
+- Składniki:
+  - Dwa kawałki mithrilu
+  - Rzucający czar traci 8000 PD
+- Statystyki:
+  - S: 18
+  - PŻ: 80
+  - KP: -1
+  - TraK0: 2
+  - Ataki na rundę: 2
+  - Rzuty obronne: 4/6/5/5/7
+- Odporności:
+  - Magia: 100
+  - Ogień: 125
+  - Magiczny ogień: 125
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 100
+  - Sieczne: 25
+  - Kłute: 25
+  - Pociski: 25
+- Regeneracja punktów życia: 1/turę
+- Niewrażliwość na bronie niemagiczne i o umagicznieniu +1.
+
+Większy mithrilowy golem:
+- Minimalny poziom: 21 (-2 dla mistrzów przemian)
+- Składniki:
+  - Cztery kawałki mithrilu
+  - Rzucający czar traci 16000 PD
+- Statystyki:
+  - S: 20
+  - PŻ: 110
+  - KP: -5
+  - TraK0: -1
+  - Ataki na rundę: 2
+  - Rzuty obronne: 3/5/4/4/6
+- Odporności:
+  - Magia: 100
+  - Ogień: 125
+  - Magiczny ogień: 125
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 100
+  - Sieczne: 50
+  - Obuchowe: 25
+  - Kłute: 50
+  - Pociski: 50
+- Regeneracja punktów życia: 1/3 rundy
+- Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2
+- Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega
+  ogłuszeniu)
+- Istnieje 25% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+Idealny mithrilowy golem:
+- Minimalny poziom: 23 (-2 dla mistrzów przemian)
+- Składniki:
+  - Cztery kawałki mithrilu
+  - Jedna widmowa kula z obsydianu
+  - Rzucający czar traci 32000 PD
+- Statystyki:
+  - S: 21
+  - PŻ: 125
+  - KP: -7
+  - TraK0: -3
+  - Ataki na rundę: 5/2
+  - Rzuty obronne: 1/3/2/2/4
+- Odporności:
+  - Magia: 100
+  - Ogień: 125
+  - Magiczny ogień: 125
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Elektryczność: 100
+  - Kwas: 100
+  - Sieczne: 75
+  - Obuchowe: 50
+  - Kłute: 75
+  - Pociski: 75
+- Regeneracja punktów życia: 1/rundę
+- Niewrażliwość na bronie niemagiczne oraz o umagicznieniu +1 i +2
+- Może użyć zdolności „Tratowanie” na wrogach o rozmiarze normalnym lub mniejszych, zadając im 8k10 +30 obrażeń obuchowych i
+  ogłuszając na jedną rundę (rzut obronny przeciw śmierci z modyfikatorem -4 zmniejsza otrzymane obrażenia o połowę i zapobiega
+  ogłuszeniu)
+- Istnieje 50% szans, że golem podzieli się po śmierci na dwa pomniejsze golemy tego samego typu.
+
+
+
+Egzotyczne golemy
+=================
+
+Rodzaje egzotycznych golemów opisane są w „Sekretnym podręczniku budowy golemów”, który powinien składać się z trzech tomów.
+
+Opisane w tych księgach golemy są unikatowe, w związku z czym nie istnieją one w wariantach pomniejszym, większym i idealnym.
+
+1. Kościany golem
+- Minimalny poziom: 12 (-2 dla nekromantów i mistrzów przemian, +2 dla bardów)
+- Składniki:
+  - Cztery sterty kości
+  - Jeden zwój z czarem Animacja martwego
+  - Podczas procesu budowy golema istnieje 50% szans na wyssanie z rzucającego czar trzech punktów Siły lub Kondycji na pięć
+    tur. Jeśli spowoduje to obniżenie punktów do zera, rzucający czar umiera.
+- Statystyki:
+  - S: 16
+  - PŻ: 56
+  - KP: -1
+  - TraK0: 7
+  - Ataki na rundę: 2
+  - Rzuty obronne: 9/12/10/9/13
+- Odporności:
+  - Magia: 50
+  - Ogień: 25
+  - Magiczny ogień: 25
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Sieczne: 50
+  - Kłute: 50
+  - Pociski: 50
+- Może rzucić czar „Ohydny śmiech”, który działa na wrogów znajdujących się w zasięgu 10 metrów od golema. Ofiary, które nie
+  wykonają rzutu obronnego przeciw czarom. będą uciekały ze strachu przez 2k6 rund. Jeśli nie wykonają również rzutu obronnego
+  przeciw śmierci, będą zamiast tego sparaliżowane ze strachu.
+
+2. Lodowy golem
+- Minimalny poziom: 14 (-2 dla mistrzów przemian, +3 dla bardów)
+- Składniki:
+  - Jeden odłamek magicznego lodu
+  - Jeden zwój z czarem Stożek zimna
+  - Jeden zwój z czarem Ochrona przed zimnem
+- Statystyki:
+  - S: 18
+  - PŻ: 75
+  - KP: -2
+  - TraK0: 4
+  - Ataki na rundę: 3/2
+  - Rzuty obronne: 6/9/8/8/10
+- Odporności:
+  - Magia: 75
+  - Ogień: -25
+  - Magiczny ogień: -25
+  - Zimno: 100
+  - Magiczne zimno: 100
+  - Sieczne: 20
+  - Kłute: 20
+  - Pociski: 40
+- Niewrażliwość na bronie niemagiczne
+- Może rzucić czar Gorąca para, który zadaje 3k10 obrażeń od zimna wszystkim istotom znajdującym się na obszarze jego
+  działania (rzut obronny przeciw zionięciom neguje).
+
+3. Golem błyskawic
+- Minimalny poziom: 17 (-2 dla mistrzów przemian, +5 dla bardów)
+- Składniki:
+  - Sto tysięcy sztuk złota
+  - Jeden zwój z czarem Wyładowanie łańcuchowe
+- Statystyki:
+  - S: 19
+  - PŻ: 80
+  - KP: -4
+  - TraK0: 5
+  - Ataki na rundę: 3
+  - Rzuty obronne: 6/8/7/7/9
+- Odporności:
+  - Magia: 100
+  - Zimno: 85
+  - Magiczne zimno: 85
+  - Elektryczność: 125
+  - Kwas: 50
+  - Sieczne: 25
+  - Kłute: 50
+  - Pociski: 50
+- Niewrażliwość na bronie niemagiczne i o umagicznieniu +1
+- Porusza się ze zwiększoną prędkością
+- Stałe działanie tarczy błyskawic: atakujący otrzymują 1k8 +2 obrażeń elektrycznych po każdym udanym trafieniu
+- Może rzucić na wrogów czar Wyładowanie łańcuchowe
+- Może rzucić czar „Błyskawiczna podróż”, który pozwala golemowi na podróż do dowolnego miejsca w zasięgu jego wzroku,
+  zmieniając go w potężną błyskawicę zbliżającą się do celu z prędkością światła. Tak szybka podróż powoduje wytworzenie fali
+  uderzeniowej, która odrzuca wszystkie istoty znajdujące się w zasięgu 2,5 metra od miejsca docelowego, zadając im 1k6 obrażeń
+  od elektryczności. Będący efektem podróży grzmot może również spowodować trwającą 1k4 rund głuchotę u każdej istoty
+  znajdującej się w zasięgu, jeśli ta nie wykona rzutu obronnego przeciw zionięciom. Golem nie musi ponadto czekać, aż jego
+  aura zniknie, aby móc użyć ponownie tej samej lub innej zdolności. Zdolność ta zastępuje „Teleportację”.
+
+
+Każdy golem dysponuje domyślnie następującymi zdolnościami:
+1. Odesłanie: Aktywowanie tej zdolności powoduje zniszczenie golema. Proces ten jest nieodwracalny.
+2. Teleportacja: Golem teleportuje się w pobliże wybranego członka drużyny, znajdującego się w zasięgu wzroku. Zdolność ta
+   może być konieczna dla golemów o dużym rozmiarze, aby nie blokowały się w wąskich przejściach. Można jej użyć tylko,
+   jeśli w pobliżu nie ma żadnych wrogów.
+   Uwaga: Zdolność ta jest dodana przez komponent „Dodaj zdolność golemów o nazwie Teleportacja”.
+
+Możesz również wydawać swoim golemom proste polecenia. Pomniejsze warianty golemów z ciała, glinianych i kamiennych, a także
+golemy larwalne mogą wykonywać następujące polecenia:
+- Za mną! (Golema można kontrolować, ale nie może działać na własną rękę. Jest to domyślne działanie zaraz po aktywacji).
+- Stój na straży! (Golem staje się neutralny i nie rusza się z zajmowanej przez siebie pozycji).
+- Zniszcz siebie! (Powoduje zniszczenie golema. Polecenie to jest identyczne ze zdolnością Odesłanie, lecz może być użyte
+  również, gdy golem znajduje się w trybie strażniczym).
+
+Bardziej zaawansowane golemy mogą również wykonywać następujące polecenia:
+- Idź za mną i chroń mnie! (Golema można kontrolować i będzie on atakował każdą wrogą istotę w zasięgu wzroku lub tych,
+  każdego, kto zaatakuje członków drużyny).
+- Stój na straży i broń obszaru! (Golem staje się neutralny i atakuje każdą wrogą istotę w zasięgu wzroku. Następnie zawsze
+  wraca na pozycję, której broni).
+
+Nie zapominaj dbać o swoje golemy, gdyż mogą one zacząć funkcjonować nieprawidłowo, jeśli zostaną mocno uszkodzone. Usterki
+te mogą zostać jednak usunięte za pomocą zdolności „Naprawienie golema”.
+
+
+Ulepszanie golemów
+==================
+
+Zwyczajne golemy mogą zyskiwać doświadczenie bojowe za każdego zabitego przeciwnika. Gdy doświadczenie osiągnie pewien
+poziom, mogą one zostać ulepszone do kolejnej rangi przez dowolnego użytkownika magii znającego się na budowie golemów
+tego rodzaju. Im potężniejszy golem, tym więcej doświadczenia potrzeba do awansu do kolejnej rangi.
+Idealne golemy nie mogą dalej awansować.
+Pomniejsze golemy z ciała:    do awansowania do zwyczajnego golema z ciała wymagane jest zabicie 50 lub więcej stworzeń
+Zwyczajne golemy z ciała:     do awansowania do większego golema z ciała wymagane jest zabicie 100 lub więcej stworzeń
+Większe golemy z ciała:       do awansowania do idealnego golema z ciała wymagane jest zabicie 200 lub więcej stworzeń
+
+Pomniejsze gliniane golemy:   do awansowania do zwyczajnego glinianego golema wymagane jest zabicie 75 lub więcej stworzeń
+Zwyczajne gliniane golemy:    do awansowania do większego glinianego golema wymagane jest zabicie 150 lub więcej stworzeń
+Większe gliniane golemy:      do awansowania do idealnego glinianego golema wymagane jest zabicie 300 lub więcej stworzeń
+
+Pomniejsze kamienne golemy:   do awansowania do zwyczajnego kamiennego golema wymagane jest zabicie 75 lub więcej stworzeń
+Zwyczajne kamienne golemy:    do awansowania do większego kamiennego golema wymagane jest zabicie 150 lub więcej stworzeń
+Większe kamienne golemy:      do awansowania do idealnego kamiennego golema wymagane jest zabicie 300 lub więcej stworzeń
+
+Pomniejsze żelazne golemy:    do awansowania do zwyczajnego żelaznego golema wymagane jest zabicie 100 lub więcej stworzeń
+Zwyczajne żelazne golemy:     do awansowania do większego żelaznego golema wymagane jest zabicie 200 lub więcej stworzeń
+Większe żelazne golemy:       do awansowania do idealnego żelaznego golema wymagane jest zabicie 400 lub więcej stworzeń
+
+Pomniejsze mithrilowe golemy: do awansowania do zwyczajnego mithrilowego golema wymagane jest zabicie 150 lub więcej stworzeń
+Zwyczajne mithrilowe golemy:  do awansowania do większego mithrilowego golema wymagane jest zabicie 300 lub więcej stworzeń
+Większe mithrilowe golemy:    do awansowania do idealnego mithrilowego golema wymagane jest zabicie 600 lub więcej stworzeń
+
+Do ulepszenia golema niezbędne jest posiadanie wymaganych materiałów. Ilość niezbędnych materiałów jest różnicą pomiędzy
+ilością materiałów wymaganą do zbudowania nowego i starego wariantu golema. Za ulepszenie mithrilowego golema
+rzucający zaklęcie nie otrzymuje żadnych fizycznych kar. Aby poznać ilość stworzeń zabitych przez golema lub rozpocząć proces
+jego ulepszenia wystarczy z nim porozmawiać.
+
+Możliwe jest także ulepszenie golema za pomocą zaklęcia Życzenie lub Ograniczone życzenie pod warunkiem, że czarujący jest
+wystarczająco mądry by właściwie je sformułować.
+
+
+Czary, które wpływają w jakiś sposób na golemy
+==============================================
+
+Z racji tego, że golemy są nieożywionymi konstruktami, niektóre zaklęcia mogą na nie wpływać inaczej niż na innych.
+Następujące efekty mogą zostać wywołane po zainstalowaniu komponentu o nazwie „Golemy staja się podatne na określone efekty
+czarów”:
+- Ciało w kamień:
+  Przemienia golemy z ciała w kamienne golemy tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw
+  petryfikacji/polimorfii.
+- Kamień w ciało:
+  Przemienia kamienne golemy w golemy z ciała tego samego wariantu, jeśli te nie wykonają rzutu obronnego przeciw
+  petryfikacji/polimorfii.
+- Plugawy uwiąd Abi-Dalzima:
+  Zaklęcie to sprawia, że wszystkie gliniane golemy zostają pozbawione całej zawartości wody, przemieniając się tym samym
+  w kamienne golemy, jeśli nie wykonają rzutu obronnego przeciw czarom z modyfikatorem -2.
+- Stożek zimna i Lodowa nawałnica:
+  Trafione tym zaklęciem gliniane golemy zostają spowolnione na pięć rund, jeśli nie wykonają rzutu obronnego przeciw czarom.
+- Wysokopoziomowe zaklęcia oparte na ogniu:
+  Zaklęcia te spowodują rozgrzanie żelaznych golemów na pięć rund (bez rzutu obronnego). W tym czasie mogą one, oprócz fizycznych
+  obrażeń, zadawać również obrażenia od ognia.
+  Znane są następujące czary mogące wywołać ten efekt: Rój meteorów, Oddech smoka, Kometa, Zapalająca chmura, Burza ognia
+  oraz Niebiańskie piekło.
+
+
+Lokacje, w których można z powodzeniem budować golemy
+=====================================================
+
+- Laboratorium na 3. poziomie Smoczego Oka:
+  Możesz używać laboratorium po rozprawieniu się z Presio i jej nieumarłymi sługami.
+
+- Gabinet Larrela w Odciętej Dłoni:
+  Opiekun tego miejsca, Gelarith, może pozwolić ci na budowę golemów, jeśli pomożesz mu naprawić astrolabium.
+
+- Laboratorium Bandotha w Głębi Dorna:
+  Możesz przekupić, zastraszyć lub zabić Bandotha, jeśli chcesz wykorzystać jego laboratorium do budowy golemów.
+
+- Dom drowiego czarodzieja, Malavona, w Niższej Głębi Dorna:
+  To miejsce może być używane do budowy golemów po rozprawieniu się z Malavonem i jego sługami.
+
+- Kuźnia Tiernona w Posępnym Mrozie:
+  Tiernon może zezwolić na używanie swojej kuźni, jeśli ładnie go o to poprosisz. Możesz go też po prostu zabić.
+
+- Zamek Maluradek (TotLM):
+  Gabinet położony w południowo-zachodniej części górnego piętra może zostać wykorzystany do budowy golemów po zabezpieczeniu
+  okolicy.

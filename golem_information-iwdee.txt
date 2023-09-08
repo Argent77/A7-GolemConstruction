@@ -1,0 +1,736 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ Detailed information about all provided golem types (IWD:EE) ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Introduction
+============
+
+Golems can be constructed with the "Construct Golem" ability which you can learn from the various golem building manuals.
+A short dialog allows you to select the desired golem type and variant to build. The construction of the physical
+body takes several hours up to several days, followed by the enchantment process. There is a 4 percent chance that
+the golem may break free and turn on the caster for 1d4 rounds before it finally submits to your will. After the
+construction process finished the caster will be too tired to cast spells or fight properly for several rounds.
+
+Because of the equipment required to successfully construct the golem's body you are limited to a few selected locations
+where you can actually build a golem. Promising locations are usually (abandoned) strongholds of powerful mages.
+More details can be found at the end of this document.
+
+The "Construct Golem" ability can be used as many times as needed without the need to rest in between (although it is
+strongly recommended).
+
+Golem manuals will also teach you the "Repair Golem" ability. It can be used once per day in any location, but does
+not work while enemies are around. The repair process takes about two rounds. Heavily damaged golems may require several
+attempts to restore them to full health.
+
+
+Conventional Golems
+===================
+
+Conventional golem types are described in the "Manual of Golem Building" which comes in five volumes. The tomes
+themselves are not terribly difficult to obtain. Some can be purchased from merchants while others may be hidden
+in some dungeon or guarded by creatures.
+
+The materials required to build golems are also obtainable from various sources. More common ingredients can be bought
+from merchants, looted from creatures or found in various locations, while the more expensive or exotic materials are
+available by other means.
+
+Conventional golem types can be build in lesser, regular, greater and perfect variants. Each variant requires its own
+materials. The perfect variant will also require a specific artifact of power which is only available in limited numbers.
+
+
+1. Flesh Golems
+
+Lesser Flesh Golem:
+- Min. level: 5 (-1 for Transmuters, +1 for Bards)
+- Ingredients:
+  - One full set of body parts
+- Stats:
+  - STR: 13
+  - HP: 30
+  - AC: 6
+  - THAC0: 12
+  - APR: 1
+  - Saves (death/wand/polymorph/breath/spell): 12/13/12/13/13
+- Resistances:
+  - Magic: 50
+  - Cold: 50
+  - Magic Cold: 50
+  - Electricity: 50
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+
+Flesh Golem:
+- Min. level: 7 (-1 for Transmuters, +1 for Bards)
+- Ingredients:
+  - Two full sets of body parts
+- Stats:
+  - STR: 14
+  - HP: 40
+  - AC: 4
+  - THAC0: 9
+  - APR: 3/2
+  - Saves: 10/11/10/11/11
+- Resistances:
+  - Magic: 75
+  - Cold: 80
+  - Magic Cold: 80
+  - Electricity: 80
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+
+Greater Flesh Golem:
+- Min. level: 10 (-2 for Transmuters, +2 for Bards)
+- Ingredients:
+  - Four full sets of body parts
+  - One scroll of Stinking Cloud
+- Stats:
+  - STR: 16
+  - HP: 55
+  - AC: 2
+  - THAC0: 6
+  - APR: 3/2
+  - Saves: 8/9/8/9/9
+- Resistances:
+  - Magic: 95
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Piercing: 50
+  - Missile: 50
+- Immune to non-magical weapons
+- May cast Stinking Cloud on self
+- There is a 1% chance that flesh golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+- 25% chance to split into two lesser golems of same type on death.
+
+Perfect Flesh Golem:
+- Min. level: 12 (-2 for Transmuters, +2 for Bards)
+- Ingredients:
+  - Four full sets of body parts
+  - One scroll of Stinking Cloud
+  - One Deep Bloodstone Gem
+- Stats:
+  - STR: 17
+  - HP: 65
+  - AC: 0
+  - THAC0: 5
+  - APR: 2
+  - Saves: 7/8/7/8/8
+- Resistances:
+  - Magic: 100
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 125
+  - Piercing: 85
+  - Missile: 85
+- Regenerates 1 HP per turn
+- Immune to non-magical weapons
+- May cast Stinking Cloud on self
+- 50% chance to split into two lesser golems of same type on death.
+
+
+2. Clay Golems
+
+Lesser Clay Golem:
+- Min. level: 7 (-1 for Transmuters, +1 for Bards)
+- Ingredients:
+  - One block of clay
+- Stats:
+  - STR: 13
+  - HP: 40
+  - AC: 5
+  - THAC0: 10
+  - APR: 1
+  - Saves: 9/11/10/10/12
+- Resistances:
+  - Magic: 65
+  - Cold: 50
+  - Magic Cold: 50
+  - Electricity: 75
+  - Slashing: 50
+  - Piercing: 50
+  - Missile: 50
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+
+Clay Golem:
+- Min. level: 10 (-2 for Transmuters, +2 for Bards)
+- Ingredients:
+  - Two blocks of clay
+  - One scroll of Haste
+- Stats:
+  - STR: 15
+  - HP: 45
+  - AC: 3
+  - THAC0: 8
+  - APR: 3/2
+  - Saves: 7/9/8/8/10
+- Resistances:
+  - Magic: 90
+  - Fire: 25
+  - Magic Fire: 25
+  - Cold: 75
+  - Magic Cold: 75
+  - Electricity: 100
+  - Slashing: 90
+  - Piercing: 90
+  - Missile: 90
+- May cast Haste on self
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+
+Greater Clay Golem:
+- Min. level: 13 (-2 for Transmuters, +3 for Bards)
+- Ingredients:
+  - Four block of clay
+  - One scroll of Haste
+- Stats:
+  - STR: 17
+  - HP: 60
+  - AC: 1
+  - THAC0: 5
+  - APR: 3/2
+  - Saves: 5/7/6/6/8
+- Resistances:
+  - Magic: 100
+  - Fire: 50
+  - Magic Fire: 50
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 50
+  - Slashing: 99
+  - Piercing: 99
+  - Missile: 99
+- Immune to non-magical weapons
+- May cast Haste on self
+- There is a 1% chance that clay golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+- 25% chance to split into two lesser golems of same type on death.
+
+Perfect Clay Golem:
+- Min. level: 15 (-2 for Transmuters, +4 for Bards)
+- Ingredients:
+  - Four block of clay
+  - One scroll of Haste
+  - One bag of Enchanted Coral Powder
+- Stats:
+  - STR: 18
+  - HP: 75
+  - AC: -1
+  - THAC0: 3
+  - APR: 2
+  - Saves: 4/6/5/5/7
+- Resistances:
+  - Magic: 100
+  - Fire: 50
+  - Magic Fire: 50
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 75
+  - Slashing: 100
+  - Crushing: 20
+  - Piercing: 100
+  - Missile: 100
+- Regenerates 1 HP per turn
+- Immune to non-magical weapons
+- May cast Haste on self
+- 50% chance to split into two lesser golems of same type on death.
+
+
+3. Stone Golems
+
+Lesser Stone Golem:
+- Min. level: 7 (-1 for Transmuters, +1 for Bards)
+- Ingredients:
+  - One block of stone
+- Stats:
+  - STR: 13
+  - HP: 40
+  - AC: 4
+  - THAC0: 9
+  - APR: 3/2
+  - Saves: 7/9/8/7/10
+- Resistances:
+  - Magic: 75
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+
+Stone Golem:
+- Min. level: 10 (-2 for Transmuters, +2 for Bards)
+- Ingredients:
+  - Two blocks of stone
+  - One scroll of Slow
+- Stats:
+  - STR: 15
+  - HP: 50
+  - AC: 2
+  - THAC0: 7
+  - APR: 3/2
+  - Saves: 5/7/6/5/8
+- Resistances:
+  - Magic: 90
+- Immune to non-magical weapons
+- May cast Slow on opponents in 30 feet radius of golem
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+
+Greater Stone Golem:
+- Min. level: 13 (-2 for Transmuters, +3 for Bards)
+- Ingredients:
+  - Four blocks of stone
+  - One scroll of Slow
+- Stats:
+  - STR: 17
+  - HP: 75
+  - AC: 0
+  - THAC0: 4
+  - APR: 2
+  - Saves: 4/6/5/4/7
+- Resistances:
+  - Magic: 100
+  - Electricity: 50
+  - Acid: 50
+- Immune to non-magical weapons
+- May cast Slow on opponents in 30 feet radius of golem
+- There is a 1% chance that stone golems may go berserk during combat for 1d6 rounds and attack the nearest creature
+  in sight.
+- 25% chance to split into two lesser golems of same type on death.
+
+Perfect Stone Golem:
+- Min. level: 15 (-2 for Transmuters, +4 for Bards)
+- Ingredients:
+  - Four blocks of stone
+  - One scroll of Slow
+  - One vial of Mimic's Blood
+- Stats:
+  - STR: 18
+  - HP: 90
+  - AC: -2
+  - THAC0: 2
+  - APR: 2
+  - Saves: 3/5/4/3/6
+- Resistances:
+  - Magic: 100
+  - Fire: 50
+  - Magic Fire: 50
+  - Cold: 50
+  - Magic Cold: 50
+  - Electricity: 75
+  - Acid: 75
+- Regenerates 1 HP per turn
+- Immune to non-magical and +1 weapons
+- May cast Slow on self which affects surrounding opponents
+- 50% chance to split into two lesser golems of same type on death.
+
+
+4. Iron Golems
+
+Lesser Iron Golem:
+- Min. level: 11 (-2 for Transmuters, +2 for Bards)
+- Ingredients:
+  - One bar of iron
+- Stats:
+  - STR: 14
+  - HP: 50
+  - AC: 5
+  - THAC0: 6
+  - APR: 3/2
+  - Saves: 5/7/6/6/8
+- Resistances:
+  - Magic: 75
+  - Fire: 100
+  - Magic Fire: 100
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 50
+- Immune to non-magical weapons
+
+Iron Golem:
+- Min. level: 14 (-2 for Transmuters, +4 for Bards)
+- Ingredients:
+  - Two bars of iron
+  - One scroll of Cloudkill
+- Stats:
+  - STR: 16
+  - HP: 80
+  - AC: 3
+  - THAC0: 3
+  - APR: 2
+  - Saves: 3/5/4/4/6
+- Resistances:
+  - Magic: 90
+  - Fire: 100
+  - Magic Fire: 100
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 75
+- Immune to non-magical weapons
+- May cast Gas Cloud on self
+
+Greater Iron Golem:
+- Min. level: 17 (-2 for Transmuters, +5 for Bards)
+- Ingredients:
+  - Four bars of iron
+  - One scroll of Cloudkill
+- Stats:
+  - STR: 18
+  - HP: 100
+  - AC: 0
+  - THAC0: 1
+  - APR: 2
+  - Saves: 1/3/2/2/4
+- Resistances
+  - Magic: 100
+  - Fire: 100
+  - Magic Fire: 100
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 100
+  - Slashing: 20
+  - Piercing: 20
+  - Missile: 20
+- Regenerates 1 HP per turn
+- Immune to non-magical and +1 weapons
+- May cast Gas Cloud on self
+- 25% chance to split into two lesser golems of same type on death.
+
+Perfect Iron Golem:
+- Min. level: 19 (-2 for Transmuters)
+- Ingredients:
+  - Four bars of iron
+  - One scroll of Cloudkill
+  - Chips of Cold Iron
+- Stats:
+  - STR: 19
+  - HP: 120
+  - AC: -2
+  - THAC0: -1
+  - APR: 5/2
+  - Saves: 0/2/1/1/3
+- Resistances:
+  - Magic: 100
+  - Fire: 100
+  - Magic Fire: 100
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 100
+  - Slashing: 50
+  - Crushing: 20
+  - Piercing: 50
+  - Missile: 50
+- Regenerates 1 HP per three rounds
+- Immune to non-magical and +1 weapons
+- May cast Gas Cloud on self
+- 50% chance to split into two lesser golems of same type on death.
+
+
+5. Mithral Golems
+
+Lesser Mithral Golem:
+- Min. level: 13 (-2 for Transmuters, +3 for Bards)
+- Ingredients:
+  - One chunk of mithral
+  - 4,000 XP drained from the caster
+- Stats:
+  - STR: 16
+  - HP: 60
+  - AC: 2
+  - THAC0: 4
+  - APR: 3/2
+  - Saves: 6/8/7/7/9
+- Resistances:
+  - Magic: 90
+  - Fire: 100
+  - Magic Fire: 100
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 100
+- Immune to non-magical weapons
+
+Mithral Golem:
+- Min. level: 17 (-2 for Transmuters, +5 for Bards)
+- Ingredients:
+  - Two chunks of mithral
+  - 8,000 XP drained from the caster
+- Stats:
+  - STR: 18
+  - HP: 80
+  - AC: -1
+  - THAC0: 2
+  - APR: 2
+  - Saves: 4/6/5/5/7
+- Resistances:
+  - Magic: 100
+  - Fire: 125
+  - Magic Fire: 125
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 100
+  - Slashing: 25
+  - Piercing: 25
+  - Missile: 25
+- Regenerates 1 HP per turn
+- Immune to non-magical and +1 weapons
+
+Greater Mithral Golem:
+- Min. level: 21 (-2 for Transmuters)
+- Ingredients:
+  - Four chunks of mithral
+  - 16,000 XP drained from the caster
+- Stats:
+  - STR: 20
+  - HP: 110
+  - AC: -5
+  - THAC0: -1
+  - APR: 2
+  - Saves: 3/5/4/4/6
+- Resistances:
+  - Magic: 100
+  - Fire: 125
+  - Magic Fire: 125
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 100
+  - Slashing: 50
+  - Crushing: 25
+  - Piercing: 50
+  - Missile: 50
+- Regenerates 1 HP per three rounds
+- Immune to non-magical, +1 and +2 weapons
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
+  for one round (save vs. death at -4 penalty for half damage and avoid stun)
+- 25% chance to split into two lesser golems of same type on death.
+
+Perfect Mithral Golem:
+- Min. level: 23 (-2 for Transmuters)
+- Ingredients:
+  - Four chunks of mithral
+  - One orb of Spectral Obsidian
+  - 32,000 XP drained from the caster
+- Stats:
+  - STR: 21
+  - HP: 125
+  - AC: -7
+  - THAC0: -3
+  - APR: 5/2
+  - Saves: 1/3/2/2/4
+- Resistances:
+  - Magic: 100
+  - Fire: 125
+  - Magic Fire: 125
+  - Cold: 100
+  - Magic Cold: 100
+  - Electricity: 100
+  - Acid: 100
+  - Slashing: 75
+  - Crushing: 50
+  - Piercing: 75
+  - Missile: 75
+- Regenerates 1 HP per round
+- Immune to non-magical, +1 and +2 weapons
+- May cast the "Trample" ability on enemies of normal size or smaller: Does 8d10+30 crushing damage and stuns target
+  for one round (save vs. death at -4 penalty for half damage and avoid stun)
+- 50% chance to split into two lesser golems of same type on death.
+
+
+
+Exotic Golems
+=============
+
+Exotic golem types are described in the "Secret Manual of Golem Building" which is supposed to come in three volumes.
+
+Golems described in these tomes are unique, and therefore not available as lesser, greater or perfect variants.
+
+1. Bone Golem
+- Min. level: 12 (-2 for Necromancers and Transmuters, +2 for Bards)
+- Ingredients:
+  - Four piles of bones
+  - One scroll of Animate Dead
+  - 50% chance that the construction process drains three points of strength or constitution for five turns from the
+    caster, possibly killing the caster if fully drained.
+- Stats:
+  - STR: 16
+  - HP: 56
+  - AC: -1
+  - THAC0: 7
+  - APR: 2
+  - Saves: 9/12/10/9/13
+- Resistances:
+  - Magic: 50
+  - Fire: 25
+  - Magic Fire: 25
+  - Cold: 100
+  - Magic Cold: 100
+  - Slashing: 50
+  - Piercing: 50
+  - Missile: 50
+- May cast "Hideous Laughter" which affects enemies within 30 ft. range: Victims that fail their save vs. spell will
+  run around in fear for 2d6 rounds. If they also fail their save vs. death, they will by paralyzed with fear instead.
+
+2. Ice Golem
+- Min. level: 14 (-2 for Transmuters, +3 for Bards)
+- Ingredients:
+  - One shard of magical ice
+  - One scroll of Cone of Cold
+  - One scroll of Protection from Cold
+- Stats:
+  - STR: 18
+  - HP: 75
+  - AC: -2
+  - THAC0: 4
+  - APR: 3/2
+  - Saves: 6/9/8/8/10
+- Resistances:
+  - Magic: 75
+  - Fire: -25
+  - Magic Fire: -25
+  - Cold: 100
+  - Magic Cold: 100
+  - Slashing: 20
+  - Piercing: 20
+  - Missile: 40
+- Immune to non-magical weapons
+- May cast Scalding Steam which does 3d10 area of effect cold damage (save vs. breath to avoid)
+
+3. Lightning Golem
+- Min. level: 17 (-2 for Transmuters, +5 for Bards)
+- Ingredients:
+  - 100,000 gold
+  - One scroll of Chain Lightning
+- Stats:
+  - STR: 19
+  - HP: 80
+  - AC: -4
+  - THAC0: 5
+  - APR: 3
+  - Saves: 6/8/7/7/9
+- Resistance:
+  - Magic: 100
+  - Cold: 85
+  - Magic Cold: 85
+  - Electricity: 125
+  - Acid: 50
+  - Slashing: 25
+  - Piercing: 50
+  - Missile: 50
+- Immune to non-magical and +1 weapons
+- Moves at increased speed
+- Permanent lightning shield: Attackers suffer 1d8+2 electrical damage on each successful hit
+- May cast Chain Lightning on nearby enemies
+- May cast "Lightning Travel" which allows the golem to travel to any point within visual range by transforming into
+  a powerful bolt of lightning and travelling to the target at light speed. The high speed transportation generates
+  a shockwave that will blow away and cause 1d6 lightning damage to all creatures within 8 feet radius of the target
+  location. The resulting thunderclap may also cause deafness to any creature in range for 1d4 rounds if they fail
+  their Saving Throw vs. Breath. The golem also does not have to wait for its aura to be cleansed before using the
+  same or another ability again. This ability replaces "Teleport".
+
+
+Each golem has the following abilities by default:
+1. Dismiss:  Activating this ability will cause the golem to disintegrate. The process is irreversible.
+2. Teleport: Teleports itself to a selected party member in visual range. This ability may be needed for golems with
+             big circle sizes so they won't get stuck in narrow pathways. It can only be used while no enemies are
+             around.
+             Note: This ability is added by the Tweaks component "Add "Teleport" ability to golems".
+
+You can also give your golems simple commands. Lesser variants of flesh, clay and stone golems may follow the following
+orders:
+- Follow me! (The golem becomes controllable, but does not act on its own. This is the default action after activation.)
+- Stand guard! (The golem turns neutral and does not budge from its current position.)
+- Destroy yourself! (Causes the golem to disintegrate. This command is the same as the "Dismiss" ability, but can also
+                     be issued when the golem is on guard duty.)
+
+More advanced golems may also follow the following orders:
+- Follow and protect me! (The golem becomes controllable and will attack any hostile creature in sight, or enemies that
+                          are attacking party members.)
+- Stand guard and defend the area! (The golem turns neutral and attacks any hostile creature in sight. Always returns
+                                    to its guarded position.)
+
+You should always take good care of your golems as they may start to malfunction when badly damaged. These penalties can
+be removed by the "Repair Golem" ability.
+
+
+Upgrading golems
+================
+
+Conventional golems may gain combat experience for each opponent they have killed. If their experience reaches a certain
+threshold they can be upgraded to the next higher rank by any spellcaster who is knowledgeable in constructing golems
+of that type. The more powerful a golem variant the more experience is required to advance to the next rank.
+Perfect golem variants can't be advanced any further.
+Lesser Flesh Golems:    50 kills or more to advance to regular Flesh Golems
+Regular Flesh Golems:   100 kills or more to advance to greater Flesh Golems
+Greater Flesh Golems:   200 kills or more to advance to perfect Flesh Golems
+
+Lesser Clay Golems:     75 kills or more to advance to regular Clay Golems
+Regular Clay Golems:    150 kills or more to advance to greater Clay Golems
+Greater Clay Golems:    300 kills or more to advance to perfect Clay Golems
+
+Lesser Stone Golems:    75 kills or more to advance to regular Stone Golems
+Regular Stone Golems:   150 kills or more to advance to greater Stone Golems
+Greater Stone Golems:   300 kills or more to advance to perfect Stone Golems
+
+Lesser Iron Golems:     100 kills or more to advance to regular Iron Golems
+Regular Iron Golems:    200 kills or more to advance to greater Iron Golems
+Greater Iron Golems:    400 kills or more to advance to perfect Iron Golems
+
+Lesser Mithral Golems:  150 kills or more to advance to regular Mithral Golems
+Regular Mithral Golems: 300 kills or more to advance to greater Mithral Golems
+Greater Mithral Golems: 600 kills or more to advance to perfect Mithral Golems
+
+To perform an upgrade you'll need the required materials. The amount of materials consists of the difference between
+the new and old golem variant. There are no physical penalties applied to the caster for upgrading mithral golems.
+Talk to the golems to find out their number of kills or to initiate the upgrade process.
+
+It is also possible to upgrade golems by a wish or limited wish spell if the caster is wise enough to choose the right
+wording.
+
+
+Spells that are affecting golems in some way
+============================================
+
+Since golems are non-living constructs they may be affected differently by certain spells. The following effects can
+be triggered when the Tweaks component "Make golems vulnerable to specific spell effects" has been installed:
+- Flesh to Stone:
+  Turns Flesh Golems into Stone Golems of the same variant if they fail their Saving Throw vs. Petrify/Polymorph.
+- Stone to Flesh:
+  Turns Stone Golems into Flesh Golems of the same variant if they fail their Saving Throw vs. Petrify/Polymorph.
+- Abi-Dalzim's Horrid Wilting:
+  This spell dehydrates all Clay Golems in the area of effect and turns them into Stone Golems if they fail their
+  Saving Throw vs. Spell at -2 penalty.
+- Cone of Cold and Ice Storm:
+  Clay Golems hit by this spell are slowed for five rounds if they fail their Saving Throw vs. Spell.
+- High-level fire-based spells:
+  These spells will heat up Iron Golems for five rounds (no save). In this time they are able to deal out fire damage
+  in addition to physical damage.
+  The following spells are know to cause this effect: Meteor Swarm, Dragon's Breath, Comet, Incendiary Cloud, Fire
+  Storm and Heavenly Inferno.
+
+
+Known locations where you can successfully construct golems
+===========================================================
+
+- Dragon's Eye Level 3, Laboratory:
+  You may be able to use the laboratory after taking care of Presio and his undead minions.
+
+- Severed Hand, Larrel's Study:
+  The caretaker Gelarith may allow you to build golems in this place if you helped him fixing the AstroLab.
+
+- Dorn's Deep, Bandoth's Laboratory:
+  You can bribe, threaten or kill Bandoth if you want to use his laboratory as another location for building golems.
+
+- Lower Dorn's Deep, Home of the drow wizard Malavon:
+  This place can be used to construct golems after taking care of Malavon and his minions.
+
+- Gloomfrost, Tiernon's Forge:
+  Tiernon might allow you to use his forge if you ask nicely. Alternatively you can simply kill him.
+
+- Castle Maluradek (TotLM):
+  The study in the southeastern corner of the upper floor can be used after making the area safe.

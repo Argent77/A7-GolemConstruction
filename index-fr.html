@@ -31,7 +31,7 @@
         <li><strong>Discussion</strong> (<a href="http://www.shsforums.net/forum/652-golem-construction-ee/">SHS</a>)</li>
         <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/60602/mod-golem-construction-for-spellcasters">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-GolemConstruction">Projet</a></li>
-        <li>Version : 6.2</li>
+        <li>Version : 6.3</li>
       </ul>
       <hr />
       <nav>
@@ -49,7 +49,7 @@
       <!-- ================== O V E R V I E W ================== -->
       <section id="overview">
         <h2>Présentation</h2>
-        <p>Un mod pour BG:EE, BG2:EE, EET (Enhanced Edition Trilogy) et IWD:EE qui permet aux lanceurs de sorts de fabriquer leurs propres golems.</p>
+        <p>Un mod pour BG:EE, BG2:EE, <abbr class="desc" title="Enhanced Edition Trilogy">EET</abbr> et IWD:EE qui permet aux lanceurs de sorts de fabriquer leurs propres golems.</p>
         <p>Partout dans le jeu, vous rencontrez de nombreux golems de types divers et variés. Ils sont puissants, résistants et indéfectiblement loyaux à leur maître. Malheureusement, ils vous sont la plupart du temps hostiles.</p>
         <p>Ce mod s'efforce de modifier cela. Il éparpille à travers tout Féérune plusieurs grimoires renfermant les secrets de la science de fabrication des golems. Les lire vous permettra de fabriquer vos propres golems, à condition d'être suffisamment expérimenté et de posséder tous les matériaux nécessaires. Seuls les personnages versés dans les arts des arcanes peuvent comprendre ces théories complexes.</p>
         <p>La durée de vie des golems est théoriquement illimitée (à quelques exceptions), du moins jusqu'à leur destruction physique. Ils peuvent voyager avec le groupe à travers tous les royaumes et suivent à la lettre les ordres de leur maître.</p>
@@ -64,8 +64,11 @@
       <section id="installation">
         <h2>Installation</h2>
         <p>Il s'agit d'un mod WeiDU, donc très facile à installer. Il suffit de décompresser l'archive téléchargée dans votre répertoire de jeu, d'exécuter « <em>setup-A7-GolemConstruction.exe</em> » (Windows) ou « <em>setup-A7-GolemConstruction.command</em> » (macOS), et de suivre les instructions. Il est fortement recommandé de commencer une nouvelle partie après avoir installé ce mod.</p>
-        <p>Pur le désinstaller, relancez « <em>setup-A7-GolemConstruction.exe</em> » ou « <em>setup-A7-GolemConstruction.command</em> » et suivez les instructions à l'écran.</p>
+        <p>Pour le désinstaller, relancez « <em>setup-A7-GolemConstruction.exe</em> » ou « <em>setup-A7-GolemConstruction.command</em> » et suivez les instructions à l'écran.</p>
         <p><strong>Important :</strong> Pour que l'installation fonctionne, BG:EE et BG2:EE doivent être dotés du patch v2.0 ou supérieur.</p>
+        <hr class="spacer" />
+        <h3>Note spéciale pour Siege of Dragonspear fourni par Steam/GOG</h3>
+        <p>Good Old Games (GOG) et Steam fournissent le contenu de Siege of Dragonspear dans un format que WeiDU, l'outil utilisé pour installer ce mod, ne peut pas reconnaitre. Vous devez donc lancer le programme <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> dans votre répertoire de SoD avant d'installer ce mod, ou tout autre mod utilisant WeiDU.</p>
         <hr class="doublespacer" />
         <h3>Compatibilité</h3>
         <p>Le sous-composant "IWO - IWDEE Item Tweaks" du mod Scales of Balance (à partir de la version 5.19) pose des problèmes de conflits avec Fabrication de golems pour lanceurs de sorts. Pour les éviter, soit n'installez pas ce sous-composant, soit installez-le avant ce mod.</p>
@@ -94,12 +97,12 @@
             <p>Chaque golem nécessite des matériaux spécifiques pour façonner son enveloppe physique, ainsi que des composants supplémentaires pour le doter de capacités spéciales selon sa version. Créer des golems parfaits est une prouesse en soi et nécessite des artefacts puissants et uniques pour finaliser leur enchantement.</p>
             <p>La fabrication de golems prend du temps et doit être entreprise dans des lieux disposant du matériel adéquat. Dans l'extension Siege of Dragonspear, tentez votre chance dans le Bazar des Sorcelleries diverses de la Porte de Baldur, le repaire des morts-vivants sous le site de fouilles des Nains et les ruines de Kanaglym. Dans Les Ombres d'Amn, la Sphère Planaire et la maison de Jermien à Imnesvale peuvent convenir. Les prêtres peuvent fabriquer des golems d'argile dans les temples d'Athkatla s'ils en choisissent un comme quartier général. Vous pouvez aussi utiliser la Bibliothèque des magiciens élémentaristes du deuxième étage de la Tour de Garde. Dans l'extension Trône de Bhaal, votre Antichambre peut s'y prêter, à condition d'y installer le matériel nécessaire.</p>
             <p>Dans IWD:EE, vous pouvez essayer le troisième niveau de l'Œil du Dragon, l'étude de Larrel dans la Main Tranchée, la Tour de Bandoth à Profondorn, la maison de Malavon dans le Bas Profondorn, la forge de Tiernon dans le glacier Morneglace (HoW) ou le bureau du second étage de la Forteresse de Maluradek (TotLM).</p>
-            <p>Les golems traditionnels peuvent gagner de l'expérience pour chaque adversaire qu'ils tuent. S'ils accumulent suffisamment d'expérience, ils peuvent être améliorés au rang immédiatement supérieur. Consultez le fichier « golem_information-french.txt » pour en savoir plus.</p>
+            <p>Les golems traditionnels peuvent gagner de l'expérience pour chaque adversaire qu'ils tuent. S'ils accumulent suffisamment d'expérience, ils peuvent être améliorés au rang immédiatement supérieur. Consultez le fichier « <a href="golem_information-french.txt">golem_information-french.txt</a> » pour en savoir plus.</p>
             <p>Les Golems peuvent obéir à des ordres simples. Pour ce faire, il suffit de leur parler (si nécessaire en utilisant le bouton Dialogue ou en appuyant sur la touche F1).</p>
           </li>
           <li>
             <p><strong>Remplacer le Grimoire des golems original</strong> <em>(seulement pour BG2:EE et EET)</em></p>
-            <p>Ce composant supprime le Grimoire des golems du jeu et toutes les pages qui le complètent puisqu'ils deviennent complètement obsolètes. Il est remplacé par des objets mentionnés par les manuels de Fabrication de golems installés par ce mod.</p>
+            <p>Ce composant supprime le Grimoire des golems du jeu et toutes les pages qui le complètent puisqu'ils deviennent obsolètes. Il est remplacé par des objets mentionnés par les manuels de Fabrication de golems installés par ce mod.</p>
           </li>
           <li>
             <p><strong>Améliorer l'IA des lanceurs de sorts ennemis</strong> <em>(seulement pour BG2:EE et EET)</em></p>
@@ -115,7 +118,7 @@
           </li>
           <li>
             <p><strong>Les golems de la Forteresse du guerrier ont une chance de vous servir</strong> <em>(seulement pour BG2:EE et EET)</em></p>
-            <p>Ce composant introduit la possibilité qu'un golem de la chapelle, ou plus, ayant survécu à la libération du château, vous serve si vous acceptez de devenir le seigneur du Château de'Arnise. Vous les trouverez dans la chapelle du premier étage, derrière les portes secrètes.<p>
+            <p>Ce composant introduit la possibilité qu'un golem de la chapelle, ou plus, ayant survécu à la libération du château, vous serve si vous acceptez de devenir le seigneur du Château de'Arnise. Vous les trouverez dans la chapelle du premier étage, derrière les portes secrètes.</p>
             <ul>
               <li>50 % de chance pour un golem de chair si au moins l'un d'eux survit.</li>
               <li>33 % de chance pour un golem de pierre si au moins l'un d'eux survit.</li>
@@ -125,7 +128,7 @@
           </li>
           <li>
             <p><strong>Rendre les golems vulnérables aux effets de certains sorts</strong> <em>(pour BG:SoD, BG2:EE, EET et IWD:EE)</em></p>
-            <p>Ce composant modifie un certain nombre de sorts afin qu'ils puissent affecter des types de golems spécifiques d'une manière différente et parfois inattendue. Certains sorts peuvent causer des effets nocifs spéciaux alors que d'autres améliorent ou même changent la nature des golems. Consultez le fichier « golem_information-french.txt » pour en savoir plus.</p>
+            <p>Ce composant modifie un certain nombre de sorts afin qu'ils puissent affecter des types de golems spécifiques d'une manière différente et parfois inattendue. Certains sorts peuvent causer des effets nocifs spéciaux alors que d'autres améliorent ou même changent la nature des golems. Consultez le fichier « <a href="golem_information-french.txt">golem_information-french.txt</a> » pour en savoir plus.</p>
           </li>
           <li>
             <p><strong>Réduire les résistances et l'immunité aux armes des golems fabriqués</strong> <em>(pour BG:SoD, BG2:EE et EET)</em></p>
@@ -141,7 +144,7 @@
           </li>
         </ol>
         <h3>Détails</h3>
-        <p>Consultez le fichier « golem_information-french.txt » dans le répertoire « readme ». Il fournit des informations sur le niveau minimum requis et les matériaux nécessaires pour créer chaque type de golem, ainsi qu'un détail des caractéristiques, compétences et capacités de chaque golem. Par ailleurs, vous trouverez des informations spécifiques pour IWD:EE dans le fichier « golem_information-iwdee-french.txt ».</p>
+        <p>Consultez le fichier « <a href="golem_information-french.txt">golem_information-french.txt</a> » dans le répertoire « readme ». Il fournit des informations sur le niveau minimum requis et les matériaux nécessaires pour créer chaque type de golem, ainsi qu'un détail des caractéristiques, compétences et capacités de chaque golem. Par ailleurs, vous trouverez des informations spécifiques pour IWD:EE dans le fichier « <a href="golem_information-french.txt">golem_information-iwdee-french.txt</a> ».</p>
         <div class="back">
           <a class="novisit" href="#top">HAUT DE PAGE</a>
         </div>
@@ -174,6 +177,20 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Historique des versions</h2>
+        <h6>Version 6.3</h6>
+        <ul>
+          <li>Arkion and Nemphre provide repair options for golems.</li>
+          <li>Added more hints about commissioning golems in BG1.</li>
+          <li>Added ruby gem to container in a BG1 area.</li>
+          <li>Improved Thalantyr's dialog.</li>
+          <li>Ajustement des immunités des golems magiques.</li>
+          <li>Fixed giant golems being blocked by the entrance to the hidden maze in Nyalee's Grove.</li>
+          <li>Fixed enemy Maggot Golem scripting in the BG2 Druid Grove quest.</li>
+          <li>Updated mod order information in the PI mod.ini file.</li>
+          <li>Ajout de méta-données pour Project Infinity.</li>
+          <li>Textual fixes.</li>
+        </ul>
+        <hr class="spacer" />
         <h6>Version 6.2</h6>
         <ul>
           <li>Correction d'un problème de compatibilité avec le composant "Jerlia's Ore Shop" du module Hidden Adventure (version Beta 6 ou ultérieure).</li>

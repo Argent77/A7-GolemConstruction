@@ -1,0 +1,1068 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ Ausführliche Informationen zu den bereitgestellten Golemtypen ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Einleitung
+==========
+
+Golems können mit der Spezialfähigkeit "Golem erschaffen" konstruiert werden, die man aus den diversen Leitfäden der
+Golemkonstruktion erlernen kann. Ein Menü in Dialogform leitet den Anwender durch die Auswahlmöglichkeiten bis zum
+gewünschten Golemtyp. Der Bau des Golemkörpers kann einige Stunden bis Tage dauern, auf dem der eigentliche
+Verzauberungsprozess folgt. Für jeden Golemtyp gibt es eine vierprozentige Wahrscheinlichkeit, dass der Golem für
+1W4 Runden außer Kontrolle gerät und versucht, seinen Schöpfer anzugreifen. Nach der Prozedur ist der Anwender für
+mehrere Runden zu erschöpft, um zu zaubern oder ordentlich zu kämpfen.
+
+Da der Golembau eine bestimmte Ausrüstung benötigt, kann man damit nur in bestimmten Orten beginnen. Einige Orte
+werden durch Hinweise im Spiel angedeutet, andere kann man durch Zufall oder Nachdenken ausfindig machen. Wenn ein Ort
+bereit zum Golembau ist, gibt es einen Tagebucheintrag und eine kurze Meldung in der Konsole. Weitere Einzelheiten
+gibt es weiter unten in diesem Dokument.
+
+Die Fähigkeit "Golem erschaffen" erschöpft sich nie, und muss daher nicht durch Rasten aufgefrischt werden. Trotzdem
+ist Rasten nützlich, da der Bau eines Golems viele Stunden oder Tage in Anspruch nimmt.
+
+Leitfäden der Golemkonstruktion bringen euch auch die Fähigkeit "Golem reparieren" bei. Man kann sie einmal pro Rast
+an jedem Ort anwenden, um Golems zu reparieren, solange kein Gegner in der Nähe ist. Die Reparatur dauert zwei Runden.
+In dieser Zeit sind sowohl der Golem als auch der Anwender nicht ansprechbar. Man benötigt möglicherweise mehrere
+Versuche, um schwerbeschädigte Golems vollständig zu reparieren.
+
+
+Herkömmliche Golems
+===================
+
+Herkömmliche Golemtypen werden durch den "Leitfaden der Golemkonstruktion" beschrieben, der in sechs Bänden daherkommt.
+Die meisten Bände selbst sind nicht schwer zu finden. Einige können bei Händlern erworben werden, während andere in
+Verließen gefunden oder im Besitz von Monstern sind.
+
+Für den Golembau benötigte Materialien kann man ebenfalls auf verschiedene Weise erlangen. Gewöhnliche Zutaten kann
+man oftmals bei Händlern kaufen oder Beute von besiegten Monstern rauben. Speziellere Zutaten muss man manchmal länger
+suchen.
+
+Herkömmliche Golems kann man in niederen, regulären, höheren und perfekten Varianten erschaffen. Jede Variante benötigt
+ihre ganz speziellen Zutaten. Die perfekte Variante benötigt zusätzlich bestimmte Artefakte der Macht, die es nur in
+limitierter Stückzahl gibt.
+
+
+1. Fleischgolems
+
+Niederer Fleischgolem:
+- Min. Stufe: 8 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Ein kompletter Satz Körperteile
+- Eigenschaften:
+  - Stärke: 17
+  - TP: 30
+  - RK: 11
+  - ETW0: 10
+  - APR: 1
+  - Rettungswürfe (Tod/Zauberstab/Verwandlung/Odemwaffe/Zauber): 12/13/12/13/13
+- Widerstand:
+  - Magie: 75
+  - Kälte: 75
+  - Magische Kälte: 75
+  - Elektrizität: 75
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+
+Fleischgolem:
+- Min. Stufe: 10 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Zwei komplette Sätze an Körperteilen
+- Eigenschaften:
+  - Stärke: 18/50
+  - TP: 40
+  - RK: 9
+  - ETW0: 7
+  - APR: 3/2
+  - Rettungswürfe: 10/11/10/11/11
+- Widerstand:
+  - Magie: 90
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Stich: 25
+  - Geschoss: 25
+- Immun gegen nichtmagische Waffen
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+
+Höherer Fleischgolem:
+- Min. Stufe: 14 (-2 für Wandler, +3 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier komplette Sätze an Körperteilen
+  - Eine Schriftrolle "Stinkende Wolke"
+- Eigenschaften:
+  - Stärke: 19
+  - TP: 60
+  - RK: 6
+  - ETW0: 4
+  - APR: 2
+  - Rettungswürfe: 8/9/8/9/9
+- Widerstand:
+  - Magie: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 125
+  - Stich: 75
+  - Geschoss: 75
+- Immun gegen nichtmagische Waffen
+- Kann "Stinkende Wolke" auf sich zaubern
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+- Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
+
+Perfekter Fleischgolem:
+- Min. Stufe: 16 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier komplette Sätze an Körperteilen
+  - Eine Schriftrolle "Stinkende Wolke"
+  - Ein tiefroter Blutstein
+- Eigenschaften:
+  - Stärke: 19
+  - TP: 75
+  - RK: 3
+  - ETW0: 1
+  - APR: 2
+  - Rettungswürfe: 7/8/7/8/8
+- Widerstand:
+  - Magie: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 125
+  - Stich: 100
+  - Geschoss: 100
+- Regeneration: 1 TP pro Phase
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+- Kann "Stinkende Wolke" auf sich zaubern
+- Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
+
+
+2. Lehmgolems
+
+Niederer Lehmgolem:
+- Min. Stufe: 11 (-2 für Wandler, -1 für Kleriker, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Ein Tonblock
+- Eigenschaften:
+  - Stärke: 18/50
+  - TP: 35
+  - RK: 9
+  - ETW0: 8
+  - APR: 1
+  - Rettungswürfe: 9/11/10/10/12
+- Widerstand:
+  - Magie: 75
+  - Kälte: 75
+  - Magische Kälte: 75
+  - Elektrizität: 100
+  - Klinge: 75
+  - Stich: 75
+  - Geschoss: 75
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+
+Lehmgolem:
+- Min. Stufe: 14 (-2 für Wandler, +1 für Kleriker, +3 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Zwei Tonblöcke
+  - Eine Schriftrolle "Hast"
+- Eigenschaften:
+  - Stärke: 19
+  - TP: 50
+  - RK: 7
+  - ETW0: 6
+  - APR: 1
+  - Rettungswürfe: 7/9/8/8/10
+- Widerstand:
+  - Magie: 90
+  - Feuer: 50
+  - Magisches Feuer: 50
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Klinge: 100
+  - Stich: 100
+  - Geschoss: 100
+- Immun gegen nichtmagische Waffen
+- Kann "Hast" auf sich zaubern
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+
+Höherer Lehmgolem:
+- Min. Stufe: 18 (-2 für Wandler, +3 für Kleriker, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Tonblöcke
+  - Eine Schriftrolle "Hast"
+- Eigenschaften:
+  - Stärke: 20
+  - TP: 70
+  - RK: 4
+  - ETW0: 3
+  - APR: 3/2
+  - Rettungswürfe: 5/7/6/6/8
+- Widerstand:
+  - Magie: 100
+  - Feuer: 50
+  - Magisches Feuer: 50
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 75
+  - Klinge: 100
+  - Stich: 100
+  - Geschoss: 100
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+- Kann "Hast" auf sich zaubern
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+- Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
+
+Perfekter Lehmgolem:
+- Min. Stufe: 20 (-2 für Wandler, +4 für Kleriker, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Tonblöcke
+  - Eine Schriftrolle "Hast"
+  - Ein Beutel verzauberter Korallenstaub
+- Eigenschaften:
+  - Stärke: 20
+  - TP: 90
+  - RK: 0
+  - ETW0: -1
+  - APR: 3/2
+  - Rettungswürfe: 4/6/5/5/7
+- Widerstand:
+  - Magie: 100
+  - Feuer: 50
+  - Magisches Feuer: 50
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 100
+  - Wucht: 33
+  - Stich: 100
+  - Geschoss: 100
+- Regeneration: 1 TP pro Phase
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+- Kann "Hast" auf sich zaubern
+- Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
+
+
+3. Steingolems
+
+Niederer Steingolem:
+- Min. Stufe: 11 (-2 für Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Ein Steinblock
+- Eigenschaften:
+  - Stärke: 19
+  - TP: 45
+  - RK: 7
+  - ETW0: 8
+  - APR: 1
+  - Rettungswürfe: 7/9/8/7/10
+- Widerstand:
+  - Magie: 75
+- Immun gegen nichtmagische Waffen
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+
+Steingolem:
+- Min. Stufe: 14 (-2 für Wandler, +3 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Zwei Steinblöcke
+  - Eine Schriftrolle "Verlangsamen"
+- Eigenschaften:
+  - Stärke: 20
+  - TP: 60
+  - RK: 5
+  - ETW0: 7
+  - APR: 1
+  - Rettungswürfe: 5/7/6/5/8
+- Widerstand:
+  - Magie: 90
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+- Kann "Verlangsamen" auf Feinde in 9 m Radius um sich selbst zaubern
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+
+Höherer Steingolem:
+- Min. Stufe: 18 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Steinblöcke
+  - Eine Schriftrolle "Verlangsamen"
+- Eigenschaften:
+  - Stärke: 21
+  - TP: 85
+  - RK: 1
+  - ETW0: 3
+  - APR: 3/2
+  - Rettungswürfe: 4/6/5/4/7
+- Widerstand:
+  - Magie: 100
+  - Elektrizität: 50
+  - Säure: 50
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+- Kann "Verlangsamen" auf Feinde in 9 m Radius um sich selbst zaubern
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+- Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
+
+Perfekter Steingolem:
+- Min. Stufe: 20 (-2 für Wandler, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Steinblöcke
+  - Eine Schriftrolle "Verlangsamen"
+  - Eine Ampulle Nachahmerblut
+- Eigenschaften:
+  - Stärke: 22
+  - TP: 100
+  - RK: -1
+  - ETW0: 0
+  - APR: 3/2
+  - Rettungswürfe: 3/5/4/3/6
+- Widerstand:
+  - Magie: 100
+  - Feuer: 50
+  - Magisches Feuer: 50
+  - Kälte: 50
+  - Magische Kälte: 50
+  - Elektrizität: 100
+  - Säure: 100
+- Regeneration: 1 TP pro Phase
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Verlangsamen" auf Feinde in 9 m Radius um sich selbst zaubern
+- Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
+
+
+4. Eisengolems
+
+Niederer Eisengolem:
+- Min. Stufe: 15 (-2 für Wandler, +3 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Ein Eisenbarren
+- Eigenschaften:
+  - Stärke: 20
+  - TP: 60
+  - RK: 5
+  - ETW0: 6
+  - APR: 1
+  - Rettungswürfe: 5/7/6/6/8
+- Widerstand:
+  - Magie: 75
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 50
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+
+Eisengolem:
+- Min. Stufe: 18 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Zwei Eisenbarren
+  - Eine Schriftrolle "Todeswolke"
+- Eigenschaften:
+  - Stärke: 22
+  - TP: 80
+  - RK: 3
+  - ETW0: 3
+  - APR: 1
+  - Rettungswürfe: 3/5/4/4/6
+- Widerstand:
+  - Magie: 90
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 75
+  - Klinge: 20
+  - Stich: 20
+  - Geschoss: 20
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Gaswolke" auf sich selbst zaubern
+
+Höherer Eisengolem:
+- Min. Stufe: 23 (-2 für Wandler, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Eisenbarren
+  - Eine Schriftrolle "Todeswolke"
+- Eigenschaften:
+  - Stärke: 23
+  - TP: 110
+  - RK: 0
+  - ETW0: 0
+  - APR: 3/2
+  - Rettungswürfe: 1/3/2/2/4
+- Widerstand
+  - Magie: 100
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 50
+  - Wucht: 25
+  - Stich: 50
+  - Geschoss: 50
+- Regeneration: 1 TP pro Phase
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Gaswolke" auf sich selbst zaubern
+- Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
+
+Perfekter Eisengolem:
+- Min. Stufe: 26 (-2 für Wandler, +8 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Eisenbarren
+  - Eine Schriftrolle "Todeswolke"
+  - Stücke kalten Eisens
+- Eigenschaften:
+  - Stärke: 24
+  - TP: 125
+  - RK: -2
+  - ETW0: -2
+  - APR: 3/2
+  - Rettungswürfe: 0/2/1/1/3
+- Widerstand:
+  - Magie: 100
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 75
+  - Wucht: 25
+  - Stich: 100
+  - Geschoss: 100
+- Regeneration: 1 TP alle drei Runden
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Gaswolke" auf sich selbst zaubern
+- Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
+
+
+5. Mithrilgolems
+
+Niederer Mithrilgolem:
+- Min. Stufe: 18 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Ein Mithrilbrocken
+  - 4.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eigenschaften:
+  - Stärke: 21
+  - TP: 60
+  - RK: 4
+  - ETW0: 4
+  - APR: 1
+  - Rettungswürfe: 6/8/7/7/9
+- Widerstand:
+  - Magie: 90
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 20
+  - Stich: 20
+  - Geschoss: 20
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+
+Mithrilgolem:
+- Min. Stufe: 22 (-2 für Wandler, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Zwei Mithrilbrocken
+  - 8.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eigenschaften:
+  - Stärke: 23
+  - TP: 80
+  - RK: 2
+  - ETW0: 2
+  - APR: 3/2
+  - Rettungswürfe: 4/6/5/5/7
+- Widerstand:
+  - Magie: 100
+  - Feuer: 125
+  - Magisches Feuer: 125
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 50
+  - Wucht: 33
+  - Stich: 50
+  - Geschoss: 50
+- Regeneration: 1 TP pro Phase
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
+  und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
+
+Höherer Mithrilgolem:
+- Min. Stufe: 27 (-2 für Wandler, +8 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Mithrilbrocken
+  - 16.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eigenschaften:
+  - Stärke: 24
+  - TP: 110
+  - RK: -2
+  - ETW0: -2
+  - APR: 2
+  - Rettungswürfe: 3/5/4/4/6
+- Widerstand:
+  - Magie: 100
+  - Feuer: 125
+  - Magisches Feuer: 125
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 75
+  - Wucht: 50
+  - Stich: 75
+  - Geschoss: 75
+- Regeneration: 1 TP alle drei Runden
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
+  und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
+- Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
+
+Perfekter Mithrilgolem:
+- Min. Stufe: 30 (-2 für Wandler, +10 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Mithrilbrocken
+  - 32.000 vom Erschaffer geopferte Erfahrungspunkte
+  - Eine Kugel spektrales Obsidian
+- Eigenschaften:
+  - Stärke: 24
+  - TP: 125
+  - RK: -5
+  - ETW0: -5
+  - APR: 2
+  - Rettungswürfe: 1/3/2/2/4
+- Widerstand:
+  - Magie: 100
+  - Feuer: 125
+  - Magisches Feuer: 125
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 85
+  - Wucht: 75
+  - Stich: 85
+  - Geschoss: 85
+- Regeneration: 1 TP pro Runde
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +3 oder weniger
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
+  und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
+- Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
+
+
+6. Adamantitgolems
+
+Niederer Adamantitgolem:
+- Min. Stufe: 21 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Zwei Adamantitbarren
+  - 8.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eigenschaften:
+  - Stärke: 22
+  - TP: 60
+  - RK: 5
+  - ETW0: 4
+  - APR: 1
+  - Rettungswürfe: 5/7/6/6/8
+- Widerstand:
+  - Magie: 90
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 75
+  - Wucht: 75
+  - Stich: 75
+  - Geschoss: 75
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+
+Adamantitgolem:
+- Min. Stufe: 25 (-2 für Wandler, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Adamantitbarren
+  - 16.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eigenschaften:
+  - Stärke: 24
+  - TP: 80
+  - RK: 3
+  - ETW0: 3
+  - APR: 1
+  - Rettungswürfe: 3/5/4/4/6
+- Widerstand:
+  - Magie: 100
+  - Feuer: 125
+  - Magisches Feuer: 125
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 90
+  - Wucht: 90
+  - Stich: 90
+  - Geschoss: 90
+- Regeneration: 1 TP pro Phase
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
+  und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
+
+Höherer Adamantitgolem:
+- Min. Stufe: 30 (-2 für Wandler, +8 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Acht Adamantitbarren
+  - 32.000 vom Erschaffer geopferte Erfahrungspunkte
+- Eigenschaften:
+  - Stärke: 24
+  - TP: 110
+  - RK: 0
+  - ETW0: 0
+  - APR: 3/2
+  - Rettungswürfe: 1/3/2/2/4
+- Widerstand:
+  - Magie: 100
+  - Feuer: 125
+  - Magisches Feuer: 125
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 95
+  - Wucht: 95
+  - Stich: 95
+  - Geschoss: 95
+- Regeneration: 1 TP alle drei Runden
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +3 oder weniger
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
+  und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
+- Zerteilt sich bei Zerstörung mit 50-prozentiger Wahrscheinlichkeit in zwei niedere Golems des selben Typs.
+
+Perfekter Adamantitgolem:
+- Min. Stufe: 33 (-2 für Wandler, +10 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Acht Adamantitbarren
+  - 64.000 vom Erschaffer geopferte Erfahrungspunkte
+  - Ein Tropfen Blut eines Solariers oder gefallen Solariers
+- Eigenschaften:
+  - Stärke: 25
+  - TP: 150
+  - RK: -3
+  - ETW0: -3
+  - APR: 2
+  - Rettungswürfe: -1/1/0/0/2
+- Widerstand:
+  - Magie: 100
+  - Feuer: 125
+  - Magisches Feuer: 125
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 99
+  - Wucht: 99
+  - Stich: 99
+  - Geschoss: 99
+- Regeneration: 1 TP pro Runde
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +3 oder weniger
+- Kann "Zertrampeln" auf Feinde anwenden, die eine normale oder kleine Größe haben: Richtet 8W10+30 Wuchtschaden and
+  und betäubt das Ziel für eine Runde (Rettungswurf -4 gg. Tod halbiert den Schaden und vermeidet die Betäubung).
+- Zerteilt sich bei Zerstörung in zwei reguläre Golems des selben Typs.
+
+
+
+Exotische Golems
+================
+
+Exotische Golemtypen werden im "Geheimen Leitfaden der Golemkonstruktion" beschrieben, die wohl ebenfalls in sechs
+Bänden daherkommt, aber schwerer zu erwerben ist.
+
+Golems, die in diesen Bänden beschrieben werden, sind einzigartig. Sie können nicht in niederen, höheren oder perfekten
+Varianten erschaffen werden.
+
+1. Madengolem
+- Min. Stufe: 10 (-2 für Beschwörer und Wandler, +2 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Zwei madenverfressene Körper
+- Eigenschaften:
+  - Stärke: 18
+  - TP: 45
+  - RK: 8
+  - ETW0: 13
+  - APR: 1
+  - Immun gegen nichtmagische Waffen
+  - Rettungswürfe: 10/11/10/11/11
+- Widerstand:
+  - Magie: 75
+  - Feuer: -50
+  - Magisches Feuer: -50
+  - Klinge: 100
+  - Wucht: 50
+  - Stich: 100
+  - Geschoss: 100
+- Regeneration: 1 TP pro Runde
+- Mit fünfzehnprozentiger Wahrscheinlichkeit kann sich der Erschaffer während der Konstruktion des Golemkörpers mit
+  einer Krankheit anstecken. Diese Krankheit hält fünf Phasen an und richtet 2 TP Schaden pro Runde an.
+- Spezialangriff "Bedecken": Zusätzlich zu 2W6 Wuchtschaden, wird das Opfer für eine Runde festgehalten und erleidet
+  1 TP pro Sekunde Stichschaden durch die Insekten, die seinen Körper bedecken, wenn ein Rettungswurf gg. Zauber versagt.
+  Jede weitere Runde muss das Opfer einen weiteren Rettungswurf +4 gg. Zauber durchführen. Bei einem erfolgreichen
+  Rettungswurf kann sich das Opfer aus der Insektenwolke befreien. Ansonsten wird es für eine weitere Runde festgehalten
+  und erleidet Schaden. Der Effekt kann durch Magiewiderstand blockiert und mit "Magie Bannen" entfernt werden.
+- Der Golem hat eine einprozentige Wahrscheinlichkeit, während eines Kampfes außer Kontrolle zu geraten. Für 1W6 Runden
+  greift er dann die nächste Kreatur in Sichtweite an.
+- Die Lebensspanne dieses Golems beträgt nur 1W4+6 Tage. Am Ende seiner Lebenspanne verliert der Erschaffer mit einer
+  50-prozentigen Wahrscheinlichkeit die Kontrolle über den Golem, der dann für 1W6 Runden Amok läuft, bevor er endgültig
+  in sich zusammenfällt.
+
+2. Knochengolem
+- Min. Stufe: 16 (-2 für Nekromanten und Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Vier Knochenhaufen
+  - Eine Schriftrolle "Tote beleben"
+  - In 50 Prozent aller Fälle verliert der Erschaffer während der Golemkonstruktion eine Charakterstufe. In zehn Prozent
+    aller Fälle verliert er zusätzlich eine zweite Stufe.
+- Eigenschaften:
+  - Stärke: 21
+  - TP: 65
+  - RK: 1
+  - ETW0: 7
+  - APR: 2
+  - Rettungswürfe: 5/7/6/5/8
+- Widerstand:
+  - Magie: 100
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 50
+  - Stich: 50
+  - Geschoss: 50
+- Immun gegen nichtmagische Waffen
+- Kann "Abscheuliches Gelächter" auf Feinde in 9 m Radius um sich selbst anwenden: Die Opfer müssen einen erfolgreichen
+  Rettungswurf -2 gegen Zauber würfeln oder verfallen für 2W6 Runden in Panik. Die Opfer müssen außerdem einen
+  erfolgreichen Rettungswurf gegen Tod würfeln oder verfallen stattdessen für den gleichen Zeitraum in eine Furchtstarre.
+
+3. Gehirngolem
+- Min. Stufe: 17 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Ein Klumpen Hirngewebe
+  - Eine Schriftrolle "Beherrschung"
+- Eigenschaften:
+  - Stärke: 19
+  - TP: 75
+  - RK: 4
+  - ETW0: 9
+  - APR: 3/2
+  - Rettungswürfe: 7/9/8/8/10
+- Widerstand:
+  - Magie: 100
+  - Feuer: 50
+  - Magisches Feuer: 50
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Klinge: 50
+  - Stich: 50
+  - Geschoss: 50
+- Regeneration: 1 TP pro Phase
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +1 oder weniger
+- Kann "Mentale Druckwelle" auf Feinde in 9 m Radius um sich selbst zaubern: Sie richtet 2W8 nicht tödlichen Schaden
+  an und betäubt die Opfer für 2W4 Runden. Ein erfolgreicher Rettungswurf gg. Zauber halbiert den Schaden und wendet
+  den Betäubungseffekt ab. Untote, Golems und Mykonide sind nicht betroffen.
+
+4. Eisgolem
+- Min. Stufe: 19 (-2 für Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Eine magische Eisscherbe
+  - Eine Schriftrolle "Kältekegel"
+  - Eine Schriftrolle "Schutzformel gegen Kälte"
+- Eigenschaften:
+  - Stärke: 22
+  - TP: 85
+  - RK: 2
+  - ETW0: 4
+  - APR: 2
+  - Rettungswürfe: 3/5/4/4/6
+- Widerstand:
+  - Magie: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+  - Klinge: 20
+  - Wucht: 20
+  - Stich: 20
+  - Geschoss: 20
+- Immun gegen nichtmagische Waffen
+- Kann "Kochenden Dampf" auf alle Wesen in 9 m Radius im sich selbst zaubern: Er richtet 3W10 Kälteschaden an und
+  lähmt das Opfer für eine Runde. Ein erfolgreicher Rettungswurf gg. Odemwaffen halbiert den Schaden und verhindert
+  die Lähmung.
+
+5. Magiegolem
+- Min. Stufe: 19 (-2 für Hasadeure und Wandler, +4 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - Ein Steinfragment mit unbändiger Magie
+  - Eine Schriftrolle "Schutz vor magischen Waffen", "Schutzmantel" oder "Verbesserter Schutzmantel"
+  - Eine Schriftrolle "Schutzformel gegen Magie"
+- Eigenschaften:
+  - Stärke: 19
+  - TP: 64
+  - RK: -1
+  - ETW0: 5
+  - APR: 1
+  - Rettungswürfe: 7/9/8/8/10
+- Widerstand:
+  - Magie: 100
+  - Feuer: 100
+  - Magisches Feuer: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Säure: 100
+- Immun gegen magische Waffen mit einem Bonus von +4 oder weniger
+- Immun gegen Zauber der Stufe 8 oder niedriger
+- Der Golem muss in Bereichen unbändiger Magie erschaffen werden
+- Jeder erfolgreiche Fernangriff löscht eine Ladung von geladenen Gegenständen und entfernt ein vorbereiteten
+  Zauberspruch.
+- Kann "Unbändige Fackel" auf ein Wesen zaubern: Der Zauber richtet 3W10 Magieschaden an und löst einen zufälligen
+  magischen Effekt beim Opfer aus. Der Effekt kann verheerend oder nützlich sein.
+- Kann sich in magielosen Zonen auflösen, der mit 50 Prozent Wahrscheinlichkeit eine letzte magische Explosion
+  vorangeht, die 2W6 Magieschaden auf alle Wesen im Umkreis von 9 m Radius anrichtet (Rettungswurf gg. Zauber für
+  halbierten Schaden).
+
+6. Blitzgolem
+- Min. Stufe: 22 (-2 für Wandler, +6 für Barden und Diebe mit "Jeden Gegenstand benutzen")
+- Zutaten:
+  - 100.000 Goldmünzen
+  - Eine Schriftrolle "Kettenblitz"
+- Eigenschaften:
+  - Stärke: 19
+  - TP: 80
+  - RK: 0
+  - ETW0: 6
+  - APR: 2
+  - Rettungswürfe: 4/6/5/5/7
+- Widerstand:
+  - Magie: 100
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 125
+  - Säure: 100
+- Immun gegen nichtmagische und magische Waffen mit einem Bonus von +2 oder weniger
+- Bewegt sich mit erhöhter Geschwindigkeit
+- Dauerhafter Blitzschild: Angreifer erleiden 1W8+2 elektrischen Schaden, wenn sie angreifen
+- Kann "Kettenblitz" auf Feinde in der Umgebung zaubern
+- Kann die Fähigkeit "Blitzreise" anwenden: Sie erlaubt den Blitzgolem, sich sofort zu einem beliebigen Punkt in
+  Reichweite zu teleportieren. Der Golem verwandelt sich dafür in einen mächtigen Blitz und erreicht seinen Zielort
+  praktisch sofort. Die hohe Geschwindigkeit und ausstrahlende Energie erzeugen eine Schockwelle am Zielort, der
+  alle Feinde in 2,5 m Radius vom Golem wegstößt und 1W6 elektrischen Schaden verursacht. Große Wesen, wie Drachen
+  oder Riesen, werden nicht weggestoßen. Der folgende Donnerschlag kann zusätzlich Taubheit auslösen, wenn der
+  Rettungswurf gg. Odemwaffen misslingt. Der Golem muss nicht warten, um die gleicher oder eine andere Fähigkeit zu
+  wirken. Diese Fähigkeit ersetzt "Teleportation".
+
+
+Golems in BG1:EE
+================
+
+Diese Golemarten werden im "Verbotenen Leitfaden der Golemkonstruktion" beschrieben und können irgendwo während eures
+Abenteuers im BG1-Teil des Spiels entdeckt werden. Ihr müsst außerdem einen fähigen Magier finden, der sie für euch
+erschaffen kann. Mehr dazu weiter unten.
+
+1. Puppengolem
+- Zutaten:
+  - Ein kompletter Satz Körperteile
+  - Ein verfluchter Gegengifttrank
+- Eigenschaften:
+  - Stärke: 12
+  - TP: 40
+  - RK: 4
+  - ETW0: 11
+  - APR: 1
+  - Rettungswürfe: 13/14/13/14/14
+- Widerstand:
+  - Magie: 50
+  - Kälte: 80
+  - Magische Kälte: 80
+  - Elektrizität: 50
+  - Stich: 25
+  - Geschoss: 25
+- Immun gegen nichtmagische Waffen
+- Jeder Angriff kann das Opfer mit einem unkontrollierbaren Gelächter infizieren, falls der Rettungswurf gg. Zauber +2
+  misslingt. Das Opfer ist dann nicht mehr in der Lage, irgendwelche Aktionen auszuführen. In jeder weiteren Runde
+  richten Muskelkrämpfe, die durch das Gelächter ausgelöst werden, +1W4 Schaden pro Runde an. Das Opfer kann jede
+  Runde einen weiteren Rettungswurf gg. Zauber +2 würfeln, um diesen Anfall zu überwinden. Anderenfalls endet er
+  nach einer Phase oder einem erfolgreichen 'Magie bannen' Zauber. Magiewiderstand kann diesen Effekt aufhalten.
+  Untote und Konstrukte sind nicht betroffen. Wenn der Anfall überwunden wurde, ist das Opfer für die Hälfte der Runden
+  erschöpft, den es im Lachanfall verbracht hat. Die Erschöpfung schlägt sich durch einen -1 Malus auf RK, ETW0
+  und alle Rettungswürfe nieder.
+- Der Nekromant Arkion wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Er lebt in Baldurs Gate,
+  südlich der Taverne „Elfgesang“.
+
+2. Knochenpuppe
+- Zutaten:
+  - Ein Knochenhaufen
+  - Ein wenig Lebensenergie
+- Stats:
+  - Stärke: 12
+  - TP: 35
+  - RK: 6
+  - ETW0: 10
+  - APR: 2
+  - Rettungswürfe: 13/14/13/14/14
+- Widerstand:
+  - Magie: 75
+  - Feuer: 20
+  - Magisches Feuer: 20
+  - Kälte: 100
+  - Magische Kälte: 100
+  - Elektrizität: 100
+  - Stich: 50
+  - Geschoss: 50
+- Immun gegen nichtmagische Waffen
+- Knochenpuppen explodieren wenn sie zerstört werden und richten bei allen Geschöpfen in 4 m Radius 2W6 Stichschaden
+  und 1W6 Wuchtschaden an.
+- Die Nekromantin Nemphre wäre in der Lage, diesen Golem (gegen eine Gebühr) zu erschaffen. Sie lebt in Baldurs Gate,
+  östlich des Gasthauses „Zur Funkelnden Klinge“.
+
+
+Jeder Golem hat zusätzlich die folgenden Fähigkeiten:
+1. Golem aufgeben: Diese Fähigkeit weist den Golem an, sich selbst zu deaktivieren. Die Aktion kann nicht rückgängig
+                   gemacht werden.
+2. Teleportation:  Mit dieser Fähigkeit kann sich der Golem einem ausgewählten Gruppenmitglied teleportieren, falls er
+                   irgendwo steckenbleibt. Das kann bei größeren Golems in engen Gassen passieren. Diese Fähigkeit
+                   funktioniert nur, wenn keine Feinde in Sichtweite sind.
+                   Hinweis: Diese Fähigkeit ist nur verfügbar, wenn die Unterkomponente "Golemfaehigkeit 'Teleportation'
+                            hinzufuegen" installiert wurde.
+
+Den Golems kann man auch einfache Befehle geben. Niedere Varianten der Fleisch-, Ton- und Steingolems, als auch den
+Madengolems können den folgenden Befehlen folgen:
+- Folge mir! (Der Golem kann vom Spieler kontrolliert werden, aber handelt nicht aus eigenem Antrieb. Das ist die
+              Standardaktion eines jeden Golems.)
+- Halte Wache! (Der Golem wird neutral und bewegt sich nicht von seinem gegenwärtigen Standpunkt weg.)
+- Zerstöre dich selbst! (Löst die Zerstörung des Golems aus. Dieser Befehl entspricht der Fähigkeit "Golem aufgeben"
+                         eines jeden Golems, kann aber zusätzlich bei Wache haltenden Golems angewendet werden.)
+
+Mächtigere Golems können zusätzlich den folgenden Befehlen gehorchen:
+- Folge mir und beschütze mich! (Der Golem kann vom Spieler kontrolliert werden und greift eigenständig feindliche Wesen
+                                 an oder Feinde, die Gruppenmitglieder angreifen.)
+- Halte Wache und verteidige das Gebiet! (Der Golem wird neutral und greift eigenständig jeden Feind in Sichtweite an.
+                                          Danach kehrt er wieder zu seiner bewachten Position zurück.)
+
+Gebt immer gut auf eure Golems acht. Wenn sie zu schwer beschädigt sind, können sie zusätzliche Fehlfunktionen aufweisen.
+Diese Fehlfunktionen können aber zusammen mit dem Schaden mit der Fähigkeit "Golem reparieren" beseitigt werden.
+
+
+Golems verbessern
+=================
+
+Herkömmliche Golems können für jeden Gegner, den sie getötet haben, Kampferfahrung sammeln. Wenn sie einen bestimmten
+Erfahrungsreichtum angesammelt haben, dann können sie von Zauberkundigen mit Kenntnissen im Bau des entsprechenden
+Golemtyps in den nächsthöheren Rang heraufgestuft werden. Je mächtiger eine Golemvariante ist, umso mehr Erfahrung wird
+benötigt, um in den nächsthöheren Rang aufzusteigen. Perfekte Golemvarianten können nicht weiter verbessert werden.
+Niederer Fleischgolem:   50 oder mehr getötete Gegner, um zum Fleischgolem aufzusteigen
+Normaler Fleischgolem:   100 oder mehr getötete Gegner, um zum höheren Fleischgolem aufzusteigen
+Höherer Fleischgolem:    200 oder mehr getötete Gegner, um zum perfekten Fleischgolem aufzusteigen
+
+Niederer Lehmgolem:      75 oder mehr getötete Gegner, um zum Lehmgolem aufzusteigen
+Normaler Lehmgolem:      150 oder mehr getötete Gegner, um zum höheren Lehmgolem aufzusteigen
+Höherer Lehmgolem:       300 oder mehr getötete Gegner, um zum perfekten Lehmgolem aufzusteigen
+
+Niederer Steingolem:     75 oder mehr getötete Gegner, um zum Steingolem aufzusteigen
+Normaler Steingolem:     150 oder mehr getötete Gegner, um zum höheren Steingolem aufzusteigen
+Höherer Steingolem:      300 oder mehr getötete Gegner, um zum perfekten Steingolem aufzusteigen
+
+Niederer Eisengolem:     100 oder mehr getötete Gegner, um zum Eisengolem aufzusteigen
+Normaler Eisengolem:     200 oder mehr getötete Gegner, um zum höheren Eisengolem aufzusteigen
+Höherer Eisengolem:      400 oder mehr getötete Gegner, um zum perfekten Eisengolem aufzusteigen
+
+Niederer Mithrilgolem:   150 oder mehr getötete Gegner, um zum Mithrilgolem aufzusteigen
+Normaler Mithrilgolem:   300 oder mehr getötete Gegner, um zum höheren Mithrilgolem aufzusteigen
+Höherer Mithrilgolem:    600 oder mehr getötete Gegner, um zum perfekten Mithrilgolem aufzusteigen
+
+Niederer Adamantitgolem: 250 oder mehr getötete Gegner, um zum Adamantitgolem aufzusteigen
+Normaler Adamantitgolem: 500 oder mehr getötete Gegner, um zum höheren Adamantitgolem aufzusteigen
+Höherer Adamantitgolem:  1000 oder mehr getötete Gegner, um zum perfekten Adamantitgolem aufzusteigen
+
+Für das Heraufstufen eines Golems werden entsprechende Zutaten benötigt. Die Menge der Zutaten beschränkt sich auf den
+Unterschied zwischen der alten und neuen Golemvariante. Es müssen keine Erfahrungspunkte zum Heraufstufen eines
+Mithril- oder Adamantitgolems geopfert werden. Sprecht mit den Golems, um die Anzahl der getöteten Gegner herauszufinden
+oder um das Heraufstufen einzuleiten.
+
+Es ist auch möglich, einen Golem mit Hilfe eines Wunsches oder begrenzten Wunsches zu verbessern, sofern der Anwender
+weise genug ist, den Wunsch richtig zu formulieren.
+
+
+Zaubersprüche, die spezielle Auswirkungen auf Golems haben
+==========================================================
+
+Golems sind nicht lebende Konstrukte und können daher auf ungewöhnliche Weise von Zaubersprüchen beeinflusst werden.
+Die folgenden Effekte können auftreten, wenn die Modkomponente "Mache Golems anfällig für bestimmte Zauber"
+installiert wurde:
+- Fleisch zu Stein:
+  Verwandelt Fleischgolems in Steingolems der gleichen Variante, wenn sie ihren Rettungswurf gegen Versteinerung/
+  Verwandlung nicht bestehen.
+- Stein zu Fleisch:
+  Verwandelt Steingolems in Fleischgolems der gleichen Variante, wenn sie ihren Rettungswurf gegen Versteinerung/
+  Verwandlung nicht bestehen.
+- Abi-Dalzims abscheuliche Austrocknung:
+  Dieser Zauber entzieht allen Lehmgolems im betroffenen Gebiet jegliches Wasser und verwandelt sie dadurch in Stein-
+  golems, wenn sie ihren Rettungswurf -2 gegen Zauber nicht bestehen.
+- Todeszauber:
+  Vernichtet Madengolems automatisch (kein Rettungswurf erlaubt).
+- Kältekegel und Eissturm:
+  Betroffene Lehmgolems werden für fünf Runden verlangsamt, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen.
+- Sonnenstrahl:
+  Dieser Zauber greift die Adamantitlegierung von Adamantitgolems an, wodurch sich ihre physischen Resistenzen permanent
+  verschlechtern, wenn sie ihren Rettungswurf gegen Zauber nicht bestehen. Die Fähigkeit "Golem reparieren" kann diesen
+  Zustand beheben.
+- Hochstufige Zauber mit Feuereffekten:
+  Diese Zauber erhitzen Eisengolems so weit, dass sie für fünf Runden mit ihren Angriffen Feuerschaden verursachen.
+  Es ist kein Rettungswurf erforderlich.
+  Die folgenden Zauber können diesen Effekt hervorrufen: Meteorschwarm, Drachenodem, Komet, Flammende Wolke und
+  Feuersturm.
+
+
+Orte, an denen man Golems konstruieren kann
+===========================================
+
+Siege of Dragonspear:
+- Allerlei Zauberei:
+  Das Obergeschoss kann man vom Besitzer des Ladens mieten.
+- Lagerstätte der Untoten:
+  Dieses Verließ befindet sich unterhalb der Ausgrabungsstätte der Zwerge. Das Gebiet muss zuerst gesichert werden,
+  bevor man dort Golems konstruieren kann.
+- Ruinen von Kanaglym:
+  Die Ruinen kann man über den Unterirdischen Fluss unterhalb Schloss Dragonspear erreichen. Wenn das Gebiet von
+  Gegnern gesäubert wurde, kann man es zum konstruieren von Golems benutzen.
+
+Schatten von Amn:
+- Sphäre der Ebenen:
+  Das große Eingangshalle der Sphäre ist geeignet zum Erschaffen von Golems (natürlich erst, nachdem man sich um den
+  Vorbesitzer gekümmert hat).
+- Jermiens Heim:
+  Es ist möglich, den Verhüllten Magier in Imnestal zu überreden, sein Heim zum Golembau zur Verfügung zu stellen.
+- Tempel in Athkatla:
+  Alle drei verfügbare Tempel in Athkatlas Tempelbezirk können zum Erschaffen von Lehmgolems genutzt werden, wenn der
+  Protagonist ein Kleriker ist und einen Tempel als klasseneigene Festung ausgewählt hat.
+
+Wachende Festung:
+- Zweite Ebene:
+  Die Bibliothek der Elementarmagier ist gut ausgestattet. Vorher müssen aber erst alle Verteidigungsmechanismen
+  ausgeschaltet werden (was auch den Dämon im Käfig beinhaltet).
+
+Thron des Bhaal:
+- Das Einsprengsel:
+  Dieser Ort ist sicher genug, um Golems zu erschaffen. Lazarus Librarus könnte euch mit der notwendigen Ausrüstung
+  behilflich sein (für den richtigen Preis).

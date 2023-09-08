@@ -1,0 +1,1069 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ Information détaillée sur les types de golem que l'on peut fabriquer ~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Introduction
+============
+
+Les Golems sont fabriqués avec la capacité "Fabriquer un Golem" que l'on apprend en lisant divers grimoires
+de fabrication de golem. Elle ouvre un bref dialogue qui vous permet de choisir le type et la version du
+golem que vous souhaitez construire. La durée de création de l'enveloppe physique du golem est variable et
+peut prendre plusieurs heures, voire plusieurs jours. Une fois terminée, le golem reçoit un dernier enchantement.
+Il y a 4 pour-cent de chance qu'il se libère et se retourne contre vous pendant 1d4 rounds avant qu'il ne
+finisse par se soumettre à votre volonté. Une fois le golem achevé, vous serez pendant plusieurs rounds trop
+épuisé.e pour lancer des sorts ou vous battre correctement.
+
+En raison du matériel requis pour réussir à fabriquer le corps d'un golem, il n'existe qu'un nombre restreint
+de sites dans lesquels vous pouvez vraiment créer des golems. Ce sont généralement des places fortes (abandonnées)
+de mages puissants.
+Vous trouverez plus de détails sur ce sujet à la fin de ce document.
+
+Vous pouvez utiliser la capacité "Fabriquer un Golem" autant de fois que vous le souhaitez sans avoir besoin
+de vous reposer entre chaque (bien que ce soit fortement recommandé).
+
+La lecture des grimoires de fabrication de golem vous permettra également d'apprendre la capacité "Réparer un Golem".
+Elle peut être utilisée une fois par jour et n'importe où, mais ne fonctionne pas en présence d'ennemis. Le processus
+de réparation dure environ deux rounds. Plusieurs tentatives peuvent être nécessaires pour réparer complètement les
+golems sévèrement endommagés.
+
+
+Les Golems traditionnels
+========================
+
+Les types de golems traditionnels sont décrits dans le "Grimoire de Fabrication de Golem", recueil en six
+volumes. Il n'est pas très difficile de se procurer ces tomes. Certains peuvent être achetés auprès de marchands,
+d'autres sont cachés dans certains donjons ou en possession de certaines créatures.
+
+Les matériaux nécessaires à la fabrication de golems peuvent aussi être obtenus de diverses manières. Les composants
+les plus élémentaires peuvent être achetés dans des boutiques, récupérés sur des créatures ou trouvés à divers
+endroits, alors que les matériaux les plus onéreux et les plus exotiques sont disponibles par d'autres moyens.
+
+Les types de golems conventionnels peuvent être créés en version mineure, normale, majeure et parfaite, chacune
+nécessitant ses propres matériaux. Le modèle parfait nécessite aussi un artefact puissant et spécifique qu'on ne
+trouve qu'en nombre limité.
+
+
+1. Golems de chair
+
+Golem de chair mineur :
+- Niveau requis : 8 (-2 pour les Transmutateurs, +2 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Un ensemble complet de morceaux de cadavres
+- Caractéristiques :
+  - FORCE : 17
+  - PV : 30
+  - CA : 11
+  - TAC0 : 10
+  - APR : 1
+  - Jets de sauvegarde (mort/baguettes/pétrification/souffle/sorts) : 12/13/12/13/13
+- Résistances :
+  - Magie : 75
+  - Froid : 75
+  - Froid magique : 75
+  - Électricité : 75
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+
+Golem de chair :
+- Niveau requis : 10 (-2 pour les Transmutateurs, +2 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Deux ensembles complets de morceaux de cadavres
+- Caractéristiques :
+  - FORCE : 18/50
+  - PV : 40
+  - CA : 9
+  - TAC0 : 7
+  - APR : 3/2
+  - Jets de sauvegarde : 10/11/10/11/11
+- Résistances :
+  - Magie : 90
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Armes perforantes : 25
+  - Projectiles : 25
+- Ne peut être touché que par des armes magiques.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+
+Golem de chair majeur :
+- Niveau requis : 14 (-2 pour les Transmutateurs, +3 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre ensembles complets de morceaux de cadavres
+  - Un parchemin de Nuage puant
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 60
+  - CA : 6
+  - TAC0 : 4
+  - APR : 2
+  - Jets de sauvegarde : 8/9/8/9/9
+- Résistances :
+  - Magie : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 125
+  - Armes perforantes : 75
+  - Projectiles : 75
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Nuage puant sur lui-même.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de chair
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+- A 50 % de chance de se séparer en deux golems de chair mineurs lorsqu'il meurt.
+
+Golem de chair parfait :
+- Niveau requis : 16 (-2 pour les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre ensembles complets de morceaux de cadavres
+  - Un parchemin de Nuage puant
+  - Une gemme héliotrope sombre
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 75
+  - CA : 3
+  - TAC0 : 1
+  - APR : 2
+  - Jets de sauvegarde : 7/8/7/8/8
+- Résistances :
+  - Magie : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 125
+  - Armes perforantes : 100
+  - Projectiles : 100
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Nuage puant sur lui-même.
+- Se sépare toujours en deux golems de chair lorsqu'il meurt.
+
+
+2. Golems d'argile
+
+Golem d'argile mineur :
+- Niveau requis : 11 (-2 pour les Transmutateurs, -1 pour les Prêtres, +2 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Un bloc d'argile
+- Caractéristiques :
+  - FORCE : 18/50
+  - PV : 35
+  - CA : 9
+  - TAC0 : 8
+  - APR : 1
+  - Jets de sauvegarde : 9/11/10/10/12
+- Résistances :
+  - Magie : 75
+  - Froid : 75
+  - Froid magique : 75
+  - Électricité : 100
+  - Armes tranchantes : 75
+  - Armes perforantes : 75
+  - Projectiles : 75
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+
+Golem d'argile :
+- Niveau requis : 14 (-2 pour les Transmutateurs, +1 pour les Prêtres, +3 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Deux blocs d'argile
+  - Un parchemin de Hâte
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 50
+  - CA : 7
+  - TAC0 : 6
+  - APR : 1
+  - Jets de sauvegarde : 7/9/8/8/10
+- Résistances :
+  - Magie : 90
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Armes tranchantes : 100
+  - Armes perforantes : 100
+  - Projectiles : 100
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Hâte sur lui-même.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+
+Golem d'argile majeur :
+- Niveau requis : 18 (-2 pour les Transmutateurs, +3 pour les Prêtres, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre blocs d'argile
+  - Un parchemin de Hâte
+- Caractéristiques :
+  - FORCE : 20
+  - PV : 70
+  - CA : 4
+  - TAC0 : 3
+  - APR : 3/2
+  - Jets de sauvegarde : 5/7/6/6/8
+- Résistances :
+  - Magie : 100
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 75
+  - Armes tranchantes : 100
+  - Armes perforantes : 100
+  - Projectiles : 100
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Hâte sur lui-même.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem d'argile
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+- A 50 % de chance de se séparer en deux golems d'argile mineurs lorsqu'il meurt.
+
+Golem d'argile parfait :
+- Niveau requis : 20 (-2 pour les Transmutateurs, +4 pour les Prêtres, +6 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre blocs d'argile
+  - Un parchemin de Hâte
+  - Un sac de Poudre de corail enchantée
+- Caractéristiques :
+  - FORCE : 20
+  - PV : 90
+  - CA : 0
+  - TAC0 : -1
+  - APR : 3/2
+  - Jets de sauvegarde : 4/6/5/5/7
+- Résistances :
+  - Magie : 100
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 100
+  - Armes contondantes : 33
+  - Armes perforantes : 100
+  - Projectiles : 100
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Hâte sur lui-même.
+- Se sépare toujours en deux golems d'argile lorsqu'il meurt.
+
+
+3. Golems de pierre
+
+Golem de pierre mineur :
+- Niveau requis : 11 (-2 pour les Transmutateurs, +2 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+ - Un bloc de pierre
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 45
+  - CA : 7
+  - TAC0 : 8
+  - APR : 1
+  - Jets de sauvegarde : 7/9/8/7/10
+- Résistances :
+  - Magie : 75
+- Ne peut être touché que par des armes magiques.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+
+Golem de pierre :
+- Niveau requis : 14 (-2 pour les Transmutateurs, +3 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Deux blocs de pierre
+  - Un parchemin de Lenteur
+- Caractéristiques :
+  - FORCE : 20
+  - PV : 60
+  - CA : 5
+  - TAC0 : 7
+  - APR : 1
+  - Jets de sauvegarde : 5/7/6/5/8
+- Résistances :
+  - Magie : 90
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+
+Golem de pierre majeur :
+- Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre blocs de pierre
+  - Un parchemin de Lenteur
+- Caractéristiques :
+  - FORCE : 21
+  - PV : 85
+  - CA : 1
+  - TAC0 : 3
+  - APR : 3/2
+  - Jets de sauvegarde : 4/6/5/4/7
+- Résistances :
+  - Magie : 100
+  - Électricité : 50
+  - Acide : 50
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de pierre
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+- A 50 % de chance de se séparer en deux golems de pierre mineurs lorsqu'il meurt.
+
+Golem de pierre parfait :
+- Niveau requis : 20 (-2 pour les Transmutateurs, +6 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre blocs de pierre
+  - Un parchemin de Lenteur
+  - Une fiole de Sang de Mimique
+- Caractéristiques :
+  - FORCE : 22
+  - PV : 100
+  - CA : -1
+  - TAC0 : 0
+  - APR : 3/2
+  - Jets de sauvegarde : 3/5/4/3/6
+- Résistances :
+  - Magie : 100
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 50
+  - Froid magique : 50
+  - Électricité : 100
+  - Acide : 100
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer Lenteur sur ses adversaires situés dans un rayon de 9 mètres autour de lui.
+- Se sépare toujours en deux golems de pierre lorsqu'il meurt.
+
+
+4. Golems de fer
+
+Golem de fer mineur :
+- Niveau requis : 15 (-2 pour les Transmutateurs, +3 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Un lingot de fer
+- Caractéristiques :
+  - FORCE : 20
+  - PV : 60
+  - CA : 5
+  - TAC0 : 6
+  - APR : 1
+  - Jets de sauvegarde : 5/7/6/6/8
+- Résistances :
+  - Magie : 75
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 50
+- Ne peut être touché que par des armes +2 ou supérieures.
+
+Golem de fer :
+- Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Deux lingots de fer
+  - Un parchemin de Nuage mortel
+- Caractéristiques :
+  - FORCE : 22
+  - PV : 80
+  - CA : 3
+  - TAC0 : 3
+  - APR : 1
+  - Jets de sauvegarde : 3/5/4/4/6
+- Résistances :
+  - Magie : 90
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 75
+  - Armes tranchantes : 20
+  - Armes perforantes : 20
+  - Projectiles : 20
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer Nuage de gaz sur lui-même.
+
+Golem de fer majeur :
+- Niveau requis : 23 (-2 pour les Transmutateurs, +6 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre lingots de fer
+  - Un parchemin de Nuage mortel
+- Caractéristiques :
+  - FORCE : 23
+  - PV : 110
+  - CA : 0
+  - TAC0 : 0
+  - APR : 3/2
+  - Jets de sauvegarde : 1/3/2/2/4
+- Résistances :
+  - Magie : 100
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 50
+  - Armes contondantes : 25
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer Nuage de gaz sur lui-même.
+- A 50 % de chance de se séparer en deux golems de fer mineurs lorsqu'il meurt.
+
+Golem de fer parfait :
+- Niveau requis : 26 (-2 pour les Transmutateurs, +8 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre lingots de fer
+  - Un parchemin de Nuage mortel
+  - Des jetons de fer froid
+- Caractéristiques :
+  - FORCE : 24
+  - PV : 125
+  - CA : -2
+  - TAC0 : -2
+  - APR : 3/2
+  - Jets de sauvegarde : 0/2/1/1/3
+- Résistances :
+  - Magie : 100
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 75
+  - Armes contondantes : 25
+  - Armes perforantes : 100
+  - Projectiles : 100
+- Régénère au rythme de 1 PV tous les trois rounds.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer Nuage de gaz sur lui-même.
+- Se sépare toujours en deux golems de fer lorsqu'il meurt.
+
+
+5. Golems de mithril
+
+Golem de mithril mineur :
+- Niveau requis : 18 (-2 pour les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Un bloc de mithril
+  - 4 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 21
+  - PV : 60
+  - CA : 4
+  - TAC0 : 4
+  - APR : 1
+  - Jets de sauvegarde : 6/8/7/7/9
+- Résistances :
+  - Magie : 90
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 20
+  - Armes perforantes : 20
+  - Projectiles : 20
+- Ne peut être touché que par des armes +3 ou supérieures.
+
+Golem de mithril :
+- Niveau requis : 22 (-2 pour les Transmutateurs, +6 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Deux blocs de mithril
+  - 8 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 23
+  - PV : 80
+  - CA : 2
+  - TAC0 : 2
+  - APR : 3/2
+  - Jets de sauvegarde : 4/6/5/5/7
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 50
+  - Armes contondantes : 33
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+
+Golem de mithril majeur :
+- Niveau requis : 27 (-2 pour les Transmutateurs, +8 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre blocs de mithril
+  - 16 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 24
+  - PV : 110
+  - CA : -2
+  - TAC0 : -2
+  - APR : 2
+  - Jets de sauvegarde : 3/5/4/4/6
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 75
+  - Armes contondantes : 50
+  - Armes perforantes : 75
+  - Projectiles : 75
+- Régénère au rythme de 1 PV tous les trois rounds.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+- A 50 % de chance de se séparer en deux golems de mithril mineurs lorsqu'il meurt.
+
+Golem de mithril parfait :
+- Niveau requis : 30 (-2 pour les Transmutateurs, +10 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre blocs de mithril
+  - Un Orbe d'obsidienne spectrale
+  - 32 000 PX perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 24
+  - PV : 125
+  - CA : -5
+  - TAC0 : -5
+  - APR : 2
+  - Jets de sauvegarde : 1/3/2/2/4
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 85
+  - Armes contondantes : 75
+  - Armes perforantes : 85
+  - Projectiles : 85
+- Régénère au rythme de 1 PV par round.
+- Ne peut être touché que par des armes +4 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+- Se sépare toujours en deux golems de mithril lorsqu'il meurt.
+
+
+6. Golems d'adamantine
+
+Golem d'adamantine mineur :
+- Niveau requis : 21 (-2 pour les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Deux lingots d'adamantine
+  - 8 000 XP perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 22
+  - PV : 60
+  - CA : 5
+  - TAC0 : 4
+  - APR : 1
+  - Jets de sauvegarde : 5/7/6/6/8
+- Résistances :
+  - Magie : 90
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 75
+  - Armes contondantes : 75
+  - Armes perforantes : 75
+  - Projectiles : 75
+- Ne peut être touché que par des armes +3 ou supérieures.
+
+Golem d'adamantine :
+- Niveau requis : 25 (-2 pour les Transmutateurs, +6 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Quatre lingots d'adamantine
+  - 16 000 XP perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 24
+  - PV : 80
+  - CA : 3
+  - TAC0 : 3
+  - APR : 1
+  - Jets de sauvegarde : 3/5/4/4/6
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 90
+  - Armes contondantes : 90
+  - Armes perforantes : 90
+  - Projectiles : 90
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+
+Golem d'adamantine majeur :
+- Niveau requis : 30 (-2 pour les Transmutateurs, +8 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Huit lingots d'adamantine
+  - 32 000 XP perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 24
+  - PV : 110
+  - CA : 0
+  - TAC0 : 0
+  - APR : 3/2
+  - Jets de sauvegarde : 1/3/2/2/4
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 95
+  - Armes contondantes : 95
+  - Armes perforantes : 95
+  - Projectiles : 95
+- Régénère au rythme de 1 PV tous les trois rounds.
+- Ne peut être touché que par des armes +4 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+- A 50 % de chance de se séparer en deux golems d'adamantine mineurs lorsqu'il meurt.
+
+Golem d'adamantine parfait :
+- Niveau requis : 33 (-2 pour les Transmutateurs, +10 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Huit lingots d'adamantine
+  - Une goutte de sang d'un Solaire ou d'un Solaire déchu
+  - 64 000 XP perdus par le lanceur
+- Caractéristiques :
+  - FORCE : 25
+  - PV : 150
+  - CA : -3
+  - TAC0 : -3
+  - APR : 2
+  - Jets de sauvegarde : -1/1/0/0/2
+- Résistances :
+  - Magie : 100
+  - Feu : 125
+  - Feu magique : 125
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 99
+  - Armes contondantes : 99
+  - Armes perforantes : 99
+  - Projectiles : 99
+- Régénère au rythme de 1 PV par round.
+- Ne peut être touché que par des armes +4 ou supérieures.
+- Peut lancer la capacité "Piétinement" sur des ennemis de taille normale ou plus petite :
+  Inflige 8d10 +30 points de dégâts contondants et étourdit la cible pendant un round (JS
+  contre la mort à -4 pour ne subir que la moitié des dégâts et éviter l'étourdissement).
+- Se sépare toujours en deux golems d'adamantine lorsqu'il meurt.
+
+
+
+Golems exotiques
+================
+
+Les types de golems exotiques sont décrits dans le "Grimoire secret de Fabrication de Golem", un recueil qui se
+composerait de six volumes et est très difficile à se procurer.
+
+Les golems décrits dans ces volumes sont uniques et ne sont par conséquent pas disponibles en versions mineure,
+normale, majeure et parfaite.
+
+1. Golem de vers
+- Niveau requis : 10 (-2 pour les Conjurateurs et les Transmutateurs, +2 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Deux cadavres infectés de larves
+- Caractéristiques :
+  - FORCE : 18
+  - PV : 45
+  - CA : 8
+  - TAC0 : 13
+  - APR : 1
+  - Ne peut être touché que par des armes magiques.
+  - Jets de sauvegarde : 10/11/10/11/11
+- Résistances :
+  - Magie : 75
+  - Feu : -50
+  - Feu magique : -50
+  - Armes tranchantes : 100
+  - Armes contondantes : 50
+  - Armes perforantes : 100
+  - Projectiles : 100
+- Régénère au rythme de 1 PV par round.
+- En manipulant le corps infesté de larves du golem pendant sa fabrication, son créateur a 15 % de chance
+  d'attraper une maladie qui le ralentit et lui inflige 2 points de dégâts par round pendant 5 tours.
+- Attaque spéciale "Étreinte étouffante" : la victime subit 2d6 points de dégâts contondants, est paralysée pendant un
+  round et subit 1 point de dégât perforant par seconde si elle rate son JS contre les sorts. Chaque round suivant, elle
+  doit réussir un JS contre les sorts avec un bonus de 4 pour pouvoir se libérer et échapper aux dégâts supplémentaires.
+  Ces effets peuvent être annulés par une Dissipation de la magie ou bloqués par la résistance à la magie.
+- Folie dévastatrice : en situation de combat, il y a 1 % de chance pour que l’esprit élémentaire animant le golem de vers
+  devienne fou furieux pendant 1d6 rounds et attaque la créature la plus proche.
+- Sa durée de vie ne dépasse pas 1d4+6 jours (temps interne au jeu). À l'expiration de ce délai, le golem a 50 % de chance
+  de céder à une folie meurtrière pendant 1d6 rounds avant de se désintégrer.
+
+2. Golem d'os
+- Niveau requis : 16 (-2 pour les Nécromanciens et les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet").
+- Composants nécessaires :
+  - Quatre tas d'ossements
+  - Un parchemin d'Animation des morts
+  - À l'issue du processus de fabrication, le créateur a 50 % de chance de perdre un niveau et 10 % d'en perdre deux.
+- Caractéristiques :
+  - FORCE : 21
+  - PV : 65
+  - CA : 1
+  - TAC0 : 7
+  - APR : 2
+  - Jets de sauvegarde : 5/7/6/5/8
+- Résistances :
+  - Magie : 100
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 50
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Ne peut être touché que par des armes magiques.
+- Peut lancer "Rire affreux" qui affecte ses ennemis dans un rayon de 9 mètres : Ceux qui ratent leur JS contre les sorts
+  erreront sous l'effet de la panique pendant 2d6 rounds. De plus, un autre jet de sauvegarde réussi contre la mort leur
+  évitera d'être paralysés par la peur à la place.
+
+3. Golem cerveau
+- Niveau requis : 17 (-2 pour les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet").
+- Composants nécessaires :
+  - Un morceau de tissu cérébral
+  - Un parchemin de Domination
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 75
+  - CA : 4
+  - TAC0 : 9
+  - APR : 3/2
+  - Jets de sauvegarde : 7/9/8/8/10
+- Résistances :
+  - Magie : 100
+  - Feu : 50
+  - Feu magique : 50
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Armes tranchantes : 50
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Régénère au rythme de 1 PV par tour.
+- Ne peut être touché que par des armes +2 ou supérieures.
+- Peut lancer Décharge mentale qui étourdit pendant 2d4 rounds tous ses adversaires dans un rayon de 9 mètres,
+  et leur inflige 2d8 points de dégâts non-létaux (JS contre les sorts pour éviter l'étourdissement et ne subir
+  que la moitié des dégâts). La Décharge mentale n'affecte pas les morts-vivants, les golems et les myconides.
+
+4. Golem de glace
+- Niveau requis : 19 (-2 pour les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Un éclat de glace magique
+  - Un parchemin de Cône de Froid
+  - Un parchemin de Protection contre le Froid
+- Caractéristiques :
+  - FORCE : 22
+  - PV : 85
+  - CA : 2
+  - TAC0 : 4
+  - APR : 2
+  - Jets de sauvegarde : 3/5/4/4/6
+- Résistances :
+  - Magie : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+  - Armes tranchantes : 20
+  - Armes contondantes : 20
+  - Armes perforantes : 20
+  - Projectiles : 20
+- Ne peut être touché que par des armes magiques.
+- Peut lancer Vapeur glaçante qui inflige 3d10 points de dégâts de froid dans la zone d'effet
+  (un JS contre les souffles les annule).
+
+5. Golem magique
+- Niveau requis : 19 (-2 pour les Entropistes et les Transmutateurs, +4 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - Un fragment de Pierre entropique
+  - Un parchemin de Protection contre les armes magiques, de Manteau ou de Manteau amélioré
+  - Un parchemin de Protection contre la magie
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 64
+  - CA : -1
+  - TAC0 : 5
+  - APR : 1
+  - Jets de sauvegarde : 7/9/8/8/10
+- Résistances :
+  - Magie : 100
+  - Feu : 100
+  - Feu magique : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Acide : 100
+- Immunisé aux armes +1, +2, +3 et +4.
+- Immunisé aux sorts de niveaux 8 et inférieurs.
+- Doit être fabriqué dans une zone de magie entropique.
+- Chaque attaque à distance réussie draine une charge des objets possédés et un sort profane mémorisé.
+- Peut lancer Poussée entropique qui inflige 3d10 points de dégâts magiques et déclenche un hiatus entropique
+  sur la cible.
+- Se désintègre automatiquement dans les zones de magie morte avec 50 % de chance de générer une explosion
+  d'énergie magique infligeant 2d6 points de dégâts magiques à quiconque se trouve dans un rayon de 9 mètres
+  (un jet de sauvegarde contre les sorts réussi permet d'en éviter la moitié).
+
+6. Golem de foudre
+- Niveau requis : 22 (-2 pour les Transmutateurs, +6 pour les Bardes et les Voleurs utilisant la capacité "Utilisation d'objet")
+- Composants nécessaires :
+  - 100 000 pièces d'or
+  - Un parchemin de Chaîne d'éclairs
+- Caractéristiques :
+  - FORCE : 19
+  - PV : 80
+  - CA : 0
+  - TAC0 : 6
+  - APR : 2
+  - Jets de sauvegarde : 4/6/5/5/7
+- Résistances :
+  - Magie : 100
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 125
+  - Acide : 100
+- Ne peut être touché que par des armes +3 ou supérieures.
+- Se déplace à une vitesse supérieure.
+- Bouclier électrique permanent : tout adversaire touchant le golem subit 1d8 +2 points de dégâts électriques.
+- Peut lancer Chaîne d'éclairs sur ses ennemis proches.
+- Peut lancer "Déplacement éclair" qui lui permet de se transporter presque instantanément à n'importe quel endroit
+  dans son champ visuel en se transformant en un puissant éclair. Son déplacement à grande vitesse génère une onde
+  de choc qui renverse et inflige 1d6 points de dégâts électriques à toutes les créatures présentes dans un rayon de
+  3 mètres autour de son lieu de destination. Le coup de tonnerre qui en résulte les rend également sourdes pendant
+  1d4 tours si elles ratent un jet de sauvegarde contre les souffles. Puisque cette capacité fait partie intégrante
+  de la nature du golem, ce dernier n'a pas besoin d'attendre avant de l'utiliser à nouveau, ni ou une autre.
+  Cette capacité remplace "Téléportation".
+
+
+Les Golems dont on peut passer commande dans BG:EE
+==================================================
+
+Ces types de golems sont décrits dans le "Grimoire interdit de Fabrication de Golem" que vous trouverez quelque
+part pendant votre périple dans BG1. Il vous faudra trouver un magicien expérimenté qui puisse les construire
+pour vous.
+
+1. Golem poupée
+- Composants nécessaires :
+  - Un ensemble complet de morceaux de cadavres
+  - Une potion d'antidote maudite
+- Caractéristiques :
+  - FORCE : 12
+  - PV : 40
+  - CA : 4
+  - TAC0 : 11
+  - APR : 1
+  - Jets de sauvegarde : 13/14/13/14/14
+- Résistances :
+  - Magie : 50
+  - Froid : 80
+  - Froid magique : 80
+  - Électricité : 50
+  - Armes perforantes : 25
+  - Projectiles : 25
+- Ne peut être touché que par des armes magiques.
+- Spécial : Chaque attaque réussie a une chance de provoquer un rire incontrôlable chez la cible si elle rate son JS contre
+  les sorts (avec un bonus de +2). La victime devient incapable de faire quoi que ce soit d'autre. Déclenché le round suivant
+  le JS raté, ce rire provoque des spasmes musculaires si douloureux qu'il inflige 1d4 points de dégâts supplémentaires
+  cumulables à chaque round (1d4 lors du premier, 2d4 lors du second, etc.). La victime doit réussir un JS contre les sorts
+  (avec un bonus de +2) à chaque round pour mettre fin au rire. Sinon, le rire ne s'arrête qu'au bout d'un tour ou s'il est
+  annulé par une Dissipation de la magie. La Résistance à la magie de la cible peut aussi protéger des effets. Les
+  morts-vivants et les créatures artificielles ne sont pas affectées. Une fois le rire dissipé, la victime reste fatiguée
+  pendant une durée égale à la moitié du temps qu'elle a été sous l'emprise du rire, pendant laquelle elle souffre d'une
+  pénalité de -1 à la CA, à son TAC0 et à tous ses JS.
+- Ce golem peut être fabriqué par le nécromancien Arkion (contre honoraires) qui réside à la Porte de Baldur, au sud de la
+  Taverne du Chant de l'Elfe.
+
+2. Poupée d'os
+- Composants nécessaires :
+  - Un tas d'ossements
+  - Une petite dose de force vitale
+- Caractéristiques :
+  - FORCE : 12
+  - PV : 30
+  - CA : 6
+  - TAC0 : 10
+  - APR : 2
+  - Jets de sauvegarde : 13/14/13/14/14
+- Résistances :
+  - Magie : 75
+  - Feu : 20
+  - Feu magique : 20
+  - Froid : 100
+  - Froid magique : 100
+  - Électricité : 100
+  - Armes perforantes : 50
+  - Projectiles : 50
+- Ne peut être touché que par des armes magiques.
+- Spécial : Lorsqu'elle meurt, la poupée d'os explose en infligeant 2d6 points de dégâts perforants et 1d6 points de dégâts
+  contondants à quiconque se trouve dans un rayon de 3 mètres.
+- Ce golem peut être fabriqué par la nécromancienne Nemphré (contre honoraires) qui réside à la Porte de Baldur, à l'est de
+  l'Auberge de la Lame et des Étoiles.
+
+
+Chaque golem dispose par défaut des capacités suivantes :
+1. Renvoi        : L'activer provoque la désintégration du golem. Elle est irréversible.
+2. Téléportation : Le golem se téléporte près d'un membre du groupe situé dans son champ de vision. Utile pour les
+                   golems de taille géante qui peuvent se trouver bloqués par des passages trop étroits pour qu'ils
+                   les empruntent. Elle ne peut être utilisée avec succès que si aucun ennemi n'est en vue.
+                   Note : Cette capacité est ajoutée par le composant de Modifications "Ajouter la capacité Téléportation
+                          aux golems".
+
+Vous pouvez aussi donner des ordres simples à vos golems. Les modèles mineurs de golems de chair, d'argile et de pierre,
+ainsi que les golems de vers peuvent obéir aux ordres suivants :
+- Suis-moi ! (Le golem devient contrôlable mais n'agit pas par lui-même. C'est son état par défaut lorsqu'il est activé.)
+- Monte la garde ! (Le golem redevient neutre et ne s'éloigne pas de sa position.)
+- Détruis-toi ! (Oblige le golem à se désintégrer. Cette commande est identique à la capacité "Renvoi", mais peut aussi
+                 être activée lorsque le golem monte la garde.)
+
+Les golems plus évolués peuvent aussi répondre aux ordres suivants :
+- Suis-moi et protège-moi ! (Le golem devient contrôlable et attaquera à vue toute créature hostile ou tout ennemi qui
+                             s'en prendra aux membres du groupe.)
+- Monte la garde et défends les lieux ! (Le golem devient neutre et attaque toute créature hostile qu'il voit. Il retourne
+                                         toujours à la position qu'il garde.)
+
+Vous devriez prendre grand soin de vos golems car ils peuvent souffrir de défaillances lorsqu'ils sont lourdement endommagés.
+La capacité "Réparer un Golem" permet de les remettre en état.
+
+
+Améliorer les golems
+====================
+
+Les golems traditionnels peuvent gagner de l'expérience pour chaque adversaire qu'ils tuent. Si leur expérience atteint
+un certain seuil, ils peuvent être améliorés au rang immédiatement supérieur par n’importe quel lanceur de sorts expert
+en fabrication de golems de ce type. Plus la version du golem est puissante, plus l'expérience nécessaire pour passer au
+rang suivant est importante. Les golems parfaits ne peuvent pas être améliorés.
+
+Golem de chair mineur :     Au moins 50 créatures tuées sont nécessaires pour devenir un Golem de chair normal.
+Golem de chair normal :     Au moins 100 créatures tuées sont nécessaires pour devenir un Golem de chair majeur.
+Golem de chair majeur :     Au moins 200 créatures tuées sont nécessaires pour devenir un Golem de chair parfait.
+
+Golem d'argile mineur :     Au moins 75 créatures tuées sont nécessaires pour devenir un Golem d'argile normal.
+Golem d'argile normal :     Au moins 150 créatures tuées sont nécessaires pour devenir un Golem d'argile majeur.
+Golem d'argile majeur :     Au moins 300 créatures tuées sont nécessaires pour devenir un Golem d'argile parfait.
+
+Golem de pierre mineur :    Au moins 75 créatures tuées sont nécessaires pour devenir un Golem de pierre normal.
+Golem de pierre normal :    Au moins 150 créatures tuées sont nécessaires pour devenir un Golem de pierre majeur.
+Golem de pierre majeur :    Au moins 300  créatures tuées sont nécessaires pour devenir un Golem de pierre parfait.
+
+Golem de fer mineur :       Au moins 100 créatures tuées sont nécessaires pour devenir un Golem de fer normal.
+Golem de fer normal :       Au moins 200 créatures tuées sont nécessaires pour devenir un Golem de fer majeur.
+Golem de fer majeur :       Au moins 400 créatures tuées sont nécessaires pour devenir un Golem de fer parfait.
+
+Golem de mithril mineur :   Au moins 150 créatures tuées sont nécessaires pour devenir un Golem de mithril normal.
+Golem de mithril normal :   Au moins 300 créatures tuées sont nécessaires pour devenir un Golem de mithril majeur.
+Golem de mithril majeur :   Au moins 600 créatures tuées sont nécessaires pour devenir un Golem de mithril parfait.
+
+Golem d'adamantine mineur : Au moins 250 créatures tuées sont nécessaires pour devenir un Golem d'adamantine normal.
+Golem d'adamantine normal : Au moins 500 créatures tuées sont nécessaires pour devenir un Golem d'adamantine majeur.
+Golem d'adamantine majeur : Au moins 1000 créatures tuées sont nécessaires pour devenir un Golem d'adamantine parfait.
+
+Pour effectuer une mise à niveau, vous aurez besoin des matériaux requis. La quantité de matériaux est déterminée par la
+différence entre la nouvelle et l'ancienne version du golem. Aucune pénalité physique n’est appliquée au lanceur de sorts
+pour l’amélioration des golems de mithril et d'adamantite. Il suffit de parler aux golems pour connaître leur nombre de
+victimes ou pour lancer le processus de mise à niveau.
+
+Il est aussi possible d'améliorer un golem à l'aide d'un sort de Souhait ou de Souhait limité à condition d'être assez sage
+pour énoncer la bonne formulation de so souhait.
+
+
+Les sorts qui affectent les golems de manière spécifique
+========================================================
+
+Certains sorts affectent différemment les golems qui sont des constructions artificielles dénuées de vie. L'installation du
+composant "Rendre les golems vulnérables à certains effets de sorts spécifiques" déclenche les effets suivants :
+- Transmutation de la Chair en Pierre :
+  Transforme les golems de chair en golems de pierre de la même version s'ils ratent un jet de sauvegarde contre la
+  pétrification/métamorphose.
+- Transmutation de la Pierre en Chair :
+  Transforme les golems de pierre en golems de chair de la même version s'ils ratent un jet de sauvegarde contre la
+  pétrification/métamorphose.
+- Flétrissure abominable d'Abi-Dalzim :
+  Ce sort assèche tous les golems d'argile situés dans sa zone d'effet et les transforme en golems de pierre s'ils ratent
+  leur jet de sauvegarde contre les sorts avec un malus de 2.
+- Sort de mort :
+  Détruit automatiquement les golems de vers (sans jet de sauvegarde).
+- Cône de froid et Tempête glaciale :
+  Les golems d'argile atteints par ces sorts sont ralentis pendant cinq rounds s'ils ratent leur jet de sauvegarde contre
+  les sorts.
+- Rayon de soleil :
+  Détériore l'alliage qui constitue les golems d'adamantine, réduisant de manière permanente leur résistance aux dégâts physiques
+  s'ils ratent un jet de sauvegarde contre les sorts. La capacité "Réparer un Golem" permet de supprimer cet effet.
+- Sorts de feu de haut niveau :
+  Ces sorts augmentent la température des golems de fer pendant cinq rounds (sans JS). Pendant cette période, ils assènent des
+  coups infligeant des dégâts de feu en plus des dégâts physiques normaux.
+  Les sorts concernés sont les suivants : Nuée de météores, Souffle de dragon, Comète, Nuage incendiaire et Tempête de feu.
+
+
+Sites connus dans lesquels vous pouvez fabriquer des golems
+===========================================================
+
+Siege of Dragonspear :
+- Bazar des Sorcelleries :
+  Vous pouvez louer l'étage supérieur au propriétaire de l'échoppe.
+- Repaire des morts-vivants :
+  Ce donjon se trouve sous le site de fouilles des Nains. Vous devez d'abord sécuriser la zone en éliminant son résident
+  et ses minions morts-vivants.
+- Les Ruines de Kanaglym :
+  Les ruines sont accessibles à partir de la Rivière souterraine sous le Château de Dragonspear. Vous devez d'abord
+  sécuriser la zone en éliminant tous les ennemis.
+
+Les Ombres d'Amn :
+- La Sphère Planaire :
+  Le premier niveau de la Sphère peut convenir à la création de golems (après s'être débarrassé de son précédent
+  propriétaire, bien sûr).
+- La maison de Jermien :
+  Vous pouvez peut-être le convaincre d'utiliser sa maison d'Imnesvale pour créer vos propres golems si le protagoniste
+  est un lanceur de sorts ou si Imoen est présente.
+- Quartier Général des prêtres :
+  Chacun des trois temples du quartier des temples d'Athkatla peut être utilisé pour fabriquer des golems d'argile si le
+  protagoniste est un prêtre et s'il a choisi le temple correspondant à sa foi comme quartier général.
+
+La Tour de Garde :
+- Deuxième étage :
+  La Bibliothèque des magiciens est bien équipée, mais vous devrez au préalable désactiver tous ses mécanismes défensifs
+  (ce qui inclue la créature qui garde le portail de téléportation pour le niveau suivant).
+
+Trône de Bhaal :
+- Antichambre :
+  Ce lieu est suffisamment sécurisé pour y mener toutes sortes d'expériences magiques. Lazarus Librarus peut vous fournir
+  le matériel requis pour l'équiper à un prix raisonnable.
