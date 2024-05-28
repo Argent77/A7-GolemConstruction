@@ -261,6 +261,50 @@ LANGUAGE ~Russian (Translation: Arkie)~
          ~A7-GolemConstruction/language/russian/misc.tra~
          ~A7-GolemConstruction/language/russian/iwdee.tra~
 
+LANGUAGE ~Simplified Chinese (translation: Lewis Liu)~
+         ~schinese~
+         ~A7-GolemConstruction/language/english/setup.tra~
+         ~A7-GolemConstruction/language/english/tome01.tra~
+         ~A7-GolemConstruction/language/english/tome02.tra~
+         ~A7-GolemConstruction/language/english/tome03.tra~
+         ~A7-GolemConstruction/language/english/tome04.tra~
+         ~A7-GolemConstruction/language/english/tome05.tra~
+         ~A7-GolemConstruction/language/english/tome06.tra~
+         ~A7-GolemConstruction/language/english/tome07.tra~
+         ~A7-GolemConstruction/language/english/tome08.tra~
+         ~A7-GolemConstruction/language/english/tome09.tra~
+         ~A7-GolemConstruction/language/english/tome0a.tra~
+         ~A7-GolemConstruction/language/english/tome0b.tra~
+         ~A7-GolemConstruction/language/english/tome0c.tra~
+         ~A7-GolemConstruction/language/english/tome0d.tra~
+         ~A7-GolemConstruction/language/english/tomebd.tra~
+         ~A7-GolemConstruction/language/english/tomedg.tra~
+         ~A7-GolemConstruction/language/english/spells.tra~
+         ~A7-GolemConstruction/language/english/items.tra~
+         ~A7-GolemConstruction/language/english/dialogs.tra~
+         ~A7-GolemConstruction/language/english/misc.tra~
+         ~A7-GolemConstruction/language/english/iwdee.tra~
+         ~A7-GolemConstruction/language/schinese/setup.tra~
+         ~A7-GolemConstruction/language/schinese/tome01.tra~
+         ~A7-GolemConstruction/language/schinese/tome02.tra~
+         ~A7-GolemConstruction/language/schinese/tome03.tra~
+         ~A7-GolemConstruction/language/schinese/tome04.tra~
+         ~A7-GolemConstruction/language/schinese/tome05.tra~
+         ~A7-GolemConstruction/language/schinese/tome06.tra~
+         ~A7-GolemConstruction/language/schinese/tome07.tra~
+         ~A7-GolemConstruction/language/schinese/tome08.tra~
+         ~A7-GolemConstruction/language/schinese/tome09.tra~
+         ~A7-GolemConstruction/language/schinese/tome0a.tra~
+         ~A7-GolemConstruction/language/schinese/tome0b.tra~
+         ~A7-GolemConstruction/language/schinese/tome0c.tra~
+         ~A7-GolemConstruction/language/schinese/tome0d.tra~
+         ~A7-GolemConstruction/language/schinese/tomebd.tra~
+         ~A7-GolemConstruction/language/schinese/tomedg.tra~
+         ~A7-GolemConstruction/language/schinese/spells.tra~
+         ~A7-GolemConstruction/language/schinese/items.tra~
+         ~A7-GolemConstruction/language/schinese/dialogs.tra~
+         ~A7-GolemConstruction/language/schinese/misc.tra~
+         ~A7-GolemConstruction/language/schinese/iwdee.tra~
 
 BEGIN @0  // Golem Construction ability for spellcasters
   REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) @100   // This component requires BG:EE, BG2:EE, EET or IWD:EE to be installed.
