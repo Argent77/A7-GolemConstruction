@@ -1,4 +1,4 @@
-// -*- coding: utf-8 -*- 
+// -* - coding: utf-8 -* - 
 // Iron Golem related strings (index 4000..4999)
 
 @4000 = ~魔像建造手册（第四卷）~
@@ -19,7 +19,7 @@
 数据资料：
 
 充能能力：
-- 增加了一项新能力，使用户可以自己制造魔像
+ - 增加了一项新能力，使用户可以自己制造魔像
   使用方法：放在快速物品栏中使用
 
 允许使用者建造下列魔像：
@@ -27,26 +27,26 @@
 次级铁魔像：
 最小等级：15（炼金师-2，吟游诗人+3）
 原料：
-- 一块铁条
+ - 一块铁条
 
 铁魔像：
 最小等级：18（炼金师-2，吟游诗人+4）
 原料：
-- 两块铁条
-- 一个死云术卷轴
+ - 两块铁条
+ - 一个死云术卷轴
 
 高级铁魔像：
 最小等级：23（炼金师-2，吟游诗人+6）
 原料：
-- 四块铁条
-- 一个死云术卷轴
+ - 四块铁条
+ - 一个死云术卷轴
 
 完美铁魔像：
 最小等级：26（炼金师-2，吟游诗人+8）
 原料：
-- 四块铁条
-- 一个死云术卷轴
-- 寒铁碎片
+ - 四块铁条
+ - 一个死云术卷轴
+ - 寒铁碎片
 
 需求：
  智力 17
@@ -64,26 +64,26 @@
 次级铁魔像：
 最小等级：15（炼金师-2，吟游诗人+3）
 原料：
-- 一块铁条
+ - 一块铁条
 
 铁魔像：
 最小等级：18（炼金师-2，吟游诗人+4）
 原料：
-- 两块铁条
-- 一个死云术卷轴
+ - 两块铁条
+ - 一个死云术卷轴
 
 高级铁魔像：
 最小等级：23（炼金师-2，吟游诗人+6）
 原料：
-- 四块铁条
-- 一个死云术卷轴
+ - 四块铁条
+ - 一个死云术卷轴
 
 完美铁魔像：
 最小等级：26（炼金师-2，吟游诗人+8）
 原料：
-- 四块铁条
-- 一个死云术卷轴
-- 寒铁碎片
+ - 四块铁条
+ - 一个死云术卷轴
+ - 寒铁碎片
 
 需求：
  智力 17
@@ -101,7 +101,7 @@
 数据资料：
 
 充能能力：
-- 增加了一项新能力，使用户可以自己制造魔像
+ - 增加了一项新能力，使用户可以自己制造魔像
   使用方法：放在快速物品栏中使用
 
 允许使用者建造下列魔像：
@@ -109,26 +109,26 @@
 次级铁魔像：
 最小等级：11（炼金师-2，吟游诗人+2）
 原料：
-- 一块铁条
+ - 一块铁条
 
 铁魔像：
 最小等级：14（炼金师-2，吟游诗人+4）
 原料：
-- 两块铁条
-- 一个死云术卷轴
+ - 两块铁条
+ - 一个死云术卷轴
 
 高级铁魔像：
 最小等级：17（炼金师-2，吟游诗人+5）
 原料：
-- 四块铁条
-- 一个死云术卷轴
+ - 四块铁条
+ - 一个死云术卷轴
 
 完美铁魔像：
 最小等级：19（炼金师-2）
 原料：
-- 四块铁条
-- 一个死云术卷轴
-- 寒铁碎片
+ - 四块铁条
+ - 一个死云术卷轴
+ - 寒铁碎片
 
 需求：
  智力 17
@@ -139,31 +139,33 @@
 
 这本神奇的书籍包含了关于魔像的构造和控制的理论思考。它详细地阐述了组装一个铁魔像所需的材料，如何赋予它生命，并让它严格遵循创造者的命令。它还详细介绍了成功塑造魔像身体所需的设备。这个要求限制了你可以开始建造过程的地点，在整个费伦大陆上只有少数几个地方。
 
-从你能收集到的信息来看，这本书是一套五卷本系列的一部分。它还简要提到了第二套系列，据说这套系列将涉及更非传统的魔像构造。允许使用者建造下列魔像：
+从你能收集到的信息来看，这本书是一套五卷本系列的一部分。它还简要提到了第二套系列，据说这套系列将涉及更非传统的魔像构造。
+
+允许使用者建造下列魔像：
 
 次级铁魔像：
 最小等级：11（炼金师-2，吟游诗人+2）
 原料：
-- 一块铁条
+ - 一块铁条
 
 铁魔像：
 最小等级：14（炼金师-2，吟游诗人+4）
 原料：
-- 两块铁条
-- 一个死云术卷轴
+ - 两块铁条
+ - 一个死云术卷轴
 
 高级铁魔像：
 最小等级：17（炼金师-2，吟游诗人+5）
 原料：
-- 四块铁条
-- 一个死云术卷轴
+ - 四块铁条
+ - 一个死云术卷轴
 
 完美铁魔像：
 最小等级：19（炼金师-2）
 原料：
-- 四块铁条
-- 一个死云术卷轴
-- 寒铁碎片
+ - 四块铁条
+ - 一个死云术卷轴
+ - 寒铁碎片
 
 需求：
  智力 17
@@ -174,17 +176,16 @@
 // *** Book content of Malavon's version (IWDEE) ***
 @4112 = ~第四课：铁魔像
 
-This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an iron golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+这本神奇的书籍包含了关于魔像的构造和控制的理论思考。它详细地阐述了组装一个铁魔像所需的材料，如何赋予它生命，并让它严格遵循创造者的命令。它还详细介绍了成功塑造魔像身体所需的设备。这个要求限制了你可以开始建造过程的地点，在整个费伦大陆上只有少数几个地方。
 
-From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+从你能收集到的信息来看，这本书是一套五卷本系列的一部分。它还简要提到了第二套系列，据说这套系列将涉及更非传统的魔像构造。
 
-This particular copy appears to belong to the dark elven wizard Malavon. It contains a number of strange phrases that appear to be command words for his own creations.
-
+这本特定的副本似乎属于黑暗精灵巫师马拉冯。它包含了许多奇怪的短语，看起来像是对他自己的创造物的命令词。
 
 数据资料：
 
 充能能力：
-- 增加了一项新能力，使用户可以自己制造魔像
+ - 增加了一项新能力，使用户可以自己制造魔像
   使用方法：放在快速物品栏中使用
 
 允许使用者建造下列魔像：
@@ -192,26 +193,26 @@ This particular copy appears to belong to the dark elven wizard Malavon. It cont
 次级铁魔像：
 最小等级：11（炼金师-2，吟游诗人+2）
 原料：
-- 一块铁条
+ - 一块铁条
 
 铁魔像：
 最小等级：14（炼金师-2，吟游诗人+4）
 原料：
-- 两块铁条
-- 一个死云术卷轴
+ - 两块铁条
+ - 一个死云术卷轴
 
 高级铁魔像：
 最小等级：17（炼金师-2，吟游诗人+5）
 原料：
-- 四块铁条
-- 一个死云术卷轴
+ - 四块铁条
+ - 一个死云术卷轴
 
 完美铁魔像：
 最小等级：19（炼金师-2）
 原料：
-- 四块铁条
-- 一个死云术卷轴
-- 寒铁碎片
+ - 四块铁条
+ - 一个死云术卷轴
+ - 寒铁碎片
 
 需求：
  智力 17
@@ -220,38 +221,37 @@ This particular copy appears to belong to the dark elven wizard Malavon. It cont
 
 @4113 = ~第四课：铁魔像
 
-This amazing tome contains theoretical musings on the construction and control of golems. It goes on in lengthy details about which materials are required to assemble an iron golem, how to animate it and make it follow the creator's commands to the letter. It also describes in detail the equipment needed to successfully form the golem's body. This requirement limits the locations where you can start the construction process to a selected few in all of Faerûn.
+这本神奇的书籍包含了关于魔像的构造和控制的理论思考。它详细地阐述了组装一个铁魔像所需的材料，如何赋予它生命，并让它严格遵循创造者的命令。它还详细介绍了成功塑造魔像身体所需的设备。这个要求限制了你可以开始建造过程的地点，在整个费伦大陆上只有少数几个地方。
 
-From what you can gather this book is part of a collection that comes in five volumes. It also briefly mentions a second collection which is supposed to deal with the construction of more unconventional types of golems.
+从你能收集到的信息来看，这本书是一套五卷本系列的一部分。它还简要提到了第二套系列，据说这套系列将涉及更非传统的魔像构造。
 
-This particular copy appears to belong to the dark elven wizard Malavon. It contains a number of strange phrases that appear to be command words for his own creations.
-
+这本特定的副本似乎属于黑暗精灵巫师马拉冯。它包含了许多奇怪的短语，看起来像是对他自己的创造物的命令词。
 
 允许使用者建造下列魔像：
 
 次级铁魔像：
 最小等级：11（炼金师-2，吟游诗人+2）
 原料：
-- 一块铁条
+ - 一块铁条
 
 铁魔像：
 最小等级：14（炼金师-2，吟游诗人+4）
 原料：
-- 两块铁条
-- 一个死云术卷轴
+ - 两块铁条
+ - 一个死云术卷轴
 
 高级铁魔像：
 最小等级：17（炼金师-2，吟游诗人+5）
 原料：
-- 四块铁条
-- 一个死云术卷轴
+ - 四块铁条
+ - 一个死云术卷轴
 
 完美铁魔像：
 最小等级：19（炼金师-2）
 原料：
-- 四块铁条
-- 一个死云术卷轴
-- 寒铁碎片
+ - 四块铁条
+ - 一个死云术卷轴
+ - 寒铁碎片
 
 需求：
  智力 17
