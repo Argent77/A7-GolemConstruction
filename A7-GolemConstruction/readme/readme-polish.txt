@@ -173,6 +173,8 @@ Polish translation: Cahir
 French translation: Gwendolyne
 Italian translation: Luke93 & Elia Danelli (translation), Aedan & improbabile (proofreading),
                      rede9 (additional help)
+Russian translation: Arkie
+Simplified Chinese translation: Lewis Liu
 
 Doll golem and bone doll creature animations ported from Diablo II by Blizzard Entertainment.
 
