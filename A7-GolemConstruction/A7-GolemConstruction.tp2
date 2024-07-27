@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/A7-GolemConstruction~
 SUPPORT ~http://www.shsforums.net/forum/652-golem-construction-ee/~
-VERSION ~6.3~
+VERSION ~6.4~
 
 ALWAYS
   // required because of non-standard BACKUP path
