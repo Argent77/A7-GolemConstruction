@@ -623,6 +623,7 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
   // Demogorgon drops a vial
   ACTION_IF (GAME_IS_BG2EE OR GAME_IS_EET) BEGIN
     COPY_EXISTING ~demogor2.cre~ ~override~
+      READ_ASCII DEATHVAR script_name (32) NULL
       READ_ASCII SCRIPT_DEFAULT script_default (8) NULL
       READ_ASCII SCRIPT_OVERRIDE script (8) NULL
       PATCH_IF (~%script%~ STRING_EQUAL ~~ OR ~%script%~ STRING_EQUAL_CASE ~none~) BEGIN
@@ -652,8 +653,9 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
 
     <<<<<<<< .../inlined/%script%.baf
     IF
-      Global("a7!glad2_dropped","LOCALS",0)
       %condition%
+      Global("a7!glad2_dropped","LOCALS",0)
+      Name("%script_name%",Myself)
     THEN
       RESPONSE #100
         SetGlobal("a7!glad2_dropped","LOCALS",1)
