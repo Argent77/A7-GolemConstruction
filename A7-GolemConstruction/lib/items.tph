@@ -652,9 +652,11 @@ ACTION_IF (NOT GAME_IS_BGEE AND NOT GAME_IS_IWDEE) BEGIN
 
     <<<<<<<< .../inlined/%script%.baf
     IF
+      Global("a7!glad2_dropped","LOCALS",0)
       %condition%
     THEN
       RESPONSE #100
+        SetGlobal("a7!glad2_dropped","LOCALS",1)
         DropItem("a7!glad2", [-1.-1])
         Continue()
     END
