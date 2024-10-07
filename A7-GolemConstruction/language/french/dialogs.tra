@@ -234,6 +234,14 @@
 @46016 = ~Oui, les voici.~
 @46017 = ~Ah oui, celui-ci est mûr à point. Posez tout sur la table, là-bas.~
 @46018 = ~Je pense que la fabrication prendra environ une journée. Revenez demain.~
+@46019 = ~J'aimerais faire réparer ma poupée golem. Pouvez-vous le faire ?~
+@46020 = ~J'aimerais acheter un autre parchemin de "réparation de golem".~
+@46021 = ~J'ai mieux à faire que de réparer vos golems abîmés.~
+@46022 = ~Mais cela ne veut pas dire que je ne peux pas vous aider. J'ai récemment mis au point un sort qui me permet de garder mon propre serviteur en état de marche. Je peux vous en vendre une copie pour 250 pièces d'or. Qu'en dites-vous ?~
+@46023 = ~Certainement. Payez-moi les 250 or et le parchemin est à vous.~
+@46024 = ~Voilà pour vous.~
+@46025 = ~Très bien. Voici le parchemin. Il suffit de le lire à haute voix devant votre golem pour activer l'enchantement. Vous savez lire, n'est-ce pas ?~
+@46026 = ~Très bien. Voilà le parchemin. Maintenant, partez.~
 
 
 // *** The necromancer Nemphre ***
@@ -265,7 +273,14 @@
 @46525 = ~Oui, les voici.~
 @46526 = ~Tout semble en ordre. La fabrication prendra une journée. Revenez demain en vie et en bonne santé. Vous ne le regretterez pas.~
 @46527 = ~Alors vous ne me servez à rien. Ne revenez que lorsque vous aurez réuni tout ce dont j'ai besoin.~
-
+@46528 = ~Je voudrais faire réparer ma poupée en os. Pouvez-vous le faire ?~
+@46529 = ~J'aimerais acheter un autre parchemin de "réparation de golem".~
+@46530 = ~Pourquoi s'en préoccuper ? Vous pouvez toujours commander un autre golem pour remplacer celui qui est abîmé.~
+@46531 = ~Mais si vous insistez vraiment, je peux probablement vous aider. C'est une tâche assez simple que de créer un sort capable de réparer vos golems. Pour 250 pièces d'or, je peux vous en vendre une copie. Vous êtes d'accord ?~
+@46532 = ~Certainement. Il suffit de me payer les 250 pièces d'or et le parchemin est à vous.~
+@46533 = ~Voilà pour vous.~
+@46534 = ~Ça suffira. Tenez, prenez ce parchemin. Lisez-le à haute voix devant votre golem et le sort s'occupera des détails.~
+@46535 = ~Ça suffira. Prenez ce parchemin et partez.~
 
 // *** Quest-related ***
 @47000 = ~(La mèche de cheveux de Nyalee se met à scintiller faiblement lorsque vous approchez du centre du temple.)~
@@ -277,6 +292,14 @@
 @47006 = ~(Ne pas entrer dans le labyrinthe.)~
 @47007 = ~(Vous allez perdre le contrôle des créatures convoquées dès qu'elles entreront dans le labyrinthe.)~
 @47008 = ~(Entrer dans le labyrinthe.)~
+
+// *** Thalantyr of the High Hedge ***
+@47500 = ~J'ai trouvé un livre qui traite de la construction de golems particuliers. Pouvez-vous en construire un pour moi ?~
+@47501 = ~Vous ne demandez pas grand-chose, n'est-ce pas ? Laissez-moi voir ce que vous avez.~
+@47502 = ~Humm, le livre semble être authentique.~
+@47503 = ~Alors, pouvez-vous construire un golem pour moi ?~
+@47504 = ~Pas si vite. La construction de golems est une tâche très complexe et coûteuse. Ce type particulier de golems semble également puiser dans la force vitale de son créateur. C'est plus que ce que je suis prêt à endurer.~
+@47505 = ~Vous aurez peut-être plus de chance avec des nécromanciens en exercice. Je connais deux nécromanciens à la Porte de Baldur, Arkion et Nemphre, qui m'ont crée bien des problèmes par le passé. Je suis sûr que vous trouverez un moyen de les convaincre d'une manière ou d'une autre d'accepter cette tâche.~
 
 
 // *** Journal entries ***
@@ -353,3 +376,7 @@ On m'a attribué une chambre dans le Temple de Lathandre. Je devrais pouvoir y f
 @49018 = ~Atelier de Fabrication de Golems
 
 On m'a attribué des quartiers personnels dans le Temple de Talos. Je devrais pouvoir y fabriquer des golems.~
+
+@49019 = ~Atelier de Fabrication de Golems
+
+D'après le mage Thalantyr, les nécromanciens Arkion ou Nemphre pourraient être intéressés par la construction de golems pour moi. Je les trouverai sans doute quelque part dans la Porte de Baldur.
