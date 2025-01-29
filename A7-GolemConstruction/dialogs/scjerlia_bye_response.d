@@ -3,5 +3,12 @@
 // Should only be added once
 ADD_TRANS_TRIGGER ~scjerlia~ 37 ~False()~ DO 0 UNLESS ~"False()"~
 EXTEND_TOP ~scjerlia~ 37 #1
-  ++ #28743 /* Nothing, sorry I bothered you. */ + 2
+  ++ #28743 /* Nothing, sorry I bothered you. */ + scjerlia.bye
+END
+
+APPEND ~scjerlia~
+  IF ~~ scjerlia.bye
+    SAY #28746 /* S'all right friend. Come back when you need. */
+    IF ~~ EXIT
+  END
 END
