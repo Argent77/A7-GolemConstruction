@@ -9,6 +9,6 @@ END
 APPEND ~scjerlia~
   IF ~~ scjerlia.bye
     SAY #28746 /* S'all right friend. Come back when you need. */
-    IF ~~ EXIT
+    IF ~~ DO ~SetNumTimesTalkedTo(0)~ EXIT
   END
 END

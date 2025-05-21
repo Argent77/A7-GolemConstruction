@@ -25,16 +25,16 @@ APPEND ~scjerlia~
 
   IF ~~ jerlia.store.1
     SAY @44507 /* I can offer you a great variety of ore and masonry. For the right price you can also purchase some of the more exotic materials. Feel free to browse, and don't be shy to pick what you need. */
-    IF ~~ DO ~StartStore("a7!jerl",LastTalkedToBy)~ EXIT
+    IF ~~ DO ~SetNumTimesTalkedTo(0) StartStore("a7!jerl",LastTalkedToBy)~ EXIT
   END
 
   IF ~~ jerlia.store.2
     SAY @44508 /* Always a pleasure. */
-    IF ~~ DO ~StartStore("a7!jerl",LastTalkedToBy)~ EXIT
+    IF ~~ DO ~SetNumTimesTalkedTo(0) StartStore("a7!jerl",LastTalkedToBy)~ EXIT
   END
 
   IF ~~ jerlia.store.3
     SAY @44509 /* Your timing is perfect. I stocked up my store right now with new and exotic items from a rather particular source. */
-    IF ~~ DO ~StartStore("a7!jerl",LastTalkedToBy)~ EXIT
+    IF ~~ DO ~SetNumTimesTalkedTo(0) StartStore("a7!jerl",LastTalkedToBy)~ EXIT
   END
 END
