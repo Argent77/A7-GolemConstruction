@@ -271,6 +271,14 @@
 @46016 = ~Tak, oto one.~
 @46017 = ~Ach, te zwłoki wyglądają soczyście. Połóż wszystko na tamtym stole.~
 @46018 = ~Myślę, że budowa zajmie jeden dzień. Wróć do mnie jutro.~
+@46019 = ~Chciałbym naprawić mojego lakowego golema. Czy możesz to zrobić?~
+@46020 = ~Chciałbyn kupić kolejny zwój "Naprawy golema".~
+@46021 = ~Mam lepsze rzeczy do robienia niż naprawa twoich zepsutych golemów.~
+@46022 = ~Ale to nie znaczy że nie mogę Ci pomóc. Niedawno wymyśliłem zaklęcie, które pozwala mi utrzymać mojego sługę w stanie użyteczności. Mogę ci sprzedać kopię za 250 sztuk złota. Co ty na to?~
+@46023 = ~Jasne. Zapłać mi tylko 250 sztuk złota, a zwój będzie twój.~
+@46024 = ~Proszę bardzo.~
+@46025 = ~Bardzo dobrze. Oto zwój. Aby aktywować zaklęcie, wystarczy przeczytać je na głos przed golemem. Potrafisz czytać, prawda?~
+@46026 = ~Bardzo dobrze. Oto zwój. Teraz idź.~
 
 
 // *** The necromancer Nemphre ***
@@ -309,6 +317,14 @@
 @46526 = ~Wygląda na to, że wszystko w porządku. Budowa zajmie jeden dzień. Wróć jutro cały i zdrów. Nie pożałujesz.~
          ~Wygląda na to, że wszystko w porządku. Budowa zajmie jeden dzień. Wróć jutro cała i zdrowa. Nie pożałujesz.~
 @46527 = ~A więc na nic mi się już nie przydasz. Wróć tylko, jeśli zdobędziesz wszystko, czego potrzebuję.~
+@46528 = ~Chciałbym naprawić mojego kościanego golema. Czy możesz to zrobić?~
+@46529 = ~Chciałbyn kupić kolejny zwój "Naprawy golema".~
+@46530 = ~Po co się męczysz? Zawsze możesz zastąpić zepsutego golema sprawnym.~
+@46531 = ~Ale jeśli naprawdę nalegasz, to prawdopodobnie mogę ci pomóc. Stworzenie zaklęcia, które naprawi twoje golemy, to dość proste zadanie. Za 250 sztuk złota mogę ci sprzedać kopię. Zgadzasz się?~
+@46532 = ~Jasne. Zapłać mi tylko 250 sztuk złota, a zwój będzie twój.~
+@46533 = ~Proszę bardzo.~
+@46534 = ~To wystarczy. Proszę, weż ten zwój. Po prostu przeczytaj to na głos przed swoim golemem, a zaklęcie zajmie się szczegółami.~
+@46535 = ~To wystarczy. Weź ten zwój i odejdź~
 
 
 // *** Quest-related ***
@@ -321,6 +337,14 @@
 @47006 = ~(Nie wchodź do labiryntu).~
 @47007 = ~(Gdy tylko przyzwane przez ciebie istoty wejdą do labiryntu, natychmiast utracisz nad nimi kontrolę).~
 @47008 = ~(Wejdź do labiryntu).~
+
+// *** Thalantyr of the High Hedge ***
+@47500 = ~Natrafiłem na książkę o konstruowaniu jakichś dziwnych golemów. Czy możesz mi takiego zbudować?~
+@47501 = ~Czy nie prosisz o zbyt wiele? Pokaż co tam masz.~
+@47502 = ~Hmm, książka nie wydaje się być fałszywa.~
+@47503 = ~Więc czy jesteś w stanie zbudować dla mnie golema?~
+@47504 = ~Nie tak szybko. Budowa golemów jest skomplikowanym i kosztownym zadaniem. Wydaje się również, że ten konkretny typ golemów czerpie siłę życiową od swojego twórcy. To więcej niż jestem w stanie poświęcić.~
+@47505 = ~Możesz mieć więcej szczęścia u nekromantów. Tak się składa, że znam dwoje ciemnych typów we Wrotach Baldura, Arkiona i Nemphre, którzy w przeszłości przysporzyli mi samych kłopotów. Jestem pewien, że znajdziesz sposób, by przekonać ich do podjęcia się tego zadania.~
 
 
 // *** Journal entries ***

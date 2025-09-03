@@ -138,6 +138,19 @@ W przeciwieństwie do przyzywanych istot golemy mogą istnieć i służyć swemu
 Zdolność ta pozwala na naprawę golema rzucającemu czar. Cały proces uwzględnia głównie reperowanie lub wymianę uszkodzonych części ciała, co odbywa się z szybkością 1k10 +2 punktów życia na sekundę przez dwie rundy. W rezultacie zarówno ty, jak i golem nie będziecie mogli wykonywać żadnych innych czynności przez kolejne dwanaście sekund.
 
 Naprawa spowoduje również usunięcie wszystkich kar, które golem otrzymał ze względu na duże uszkodzenia.~
+@20122 = ~Naprawianie golema
+
+Ten zwój pozwala użytkownikowi naprawić uszkodzone golemy. Cały proces obejmuje głównie naprawę lub wymianę uszkodzonych części ciała i trwa dwie rundy. W tym czasie zarówno golem, jak i użytkownik nie będą mogli reagować. Silnie uszkodzone golemy mogą wymagać wielokrotnej naprawy, aby usunąć wszystkie uszkodzenia. Proces naprawy usunie również kary, które mogły zostać nałożone na silnie uszkodzone golemy.
+
+PARAMETRY:
+
+– Naprawia cel (tylko golemy)
+  Zasięg: dotyk
+  Obszar działania: 1 istota
+  Czas trwania: stały
+
+Wymagania:
+ 9 Inteligencja~
 
 @20130 = ~Ohydny śmiech~
 @20131 = ~Ohydny śmiech
