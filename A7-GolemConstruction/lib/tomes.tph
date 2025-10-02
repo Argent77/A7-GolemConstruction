@@ -291,7 +291,7 @@ ACTION_IF (NOT GAME_IS_BGEE) BEGIN
     // Fallback solution: Add to Malavon's inventory
     ACTION_IF (NOT replaced) BEGIN
       COPY_EXISTING ~malavon.cre~ ~override~
-        ADD_CRE_ITEM ~a7!tomm4~ (0) (0) (0) ~NONE~ ~INV1 INV2 INV3 INV4 INV5 INV6 INV7 INV8 INV9 INV10 INV11 INV12 INV13 INV14 INV15 INV16~
+        ADD_CRE_ITEM ~a7!tomm4~ (0) (0) (0) ~none~ ~inv~
       BUT_ONLY IF_EXISTS
     END
   END

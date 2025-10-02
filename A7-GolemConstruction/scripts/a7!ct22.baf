@@ -8,6 +8,7 @@ THEN
     MoveViewPoint([1007.982], INSTANT)
     OpenDoor("A7!MAZE")
     TriggerActivation("A7_TO_MAZE_1", TRUE)
+    AddMapNote([938.1020], @100042) // To Underground Maze
     ActionOverride(Player2, JumpToPoint([1182.916]))
     ActionOverride(Player2, Face(W))
     ActionOverride(Player3, JumpToPoint([1150.1080]))

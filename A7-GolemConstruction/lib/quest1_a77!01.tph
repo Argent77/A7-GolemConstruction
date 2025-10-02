@@ -5,11 +5,18 @@ COPY ~%MOD_FOLDER%/areas/a77!01/a77!01.are~ ~override~
   READ_LONG 0xc4 ofsAutomap
   READ_LONG 0xc8 numAutomap
   FOR (idx = 0; idx < numAutomap; ++idx) BEGIN
-    SET ofs = ofsAutomap + (idx * 0x34)
-    PATCH_IF (idx = 0) BEGIN
-      SAY (ofs + 4) @100030   // To the temple
-    END ELSE PATCH_IF (idx = 1) BEGIN
-      SAY (ofs + 4) @100039   // Ancient statue
+    SET ofs = ofsAutomap + (idx * 0x34) + 4
+    PATCH_MATCH idx WITH
+      0 BEGIN
+        SAY ofs @100030   // To the temple
+      END
+      1 BEGIN
+        SAY ofs @100039   // Ancient statue
+      END
+      2 BEGIN
+        SAY ofs @100043   // Strange portal
+      END
+      DEFAULT
     END
   END
 
