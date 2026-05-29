@@ -246,7 +246,7 @@
 // *** The necromancer Arkion ***
 @46000 = ~Natknąłem się ostatnio na ciekawą księgę, w której opisano sposób budowy dziwacznych rodzajów golemów. Wygląda to nieco makabrycznie, pomyślałem więc, że może cię zainteresować.~
          ~Natknęłam się ostatnio na ciekawą księgę, w której opisano sposób budowy dziwacznych rodzajów golemów. Wygląda to nieco makabrycznie, pomyślałam więc, że może cię zainteresować.~
-@46001 = ~Chcę złożyć zamówienie na budowę lalkowego golema. Podołasz temu zadaniu? ~
+@46001 = ~Chcę złożyć zamówienie na budowę golema-marionetki. Podołasz temu zadaniu? ~
 @46002 = ~Oczywiście, kuzynie. Żegnaj.~
          ~Oczywiście, kuzynko. Żegnaj.~
 @46003 = ~Nie sądzę. Żegnaj.~
@@ -289,19 +289,19 @@
 @46503 = ~Mówiłam, żebyś przyszedł później. A teraz daj mi pracować!~
          ~Mówiłam, żebyś przyszła później. A teraz daj mi pracować!~
 @46504 = ~Ach, tu jesteś. Czekałam na ciebie. Mam nadzieję, że zdrowie ci dopisuje?~
-@46505 = ~Kościana lalka jest gotowa. Prawie. Trzeba w nią jeszcze tylko tchnąć nieco życia. Nie ruszaj się. Nie będzie za bardzo bolało.~
+@46505 = ~Kościana kukła jest gotowa. Prawie. Trzeba w nią jeszcze tylko tchnąć nieco życia. Nie ruszaj się. Nie będzie za bardzo bolało.~
 @46506 = ~Co ty rob…~
-@46507 = ~No i proszę. Twoja kościana lalka jest gotowa. Wiesz, co należy teraz zrobić. Stój przez chwilę nieruchomo.~
+@46507 = ~No i proszę. Twoja kościana kukła jest gotowa. Wiesz, co należy teraz zrobić. Stój przez chwilę nieruchomo.~
 @46508 = ~Hmm, Trzeba przyznać, że jesteś wytrzymały.~
          ~Hmm, Trzeba przyznać, że jesteś wytrzymała.~
 @46509 = ~Coś ty mi zrobiła?!~
 @46510 = ~Czyżbym ci nie powiedziała, że potrzebuję odrobiny twoich sił życiowych? Nie martw się o to zbytnio. Z czasem się zregenerujesz. Całonocny sen powinien wystarczyć.~
-@46511 = ~A teraz zabieraj swoją kościaną lalkę i odejdź.~
+@46511 = ~A teraz zabieraj swoją kościaną kukłę i odejdź.~
 @46512 = ~Ach, głupiec powrócił. Czego chce tym razem?~
          ~Ach, wróciła głupia dziewucha. Czego chce tym razem?~
 @46513 = ~Co powiesz, abyśmy dobili targu? Natknąłem się na ciekawą księgę, która zawiera makabryczne szczegóły budowy dziwnych rodzajów golemów. Pomyślałem, że możesz być zainteresowana?~
          ~Co powiesz, abyśmy dobiły targu? Natknęłam się na ciekawą księgę, która zawiera makabryczne szczegóły budowy dziwnych rodzajów golemów. Pomyślałam, że możesz być zainteresowana?~
-@46514 = ~Chcę złożyć zamówienie na budowę kościanej lalki.~
+@46514 = ~Chcę złożyć zamówienie na budowę kościanej kukły.~
 @46515 = ~Niczego nie chcę. Żegnaj.~
 @46516 = ~Daj mi to! Hmm… to faktycznie niezwykle interesujące. Jak rozumiem, chcesz mieć takiego golema dla siebie?~
 @46517 = ~Tak. Potrafisz go zbudować?~
@@ -417,17 +417,17 @@ Ruiny Kanaglymu, do których można się dostać z okolic Podziemnej rzeki, wygl
 @49009 = 
 ~Warsztat budowy golemów
 
-Nekromanta Arkion był zainteresowany moją księgą opisującą sposób budowy lalkowych golemów. Prawdopodobnie będę dzięki temu mógł składać u niego zamówienia na budowę mojego własnego lalkowego golema. Arkiona można spotkać w jego domu we Wrotach Baldura, na południe od tawerny Elfia Pieśń.~
+Nekromanta Arkion był zainteresowany moją księgą opisującą sposób budowy golemów-marionetek. Prawdopodobnie będę dzięki temu mógł składać u niego zamówienia na budowę mojego własnego golema-marionetki. Arkiona można spotkać w jego domu we Wrotach Baldura, na południe od tawerny Elfia Pieśń.~
 ~Warsztat budowy golemów
 
-Nekromanta Arkion był zainteresowany moją księgą opisującą sposób budowy lalkowych golemów. Prawdopodobnie będę dzięki temu mogła składać u niego zamówienia na budowę mojego własnego lalkowego golema. Arkiona można spotkać w jego domu we Wrotach Baldura, na południe od tawerny Elfia Pieśń.~
+Nekromanta Arkion był zainteresowany moją księgą opisującą sposób budowy golemów-marionetek. Prawdopodobnie będę dzięki temu mogła składać u niego zamówienia na budowę mojego własnego golema-marionetki. Arkiona można spotkać w jego domu we Wrotach Baldura, na południe od tawerny Elfia Pieśń.~
 
 @49010 = ~Warsztat budowy golemów
 
-Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budowy kościanych lalek. Prawdopodobnie będę dzięki temu mógł składać u niej zamówienia na budowę mojej własnej kościanej lalki. Nemphre można spotkać w jej domu we Wrotach Baldura, na wschód od gospody Ostrze i Gwiazdy.~
+Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budowy kościanych kukieł. Prawdopodobnie będę dzięki temu mógł składać u niej zamówienia na budowę mojej własnej kościanej kukły. Nemphre można spotkać w jej domu we Wrotach Baldura, na wschód od gospody Ostrze i Gwiazdy.~
 ~Warsztat budowy golemów
 
-Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budowy kościanych lalek. Prawdopodobnie będę dzięki temu mogła składać u niej zamówienia na budowę mojej własnej kościanej lalki. Nemphre można spotkać w jej domu we Wrotach Baldura, na wschód od gospody Ostrze i Gwiazdy.~
+Nekromantka Nemphre była zainteresowana moją księgą opisującą sposób budowy kościanych kukieł. Prawdopodobnie będę dzięki temu mogła składać u niej zamówienia na budowę mojej własnej kościanej kukły. Nemphre można spotkać w jej domu we Wrotach Baldura, na wschód od gospody Ostrze i Gwiazdy.~
 
 @49011 = ~Ukryte drzwi
 
