@@ -2,10 +2,10 @@
 // Doll Golem related strings (index 14000..14999)
 
 @14000 = ~Zakazany podręcznik budowy golemów (tom 1)~
-@14001 = ~Lalkowy golem~
+@14001 = ~Golem-marionetka~
 
 // *** Book content ***
-@14100 = ~O lalkowych golemach
+@14100 = ~O golemach-marionetkach
 
 Ta wspaniała księga przedstawia teoretyczne rozważania na temat budowy i kontrolowania golemów. Zawiera szczegółowe informacje dotyczące materiałów wymaganych do budowy golema-marionetki oraz sposobu jego ożywienia, a także instrukcje wyjaśniające jak sprawić, by wykonywał co do joty polecenia swego stwórcy. Kilka ilustracji sugeruje, że w ożywieniu konstruktu dużą rolę odgrywają zakazane nekromantyczne rytuały.
 
