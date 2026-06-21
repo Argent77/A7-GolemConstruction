@@ -56,7 +56,7 @@ END
 
 // Refuse work if you are good or heroic
 IF ~GlobalGT("HelpNemphre", "GLOBAL", 1) OR(2) Alignment(Player1, MASK_GOOD) ReputationGT(Player1, 15)~ nemphr.good
-  SAY #15019  /* ~I have little need of one such as you.~ */
+  SAY #%nemphr_strref_15019%  /* ~I have little need of one such as you.~ */
   IF ~~ EXIT
 END
 
