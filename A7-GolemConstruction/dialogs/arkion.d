@@ -34,26 +34,25 @@ END
 IF ~~ arkion.order.intro.2
   SAY @46008 /* Not so fast, my dark cousin. First I need the right materials. And I'd like to be paid for my service. */
   = @46009 /* I require a fresh corpse and a cursed Antidote potion for the golem body. My fee is 2000 gold. Still interested? */
-  + ~PartyGoldGT(1999) PartyHasItem("potn32") OR(4) PartyHasItem("misc54") PartyHasItem("misc79") PartyHasItem("misc80") PartyHasItem("a7!body")~ + @46010 /* Yes, I'm interested. */ + arkion.order.accepted.1
+  + ~PartyGoldGT(1999) PartyHasItem("potn32") OR(3) PartyHasItem("misc79%eet_var%") PartyHasItem("misc80") PartyHasItem("a7!body")~ + @46010 /* Yes, I'm interested. */ + arkion.order.accepted.1
   + ~PartyGoldLT(2000)~ + @46011 /* I don't have enough money right now. Perhaps later. */ EXIT
-  + ~PartyGoldGT(1999) PartyHasItem("potn32") !PartyHasItem("misc54") !PartyHasItem("misc79") !PartyHasItem("misc80") !PartyHasItem("a7!body") ~ + @46012 /* I don't have a fresh corpse. Perhaps later. */ EXIT
+  + ~PartyGoldGT(1999) PartyHasItem("potn32") !PartyHasItem("misc79%eet_var%") !PartyHasItem("misc80") !PartyHasItem("a7!body") ~ + @46012 /* I don't have a fresh corpse. Perhaps later. */ EXIT
   + ~PartyGoldGT(1999) !PartyHasItem("potn32")~ + @46013 /* I don't have a cursed Antidote potion. Perhaps later. */ EXIT
   ++ @46014 /* I'm not interested. Goodbye. */ EXIT
 END
 
 IF ~~ arkion.order.1
   SAY @46015 /* Certainly. Do you have a fresh corpse, a cursed Antidote and the 2000 gold? */
-  + ~PartyGoldGT(1999) PartyHasItem("potn32") OR(4) PartyHasItem("misc54") PartyHasItem("misc79") PartyHasItem("misc80") PartyHasItem("a7!body")~ + @46016 /* Yes, here they are. */ + arkion.order.accepted.1
+  + ~PartyGoldGT(1999) PartyHasItem("potn32") OR(3) PartyHasItem("misc79%eet_var%") PartyHasItem("misc80") PartyHasItem("a7!body")~ + @46016 /* Yes, here they are. */ + arkion.order.accepted.1
   + ~PartyGoldLT(2000)~ + @46011 /* I don't have enough money right now. Perhaps later. */ EXIT
-  + ~PartyGoldGT(1999) PartyHasItem("potn32") !PartyHasItem("misc54") !PartyHasItem("misc79") !PartyHasItem("misc80") !PartyHasItem("a7!body") ~ + @46012 /* I don't have a fresh corpse. Perhaps later. */ EXIT
+  + ~PartyGoldGT(1999) PartyHasItem("potn32") !PartyHasItem("misc79%eet_var%") !PartyHasItem("misc80") !PartyHasItem("a7!body") ~ + @46012 /* I don't have a fresh corpse. Perhaps later. */ EXIT
   + ~PartyGoldGT(1999) !PartyHasItem("potn32")~ + @46013 /* I don't have a cursed Antidote potion. Perhaps later. */ EXIT
   ++ @46014 /* I'm not interested. Goodbye. */ EXIT
 END
 
 IF ~~ arkion.order.accepted.1
   SAY @46017 /* Ah, that one looks juicy. Put everything over there on the table. */
-  IF ~PartyHasItem("misc54")~ DO ~TakePartyItemNum("misc54", 1) TakePartyItemNum("potn32", 1) TakePartyGold(2000)~ + arkion.order.accepted.2
-  IF ~PartyHasItem("misc79")~ DO ~TakePartyItemNum("misc79", 1) TakePartyItemNum("potn32", 1) TakePartyGold(2000)~ + arkion.order.accepted.2
+  IF ~PartyHasItem("misc79%eet_var%")~ DO ~TakePartyItemNum("misc79%eet_var%", 1) TakePartyItemNum("potn32", 1) TakePartyGold(2000)~ + arkion.order.accepted.2
   IF ~PartyHasItem("misc80")~ DO ~TakePartyItemNum("misc80", 1) TakePartyItemNum("potn32", 1) TakePartyGold(2000)~ + arkion.order.accepted.2
   IF ~PartyHasItem("a7!body")~ DO ~TakePartyItemNum("a7!body", 1) TakePartyItemNum("potn32", 1) TakePartyGold(2000)~ + arkion.order.accepted.2
 END

@@ -1,15 +1,5 @@
 // *** Functions for internal use ***
 
-// To determine game types more easily
-OUTER_SET GAME_IS_BGEE = (GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~) ? 1 : 0
-OUTER_SET GAME_IS_SOD = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0
-OUTER_SET GAME_IS_BG2EE = (GAME_IS ~bg2ee~) ? 1 : 0
-OUTER_SET GAME_IS_IWDEE = (GAME_IS ~iwdee~) ? 1 : 0
-OUTER_SET GAME_IS_EET = (GAME_IS ~eet~) ? 1 : 0
-OUTER_SET GAME_IS_EET_IWD = (GAME_IS ~eet~ AND FILE_EXISTS_IN_GAME ~id1000.are~) ? 1 : 0
-OUTER_SET SPELL_REV = (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) ? 1 : 0
-
-
 /**
  * Converts any decimal number into a hexadecimal number
  */

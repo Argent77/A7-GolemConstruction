@@ -31,13 +31,12 @@ END
 
 ACTION_IF (GAME_IS_BGEE OR GAME_IS_SOD OR GAME_IS_EET) BEGIN
   // For constructing (bone) doll golems
-  COMPILE ~%MOD_FOLDER%/dialogs/thalan.d~
-          ~%MOD_FOLDER%/dialogs/arkion.d~
-          ~%MOD_FOLDER%/scripts/a7!ctdg1.baf~
-          ~%MOD_FOLDER%/scripts/a7!ctdg2.baf~
-
-  OUTER_SET nemphr_strref_15019 = GAME_IS_EET ? 215019 : 15019
-  COMPILE EVAL ~%MOD_FOLDER%/dialogs/nemphr.d~
+  OUTER_SET strref_15019 = eet_strref + 15019
+  COMPILE EVAL ~%MOD_FOLDER%/dialogs/thalan.d~
+               ~%MOD_FOLDER%/dialogs/arkion.d~
+               ~%MOD_FOLDER%/dialogs/nemphr.d~
+               ~%MOD_FOLDER%/scripts/a7!ctdg1.baf~
+               ~%MOD_FOLDER%/scripts/a7!ctdg2.baf~
 
   COPY ~%MOD_FOLDER%/spells/a7!ctdg1.spl~ ~override~
 

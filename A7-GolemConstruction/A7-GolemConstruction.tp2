@@ -6,7 +6,7 @@ ALWAYS
   // root folder for mutable data
   OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
 
-  INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/always.tph~
   INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
 END
 

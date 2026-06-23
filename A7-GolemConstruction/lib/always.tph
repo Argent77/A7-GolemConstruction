@@ -1,0 +1,31 @@
+// To determine game types more easily
+OUTER_SET GAME_IS_BGEE = GAME_IS ~bgee~ AND NOT GAME_INCLUDES ~sod~
+OUTER_SET GAME_IS_SOD = GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~
+OUTER_SET GAME_IS_BG2EE = GAME_IS ~bg2ee~
+OUTER_SET GAME_IS_IWDEE = GAME_IS ~iwdee~
+OUTER_SET GAME_IS_EET = GAME_IS ~eet~
+OUTER_SET GAME_IS_EET_IWD = GAME_IS ~eet~ AND FILE_EXISTS_IN_GAME ~id1000.are~
+OUTER_SET SPELL_REV = MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0
+
+// EET-specific initializations
+
+// Setting bg2_chapter_1, bg2_chapter_2, ... to actual chapter value for BG2 part of the game
+OUTER_SET bg2_chapter = GAME_IS_EET ? 12 : 0
+OUTER_FOR (i = 1; i < 11; ++i) BEGIN
+  OUTER_SET bg2_chapter += 1
+  OUTER_TEXT_SPRINT name_source ~bg2_chapter_%i%~
+  OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+END
+
+// platform-specific variables
+ACTION_IF (GAME_IS_EET) BEGIN
+  OUTER_TEXT_SPRINT PREFIX_AREA_BG1 ~BG~  // BG1 area prefix
+  OUTER_TEXT_SPRINT PREFIX_AREA_IWD ~ID~  // IWD-in-EET area prefix
+	OUTER_SPRINT eet_var "_"  //EET '_' suffix for conflicting resources with 7 or less characters
+  OUTER_SET eet_strref = 200000 // start offset of BG1 strings
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT PREFIX_AREA_BG1 ~AR~
+  OUTER_TEXT_SPRINT PREFIX_AREA_IWD ~AR~
+  OUTER_SPRINT eet_var ""
+  OUTER_SET eet_strref = 0
+END
