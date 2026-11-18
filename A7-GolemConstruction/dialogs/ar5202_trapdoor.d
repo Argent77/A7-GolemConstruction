@@ -71,8 +71,8 @@ IF ~Global("A7!Q1EnterMaze", "MYAREA", 1)~ 10
         SetGlobal("A7!Q1PartyDisabled", "GLOBAL", 1)
         SetGlobal("A7!Q1DismissCheck", "GLOBAL", 1)
         SetGlobal("A7!Q1EnterMazePC", "GLOBAL", 0)
-        RemoveSpellRES("a7!in01")
-        ApplySpellRES("a7!q1ad", Myself)
+        RemoveSpellRES("a7!in01",Myself)
+        ApplySpellRES("a7!q1ad",Myself)
         LeaveAreaLUAPanic("A77!01", "", [3062.712], SWW)
         LeaveAreaLUA("A77!01", "", [3062.712], SWW)~ EXIT
   + ~!InParty(Myself) !HaveSpellRES("a7!in01")~ + @47008 /* (Enter the maze.) */
